@@ -17,7 +17,7 @@ STATUS = DATA / "refresh-status.json"
 REGISTRY = DATA / "county-sources.json"
 DATA.mkdir(exist_ok=True)
 
-UA = "TaxLienGuideBot/1.2 (daily public-record research prototype; no access-control bypass)"
+UA = "TaxLienGuideBot/1.3 (daily public-record research prototype; no access-control bypass)"
 HEADERS = {"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"}
 TODAY = datetime.now(timezone.utc).date()
 
@@ -56,10 +56,8 @@ def score(p):
         if ratio <= .10: points += 20; reasons.append("opening bid <=10% of appraisal value")
         elif ratio <= .25: points += 10; reasons.append("opening bid <=25% of appraisal value")
         elif ratio >= .70: points -= 20; reasons.append("opening bid >=70% of appraisal value")
-    elif value:
-        reasons.append("official appraisal value captured; minimum bid not yet available")
-    else:
-        reasons.append("appraisal-value comparison not yet available")
+    elif value: reasons.append("official appraisal value captured; minimum bid not yet available")
+    else: reasons.append("appraisal-value comparison not yet available")
     if p.get("opening_bid") is not None: points += 5; reasons.append("official opening/minimum bid captured")
     else: reasons.append(p.get("opening_bid_note") or "opening/minimum bid not published in this feed")
     t=(p.get("property_type") or "").lower()
@@ -81,21 +79,23 @@ def tad_enrich(account):
     except Exception as e:
         return {}, f"TAD lookup failed: {type(e).__name__}"
     soup=BeautifulSoup(r.text,"html.parser")
-    row=None
+    row_cells=None
     for tr in soup.find_all("tr"):
         cells=[re.sub(r"\s+"," ",c.get_text(" ",strip=True)) for c in tr.find_all(["td","th"])]
-        if cells and cells[0].strip()==account:
-            row=cells; break
-    if not row:
+        if account in cells:
+            row_cells=cells; break
+    if not row_cells:
         return {}, "No exact Tarrant Appraisal District match"
+    idx=row_cells.index(account)
+    tail=[x for x in row_cells[idx+1:] if x]
+    if tail and re.fullmatch(r"\d{9}",tail[0]): tail=tail[1:]
     out={"appraisal_url":url,"appraisal_source":"Tarrant Appraisal District"}
-    # Account # | Property Address | Property City | Primary Owner Name | Market Value
-    if len(row)>=2 and row[1]: out["address"]=row[1]
-    if len(row)>=3 and row[2]: out["city"]=row[2]
+    if len(tail)>=1: out["address"]=tail[0]
+    if len(tail)>=2: out["city"]=tail[1]
     if out.get("address") and out.get("city"): out["address"]=f"{out['address']}, {out['city']}, TX"
-    if len(row)>=4 and row[3]: out["owner"]=row[3]
-    if len(row)>=5:
-        mv=num(row[4])
+    if len(tail)>=3: out["owner"]=tail[2]
+    if len(tail)>=4:
+        mv=num(tail[3])
         if mv is not None: out["market_value"]=mv; out["assessed_value"]=mv
     full=re.sub(r"\s+"," ",soup.get_text(" ",strip=True))
     m=re.search(r"Legal Description:\s*(.+?)(?=\s+Agent:|\s+State Code:|$)",full,re.I)
@@ -146,8 +146,7 @@ def tarrant_properties():
     for a in soup.find_all("a",href=True):
         d=parse_date(a.get_text(" ",strip=True).title())
         if d and d>=TODAY: candidates.append((d,urljoin(base,a["href"])))
-    if not candidates:
-        candidates=[(datetime(2026,9,1).date(),"https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html")]
+    if not candidates: candidates=[(datetime(2026,9,1).date(),"https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html")]
     sale_date,sale_url=sorted(candidates)[0]
     psoup=BeautifulSoup(get(sale_url).text,"html.parser")
     rows=[]; enriched=0
