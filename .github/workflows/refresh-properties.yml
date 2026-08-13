@@ -21,7 +21,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Refresh official source health and normalized property feed
+      - name: Install parser dependencies
+        run: pip install requests beautifulsoup4 pdfplumber
+      - name: Refresh official property feeds
         run: python scripts/refresh_properties.py
       - name: Commit refreshed data
         run: |
