@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-08-12T00:00:00Z",
+  "refresh_frequency": "daily",
+  "total_florida_counties": 67,
+  "official_sources_registered": 10,
+  "property_count": 0,
+  "source_health": [],
+  "notes": [
+    "Initial production pipeline setup. GitHub Actions refreshes source health daily.",
+    "Property rows are published only when an official public source can be normalized reliably without bypassing access controls.",
+    "Research priority is a transparent screening score, not an investment recommendation."
+  ]
+}
