@@ -1,5 +1,566 @@
 {
-  "updated_at": "2026-08-13T01:44:10.809697+00:00",
-  "state": "Florida",
-  "properties": []
+  "updated_at": "2026-08-13T07:23:20.327562+00:00",
+  "prototype": true,
+  "properties": [
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D37968-23",
+      "parcel_id": "00416142",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D47988-25",
+      "parcel_id": "00892904",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D40401-24",
+      "parcel_id": "01054694",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D44700-24",
+      "parcel_id": "01590960",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D02965-14",
+      "parcel_id": "01752960",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D48492-25",
+      "parcel_id": "01781529",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D43635-24",
+      "parcel_id": "01955195",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D43525-24",
+      "parcel_id": "02205033",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D43761-24",
+      "parcel_id": "02376407",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D44766-24",
+      "parcel_id": "02491931",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D44799-24",
+      "parcel_id": "02858002",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D48940-25",
+      "parcel_id": "03161196",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D41881-24",
+      "parcel_id": "04156773",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D45687-25",
+      "parcel_id": "05188466",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D48268-25",
+      "parcel_id": "06781683",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D39552-23",
+      "parcel_id": "07547420",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D44679-24",
+      "parcel_id": "3030733",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D44679-24",
+      "parcel_id": "3030784",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D39513-23",
+      "parcel_id": "40465160",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    },
+    {
+      "state": "TX",
+      "state_name": "Texas",
+      "county": "Tarrant",
+      "case_number": "D44679-24",
+      "parcel_id": "4704169",
+      "sale_date": "09/01/2026",
+      "sale_status": "For Sale",
+      "opening_bid": null,
+      "assessed_value": null,
+      "address": null,
+      "property_type": null,
+      "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
+      "auction_url": null,
+      "title_review_status": "not_reviewed",
+      "data_completeness": "official case/account listing; enrichment pending",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "assessed-value comparison not yet available",
+          "opening/minimum bid not published in this feed",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      }
+    }
+  ]
 }
