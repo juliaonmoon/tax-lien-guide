@@ -1,0 +1,36 @@
+name: Refresh tax deed property data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 13 * * *"
+  push:
+    paths:
+      - "scripts/**"
+      - "data/**"
+      - ".github/workflows/refresh-properties.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh official source health and normalized property feed
+        run: python scripts/refresh_properties.py
+      - name: Commit refreshed data
+        run: |
+          if git diff --quiet -- data/; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git commit -m "chore: daily tax deed data refresh"
+          git push
