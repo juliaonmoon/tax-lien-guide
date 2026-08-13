@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-13T07:39:58.594823+00:00",
+  "updated_at": "2026-08-13T08:06:23.890340+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
-  "states_tracked": 2,
-  "counties_tracked": 2,
-  "official_sources_registered": 2,
+  "states_tracked": 3,
+  "counties_tracked": 3,
+  "official_sources_registered": 3,
   "property_count": 20,
   "source_health": [
     {
@@ -12,7 +12,7 @@
       "county": "Brevard",
       "source_url": "https://www.brevardclerk.us/tax-deed-sales",
       "auction_url": "https://www.brevard.realforeclose.com/",
-      "checked_at": "2026-08-13T07:39:58.594823+00:00",
+      "checked_at": "2026-08-13T08:06:23.890340+00:00",
       "ok": true,
       "note": "Parsed 0 properties from Brevard official sale list for 2026-08-20"
     },
@@ -21,15 +21,25 @@
       "county": "Tarrant",
       "source_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings.html",
       "auction_url": null,
-      "checked_at": "2026-08-13T07:39:58.594823+00:00",
+      "checked_at": "2026-08-13T08:06:23.890340+00:00",
       "ok": true,
       "note": "Parsed 20 for-sale accounts; TAD enrichment matched 1/20"
+    },
+    {
+      "state": "WA",
+      "county": "King",
+      "source_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions/properties",
+      "auction_url": "https://king.wa.realforeclose.com/",
+      "checked_at": "2026-08-13T08:06:23.890340+00:00",
+      "ok": false,
+      "note": "HTTPError: 404 Client Error: Not Found for url: https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions/properties"
     }
   ],
   "notes": [
-    "Prototype scope: Brevard County, Florida and Tarrant County, Texas.",
-    "Tarrant rows are enriched from the official Tarrant Appraisal District for address, owner, market/appraisal value and property type when available.",
-    "Tarrant County's monthly sale page does not publish minimum bid amounts; those are labeled unavailable rather than guessed.",
+    "Prototype now prioritizes King County, Washington in addition to Brevard FL and Tarrant TX.",
+    "King County foreclosure parcels are enriched from King County Open Data for legal description, tax-roll value and receivable/tax information when available.",
+    "King County says 2026 opening bids will be posted in mid-to-late August; the collector will pick them up after an official source becomes available.",
+    "WA owner names are not bulk-aggregated into this investment screener because King County's eReal Property page warns that RCW 42.56.070(9) restricts use of lists of individuals for commercial purposes.",
     "Research priority is a transparent triage score, not a recommendation to bid or purchase."
   ]
 }

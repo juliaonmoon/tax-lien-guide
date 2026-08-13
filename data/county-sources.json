@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T07:39:58.594823+00:00",
+  "updated_at": "2026-08-13T08:06:23.890340+00:00",
   "prototype": true,
   "counties": [
     {
@@ -16,6 +16,14 @@
       "county": "Tarrant",
       "source_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings.html",
       "auction_url": null,
+      "coverage": "property_feed_prototype"
+    },
+    {
+      "state": "WA",
+      "state_name": "Washington",
+      "county": "King",
+      "source_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions/properties",
+      "auction_url": "https://king.wa.realforeclose.com/",
       "coverage": "property_feed_prototype"
     }
   ]

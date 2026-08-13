@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T07:39:58.594823+00:00",
+  "updated_at": "2026-08-13T08:06:23.890340+00:00",
   "prototype": true,
   "properties": [
     {
@@ -635,12 +635,13 @@
       "appraisal_source": "Tarrant Appraisal District",
       "city": "FORT WORTH",
       "research_priority": {
-        "score": 50,
-        "label": "Medium research priority",
+        "score": 35,
+        "label": "Low research priority",
         "reasons": [
-          "official appraisal value captured; minimum bid not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "Not published on Tarrant County's monthly sale listing",
           "recognizable residential property type",
+          "special-use parcel needs extra review",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
