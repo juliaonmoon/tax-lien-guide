@@ -1,0 +1,475 @@
+{
+  "updated_at": "2026-08-13T01:44:10.809697+00:00",
+  "state": "Florida",
+  "counties": [
+    {
+      "state": "FL",
+      "county": "Alachua",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Baker",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Bay",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Bradford",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Brevard",
+      "source_url": "https://www.brevardclerk.us/tax-deed-sales",
+      "auction_url": null,
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Broward",
+      "source_url": "https://www.broward.org/RecordsTaxesTreasury/Pages/Default.aspx",
+      "auction_url": "https://broward.realtaxdeed.com/",
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Calhoun",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Charlotte",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Citrus",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Clay",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Collier",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Columbia",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "DeSoto",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Dixie",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Duval",
+      "source_url": "https://www.duvalclerk.gov/departments/county-services/tax-deed-files",
+      "auction_url": "https://duval.realtaxdeed.com/",
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Escambia",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Flagler",
+      "source_url": "https://flaglerclerk.gov/sales/tax-deeds-sales/",
+      "auction_url": null,
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Franklin",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Gadsden",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Gilchrist",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Glades",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Gulf",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Hamilton",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Hardee",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Hendry",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Hernando",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Highlands",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Hillsborough",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Holmes",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Indian River",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Jackson",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Jefferson",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Lafayette",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Lake",
+      "source_url": "https://www.lakecountyclerkfl.gov/departments/records-administrative-services/official-records/tax-deeds/",
+      "auction_url": "https://www.lake.realtaxdeed.com/",
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Lee",
+      "source_url": "https://www.leeclerk.org/departments/courts/property-sales/tax-deed-sales",
+      "auction_url": null,
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Leon",
+      "source_url": "https://leonclerk.com/divisions/property-sales/tax-deeds/",
+      "auction_url": null,
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Levy",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Liberty",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Madison",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Manatee",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Marion",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Martin",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Miami-Dade",
+      "source_url": "https://www.miamidadeclerk.gov/clerk/property-tax-deeds.page?submit=true",
+      "auction_url": null,
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Monroe",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Nassau",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Okaloosa",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Okeechobee",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Orange",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Osceola",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Palm Beach",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Pasco",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Pinellas",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Polk",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Putnam",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Santa Rosa",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Sarasota",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Seminole",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "St. Johns",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "St. Lucie",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Sumter",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Suwannee",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Taylor",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Union",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Volusia",
+      "source_url": "https://www.clerk.org/tax-deeds.aspx",
+      "auction_url": "https://www.volusia.realtaxdeed.com/",
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Wakulla",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    },
+    {
+      "state": "FL",
+      "county": "Walton",
+      "source_url": "https://taxsmart.clerkofcourts.co.walton.fl.us/",
+      "auction_url": null,
+      "coverage": "source_registered"
+    },
+    {
+      "state": "FL",
+      "county": "Washington",
+      "source_url": null,
+      "auction_url": null,
+      "coverage": "research_needed"
+    }
+  ]
+}

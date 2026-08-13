@@ -1,13 +1,616 @@
 {
-  "updated_at": "2026-08-12T00:00:00Z",
+  "updated_at": "2026-08-13T01:44:10.809697+00:00",
   "refresh_frequency": "daily",
   "total_florida_counties": 67,
   "official_sources_registered": 10,
   "property_count": 0,
-  "source_health": [],
+  "source_health": [
+    {
+      "county": "Alachua",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Baker",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Bay",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Bradford",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Brevard",
+      "source_url": "https://www.brevardclerk.us/tax-deed-sales",
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": true,
+      "http_status": 200,
+      "note": "Official page reachable; detected: tax deed, auction, lands available"
+    },
+    {
+      "county": "Broward",
+      "source_url": "https://www.broward.org/RecordsTaxesTreasury/Pages/Default.aspx",
+      "auction_url": "https://broward.realtaxdeed.com/",
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "county": "Calhoun",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Charlotte",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Citrus",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Clay",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Collier",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Columbia",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "DeSoto",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Dixie",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Duval",
+      "source_url": "https://www.duvalclerk.gov/departments/county-services/tax-deed-files",
+      "auction_url": "https://duval.realtaxdeed.com/",
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "URLError: <urlopen error timed out>"
+    },
+    {
+      "county": "Escambia",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Flagler",
+      "source_url": "https://flaglerclerk.gov/sales/tax-deeds-sales/",
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "county": "Franklin",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Gadsden",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Gilchrist",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Glades",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Gulf",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Hamilton",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Hardee",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Hendry",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Hernando",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Highlands",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Hillsborough",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Holmes",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Indian River",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Jackson",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Jefferson",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Lafayette",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Lake",
+      "source_url": "https://www.lakecountyclerkfl.gov/departments/records-administrative-services/official-records/tax-deeds/",
+      "auction_url": "https://www.lake.realtaxdeed.com/",
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": true,
+      "http_status": 200,
+      "note": "Official page reachable; detected: tax deed"
+    },
+    {
+      "county": "Lee",
+      "source_url": "https://www.leeclerk.org/departments/courts/property-sales/tax-deed-sales",
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "county": "Leon",
+      "source_url": "https://leonclerk.com/divisions/property-sales/tax-deeds/",
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": true,
+      "http_status": 200,
+      "note": "Official page reachable; detected: tax deed, auction, tax sale, lands available"
+    },
+    {
+      "county": "Levy",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Liberty",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Madison",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Manatee",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Marion",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Martin",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Miami-Dade",
+      "source_url": "https://www.miamidadeclerk.gov/clerk/property-tax-deeds.page?submit=true",
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": true,
+      "http_status": 200,
+      "note": "Official page reachable; detected: tax deed, auction, lands available"
+    },
+    {
+      "county": "Monroe",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Nassau",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Okaloosa",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Okeechobee",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Orange",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Osceola",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Palm Beach",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Pasco",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Pinellas",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Polk",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Putnam",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Santa Rosa",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Sarasota",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Seminole",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "St. Johns",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "St. Lucie",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Sumter",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Suwannee",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Taylor",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Union",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Volusia",
+      "source_url": "https://www.clerk.org/tax-deeds.aspx",
+      "auction_url": "https://www.volusia.realtaxdeed.com/",
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": true,
+      "http_status": 200,
+      "note": "Official page reachable; detected: tax deed, auction, tax sale, lands available"
+    },
+    {
+      "county": "Wakulla",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    },
+    {
+      "county": "Walton",
+      "source_url": "https://taxsmart.clerkofcourts.co.walton.fl.us/",
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+    },
+    {
+      "county": "Washington",
+      "source_url": null,
+      "auction_url": null,
+      "checked_at": "2026-08-13T01:44:10.809697+00:00",
+      "ok": false,
+      "http_status": null,
+      "note": "Official source not yet normalized"
+    }
+  ],
   "notes": [
-    "Initial production pipeline setup. GitHub Actions refreshes source health daily.",
-    "Property rows are published only when an official public source can be normalized reliably without bypassing access controls.",
-    "Research priority is a transparent screening score, not an investment recommendation."
+    "Properties are published only from official public sources that can be normalized without bypassing access controls.",
+    "Research priority is a transparent screening score, not investment advice or a buy recommendation."
   ]
 }
