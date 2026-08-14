@@ -9,12 +9,17 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 PROPS = ROOT / "data" / "properties.json"
 STATUS = ROOT / "data" / "refresh-status.json"
-UA = "TaxLienGuideBot/2.3 (public parcel research; official King County GIS)"
-ZIP_API = "https://gisdata.kingcounty.gov/arcgis/rest/services/OpenDataPortal/admin___base/MapServer/113/query"
-CITY_API = "https://gisdata.kingcounty.gov/arcgis/rest/services/OpenDataPortal/admin___base/MapServer/446/query"
+UA = "TaxLienGuideBot/2.4 (public parcel research; official King County GIS)"
+# King County migrated its GIS Open Data APIs to ArcGIS Online. Use the
+# current hosted feature service rather than the deprecated gisdata.kingcounty.gov MapServer.
+CITY_API = "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/CITY_KC_AREA_446/FeatureServer/0/query"
+# Keep ZIP best-effort only until the migrated King County ZIP polygon service is identified.
+ZIP_API = None
 
 
-def spatial_lookup(url: str, lon: float, lat: float, out_fields: str) -> dict:
+def spatial_lookup(url: str | None, lon: float, lat: float, out_fields: str) -> dict:
+    if not url:
+        return {}
     try:
         r = requests.get(url, params={
             "f": "json",
@@ -58,11 +63,13 @@ def main():
                 zip_fixed += 1
                 changed = True
         if need_city:
-            c = spatial_lookup(CITY_API, lon, lat, "CITYNAME,JURIS")
-            city = str(c.get("CITYNAME") or "").strip()
+            # Migrated CITY_KC schema preserves CITYNAME; request all fields as a
+            # fallback so a future schema alias does not silently zero out results.
+            c = spatial_lookup(CITY_API, lon, lat, "*")
+            city = str(c.get("CITYNAME") or c.get("NAME") or c.get("JURIS") or "").strip()
             if city:
                 p["city"] = city
-                p["city_source"] = "King County city/unincorporated polygon"
+                p["city_source"] = "King County ArcGIS Online city/unincorporated polygon"
                 city_fixed += 1
                 changed = True
         if changed:
