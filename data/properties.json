@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T07:18:57.717088+00:00",
+  "updated_at": "2026-08-14T07:24:55.843688+00:00",
   "prototype": true,
   "properties": [
     {
@@ -2188,26 +2188,12 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax receivables",
+      "enrichment_note": "legal description, tax lookup ReadTimeout",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1223049050",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1223049050",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "BEG ON N LN OF SW 1/4 OF NW 1/4 296 FT W OF NE COR TH S 00-30-07 W 85.08 FT TH N 75-41-40 W ALG S MGN OF DIXON RD 295.74 FT TH ON CURVE TO RGT RAD 690.83 FT DIST 64.15 FT TO N LN SD SUBD TH E TO BEG LESS POR W OF LN RNG S FR PT 545.03 FT W OF NE COR OF SUBD",
       "account_number": "122304905005",
-      "tax_status": "T",
-      "bill_year": "2026",
-      "tax_due_estimate": 37973.0,
-      "delinquent_years": [
-        "2018",
-        "2019",
-        "2020",
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -3427,7 +3413,7 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description",
+      "enrichment_note": "legal description, tax lookup ReadTimeout",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2188201800",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2188201800",
       "appraisal_source": "King County Assessor / Open Data",
