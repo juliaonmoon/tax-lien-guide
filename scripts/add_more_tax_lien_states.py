@@ -26,15 +26,22 @@ def main():
     html = INDEX.read_text(encoding="utf-8")
     changed = False
 
-    # Refresh stale existing entries with current verified details instead of creating duplicates.
     replacements = {
         OLD_COLORADO: row_for("Colorado — Jefferson County"),
-        OLD_IOWA: row_for("Iowa — county tax sales"),
+        OLD_IOWA: row_for("Iowa — county tax sales") + ",",
     }
     for old, new in replacements.items():
         if old in html:
             html = html.replace(old, new, 1)
             changed = True
+
+    # Repair the separator if a prior refresh replaced the final NEW_ROWS item in-place.
+    iowa = row_for("Iowa — county tax sales")
+    broken = iowa + "\n{state:'Illinois — county tax sales'"
+    fixed = iowa + ",\n{state:'Illinois — county tax sales'"
+    if broken in html:
+        html = html.replace(broken, fixed, 1)
+        changed = True
 
     wanted = [
         "Alabama — state-held inventory",
