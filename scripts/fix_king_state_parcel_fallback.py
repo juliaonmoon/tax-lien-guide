@@ -51,9 +51,12 @@ def fetch_parcel(pin: str):
 def main():
     doc = json.loads(PROPS.read_text(encoding="utf-8"))
     wa = [p for p in doc.get("properties", []) if p.get("state") == "WA" and p.get("county") == "King"]
-    targets = [p for p in wa if p.get("parcel_id") and (
-        p.get("latitude") is None or p.get("longitude") is None or p.get("assessed_value") in (None, "")
-    )]
+    # Reserve this fallback for the hard GIS orphans: rows missing both county
+    # geometry and county appraised value. That avoids replacing fresher King
+    # County/eReal values for normal condo-unit gaps with the statewide snapshot.
+    targets = [p for p in wa if p.get("parcel_id") and
+               (p.get("latitude") is None or p.get("longitude") is None) and
+               p.get("assessed_value") in (None, "")]
     matched = changed = value_recovered = coord_recovered = address_recovered = 0
 
     for p in targets:
@@ -68,7 +71,6 @@ def main():
         a = f.get("attributes") or {}
         before = json.dumps(p, sort_keys=True, default=str)
 
-        # Location fields: fill only blanks, never overwrite a more current county result.
         situs = clean(a.get("SITUS_ADDRESS"))
         sub = clean(a.get("SUB_ADDRESS"))
         city = clean(a.get("SITUS_CITY_NM"))
@@ -84,7 +86,6 @@ def main():
         if not p.get("zip") and zip5:
             p["zip"] = zip5
 
-        # Values are market land/building values in the statewide parcel schema.
         lv = num(a.get("VALUE_LAND"))
         bv = num(a.get("VALUE_BLDG"))
         total = (lv or 0) + (bv or 0)
@@ -96,7 +97,6 @@ def main():
             p["value_basis"] = "Washington State Parcels Project market land + building value (2026 snapshot)"
             value_recovered += 1
 
-        # Prefer centroid returned by ArcGIS; fall back to geometry ring average only if necessary.
         if p.get("latitude") is None or p.get("longitude") is None:
             c = f.get("centroid") or {}
             lat, lon = num(c.get("y")), num(c.get("x"))
@@ -126,7 +126,7 @@ def main():
 
     PROPS.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     note = (
-        f"WA State Parcels fallback: targeted {len(targets)} King County gap rows; matched {matched}; "
+        f"WA State Parcels orphan fallback: targeted {len(targets)} King County rows; matched {matched}; "
         f"changed {changed}; recovered value {value_recovered}, coordinates {coord_recovered}, address {address_recovered}."
     )
     if STATUS.exists():
