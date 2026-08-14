@@ -4,7 +4,7 @@
   "missing_counts": {
     "address": 54,
     "assessed_value": 19,
-    "city_zip": 27,
+    "city_zip": 2,
     "coordinates": 2,
     "legal_description": 2,
     "neighborhood": 2,
@@ -17,12 +17,11 @@
       "parcel_id": "0121059036",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98042",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 201000.0,
@@ -52,12 +51,11 @@
       "parcel_id": "0185000051",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98178",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 165000.0,
@@ -70,12 +68,11 @@
       "parcel_id": "0185000055",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98178",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 127000.0,
@@ -170,12 +167,11 @@
       "parcel_id": "0322059322",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98042",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 295000.0,
@@ -188,12 +184,11 @@
       "parcel_id": "0525069023",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98053",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 634000.0,
@@ -335,12 +330,11 @@
       "parcel_id": "1223049050",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98178",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 7000.0,
@@ -387,12 +381,11 @@
       "parcel_id": "1423069142",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 37000.0,
@@ -405,12 +398,11 @@
       "parcel_id": "1593001210",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98045",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 58000.0,
@@ -522,12 +514,11 @@
       "parcel_id": "1823069237",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98059",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 35000.0,
@@ -669,12 +660,11 @@
       "parcel_id": "2222049066",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98032",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 16000.0,
@@ -737,12 +727,11 @@
       "parcel_id": "2521059032",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98092",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 264000.0,
@@ -902,12 +891,11 @@
       "parcel_id": "2921069015",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98092",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 381000.0,
@@ -920,12 +908,11 @@
       "parcel_id": "2921069018",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98092",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 624000.0,
@@ -970,12 +957,11 @@
       "parcel_id": "3022079006",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98051",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 116000.0,
@@ -1004,12 +990,11 @@
       "parcel_id": "3224079075",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 9000.0,
@@ -1237,12 +1222,11 @@
       "parcel_id": "3623069043",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 34000.0,
@@ -1305,12 +1289,11 @@
       "parcel_id": "3750606873",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 5000.0,
@@ -1323,12 +1306,11 @@
       "parcel_id": "3751600889",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 5000.0,
@@ -1341,12 +1323,11 @@
       "parcel_id": "3751606689",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 65000.0,
@@ -1359,12 +1340,11 @@
       "parcel_id": "3751606695",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 52000.0,
@@ -1475,12 +1455,11 @@
       "parcel_id": "4046710650",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98014",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 210000.0,
@@ -1493,12 +1472,11 @@
       "parcel_id": "4053200990",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98042",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 318000.0,
@@ -1641,12 +1619,11 @@
       "parcel_id": "5229300235",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98059",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 354000.0,
@@ -1723,12 +1700,11 @@
       "parcel_id": "5561100420",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 85000.0,
@@ -2300,12 +2276,11 @@
       "parcel_id": "8807810290",
       "missing": [
         "address",
-        "city_zip",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County parcel centroid",
-      "city": null,
+      "city": "King County",
       "zip": "98053",
       "property_type": "Vacant(Single-family)                             ",
       "assessed_value": 392000.0,

@@ -688,7 +688,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98042",
       "latitude": 47.337498223731494,
       "longitude": -122.12067495639195,
@@ -719,7 +719,8 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -847,7 +848,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98178",
       "latitude": 47.49225551852127,
       "longitude": -122.26375996062787,
@@ -876,7 +877,8 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -924,7 +926,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98178",
       "latitude": 47.49246607114892,
       "longitude": -122.26401105122521,
@@ -955,7 +957,8 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -1409,7 +1412,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98042",
       "latitude": 47.418201900817515,
       "longitude": -122.14433605441499,
@@ -1440,7 +1443,8 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -1488,7 +1492,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98053",
       "latitude": 47.68802280165946,
       "longitude": -122.0589267676085,
@@ -1519,7 +1523,8 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -2213,7 +2218,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98178",
       "latitude": 47.49922403759567,
       "longitude": -122.24513219967479,
@@ -2244,7 +2249,8 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -2449,7 +2455,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "latitude": 47.47759906700083,
       "longitude": -122.00754715964464,
@@ -2480,7 +2486,8 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -2524,7 +2531,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98045",
       "latitude": 47.50769639652696,
       "longitude": -121.77942517026688,
@@ -2555,7 +2562,8 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 15.3% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -3070,7 +3078,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98059",
       "latitude": 47.480445795358335,
       "longitude": -122.08032409210627,
@@ -3101,7 +3109,8 @@
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -3624,7 +3633,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98032",
       "latitude": 47.38412459039254,
       "longitude": -122.28100210464908,
@@ -3653,7 +3662,8 @@
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -3939,7 +3949,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98092",
       "latitude": 47.285538643910904,
       "longitude": -122.10251572130207,
@@ -3970,7 +3980,8 @@
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -4729,7 +4740,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98092",
       "latitude": 47.27498803351195,
       "longitude": -122.0766387790658,
@@ -4758,7 +4769,8 @@
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -4804,7 +4816,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98092",
       "latitude": 47.274510124788165,
       "longitude": -122.07264310748252,
@@ -4833,7 +4845,8 @@
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -5035,7 +5048,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98051",
       "latitude": 47.36902877377365,
       "longitude": -121.97353072281403,
@@ -5066,7 +5079,8 @@
         "2.1% housing vacancy proxy",
         "median rent \u2248 15.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -5196,7 +5210,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "latitude": 47.523907493790986,
       "longitude": -121.94099876758524,
@@ -5227,7 +5241,8 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -6300,7 +6315,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "latitude": 47.43530321382211,
       "longitude": -121.97311175350114,
@@ -6329,7 +6344,8 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -6622,7 +6638,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "latitude": 47.25804272347302,
       "longitude": -122.27891952863696,
@@ -6651,7 +6667,8 @@
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -6702,7 +6719,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "latitude": 47.29090589172281,
       "longitude": -122.2666828874155,
@@ -6733,7 +6750,8 @@
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -6781,7 +6799,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "latitude": 47.27174919936566,
       "longitude": -122.26195562712813,
@@ -6812,7 +6830,8 @@
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -6860,7 +6879,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98001",
       "latitude": 47.269512088882294,
       "longitude": -122.26241031791827,
@@ -6891,7 +6910,8 @@
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -7408,7 +7428,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98014",
       "latitude": 47.69788768106545,
       "longitude": -121.92167602883856,
@@ -7439,7 +7459,8 @@
         "2.0% housing vacancy proxy",
         "median rent \u2248 13.3% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -7483,7 +7504,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98042",
       "latitude": 47.31985536872578,
       "longitude": -122.08558625851222,
@@ -7514,7 +7535,8 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -8201,7 +8223,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98059",
       "latitude": 47.49807104225137,
       "longitude": -122.11681094556236,
@@ -8232,7 +8254,8 @@
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -8595,7 +8618,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98027",
       "latitude": 47.455790657720804,
       "longitude": -121.99267696680732,
@@ -8626,7 +8649,8 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -11339,7 +11363,7 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "city": null,
+      "city": "King County",
       "zip": "98053",
       "latitude": 47.66054139291322,
       "longitude": -122.05281133326334,
@@ -11370,7 +11394,8 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "coordinate_source": "King County parcel centroid"
+      "coordinate_source": "King County parcel centroid",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
