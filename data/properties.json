@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T11:22:42.814623+00:00",
+  "updated_at": "2026-08-14T11:25:54.605053+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -5638,8 +5638,8 @@
       "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98148",
-      "latitude": 47.4459693,
-      "longitude": -122.33218713,
+      "latitude": 47.44600433,
+      "longitude": -122.33079983,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8107,8 +8107,8 @@
       "tax_due_normalized": true,
       "city": "FEDERAL WAY",
       "zip": "98023",
-      "latitude": 47.30294778,
-      "longitude": -122.34524433,
+      "latitude": 47.30373142,
+      "longitude": -122.34513989,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
