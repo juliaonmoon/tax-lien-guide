@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "scripts/add_more_tax_lien_states.py"
+      - "scripts/add_mississippi_tax_lien.py"
       - "scripts/refresh_coconino_tax_liens.py"
       - ".github/workflows/add-more-tax-liens.yml"
 
@@ -25,6 +26,8 @@ jobs:
         run: pip install requests pdfplumber
       - name: Add verified tax lien states
         run: python scripts/add_more_tax_lien_states.py
+      - name: Add Mississippi DeSoto tax lien market
+        run: python scripts/add_mississippi_tax_lien.py
       - name: Refresh Coconino Arizona OTC tax liens
         run: python scripts/refresh_coconino_tax_liens.py
       - name: Commit guide and tax-lien feed updates
