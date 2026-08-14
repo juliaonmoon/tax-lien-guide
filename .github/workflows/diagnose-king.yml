@@ -21,7 +21,7 @@ jobs:
         run: python scripts/diagnose_king_gaps.py
       - name: Commit gap report
         run: |
-          if git diff --quiet -- data/king-gaps.json; then
+          if [ -z "$(git status --porcelain -- data/king-gaps.json)" ]; then
             echo "No diagnostic changes."
             exit 0
           fi
