@@ -1,0 +1,36 @@
+name: Add more tax lien states
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/add_more_tax_lien_states.py"
+      - ".github/workflows/add-more-tax-liens.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Add verified tax lien states
+        run: python scripts/add_more_tax_lien_states.py
+      - name: Commit guide update
+        run: |
+          if [ -z "$(git status --porcelain -- index.html)" ]; then
+            echo "No guide changes."
+            exit 0
+          fi
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html
+          git commit -m "feat: add Alabama and Nebraska tax lien markets"
+          git pull --rebase origin main
+          git push origin main
