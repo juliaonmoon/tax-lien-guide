@@ -50,6 +50,8 @@ jobs:
         run: python scripts/fix_king_coordinates.py
       - name: Recover King County city and ZIP from coordinates
         run: python scripts/fix_king_area_from_coordinates.py
+      - name: Recover basic fields for King County GIS-orphan parcels
+        run: python scripts/fix_king_orphan_public_fallbacks.py
       - name: Diagnose remaining King County gaps
         run: python scripts/diagnose_king_gaps.py
       - name: Commit refreshed data
