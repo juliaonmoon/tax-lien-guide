@@ -3,7 +3,7 @@
   "king_count": 145,
   "missing_counts": {
     "address": 54,
-    "assessed_value": 19,
+    "assessed_value": 2,
     "coordinates": 2,
     "legal_description": 2,
     "neighborhood": 2,
@@ -68,25 +68,8 @@
       "8807810290"
     ],
     "assessed_value": [
-      "1420000290",
-      "1766002130",
       "2188201795",
-      "2188201800",
-      "2596200050",
-      "2867401020",
-      "3274870250",
-      "3307850540",
-      "3589002570",
-      "3894800180",
-      "6075502410",
-      "6108450110",
-      "6390000220",
-      "6390000360",
-      "6390000370",
-      "6649350050",
-      "6780800400",
-      "7243300400",
-      "8944500610"
+      "2188201800"
     ],
     "coordinates": [
       "2188201795",
@@ -669,7 +652,6 @@
     {
       "parcel_id": "1420000290",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -677,10 +659,10 @@
       "city": "BELLEVUE",
       "zip": "98008",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "CASA HERMOSA CONDOMINIUM PCT OF VALUE 2.2985 & P-38",
       "tax_status": "T",
       "tax_due_estimate": 5521.53,
@@ -806,7 +788,6 @@
     {
       "parcel_id": "1766002130",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -814,10 +795,10 @@
       "city": "SEATTLE",
       "zip": "98101",
       "property_type": "Condominium(Mixed Use)                            ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "COSMOPOLITAN THE CONDOMINIUM PCT UND INT  0.56",
       "tax_status": "T",
       "tax_due_estimate": 43612.75,
@@ -1111,7 +1092,6 @@
     {
       "parcel_id": "2596200050",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -1119,10 +1099,10 @@
       "city": "FEDERAL WAY",
       "zip": "98003",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "FOREST LANE CONDOMINIUM PCT UND INT  1.08",
       "tax_status": "T",
       "tax_due_estimate": 17081.01,
@@ -1265,7 +1245,6 @@
     {
       "parcel_id": "2867401020",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -1273,10 +1252,10 @@
       "city": "SEATTLE",
       "zip": "98121",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "GRANDVIEW CONDOMINIUM PCT OF VALUE 1.5665",
       "tax_status": "T",
       "tax_due_estimate": 52421.14,
@@ -1441,7 +1420,6 @@
     {
       "parcel_id": "3274870250",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -1449,10 +1427,10 @@
       "city": "BELLEVUE",
       "zip": "98005",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "HIDDEN CREEK CONDOMINIUM PCT UND INT  0.8400",
       "tax_status": "T",
       "tax_due_estimate": 16535.39,
@@ -1461,7 +1439,6 @@
     {
       "parcel_id": "3307850540",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -1469,10 +1446,10 @@
       "city": "SEATTLE",
       "zip": "98148",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "HIGHPOINTER COND PCT OF VAL .6443",
       "tax_status": "T",
       "tax_due_estimate": 10242.75,
@@ -1656,7 +1633,6 @@
     {
       "parcel_id": "3589002570",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -1664,10 +1640,10 @@
       "city": "SEATTLE",
       "zip": "98121",
       "property_type": "Condominium(Mixed Use)                            ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "INSIGNIA CONDOMINIUM PCT UND INT  0.1419",
       "tax_status": "T",
       "tax_due_estimate": 4304.92,
@@ -1854,7 +1830,6 @@
     {
       "parcel_id": "3894800180",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -1862,10 +1837,10 @@
       "city": "KIRKLAND",
       "zip": "98034",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "KIRKLAND PLACE CONDOMINIUM PCT UND INT  1.00",
       "tax_status": "T",
       "tax_due_estimate": 1805.0,
@@ -2261,7 +2236,6 @@
     {
       "parcel_id": "6075502410",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2269,10 +2243,10 @@
       "city": "SEATTLE",
       "zip": "98101",
       "property_type": "Condominium(Mixed Use)                            ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
       "tax_status": "T",
       "tax_due_estimate": 27278.22,
@@ -2281,7 +2255,6 @@
     {
       "parcel_id": "6108450110",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2289,10 +2262,10 @@
       "city": "SEATTLE",
       "zip": "98104",
       "property_type": "Condominium(Office)                               ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 9.0,
+      "land_value": 9.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "NORDSTROM E J MED TOWER CONDO PCT UND INT  1.45",
       "tax_status": "T",
       "tax_due_estimate": 6469.56,
@@ -2340,7 +2313,6 @@
     {
       "parcel_id": "6390000220",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2348,10 +2320,10 @@
       "city": "BELLEVUE",
       "zip": "98004",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "101 MEYDENBAUER CONDO PERCENTAGE OF VALUE 3.47",
       "tax_status": "T",
       "tax_due_estimate": 86887.28,
@@ -2360,7 +2332,6 @@
     {
       "parcel_id": "6390000360",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2368,10 +2339,10 @@
       "city": "BELLEVUE",
       "zip": "98004",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "tax_status": "T",
       "tax_due_estimate": 997.55,
@@ -2380,7 +2351,6 @@
     {
       "parcel_id": "6390000370",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2388,10 +2358,10 @@
       "city": "BELLEVUE",
       "zip": "98004",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "tax_status": "T",
       "tax_due_estimate": 997.55,
@@ -2400,7 +2370,6 @@
     {
       "parcel_id": "6649350050",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2408,10 +2377,10 @@
       "city": "SEATTLE",
       "zip": "98199",
       "property_type": "Condominium(Mixed Use)                            ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "PARKSIDE LOFTS CONDOMINIUM PCT UND INT  8.00",
       "tax_status": "T",
       "tax_due_estimate": 6765.82,
@@ -2420,7 +2389,6 @@
     {
       "parcel_id": "6780800400",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2428,10 +2396,10 @@
       "city": "SEATTLE",
       "zip": "98119",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "PIERRE MARQUIS CONDOMINIUM PCT OF VALUE 2.03",
       "tax_status": "T",
       "tax_due_estimate": 2261.4,
@@ -2576,7 +2544,6 @@
     {
       "parcel_id": "7243300400",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2584,10 +2551,10 @@
       "city": "RENTON",
       "zip": "98057",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "tax_status": "T",
       "tax_due_estimate": 10185.25,
@@ -2980,7 +2947,6 @@
     {
       "parcel_id": "8944500610",
       "missing": [
-        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2988,10 +2954,10 @@
       "city": "KENT",
       "zip": "98032",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": null,
-      "land_value": null,
+      "assessed_value": 7.0,
+      "land_value": 7.0,
       "improvement_value": null,
-      "value_basis": null,
+      "value_basis": "King County eReal Property appraised value",
       "legal_description": "VILLAGE ON JAMES ST CONDOMINIUM PCT UND INT  0.7962",
       "tax_status": "T",
       "tax_due_estimate": 367.17,

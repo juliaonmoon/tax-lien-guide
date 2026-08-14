@@ -2409,8 +2409,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "15721 NE 18TH ST, BELLEVUE, WA, 98008",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -2421,8 +2421,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1420000290",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1420000290",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=1420000290",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "CASA HERMOSA CONDOMINIUM PCT OF VALUE 2.2985 & P-38",
       "account_number": "142000029009",
       "tax_status": "T",
@@ -2478,7 +2478,9 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 16.7% of median income"
       ],
-      "condo_parent_parcel": "1420000000"
+      "condo_parent_parcel": "1420000000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -2977,8 +2979,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "819 VIRGINIA ST, SEATTLE, WA, 98101",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Mixed Use)                            ",
@@ -2989,8 +2991,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1766002130",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1766002130",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=1766002130",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "COSMOPOLITAN THE CONDOMINIUM PCT UND INT  0.56",
       "account_number": "176600213001",
       "tax_status": "T",
@@ -3047,7 +3049,9 @@
         "13.7% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "condo_parent_parcel": "1766000000"
+      "condo_parent_parcel": "1766000000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -4131,8 +4135,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "2100 S 336TH ST, FEDERAL WAY, WA, 98003",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -4143,8 +4147,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2596200050",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2596200050",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=2596200050",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "FOREST LANE CONDOMINIUM PCT UND INT  1.08",
       "account_number": "259620005001",
       "tax_status": "T",
@@ -4200,7 +4204,9 @@
         "4.9% housing vacancy proxy",
         "median rent \u2248 27.5% of median income"
       ],
-      "condo_parent_parcel": "2596200000"
+      "condo_parent_parcel": "2596200000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -4789,8 +4795,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "2201 3RD AVE, SEATTLE, WA, 98121",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -4801,8 +4807,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2867401020",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2867401020",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=2867401020",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "GRANDVIEW CONDOMINIUM PCT OF VALUE 1.5665",
       "account_number": "286740102004",
       "tax_status": "T",
@@ -4859,7 +4865,9 @@
         "14.4% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "2867400000"
+      "condo_parent_parcel": "2867400000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -5525,8 +5533,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "12701 NE 9TH PL, BELLEVUE, WA, 98005",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -5537,8 +5545,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3274870250",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3274870250",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=3274870250",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "HIDDEN CREEK CONDOMINIUM PCT UND INT  0.8400",
       "account_number": "327487025006",
       "tax_status": "T",
@@ -5595,7 +5603,9 @@
         "4.3% housing vacancy proxy",
         "median rent \u2248 17.8% of median income"
       ],
-      "condo_parent_parcel": "3274870000"
+      "condo_parent_parcel": "3274870000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -5607,8 +5617,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "17431 AMBAUM BLVD S, SEATTLE, WA, 98148",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -5619,8 +5629,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3307850540",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3307850540",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=3307850540",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "HIGHPOINTER COND PCT OF VAL .6443",
       "account_number": "330785054009",
       "tax_status": "T",
@@ -5676,7 +5686,9 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "condo_parent_parcel": "3307850000"
+      "condo_parent_parcel": "3307850000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -6424,8 +6436,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "2305 6TH AVE, SEATTLE, WA, 98121",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Mixed Use)                            ",
@@ -6436,8 +6448,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3589002570",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3589002570",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=3589002570",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "INSIGNIA CONDOMINIUM PCT UND INT  0.1419",
       "account_number": "358900257009",
       "tax_status": "T",
@@ -6489,7 +6501,9 @@
         "14.4% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "3589000000"
+      "condo_parent_parcel": "3589000000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -7254,8 +7268,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "11115 NE 124TH LN, KIRKLAND, WA, 98034",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -7266,8 +7280,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3894800180",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3894800180",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=3894800180",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "KIRKLAND PLACE CONDOMINIUM PCT UND INT  1.00",
       "account_number": "389480018008",
       "tax_status": "T",
@@ -7319,7 +7333,9 @@
         "5.9% housing vacancy proxy",
         "median rent \u2248 21.1% of median income"
       ],
-      "condo_parent_parcel": "3894800000"
+      "condo_parent_parcel": "3894800000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -8977,8 +8993,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "1808 MINOR AVE, SEATTLE, WA, 98101",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Mixed Use)                            ",
@@ -8989,8 +9005,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6075502410",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6075502410",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=6075502410",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
       "account_number": "607550241006",
       "tax_status": "T",
@@ -9046,7 +9062,9 @@
         "13.7% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "condo_parent_parcel": "6075500000"
+      "condo_parent_parcel": "6075500000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -9058,8 +9076,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 9.0,
+      "market_value": 9.0,
       "address": "1321 MADISON ST, SEATTLE, WA, 98104",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Office)                               ",
@@ -9070,8 +9088,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6108450110",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6108450110",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=6108450110",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "NORDSTROM E J MED TOWER CONDO PCT UND INT  1.45",
       "account_number": "610845011002",
       "tax_status": "T",
@@ -9123,7 +9141,9 @@
         "15.8% housing vacancy proxy",
         "median rent \u2248 30.4% of median income"
       ],
-      "condo_parent_parcel": "6108450000"
+      "condo_parent_parcel": "6108450000",
+      "land_value": 9.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -9291,8 +9311,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "101 101ST AVE SE, BELLEVUE, WA, 98004",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -9303,8 +9323,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6390000220",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6390000220",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=6390000220",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "101 MEYDENBAUER CONDO PERCENTAGE OF VALUE 3.47",
       "account_number": "639000022009",
       "tax_status": "T",
@@ -9361,7 +9381,9 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "6390000000"
+      "condo_parent_parcel": "6390000000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -9373,8 +9395,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "101 101ST AVE SE, BELLEVUE, WA, 98004",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -9385,8 +9407,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6390000360",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6390000360",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=6390000360",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "account_number": "639000036009",
       "tax_status": "T",
@@ -9443,7 +9465,9 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "6390000000"
+      "condo_parent_parcel": "6390000000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -9455,8 +9479,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "101 101ST AVE SE, BELLEVUE, WA, 98004",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -9467,8 +9491,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6390000370",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6390000370",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=6390000370",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "account_number": "639000037007",
       "tax_status": "T",
@@ -9525,7 +9549,9 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "6390000000"
+      "condo_parent_parcel": "6390000000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -9537,8 +9563,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "2555 21ST AVE W, SEATTLE, WA, 98199",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Mixed Use)                            ",
@@ -9549,8 +9575,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6649350050",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6649350050",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=6649350050",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "PARKSIDE LOFTS CONDOMINIUM PCT UND INT  8.00",
       "account_number": "664935005002",
       "tax_status": "T",
@@ -9610,7 +9636,9 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 16.4% of median income"
       ],
-      "condo_parent_parcel": "6649350000"
+      "condo_parent_parcel": "6649350000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -9622,8 +9650,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "2253 GILMAN DR W, SEATTLE, WA, 98119",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -9634,8 +9662,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6780800400",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6780800400",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=6780800400",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "PIERRE MARQUIS CONDOMINIUM PCT OF VALUE 2.03",
       "account_number": "678080040002",
       "tax_status": "T",
@@ -9687,7 +9715,9 @@
         "10.2% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "condo_parent_parcel": "6780800000"
+      "condo_parent_parcel": "6780800000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -10273,8 +10303,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "225 LOGAN AVE S, RENTON, WA, 98057",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -10285,8 +10315,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7243300400",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7243300400",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=7243300400",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "account_number": "724330040002",
       "tax_status": "T",
@@ -10342,7 +10372,9 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 31.6% of median income"
       ],
-      "condo_parent_parcel": "7243300000"
+      "condo_parent_parcel": "7243300000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
@@ -11983,8 +12015,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "6611 S 238TH PL, KENT, WA, 98032",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -11995,8 +12027,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=8944500610",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=8944500610",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=8944500610",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "VILLAGE ON JAMES ST CONDOMINIUM PCT UND INT  0.7962",
       "account_number": "894450061003",
       "tax_status": "T",
@@ -12048,7 +12080,9 @@
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
       ],
-      "condo_parent_parcel": "8944500000"
+      "condo_parent_parcel": "8944500000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value"
     },
     {
       "state": "WA",
