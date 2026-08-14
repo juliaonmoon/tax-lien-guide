@@ -32,7 +32,7 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "checked_at": "2026-08-14T13:24:08.442841+00:00",
       "ok": true,
-      "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145. King County eReal assessed-value fallback: attempted 0 missing-value parcels; site reachable for 0; recovered 0; failures none."
+      "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145. King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145. King County eReal assessed-value fallback: attempted 0 missing-value parcels; site reachable for 0; recovered 0; failures none."
     }
   ],
   "notes": [
@@ -51,6 +51,10 @@
     "King County eReal assessed-value fallback: attempted 19 missing-value parcels; site reachable for 19; recovered 17; failures none.",
     "WA State Parcels orphan fallback: targeted 2 King County rows; matched 2; changed 2; recovered value 2, coordinates 2, address 0.",
     "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145.",
+    "King County eReal assessed-value fallback: attempted 0 missing-value parcels; site reachable for 0; recovered 0; failures none.",
+    "WA State Parcels orphan fallback: targeted 0 King County rows; matched 0; changed 0; recovered value 0, coordinates 0, address 0.",
+    "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145.",
+    "King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145.",
     "King County eReal assessed-value fallback: attempted 0 missing-value parcels; site reachable for 0; recovered 0; failures none."
   ]
 }
