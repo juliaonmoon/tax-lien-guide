@@ -1,0 +1,33 @@
+name: Diagnose King County data gaps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/diagnose_king_gaps.py"
+      - ".github/workflows/diagnose-king.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build King County gap report
+        run: python scripts/diagnose_king_gaps.py
+      - name: Commit gap report
+        run: |
+          if git diff --quiet -- data/king-gaps.json; then
+            echo "No diagnostic changes."
+            exit 0
+          fi
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/king-gaps.json
+          git commit -m "chore: update King County gap report"
+          git pull --rebase origin main
+          git push origin main
