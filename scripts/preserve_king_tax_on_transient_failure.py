@@ -14,6 +14,9 @@ FIELDS = [
     "bill_year",
     "tax_due_estimate",
     "delinquent_years",
+    "tax_due_basis",
+    "tax_due_currency",
+    "tax_due_normalized",
 ]
 
 
