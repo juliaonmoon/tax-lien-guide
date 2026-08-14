@@ -1,0 +1,39 @@
+name: Test King County eReal value fallback
+
+on:
+  push:
+    paths:
+      - ".github/workflows/test-king-ereal.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-ereal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Test official King County eReal value recovery
+        run: python scripts/fix_king_ereal_values.py
+      - name: Rebuild King County gap report
+        run: python scripts/diagnose_king_gaps.py
+      - name: Publish verified data changes
+        run: |
+          if git diff --quiet -- data/; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git commit -m "chore: verify King County eReal value fallback"
+          git pull --rebase origin main
+          git push origin main
