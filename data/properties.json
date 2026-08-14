@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T23:16:20.268940+00:00",
+  "updated_at": "2026-08-14T23:19:42.874163+00:00",
   "prototype": true,
   "properties": [
     {
@@ -7880,18 +7880,12 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax receivables",
+      "enrichment_note": "legal description, tax lookup ReadTimeout",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=4053200990",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=4053200990",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "LAKE MORTON TRS SELY 1/2",
       "account_number": "405320099006",
-      "tax_status": "T",
-      "bill_year": "2026",
-      "tax_due_estimate": 1740.95,
-      "delinquent_years": [
-        "2026"
-      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -7902,9 +7896,16 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 1740.95,
+      "delinquent_years": [
+        "2026"
+      ],
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
+      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "latitude": 47.31985536872578,
       "longitude": -122.08558625851222,
       "coordinate_source": "King County parcel centroid",

@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-14T23:16:20.268940+00:00",
+  "source_updated_at": "2026-08-14T23:19:42.874163+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1933,7 +1933,7 @@
       "legal_description": "LAKE MORTON TRS SELY 1/2",
       "tax_status": "T",
       "tax_due_estimate": 1740.95,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "4166600465",
