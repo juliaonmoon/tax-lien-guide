@@ -29,6 +29,8 @@ jobs:
         run: python scripts/fix_king_condo_parent.py
       - name: Test official King County eReal value recovery
         run: python scripts/fix_king_ereal_values.py
+      - name: Fill missing tax status from official foreclosure list
+        run: python scripts/fix_king_foreclosure_status.py
       - name: Rebuild King County gap report
         run: python scripts/diagnose_king_gaps.py
       - name: Publish verified data changes
