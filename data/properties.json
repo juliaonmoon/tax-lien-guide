@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T07:14:47.389356+00:00",
+  "updated_at": "2026-08-14T07:18:57.717088+00:00",
   "prototype": true,
   "properties": [
     {
@@ -22,7 +22,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -54,7 +54,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -86,7 +86,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -118,7 +118,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -150,7 +150,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -182,7 +182,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -214,7 +214,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -246,7 +246,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -278,7 +278,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -310,7 +310,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -342,7 +342,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -374,7 +374,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -406,7 +406,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -470,7 +470,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -502,7 +502,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -534,7 +534,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -566,7 +566,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -598,7 +598,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -620,23 +620,28 @@
       "sale_status": "For Sale",
       "opening_bid": null,
       "opening_bid_note": "Not published on Tarrant County's monthly sale listing",
-      "assessed_value": null,
-      "market_value": null,
-      "address": null,
-      "owner": null,
-      "property_type": null,
+      "assessed_value": 219510.0,
+      "market_value": 219510.0,
+      "address": "5212 CAROL AVE, FORT WORTH, TX",
+      "owner": "RODRIGUEZ BARAJAS RAFAEL and RODRIGUEZ GRACIE MARIE",
+      "property_type": "A - Residential SingleFamily Georeference : 40820 - 2 - 4R Subdivision : SUNRISE ADDITION Neighborhood Code : 1H040N TADMap : 2078-380 Mapsco : TAR-079T Instrument : Notice Sent Date : 4/15/2026 Notice Value : $219,510 Documents 2026 Documents 2025 Documents Show Documents Forms Residential Appraisal Manual Links Online PIN Request Request Mailing Address Changes TAD Interactive Map Google Maps Tarrant County Tax Office Tarrant County Deed Search Truth in Taxation Quick Links Home My Dashboard Create Account Resources Forms Interactive Maps Calendar Taxpayer Liaison Property Tax Assistance News Data Downloads Rates Reports Public Information Act Request Property Tax Transparency in Texas About Board of Directors Tarrant Appraisal Review Board Careers Procurement Quick Links Take A Survey Contact Us Contact Tarrant Appraisal District 2500 Handley-Ederville Road Fort Worth, Texas 76118-6909 (817) 284-0024 Business Hours Monday - Friday 8:00am - 5:00pm \u00a9 2026 Tarrant Appraisal District",
       "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "Enriched from Tarrant Appraisal District",
+      "appraisal_url": "https://www.tad.org/search-results?query=40465160&searchType=AccountNumber",
+      "appraisal_source": "Tarrant Appraisal District",
+      "city": "FORT WORTH",
       "research_priority": {
-        "score": 45,
-        "label": "Medium research priority",
+        "score": 35,
+        "label": "Low research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "Not published on Tarrant County's monthly sale listing",
+          "recognizable residential property type",
+          "special-use parcel needs extra review",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
@@ -691,7 +696,7 @@
       "city": null,
       "zip": "98042",
       "latitude": 47.337498223731494,
-      "longitude": null,
+      "longitude": -122.12067495639195,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -718,7 +723,8 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -770,7 +776,7 @@
       "city": "SAMMAMISH",
       "zip": "98075",
       "latitude": 47.59769287247285,
-      "longitude": null,
+      "longitude": -121.98790959999725,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -795,7 +801,8 @@
         "12.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -848,7 +855,7 @@
       "city": null,
       "zip": "98178",
       "latitude": 47.49225551852127,
-      "longitude": null,
+      "longitude": -122.26375996062787,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -873,7 +880,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -924,7 +932,7 @@
       "city": null,
       "zip": "98178",
       "latitude": 47.49246607114892,
-      "longitude": null,
+      "longitude": -122.26401105122521,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -951,7 +959,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1011,7 +1020,7 @@
       "city": "KENT",
       "zip": "98032",
       "latitude": 47.3673410177517,
-      "longitude": null,
+      "longitude": -122.24854597526664,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1036,7 +1045,8 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1096,7 +1106,7 @@
       "city": "KENT",
       "zip": "98032",
       "latitude": 47.367352419322344,
-      "longitude": null,
+      "longitude": -122.24846240790889,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1121,7 +1131,8 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1172,7 +1183,7 @@
       "city": "VASHON",
       "zip": "98070",
       "latitude": 47.43022988,
-      "longitude": null,
+      "longitude": -122.50539606,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1199,7 +1210,8 @@
         "17.3% renter share",
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1246,7 +1258,7 @@
       "city": "SEATAC",
       "zip": "98188",
       "latitude": 47.42704406,
-      "longitude": null,
+      "longitude": -122.28015766,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1273,7 +1285,8 @@
         "58.5% renter share",
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1325,7 +1338,7 @@
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.28442789,
-      "longitude": null,
+      "longitude": -122.21365543,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1352,7 +1365,8 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1403,7 +1417,7 @@
       "city": null,
       "zip": "98042",
       "latitude": 47.418201900817515,
-      "longitude": null,
+      "longitude": -122.14433605441499,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1430,7 +1444,8 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1481,7 +1496,7 @@
       "city": null,
       "zip": "98053",
       "latitude": 47.68802280165946,
-      "longitude": null,
+      "longitude": -122.0589267676085,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1508,7 +1523,8 @@
         "15.2% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1559,7 +1575,7 @@
       "city": "KENT",
       "zip": "98042",
       "latitude": 47.34335366,
-      "longitude": null,
+      "longitude": -122.0849582,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1586,7 +1602,8 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1637,7 +1654,7 @@
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.44587344,
-      "longitude": null,
+      "longitude": -122.17266692,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1664,7 +1681,8 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1721,7 +1739,7 @@
       "city": "SEATTLE",
       "zip": "98133",
       "latitude": 47.72363696,
-      "longitude": null,
+      "longitude": -122.35268743,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1746,7 +1764,8 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1803,7 +1822,7 @@
       "city": "VASHON",
       "zip": "98070",
       "latitude": 47.40631897,
-      "longitude": null,
+      "longitude": -122.43673656,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1828,7 +1847,8 @@
         "17.3% renter share",
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1881,7 +1901,7 @@
       "city": "BURIEN",
       "zip": "98168",
       "latitude": 47.49865781262317,
-      "longitude": null,
+      "longitude": -122.29845640227286,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1906,7 +1926,8 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1957,7 +1978,7 @@
       "city": "SEATTLE",
       "zip": "98105",
       "latitude": 47.66612937,
-      "longitude": null,
+      "longitude": -122.29592156,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1984,7 +2005,8 @@
         "68.6% renter share",
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2036,7 +2058,7 @@
       "city": "LAKE FOREST PARK",
       "zip": "98155",
       "latitude": 47.7536143,
-      "longitude": null,
+      "longitude": -122.29104729,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2063,7 +2085,8 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2115,7 +2138,7 @@
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.46526813,
-      "longitude": null,
+      "longitude": -122.33427299,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2142,7 +2165,8 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2197,7 +2221,7 @@
       "city": null,
       "zip": "98178",
       "latitude": 47.49922403759567,
-      "longitude": null,
+      "longitude": -122.24513219967479,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2224,7 +2248,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2275,7 +2300,7 @@
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.49741930571216,
-      "longitude": null,
+      "longitude": -122.2682968388696,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2302,7 +2327,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2408,7 +2434,7 @@
       "city": null,
       "zip": "98027",
       "latitude": 47.47759906700083,
-      "longitude": null,
+      "longitude": -122.00754715964464,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2435,7 +2461,8 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2482,7 +2509,7 @@
       "city": null,
       "zip": "98045",
       "latitude": 47.50769639652696,
-      "longitude": null,
+      "longitude": -121.77942517026688,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2509,7 +2536,8 @@
         "16.3% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 15.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2560,7 +2588,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.56663406142077,
-      "longitude": null,
+      "longitude": -122.29020410507101,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2587,7 +2615,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2634,7 +2663,7 @@
       "city": "KENT",
       "zip": "98030",
       "latitude": 47.38444119,
-      "longitude": null,
+      "longitude": -122.2260135,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2661,7 +2690,8 @@
         "47.8% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2715,7 +2745,7 @@
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.48841288,
-      "longitude": null,
+      "longitude": -122.228319,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2740,7 +2770,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2793,7 +2824,7 @@
       "city": "SEATTLE",
       "zip": "98108",
       "latitude": 47.55476264,
-      "longitude": null,
+      "longitude": -122.30457907,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2818,7 +2849,8 @@
         "41.8% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2921,7 +2953,7 @@
       "city": "KENT",
       "zip": "98031",
       "latitude": 47.39249165154263,
-      "longitude": null,
+      "longitude": -122.21671075378339,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2948,7 +2980,8 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2999,7 +3032,7 @@
       "city": null,
       "zip": "98059",
       "latitude": 47.480445795358335,
-      "longitude": null,
+      "longitude": -122.08032409210627,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3026,7 +3059,8 @@
         "23.4% renter share",
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3073,7 +3107,7 @@
       "city": "SEATTLE",
       "zip": "98102",
       "latitude": 47.64177919,
-      "longitude": null,
+      "longitude": -122.31962302,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3100,7 +3134,8 @@
         "73.0% renter share",
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3147,7 +3182,7 @@
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.465712520055995,
-      "longitude": null,
+      "longitude": -122.33308236239621,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3174,7 +3209,8 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3221,7 +3257,7 @@
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.46595448,
-      "longitude": null,
+      "longitude": -122.33345824,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3248,7 +3284,8 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3295,7 +3332,7 @@
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.46579991,
-      "longitude": null,
+      "longitude": -122.33341915,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3322,7 +3359,8 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3465,7 +3503,7 @@
       "city": "FEDERAL WAY",
       "zip": "98023",
       "latitude": 47.26765873,
-      "longitude": null,
+      "longitude": -122.33990844,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3492,7 +3530,8 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3547,7 +3586,7 @@
       "city": null,
       "zip": "98032",
       "latitude": 47.38412459039254,
-      "longitude": null,
+      "longitude": -122.28100210464908,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3572,7 +3611,8 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3619,7 +3659,7 @@
       "city": "SEATTLE",
       "zip": "98106",
       "latitude": 47.566862296733596,
-      "longitude": null,
+      "longitude": -122.36192997843713,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3646,7 +3686,8 @@
         "41.3% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 18.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3698,7 +3739,7 @@
       "city": "SEATTLE",
       "zip": "98106",
       "latitude": 47.56706846309367,
-      "longitude": null,
+      "longitude": -122.36152221668509,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3725,7 +3766,8 @@
         "41.3% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 18.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3782,7 +3824,7 @@
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.4501668,
-      "longitude": null,
+      "longitude": -122.13996148,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3807,7 +3849,8 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3858,7 +3901,7 @@
       "city": null,
       "zip": "98092",
       "latitude": 47.285538643910904,
-      "longitude": null,
+      "longitude": -122.10251572130207,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3885,7 +3928,8 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -4049,7 +4093,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.55673616,
-      "longitude": null,
+      "longitude": -122.28634711,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4076,7 +4120,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4127,7 +4172,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.55688695,
-      "longitude": null,
+      "longitude": -122.28635054,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4154,7 +4199,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4210,7 +4256,7 @@
       "city": "KENT",
       "zip": "98042",
       "latitude": 47.3628360753934,
-      "longitude": null,
+      "longitude": -122.1587048702977,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4237,7 +4283,8 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -4290,7 +4337,7 @@
       "city": "SEATTLE",
       "zip": "98107",
       "latitude": 47.6696534,
-      "longitude": null,
+      "longitude": -122.38931112,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4315,7 +4362,8 @@
         "61.7% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 18.6% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4368,7 +4416,7 @@
       "city": "SEATTLE",
       "zip": "98199",
       "latitude": 47.6386019,
-      "longitude": null,
+      "longitude": -122.38867715,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4393,7 +4441,8 @@
         "36.8% renter share",
         "6.1% housing vacancy proxy",
         "median rent \u2248 16.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4440,7 +4489,7 @@
       "city": "KENT",
       "zip": "98030",
       "latitude": 47.37176584,
-      "longitude": null,
+      "longitude": -122.18118306,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4467,7 +4516,8 @@
         "47.8% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4572,7 +4622,7 @@
       "city": null,
       "zip": "98092",
       "latitude": 47.27498803351195,
-      "longitude": null,
+      "longitude": -122.0766387790658,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4597,7 +4647,8 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -4646,7 +4697,7 @@
       "city": null,
       "zip": "98092",
       "latitude": 47.274510124788165,
-      "longitude": null,
+      "longitude": -122.07264310748252,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4671,7 +4722,8 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -4720,7 +4772,7 @@
       "city": "AUBURN",
       "zip": "98092",
       "latitude": 47.27434694,
-      "longitude": null,
+      "longitude": -122.07559793,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4745,7 +4797,8 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4796,7 +4849,7 @@
       "city": "ISSAQUAH",
       "zip": "98027",
       "latitude": 47.5692295,
-      "longitude": null,
+      "longitude": -122.08987236,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4823,7 +4876,8 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4874,7 +4928,7 @@
       "city": null,
       "zip": "98051",
       "latitude": 47.36902877377365,
-      "longitude": null,
+      "longitude": -121.97353072281403,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4901,7 +4955,8 @@
         "7.1% renter share",
         "2.1% housing vacancy proxy",
         "median rent \u2248 15.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -4955,7 +5010,7 @@
       "city": "MAPLE VALLEY",
       "zip": "98038",
       "latitude": 47.35460793,
-      "longitude": null,
+      "longitude": -122.05642772,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4982,7 +5037,8 @@
         "14.4% renter share",
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5033,7 +5089,7 @@
       "city": null,
       "zip": "98027",
       "latitude": 47.523907493790986,
-      "longitude": null,
+      "longitude": -121.94099876758524,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5060,7 +5116,8 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -5114,7 +5171,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.51969227,
-      "longitude": null,
+      "longitude": -122.2740169,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5141,7 +5198,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5299,7 +5357,7 @@
       "city": "SEATTLE",
       "zip": "98144",
       "latitude": 47.598934405014944,
-      "longitude": null,
+      "longitude": -122.31518823528174,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5326,7 +5384,8 @@
         "54.5% renter share",
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -5379,7 +5438,7 @@
       "city": "AUBURN",
       "zip": "98092",
       "latitude": 47.32262118,
-      "longitude": null,
+      "longitude": -122.19475741,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5404,7 +5463,8 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5455,7 +5515,7 @@
       "city": "RENTON",
       "zip": "98055",
       "latitude": 47.46439641,
-      "longitude": null,
+      "longitude": -122.2148074,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5482,7 +5542,8 @@
         "45.2% renter share",
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5533,7 +5594,7 @@
       "city": "TUKWILA",
       "zip": "98178",
       "latitude": 47.49481528,
-      "longitude": null,
+      "longitude": -122.27918512,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5560,7 +5621,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5611,7 +5673,7 @@
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.49826002825966,
-      "longitude": null,
+      "longitude": -122.2687814376392,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5638,7 +5700,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -5691,7 +5754,7 @@
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.49945164,
-      "longitude": null,
+      "longitude": -122.26740645,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5716,7 +5779,8 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5765,7 +5829,7 @@
       "city": "KENT",
       "zip": "98042",
       "latitude": 47.34750394,
-      "longitude": null,
+      "longitude": -122.15531376,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5790,7 +5854,8 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5844,7 +5909,7 @@
       "city": "SAMMAMISH",
       "zip": "98074",
       "latitude": 47.61912667916789,
-      "longitude": null,
+      "longitude": -122.06786391299643,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5871,7 +5936,8 @@
         "16.3% renter share",
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -5925,7 +5991,7 @@
       "city": "SAMMAMISH",
       "zip": "98074",
       "latitude": 47.62298048852076,
-      "longitude": null,
+      "longitude": -122.06258824069096,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5952,7 +6018,8 @@
         "16.3% renter share",
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6057,7 +6124,7 @@
       "city": null,
       "zip": "98027",
       "latitude": 47.43530321382211,
-      "longitude": null,
+      "longitude": -121.97311175350114,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6082,7 +6149,8 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6134,7 +6202,7 @@
       "city": "SEATTLE",
       "zip": "98133",
       "latitude": 47.70432220501516,
-      "longitude": null,
+      "longitude": -122.35633901727817,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6161,7 +6229,8 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6208,7 +6277,7 @@
       "city": "SEATTLE",
       "zip": "98177",
       "latitude": 47.70336927,
-      "longitude": null,
+      "longitude": -122.35837615,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6235,7 +6304,8 @@
         "13.0% renter share",
         "2.0% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6294,7 +6364,7 @@
       "city": "BELLEVUE",
       "zip": "98006",
       "latitude": 47.547597772591615,
-      "longitude": null,
+      "longitude": -122.19286398220518,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6319,7 +6389,8 @@
         "20.2% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 17.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6375,7 +6446,7 @@
       "city": null,
       "zip": "98001",
       "latitude": 47.25804272347302,
-      "longitude": null,
+      "longitude": -122.27891952863696,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6400,7 +6471,8 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6454,7 +6526,7 @@
       "city": null,
       "zip": "98001",
       "latitude": 47.29090589172281,
-      "longitude": null,
+      "longitude": -122.2666828874155,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6481,7 +6553,8 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6532,7 +6605,7 @@
       "city": null,
       "zip": "98001",
       "latitude": 47.27174919936566,
-      "longitude": null,
+      "longitude": -122.26195562712813,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6559,7 +6632,8 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6610,7 +6684,7 @@
       "city": null,
       "zip": "98001",
       "latitude": 47.269512088882294,
-      "longitude": null,
+      "longitude": -122.26241031791827,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6637,7 +6711,8 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6690,7 +6765,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.54532483,
-      "longitude": null,
+      "longitude": -122.27861869,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6715,7 +6790,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6817,7 +6893,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.51631185,
-      "longitude": null,
+      "longitude": -122.26676642,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6844,7 +6920,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6895,7 +6972,7 @@
       "city": "SHORELINE",
       "zip": "98155",
       "latitude": 47.76663826,
-      "longitude": null,
+      "longitude": -122.32404634,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6922,7 +6999,8 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6973,7 +7051,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.52595387714389,
-      "longitude": null,
+      "longitude": -122.28120957037393,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7000,7 +7078,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7051,7 +7130,7 @@
       "city": "LAKE FOREST PARK",
       "zip": "98155",
       "latitude": 47.7573131,
-      "longitude": null,
+      "longitude": -122.27283204,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7078,7 +7157,8 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7129,7 +7209,7 @@
       "city": null,
       "zip": "98014",
       "latitude": 47.69788768106545,
-      "longitude": null,
+      "longitude": -121.92167602883856,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7156,7 +7236,8 @@
         "8.3% renter share",
         "2.0% housing vacancy proxy",
         "median rent \u2248 13.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7203,7 +7284,7 @@
       "city": null,
       "zip": "98042",
       "latitude": 47.31985536872578,
-      "longitude": null,
+      "longitude": -122.08558625851222,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7230,7 +7311,8 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7281,7 +7363,7 @@
       "city": "FEDERAL WAY",
       "zip": "98023",
       "latitude": 47.330378089016435,
-      "longitude": null,
+      "longitude": -122.37002131975055,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7308,7 +7390,8 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7368,7 +7451,7 @@
       "city": "RENTON",
       "zip": "98055",
       "latitude": 47.43819380683724,
-      "longitude": null,
+      "longitude": -122.19034360542989,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7393,7 +7476,8 @@
         "45.2% renter share",
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7444,7 +7528,7 @@
       "city": "RENTON",
       "zip": "98057",
       "latitude": 47.48713218,
-      "longitude": null,
+      "longitude": -122.22024802,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7471,7 +7555,8 @@
         "74.7% renter share",
         "6.1% housing vacancy proxy",
         "median rent \u2248 31.6% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7581,7 +7666,7 @@
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.29353211,
-      "longitude": null,
+      "longitude": -122.21901982,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7606,7 +7691,8 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7657,7 +7743,7 @@
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.29342242,
-      "longitude": null,
+      "longitude": -122.21901977,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7684,7 +7770,8 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7731,7 +7818,7 @@
       "city": "SEATTLE",
       "zip": "98108",
       "latitude": 47.55810204,
-      "longitude": null,
+      "longitude": -122.31527819,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7758,7 +7845,8 @@
         "41.8% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7812,7 +7900,7 @@
       "city": "REDMOND",
       "zip": "98052",
       "latitude": 47.6545958,
-      "longitude": null,
+      "longitude": -122.12461359,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7837,7 +7925,8 @@
         "55.2% renter share",
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7890,7 +7979,7 @@
       "city": null,
       "zip": "98059",
       "latitude": 47.49807104225137,
-      "longitude": null,
+      "longitude": -122.11681094556236,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7917,7 +8006,8 @@
         "23.4% renter share",
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7968,7 +8058,7 @@
       "city": "SEATTLE",
       "zip": "98168",
       "latitude": 47.50982263,
-      "longitude": null,
+      "longitude": -122.30703967,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7995,7 +8085,8 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8048,7 +8139,7 @@
       "city": "SEATAC",
       "zip": "98188",
       "latitude": 47.45067949,
-      "longitude": null,
+      "longitude": -122.28161652,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8075,7 +8166,8 @@
         "58.5% renter share",
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8179,7 +8271,7 @@
       "city": "LAKE FOREST PARK",
       "zip": "98155",
       "latitude": 47.74916921,
-      "longitude": null,
+      "longitude": -122.2918523,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8206,7 +8298,8 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8257,7 +8350,7 @@
       "city": null,
       "zip": "98027",
       "latitude": 47.455790657720804,
-      "longitude": null,
+      "longitude": -121.99267696680732,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8284,7 +8377,8 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -8439,7 +8533,7 @@
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.43286497949701,
-      "longitude": null,
+      "longitude": -122.17935931011381,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8464,7 +8558,8 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -8511,7 +8606,7 @@
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.43370113,
-      "longitude": null,
+      "longitude": -122.17881655,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8538,7 +8633,8 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8871,7 +8967,7 @@
       "city": "MAPLE VALLEY",
       "zip": "98038",
       "latitude": 47.35672081,
-      "longitude": null,
+      "longitude": -122.04420704,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8898,7 +8994,8 @@
         "14.4% renter share",
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8945,7 +9042,7 @@
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.34525362,
-      "longitude": null,
+      "longitude": -122.32750131,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8972,7 +9069,8 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9025,7 +9123,7 @@
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.35044162074759,
-      "longitude": null,
+      "longitude": -122.32154350681759,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9050,7 +9148,8 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -9103,7 +9202,7 @@
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.35044244195276,
-      "longitude": null,
+      "longitude": -122.32170499639702,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9128,7 +9227,8 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -9181,7 +9281,7 @@
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.352649884798296,
-      "longitude": null,
+      "longitude": -122.321624810409,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9206,7 +9306,8 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -9259,7 +9360,7 @@
       "city": "RENTON",
       "zip": "98056",
       "latitude": 47.50693316,
-      "longitude": null,
+      "longitude": -122.18142429,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9284,7 +9385,8 @@
         "45.7% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 21.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9335,7 +9437,7 @@
       "city": "SEATTLE",
       "zip": "98122",
       "latitude": 47.61634283,
-      "longitude": null,
+      "longitude": -122.3037431,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9362,7 +9464,8 @@
         "71.6% renter share",
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9468,7 +9571,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.53007233750003,
-      "longitude": null,
+      "longitude": -122.28737259176619,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9495,7 +9598,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -9548,7 +9652,7 @@
       "city": "REDMOND",
       "zip": "98053",
       "latitude": 47.6487731,
-      "longitude": null,
+      "longitude": -121.96180318,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9573,7 +9677,8 @@
         "15.2% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9624,7 +9729,7 @@
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.27663847,
-      "longitude": null,
+      "longitude": -122.20654737,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9651,7 +9756,8 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9698,7 +9804,7 @@
       "city": "TUKWILA",
       "zip": "98168",
       "latitude": 47.49383981,
-      "longitude": null,
+      "longitude": -122.28619222,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9725,7 +9831,8 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9776,7 +9883,7 @@
       "city": "TUKWILA",
       "zip": "98168",
       "latitude": 47.486850968063706,
-      "longitude": null,
+      "longitude": -122.28870993606442,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9803,7 +9910,8 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -9854,7 +9962,7 @@
       "city": "SHORELINE",
       "zip": "98133",
       "latitude": 47.75782894,
-      "longitude": null,
+      "longitude": -122.35597848,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9881,7 +9989,8 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9933,7 +10042,7 @@
       "city": "SNOQUALMIE",
       "zip": "98065",
       "latitude": 47.5139584,
-      "longitude": null,
+      "longitude": -121.86783236,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9960,7 +10069,8 @@
         "14.8% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 17.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10009,7 +10119,7 @@
       "city": "SEATTLE",
       "zip": "98136",
       "latitude": 47.55510041,
-      "longitude": null,
+      "longitude": -122.38257543,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10034,7 +10144,8 @@
         "36.0% renter share",
         "5.1% housing vacancy proxy",
         "median rent \u2248 15.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10091,7 +10202,7 @@
       "city": "SEATAC",
       "zip": "98198",
       "latitude": 47.42269269165529,
-      "longitude": null,
+      "longitude": -122.31485933140634,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10118,7 +10229,8 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -10169,7 +10281,7 @@
       "city": "RENTON",
       "zip": "98059",
       "latitude": 47.4857022,
-      "longitude": null,
+      "longitude": -122.1450728,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10196,7 +10308,8 @@
         "23.4% renter share",
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10249,7 +10362,7 @@
       "city": "KENT",
       "zip": "98031",
       "latitude": 47.42051155,
-      "longitude": null,
+      "longitude": -122.21854204,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10274,7 +10387,8 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10325,7 +10439,7 @@
       "city": "SEATTLE",
       "zip": "98117",
       "latitude": 47.68556889,
-      "longitude": null,
+      "longitude": -122.39724173,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10352,7 +10466,8 @@
         "27.4% renter share",
         "4.7% housing vacancy proxy",
         "median rent \u2248 14.3% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10403,7 +10518,7 @@
       "city": "SEATTLE",
       "zip": "98122",
       "latitude": 47.60553728,
-      "longitude": null,
+      "longitude": -122.31125139,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10430,7 +10545,8 @@
         "71.6% renter share",
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10481,7 +10597,7 @@
       "city": "SEATTLE",
       "zip": "98168",
       "latitude": 47.49285877,
-      "longitude": null,
+      "longitude": -122.32040467,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10508,7 +10624,8 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10555,7 +10672,7 @@
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.54757898,
-      "longitude": null,
+      "longitude": -122.2746618,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10582,7 +10699,8 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10638,7 +10756,7 @@
       "city": "KENT",
       "zip": "98031",
       "latitude": 47.41742826,
-      "longitude": null,
+      "longitude": -122.17724222,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10665,7 +10783,8 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10712,7 +10831,7 @@
       "city": "SEATTLE",
       "zip": "98144",
       "latitude": 47.59903705,
-      "longitude": null,
+      "longitude": -122.31560091,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10739,7 +10858,8 @@
         "54.5% renter share",
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10790,7 +10910,7 @@
       "city": null,
       "zip": "98053",
       "latitude": 47.66054139291322,
-      "longitude": null,
+      "longitude": -122.05281133326334,
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10817,7 +10937,8 @@
         "15.2% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ]
+      ],
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -10866,7 +10987,7 @@
       "city": "SEATTLE",
       "zip": "98105",
       "latitude": 47.66329959,
-      "longitude": null,
+      "longitude": -122.30753486,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10891,7 +11012,8 @@
         "68.6% renter share",
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10940,7 +11062,7 @@
       "city": "SEATTLE",
       "zip": "98133",
       "latitude": 47.71003981,
-      "longitude": null,
+      "longitude": -122.35312125,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10965,7 +11087,8 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11120,7 +11243,7 @@
       "city": "REDMOND",
       "zip": "98052",
       "latitude": 47.68405731,
-      "longitude": null,
+      "longitude": -122.11536093,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11147,7 +11270,8 @@
         "55.2% renter share",
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11198,7 +11322,7 @@
       "city": "KENT",
       "zip": "98032",
       "latitude": 47.37806978,
-      "longitude": null,
+      "longitude": -122.23455813,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11225,7 +11349,8 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11276,7 +11401,7 @@
       "city": "SEATTLE",
       "zip": "98122",
       "latitude": 47.60287044,
-      "longitude": null,
+      "longitude": -122.30424279,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11303,7 +11428,8 @@
         "71.6% renter share",
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11355,7 +11481,7 @@
       "city": "SEATTLE",
       "zip": "98102",
       "latitude": 47.62740727,
-      "longitude": null,
+      "longitude": -122.32201689,
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11382,7 +11508,8 @@
         "73.0% renter share",
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ]
+      ],
+      "coordinate_source": "King County address point"
     }
   ]
 }
