@@ -33,6 +33,8 @@ jobs:
         run: python scripts/refresh_properties.py
       - name: Enrich King County area metrics
         run: python scripts/enrich_king_area_metrics.py
+      - name: Recover King County condo parent fields
+        run: python scripts/fix_king_condo_parent.py
       - name: Repair King County coordinates
         run: python scripts/fix_king_coordinates.py
       - name: Commit refreshed data
