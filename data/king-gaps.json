@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-14T19:23:12.758005+00:00",
+  "source_updated_at": "2026-08-14T20:16:25.201933+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2107,7 +2107,7 @@
       "legal_description": "MAY VALLEY DIV # 1 E 35 FT OF 40 ALL 39 LESS C & M RGTS",
       "tax_status": "T",
       "tax_due_estimate": 21579.57,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "5357200012",
