@@ -29,8 +29,12 @@ jobs:
           python-version: "3.12"
       - name: Install parser dependencies
         run: pip install requests beautifulsoup4 pdfplumber
+      - name: Save previous verified property data
+        run: cp data/properties.json /tmp/properties-before-refresh.json
       - name: Refresh official property feeds
         run: python scripts/refresh_properties.py
+      - name: Preserve King County tax fields after transient failures
+        run: python scripts/preserve_king_tax_on_transient_failure.py
       - name: Enrich King County area metrics
         run: python scripts/enrich_king_area_metrics.py
       - name: Recover King County condo parent fields
