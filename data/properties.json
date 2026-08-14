@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T05:42:29.613262+00:00",
+  "updated_at": "2026-08-14T05:56:29.779963+00:00",
   "prototype": true,
   "properties": [
     {
@@ -692,7 +692,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98042",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 127552.0,
+      "median_gross_rent": 2118.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 17.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.9,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.7% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 19.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -740,7 +764,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SAMMAMISH",
+      "zip": "98075",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 250001.0,
+      "median_gross_rent": 3312.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 12.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 15.9,
+      "rentability_score": 57,
+      "neighborhood_value_score": 57,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "12.7% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 15.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -789,7 +837,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98178",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -836,7 +908,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98178",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -892,7 +988,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98032",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 82636.0,
+      "median_gross_rent": 1862.0,
+      "vacancy_proxy_pct": 7.0,
+      "renter_share_pct": 57.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 27.0,
+      "rentability_score": 68,
+      "neighborhood_value_score": 68,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "57.3% renter share",
+        "7.0% housing vacancy proxy",
+        "median rent \u2248 27.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -948,7 +1068,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98032",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 82636.0,
+      "median_gross_rent": 1862.0,
+      "vacancy_proxy_pct": 7.0,
+      "renter_share_pct": 57.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 27.0,
+      "rentability_score": 68,
+      "neighborhood_value_score": 68,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "57.3% renter share",
+        "7.0% housing vacancy proxy",
+        "median rent \u2248 27.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1000,8 +1144,26 @@
       "zip": "98070",
       "latitude": 47.43022988,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 120571.0,
+      "median_gross_rent": 1670.0,
+      "vacancy_proxy_pct": 23.5,
+      "renter_share_pct": 17.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 16.6,
+      "rentability_score": 34,
+      "neighborhood_value_score": 34,
+      "neighborhood_value_label": "Weak",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.3% renter share",
+        "23.5% housing vacancy proxy",
+        "median rent \u2248 16.6% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1049,8 +1211,26 @@
       "zip": "98188",
       "latitude": 47.42704406,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 76438.0,
+      "median_gross_rent": 1678.0,
+      "vacancy_proxy_pct": 8.2,
+      "renter_share_pct": 58.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 26.3,
+      "rentability_score": 65,
+      "neighborhood_value_score": 65,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "58.5% renter share",
+        "8.2% housing vacancy proxy",
+        "median rent \u2248 26.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1103,8 +1283,26 @@
       "zip": "98002",
       "latitude": 47.28442789,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 78684.0,
+      "median_gross_rent": 1659.0,
+      "vacancy_proxy_pct": 5.2,
+      "renter_share_pct": 51.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.3,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.1% renter share",
+        "5.2% housing vacancy proxy",
+        "median rent \u2248 25.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1151,7 +1349,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98042",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 127552.0,
+      "median_gross_rent": 2118.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 17.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.9,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.7% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 19.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1198,7 +1420,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98053",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 192292.0,
+      "median_gross_rent": 2664.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 15.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 16.6,
+      "rentability_score": 57,
+      "neighborhood_value_score": 57,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "15.2% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 16.6% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1250,8 +1496,26 @@
       "zip": "98042",
       "latitude": 47.34335366,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 127552.0,
+      "median_gross_rent": 2118.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 17.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.9,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.7% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 19.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1303,8 +1567,26 @@
       "zip": "98058",
       "latitude": 47.44587344,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 115201.0,
+      "median_gross_rent": 2147.0,
+      "vacancy_proxy_pct": 4.3,
+      "renter_share_pct": 27.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "27.5% renter share",
+        "4.3% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1362,8 +1644,26 @@
       "zip": "98133",
       "latitude": 47.72363696,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 93662.0,
+      "median_gross_rent": 1802.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 51.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.1,
+      "rentability_score": 75,
+      "neighborhood_value_score": 75,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.6% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 23.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1421,8 +1721,26 @@
       "zip": "98070",
       "latitude": 47.40631897,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 120571.0,
+      "median_gross_rent": 1670.0,
+      "vacancy_proxy_pct": 23.5,
+      "renter_share_pct": 17.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 16.6,
+      "rentability_score": 34,
+      "neighborhood_value_score": 34,
+      "neighborhood_value_label": "Weak",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.3% renter share",
+        "23.5% housing vacancy proxy",
+        "median rent \u2248 16.6% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1471,7 +1789,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "BURIEN",
+      "zip": "98168",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 88083.0,
+      "median_gross_rent": 1821.0,
+      "vacancy_proxy_pct": 6.5,
+      "renter_share_pct": 46.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 24.8,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "46.2% renter share",
+        "6.5% housing vacancy proxy",
+        "median rent \u2248 24.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1523,8 +1865,26 @@
       "zip": "98105",
       "latitude": 47.66612937,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 74349.0,
+      "median_gross_rent": 1849.0,
+      "vacancy_proxy_pct": 11.7,
+      "renter_share_pct": 68.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 29.8,
+      "rentability_score": 58,
+      "neighborhood_value_score": 58,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "68.6% renter share",
+        "11.7% housing vacancy proxy",
+        "median rent \u2248 29.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1577,8 +1937,26 @@
       "zip": "98155",
       "latitude": 47.7536143,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 131540.0,
+      "median_gross_rent": 2127.0,
+      "vacancy_proxy_pct": 4.1,
+      "renter_share_pct": 29.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 64,
+      "neighborhood_value_score": 64,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "29.8% renter share",
+        "4.1% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1631,8 +2009,26 @@
       "zip": "98148",
       "latitude": 47.46526813,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 87342.0,
+      "median_gross_rent": 1816.0,
+      "vacancy_proxy_pct": 11.5,
+      "renter_share_pct": 49.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.0,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "49.5% renter share",
+        "11.5% housing vacancy proxy",
+        "median rent \u2248 25.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1683,7 +2079,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98178",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1730,7 +2150,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98178",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1824,7 +2268,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98027",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 153301.0,
+      "median_gross_rent": 2400.0,
+      "vacancy_proxy_pct": 4.2,
+      "renter_share_pct": 32.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.8,
+      "rentability_score": 66,
+      "neighborhood_value_score": 66,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.4% renter share",
+        "4.2% housing vacancy proxy",
+        "median rent \u2248 18.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1867,7 +2335,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98045",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 175765.0,
+      "median_gross_rent": 2238.0,
+      "vacancy_proxy_pct": 4.1,
+      "renter_share_pct": 16.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 15.3,
+      "rentability_score": 55,
+      "neighborhood_value_score": 55,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "16.3% renter share",
+        "4.1% housing vacancy proxy",
+        "median rent \u2248 15.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1914,7 +2406,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -1962,8 +2478,26 @@
       "zip": "98030",
       "latitude": 47.38444119,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 91761.0,
+      "median_gross_rent": 1899.0,
+      "vacancy_proxy_pct": 4.5,
+      "renter_share_pct": 47.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 24.8,
+      "rentability_score": 76,
+      "neighborhood_value_score": 76,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "47.8% renter share",
+        "4.5% housing vacancy proxy",
+        "median rent \u2248 24.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2018,8 +2552,26 @@
       "zip": "98178",
       "latitude": 47.48841288,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2073,8 +2625,26 @@
       "zip": "98108",
       "latitude": 47.55476264,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 95780.0,
+      "median_gross_rent": 1465.0,
+      "vacancy_proxy_pct": 5.5,
+      "renter_share_pct": 41.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.4,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "41.8% renter share",
+        "5.5% housing vacancy proxy",
+        "median rent \u2248 18.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2165,7 +2735,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98031",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 105965.0,
+      "median_gross_rent": 1991.0,
+      "vacancy_proxy_pct": 4.0,
+      "renter_share_pct": 32.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 67,
+      "neighborhood_value_score": 67,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.8% renter share",
+        "4.0% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2212,7 +2806,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98059",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 138654.0,
+      "median_gross_rent": 2322.0,
+      "vacancy_proxy_pct": 2.7,
+      "renter_share_pct": 23.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.1,
+      "rentability_score": 63,
+      "neighborhood_value_score": 63,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "23.4% renter share",
+        "2.7% housing vacancy proxy",
+        "median rent \u2248 20.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2260,8 +2878,26 @@
       "zip": "98102",
       "latitude": 47.64177919,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 114925.0,
+      "median_gross_rent": 1926.0,
+      "vacancy_proxy_pct": 5.4,
+      "renter_share_pct": 73.0,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.1,
+      "rentability_score": 77,
+      "neighborhood_value_score": 77,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "73.0% renter share",
+        "5.4% housing vacancy proxy",
+        "median rent \u2248 20.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2304,7 +2940,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "BURIEN",
+      "zip": "98148",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 87342.0,
+      "median_gross_rent": 1816.0,
+      "vacancy_proxy_pct": 11.5,
+      "renter_share_pct": 49.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.0,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "49.5% renter share",
+        "11.5% housing vacancy proxy",
+        "median rent \u2248 25.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2352,8 +3012,26 @@
       "zip": "98148",
       "latitude": 47.46595448,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 87342.0,
+      "median_gross_rent": 1816.0,
+      "vacancy_proxy_pct": 11.5,
+      "renter_share_pct": 49.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.0,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "49.5% renter share",
+        "11.5% housing vacancy proxy",
+        "median rent \u2248 25.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2401,8 +3079,26 @@
       "zip": "98148",
       "latitude": 47.46579991,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 87342.0,
+      "median_gross_rent": 1816.0,
+      "vacancy_proxy_pct": 11.5,
+      "renter_share_pct": 49.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.0,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "49.5% renter share",
+        "11.5% housing vacancy proxy",
+        "median rent \u2248 25.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2530,8 +3226,26 @@
       "zip": "98023",
       "latitude": 47.26765873,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 104893.0,
+      "median_gross_rent": 1900.0,
+      "vacancy_proxy_pct": 4.4,
+      "renter_share_pct": 34.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 21.7,
+      "rentability_score": 67,
+      "neighborhood_value_score": 67,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "34.4% renter share",
+        "4.4% housing vacancy proxy",
+        "median rent \u2248 21.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2582,7 +3296,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98032",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 82636.0,
+      "median_gross_rent": 1862.0,
+      "vacancy_proxy_pct": 7.0,
+      "renter_share_pct": 57.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 27.0,
+      "rentability_score": 68,
+      "neighborhood_value_score": 68,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "57.3% renter share",
+        "7.0% housing vacancy proxy",
+        "median rent \u2248 27.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2625,7 +3363,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98106",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 124212.0,
+      "median_gross_rent": 1882.0,
+      "vacancy_proxy_pct": 4.4,
+      "renter_share_pct": 41.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.2,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "41.3% renter share",
+        "4.4% housing vacancy proxy",
+        "median rent \u2248 18.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2673,7 +3435,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98106",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 124212.0,
+      "median_gross_rent": 1882.0,
+      "vacancy_proxy_pct": 4.4,
+      "renter_share_pct": 41.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.2,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "41.3% renter share",
+        "4.4% housing vacancy proxy",
+        "median rent \u2248 18.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2731,8 +3517,26 @@
       "zip": "98058",
       "latitude": 47.4501668,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 115201.0,
+      "median_gross_rent": 2147.0,
+      "vacancy_proxy_pct": 4.3,
+      "renter_share_pct": 27.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "27.5% renter share",
+        "4.3% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2779,7 +3583,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98092",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 122300.0,
+      "median_gross_rent": 2055.0,
+      "vacancy_proxy_pct": 3.6,
+      "renter_share_pct": 25.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.2,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "25.7% renter share",
+        "3.6% housing vacancy proxy",
+        "median rent \u2248 20.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2928,8 +3756,26 @@
       "zip": "98118",
       "latitude": 47.55673616,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -2981,8 +3827,26 @@
       "zip": "98118",
       "latitude": 47.55688695,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3034,7 +3898,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98042",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 127552.0,
+      "median_gross_rent": 2118.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 17.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.9,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.7% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 19.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3088,8 +3976,26 @@
       "zip": "98107",
       "latitude": 47.6696534,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 142662.0,
+      "median_gross_rent": 2208.0,
+      "vacancy_proxy_pct": 6.5,
+      "renter_share_pct": 61.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.6,
+      "rentability_score": 74,
+      "neighborhood_value_score": 74,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "61.7% renter share",
+        "6.5% housing vacancy proxy",
+        "median rent \u2248 18.6% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3143,8 +4049,26 @@
       "zip": "98199",
       "latitude": 47.6386019,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 180789.0,
+      "median_gross_rent": 2470.0,
+      "vacancy_proxy_pct": 6.1,
+      "renter_share_pct": 36.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 16.4,
+      "rentability_score": 65,
+      "neighborhood_value_score": 65,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "36.8% renter share",
+        "6.1% housing vacancy proxy",
+        "median rent \u2248 16.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3192,8 +4116,26 @@
       "zip": "98030",
       "latitude": 47.37176584,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 91761.0,
+      "median_gross_rent": 1899.0,
+      "vacancy_proxy_pct": 4.5,
+      "renter_share_pct": 47.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 24.8,
+      "rentability_score": 76,
+      "neighborhood_value_score": 76,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "47.8% renter share",
+        "4.5% housing vacancy proxy",
+        "median rent \u2248 24.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3286,7 +4228,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98092",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 122300.0,
+      "median_gross_rent": 2055.0,
+      "vacancy_proxy_pct": 3.6,
+      "renter_share_pct": 25.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.2,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "25.7% renter share",
+        "3.6% housing vacancy proxy",
+        "median rent \u2248 20.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3331,7 +4297,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98092",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 122300.0,
+      "median_gross_rent": 2055.0,
+      "vacancy_proxy_pct": 3.6,
+      "renter_share_pct": 25.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.2,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "25.7% renter share",
+        "3.6% housing vacancy proxy",
+        "median rent \u2248 20.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3381,8 +4371,26 @@
       "zip": "98092",
       "latitude": 47.27434694,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 122300.0,
+      "median_gross_rent": 2055.0,
+      "vacancy_proxy_pct": 3.6,
+      "renter_share_pct": 25.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.2,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "25.7% renter share",
+        "3.6% housing vacancy proxy",
+        "median rent \u2248 20.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3434,8 +4442,26 @@
       "zip": "98027",
       "latitude": 47.5692295,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 153301.0,
+      "median_gross_rent": 2400.0,
+      "vacancy_proxy_pct": 4.2,
+      "renter_share_pct": 32.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.8,
+      "rentability_score": 66,
+      "neighborhood_value_score": 66,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.4% renter share",
+        "4.2% housing vacancy proxy",
+        "median rent \u2248 18.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3482,7 +4508,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98051",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 136439.0,
+      "median_gross_rent": 1727.0,
+      "vacancy_proxy_pct": 2.1,
+      "renter_share_pct": 7.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 15.2,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "7.1% renter share",
+        "2.1% housing vacancy proxy",
+        "median rent \u2248 15.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3537,8 +4587,26 @@
       "zip": "98038",
       "latitude": 47.35460793,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 152261.0,
+      "median_gross_rent": 2316.0,
+      "vacancy_proxy_pct": 2.5,
+      "renter_share_pct": 14.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.3,
+      "rentability_score": 58,
+      "neighborhood_value_score": 58,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "14.4% renter share",
+        "2.5% housing vacancy proxy",
+        "median rent \u2248 18.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3585,7 +4653,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98027",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 153301.0,
+      "median_gross_rent": 2400.0,
+      "vacancy_proxy_pct": 4.2,
+      "renter_share_pct": 32.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.8,
+      "rentability_score": 66,
+      "neighborhood_value_score": 66,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.4% renter share",
+        "4.2% housing vacancy proxy",
+        "median rent \u2248 18.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3640,8 +4732,26 @@
       "zip": "98118",
       "latitude": 47.51969227,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3779,7 +4889,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98144",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 96969.0,
+      "median_gross_rent": 1812.0,
+      "vacancy_proxy_pct": 5.1,
+      "renter_share_pct": 54.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 77,
+      "neighborhood_value_score": 77,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "54.5% renter share",
+        "5.1% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3833,8 +4967,26 @@
       "zip": "98092",
       "latitude": 47.32262118,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 122300.0,
+      "median_gross_rent": 2055.0,
+      "vacancy_proxy_pct": 3.6,
+      "renter_share_pct": 25.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.2,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "25.7% renter share",
+        "3.6% housing vacancy proxy",
+        "median rent \u2248 20.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3886,8 +5038,26 @@
       "zip": "98055",
       "latitude": 47.46439641,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 97224.0,
+      "median_gross_rent": 2210.0,
+      "vacancy_proxy_pct": 3.0,
+      "renter_share_pct": 45.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 27.3,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.2% renter share",
+        "3.0% housing vacancy proxy",
+        "median rent \u2248 27.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3939,8 +5109,26 @@
       "zip": "98178",
       "latitude": 47.49481528,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -3987,7 +5175,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98178",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4041,8 +5253,26 @@
       "zip": "98178",
       "latitude": 47.49945164,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 99505.0,
+      "median_gross_rent": 1869.0,
+      "vacancy_proxy_pct": 6.4,
+      "renter_share_pct": 33.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "33.3% renter share",
+        "6.4% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4092,8 +5322,26 @@
       "zip": "98042",
       "latitude": 47.34750394,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 127552.0,
+      "median_gross_rent": 2118.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 17.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.9,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.7% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 19.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4143,7 +5391,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SAMMAMISH",
+      "zip": "98074",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 244362.0,
+      "median_gross_rent": 2799.0,
+      "vacancy_proxy_pct": 1.5,
+      "renter_share_pct": 16.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 13.7,
+      "rentability_score": 61,
+      "neighborhood_value_score": 61,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "16.3% renter share",
+        "1.5% housing vacancy proxy",
+        "median rent \u2248 13.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4193,7 +5465,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SAMMAMISH",
+      "zip": "98074",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 244362.0,
+      "median_gross_rent": 2799.0,
+      "vacancy_proxy_pct": 1.5,
+      "renter_share_pct": 16.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 13.7,
+      "rentability_score": 61,
+      "neighborhood_value_score": 61,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "16.3% renter share",
+        "1.5% housing vacancy proxy",
+        "median rent \u2248 13.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4286,7 +5582,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98027",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 153301.0,
+      "median_gross_rent": 2400.0,
+      "vacancy_proxy_pct": 4.2,
+      "renter_share_pct": 32.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.8,
+      "rentability_score": 66,
+      "neighborhood_value_score": 66,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.4% renter share",
+        "4.2% housing vacancy proxy",
+        "median rent \u2248 18.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4334,7 +5654,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98133",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 93662.0,
+      "median_gross_rent": 1802.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 51.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.1,
+      "rentability_score": 75,
+      "neighborhood_value_score": 75,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.6% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 23.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4382,8 +5726,26 @@
       "zip": "98177",
       "latitude": 47.70336927,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 169918.0,
+      "median_gross_rent": 2252.0,
+      "vacancy_proxy_pct": 2.0,
+      "renter_share_pct": 13.0,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 15.9,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "13.0% renter share",
+        "2.0% housing vacancy proxy",
+        "median rent \u2248 15.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4438,7 +5800,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "BELLEVUE",
+      "zip": "98006",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 198150.0,
+      "median_gross_rent": 2836.0,
+      "vacancy_proxy_pct": 3.7,
+      "renter_share_pct": 20.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 17.2,
+      "rentability_score": 58,
+      "neighborhood_value_score": 58,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "20.2% renter share",
+        "3.7% housing vacancy proxy",
+        "median rent \u2248 17.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4490,7 +5876,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98001",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 106791.0,
+      "median_gross_rent": 2105.0,
+      "vacancy_proxy_pct": 3.7,
+      "renter_share_pct": 26.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.7,
+      "rentability_score": 63,
+      "neighborhood_value_score": 63,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "26.1% renter share",
+        "3.7% housing vacancy proxy",
+        "median rent \u2248 23.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4540,7 +5950,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98001",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 106791.0,
+      "median_gross_rent": 2105.0,
+      "vacancy_proxy_pct": 3.7,
+      "renter_share_pct": 26.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.7,
+      "rentability_score": 63,
+      "neighborhood_value_score": 63,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "26.1% renter share",
+        "3.7% housing vacancy proxy",
+        "median rent \u2248 23.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4587,7 +6021,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98001",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 106791.0,
+      "median_gross_rent": 2105.0,
+      "vacancy_proxy_pct": 3.7,
+      "renter_share_pct": 26.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.7,
+      "rentability_score": 63,
+      "neighborhood_value_score": 63,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "26.1% renter share",
+        "3.7% housing vacancy proxy",
+        "median rent \u2248 23.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4634,7 +6092,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98001",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 106791.0,
+      "median_gross_rent": 2105.0,
+      "vacancy_proxy_pct": 3.7,
+      "renter_share_pct": 26.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.7,
+      "rentability_score": 63,
+      "neighborhood_value_score": 63,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "26.1% renter share",
+        "3.7% housing vacancy proxy",
+        "median rent \u2248 23.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4688,8 +6170,26 @@
       "zip": "98118",
       "latitude": 47.54532483,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4784,8 +6284,26 @@
       "zip": "98118",
       "latitude": 47.51631185,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4837,8 +6355,26 @@
       "zip": "98155",
       "latitude": 47.76663826,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 131540.0,
+      "median_gross_rent": 2127.0,
+      "vacancy_proxy_pct": 4.1,
+      "renter_share_pct": 29.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 64,
+      "neighborhood_value_score": 64,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "29.8% renter share",
+        "4.1% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4885,7 +6421,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4937,8 +6497,26 @@
       "zip": "98155",
       "latitude": 47.7573131,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 131540.0,
+      "median_gross_rent": 2127.0,
+      "vacancy_proxy_pct": 4.1,
+      "renter_share_pct": 29.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 64,
+      "neighborhood_value_score": 64,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "29.8% renter share",
+        "4.1% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -4985,7 +6563,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98014",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 164306.0,
+      "median_gross_rent": 1824.0,
+      "vacancy_proxy_pct": 2.0,
+      "renter_share_pct": 8.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 13.3,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "8.3% renter share",
+        "2.0% housing vacancy proxy",
+        "median rent \u2248 13.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5028,7 +6630,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98042",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 127552.0,
+      "median_gross_rent": 2118.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 17.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.9,
+      "rentability_score": 59,
+      "neighborhood_value_score": 59,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "17.7% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 19.9% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5075,7 +6701,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "FEDERAL WAY",
+      "zip": "98023",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 104893.0,
+      "median_gross_rent": 1900.0,
+      "vacancy_proxy_pct": 4.4,
+      "renter_share_pct": 34.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 21.7,
+      "rentability_score": 67,
+      "neighborhood_value_score": 67,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "34.4% renter share",
+        "4.4% housing vacancy proxy",
+        "median rent \u2248 21.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5131,7 +6781,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98055",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 97224.0,
+      "median_gross_rent": 2210.0,
+      "vacancy_proxy_pct": 3.0,
+      "renter_share_pct": 45.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 27.3,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.2% renter share",
+        "3.0% housing vacancy proxy",
+        "median rent \u2248 27.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5183,8 +6857,26 @@
       "zip": "98057",
       "latitude": 47.48713218,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 68552.0,
+      "median_gross_rent": 1806.0,
+      "vacancy_proxy_pct": 6.1,
+      "renter_share_pct": 74.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 31.6,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "74.7% renter share",
+        "6.1% housing vacancy proxy",
+        "median rent \u2248 31.6% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5287,8 +6979,26 @@
       "zip": "98002",
       "latitude": 47.29353211,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 78684.0,
+      "median_gross_rent": 1659.0,
+      "vacancy_proxy_pct": 5.2,
+      "renter_share_pct": 51.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.3,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.1% renter share",
+        "5.2% housing vacancy proxy",
+        "median rent \u2248 25.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5340,8 +7050,26 @@
       "zip": "98002",
       "latitude": 47.29342242,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 78684.0,
+      "median_gross_rent": 1659.0,
+      "vacancy_proxy_pct": 5.2,
+      "renter_share_pct": 51.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.3,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.1% renter share",
+        "5.2% housing vacancy proxy",
+        "median rent \u2248 25.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5389,8 +7117,26 @@
       "zip": "98108",
       "latitude": 47.55810204,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 95780.0,
+      "median_gross_rent": 1465.0,
+      "vacancy_proxy_pct": 5.5,
+      "renter_share_pct": 41.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.4,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "41.8% renter share",
+        "5.5% housing vacancy proxy",
+        "median rent \u2248 18.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5445,8 +7191,26 @@
       "zip": "98052",
       "latitude": 47.6545958,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 163460.0,
+      "median_gross_rent": 2405.0,
+      "vacancy_proxy_pct": 5.7,
+      "renter_share_pct": 55.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 17.7,
+      "rentability_score": 76,
+      "neighborhood_value_score": 76,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "55.2% renter share",
+        "5.7% housing vacancy proxy",
+        "median rent \u2248 17.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5495,7 +7259,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98059",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 138654.0,
+      "median_gross_rent": 2322.0,
+      "vacancy_proxy_pct": 2.7,
+      "renter_share_pct": 23.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.1,
+      "rentability_score": 63,
+      "neighborhood_value_score": 63,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "23.4% renter share",
+        "2.7% housing vacancy proxy",
+        "median rent \u2248 20.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5547,8 +7335,26 @@
       "zip": "98168",
       "latitude": 47.50982263,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 88083.0,
+      "median_gross_rent": 1821.0,
+      "vacancy_proxy_pct": 6.5,
+      "renter_share_pct": 46.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 24.8,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "46.2% renter share",
+        "6.5% housing vacancy proxy",
+        "median rent \u2248 24.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5602,8 +7408,26 @@
       "zip": "98188",
       "latitude": 47.45067949,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 76438.0,
+      "median_gross_rent": 1678.0,
+      "vacancy_proxy_pct": 8.2,
+      "renter_share_pct": 58.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 26.3,
+      "rentability_score": 65,
+      "neighborhood_value_score": 65,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "58.5% renter share",
+        "8.2% housing vacancy proxy",
+        "median rent \u2248 26.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5700,8 +7524,26 @@
       "zip": "98155",
       "latitude": 47.74916921,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 131540.0,
+      "median_gross_rent": 2127.0,
+      "vacancy_proxy_pct": 4.1,
+      "renter_share_pct": 29.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 64,
+      "neighborhood_value_score": 64,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "29.8% renter share",
+        "4.1% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5748,7 +7590,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98027",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 153301.0,
+      "median_gross_rent": 2400.0,
+      "vacancy_proxy_pct": 4.2,
+      "renter_share_pct": 32.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.8,
+      "rentability_score": 66,
+      "neighborhood_value_score": 66,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.4% renter share",
+        "4.2% housing vacancy proxy",
+        "median rent \u2248 18.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5883,7 +7749,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98058",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 115201.0,
+      "median_gross_rent": 2147.0,
+      "vacancy_proxy_pct": 4.3,
+      "renter_share_pct": 27.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "27.5% renter share",
+        "4.3% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -5931,8 +7821,26 @@
       "zip": "98058",
       "latitude": 47.43370113,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 115201.0,
+      "median_gross_rent": 2147.0,
+      "vacancy_proxy_pct": 4.3,
+      "renter_share_pct": 27.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 62,
+      "neighborhood_value_score": 62,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "27.5% renter share",
+        "4.3% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6226,8 +8134,26 @@
       "zip": "98038",
       "latitude": 47.35672081,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 152261.0,
+      "median_gross_rent": 2316.0,
+      "vacancy_proxy_pct": 2.5,
+      "renter_share_pct": 14.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 18.3,
+      "rentability_score": 58,
+      "neighborhood_value_score": 58,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "14.4% renter share",
+        "2.5% housing vacancy proxy",
+        "median rent \u2248 18.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6275,8 +8201,26 @@
       "zip": "98198",
       "latitude": 47.34525362,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 86239.0,
+      "median_gross_rent": 1814.0,
+      "vacancy_proxy_pct": 4.5,
+      "renter_share_pct": 45.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.2,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.2% renter share",
+        "4.5% housing vacancy proxy",
+        "median rent \u2248 25.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6325,7 +8269,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "DES MOINES",
+      "zip": "98198",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 86239.0,
+      "median_gross_rent": 1814.0,
+      "vacancy_proxy_pct": 4.5,
+      "renter_share_pct": 45.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.2,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.2% renter share",
+        "4.5% housing vacancy proxy",
+        "median rent \u2248 25.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6374,7 +8342,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "DES MOINES",
+      "zip": "98198",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 86239.0,
+      "median_gross_rent": 1814.0,
+      "vacancy_proxy_pct": 4.5,
+      "renter_share_pct": 45.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.2,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.2% renter share",
+        "4.5% housing vacancy proxy",
+        "median rent \u2248 25.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6423,7 +8415,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "DES MOINES",
+      "zip": "98198",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 86239.0,
+      "median_gross_rent": 1814.0,
+      "vacancy_proxy_pct": 4.5,
+      "renter_share_pct": 45.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.2,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.2% renter share",
+        "4.5% housing vacancy proxy",
+        "median rent \u2248 25.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6477,8 +8493,26 @@
       "zip": "98056",
       "latitude": 47.50693316,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113688.0,
+      "median_gross_rent": 2061.0,
+      "vacancy_proxy_pct": 5.5,
+      "renter_share_pct": 45.7,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 21.8,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.7% renter share",
+        "5.5% housing vacancy proxy",
+        "median rent \u2248 21.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6530,8 +8564,26 @@
       "zip": "98122",
       "latitude": 47.61634283,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 106886.0,
+      "median_gross_rent": 1991.0,
+      "vacancy_proxy_pct": 6.8,
+      "renter_share_pct": 71.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 73,
+      "neighborhood_value_score": 73,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "71.6% renter share",
+        "6.8% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6625,7 +8677,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6679,8 +8755,26 @@
       "zip": "98053",
       "latitude": 47.6487731,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 192292.0,
+      "median_gross_rent": 2664.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 15.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 16.6,
+      "rentability_score": 57,
+      "neighborhood_value_score": 57,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "15.2% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 16.6% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6732,8 +8826,26 @@
       "zip": "98002",
       "latitude": 47.27663847,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 78684.0,
+      "median_gross_rent": 1659.0,
+      "vacancy_proxy_pct": 5.2,
+      "renter_share_pct": 51.1,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.3,
+      "rentability_score": 72,
+      "neighborhood_value_score": 72,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.1% renter share",
+        "5.2% housing vacancy proxy",
+        "median rent \u2248 25.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6781,8 +8893,26 @@
       "zip": "98168",
       "latitude": 47.49383981,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 88083.0,
+      "median_gross_rent": 1821.0,
+      "vacancy_proxy_pct": 6.5,
+      "renter_share_pct": 46.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 24.8,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "46.2% renter share",
+        "6.5% housing vacancy proxy",
+        "median rent \u2248 24.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6829,7 +8959,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "TUKWILA",
+      "zip": "98168",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 88083.0,
+      "median_gross_rent": 1821.0,
+      "vacancy_proxy_pct": 6.5,
+      "renter_share_pct": 46.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 24.8,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "46.2% renter share",
+        "6.5% housing vacancy proxy",
+        "median rent \u2248 24.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6881,8 +9035,26 @@
       "zip": "98133",
       "latitude": 47.75782894,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 93662.0,
+      "median_gross_rent": 1802.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 51.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.1,
+      "rentability_score": 75,
+      "neighborhood_value_score": 75,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.6% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 23.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6935,8 +9107,26 @@
       "zip": "98065",
       "latitude": 47.5139584,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 198216.0,
+      "median_gross_rent": 2864.0,
+      "vacancy_proxy_pct": 5.5,
+      "renter_share_pct": 14.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 17.3,
+      "rentability_score": 51,
+      "neighborhood_value_score": 51,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "14.8% renter share",
+        "5.5% housing vacancy proxy",
+        "median rent \u2248 17.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -6986,8 +9176,26 @@
       "zip": "98136",
       "latitude": 47.55510041,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 149269.0,
+      "median_gross_rent": 1965.0,
+      "vacancy_proxy_pct": 5.1,
+      "renter_share_pct": 36.0,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 15.8,
+      "rentability_score": 66,
+      "neighborhood_value_score": 66,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "36.0% renter share",
+        "5.1% housing vacancy proxy",
+        "median rent \u2248 15.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7040,7 +9248,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATAC",
+      "zip": "98198",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 86239.0,
+      "median_gross_rent": 1814.0,
+      "vacancy_proxy_pct": 4.5,
+      "renter_share_pct": 45.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 25.2,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "45.2% renter share",
+        "4.5% housing vacancy proxy",
+        "median rent \u2248 25.2% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7092,8 +9324,26 @@
       "zip": "98059",
       "latitude": 47.4857022,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 138654.0,
+      "median_gross_rent": 2322.0,
+      "vacancy_proxy_pct": 2.7,
+      "renter_share_pct": 23.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.1,
+      "rentability_score": 63,
+      "neighborhood_value_score": 63,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "23.4% renter share",
+        "2.7% housing vacancy proxy",
+        "median rent \u2248 20.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7147,8 +9397,26 @@
       "zip": "98031",
       "latitude": 47.42051155,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 105965.0,
+      "median_gross_rent": 1991.0,
+      "vacancy_proxy_pct": 4.0,
+      "renter_share_pct": 32.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 67,
+      "neighborhood_value_score": 67,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.8% renter share",
+        "4.0% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7200,8 +9468,26 @@
       "zip": "98117",
       "latitude": 47.68556889,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 182984.0,
+      "median_gross_rent": 2178.0,
+      "vacancy_proxy_pct": 4.7,
+      "renter_share_pct": 27.4,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 14.3,
+      "rentability_score": 61,
+      "neighborhood_value_score": 61,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "27.4% renter share",
+        "4.7% housing vacancy proxy",
+        "median rent \u2248 14.3% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7253,8 +9539,26 @@
       "zip": "98122",
       "latitude": 47.60553728,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 106886.0,
+      "median_gross_rent": 1991.0,
+      "vacancy_proxy_pct": 6.8,
+      "renter_share_pct": 71.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 73,
+      "neighborhood_value_score": 73,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "71.6% renter share",
+        "6.8% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7306,8 +9610,26 @@
       "zip": "98168",
       "latitude": 47.49285877,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 88083.0,
+      "median_gross_rent": 1821.0,
+      "vacancy_proxy_pct": 6.5,
+      "renter_share_pct": 46.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 24.8,
+      "rentability_score": 70,
+      "neighborhood_value_score": 70,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "46.2% renter share",
+        "6.5% housing vacancy proxy",
+        "median rent \u2248 24.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7355,8 +9677,26 @@
       "zip": "98118",
       "latitude": 47.54757898,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 113762.0,
+      "median_gross_rent": 1839.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 42.9,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 19.4,
+      "rentability_score": 69,
+      "neighborhood_value_score": 69,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "42.9% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 19.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7413,8 +9753,26 @@
       "zip": "98031",
       "latitude": 47.41742826,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 105965.0,
+      "median_gross_rent": 1991.0,
+      "vacancy_proxy_pct": 4.0,
+      "renter_share_pct": 32.8,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.5,
+      "rentability_score": 67,
+      "neighborhood_value_score": 67,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "32.8% renter share",
+        "4.0% housing vacancy proxy",
+        "median rent \u2248 22.5% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7462,8 +9820,26 @@
       "zip": "98144",
       "latitude": 47.59903705,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 96969.0,
+      "median_gross_rent": 1812.0,
+      "vacancy_proxy_pct": 5.1,
+      "renter_share_pct": 54.5,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 77,
+      "neighborhood_value_score": 77,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "54.5% renter share",
+        "5.1% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7510,7 +9886,31 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": null,
+      "zip": "98053",
+      "latitude": null,
+      "longitude": null,
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 192292.0,
+      "median_gross_rent": 2664.0,
+      "vacancy_proxy_pct": 2.8,
+      "renter_share_pct": 15.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 16.6,
+      "rentability_score": 57,
+      "neighborhood_value_score": 57,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "15.2% renter share",
+        "2.8% housing vacancy proxy",
+        "median rent \u2248 16.6% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7560,8 +9960,26 @@
       "zip": "98105",
       "latitude": 47.66329959,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 74349.0,
+      "median_gross_rent": 1849.0,
+      "vacancy_proxy_pct": 11.7,
+      "renter_share_pct": 68.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 29.8,
+      "rentability_score": 58,
+      "neighborhood_value_score": 58,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "68.6% renter share",
+        "11.7% housing vacancy proxy",
+        "median rent \u2248 29.8% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7611,8 +10029,26 @@
       "zip": "98133",
       "latitude": 47.71003981,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 93662.0,
+      "median_gross_rent": 1802.0,
+      "vacancy_proxy_pct": 6.3,
+      "renter_share_pct": 51.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 23.1,
+      "rentability_score": 75,
+      "neighborhood_value_score": 75,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "51.6% renter share",
+        "6.3% housing vacancy proxy",
+        "median rent \u2248 23.1% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7752,8 +10188,26 @@
       "zip": "98052",
       "latitude": 47.68405731,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 163460.0,
+      "median_gross_rent": 2405.0,
+      "vacancy_proxy_pct": 5.7,
+      "renter_share_pct": 55.2,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 17.7,
+      "rentability_score": 76,
+      "neighborhood_value_score": 76,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "55.2% renter share",
+        "5.7% housing vacancy proxy",
+        "median rent \u2248 17.7% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7805,8 +10259,26 @@
       "zip": "98032",
       "latitude": 47.37806978,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 82636.0,
+      "median_gross_rent": 1862.0,
+      "vacancy_proxy_pct": 7.0,
+      "renter_share_pct": 57.3,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 27.0,
+      "rentability_score": 68,
+      "neighborhood_value_score": 68,
+      "neighborhood_value_label": "Moderate",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "57.3% renter share",
+        "7.0% housing vacancy proxy",
+        "median rent \u2248 27.0% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7858,8 +10330,26 @@
       "zip": "98122",
       "latitude": 47.60287044,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 106886.0,
+      "median_gross_rent": 1991.0,
+      "vacancy_proxy_pct": 6.8,
+      "renter_share_pct": 71.6,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 22.4,
+      "rentability_score": 73,
+      "neighborhood_value_score": 73,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "71.6% renter share",
+        "6.8% housing vacancy proxy",
+        "median rent \u2248 22.4% of median income"
+      ]
     },
     {
       "state": "WA",
@@ -7912,8 +10402,26 @@
       "zip": "98102",
       "latitude": 47.62740727,
       "longitude": null,
-      "area_source": "King County GIS Addresses in King County",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "median_household_income": 114925.0,
+      "median_gross_rent": 1926.0,
+      "vacancy_proxy_pct": 5.4,
+      "renter_share_pct": 73.0,
+      "acs_release_year": 2024,
+      "rent_trend_pct": null,
+      "rent_trend_period": null,
+      "rent_to_income_pct": 20.1,
+      "rentability_score": 77,
+      "neighborhood_value_score": 77,
+      "neighborhood_value_label": "Strong",
+      "neighborhood_metric_level": "ZIP/ZCTA proxy",
+      "neighborhood_metric_year": "2024 ACS 5-year via Census Reporter",
+      "neighborhood_reasons": [
+        "73.0% renter share",
+        "5.4% housing vacancy proxy",
+        "median rent \u2248 20.1% of median income"
+      ]
     }
   ]
 }
