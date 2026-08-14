@@ -32,7 +32,7 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "checked_at": "2026-08-14T13:24:08.442841+00:00",
       "ok": true,
-      "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 97/145; coordinates 0/145; assessed value 126/145; property type 122/145; legal 143/145; neighborhood metrics 122/145. King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 21, coordinates 21, property type 21. Current fill: address 91/145, city+ZIP 118/145, coordinates 21/145, property type 143/145, neighborhood metrics 143/145. King County coordinate repair: 143/145 parcels now have latitude+longitude (70 address-point, 0 parcel-address, 52 parcel-centroid in this run). King County coordinate-to-area repair changed 25/145 rows; recovered 25 city/jurisdiction values and 0 ZIP codes. Current city+ZIP fill: 143/145. King County orphan public fallback changed 2/145 rows; recovered city+ZIP 2, property type 2, zoning 2, lot size 2. No street address, coordinates, value, legal or tax fields were inferred. King County eReal assessed-value fallback: attempted 19 missing-value parcels; site reachable for 19; recovered 17; failures none."
+      "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145. King County eReal assessed-value fallback: attempted 0 missing-value parcels; site reachable for 0; recovered 0; failures none."
     }
   ],
   "notes": [
@@ -48,6 +48,9 @@
     "King County coordinate repair: 143/145 parcels now have latitude+longitude (70 address-point, 0 parcel-address, 52 parcel-centroid in this run).",
     "King County coordinate-to-area repair changed 25/145 rows; recovered 25 city/jurisdiction values and 0 ZIP codes. Current city+ZIP fill: 143/145.",
     "King County orphan public fallback changed 2/145 rows; recovered city+ZIP 2, property type 2, zoning 2, lot size 2. No street address, coordinates, value, legal or tax fields were inferred.",
-    "King County eReal assessed-value fallback: attempted 19 missing-value parcels; site reachable for 19; recovered 17; failures none."
+    "King County eReal assessed-value fallback: attempted 19 missing-value parcels; site reachable for 19; recovered 17; failures none.",
+    "WA State Parcels orphan fallback: targeted 2 King County rows; matched 2; changed 2; recovered value 2, coordinates 2, address 0.",
+    "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145.",
+    "King County eReal assessed-value fallback: attempted 0 missing-value parcels; site reachable for 0; recovered 0; failures none."
   ]
 }

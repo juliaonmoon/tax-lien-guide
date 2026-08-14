@@ -2,11 +2,8 @@
   "source_updated_at": "2026-08-14T13:24:08.442841+00:00",
   "king_count": 145,
   "missing_counts": {
-    "address": 54,
-    "assessed_value": 2,
-    "coordinates": 2,
+    "address": 75,
     "legal_description": 2,
-    "neighborhood": 2,
     "opening_bid": 145,
     "tax_status": 2
   },
@@ -23,9 +20,11 @@
       "0923049190",
       "1223049050",
       "1262700030",
+      "1420000290",
       "1423069142",
       "1593001210",
       "1604601775",
+      "1766002130",
       "1822059132",
       "1823069237",
       "2023049242",
@@ -35,15 +34,21 @@
       "2444600400",
       "2444600450",
       "2521059032",
+      "2596200050",
+      "2646400160",
       "2722059263",
+      "2867401020",
       "2921069015",
       "2921069018",
       "3022079006",
       "3224079075",
+      "3274870250",
+      "3307850540",
       "3320000500",
       "3348400700",
       "3575300780",
       "3575303057",
+      "3589002570",
       "3623069043",
       "3626039398",
       "3655500130",
@@ -51,35 +56,36 @@
       "3751600889",
       "3751606689",
       "3751606695",
+      "3894800180",
       "4006000471",
       "4046710650",
       "4053200990",
       "4166600465",
       "4193100130",
+      "4205001560",
       "5229300235",
+      "5419200070",
       "5561100420",
+      "6075502410",
+      "6108450110",
       "6199000058",
+      "6390000220",
+      "6390000360",
+      "6390000370",
+      "6649350050",
+      "6780800400",
       "7203601505",
       "7203601510",
       "7204200055",
+      "7243300400",
       "7243500007",
       "7359600625",
       "7686201640",
-      "8807810290"
-    ],
-    "assessed_value": [
-      "2188201795",
-      "2188201800"
-    ],
-    "coordinates": [
-      "2188201795",
-      "2188201800"
+      "8807810290",
+      "8944500610",
+      "9187751900"
     ],
     "legal_description": [
-      "2188201795",
-      "2188201800"
-    ],
-    "neighborhood": [
       "2188201795",
       "2188201800"
     ],
@@ -236,7 +242,7 @@
     ]
   },
   "missing_address_status_counts": {
-    "No assigned situs address found in King County GIS": 54
+    "No assigned situs address found in King County GIS": 75
   },
   "gaps": [
     {
@@ -652,9 +658,10 @@
     {
       "parcel_id": "1420000290",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "BELLEVUE",
       "zip": "98008",
@@ -788,9 +795,10 @@
     {
       "parcel_id": "1766002130",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98101",
@@ -925,22 +933,19 @@
       "parcel_id": "2188201795",
       "missing": [
         "address",
-        "coordinates",
-        "assessed_value",
         "legal_description",
         "tax_status",
-        "neighborhood",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
-      "coordinate_source": null,
+      "coordinate_source": "Washington State Parcels Project parcel geometry",
       "city": "FEDERAL WAY",
       "zip": "98023",
       "property_type": "Residential",
-      "assessed_value": null,
-      "land_value": null,
-      "improvement_value": null,
-      "value_basis": null,
+      "assessed_value": 4000.0,
+      "land_value": 4000.0,
+      "improvement_value": 0,
+      "value_basis": "Washington State Parcels Project market land + building value (2026 snapshot)",
       "legal_description": null,
       "tax_status": null,
       "tax_due_estimate": null,
@@ -950,22 +955,19 @@
       "parcel_id": "2188201800",
       "missing": [
         "address",
-        "coordinates",
-        "assessed_value",
         "legal_description",
         "tax_status",
-        "neighborhood",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
-      "coordinate_source": null,
+      "coordinate_source": "Washington State Parcels Project parcel geometry",
       "city": "FEDERAL WAY",
       "zip": "98023",
       "property_type": "Residential",
-      "assessed_value": null,
-      "land_value": null,
-      "improvement_value": null,
-      "value_basis": null,
+      "assessed_value": 9000.0,
+      "land_value": 9000.0,
+      "improvement_value": 0,
+      "value_basis": "Washington State Parcels Project market land + building value (2026 snapshot)",
       "legal_description": null,
       "tax_status": null,
       "tax_due_estimate": null,
@@ -1092,9 +1094,10 @@
     {
       "parcel_id": "2596200050",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "FEDERAL WAY",
       "zip": "98003",
@@ -1111,9 +1114,10 @@
     {
       "parcel_id": "2646400160",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98103",
@@ -1245,9 +1249,10 @@
     {
       "parcel_id": "2867401020",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98121",
@@ -1420,9 +1425,10 @@
     {
       "parcel_id": "3274870250",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "BELLEVUE",
       "zip": "98005",
@@ -1439,9 +1445,10 @@
     {
       "parcel_id": "3307850540",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98148",
@@ -1633,9 +1640,10 @@
     {
       "parcel_id": "3589002570",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98121",
@@ -1830,9 +1838,10 @@
     {
       "parcel_id": "3894800180",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "KIRKLAND",
       "zip": "98034",
@@ -2025,9 +2034,10 @@
     {
       "parcel_id": "4205001560",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "FEDERAL WAY",
       "zip": "98023",
@@ -2178,9 +2188,10 @@
     {
       "parcel_id": "5419200070",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "KENT",
       "zip": "98031",
@@ -2236,9 +2247,10 @@
     {
       "parcel_id": "6075502410",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98101",
@@ -2255,9 +2267,10 @@
     {
       "parcel_id": "6108450110",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98104",
@@ -2313,9 +2326,10 @@
     {
       "parcel_id": "6390000220",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "BELLEVUE",
       "zip": "98004",
@@ -2332,9 +2346,10 @@
     {
       "parcel_id": "6390000360",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "BELLEVUE",
       "zip": "98004",
@@ -2351,9 +2366,10 @@
     {
       "parcel_id": "6390000370",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "BELLEVUE",
       "zip": "98004",
@@ -2370,9 +2386,10 @@
     {
       "parcel_id": "6649350050",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98199",
@@ -2389,9 +2406,10 @@
     {
       "parcel_id": "6780800400",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "SEATTLE",
       "zip": "98119",
@@ -2544,9 +2562,10 @@
     {
       "parcel_id": "7243300400",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "RENTON",
       "zip": "98057",
@@ -2947,9 +2966,10 @@
     {
       "parcel_id": "8944500610",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "KENT",
       "zip": "98032",
@@ -2966,9 +2986,10 @@
     {
       "parcel_id": "9187751900",
       "missing": [
+        "address",
         "opening_bid"
       ],
-      "address_status": "Condo unit mapped to official condo-complex situs address",
+      "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": "King County condo-complex address point",
       "city": "BELLEVUE",
       "zip": "98004",
