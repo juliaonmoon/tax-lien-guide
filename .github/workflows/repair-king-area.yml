@@ -1,0 +1,39 @@
+name: Repair King County city and ZIP
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/repair-king-area.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependency
+        run: pip install requests
+      - name: Recover city and ZIP from official King County GIS
+        run: python scripts/fix_king_area_from_coordinates.py
+      - name: Rebuild gap report
+        run: python scripts/diagnose_king_gaps.py
+      - name: Commit repaired data
+        run: |
+          if [ -z "$(git status --porcelain -- data/)" ]; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git commit -m "fix: recover King County city and ZIP from coordinates"
+          git pull --rebase origin main
+          git push origin main
