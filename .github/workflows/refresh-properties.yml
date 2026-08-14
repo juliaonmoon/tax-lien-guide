@@ -60,6 +60,8 @@ jobs:
         run: python scripts/diagnose_king_gaps.py
       - name: Add West Virginia State Auditor tax lien market
         run: python scripts/add_west_virginia_tax_lien_market.py
+      - name: Add Indiana Allen County tax lien market
+        run: python scripts/add_indiana_tax_lien_market.py
       - name: Commit refreshed data and guide updates
         run: |
           if git diff --quiet -- data/ index.html; then
