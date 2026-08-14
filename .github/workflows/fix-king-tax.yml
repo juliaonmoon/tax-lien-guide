@@ -1,0 +1,37 @@
+name: Fix King County tax amounts
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/fix_king_tax_amounts.py"
+      - ".github/workflows/fix-king-tax.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Normalize tax amounts
+        run: python scripts/fix_king_tax_amounts.py
+      - name: Commit corrected data
+        run: |
+          if [ -z "$(git status --porcelain -- data/)" ]; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git commit -m "fix: normalize King County tax amounts"
+          git pull --rebase origin main
+          git push origin main
