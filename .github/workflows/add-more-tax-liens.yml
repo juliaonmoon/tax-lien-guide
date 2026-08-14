@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "scripts/add_more_tax_lien_states.py"
+      - "scripts/refresh_coconino_tax_liens.py"
       - ".github/workflows/add-more-tax-liens.yml"
 
 permissions:
@@ -20,17 +21,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install parser dependencies
+        run: pip install requests pdfplumber
       - name: Add verified tax lien states
         run: python scripts/add_more_tax_lien_states.py
-      - name: Commit guide update
+      - name: Refresh Coconino Arizona OTC tax liens
+        run: python scripts/refresh_coconino_tax_liens.py
+      - name: Commit guide and tax-lien feed updates
         run: |
-          if [ -z "$(git status --porcelain -- index.html)" ]; then
-            echo "No guide changes."
+          if [ -z "$(git status --porcelain -- index.html data/)" ]; then
+            echo "No tax-lien changes."
             exit 0
           fi
           git config user.name "tax-deed-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html
-          git commit -m "feat: add Alabama and Nebraska tax lien markets"
+          git add index.html data/
+          git commit -m "feat: refresh verified tax lien markets"
           git pull --rebase origin main
           git push origin main
