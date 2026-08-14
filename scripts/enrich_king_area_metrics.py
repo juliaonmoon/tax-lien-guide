@@ -9,13 +9,15 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 PROPS = ROOT / "data" / "properties.json"
 STATUS = ROOT / "data" / "refresh-status.json"
-UA = "TaxLienGuideBot/1.6 (public neighborhood research; no access-control bypass)"
+UA = "TaxLienGuideBot/1.7 (public neighborhood research; no access-control bypass)"
 ADDRESS_API = "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/ADDRESS_POINT_642/FeatureServer/0/query"
-ACS_VARS = "NAME,B19013_001E,B25064_001E,B25002_001E,B25002_003E,B25003_001E,B25003_003E"
+PARCEL_ADDRESS_API = "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/PARCEL_ADDRESS_PUB_AREA_3069/FeatureServer/0/query"
+CR_API = "https://api.censusreporter.org/1.0/data/show"
+TABLES = "B19013,B25064,B25002,B25003"
 
 
-def get_json(url, params, timeout=45):
-    r = requests.get(url, params=params, headers={"User-Agent": UA, "Accept": "application/json"}, timeout=timeout)
+def get_json(url, params=None, timeout=45):
+    r = requests.get(url, params=params or {}, headers={"User-Agent": UA, "Accept": "application/json"}, timeout=timeout)
     r.raise_for_status()
     return r.json()
 
@@ -28,16 +30,40 @@ def num(v):
         return None
 
 
+def arcgis_map(url, parcels, fields):
+    out = {}
+    for i in range(0, len(parcels), 80):
+        chunk = parcels[i:i+80]
+        where = "PIN IN (" + ",".join("'%s'" % p for p in chunk) + ")"
+        try:
+            data = get_json(url, {
+                "f": "json", "where": where, "outFields": fields,
+                "returnGeometry": "false", "orderByFields": "PIN"
+            })
+        except Exception:
+            continue
+        for feature in data.get("features", []):
+            a = feature.get("attributes", {})
+            pin = str(a.get("PIN") or "").strip()
+            if pin and pin not in out:
+                out[pin] = a
+    return out
+
+
 def area_map(parcels):
+    # Prefer the point-address layer because it has USPS ZIP/city and coordinates.
     out = {}
     fields = "PIN,ZIP5,CTYNAME,POSTALCTYNAME,LAT,LON,PRIM_ADDR,PRIM_ADDR_FILTER"
     for i in range(0, len(parcels), 80):
         chunk = parcels[i:i+80]
         where = "PIN IN (" + ",".join("'%s'" % p for p in chunk) + ")"
-        data = get_json(ADDRESS_API, {
-            "f": "json", "where": where, "outFields": fields,
-            "returnGeometry": "false", "orderByFields": "PIN,PRIM_ADDR DESC"
-        })
+        try:
+            data = get_json(ADDRESS_API, {
+                "f": "json", "where": where, "outFields": fields,
+                "returnGeometry": "false", "orderByFields": "PIN,PRIM_ADDR DESC"
+            })
+        except Exception:
+            continue
         for feature in data.get("features", []):
             a = feature.get("attributes", {})
             pin = str(a.get("PIN") or "").strip()
@@ -48,34 +74,46 @@ def area_map(parcels):
             if current and not primary:
                 continue
             out[pin] = a
+
+    # Fallback: King County's parcel-address joined layer can provide city/ZIP
+    # for some parcels that do not have a matching primary point address.
+    missing = [p for p in parcels if p not in out]
+    if missing:
+        fallback = arcgis_map(PARCEL_ADDRESS_API, missing, "PIN,ZIP5,CTYNAME")
+        for pin, a in fallback.items():
+            if a.get("ZIP5") or a.get("CTYNAME"):
+                out[pin] = a
     return out
 
 
-def acs_zip(zip5, year):
+def cr_zip(zip5, year):
+    """Fetch ACS 5-year values through Census Reporter (no Census API key required)."""
     if not zip5 or len(zip5) != 5:
         return None
+    geoid = f"86000US{zip5}"
+    release = f"acs{year}_5yr"
     try:
-        rows = get_json(
-            f"https://api.census.gov/data/{year}/acs/acs5",
-            {"get": ACS_VARS, "for": f"zip code tabulation area:{zip5}"}
-        )
+        doc = get_json(f"{CR_API}/{release}", {"table_ids": TABLES, "geo_ids": geoid})
+        g = doc.get("data", {}).get(geoid, {})
+        if not g:
+            return None
+        def est(table, col):
+            return num(g.get(table, {}).get("estimate", {}).get(col))
+        income = est("B19013", "B19013001")
+        rent = est("B25064", "B25064001")
+        housing = est("B25002", "B25002001")
+        vacant = est("B25002", "B25002003")
+        occupied = est("B25003", "B25003001")
+        renter = est("B25003", "B25003003")
+        return {
+            "median_household_income": income,
+            "median_gross_rent": rent,
+            "vacancy_proxy_pct": round(vacant / housing * 100, 1) if housing else None,
+            "renter_share_pct": round(renter / occupied * 100, 1) if occupied else None,
+            "acs_release_year": year,
+        }
     except Exception:
         return None
-    if not isinstance(rows, list) or len(rows) < 2:
-        return None
-    d = dict(zip(rows[0], rows[1]))
-    income = num(d.get("B19013_001E"))
-    rent = num(d.get("B25064_001E"))
-    housing = num(d.get("B25002_001E"))
-    vacant = num(d.get("B25002_003E"))
-    occupied = num(d.get("B25003_001E"))
-    renter = num(d.get("B25003_003E"))
-    return {
-        "median_household_income": income,
-        "median_gross_rent": rent,
-        "vacancy_proxy_pct": round(vacant / housing * 100, 1) if housing else None,
-        "renter_share_pct": round(renter / occupied * 100, 1) if occupied else None,
-    }
 
 
 def clamp(v, lo=0, hi=100):
@@ -87,11 +125,20 @@ def metrics(zip5, cache):
         return {}
     if zip5 in cache:
         return cache[zip5]
-    cur = acs_zip(zip5, 2024)
-    old = acs_zip(zip5, 2022)
+
+    # Try the newest 5-year release first. Census Reporter is used because
+    # Census began requiring API keys for all direct data queries in 2026.
+    cur = cr_zip(zip5, 2024)
+    old = cr_zip(zip5, 2022) if cur else None
+    cur_year, old_year = 2024, 2022
+    if not cur:
+        cur = cr_zip(zip5, 2023)
+        old = cr_zip(zip5, 2021) if cur else None
+        cur_year, old_year = 2023, 2021
     if not cur:
         cache[zip5] = {}
         return {}
+
     renter = cur.get("renter_share_pct")
     vacancy = cur.get("vacancy_proxy_pct")
     income = cur.get("median_household_income")
@@ -118,18 +165,19 @@ def metrics(zip5, cache):
         reasons.append(f"median rent ≈ {affordability:.1f}% of median income")
     if trend is not None:
         score += clamp(trend * 0.45, -8, 8)
-        reasons.append(f"2022–2024 median-rent change {trend:+.1f}%")
+        reasons.append(f"{old_year}–{cur_year} median-rent change {trend:+.1f}%")
 
     score = int(round(clamp(score)))
     result = {
         **cur,
-        "rent_trend_2022_2024_pct": trend,
+        "rent_trend_pct": trend,
+        "rent_trend_period": f"{old_year}-{cur_year}" if trend is not None else None,
         "rent_to_income_pct": affordability,
         "rentability_score": score,
         "neighborhood_value_score": score,
         "neighborhood_value_label": "Strong" if score >= 70 else "Moderate" if score >= 50 else "Weak",
         "neighborhood_metric_level": "ZIP/ZCTA proxy",
-        "neighborhood_metric_year": "2024 ACS 5-year; trend vs 2022",
+        "neighborhood_metric_year": f"{cur_year} ACS 5-year via Census Reporter",
         "neighborhood_reasons": reasons,
     }
     cache[zip5] = result
@@ -149,12 +197,12 @@ def main():
         if not a:
             continue
         city = str(a.get("POSTALCTYNAME") or a.get("CTYNAME") or "").strip()
-        zip5 = str(a.get("ZIP5") or "").strip()
+        zip5 = str(a.get("ZIP5") or "").strip()[:5]
         p["city"] = city or None
         p["zip"] = zip5 or None
         p["latitude"] = num(a.get("LAT"))
         p["longitude"] = num(a.get("LON"))
-        p["area_source"] = "King County GIS Addresses in King County"
+        p["area_source"] = "King County GIS"
         p["area_source_url"] = "https://www5.kingcounty.gov/SDC?Layer=address_point"
         area_count += 1
         m = metrics(zip5, cache)
