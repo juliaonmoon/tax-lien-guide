@@ -9,9 +9,10 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 PROPS = ROOT / "data" / "properties.json"
 STATUS = ROOT / "data" / "refresh-status.json"
-UA = "TaxLienGuideBot/1.9 (public neighborhood research; no access-control bypass)"
+UA = "TaxLienGuideBot/2.0 (public neighborhood research; no access-control bypass)"
 ADDRESS_API = "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/ADDRESS_POINT_642/FeatureServer/0/query"
 PARCEL_ADDRESS_API = "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/PARCEL_ADDRESS_PUB_AREA_3069/FeatureServer/0/query"
+PARCEL_GEOM_API = "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/PARCEL_AREA_439/FeatureServer/0/query"
 CR_API = "https://api.censusreporter.org/1.0/data/show"
 TABLES = "B19013,B25064,B25002,B25003"
 
@@ -74,6 +75,49 @@ def area_map(parcels):
                 continue
             out[pin] = a
     return out
+
+
+def parcel_geometry_map(parcels):
+    out = {}
+    for i in range(0, len(parcels), 80):
+        chunk = parcels[i:i+80]
+        where = "PIN IN (" + ",".join("'%s'" % p for p in chunk) + ")"
+        try:
+            data = get_json(PARCEL_GEOM_API, {
+                "f": "json", "where": where, "outFields": "PIN",
+                "returnGeometry": "true", "returnCentroid": "true", "outSR": 4326
+            })
+        except Exception:
+            continue
+        for feature in data.get("features", []):
+            pin = str((feature.get("attributes") or {}).get("PIN") or "").strip()
+            if pin and pin not in out:
+                out[pin] = {"geometry": feature.get("geometry"), "centroid": feature.get("centroid")}
+    return out
+
+
+def spatial_address(parcel_geometry):
+    if not parcel_geometry:
+        return {}
+    try:
+        data = get_json(ADDRESS_API, {
+            "f": "json",
+            "where": "1=1",
+            "geometry": json.dumps(parcel_geometry),
+            "geometryType": "esriGeometryPolygon",
+            "inSR": 4326,
+            "spatialRel": "esriSpatialRelIntersects",
+            "outFields": "PIN,ADDR_FULL,ZIP5,CTYNAME,POSTALCTYNAME,LAT,LON,PRIM_ADDR,PRIM_ADDR_FILTER",
+            "returnGeometry": "false",
+            "orderByFields": "PRIM_ADDR DESC",
+            "resultRecordCount": 10,
+        })
+    except Exception:
+        return {}
+    features = data.get("features", [])
+    if not features:
+        return {}
+    return features[0].get("attributes", {}) or {}
 
 
 def cr_zip(zip5, year):
@@ -179,29 +223,49 @@ def main():
     amap = area_map(parcels)
     pfields = "PIN,ADDR_FULL,ZIP5,CTYNAME,POSTALCTYNAME,LAT,LON,APPRLNDVAL,APPR_IMPR,TAX_LNDVAL,TAX_IMPR,PROPTYPE,PREUSE_DESC,KCA_ZONING,KCA_ACRES,LEGALDESC"
     pmap = arcgis_map(PARCEL_ADDRESS_API, parcels, pfields)
+    gmap = parcel_geometry_map(parcels)
     cache = {}
-    parcel_count = 0
+    parcel_count = spatial_address_count = 0
 
     for p in wa:
         pin = str(p.get("parcel_id"))
         a = amap.get(pin) or {}
         pi = pmap.get(pin) or {}
+        pg = gmap.get(pin) or {}
         if pi:
             parcel_count += 1
+
+        # If the PIN-based address join misses, use an official address point that
+        # spatially intersects the parcel polygon. This avoids assigning a nearby
+        # street address unless King County's own GIS places that point in the parcel.
+        if not (a.get("ADDR_FULL") or pi.get("ADDR_FULL")) and pg.get("geometry"):
+            spatial = spatial_address(pg.get("geometry"))
+            if spatial.get("ADDR_FULL"):
+                a = spatial
+                spatial_address_count += 1
 
         city = str(a.get("POSTALCTYNAME") or a.get("CTYNAME") or pi.get("POSTALCTYNAME") or pi.get("CTYNAME") or "").strip()
         zip5 = str(a.get("ZIP5") or pi.get("ZIP5") or p.get("zip") or "").strip()[:5]
         lat = num(a.get("LAT")) or num(pi.get("LAT"))
         lon = num(a.get("LON")) or num(pi.get("LON"))
+        centroid = pg.get("centroid") or {}
+        if lat is None:
+            lat = num(centroid.get("y"))
+        if lon is None:
+            lon = num(centroid.get("x"))
         addr = str(a.get("ADDR_FULL") or pi.get("ADDR_FULL") or "").strip()
 
         p["city"] = city or p.get("city")
         p["zip"] = zip5 or p.get("zip")
-        p["latitude"] = lat or p.get("latitude")
-        p["longitude"] = lon or p.get("longitude")
+        p["latitude"] = lat if lat is not None else p.get("latitude")
+        p["longitude"] = lon if lon is not None else p.get("longitude")
         if addr:
             suffix = ", ".join(x for x in [city, "WA", zip5] if x)
             p["address"] = f"{addr}, {suffix}" if suffix else addr
+            p["address_status"] = "Official situs address"
+        else:
+            p["address"] = None
+            p["address_status"] = "No assigned situs address found in King County GIS"
         p["area_source"] = "King County GIS"
         p["area_source_url"] = "https://www5.kingcounty.gov/SDC?Layer=address_point"
 
@@ -252,10 +316,11 @@ def main():
             "neighborhood": sum(p.get("neighborhood_value_score") is not None for p in wa),
         }
         summary = (
-            f"King County verified fill: parcel-layer {parcel_count}/{total}; address {counts['address']}/{total}; "
-            f"city+ZIP {counts['city_zip']}/{total}; coordinates {counts['coordinates']}/{total}; "
-            f"assessed value {counts['value']}/{total}; property type {counts['property_type']}/{total}; "
-            f"legal {counts['legal']}/{total}; neighborhood metrics {counts['neighborhood']}/{total}."
+            f"King County verified fill: parcel-layer {parcel_count}/{total}; address {counts['address']}/{total} "
+            f"(+{spatial_address_count} recovered spatially); city+ZIP {counts['city_zip']}/{total}; "
+            f"coordinates {counts['coordinates']}/{total}; assessed value {counts['value']}/{total}; "
+            f"property type {counts['property_type']}/{total}; legal {counts['legal']}/{total}; "
+            f"neighborhood metrics {counts['neighborhood']}/{total}."
         )
         st.setdefault("notes", []).append(summary)
         for h in st.get("source_health", []):
