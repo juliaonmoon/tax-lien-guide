@@ -25,6 +25,8 @@ jobs:
         run: pip install requests beautifulsoup4 pdfplumber
       - name: Refresh official property feeds
         run: python scripts/refresh_properties.py
+      - name: Enrich King County area metrics
+        run: python scripts/enrich_king_area_metrics.py
       - name: Commit refreshed data
         run: |
           if git diff --quiet -- data/; then
