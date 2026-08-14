@@ -1,15 +1,13 @@
 {
-  "source_updated_at": "2026-08-14T12:18:41.185102+00:00",
+  "source_updated_at": "2026-08-14T12:22:06.260054+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
     "assessed_value": 19,
-    "city_zip": 2,
     "coordinates": 2,
     "legal_description": 2,
     "neighborhood": 2,
     "opening_bid": 145,
-    "property_type": 2,
     "tax_status": 2
   },
   "missing_parcel_ids_by_field": {
@@ -89,10 +87,6 @@
       "6780800400",
       "7243300400",
       "8944500610"
-    ],
-    "city_zip": [
-      "2188201795",
-      "2188201800"
     ],
     "coordinates": [
       "2188201795",
@@ -252,10 +246,6 @@
       "9825700035",
       "9826701500",
       "9831200460"
-    ],
-    "property_type": [
-      "2188201795",
-      "2188201800"
     ],
     "tax_status": [
       "2188201795",
@@ -954,10 +944,8 @@
       "parcel_id": "2188201795",
       "missing": [
         "address",
-        "city_zip",
         "coordinates",
         "assessed_value",
-        "property_type",
         "legal_description",
         "tax_status",
         "neighborhood",
@@ -965,9 +953,9 @@
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": null,
-      "city": null,
-      "zip": null,
-      "property_type": null,
+      "city": "FEDERAL WAY",
+      "zip": "98023",
+      "property_type": "Residential",
       "assessed_value": null,
       "land_value": null,
       "improvement_value": null,
@@ -981,10 +969,8 @@
       "parcel_id": "2188201800",
       "missing": [
         "address",
-        "city_zip",
         "coordinates",
         "assessed_value",
-        "property_type",
         "legal_description",
         "tax_status",
         "neighborhood",
@@ -992,9 +978,9 @@
       ],
       "address_status": "No assigned situs address found in King County GIS",
       "coordinate_source": null,
-      "city": null,
-      "zip": null,
-      "property_type": null,
+      "city": "FEDERAL WAY",
+      "zip": "98023",
+      "property_type": "Residential",
       "assessed_value": null,
       "land_value": null,
       "improvement_value": null,
