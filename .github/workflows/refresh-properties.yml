@@ -40,10 +40,6 @@ jobs:
         run: python scripts/preserve_king_tax_on_transient_failure.py
       - name: Normalize King County tax receivables to dollars
         run: python scripts/fix_king_tax_amounts.py
-      - name: Recover King County tax account by unique parcel prefix
-        run: python scripts/fix_king_tax_account_prefix.py
-      - name: Enrich King County area metrics
-        run: python scripts/enrich_king_area_metrics.py
       - name: Recover King County condo parent fields
         run: python scripts/fix_king_condo_parent.py
       - name: Repair King County coordinates
@@ -52,6 +48,10 @@ jobs:
         run: python scripts/fix_king_area_from_coordinates.py
       - name: Recover basic fields for King County GIS-orphan parcels
         run: python scripts/fix_king_orphan_public_fallbacks.py
+      - name: Recover hard GIS orphans from WA State Parcels Project
+        run: python scripts/fix_king_state_parcel_fallback.py
+      - name: Enrich King County area metrics
+        run: python scripts/enrich_king_area_metrics.py
       - name: Recover missing King County appraised values from eReal Property
         run: python scripts/fix_king_ereal_values.py
       - name: Diagnose remaining King County gaps
