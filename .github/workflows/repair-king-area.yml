@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - "scripts/fix_king_area_from_coordinates.py"
       - ".github/workflows/repair-king-area.yml"
 
 permissions:
