@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T10:28:33.021932+00:00",
+  "updated_at": "2026-08-14T10:36:56.296558+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -693,6 +693,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98042",
       "latitude": 47.337498223731494,
@@ -725,10 +728,7 @@
         "median rent \u2248 19.9% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -777,6 +777,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SAMMAMISH",
       "zip": "98075",
       "latitude": 47.59769287247285,
@@ -806,10 +809,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -859,6 +859,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98178",
       "latitude": 47.49225551852127,
@@ -889,10 +892,7 @@
         "median rent \u2248 22.5% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -940,6 +940,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98178",
       "latitude": 47.49246607114892,
@@ -972,10 +975,7 @@
         "median rent \u2248 22.5% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -1032,6 +1032,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98032",
       "latitude": 47.3673410177517,
@@ -1061,10 +1064,7 @@
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1121,6 +1121,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98032",
       "latitude": 47.367352419322344,
@@ -1150,10 +1153,7 @@
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -1201,6 +1201,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "VASHON",
       "zip": "98070",
       "latitude": 47.43022988,
@@ -1232,10 +1235,7 @@
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1279,6 +1279,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATAC",
       "zip": "98188",
       "latitude": 47.42704406,
@@ -1310,10 +1313,7 @@
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1362,6 +1362,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.28442789,
@@ -1393,10 +1396,7 @@
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1444,6 +1444,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98042",
       "latitude": 47.418201900817515,
@@ -1476,10 +1479,7 @@
         "median rent \u2248 19.9% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -1527,6 +1527,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98053",
       "latitude": 47.68802280165946,
@@ -1559,10 +1562,7 @@
         "median rent \u2248 16.6% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -1610,6 +1610,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98042",
       "latitude": 47.34335366,
@@ -1641,10 +1644,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1692,6 +1692,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.44587344,
@@ -1723,10 +1726,7 @@
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1780,6 +1780,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98133",
       "latitude": 47.72363696,
@@ -1809,10 +1812,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1866,6 +1866,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "VASHON",
       "zip": "98070",
       "latitude": 47.40631897,
@@ -1895,10 +1898,7 @@
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -1948,6 +1948,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BURIEN",
       "zip": "98168",
       "latitude": 47.49865781262317,
@@ -1977,10 +1980,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2028,6 +2028,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98105",
       "latitude": 47.66612937,
@@ -2059,10 +2062,7 @@
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2111,6 +2111,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "LAKE FOREST PARK",
       "zip": "98155",
       "latitude": 47.7536143,
@@ -2142,10 +2145,7 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2194,6 +2194,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.46526813,
@@ -2225,10 +2228,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2280,6 +2280,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98178",
       "latitude": 47.49922403759567,
@@ -2312,10 +2315,7 @@
         "median rent \u2248 22.5% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -2363,6 +2363,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.49741930571216,
@@ -2394,10 +2397,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2411,7 +2411,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": null,
       "market_value": null,
-      "address": "15721 NE 18TH ST, BELLEVUE, WA, 98008",
+      "address": "15725 NE 18TH ST, BELLEVUE, WA, 98008",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -2445,10 +2445,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98008",
-      "latitude": 47.625371,
-      "longitude": -122.13023273,
+      "latitude": 47.62536781,
+      "longitude": -122.13051303,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2475,10 +2478,7 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 16.7% of median income"
       ],
-      "condo_parent_parcel": "1420000000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "1420000000"
     },
     {
       "state": "WA",
@@ -2526,6 +2526,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98027",
       "latitude": 47.47759906700083,
@@ -2558,10 +2561,7 @@
         "median rent \u2248 18.8% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -2605,6 +2605,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98045",
       "latitude": 47.50769639652696,
@@ -2637,10 +2640,7 @@
         "median rent \u2248 15.3% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -2688,6 +2688,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.56663406142077,
@@ -2719,10 +2722,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -2766,6 +2766,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98030",
       "latitude": 47.38444119,
@@ -2797,10 +2800,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2851,6 +2851,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.48841288,
@@ -2880,10 +2883,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -2933,6 +2933,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98108",
       "latitude": 47.55476264,
@@ -2962,10 +2965,7 @@
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3014,6 +3014,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98101",
       "latitude": 47.61602683,
@@ -3044,10 +3047,7 @@
         "13.7% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "condo_parent_parcel": "1766000000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "1766000000"
     },
     {
       "state": "WA",
@@ -3091,6 +3091,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98031",
       "latitude": 47.39249165154263,
@@ -3122,10 +3125,7 @@
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3173,6 +3173,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98059",
       "latitude": 47.480445795358335,
@@ -3205,10 +3208,7 @@
         "median rent \u2248 20.1% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -3252,6 +3252,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98102",
       "latitude": 47.64177919,
@@ -3283,10 +3286,7 @@
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3330,6 +3330,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.465712520055995,
@@ -3361,10 +3364,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3408,6 +3408,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.46595448,
@@ -3439,10 +3442,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3486,6 +3486,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BURIEN",
       "zip": "98148",
       "latitude": 47.46579991,
@@ -3517,10 +3520,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3660,6 +3660,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "FEDERAL WAY",
       "zip": "98023",
       "latitude": 47.26765873,
@@ -3691,10 +3694,7 @@
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -3746,6 +3746,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98032",
       "latitude": 47.38412459039254,
@@ -3776,10 +3779,7 @@
         "median rent \u2248 27.0% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -3823,6 +3823,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98106",
       "latitude": 47.566862296733596,
@@ -3854,10 +3857,7 @@
         "4.4% housing vacancy proxy",
         "median rent \u2248 18.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3906,6 +3906,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98106",
       "latitude": 47.56706846309367,
@@ -3937,10 +3940,7 @@
         "4.4% housing vacancy proxy",
         "median rent \u2248 18.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -3994,6 +3994,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.4501668,
@@ -4023,10 +4026,7 @@
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4074,6 +4074,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98092",
       "latitude": 47.285538643910904,
@@ -4106,10 +4109,7 @@
         "median rent \u2248 20.2% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -4157,10 +4157,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "FEDERAL WAY",
       "zip": "98003",
-      "latitude": 47.30282836,
-      "longitude": -122.30652241,
+      "latitude": 47.30165535,
+      "longitude": -122.30594475,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4187,10 +4190,7 @@
         "4.9% housing vacancy proxy",
         "median rent \u2248 27.5% of median income"
       ],
-      "condo_parent_parcel": "2596200000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "2596200000"
     },
     {
       "state": "WA",
@@ -4241,6 +4241,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98103",
       "latitude": 47.6535098,
@@ -4271,10 +4274,7 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 18.6% of median income"
       ],
-      "condo_parent_parcel": "2646400000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "2646400000"
     },
     {
       "state": "WA",
@@ -4322,6 +4322,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.55673616,
@@ -4353,10 +4356,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4404,6 +4404,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.55688695,
@@ -4435,10 +4438,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4491,6 +4491,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98042",
       "latitude": 47.3628360753934,
@@ -4522,10 +4525,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -4575,6 +4575,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98107",
       "latitude": 47.6696534,
@@ -4604,10 +4607,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 18.6% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4657,6 +4657,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98199",
       "latitude": 47.6386019,
@@ -4686,10 +4689,7 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 16.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4733,6 +4733,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98030",
       "latitude": 47.37176584,
@@ -4764,10 +4767,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -4816,6 +4816,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98121",
       "latitude": 47.6138905,
@@ -4846,10 +4849,7 @@
         "14.4% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "2867400000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "2867400000"
     },
     {
       "state": "WA",
@@ -4895,6 +4895,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98092",
       "latitude": 47.27498803351195,
@@ -4925,10 +4928,7 @@
         "median rent \u2248 20.2% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -4974,6 +4974,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98092",
       "latitude": 47.274510124788165,
@@ -5004,10 +5007,7 @@
         "median rent \u2248 20.2% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -5053,6 +5053,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "AUBURN",
       "zip": "98092",
       "latitude": 47.27434694,
@@ -5082,10 +5085,7 @@
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5133,6 +5133,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "ISSAQUAH",
       "zip": "98027",
       "latitude": 47.5692295,
@@ -5164,10 +5167,7 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5215,6 +5215,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98051",
       "latitude": 47.36902877377365,
@@ -5247,10 +5250,7 @@
         "median rent \u2248 15.2% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -5301,6 +5301,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "MAPLE VALLEY",
       "zip": "98038",
       "latitude": 47.35460793,
@@ -5332,10 +5335,7 @@
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5383,6 +5383,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98027",
       "latitude": 47.523907493790986,
@@ -5415,10 +5418,7 @@
         "median rent \u2248 18.8% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -5469,6 +5469,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.51969227,
@@ -5500,10 +5503,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5517,7 +5517,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": null,
       "market_value": null,
-      "address": "12701 NE 9TH PL, BELLEVUE, WA, 98005",
+      "address": "831 126TH PL NE, BELLEVUE, WA, 98005",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -5552,10 +5552,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98005",
-      "latitude": 47.61821542,
-      "longitude": -122.16974456,
+      "latitude": 47.61819094,
+      "longitude": -122.17127573,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5582,10 +5585,7 @@
         "4.3% housing vacancy proxy",
         "median rent \u2248 17.8% of median income"
       ],
-      "condo_parent_parcel": "3274870000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "3274870000"
     },
     {
       "state": "WA",
@@ -5633,6 +5633,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98148",
       "latitude": 47.44558616,
@@ -5663,10 +5666,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "condo_parent_parcel": "3307850000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "3307850000"
     },
     {
       "state": "WA",
@@ -5710,6 +5710,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98144",
       "latitude": 47.598934405014944,
@@ -5741,10 +5744,7 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -5794,6 +5794,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "AUBURN",
       "zip": "98092",
       "latitude": 47.32262118,
@@ -5823,10 +5826,7 @@
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5874,6 +5874,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98055",
       "latitude": 47.46439641,
@@ -5905,10 +5908,7 @@
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -5956,6 +5956,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "TUKWILA",
       "zip": "98178",
       "latitude": 47.49481528,
@@ -5987,10 +5990,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6038,6 +6038,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.49826002825966,
@@ -6069,10 +6072,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6122,6 +6122,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98178",
       "latitude": 47.49945164,
@@ -6151,10 +6154,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6200,6 +6200,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98042",
       "latitude": 47.34750394,
@@ -6229,10 +6232,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6283,6 +6283,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SAMMAMISH",
       "zip": "98074",
       "latitude": 47.61912667916789,
@@ -6314,10 +6317,7 @@
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6368,6 +6368,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SAMMAMISH",
       "zip": "98074",
       "latitude": 47.62298048852076,
@@ -6399,10 +6402,7 @@
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6416,7 +6416,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": null,
       "market_value": null,
-      "address": "2305 6TH AVE, SEATTLE, WA, 98121",
+      "address": "2325 6TH AVE, SEATTLE, WA, 98121",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Mixed Use)                            ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -6446,10 +6446,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98121",
-      "latitude": 47.61672825,
-      "longitude": -122.34272134,
+      "latitude": 47.61699746,
+      "longitude": -122.34324779,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6476,10 +6479,7 @@
         "14.4% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "3589000000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "3589000000"
     },
     {
       "state": "WA",
@@ -6530,6 +6530,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98027",
       "latitude": 47.43530321382211,
@@ -6560,10 +6563,7 @@
         "median rent \u2248 18.8% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -6612,6 +6612,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98133",
       "latitude": 47.70432220501516,
@@ -6643,10 +6646,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6690,6 +6690,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98177",
       "latitude": 47.70336927,
@@ -6721,10 +6724,7 @@
         "2.0% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -6780,6 +6780,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98006",
       "latitude": 47.547597772591615,
@@ -6809,10 +6812,7 @@
         "3.7% housing vacancy proxy",
         "median rent \u2248 17.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -6865,6 +6865,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98001",
       "latitude": 47.25804272347302,
@@ -6895,10 +6898,7 @@
         "median rent \u2248 23.7% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -6949,6 +6949,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98001",
       "latitude": 47.29090589172281,
@@ -6981,10 +6984,7 @@
         "median rent \u2248 23.7% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -7032,6 +7032,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98001",
       "latitude": 47.27174919936566,
@@ -7064,10 +7067,7 @@
         "median rent \u2248 23.7% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -7115,6 +7115,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98001",
       "latitude": 47.269512088882294,
@@ -7147,10 +7150,7 @@
         "median rent \u2248 23.7% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -7200,6 +7200,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.54532483,
@@ -7229,10 +7232,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7246,7 +7246,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": null,
       "market_value": null,
-      "address": "11112 NE 124TH LN, KIRKLAND, WA, 98034",
+      "address": "11110 NE 125TH LN, KIRKLAND, WA, 98034",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -7276,10 +7276,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KIRKLAND",
       "zip": "98034",
-      "latitude": 47.71199034,
-      "longitude": -122.19233249,
+      "latitude": 47.71281215,
+      "longitude": -122.19248328,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7306,10 +7309,7 @@
         "5.9% housing vacancy proxy",
         "median rent \u2248 21.1% of median income"
       ],
-      "condo_parent_parcel": "3894800000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "3894800000"
     },
     {
       "state": "WA",
@@ -7357,6 +7357,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.51631185,
@@ -7388,10 +7391,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7439,6 +7439,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SHORELINE",
       "zip": "98155",
       "latitude": 47.76663826,
@@ -7470,10 +7473,7 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7521,6 +7521,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.52595387714389,
@@ -7552,10 +7555,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7603,6 +7603,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "LAKE FOREST PARK",
       "zip": "98155",
       "latitude": 47.7573131,
@@ -7634,10 +7637,7 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -7685,6 +7685,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98014",
       "latitude": 47.69788768106545,
@@ -7717,10 +7720,7 @@
         "median rent \u2248 13.3% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -7764,6 +7764,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98042",
       "latitude": 47.31985536872578,
@@ -7796,10 +7799,7 @@
         "median rent \u2248 19.9% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -7847,6 +7847,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "FEDERAL WAY",
       "zip": "98023",
       "latitude": 47.330378089016435,
@@ -7878,10 +7881,7 @@
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -7938,6 +7938,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98055",
       "latitude": 47.43819380683724,
@@ -7967,10 +7970,7 @@
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -8018,6 +8018,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98057",
       "latitude": 47.48713218,
@@ -8049,10 +8052,7 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 31.6% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8102,10 +8102,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "FEDERAL WAY",
       "zip": "98023",
-      "latitude": 47.30433004,
-      "longitude": -122.34529697,
+      "latitude": 47.30294778,
+      "longitude": -122.34524433,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8132,10 +8135,7 @@
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
       ],
-      "condo_parent_parcel": "4205000000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "4205000000"
     },
     {
       "state": "WA",
@@ -8185,6 +8185,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.29353211,
@@ -8214,10 +8217,7 @@
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8265,6 +8265,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.29342242,
@@ -8296,10 +8299,7 @@
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8343,6 +8343,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98108",
       "latitude": 47.55810204,
@@ -8374,10 +8377,7 @@
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8428,6 +8428,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "REDMOND",
       "zip": "98052",
       "latitude": 47.6545958,
@@ -8457,10 +8460,7 @@
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8510,6 +8510,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98059",
       "latitude": 47.49807104225137,
@@ -8542,10 +8545,7 @@
         "median rent \u2248 20.1% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -8593,6 +8593,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98168",
       "latitude": 47.50982263,
@@ -8624,10 +8627,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8677,6 +8677,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATAC",
       "zip": "98188",
       "latitude": 47.45067949,
@@ -8708,10 +8711,7 @@
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8725,7 +8725,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": 317000.0,
       "market_value": 317000.0,
-      "address": "11358 SE 211TH LN, KENT, WA, 98031",
+      "address": "20814 114TH PL SE, KENT, WA, 98031",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -8757,10 +8757,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98031",
-      "latitude": 47.41311183,
-      "longitude": -122.18854551,
+      "latitude": 47.41537067,
+      "longitude": -122.18854463,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8787,10 +8790,7 @@
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "condo_parent_parcel": "5419200000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "5419200000"
     },
     {
       "state": "WA",
@@ -8838,6 +8838,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "LAKE FOREST PARK",
       "zip": "98155",
       "latitude": 47.74916921,
@@ -8869,10 +8872,7 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -8920,6 +8920,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98027",
       "latitude": 47.455790657720804,
@@ -8952,10 +8955,7 @@
         "median rent \u2248 18.8% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -9003,6 +9003,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98101",
       "latitude": 47.61711448,
@@ -9033,10 +9036,7 @@
         "13.7% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "condo_parent_parcel": "6075500000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "6075500000"
     },
     {
       "state": "WA",
@@ -9050,7 +9050,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": null,
       "market_value": null,
-      "address": "1321 MADISON ST, SEATTLE, WA, 98104",
+      "address": "1317 MADISON ST, SEATTLE, WA, 98104",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Office)                               ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -9080,10 +9080,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98104",
-      "latitude": 47.61032144,
-      "longitude": -122.32193171,
+      "latitude": 47.61029531,
+      "longitude": -122.32199886,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9110,10 +9113,7 @@
         "15.8% housing vacancy proxy",
         "median rent \u2248 30.4% of median income"
       ],
-      "condo_parent_parcel": "6108450000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "6108450000"
     },
     {
       "state": "WA",
@@ -9159,6 +9159,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.43286497949701,
@@ -9188,10 +9191,7 @@
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -9235,6 +9235,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98058",
       "latitude": 47.43370113,
@@ -9266,10 +9269,7 @@
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9318,10 +9318,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98004",
-      "latitude": 47.60806214,
-      "longitude": -122.20681128,
+      "latitude": 47.60734675,
+      "longitude": -122.20649562,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9348,10 +9351,7 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "6390000000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "6390000000"
     },
     {
       "state": "WA",
@@ -9400,10 +9400,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98004",
-      "latitude": 47.60806214,
-      "longitude": -122.20681128,
+      "latitude": 47.60734675,
+      "longitude": -122.20649562,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9430,10 +9433,7 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "6390000000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "6390000000"
     },
     {
       "state": "WA",
@@ -9482,10 +9482,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98004",
-      "latitude": 47.60806214,
-      "longitude": -122.20681128,
+      "latitude": 47.60734675,
+      "longitude": -122.20649562,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9512,10 +9515,7 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "6390000000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "6390000000"
     },
     {
       "state": "WA",
@@ -9529,7 +9529,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": null,
       "market_value": null,
-      "address": "2555 21ST AVE W, SEATTLE, WA, 98199",
+      "address": "2559 21ST AVE W, SEATTLE, WA, 98199",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Mixed Use)                            ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -9567,10 +9567,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98199",
-      "latitude": 47.64239662,
-      "longitude": -122.38352084,
+      "latitude": 47.64247801,
+      "longitude": -122.38352197,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9597,10 +9600,7 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 16.4% of median income"
       ],
-      "condo_parent_parcel": "6649350000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "6649350000"
     },
     {
       "state": "WA",
@@ -9644,6 +9644,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98119",
       "latitude": 47.63991951,
@@ -9674,10 +9677,7 @@
         "10.2% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "condo_parent_parcel": "6780800000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "6780800000"
     },
     {
       "state": "WA",
@@ -9729,6 +9729,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "MAPLE VALLEY",
       "zip": "98038",
       "latitude": 47.35672081,
@@ -9760,10 +9763,7 @@
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9807,6 +9807,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.34525362,
@@ -9838,10 +9841,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -9891,6 +9891,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.35044162074759,
@@ -9920,10 +9923,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -9973,6 +9973,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.35044244195276,
@@ -10002,10 +10005,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -10055,6 +10055,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "DES MOINES",
       "zip": "98198",
       "latitude": 47.352649884798296,
@@ -10084,10 +10087,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -10137,6 +10137,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98056",
       "latitude": 47.50693316,
@@ -10166,10 +10169,7 @@
         "5.5% housing vacancy proxy",
         "median rent \u2248 21.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10217,6 +10217,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98122",
       "latitude": 47.61634283,
@@ -10248,10 +10251,7 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10299,6 +10299,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98057",
       "latitude": 47.48060644,
@@ -10329,10 +10332,7 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 31.6% of median income"
       ],
-      "condo_parent_parcel": "7243300000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "7243300000"
     },
     {
       "state": "WA",
@@ -10380,6 +10380,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.53007233750003,
@@ -10411,10 +10414,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -10464,6 +10464,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "REDMOND",
       "zip": "98053",
       "latitude": 47.6487731,
@@ -10493,10 +10496,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10544,6 +10544,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "AUBURN",
       "zip": "98002",
       "latitude": 47.27663847,
@@ -10575,10 +10578,7 @@
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10622,6 +10622,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "TUKWILA",
       "zip": "98168",
       "latitude": 47.49383981,
@@ -10653,10 +10656,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10704,6 +10704,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "TUKWILA",
       "zip": "98168",
       "latitude": 47.486850968063706,
@@ -10735,10 +10738,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -10786,6 +10786,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SHORELINE",
       "zip": "98133",
       "latitude": 47.75782894,
@@ -10817,10 +10820,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10869,6 +10869,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SNOQUALMIE",
       "zip": "98065",
       "latitude": 47.5139584,
@@ -10900,10 +10903,7 @@
         "5.5% housing vacancy proxy",
         "median rent \u2248 17.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -10949,6 +10949,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98136",
       "latitude": 47.55510041,
@@ -10978,10 +10981,7 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 15.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11035,6 +11035,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATAC",
       "zip": "98198",
       "latitude": 47.42269269165529,
@@ -11066,10 +11069,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
       ],
-      "coordinate_source": "King County parcel centroid",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County parcel centroid"
     },
     {
       "state": "WA",
@@ -11117,6 +11117,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "RENTON",
       "zip": "98059",
       "latitude": 47.4857022,
@@ -11148,10 +11151,7 @@
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11201,6 +11201,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98031",
       "latitude": 47.42051155,
@@ -11230,10 +11233,7 @@
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11281,6 +11281,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98117",
       "latitude": 47.68556889,
@@ -11312,10 +11315,7 @@
         "4.7% housing vacancy proxy",
         "median rent \u2248 14.3% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11363,6 +11363,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98122",
       "latitude": 47.60553728,
@@ -11394,10 +11397,7 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11445,6 +11445,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98168",
       "latitude": 47.49285877,
@@ -11476,10 +11479,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11523,6 +11523,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98118",
       "latitude": 47.54757898,
@@ -11554,10 +11557,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11610,6 +11610,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98031",
       "latitude": 47.41742826,
@@ -11641,10 +11644,7 @@
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11688,6 +11688,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98144",
       "latitude": 47.59903705,
@@ -11719,10 +11722,7 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11770,6 +11770,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "King County",
       "zip": "98053",
       "latitude": 47.66054139291322,
@@ -11802,10 +11805,7 @@
         "median rent \u2248 16.6% of median income"
       ],
       "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "city_source": "King County ArcGIS Online city/unincorporated polygon"
     },
     {
       "state": "WA",
@@ -11851,6 +11851,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98105",
       "latitude": 47.66329959,
@@ -11880,10 +11883,7 @@
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11929,6 +11929,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98133",
       "latitude": 47.71003981,
@@ -11958,10 +11961,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -11975,7 +11975,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": null,
       "market_value": null,
-      "address": "6611 S 238TH PL, KENT, WA, 98032",
+      "address": "6716 S 238TH PL, KENT, WA, 98032",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -12005,10 +12005,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98032",
-      "latitude": 47.38801485,
-      "longitude": -122.25113617,
+      "latitude": 47.38828556,
+      "longitude": -122.2500787,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12035,10 +12038,7 @@
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
       ],
-      "condo_parent_parcel": "8944500000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "8944500000"
     },
     {
       "state": "WA",
@@ -12052,7 +12052,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": 1424000.0,
       "market_value": 1424000.0,
-      "address": "10678 NE 9TH PL, BELLEVUE, WA, 98004",
+      "address": "10676 NE 9TH PL, BELLEVUE, WA, 98004",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -12084,10 +12084,13 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98004",
-      "latitude": 47.61898879,
-      "longitude": -122.19788912,
+      "latitude": 47.61903395,
+      "longitude": -122.19783171,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12114,10 +12117,7 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "9187750000",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "condo_parent_parcel": "9187750000"
     },
     {
       "state": "WA",
@@ -12165,6 +12165,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "REDMOND",
       "zip": "98052",
       "latitude": 47.68405731,
@@ -12196,10 +12199,7 @@
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -12247,6 +12247,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "KENT",
       "zip": "98032",
       "latitude": 47.37806978,
@@ -12278,10 +12281,7 @@
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -12329,6 +12329,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98122",
       "latitude": 47.60287044,
@@ -12360,10 +12363,7 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     },
     {
       "state": "WA",
@@ -12412,6 +12412,9 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
+      "tax_due_currency": "USD",
+      "tax_due_normalized": true,
       "city": "SEATTLE",
       "zip": "98102",
       "latitude": 47.62740727,
@@ -12443,10 +12446,7 @@
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "coordinate_source": "King County address point",
-      "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source fields use 2 implied decimal places",
-      "tax_due_currency": "USD",
-      "tax_due_normalized": true
+      "coordinate_source": "King County address point"
     }
   ]
 }

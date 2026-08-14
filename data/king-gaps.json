@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-14T10:28:33.021932+00:00",
+  "source_updated_at": "2026-08-14T10:36:56.296558+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -283,7 +283,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "E 125 FT OF E 1/2 OF SW 1/4 OF SW 1/4 OF NW 1/4 OF SEC 1-21-5 LESS N 10 FT - SUBJ TO TRANS LN ESMTS",
       "tax_status": "T",
-      "tax_due_estimate": 1024082.0,
+      "tax_due_estimate": 10240.82,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -303,7 +303,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "GL 1 LESS W 830 FT LESS S 135 FT LESS POR GL 1 DAF - BEG NXN E LN W 1/2 - NW 1/4 SD SEC WITH N LN S 135 FT SD SUBD TH W PLT S LN GL 1 SD SEC 450 FT M/L TAP ON ON LOW WATER LN OF UPPER BEAVER LK TH NELY TAP ON E LN SD SUBD 84 FT N TPOB TH S ALG SD E LN TPOB (PER DEED REC # 9411100750) - AKA LOT B KC BLA, #L93L0036 REC #94111089005 - LESS POR LY SLY OF NLY LN E BEAVER LK DR SE PER KC SEPARATE LOT REVIEW #L95M0131 DTD 12-12-95",
       "tax_status": "T",
-      "tax_due_estimate": 882611.0,
+      "tax_due_estimate": 8826.11,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -323,7 +323,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALLENTOWN ACRES REPLAT UNREC LESS NELY 111.31 FT",
       "tax_status": "T",
-      "tax_due_estimate": 700576.0,
+      "tax_due_estimate": 7005.76,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -343,7 +343,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALLENTOWN ACRES REPLAT UNREC LESS NELY 111.31 FT",
       "tax_status": "T",
-      "tax_due_estimate": 597455.0,
+      "tax_due_estimate": 5974.55,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -363,7 +363,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALVORDS MOUNTAIN VIEW ACRES UNREC PORTION OF MOSES KIRKLAND DONATION LAND CLAIM DAF: BEGINNING AT NW CORNER OF SAID DONATION LAND CLAIM TH N89-21-15E 2270.70 FT TO ELY LINE OF STATE AID ROAD NO 69 TH S05-08-00W ALONG SAID E MARGIN 554.40 FT TH N89-07-50E 160 FT TO TPOB, TH CONTINUING N89-07-50E 47.02 FT TH N00-52-10W 92.12 FT TH S61-34-00W TO POINT FROM WHICH TPOB IS S05-08-00W TH S05-08-00W TO TPOB; EXC E 27.02 FT AS MEASURED ALONG S LINE OF SAID TRACT; AND EXC S 30 FT THEREOF FOR ROAD",
       "tax_status": "T",
-      "tax_due_estimate": 30119.0,
+      "tax_due_estimate": 301.19,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -383,7 +383,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALVORDS MOUNTAIN VIEW ACRES UNREC E 27.02 FT AS MEASURED ALONG S LINE OF FOLLOWING TRACT BEING A PORTION OF MOSES KIRKLAND DONATION LAND CLAIM DAF: BEGINNING AT NW CORNER OF SAID DONATION LAND CLAIM TH N89-21-15E 2270.70 FT TO ELY LINE OF STATE AID ROAD NO 69 TH S05-08-00W ALONG SAID E MARGIN, 554.40 FT TH N89-07-50E 160 FT TO TPOB TH CONTINUING N89-07-50E 47.02 FT TH N00-52-10W 92.12 FT TH S61-34-00W TO POINT FROM WHICH TPOB IS S05-08-00W TH S05-08-00W TO TPOB; EXC S 30 FT THEREOF FOR ROAD",
       "tax_status": "T",
-      "tax_due_estimate": 30120.0,
+      "tax_due_estimate": 301.2,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -402,7 +402,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "S 1/2 OF N 1/2 OF SE 1/4 OF NE 1/4 OF NE 1/4 LESS CO RD & S 1/2 OF NE 1/4 OF SW 1/4 OF NE 1/4 OF NE 1/4 CLASSIFIED AS OPEN SPACE LAND UNDER CHAPTER 84.34 RCW",
       "tax_status": "T",
-      "tax_due_estimate": 3638476.0,
+      "tax_due_estimate": 36384.76,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -421,7 +421,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ANGLE LAKE SHORE ACRES # 2 UNREC & SH LDS ADJ",
       "tax_status": "T",
-      "tax_due_estimate": 447446.0,
+      "tax_due_estimate": 4474.46,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -440,7 +440,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ARMSTRONGS MAPLEWOOD ADD",
       "tax_status": "T",
-      "tax_due_estimate": 1108356.0,
+      "tax_due_estimate": 11083.56,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -460,7 +460,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "S 360 FT AS MEAS ALG W LN OF N 1/2 OF SE 1/4 OF SE 1/4 LESS W 1143 FT LESS CO RD LESS C/M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 714299.0,
+      "tax_due_estimate": 7142.99,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -480,7 +480,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LOT B KC BLA 12-0003 REC #20120920900001 SD BLA LYING IN N 20 AC OF GL 1 NE 1/4 5-25-6 LESS S 280 FT OF W 750 FT & LESS W 30 FT THOF & A POR OF TR 28 STROMSLAND TRS UNREC LYING IN SE 1/4 OF SE 32-26-6 BEG 418.5 FT W OF SE COR TH N0-21-54 W 392.5 FT TO S LN CO RD TH SWLY, ALG SD LN 874.5 FT TO S LN SD SE 1/4 TH E ALG SD S LN 944.75 FT TO POB LESS WLY 73.8 FT FOR RD PER REC 4426612 & 6705334 & LESS POR FOR R/W PER REC #20020502000248",
       "tax_status": "T",
-      "tax_due_estimate": 2737964.0,
+      "tax_due_estimate": 27379.64,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -499,7 +499,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "E 110 FT OF POR OF W 1/2 OF W 1/2 OF GL 1 LY NLY OF CO RD # 410",
       "tax_status": "T",
-      "tax_due_estimate": 3410054.0,
+      "tax_due_estimate": 34100.54,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -518,7 +518,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BENSON HEIGHTS ADD LESS RD",
       "tax_status": "T",
-      "tax_due_estimate": 2690886.0,
+      "tax_due_estimate": 26908.86,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -537,7 +537,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BITTERLAKE TOWNHOMES ADD",
       "tax_status": "T",
-      "tax_due_estimate": 4306085.0,
+      "tax_due_estimate": 43060.85,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -556,7 +556,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR GL 3 BEG 31.05 FT W OF SW COR OF BLK 1 PORTAGE 1ST ADD TH N 14-58-00 E 524.72 FT TH N 75-58-00 E 95.7 FT TO TPOB TH S 75-58-00 W 95.7 FT TH N 11-44-40 E 10.2 FT TH N 44-28-00 E TO NELY LN OF LOT 3 TH SELY ALG SD NELY LN TO PT N 44-28-00 E OF TPOB TH S 44-28-00 W TO TPOB, LESS POR FOR RD",
       "tax_status": "T",
-      "tax_due_estimate": 783323.0,
+      "tax_due_estimate": 7833.23,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -576,7 +576,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "E 1/2 OF S 1/2 OF PORTION OF SW 1/4 OF NE 1/4 AS FOLLOWS, BEGIN NW CORNER OF NE 1/4 TH S 00-16-21.5 E 1325.04 FT TO SW CORNER OF NW 1/4 OF NE 1/4 TH N 88-03-45 E 654.89 FT TH S 00-12-21 E 124 FT TO POB OF TRACT HEREIN DESCRIBED TH S 00-12-21 E 124 FT TH N 88-03-45 E 320.14 FT, TH N 00-12-21 W 124 FT TAP N 88-03-45 E OF POB TH S 88-03-45 W TO POB",
       "tax_status": "T",
-      "tax_due_estimate": 394113.0,
+      "tax_due_estimate": 3941.13,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -595,7 +595,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "E 85 FT OF N 100 FT OF POR OF SE 1/4 OF NW 1/4 OF SE 1/4 LY E OF 29TH AVE NE, W OF 30TH AVE NE, S OF E 52ND ST & N OF BLAKELY ST",
       "tax_status": "T",
-      "tax_due_estimate": 18902903.0,
+      "tax_due_estimate": 189029.03,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -614,7 +614,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BROOKSIDE TO LAKE FOREST UNREC VAL OF UNDEEDED STS & ALLEYS ARE INCL IN ADJ LOTS LESS S 100 FT",
       "tax_status": "T",
-      "tax_due_estimate": 1524846.0,
+      "tax_due_estimate": 15248.46,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -633,7 +633,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BURIEN LAKE VIEW TRS DIV #5 LESS CO RD",
       "tax_status": "T",
-      "tax_due_estimate": 2211567.0,
+      "tax_due_estimate": 22115.67,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -653,7 +653,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BEG ON N LN OF SW 1/4 OF NW 1/4 296 FT W OF NE COR TH S 00-30-07 W 85.08 FT TH N 75-41-40 W ALG S MGN OF DIXON RD 295.74 FT TH ON CURVE TO RGT RAD 690.83 FT DIST 64.15 FT TO N LN SD SUBD TH E TO BEG LESS POR W OF LN RNG S FR PT 545.03 FT W OF NE COR OF SUBD",
       "tax_status": "T",
-      "tax_due_estimate": 37973.0,
+      "tax_due_estimate": 379.73,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -673,7 +673,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BURR ADD LESS ST HWY",
       "tax_status": "T",
-      "tax_due_estimate": 1018239.0,
+      "tax_due_estimate": 10182.39,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -693,7 +693,7 @@
       "value_basis": null,
       "legal_description": "CASA HERMOSA CONDOMINIUM PCT OF VALUE 2.2985 & P-38",
       "tax_status": "T",
-      "tax_due_estimate": 552153.0,
+      "tax_due_estimate": 5521.53,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -713,7 +713,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR SW 1/4 BEG AT NXN OF E LN OF W 1000 FT OF SW 1/4 & NLY MGN OF ANDREW REYNOLDS REV RD #1816 TH ALG SD NLY MGN N 78-08-35 E 355.96 FT TH ON A CURVE TO LFT RAD OF 686.20 FT AN ARC DIST 94.39 FT TH N 70-15-43 E 81.37 FT TH ON A CURVE TO RGT RAD OF 666.62 FT AN ARC DIST 309.69 FT TH CONTG ALG SD CURVE, TO RGT AN ARC DIST 120.37 FT TAP HEREINAFTER DESIGN AS PT Z TH LEAVING NLY MGN SD RD N 47-34-10 E 48.14 FT TH N 87-11-22 E 190 FT TH N 39-31-05 W 60.75 FT TH N 34-59-25 E 100.87 FT TH N 25-30-00 W 246 FT TH N 63-40-44 W 310.40 FT TO TPOB TH CONTG N 63-40-44 W 187 FT TH N 62-13-47 E 225 FT, TH S 63-40-44 E 187 FT TH S 62-13-47 W 225 FT TO TPOB LESS C/M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 345924.0,
+      "tax_due_estimate": 3459.24,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -733,7 +733,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "CIRCLE RIVER RANCH ADD TRACT R OF KING COUNTY BOUNDARY LINE ADJUSTMENT NO 01L0051 RECORDING NO 20020213900001 SAID TRACT R DEFINED - LOT 121 CIRCLE RIVER RANCH ADD SUBJ TO AGREEMENT PER DEV RGTS PER REC #8609051038",
       "tax_status": "T",
-      "tax_due_estimate": 30806.0,
+      "tax_due_estimate": 308.06,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -753,7 +753,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "CLAREMONT ADD",
       "tax_status": "T",
-      "tax_due_estimate": 3055399.0,
+      "tax_due_estimate": 30553.99,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -772,7 +772,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "CLARKS 2ND ADD TO KENT",
       "tax_status": "T",
-      "tax_due_estimate": 63122.0,
+      "tax_due_estimate": 631.22,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -791,7 +791,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "CLINKINGBEARDS 1/4 ACRE TRS LESS N 39 FT",
       "tax_status": "T",
-      "tax_due_estimate": 3439625.0,
+      "tax_due_estimate": 34396.25,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -810,7 +810,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "COLUMBIA RIDGE ADD",
       "tax_status": "T",
-      "tax_due_estimate": 912460.0,
+      "tax_due_estimate": 9124.6,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -830,7 +830,7 @@
       "value_basis": null,
       "legal_description": "COSMOPOLITAN THE CONDOMINIUM PCT UND INT  0.56",
       "tax_status": "T",
-      "tax_due_estimate": 4361275.0,
+      "tax_due_estimate": 43612.75,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -850,7 +850,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "S HALF S HALF NW QTR NW QTR SE QTR STR 18-22-05 EXC E 15 FT FOR 94TH AVE SE; TGW SW QTR NW QTR SE QTR STR 18-22-05 EXC S 660 FT THEREOF & EXC E 335 FT THEREOF",
       "tax_status": "T",
-      "tax_due_estimate": 172283.0,
+      "tax_due_estimate": 1722.83,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -870,7 +870,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR GL 7 - BEG NE COR TH S 89-23-37 W ALG N LN 137.94 FT TH S 10-56-43 E 30.49 FT TO TPOB TH CONTG S 10-56-43 E 96.73 FT TH S 89-45-04 W 100.12 FT TH N 10-56-43 W 96.73 FT TH N 89-23-37 E 100 FT TO TPOB",
       "tax_status": "T",
-      "tax_due_estimate": 262129.0,
+      "tax_due_estimate": 2621.29,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -889,7 +889,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "DAVIS ADD UNIT LOT \"Z\" OF SEATTLE SP #3032908-LU REC #20221018900002 & AMD BY REC #20230302900004 SD SP LOC IN LOTS 24-25 BLK 3 OF SD ADD",
       "tax_status": "T",
-      "tax_due_estimate": 693901.0,
+      "tax_due_estimate": 6939.01,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -909,7 +909,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "N 1/2 OF S 1/2 OF NW 1/4 OF NW 1/4 OF SW 1/4 LESS E 270 FT LESS W 45 FT LESS W 150 FT OF N 150 FT THOF LESS ST HWY POR TAXABLE",
       "tax_status": "T",
-      "tax_due_estimate": 160327.0,
+      "tax_due_estimate": 1603.27,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -928,7 +928,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "N 50 FT OF E 150 FT OF W 195 FT OF S 1/2 OF NW 1/4 OF NW 1/4 OF SW 1/4",
       "tax_status": "T",
-      "tax_due_estimate": 138751.0,
+      "tax_due_estimate": 1387.51,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -947,7 +947,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "S 100 FT OF N 150 FT OF E 150 FT OF W 195 FT OF S 1/2 OF NW 1/4 OF NW 1/4 OF  SW 1/4",
       "tax_status": "T",
-      "tax_due_estimate": 808305.0,
+      "tax_due_estimate": 8083.05,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1020,7 +1020,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "EAST TACOMA ADD PP ACT 39929104 MOBILE HOME LESS C & M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 1980097.0,
+      "tax_due_estimate": 19800.97,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1040,7 +1040,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "PORTION OF NW QTR NE QTR AND OF NE QTR NW QTR STR 22-22-04 DAF: BEGINNING AT SW CORNER OF SAID NE QTR NW QTR TH NORTH ALONG W LINE OF SAID NE QTR NW QTR 261 FT TO TPOB TH EAST PARALLEL WITH S LINE OF SAID NW QTR NE QTR AND OF SAID NE QTR NW QTR 1400.53 FT TH NORTH PARALLEL WITH W LINE OF, SAID NE QTR NW QTR 261 FT TH WEST PARALLEL WITH SAID S LINE TO W LINE OF SAID NE QTR NW QTR TH SOUTH ALONG SAID W LINE TO TPOB EXC PORTION THEREOF LYING WEST OF E LINE OF SKY HILL PLATTED IN VOL 62, PAGE 32",
       "tax_status": "T",
-      "tax_due_estimate": 71766.0,
+      "tax_due_estimate": 717.66,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1060,7 +1060,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "FAEGRES 1ST ADD TO W S",
       "tax_status": "T",
-      "tax_due_estimate": 42235.0,
+      "tax_due_estimate": 422.35,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1080,7 +1080,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "FAEGRES 1ST ADD TO W S",
       "tax_status": "T",
-      "tax_due_estimate": 602889.0,
+      "tax_due_estimate": 6028.89,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1099,7 +1099,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "FAIRWOOD PARK DIV # 8",
       "tax_status": "T",
-      "tax_due_estimate": 1069966.0,
+      "tax_due_estimate": 10699.66,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1119,7 +1119,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "E 150 FT OF POR OF NE 1/4 OF NE 1/4 LY NLY OF CO RD",
       "tax_status": "T",
-      "tax_due_estimate": 1405719.0,
+      "tax_due_estimate": 14057.19,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1139,7 +1139,7 @@
       "value_basis": null,
       "legal_description": "FOREST LANE CONDOMINIUM PCT UND INT  1.08",
       "tax_status": "T",
-      "tax_due_estimate": 1708101.0,
+      "tax_due_estimate": 17081.01,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1158,7 +1158,7 @@
       "value_basis": null,
       "legal_description": "FREMONT TERRACE CONDOMINIUM PCT UND INT  0.47",
       "tax_status": "T",
-      "tax_due_estimate": 118433.0,
+      "tax_due_estimate": 1184.33,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1177,7 +1177,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "FRYES ADD TO COLUMBIA S 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 3111467.0,
+      "tax_due_estimate": 31114.67,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1196,7 +1196,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "FRYES ADD TO COLUMBIA N 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 856751.0,
+      "tax_due_estimate": 8567.51,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1216,7 +1216,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR OF N 1/2 OF S 1/2 OF GL 4 DAF BEG NW COR TR 3 WILSONS ADD TO LK MERIDIAN TH N 89-45-00 E ALG N LN SD PLAT 387.20 FT TH N 22-48-00 W 54.24 FT TO TPOB TH N 89-45-00 E 21.70 FT TH N 22-48-00 W 162.72 FT TH S 89-45-00 W 21.70 FT TH S 22-48-00 E 162.72 FT TO TPOB",
       "tax_status": "T",
-      "tax_due_estimate": 27270.0,
+      "tax_due_estimate": 272.7,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1235,7 +1235,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "GILMAN PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 6628700.0,
+      "tax_due_estimate": 66287.0,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1254,7 +1254,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "GILMANS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 4103823.0,
+      "tax_due_estimate": 41038.23,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1273,7 +1273,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "S 85 FT OF N 285 FT OF W 120 FT OF NE 1/4 OF NW 1/4 & UND 4/6 INT IN S 170 FT OF N 200 FT OF E 60 FT OF W 195 FT & IN S 85 FT OF N 285 FT OF E 90 FT OF W 210 FT BOTH OF NE 1/4 OF NW 1/4",
       "tax_status": "T",
-      "tax_due_estimate": 0,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1293,7 +1293,7 @@
       "value_basis": null,
       "legal_description": "GRANDVIEW CONDOMINIUM PCT OF VALUE 1.5665",
       "tax_status": "T",
-      "tax_due_estimate": 5242114.0,
+      "tax_due_estimate": 52421.14,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1313,7 +1313,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SEE \"0\" ACCOUNT FOR FULL LEGAL (REMOVAL ENTIRE PARCEL FROM THE FARM & AGRICULTURAL LAND DESIGNATION PER RCW 84.34)",
       "tax_status": "T",
-      "tax_due_estimate": 2806772.0,
+      "tax_due_estimate": 28067.72,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1333,7 +1333,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SEE \"0\" ACCOUNT FOR FULL LEGAL (REMOVAL ENTIRE PARCEL FROM THE FARM & AGRICULTURAL LAND DESIGNATION PER RCW 84.34)",
       "tax_status": "T",
-      "tax_due_estimate": 4725351.0,
+      "tax_due_estimate": 47253.51,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1352,7 +1352,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SEE \"0\" ACCOUNT FOR FULL LEGAL (REMOVAL ENTIRE PARCEL FROM THE FARM & AGRICULTURAL LAND DESIGNATION PER RCW 84.34)",
       "tax_status": "T",
-      "tax_due_estimate": 3187765.0,
+      "tax_due_estimate": 31877.65,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1371,7 +1371,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "GREENWOOD POINT",
       "tax_status": "T",
-      "tax_due_estimate": 6246732.0,
+      "tax_due_estimate": 62467.32,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1391,7 +1391,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR OF GL 1 LY WLY OF LANDSBERG RD LESS N 1060 FT",
       "tax_status": "T",
-      "tax_due_estimate": 548913.0,
+      "tax_due_estimate": 5489.13,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1410,7 +1410,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HALEY'S TERRACE TGW UND INT IN TRACT F",
       "tax_status": "T",
-      "tax_due_estimate": 4505104.0,
+      "tax_due_estimate": 45051.04,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1430,7 +1430,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR OF SW 1/4 OF NE 1/4-BAAP ON W SUBD LN 616 FT NLY OF SW COR THOF TH S 88-20-45 E 96 FT TO TPOB TH S 88-20-45 E 54 FT TH N 05-14-12 W 40 FT TH S 89-37-17 E 100 FT TH N 4-14-29 W 60 FT TH N 88-20-54 W 153.77 FT TH S 30-52-00 W 43.96 FT TH S 25-36-11 E 68.73 FT TO POB",
       "tax_status": "T",
-      "tax_due_estimate": 205015.0,
+      "tax_due_estimate": 2050.15,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1449,7 +1449,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HELGESONS VIEW HEIGHTS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 4261497.0,
+      "tax_due_estimate": 42614.97,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1469,7 +1469,7 @@
       "value_basis": null,
       "legal_description": "HIDDEN CREEK CONDOMINIUM PCT UND INT  0.8400",
       "tax_status": "T",
-      "tax_due_estimate": 1653539.0,
+      "tax_due_estimate": 16535.39,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1489,7 +1489,7 @@
       "value_basis": null,
       "legal_description": "HIGHPOINTER COND PCT OF VAL .6443",
       "tax_status": "T",
-      "tax_due_estimate": 1024275.0,
+      "tax_due_estimate": 10242.75,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1509,7 +1509,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILL TRACT ADD SUPL 1-2 LESS E 16.77 FT OF 3 LESS ST",
       "tax_status": "T",
-      "tax_due_estimate": 947071.0,
+      "tax_due_estimate": 9470.71,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1528,7 +1528,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILLMANS C D AUBURNDALE DIV #1 BEG AT NXN OF WLY LN OF SD LOT 1 & SLY LN OF LEA HILL RD TH SLY ALG SD WLY LN TO S LN OF VAC ST ADJ SD LOT 1 TH N 89-55-00 E 180.87 FT TH N 01-29-00 E 48.9 FT TH N 86-55-00 E 86.98 FT TH N 00-05-00 W 70 FT M/L TO SLY LN LEA HILL RD TH SWLY ALG SD RD TO POB TGW POR NE 1/4 OF NW 1/4 OF, SE 1/4 OF SEC 8-21-5 BAAP ON N LN SD SUBD 15 FT E OF NW COR THOF TH S 00-13-00 E PLL TO W LN SD SUBD 76.6 FT TH N 86-07-00 E 96.35 FT TH N 01-58-00 E 70 FT TO N LN SD SUBD TH S 89-55-00 W ALG SD N LN 99.07 TO POB",
       "tax_status": "T",
-      "tax_due_estimate": 1538752.0,
+      "tax_due_estimate": 15387.52,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1547,7 +1547,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILLMANS EARLINGTON GARDENS # 1",
       "tax_status": "T",
-      "tax_due_estimate": 3927302.0,
+      "tax_due_estimate": 39273.02,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1566,7 +1566,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILLMANS MEADOW GARDENS DIV # 1",
       "tax_status": "T",
-      "tax_due_estimate": 2545776.0,
+      "tax_due_estimate": 25457.76,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1586,7 +1586,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILLMANS MEADOW GARDENS DIV #2 PORTION OF LOTS 22 & 23 LY NLY OF FOLLOWING LINE - BEGIN NE CORNER OF LOT 22 TH S 06-49-30 E 235 FT TO POINT OF BEGINNING TH N 71-03-51 W 50 FT TH N 69-28-57 W 49.26 FT TAP S 06-49-30 E 244.73 FT FROM N W CORNER OF LOT 23, AND TERMINUS OF SAID LINE - PARCEL A OF CITY OF SEATTLE LOT BOUNDARY ADJUSTMENT NO 9602638 RECORDING NO 9711191075",
       "tax_status": "T",
-      "tax_due_estimate": 1057918.0,
+      "tax_due_estimate": 10579.18,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1605,7 +1605,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILLMANS CD MEADOW GARDENS DIV# 2 S 1/2 LESS PIPE LINE R/W PER KCSCC#121648 & SEA ORD#37022",
       "tax_status": "T",
-      "tax_due_estimate": 2407555.0,
+      "tax_due_estimate": 24075.55,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1624,7 +1624,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "PORTION OF SE QTR STR 34-22-05 DAF: BEGINNING AT SE CORNER OF SAID SW QTR TH NORTH ALONG E LINE OF SAID SW QTR 959 FT MORE OR LESS TO S LINE OF PARCEL ADJUDICATED IN GEORGE CHRISTOFFERSEN ET UX IN KING CO SUPERIOR COURT CAUSE NO 708410 ENTITLED DUNN/CHRISTOFFERSEN TH CONTINUING NORTH ALONG SAID E, LINE OF SW QTR 419.51 FT TO TPOB TH N89-21-45W PARALLEL TO S LINE OF N QTR SE QTR SW QTR OF SAID SECTION 34 DISTANCE OF 411.17 FT TH NORTH PARALLEL WITH E LINE OF SW QTR OF SAID SECTION 160 FT MORE OR LESS TO SW CORNER OF PARCEL CONVEYED TO JOHN W WALKER ET EX BY DEED UNDER RECORDING NO 7206280373, TH S89-23-52E 214.99 FT TH S02-24-42E 60.76 FT TH S81-20-29E 193.78 FT TH S89-23-05E 0.65 FT TO E LINE OF SAID SW QTR HEREIN DEFINED AS POINT \"A\" TH SOUTH ALONG SAID E LINE TO TPOB; TGW PORTION OF TRACT \"A\" & LOT 11 FISHER ESTATES LYING WITHIN SE, QTR STR 34-22-05 DAF: COMMENCING AT ABOVE DESCRIBED TPOB TH S89-23-52E 51.40 FT TH N11-16-10W 50.97 FT TO POINT OF CUSP ON CURVE CONCAVE TO SE HAVING RADIUS OF 20.00 FT & CENTRAL ANGLE OF 62-05-43 TH SWLY & SLY ALONG SAID CURVE 21.68 FT TO POINT OF CUSP TH N00-54-44E 39.90 FT, TH N89-23-05W 30.00 FT TO ABOVE DESCRIBED POINT \"A\" TH S00-54-44W 72.17 FT TO TPOB",
       "tax_status": "T",
-      "tax_due_estimate": 280349.0,
+      "tax_due_estimate": 2803.49,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1644,7 +1644,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "INGLEWOOD ADD LESS CO RD",
       "tax_status": "T",
-      "tax_due_estimate": 52753.0,
+      "tax_due_estimate": 527.53,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1664,7 +1664,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "INGLEWOOD ADD & ALL OF VAC 208TH AVE NE ADJ",
       "tax_status": "T",
-      "tax_due_estimate": 60284.0,
+      "tax_due_estimate": 602.84,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1684,7 +1684,7 @@
       "value_basis": null,
       "legal_description": "INSIGNIA CONDOMINIUM PCT UND INT  0.1419",
       "tax_status": "T",
-      "tax_due_estimate": 430492.0,
+      "tax_due_estimate": 4304.92,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1704,7 +1704,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "TRACT 1 LESS POR CONVEYED TO STATE OF WA BY DEED REC NO 9411180817 OF KING CO SHORT PLAT NO 1276010 REC NO 7708180969 SD SP DAF: NE QTR OF SE QTR STR 36-23-06 LESS RDS",
       "tax_status": "T",
-      "tax_due_estimate": 328266.0,
+      "tax_due_estimate": 3282.66,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1724,7 +1724,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR OF N 30 FT OF S 4/5 OF NE 1/4 OF NE 1/4 LY E OF HOLMAN RD NW & W OF NLY PROLONGATION OF WLY BDRY OF LOT 1 BLK 1 HOMELAND UNREC",
       "tax_status": "T",
-      "tax_due_estimate": 663499.0,
+      "tax_due_estimate": 6634.99,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1743,7 +1743,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JACOBSONS G I ADD LOT \"F\" OF SEATTLE SP# 3028362 REC# 20201223900016 SD SP BEING POR OF BLK 1 OF SD ADD",
       "tax_status": "T",
-      "tax_due_estimate": 330989.0,
+      "tax_due_estimate": 3309.89,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1763,7 +1763,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JACQUES PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 28477.0,
+      "tax_due_estimate": 284.77,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1783,7 +1783,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA ADD",
       "tax_status": "T",
-      "tax_due_estimate": 62672.0,
+      "tax_due_estimate": 626.72,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1803,7 +1803,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 59117.0,
+      "tax_due_estimate": 591.17,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1823,7 +1823,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 314468.0,
+      "tax_due_estimate": 3144.68,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1843,7 +1843,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 267840.0,
+      "tax_due_estimate": 2678.4,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1862,7 +1862,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "KELSEYS BRIGHTON BEACH ACRE TRS W 54 FT S OF ALLEY LESS ST",
       "tax_status": "T",
-      "tax_due_estimate": 2837970.0,
+      "tax_due_estimate": 28379.7,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -1882,7 +1882,7 @@
       "value_basis": null,
       "legal_description": "KIRKLAND PLACE CONDOMINIUM PCT UND INT  1.00",
       "tax_status": "T",
-      "tax_due_estimate": 180500.0,
+      "tax_due_estimate": 1805.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1901,7 +1901,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "KNOLL WOOD ADD",
       "tax_status": "T",
-      "tax_due_estimate": 1047770.0,
+      "tax_due_estimate": 10477.7,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1920,7 +1920,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAGO VISTA ADD LESS S 59 FT",
       "tax_status": "T",
-      "tax_due_estimate": 4067097.0,
+      "tax_due_estimate": 40670.97,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1940,7 +1940,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKE DELL N 65 FT OF E 140 FT LESS ST",
       "tax_status": "T",
-      "tax_due_estimate": 2008088.0,
+      "tax_due_estimate": 20080.88,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1959,7 +1959,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKE FOREST PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 2563300.0,
+      "tax_due_estimate": 25633.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1979,7 +1979,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKE MARCEL # 4 TGW UND INT IN TRS A & B LAKE & COMMUNITY BEACHES",
       "tax_status": "T",
-      "tax_due_estimate": 825508.0,
+      "tax_due_estimate": 8255.08,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1999,7 +1999,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKE MORTON TRS SELY 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 174095.0,
+      "tax_due_estimate": 1740.95,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2019,7 +2019,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKOTA ADD LESS SWLY 140 FT THOF",
       "tax_status": "T",
-      "tax_due_estimate": 638638.0,
+      "tax_due_estimate": 6386.38,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2039,7 +2039,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LARSON PARKE RECREATION",
       "tax_status": "T",
-      "tax_due_estimate": 32069.0,
+      "tax_due_estimate": 320.69,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2058,7 +2058,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LATIMERS N H LAKE WN PLAT LOT 2 OF CITY OF RENTON SHORT PLAT NO LUA 93-64 SHPL RECORDING NO 9406169004 SAID SHORT PLAT DAF - N 45 FT OF TRACT 46 OF N H LATIMERS LAKE WASHINGTON PLAT TGW S 1/2 OF VACATED S 129TH S NW 3RD PLACE ADJ",
       "tax_status": "T",
-      "tax_due_estimate": 2660939.0,
+      "tax_due_estimate": 26609.39,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2077,7 +2077,7 @@
       "value_basis": null,
       "legal_description": "LATITUDE CONDOMINIUM PCT UND INT  0.56",
       "tax_status": "T",
-      "tax_due_estimate": 1808716.0,
+      "tax_due_estimate": 18087.16,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2096,7 +2096,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MABLEY ADD N 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 2368741.0,
+      "tax_due_estimate": 23687.41,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2115,7 +2115,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MABLEY ADD S 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 2379028.0,
+      "tax_due_estimate": 23790.28,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2134,7 +2134,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MARCOS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 0,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2153,7 +2153,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MARYMOOR HILL DIV NO 02",
       "tax_status": "T",
-      "tax_due_estimate": 7600454.0,
+      "tax_due_estimate": 76004.54,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2173,7 +2173,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MAY VALLEY DIV # 1 E 35 FT OF 40 ALL 39 LESS C & M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 2157957.0,
+      "tax_due_estimate": 21579.57,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2192,7 +2192,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MC KINLEY HEIGHTS UNREC W 150 FT",
       "tax_status": "T",
-      "tax_due_estimate": 3351002.0,
+      "tax_due_estimate": 33510.02,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2211,7 +2211,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MC MICKEN HEIGHTS DIV NO 2 UNREC LOT 2 OF CITY OF SEATAC SHORT PLAT NO 0005-90 RECORDING NO 9105159003 SD SHORT PLAT DAF - POR OF NE 1/4 OF SW 1/4 OF SEC 27-23-04 - BEG NW COR OF NW 1/4 OF SEC 27-23-04 TH S 00-01-11 W 1835.29 FT TH S 89-59-10 E 2245 FT TH S 00-01-11 W 1280 FT, TH S 89-59-10 E 260 FT TO POB TH S 89-59-10 E 100 FT TH S 00-01-11 W 275 FT TH N 89-59-10 W 100 FT TH N 00-01-11 E 275 FT TO POB LESS BEG ABOVE POB TH S 89-59-10 E 10 FT TH S 00-01-11 W 125 FT TH N 89-59-10 W 10 FT TH N 00-01-11 E 125 FT, TO POB - AKA LOT 20 LESS W 10 OF N 125 FT OF BLK 20 OF MC MICKEN HEIGHTS DIV NO 2 UNRECORDED PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 3803867.0,
+      "tax_due_estimate": 38038.67,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2230,7 +2230,7 @@
       "value_basis": null,
       "legal_description": "MEADOWGLEN CONDOMINIUM PCT UND INT  1.24",
       "tax_status": "T",
-      "tax_due_estimate": 180356.0,
+      "tax_due_estimate": 1803.56,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2249,7 +2249,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MILLERS TO LAKE FOREST PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 4213726.0,
+      "tax_due_estimate": 42137.26,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2269,7 +2269,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MIRRORMONT DIV # 2 LESS C & M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 463899.0,
+      "tax_due_estimate": 4638.99,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2289,7 +2289,7 @@
       "value_basis": null,
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
       "tax_status": "T",
-      "tax_due_estimate": 2727822.0,
+      "tax_due_estimate": 27278.22,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2309,7 +2309,7 @@
       "value_basis": null,
       "legal_description": "NORDSTROM E J MED TOWER CONDO PCT UND INT  1.45",
       "tax_status": "T",
-      "tax_due_estimate": 646956.0,
+      "tax_due_estimate": 6469.56,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2329,7 +2329,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "NORTHWESTERN GARDEN TRS DIV #5 TR 3 LESS N 207.05 FT -- KC SEPARATE LOT REVIEW FILE NO S 92 M0024 DATED MAY 1, 1992",
       "tax_status": "T",
-      "tax_due_estimate": 231154.0,
+      "tax_due_estimate": 2311.54,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2348,7 +2348,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "NORTHWESTERN GARDEN TRS DIV #5 TR 4 LESS E 60 FT KC SEPARATE LOT REVIEW FILE NO S92M0024 DATED MAY 1, 1992",
       "tax_status": "T",
-      "tax_due_estimate": 377484.0,
+      "tax_due_estimate": 3774.84,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2368,7 +2368,7 @@
       "value_basis": null,
       "legal_description": "101 MEYDENBAUER CONDO PERCENTAGE OF VALUE 3.47",
       "tax_status": "T",
-      "tax_due_estimate": 8688728.0,
+      "tax_due_estimate": 86887.28,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2388,7 +2388,7 @@
       "value_basis": null,
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "tax_status": "T",
-      "tax_due_estimate": 99755.0,
+      "tax_due_estimate": 997.55,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2408,7 +2408,7 @@
       "value_basis": null,
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "tax_status": "T",
-      "tax_due_estimate": 99755.0,
+      "tax_due_estimate": 997.55,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2428,7 +2428,7 @@
       "value_basis": null,
       "legal_description": "PARKSIDE LOFTS CONDOMINIUM PCT UND INT  8.00",
       "tax_status": "T",
-      "tax_due_estimate": 676582.0,
+      "tax_due_estimate": 6765.82,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2448,7 +2448,7 @@
       "value_basis": null,
       "legal_description": "PIERRE MARQUIS CONDOMINIUM PCT OF VALUE 2.03",
       "tax_status": "T",
-      "tax_due_estimate": 226140.0,
+      "tax_due_estimate": 2261.4,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2467,7 +2467,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "PLA-MOR MOBILE HOME ESTATES TGW UND INT IN TRACT A TGW UND INT IN TR A OF PLAT OF PLA-MOR MOBILE HOME ESTATES NO 3 LESS POR TR A OF PLA-MOR PER REC #19991227001413",
       "tax_status": "T",
-      "tax_due_estimate": 2282187.0,
+      "tax_due_estimate": 22821.87,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2486,7 +2486,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "REDONDO BEACH DIV # 1",
       "tax_status": "T",
-      "tax_due_estimate": 253036.0,
+      "tax_due_estimate": 2530.36,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2506,7 +2506,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "REDONDO BEACH DIV # 1",
       "tax_status": "T",
-      "tax_due_estimate": 1211579.0,
+      "tax_due_estimate": 12115.79,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2526,7 +2526,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "REDONDO BEACH DIV # 1",
       "tax_status": "T",
-      "tax_due_estimate": 1223616.0,
+      "tax_due_estimate": 12236.16,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2546,7 +2546,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "REDONDO BEACH 1ST PLAT UNREC POR OF GL 2 IN SEC 32-22-04 DAF - BEG AT SW COR OF NE OF SD SEC TH N 89-29-50 E 580.28 FT ALG S LN OF SD SEC TO NXN OF SD LN WITH NXN OF C/L OF 10TH AVE S TH N 00-20-45 E 672.36 FT ALG C/L OF SD RD TH N 89-39-15 W 30 FT TO WLY MGN OF SD RD & POB TH S 89-29-50 W 150.03 FT, TH N 00-20-45 E 98.02 FT TH N 89-29-50 E 54.36 FT TH S 00-15-45 W 78.01 FT TH S 89-29-50 W 95.55 FT TO WLY MGN OF SD RD TH S 00-20-45 W 20 FT TO POB AKA PAR A OF DES MOINES LLA 2000-051 REC #20010105900004",
       "tax_status": "T",
-      "tax_due_estimate": 913589.0,
+      "tax_due_estimate": 9135.89,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2565,7 +2565,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RENTON HIGHLANDS #2 CORRECT PLAT LOT 3 OF RENTON SHORT PLAT #LUA-04-006 REC #20050323900008 SD SP BEING LOT 4 BLK 46 OF SD PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 3514913.0,
+      "tax_due_estimate": 35149.13,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2584,7 +2584,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RENTON HILL ADD N 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 3645359.0,
+      "tax_due_estimate": 36453.59,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2604,7 +2604,7 @@
       "value_basis": null,
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "tax_status": "T",
-      "tax_due_estimate": 1018525.0,
+      "tax_due_estimate": 10185.25,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2624,7 +2624,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "REXFORDS 1ST ADD PARCEL 'B' SEATTLE SHORT SUBDIVISION NO. 9606509 REC NO. 9705169001 SD SHORT SUBDIVISION DAF - LOTS 5 & 6 IN BLOCK 1 OF REXFORDS 1ST ADDITION PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 1533762.0,
+      "tax_due_estimate": 15337.62,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2643,7 +2643,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RIDGE HAVEN LOT 3 KCSP #1280042R REC #8104030754 SD SP DAF LOT 10",
       "tax_status": "T",
-      "tax_due_estimate": 1041908.0,
+      "tax_due_estimate": 10419.08,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2662,7 +2662,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RIVERSIDE SOUTH DIV # 2 LESS C AND M RTS",
       "tax_status": "T",
-      "tax_due_estimate": 2571802.0,
+      "tax_due_estimate": 25718.02,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2681,7 +2681,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RIVERTON ADD LESS ST LESS POR LOT 1 LY ELY OF E MARGINAL WAY",
       "tax_status": "T",
-      "tax_due_estimate": 240443.0,
+      "tax_due_estimate": 2404.43,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2701,7 +2701,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ROBBINS SPRING BROOK ADDITION TO RIVERTON LOTS 4 & 5 BLK 7; EXC PORTION CONVEYED TO STATE OF WA FOR STATE ROAD NO 1 BY DEED UNDER RECORDING NO 2014239; AND EXC PORTION CONVEYED TO CITY OF TUKWILA BY DEED UNDER RECORDING NO 20080303002064",
       "tax_status": "T",
-      "tax_due_estimate": 628654.0,
+      "tax_due_estimate": 6286.54,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2720,7 +2720,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ROSEWOOD TERRACE ADD",
       "tax_status": "T",
-      "tax_due_estimate": 3821487.0,
+      "tax_due_estimate": 38214.87,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2739,7 +2739,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RUMBOLZ SUNSET HIGHWAY TRS PARCEL 1 OF KC SHORT PLAT NO 881069 RECORDING NO 8208260418 SD PLAT DAF - LOT 3 BLK 1 RUMBOLZ SUNSET HIGHWAY TRACTS LESS ST HWY LESS N 30 FT FOR RD",
       "tax_status": "T",
-      "tax_due_estimate": 3223319.0,
+      "tax_due_estimate": 32233.19,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2758,7 +2758,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SEA VIEW PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 569857.0,
+      "tax_due_estimate": 5698.57,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2778,7 +2778,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SEELEYS TO DES MOINES VAC S 25 FT OF N 225 FT",
       "tax_status": "T",
-      "tax_due_estimate": 75354.0,
+      "tax_due_estimate": 753.54,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2797,7 +2797,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SIENNA TGW UND INT IN TRACT B",
       "tax_status": "T",
-      "tax_due_estimate": 5063049.0,
+      "tax_due_estimate": 50630.49,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2816,7 +2816,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SOPHIA GLENN TGW UND INT IN TRACT D",
       "tax_status": "T",
-      "tax_due_estimate": 3518099.0,
+      "tax_due_estimate": 35180.99,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2835,7 +2835,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SPREUTELS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 3824180.0,
+      "tax_due_estimate": 38241.8,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2854,7 +2854,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SQUIRE PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 4045365.0,
+      "tax_due_estimate": 40453.65,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2873,7 +2873,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "STIMSON PARK DIV # 2 UNREC",
       "tax_status": "T",
-      "tax_due_estimate": 1820738.0,
+      "tax_due_estimate": 18207.38,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2892,7 +2892,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SUNNYSIDE 5-ACRE TRS PARCEL \"C\" SEATTLE SHORT SUBDIVISION NO. 9801327 REC NO. 9807089010 SD SHORT SUBDIVISION DAF- THAT POR OF THE NORTH 1/2 OF TRACT 27 IN SUNNYSIDE FIVE ACRE TRACTS LY WEST OF 47TH AVE S - LESS THE WEST 119.58 FT THOF",
       "tax_status": "T",
-      "tax_due_estimate": 492691.0,
+      "tax_due_estimate": 4926.91,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2911,7 +2911,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SWANSON COURT",
       "tax_status": "T",
-      "tax_due_estimate": 1375192.0,
+      "tax_due_estimate": 13751.92,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2930,7 +2930,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SYNDICATE ADD LESS STREET",
       "tax_status": "T",
-      "tax_due_estimate": 1660291.0,
+      "tax_due_estimate": 16602.91,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2950,7 +2950,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "UNION HILL HEIGHTS NO 4",
       "tax_status": "T",
-      "tax_due_estimate": 1934970.0,
+      "tax_due_estimate": 19349.7,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2969,7 +2969,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "UNIVERSITY PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 2614143.0,
+      "tax_due_estimate": 26141.43,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2988,7 +2988,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "VIEW LANDS ADD DIV # 2 N 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 382804.0,
+      "tax_due_estimate": 3828.04,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -3008,7 +3008,7 @@
       "value_basis": null,
       "legal_description": "VILLAGE ON JAMES ST CONDOMINIUM PCT UND INT  0.7962",
       "tax_status": "T",
-      "tax_due_estimate": 36717.0,
+      "tax_due_estimate": 367.17,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -3027,7 +3027,7 @@
       "value_basis": null,
       "legal_description": "WASHINGTON SQ TOWERS 1 & 2 CONDO PCT UND INT  0.4299",
       "tax_status": "T",
-      "tax_due_estimate": 529841.0,
+      "tax_due_estimate": 5298.41,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -3046,7 +3046,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "WEXFORD",
       "tax_status": "T",
-      "tax_due_estimate": 3532337.0,
+      "tax_due_estimate": 35323.37,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -3065,7 +3065,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "YESLERS 1ST ADD TO KENT",
       "tax_status": "T",
-      "tax_due_estimate": 2428887.0,
+      "tax_due_estimate": 24288.87,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -3084,7 +3084,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "YESLERS H L 1ST ADD W 68 FT",
       "tax_status": "T",
-      "tax_due_estimate": 6572854.0,
+      "tax_due_estimate": 65728.54,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -3103,7 +3103,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "YESLERS SARAH B 1ST ADD",
       "tax_status": "T",
-      "tax_due_estimate": 7650177.0,
+      "tax_due_estimate": 76501.77,
       "enrichment_note": "legal description, tax receivables"
     }
   ]
