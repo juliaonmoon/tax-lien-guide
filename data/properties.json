@@ -3600,7 +3600,12 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ]
+      ],
+      "tax_status": "In tax foreclosure",
+      "tax_status_basis": "King County official Properties in foreclosure status list",
+      "tax_status_source_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions/properties",
+      "legal_description_status": "Not present in King County bulk parcel/GIS or WA State Parcels feeds; individual King County Recorder parcel search required",
+      "legal_description_source_url": "https://kingcounty.gov/en/dept/executive-services/certificates-permits-licenses/records-licensing/recorders-office/records-search"
     },
     {
       "state": "WA",
@@ -3676,7 +3681,12 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ]
+      ],
+      "tax_status": "In tax foreclosure",
+      "tax_status_basis": "King County official Properties in foreclosure status list",
+      "tax_status_source_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions/properties",
+      "legal_description_status": "Not present in King County bulk parcel/GIS or WA State Parcels feeds; individual King County Recorder parcel search required",
+      "legal_description_source_url": "https://kingcounty.gov/en/dept/executive-services/certificates-permits-licenses/records-licensing/recorders-office/records-search"
     },
     {
       "state": "WA",

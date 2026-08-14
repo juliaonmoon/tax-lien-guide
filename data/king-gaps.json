@@ -4,8 +4,7 @@
   "missing_counts": {
     "address": 54,
     "legal_description": 2,
-    "opening_bid": 145,
-    "tax_status": 2
+    "opening_bid": 145
   },
   "missing_parcel_ids_by_field": {
     "address": [
@@ -214,10 +213,6 @@
       "9825700035",
       "9826701500",
       "9831200460"
-    ],
-    "tax_status": [
-      "2188201795",
-      "2188201800"
     ]
   },
   "missing_address_status_counts": {
@@ -911,7 +906,6 @@
       "missing": [
         "address",
         "legal_description",
-        "tax_status",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
@@ -924,7 +918,7 @@
       "improvement_value": 0,
       "value_basis": "Washington State Parcels Project market land + building value (2026 snapshot)",
       "legal_description": null,
-      "tax_status": null,
+      "tax_status": "In tax foreclosure",
       "tax_due_estimate": null,
       "enrichment_note": "legal description"
     },
@@ -933,7 +927,6 @@
       "missing": [
         "address",
         "legal_description",
-        "tax_status",
         "opening_bid"
       ],
       "address_status": "No assigned situs address found in King County GIS",
@@ -946,7 +939,7 @@
       "improvement_value": 0,
       "value_basis": "Washington State Parcels Project market land + building value (2026 snapshot)",
       "legal_description": null,
-      "tax_status": null,
+      "tax_status": "In tax foreclosure",
       "tax_due_estimate": null,
       "enrichment_note": "legal description"
     },
