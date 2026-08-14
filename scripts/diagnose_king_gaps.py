@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import json
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,9 +27,15 @@ def main():
     wa = [p for p in doc.get("properties", []) if p.get("state") == "WA" and p.get("county") == "King"]
     gaps = []
     counter = Counter()
+    by_field = defaultdict(list)
+    address_status_counts = Counter()
     for p in wa:
         missing = [name for name, test in FIELDS.items() if not test(p)]
         counter.update(missing)
+        for field in missing:
+            by_field[field].append(str(p.get("parcel_id") or ""))
+        if "address" in missing:
+            address_status_counts[str(p.get("address_status") or "Unclassified")] += 1
         if missing:
             gaps.append({
                 "parcel_id": p.get("parcel_id"),
@@ -40,6 +46,9 @@ def main():
                 "zip": p.get("zip"),
                 "property_type": p.get("property_type"),
                 "assessed_value": p.get("assessed_value"),
+                "land_value": p.get("land_value"),
+                "improvement_value": p.get("improvement_value"),
+                "value_basis": p.get("value_basis"),
                 "legal_description": p.get("legal_description"),
                 "tax_status": p.get("tax_status"),
                 "tax_due_estimate": p.get("tax_due_estimate"),
@@ -49,6 +58,8 @@ def main():
         "source_updated_at": doc.get("updated_at"),
         "king_count": len(wa),
         "missing_counts": dict(sorted(counter.items())),
+        "missing_parcel_ids_by_field": {k: v for k, v in sorted(by_field.items())},
+        "missing_address_status_counts": dict(sorted(address_status_counts.items())),
         "gaps": gaps,
     }, indent=2), encoding="utf-8")
     print(f"Wrote {OUT}: {len(gaps)} rows with at least one tracked gap")
