@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T08:08:22.334691+00:00",
+  "updated_at": "2026-08-14T05:42:29.613262+00:00",
   "prototype": true,
   "properties": [
     {
@@ -995,7 +995,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "VASHON",
+      "zip": "98070",
+      "latitude": 47.43022988,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1038,7 +1044,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATAC",
+      "zip": "98188",
+      "latitude": 47.42704406,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1086,7 +1098,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "AUBURN",
+      "zip": "98002",
+      "latitude": 47.28442789,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1227,7 +1245,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98042",
+      "latitude": 47.34335366,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1274,7 +1298,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98058",
+      "latitude": 47.44587344,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1327,7 +1357,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98133",
+      "latitude": 47.72363696,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1380,7 +1416,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "VASHON",
+      "zip": "98070",
+      "latitude": 47.40631897,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1476,7 +1518,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98105",
+      "latitude": 47.66612937,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1524,7 +1572,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "LAKE FOREST PARK",
+      "zip": "98155",
+      "latitude": 47.7536143,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1572,7 +1626,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "BURIEN",
+      "zip": "98148",
+      "latitude": 47.46526813,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1897,7 +1957,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98030",
+      "latitude": 47.38444119,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1947,7 +2013,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98178",
+      "latitude": 47.48841288,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -1996,7 +2068,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98108",
+      "latitude": 47.55476264,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2156,12 +2234,18 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1912100625",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=1912100625",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "DAVIS ADD UNIT LOT \"Z\" OF SEATTLE SP #3032908-LU REC #20221018900002 & AMD BY REC #20230302900004 SD SP LOC IN LOTS 24-25 BLK 3 OF SD ADD",
       "account_number": "191210062508",
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 693901.0,
+      "delinquent_years": [
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -2171,7 +2255,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98102",
+      "latitude": 47.64177919,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2257,7 +2347,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "BURIEN",
+      "zip": "98148",
+      "latitude": 47.46595448,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2300,7 +2396,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "BURIEN",
+      "zip": "98148",
+      "latitude": 47.46579991,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2322,7 +2424,7 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2188201795",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2188201795",
       "appraisal_source": "King County Assessor / Open Data",
@@ -2423,7 +2525,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "FEDERAL WAY",
+      "zip": "98023",
+      "latitude": 47.26765873,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2618,7 +2726,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98058",
+      "latitude": 47.4501668,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2809,7 +2923,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": 47.55673616,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2856,7 +2976,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": 47.55688695,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -2957,7 +3083,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98107",
+      "latitude": 47.6696534,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3006,7 +3138,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98199",
+      "latitude": 47.6386019,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3049,7 +3187,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98030",
+      "latitude": 47.37176584,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3199,8 +3343,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 1000.0,
+      "market_value": 1000.0,
       "address": null,
       "owner": "Not aggregated for WA investment screening",
       "property_type": null,
@@ -3209,22 +3353,36 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax-roll value, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2921069026",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=2921069026",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "SEE \"0\" ACCOUNT FOR FULL LEGAL (REMOVAL ENTIRE PARCEL FROM THE FARM & AGRICULTURAL LAND DESIGNATION PER RCW 84.34)",
       "account_number": "292106902698",
+      "land_value": 1000.0,
+      "improvement_value": 0,
+      "tax_status": "T",
+      "bill_year": "2024",
+      "tax_due_estimate": 3187765.0,
+      "delinquent_years": [
+        "2024"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "King County says 2026 opening bids will be posted in mid-to-late August",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "AUBURN",
+      "zip": "98092",
+      "latitude": 47.27434694,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3271,7 +3429,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "ISSAQUAH",
+      "zip": "98027",
+      "latitude": 47.5692295,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3368,7 +3532,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "MAPLE VALLEY",
+      "zip": "98038",
+      "latitude": 47.35460793,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3465,7 +3635,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": 47.51969227,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3615,8 +3791,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 283000.0,
+      "market_value": 283000.0,
       "address": null,
       "owner": "Not aggregated for WA investment screening",
       "property_type": null,
@@ -3625,20 +3801,40 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax-roll value, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3339400217",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3339400217",
       "appraisal_source": "King County Assessor / Open Data",
+      "legal_description": "HILLMANS C D AUBURNDALE DIV #1 BEG AT NXN OF WLY LN OF SD LOT 1 & SLY LN OF LEA HILL RD TH SLY ALG SD WLY LN TO S LN OF VAC ST ADJ SD LOT 1 TH N 89-55-00 E 180.87 FT TH N 01-29-00 E 48.9 FT TH N 86-55-00 E 86.98 FT TH N 00-05-00 W 70 FT M/L TO SLY LN LEA HILL RD TH SWLY ALG SD RD TO POB TGW POR NE 1/4 OF NW 1/4 OF, SE 1/4 OF SEC 8-21-5 BAAP ON N LN SD SUBD 15 FT E OF NW COR THOF TH S 00-13-00 E PLL TO W LN SD SUBD 76.6 FT TH N 86-07-00 E 96.35 FT TH N 01-58-00 E 70 FT TO N LN SD SUBD TH S 89-55-00 W ALG SD N LN 99.07 TO POB",
+      "account_number": "333940021707",
+      "land_value": 254000.0,
+      "improvement_value": 29000.0,
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 1538752.0,
+      "delinquent_years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "King County says 2026 opening bids will be posted in mid-to-late August",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "AUBURN",
+      "zip": "98092",
+      "latitude": 47.32262118,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3685,7 +3881,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98055",
+      "latitude": 47.46439641,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3732,7 +3934,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "TUKWILA",
+      "zip": "98178",
+      "latitude": 47.49481528,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3828,7 +4036,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98178",
+      "latitude": 47.49945164,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3840,8 +4054,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 532000.0,
+      "market_value": 532000.0,
       "address": null,
       "owner": "Not aggregated for WA investment screening",
       "property_type": null,
@@ -3850,22 +4064,36 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax-roll value, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3422059238",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3422059238",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "PORTION OF SE QTR STR 34-22-05 DAF: BEGINNING AT SE CORNER OF SAID SW QTR TH NORTH ALONG E LINE OF SAID SW QTR 959 FT MORE OR LESS TO S LINE OF PARCEL ADJUDICATED IN GEORGE CHRISTOFFERSEN ET UX IN KING CO SUPERIOR COURT CAUSE NO 708410 ENTITLED DUNN/CHRISTOFFERSEN TH CONTINUING NORTH ALONG SAID E, LINE OF SW QTR 419.51 FT TO TPOB TH N89-21-45W PARALLEL TO S LINE OF N QTR SE QTR SW QTR OF SAID SECTION 34 DISTANCE OF 411.17 FT TH NORTH PARALLEL WITH E LINE OF SW QTR OF SAID SECTION 160 FT MORE OR LESS TO SW CORNER OF PARCEL CONVEYED TO JOHN W WALKER ET EX BY DEED UNDER RECORDING NO 7206280373, TH S89-23-52E 214.99 FT TH S02-24-42E 60.76 FT TH S81-20-29E 193.78 FT TH S89-23-05E 0.65 FT TO E LINE OF SAID SW QTR HEREIN DEFINED AS POINT \"A\" TH SOUTH ALONG SAID E LINE TO TPOB; TGW PORTION OF TRACT \"A\" & LOT 11 FISHER ESTATES LYING WITHIN SE, QTR STR 34-22-05 DAF: COMMENCING AT ABOVE DESCRIBED TPOB TH S89-23-52E 51.40 FT TH N11-16-10W 50.97 FT TO POINT OF CUSP ON CURVE CONCAVE TO SE HAVING RADIUS OF 20.00 FT & CENTRAL ANGLE OF 62-05-43 TH SWLY & SLY ALONG SAID CURVE 21.68 FT TO POINT OF CUSP TH N00-54-44E 39.90 FT, TH N89-23-05W 30.00 FT TO ABOVE DESCRIBED POINT \"A\" TH S00-54-44W 72.17 FT TO TPOB",
       "account_number": "342205923804",
+      "land_value": 313000.0,
+      "improvement_value": 219000.0,
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 280349.0,
+      "delinquent_years": [
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "King County says 2026 opening bids will be posted in mid-to-late August",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98042",
+      "latitude": 47.34750394,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -3887,10 +4115,25 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3575300780",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3575300780",
       "appraisal_source": "King County Assessor / Open Data",
+      "legal_description": "INGLEWOOD ADD LESS CO RD",
+      "account_number": "357530078009",
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 52753.0,
+      "delinquent_years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -4005,8 +4248,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 34000.0,
+      "market_value": 34000.0,
       "address": null,
       "owner": "Not aggregated for WA investment screening",
       "property_type": null,
@@ -4015,17 +4258,30 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax-roll value, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3623069043",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3623069043",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "TRACT 1 LESS POR CONVEYED TO STATE OF WA BY DEED REC NO 9411180817 OF KING CO SHORT PLAT NO 1276010 REC NO 7708180969 SD SP DAF: NE QTR OF SE QTR STR 36-23-06 LESS RDS",
       "account_number": "362306904305",
+      "land_value": 34000.0,
+      "improvement_value": 0,
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 328266.0,
+      "delinquent_years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "King County says 2026 opening bids will be posted in mid-to-late August",
           "currently listed by official source",
           "title/surviving liens not reviewed"
@@ -4121,7 +4377,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98177",
+      "latitude": 47.70336927,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -4421,7 +4683,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": 47.54532483,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -4511,7 +4779,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": 47.51631185,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -4558,7 +4832,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SHORELINE",
+      "zip": "98155",
+      "latitude": 47.76663826,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -4652,7 +4932,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "LAKE FOREST PARK",
+      "zip": "98155",
+      "latitude": 47.7573131,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -4764,10 +5050,22 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=4166600465",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=4166600465",
       "appraisal_source": "King County Assessor / Open Data",
+      "legal_description": "LAKOTA ADD LESS SWLY 140 FT THOF",
+      "account_number": "416660046507",
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 638638.0,
+      "delinquent_years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -4789,8 +5087,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 1000.0,
+      "market_value": 1000.0,
       "address": null,
       "owner": "Not aggregated for WA investment screening",
       "property_type": null,
@@ -4799,15 +5097,36 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal lookup ConnectTimeout, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax-roll value, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=4193100130",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=4193100130",
       "appraisal_source": "King County Assessor / Open Data",
+      "legal_description": "LARSON PARKE RECREATION",
+      "account_number": "419310013000",
+      "land_value": 1000.0,
+      "improvement_value": 0,
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 32069.0,
+      "delinquent_years": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "King County says 2026 opening bids will be posted in mid-to-late August",
           "currently listed by official source",
           "title/surviving liens not reviewed"
@@ -4859,7 +5178,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98057",
+      "latitude": 47.48713218,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -4957,7 +5282,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "AUBURN",
+      "zip": "98002",
+      "latitude": 47.29353211,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5004,7 +5335,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "AUBURN",
+      "zip": "98002",
+      "latitude": 47.29342242,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5047,7 +5384,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98108",
+      "latitude": 47.55810204,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5097,7 +5440,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "REDMOND",
+      "zip": "98052",
+      "latitude": 47.6545958,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5193,7 +5542,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98168",
+      "latitude": 47.50982263,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5242,7 +5597,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATAC",
+      "zip": "98188",
+      "latitude": 47.45067949,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5334,7 +5695,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "LAKE FOREST PARK",
+      "zip": "98155",
+      "latitude": 47.74916921,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5559,7 +5926,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98058",
+      "latitude": 47.43370113,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5848,7 +6221,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "MAPLE VALLEY",
+      "zip": "98038",
+      "latitude": 47.35672081,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -5891,7 +6270,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "DES MOINES",
+      "zip": "98198",
+      "latitude": 47.34525362,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6087,7 +6472,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98056",
+      "latitude": 47.50693316,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6134,7 +6525,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98122",
+      "latitude": 47.61634283,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6277,7 +6674,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "REDMOND",
+      "zip": "98053",
+      "latitude": 47.6487731,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6324,7 +6727,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "AUBURN",
+      "zip": "98002",
+      "latitude": 47.27663847,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6367,7 +6776,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "TUKWILA",
+      "zip": "98168",
+      "latitude": 47.49383981,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6461,7 +6876,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SHORELINE",
+      "zip": "98133",
+      "latitude": 47.75782894,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6509,7 +6930,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SNOQUALMIE",
+      "zip": "98065",
+      "latitude": 47.5139584,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6554,7 +6981,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98136",
+      "latitude": 47.55510041,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6576,12 +7009,28 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7686201640",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7686201640",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "SEELEYS TO DES MOINES VAC S 25 FT OF N 225 FT",
       "account_number": "768620164006",
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 75354.0,
+      "delinquent_years": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -6638,7 +7087,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "RENTON",
+      "zip": "98059",
+      "latitude": 47.4857022,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6687,7 +7142,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98031",
+      "latitude": 47.42051155,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6734,7 +7195,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98117",
+      "latitude": 47.68556889,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6781,7 +7248,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98122",
+      "latitude": 47.60553728,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6828,7 +7301,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98168",
+      "latitude": 47.49285877,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6871,7 +7350,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98118",
+      "latitude": 47.54757898,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6923,7 +7408,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98031",
+      "latitude": 47.41742826,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -6966,7 +7457,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98144",
+      "latitude": 47.59903705,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -7058,7 +7555,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98105",
+      "latitude": 47.66329959,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -7070,8 +7573,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 672000.0,
+      "market_value": 672000.0,
       "address": null,
       "owner": "Not aggregated for WA investment screening",
       "property_type": null,
@@ -7080,22 +7583,36 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ConnectTimeout",
+      "enrichment_note": "legal description, tax-roll value, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=8911000635",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=8911000635",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "VIEW LANDS ADD DIV # 2 N 1/2",
       "account_number": "891100063504",
+      "land_value": 468000.0,
+      "improvement_value": 204000.0,
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 382804.0,
+      "delinquent_years": [
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "King County says 2026 opening bids will be posted in mid-to-late August",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98133",
+      "latitude": 47.71003981,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -7230,7 +7747,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "REDMOND",
+      "zip": "98052",
+      "latitude": 47.68405731,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -7277,7 +7800,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "KENT",
+      "zip": "98032",
+      "latitude": 47.37806978,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -7324,7 +7853,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98122",
+      "latitude": 47.60287044,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     },
     {
       "state": "WA",
@@ -7372,7 +7907,13 @@
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
-      }
+      },
+      "city": "SEATTLE",
+      "zip": "98102",
+      "latitude": 47.62740727,
+      "longitude": null,
+      "area_source": "King County GIS Addresses in King County",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point"
     }
   ]
 }

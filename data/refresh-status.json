@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T08:08:22.334691+00:00",
+  "updated_at": "2026-08-14T05:42:29.613262+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
   "states_tracked": 3,
@@ -12,7 +12,7 @@
       "county": "Brevard",
       "source_url": "https://www.brevardclerk.us/tax-deed-sales",
       "auction_url": "https://www.brevard.realforeclose.com/",
-      "checked_at": "2026-08-13T08:08:22.334691+00:00",
+      "checked_at": "2026-08-14T05:42:29.613262+00:00",
       "ok": true,
       "note": "Parsed 0 properties from Brevard official sale list for 2026-08-20"
     },
@@ -21,7 +21,7 @@
       "county": "Tarrant",
       "source_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings.html",
       "auction_url": null,
-      "checked_at": "2026-08-13T08:08:22.334691+00:00",
+      "checked_at": "2026-08-14T05:42:29.613262+00:00",
       "ok": true,
       "note": "Parsed 20 for-sale accounts; TAD enrichment matched 1/20"
     },
@@ -30,9 +30,9 @@
       "county": "King",
       "source_url": "https://data.kingcounty.gov/Property-Assessments/Foreclosure-parcels/nx4x-daw6",
       "auction_url": "https://king.wa.realforeclose.com/",
-      "checked_at": "2026-08-13T08:08:22.334691+00:00",
+      "checked_at": "2026-08-14T05:42:29.613262+00:00",
       "ok": true,
-      "note": "Parsed 145 King County foreclosure parcels; open-data enrichment matched 139/145"
+      "note": "Parsed 145 King County foreclosure parcels; open-data enrichment matched 143/145; area 70/145, neighborhood metrics 0/145"
     }
   ],
   "notes": [
@@ -40,6 +40,7 @@
     "King County foreclosure parcels are enriched from King County Open Data for legal description, tax-roll value and receivable/tax information when available.",
     "King County says 2026 opening bids will be posted in mid-to-late August; the collector will pick them up after an official source becomes available.",
     "WA owner names are not bulk-aggregated into this investment screener because King County's eReal Property page warns that RCW 42.56.070(9) restricts use of lists of individuals for commercial purposes.",
-    "Research priority is a transparent triage score, not a recommendation to bid or purchase."
+    "Research priority is a transparent triage score, not a recommendation to bid or purchase.",
+    "King County area enrichment matched 70/145 parcels; ZIP-level neighborhood metrics matched 0/145."
   ]
 }
