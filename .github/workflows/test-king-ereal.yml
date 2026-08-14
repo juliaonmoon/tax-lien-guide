@@ -1,4 +1,4 @@
-name: Test King County eReal value fallback
+name: Test King County focused fallbacks
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  test-ereal:
+  test-fallbacks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,6 +21,10 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install requests beautifulsoup4
+      - name: Test hard-orphan WA State Parcels recovery
+        run: python scripts/fix_king_state_parcel_fallback.py
+      - name: Re-run area metrics after orphan ZIP recovery
+        run: python scripts/enrich_king_area_metrics.py
       - name: Test official King County eReal value recovery
         run: python scripts/fix_king_ereal_values.py
       - name: Rebuild King County gap report
@@ -34,6 +38,6 @@ jobs:
           git config user.name "tax-deed-data-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/
-          git commit -m "chore: verify King County eReal value fallback"
+          git commit -m "chore: verify King County focused fallbacks"
           git pull --rebase origin main
           git push origin main
