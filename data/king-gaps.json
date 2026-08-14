@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-14T14:25:03.090949+00:00",
+  "source_updated_at": "2026-08-14T14:48:57.389591+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1039,7 +1039,7 @@
       "legal_description": "FAIRWOOD PARK DIV # 8",
       "tax_status": "T",
       "tax_due_estimate": 10699.66,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "2521059032",
@@ -1078,7 +1078,7 @@
       "legal_description": "FOREST LANE CONDOMINIUM PCT UND INT  1.08",
       "tax_status": "T",
       "tax_due_estimate": 17081.01,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2646400160",
@@ -1348,7 +1348,7 @@
       "legal_description": "HALEY'S TERRACE TGW UND INT IN TRACT F",
       "tax_status": "T",
       "tax_due_estimate": 45051.04,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3224079075",
@@ -2607,7 +2607,7 @@
       "legal_description": "RIVERTON ADD LESS ST LESS POR LOT 1 LY ELY OF E MARGINAL WAY",
       "tax_status": "T",
       "tax_due_estimate": 2404.43,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7359600625",
