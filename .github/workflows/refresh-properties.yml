@@ -58,15 +58,17 @@ jobs:
         run: python scripts/fix_king_foreclosure_status.py
       - name: Diagnose remaining King County gaps
         run: python scripts/diagnose_king_gaps.py
-      - name: Commit refreshed data
+      - name: Add West Virginia State Auditor tax lien market
+        run: python scripts/add_west_virginia_tax_lien_market.py
+      - name: Commit refreshed data and guide updates
         run: |
-          if git diff --quiet -- data/; then
-            echo "No data changes."
+          if git diff --quiet -- data/ index.html; then
+            echo "No data or guide changes."
             exit 0
           fi
           git config user.name "tax-deed-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/
-          git commit -m "chore: daily tax deed data refresh"
+          git add data/ index.html
+          git commit -m "chore: refresh tax deed and tax lien data"
           git pull --rebase origin main
           git push origin main
