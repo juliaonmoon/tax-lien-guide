@@ -1,0 +1,444 @@
+{
+  "samples": [
+    {
+      "parcel_id": "0121059036",
+      "account_number": "012105903608",
+      "current_site_tax_due_estimate": 1024082.0,
+      "record_count": 15,
+      "raw_billed_sum": 1024082.0,
+      "raw_paid_sum": 0.0,
+      "raw_difference": 1024082.0,
+      "raw_difference_div_100": 10240.82,
+      "by_year": {
+        "2024": {
+          "billed": 197789.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2022": {
+          "billed": 181618.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2023": {
+          "billed": 217380.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2026": {
+          "billed": 220905.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2025": {
+          "billed": 206390.0,
+          "paid": 0.0,
+          "records": 3
+        }
+      },
+      "sample_records": [
+        {
+          "bill_year": "2024",
+          "receivable_type": "N",
+          "billed_amount": "0000000703",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2022",
+          "receivable_type": "V",
+          "billed_amount": "0000001192",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2024",
+          "receivable_type": "R",
+          "billed_amount": "0000195833",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2022",
+          "receivable_type": "N",
+          "billed_amount": "0000000603",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2023",
+          "receivable_type": "V",
+          "billed_amount": "0000001221",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2023",
+          "receivable_type": "N",
+          "billed_amount": "0000000703",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2024",
+          "receivable_type": "V",
+          "billed_amount": "0000001253",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2023",
+          "receivable_type": "R",
+          "billed_amount": "0000215456",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2022",
+          "receivable_type": "R",
+          "billed_amount": "0000179823",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2026",
+          "receivable_type": "V",
+          "billed_amount": "0000001272",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2025",
+          "receivable_type": "R",
+          "billed_amount": "0000204447",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2025",
+          "receivable_type": "V",
+          "billed_amount": "0000001240",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        }
+      ]
+    },
+    {
+      "parcel_id": "0222029066",
+      "account_number": "022202906602",
+      "current_site_tax_due_estimate": 3638476.0,
+      "record_count": 20,
+      "raw_billed_sum": 5150344.0,
+      "raw_paid_sum": 1511868.0,
+      "raw_difference": 3638476.0,
+      "raw_difference_div_100": 36384.76,
+      "by_year": {
+        "2024": {
+          "billed": 1052713.0,
+          "paid": 526357.0,
+          "records": 4
+        },
+        "2023": {
+          "billed": 1037460.0,
+          "paid": 518730.0,
+          "records": 4
+        },
+        "2022": {
+          "billed": 933561.0,
+          "paid": 466781.0,
+          "records": 4
+        },
+        "2026": {
+          "billed": 1090576.0,
+          "paid": 0.0,
+          "records": 4
+        },
+        "2025": {
+          "billed": 1036034.0,
+          "paid": 0.0,
+          "records": 4
+        }
+      },
+      "sample_records": [
+        {
+          "bill_year": "2024",
+          "receivable_type": "V",
+          "billed_amount": "0000001279",
+          "paid_amount": "0000000640",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2023",
+          "receivable_type": "V",
+          "billed_amount": "0000001247",
+          "paid_amount": "0000000623",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2023",
+          "receivable_type": "U",
+          "billed_amount": "0000032300",
+          "paid_amount": "0000016150",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2023",
+          "receivable_type": "N",
+          "billed_amount": "0000000780",
+          "paid_amount": "0000000390",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2023",
+          "receivable_type": "R",
+          "billed_amount": "0001003133",
+          "paid_amount": "0000501567",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2022",
+          "receivable_type": "R",
+          "billed_amount": "0000902774",
+          "paid_amount": "0000451387",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2024",
+          "receivable_type": "N",
+          "billed_amount": "0000000780",
+          "paid_amount": "0000000390",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2024",
+          "receivable_type": "R",
+          "billed_amount": "0001018354",
+          "paid_amount": "0000509177",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2024",
+          "receivable_type": "U",
+          "billed_amount": "0000032300",
+          "paid_amount": "0000016150",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2022",
+          "receivable_type": "N",
+          "billed_amount": "0000000670",
+          "paid_amount": "0000000335",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2022",
+          "receivable_type": "V",
+          "billed_amount": "0000001217",
+          "paid_amount": "0000000609",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2022",
+          "receivable_type": "U",
+          "billed_amount": "0000028900",
+          "paid_amount": "0000014450",
+          "tax_status": "T",
+          "account_status": "A"
+        }
+      ]
+    },
+    {
+      "parcel_id": "0200000045",
+      "account_number": "020000004505",
+      "current_site_tax_due_estimate": 30119.0,
+      "record_count": 36,
+      "raw_billed_sum": 30119.0,
+      "raw_paid_sum": 0.0,
+      "raw_difference": 30119.0,
+      "raw_difference_div_100": 301.19,
+      "by_year": {
+        "2021": {
+          "billed": 2882.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2020": {
+          "billed": 2863.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2019": {
+          "billed": 2414.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2018": {
+          "billed": 2328.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2017": {
+          "billed": 1698.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2016": {
+          "billed": 1736.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2015": {
+          "billed": 1747.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2024": {
+          "billed": 2868.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2022": {
+          "billed": 2857.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2023": {
+          "billed": 2835.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2026": {
+          "billed": 3079.0,
+          "paid": 0.0,
+          "records": 3
+        },
+        "2025": {
+          "billed": 2812.0,
+          "paid": 0.0,
+          "records": 3
+        }
+      },
+      "sample_records": [
+        {
+          "bill_year": "2021",
+          "receivable_type": "N",
+          "billed_amount": "0000000532",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2021",
+          "receivable_type": "V",
+          "billed_amount": "0000001164",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2020",
+          "receivable_type": "R",
+          "billed_amount": "0000001192",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2020",
+          "receivable_type": "N",
+          "billed_amount": "0000000532",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2020",
+          "receivable_type": "V",
+          "billed_amount": "0000001139",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2019",
+          "receivable_type": "R",
+          "billed_amount": "0000001112",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2019",
+          "receivable_type": "N",
+          "billed_amount": "0000000532",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2019",
+          "receivable_type": "V",
+          "billed_amount": "0000000770",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2018",
+          "receivable_type": "R",
+          "billed_amount": "0000001241",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2018",
+          "receivable_type": "N",
+          "billed_amount": "0000000317",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2018",
+          "receivable_type": "V",
+          "billed_amount": "0000000770",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        },
+        {
+          "bill_year": "2017",
+          "receivable_type": "R",
+          "billed_amount": "0000000611",
+          "paid_amount": "0000000000",
+          "tax_status": "T",
+          "account_status": "A"
+        }
+      ]
+    }
+  ]
+}
