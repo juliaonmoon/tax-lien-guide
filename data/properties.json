@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T13:24:08.442841+00:00",
+  "updated_at": "2026-08-14T13:49:48.410301+00:00",
   "prototype": true,
   "properties": [
     {
@@ -696,10 +696,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98042",
       "latitude": 47.337498223731494,
       "longitude": -122.12067495639195,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98042",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -726,9 +728,7 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -780,10 +780,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SAMMAMISH",
-      "zip": "98075",
       "latitude": 47.59769287247285,
       "longitude": -121.98790959999725,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SAMMAMISH",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98075",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -808,8 +810,7 @@
         "12.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -862,10 +863,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98178",
       "latitude": 47.49225551852127,
       "longitude": -122.26375996062787,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -890,9 +893,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -943,10 +944,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98178",
       "latitude": 47.49246607114892,
       "longitude": -122.26401105122521,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -973,9 +976,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -1035,10 +1036,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98032",
       "latitude": 47.3673410177517,
       "longitude": -122.24854597526664,
+      "coordinate_source": "King County parcel centroid",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98032",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1063,8 +1066,7 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -1124,10 +1126,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98032",
       "latitude": 47.367352419322344,
       "longitude": -122.24846240790889,
+      "coordinate_source": "King County parcel centroid",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98032",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1152,8 +1156,7 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -1204,10 +1207,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "VASHON",
-      "zip": "98070",
       "latitude": 47.43022988,
       "longitude": -122.50539606,
+      "coordinate_source": "King County address point",
+      "city": "VASHON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98070",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1234,8 +1239,7 @@
         "17.3% renter share",
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -1282,10 +1286,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATAC",
-      "zip": "98188",
       "latitude": 47.42704406,
       "longitude": -122.28015766,
+      "coordinate_source": "King County address point",
+      "city": "SEATAC",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98188",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1312,8 +1318,7 @@
         "58.5% renter share",
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -1365,10 +1370,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "AUBURN",
-      "zip": "98002",
       "latitude": 47.28442789,
       "longitude": -122.21365543,
+      "coordinate_source": "King County address point",
+      "city": "AUBURN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98002",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1395,8 +1402,7 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -1447,10 +1453,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98042",
       "latitude": 47.418201900817515,
       "longitude": -122.14433605441499,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98042",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1477,9 +1485,7 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -1530,10 +1536,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98053",
       "latitude": 47.68802280165946,
       "longitude": -122.0589267676085,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98053",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1560,9 +1568,7 @@
         "15.2% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -1613,10 +1619,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98042",
       "latitude": 47.34335366,
       "longitude": -122.0849582,
+      "coordinate_source": "King County address point",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98042",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1643,8 +1651,7 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -1695,10 +1702,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98058",
       "latitude": 47.44587344,
       "longitude": -122.17266692,
+      "coordinate_source": "King County address point",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98058",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1725,8 +1734,7 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -1783,10 +1791,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98133",
       "latitude": 47.72363696,
       "longitude": -122.35268743,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98133",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1811,8 +1821,7 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -1834,14 +1843,22 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax-roll value, tax receivables",
+      "enrichment_note": "legal description, tax lookup ReadTimeout",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=0922039033",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=0922039033",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "POR GL 3 BEG 31.05 FT W OF SW COR OF BLK 1 PORTAGE 1ST ADD TH N 14-58-00 E 524.72 FT TH N 75-58-00 E 95.7 FT TO TPOB TH S 75-58-00 W 95.7 FT TH N 11-44-40 E 10.2 FT TH N 44-28-00 E TO NELY LN OF LOT 3 TH SELY ALG SD NELY LN TO PT N 44-28-00 E OF TPOB TH S 44-28-00 W TO TPOB, LESS POR FOR RD",
       "account_number": "092203903304",
-      "land_value": 37000.0,
-      "improvement_value": 1000.0,
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "appraisal-value comparison not yet available",
+          "King County says 2026 opening bids will be posted in mid-to-late August",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      },
       "tax_status": "T",
       "bill_year": "2026",
       "tax_due_estimate": 7833.23,
@@ -1856,26 +1873,21 @@
         "2025",
         "2026"
       ],
-      "research_priority": {
-        "score": 45,
-        "label": "Medium research priority",
-        "reasons": [
-          "official appraisal/tax-roll value captured; minimum bid not yet available",
-          "King County says 2026 opening bids will be posted in mid-to-late August",
-          "currently listed by official source",
-          "title/surviving liens not reviewed"
-        ]
-      },
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "VASHON",
-      "zip": "98070",
+      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "latitude": 47.40631897,
       "longitude": -122.43673656,
+      "coordinate_source": "King County address point",
+      "city": "VASHON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98070",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "land_value": 37000.0,
+      "improvement_value": 1000.0,
       "value_basis": "King County appraised value",
       "zoning": "RA-2.5",
       "acres": 0.25750688,
@@ -1897,8 +1909,7 @@
         "17.3% renter share",
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -1951,10 +1962,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "BURIEN",
-      "zip": "98168",
       "latitude": 47.49865781262317,
       "longitude": -122.29845640227286,
+      "coordinate_source": "King County parcel centroid",
+      "city": "BURIEN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98168",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -1979,8 +1992,7 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -2031,10 +2043,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98105",
       "latitude": 47.66612937,
       "longitude": -122.29592156,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98105",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2061,8 +2075,7 @@
         "68.6% renter share",
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -2114,10 +2127,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "LAKE FOREST PARK",
-      "zip": "98155",
       "latitude": 47.7536143,
       "longitude": -122.29104729,
+      "coordinate_source": "King County address point",
+      "city": "LAKE FOREST PARK",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98155",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2144,8 +2159,7 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -2197,10 +2211,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "BURIEN",
-      "zip": "98148",
       "latitude": 47.46526813,
       "longitude": -122.33427299,
+      "coordinate_source": "King County address point",
+      "city": "BURIEN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98148",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2227,8 +2243,7 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -2283,10 +2298,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98178",
       "latitude": 47.49922403759567,
       "longitude": -122.24513219967479,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2313,9 +2330,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -2366,10 +2381,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98178",
       "latitude": 47.49741930571216,
       "longitude": -122.2682968388696,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2396,8 +2413,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -2531,10 +2547,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98027",
       "latitude": 47.47759906700083,
       "longitude": -122.00754715964464,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98027",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2561,9 +2579,7 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -2610,10 +2626,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98045",
       "latitude": 47.50769639652696,
       "longitude": -121.77942517026688,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98045",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2640,9 +2658,7 @@
         "16.3% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 15.3% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -2693,10 +2709,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.56663406142077,
       "longitude": -122.29020410507101,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2723,8 +2741,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -2771,10 +2788,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98030",
       "latitude": 47.38444119,
       "longitude": -122.2260135,
+      "coordinate_source": "King County address point",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98030",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2801,8 +2820,7 @@
         "47.8% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -2856,10 +2874,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98178",
       "latitude": 47.48841288,
       "longitude": -122.228319,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2884,8 +2904,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -2938,10 +2957,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98108",
       "latitude": 47.55476264,
       "longitude": -122.30457907,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98108",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -2966,8 +2987,7 @@
         "41.8% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -3098,10 +3118,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98031",
       "latitude": 47.39249165154263,
       "longitude": -122.21671075378339,
+      "coordinate_source": "King County parcel centroid",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98031",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3128,8 +3150,7 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -3180,10 +3201,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98059",
       "latitude": 47.480445795358335,
       "longitude": -122.08032409210627,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98059",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3210,9 +3233,7 @@
         "23.4% renter share",
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -3259,10 +3280,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98102",
       "latitude": 47.64177919,
       "longitude": -122.31962302,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98102",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3289,8 +3312,7 @@
         "73.0% renter share",
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -3337,10 +3359,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "BURIEN",
-      "zip": "98148",
       "latitude": 47.465712520055995,
       "longitude": -122.33308236239621,
+      "coordinate_source": "King County parcel centroid",
+      "city": "BURIEN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98148",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3367,8 +3391,7 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -3415,10 +3438,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "BURIEN",
-      "zip": "98148",
       "latitude": 47.46595448,
       "longitude": -122.33345824,
+      "coordinate_source": "King County address point",
+      "city": "BURIEN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98148",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3445,8 +3470,7 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -3493,10 +3517,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "BURIEN",
-      "zip": "98148",
       "latitude": 47.46579991,
       "longitude": -122.33341915,
+      "coordinate_source": "King County address point",
+      "city": "BURIEN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98148",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3523,8 +3549,7 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -3564,12 +3589,6 @@
       },
       "city": "FEDERAL WAY",
       "zip": "98023",
-      "latitude": 47.27005631422039,
-      "longitude": -122.33860387076457,
-      "address_status": "No assigned situs address found in King County GIS",
-      "area_source": "King County GIS",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
-      "parcel_enrichment_source": "King County Parcels with Address, Property and Ownership Information",
       "zoning": "RS15.0",
       "lot_sqft": 3000,
       "orphan_fallback_source": "Public property-record fallback; King County GIS join unavailable",
@@ -3578,11 +3597,17 @@
       "land_value": 4000.0,
       "improvement_value": 0,
       "value_basis": "Washington State Parcels Project market land + building value (2026 snapshot)",
+      "latitude": 47.27005631422039,
+      "longitude": -122.33860387076457,
       "coordinate_source": "Washington State Parcels Project parcel geometry",
       "state_parcel_source": "Washington State Parcels Project (WaTech / county-sourced)",
       "state_parcel_data_link": "https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx?ParcelNbr=2188201795",
       "state_landuse_code": 91,
       "county_landuse_code": "33-300",
+      "address_status": "No assigned situs address found in King County GIS",
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "parcel_enrichment_source": "King County Parcels with Address, Property and Ownership Information",
       "median_household_income": 104893.0,
       "median_gross_rent": 1900.0,
       "vacancy_proxy_pct": 4.4,
@@ -3645,12 +3670,6 @@
       },
       "city": "FEDERAL WAY",
       "zip": "98023",
-      "latitude": 47.270157314543894,
-      "longitude": -122.33860026043001,
-      "address_status": "No assigned situs address found in King County GIS",
-      "area_source": "King County GIS",
-      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
-      "parcel_enrichment_source": "King County Parcels with Address, Property and Ownership Information",
       "zoning": "RS15.0",
       "lot_sqft": 6000,
       "orphan_fallback_source": "Public property-record fallback; King County GIS join unavailable",
@@ -3659,11 +3678,17 @@
       "land_value": 9000.0,
       "improvement_value": 0,
       "value_basis": "Washington State Parcels Project market land + building value (2026 snapshot)",
+      "latitude": 47.270157314543894,
+      "longitude": -122.33860026043001,
       "coordinate_source": "Washington State Parcels Project parcel geometry",
       "state_parcel_source": "Washington State Parcels Project (WaTech / county-sourced)",
       "state_parcel_data_link": "https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx?ParcelNbr=2188201800",
       "state_landuse_code": 91,
       "county_landuse_code": "33-300",
+      "address_status": "No assigned situs address found in King County GIS",
+      "area_source": "King County GIS",
+      "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+      "parcel_enrichment_source": "King County Parcels with Address, Property and Ownership Information",
       "median_household_income": 104893.0,
       "median_gross_rent": 1900.0,
       "vacancy_proxy_pct": 4.4,
@@ -3739,10 +3764,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "FEDERAL WAY",
-      "zip": "98023",
       "latitude": 47.26765873,
       "longitude": -122.33990844,
+      "coordinate_source": "King County address point",
+      "city": "FEDERAL WAY",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98023",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3769,8 +3796,7 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -3825,10 +3851,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98032",
       "latitude": 47.38412459039254,
       "longitude": -122.28100210464908,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98032",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3853,9 +3881,7 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -3902,10 +3928,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98106",
       "latitude": 47.566862296733596,
       "longitude": -122.36192997843713,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98106",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -3932,8 +3960,7 @@
         "41.3% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 18.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -3985,10 +4012,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98106",
       "latitude": 47.56706846309367,
       "longitude": -122.36152221668509,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98106",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4015,8 +4044,7 @@
         "41.3% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 18.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -4073,10 +4101,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98058",
       "latitude": 47.4501668,
       "longitude": -122.13996148,
+      "coordinate_source": "King County address point",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98058",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4101,8 +4131,7 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -4153,10 +4182,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98092",
       "latitude": 47.285538643910904,
       "longitude": -122.10251572130207,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98092",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4183,9 +4214,7 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -4403,10 +4432,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.55673616,
       "longitude": -122.28634711,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4433,8 +4464,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -4485,10 +4515,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.55688695,
       "longitude": -122.28635054,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4515,8 +4547,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -4572,10 +4603,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98042",
       "latitude": 47.3628360753934,
       "longitude": -122.1587048702977,
+      "coordinate_source": "King County parcel centroid",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98042",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4602,8 +4635,7 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -4656,10 +4688,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98107",
       "latitude": 47.6696534,
       "longitude": -122.38931112,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98107",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4684,8 +4718,7 @@
         "61.7% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 18.6% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -4738,10 +4771,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98199",
       "latitude": 47.6386019,
       "longitude": -122.38867715,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98199",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4766,8 +4801,7 @@
         "36.8% renter share",
         "6.1% housing vacancy proxy",
         "median rent \u2248 16.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -4814,10 +4848,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98030",
       "latitude": 47.37176584,
       "longitude": -122.18118306,
+      "coordinate_source": "King County address point",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98030",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -4844,8 +4880,7 @@
         "47.8% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -4978,10 +5013,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98092",
       "latitude": 47.27498803351195,
       "longitude": -122.0766387790658,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98092",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5006,9 +5043,7 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -5057,10 +5092,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98092",
       "latitude": 47.274510124788165,
       "longitude": -122.07264310748252,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98092",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5085,9 +5122,7 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -5136,10 +5171,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "AUBURN",
-      "zip": "98092",
       "latitude": 47.27434694,
       "longitude": -122.07559793,
+      "coordinate_source": "King County address point",
+      "city": "AUBURN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98092",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5164,8 +5201,7 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -5216,10 +5252,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "ISSAQUAH",
-      "zip": "98027",
       "latitude": 47.5692295,
       "longitude": -122.08987236,
+      "coordinate_source": "King County address point",
+      "city": "ISSAQUAH",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98027",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5246,8 +5284,7 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -5298,10 +5335,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98051",
       "latitude": 47.36902877377365,
       "longitude": -121.97353072281403,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98051",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5328,9 +5367,7 @@
         "7.1% renter share",
         "2.1% housing vacancy proxy",
         "median rent \u2248 15.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -5384,10 +5421,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "MAPLE VALLEY",
-      "zip": "98038",
       "latitude": 47.35460793,
       "longitude": -122.05642772,
+      "coordinate_source": "King County address point",
+      "city": "MAPLE VALLEY",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98038",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5414,8 +5453,7 @@
         "14.4% renter share",
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -5466,10 +5504,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98027",
       "latitude": 47.523907493790986,
       "longitude": -121.94099876758524,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98027",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5496,9 +5536,7 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -5552,10 +5590,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.51969227,
       "longitude": -122.2740169,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5582,8 +5622,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -5797,10 +5836,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98144",
       "latitude": 47.598934405014944,
       "longitude": -122.31518823528174,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98144",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5827,8 +5868,7 @@
         "54.5% renter share",
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -5881,10 +5921,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "AUBURN",
-      "zip": "98092",
       "latitude": 47.32262118,
       "longitude": -122.19475741,
+      "coordinate_source": "King County address point",
+      "city": "AUBURN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98092",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5909,8 +5951,7 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -5961,10 +6002,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98055",
       "latitude": 47.46439641,
       "longitude": -122.2148074,
+      "coordinate_source": "King County address point",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98055",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -5991,8 +6034,7 @@
         "45.2% renter share",
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -6043,10 +6085,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "TUKWILA",
-      "zip": "98178",
       "latitude": 47.49481528,
       "longitude": -122.27918512,
+      "coordinate_source": "King County address point",
+      "city": "TUKWILA",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6073,8 +6117,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -6125,10 +6168,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98178",
       "latitude": 47.49826002825966,
       "longitude": -122.2687814376392,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6155,8 +6200,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -6209,10 +6253,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98178",
       "latitude": 47.49945164,
       "longitude": -122.26740645,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98178",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6237,8 +6283,7 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -6287,10 +6332,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98042",
       "latitude": 47.34750394,
       "longitude": -122.15531376,
+      "coordinate_source": "King County address point",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98042",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6315,8 +6362,7 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -6370,10 +6416,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SAMMAMISH",
-      "zip": "98074",
       "latitude": 47.61912667916789,
       "longitude": -122.06786391299643,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SAMMAMISH",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98074",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6400,8 +6448,7 @@
         "16.3% renter share",
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -6455,10 +6502,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SAMMAMISH",
-      "zip": "98074",
       "latitude": 47.62298048852076,
       "longitude": -122.06258824069096,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SAMMAMISH",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98074",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6485,8 +6534,7 @@
         "16.3% renter share",
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -6619,10 +6667,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98027",
       "latitude": 47.43530321382211,
       "longitude": -121.97311175350114,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98027",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6647,9 +6697,7 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -6701,10 +6749,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98133",
       "latitude": 47.70432220501516,
       "longitude": -122.35633901727817,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98133",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6731,8 +6781,7 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -6779,10 +6828,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98177",
       "latitude": 47.70336927,
       "longitude": -122.35837615,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98177",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6809,8 +6860,7 @@
         "13.0% renter share",
         "2.0% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -6869,10 +6919,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "BELLEVUE",
-      "zip": "98006",
       "latitude": 47.547597772591615,
       "longitude": -122.19286398220518,
+      "coordinate_source": "King County parcel centroid",
+      "city": "BELLEVUE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98006",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6897,8 +6949,7 @@
         "20.2% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 17.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -6954,10 +7005,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98001",
       "latitude": 47.25804272347302,
       "longitude": -122.27891952863696,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98001",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -6982,9 +7035,7 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -7038,10 +7089,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98001",
       "latitude": 47.29090589172281,
       "longitude": -122.2666828874155,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98001",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7068,9 +7121,7 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -7121,10 +7172,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98001",
       "latitude": 47.27174919936566,
       "longitude": -122.26195562712813,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98001",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7151,9 +7204,7 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -7204,10 +7255,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98001",
       "latitude": 47.269512088882294,
       "longitude": -122.26241031791827,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98001",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7234,9 +7287,7 @@
         "26.1% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 23.7% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -7289,10 +7340,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.54532483,
       "longitude": -122.27861869,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7317,8 +7370,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -7448,10 +7500,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.51631185,
       "longitude": -122.26676642,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7478,8 +7532,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -7530,10 +7583,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SHORELINE",
-      "zip": "98155",
       "latitude": 47.76663826,
       "longitude": -122.32404634,
+      "coordinate_source": "King County address point",
+      "city": "SHORELINE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98155",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7560,8 +7615,7 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -7612,10 +7666,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.52595387714389,
       "longitude": -122.28120957037393,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7642,8 +7698,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -7694,10 +7749,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "LAKE FOREST PARK",
-      "zip": "98155",
       "latitude": 47.7573131,
       "longitude": -122.27283204,
+      "coordinate_source": "King County address point",
+      "city": "LAKE FOREST PARK",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98155",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7724,8 +7781,7 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -7776,10 +7832,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98014",
       "latitude": 47.69788768106545,
       "longitude": -121.92167602883856,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98014",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7806,9 +7864,7 @@
         "8.3% renter share",
         "2.0% housing vacancy proxy",
         "median rent \u2248 13.3% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -7855,10 +7911,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98042",
       "latitude": 47.31985536872578,
       "longitude": -122.08558625851222,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98042",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7885,9 +7943,7 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -7938,10 +7994,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "FEDERAL WAY",
-      "zip": "98023",
       "latitude": 47.330378089016435,
       "longitude": -122.37002131975055,
+      "coordinate_source": "King County parcel centroid",
+      "city": "FEDERAL WAY",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98023",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -7968,8 +8026,7 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -8029,10 +8086,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98055",
       "latitude": 47.43819380683724,
       "longitude": -122.19034360542989,
+      "coordinate_source": "King County parcel centroid",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98055",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8057,8 +8116,7 @@
         "45.2% renter share",
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -8109,10 +8167,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98057",
       "latitude": 47.48713218,
       "longitude": -122.22024802,
+      "coordinate_source": "King County address point",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98057",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8139,8 +8199,7 @@
         "74.7% renter share",
         "6.1% housing vacancy proxy",
         "median rent \u2248 31.6% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -8276,10 +8335,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "AUBURN",
-      "zip": "98002",
       "latitude": 47.29353211,
       "longitude": -122.21901982,
+      "coordinate_source": "King County address point",
+      "city": "AUBURN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98002",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8304,8 +8365,7 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -8356,10 +8416,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "AUBURN",
-      "zip": "98002",
       "latitude": 47.29342242,
       "longitude": -122.21901977,
+      "coordinate_source": "King County address point",
+      "city": "AUBURN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98002",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8386,8 +8448,7 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -8434,10 +8495,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98108",
       "latitude": 47.55810204,
       "longitude": -122.31527819,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98108",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8464,8 +8527,7 @@
         "41.8% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -8519,10 +8581,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "REDMOND",
-      "zip": "98052",
       "latitude": 47.6545958,
       "longitude": -122.12461359,
+      "coordinate_source": "King County address point",
+      "city": "REDMOND",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98052",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8547,8 +8611,7 @@
         "55.2% renter share",
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -8601,10 +8664,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98059",
       "latitude": 47.49807104225137,
       "longitude": -122.11681094556236,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98059",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8631,9 +8696,7 @@
         "23.4% renter share",
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -8684,10 +8747,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98168",
       "latitude": 47.50982263,
       "longitude": -122.30703967,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98168",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8714,8 +8779,7 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -8768,10 +8832,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATAC",
-      "zip": "98188",
       "latitude": 47.45067949,
       "longitude": -122.28161652,
+      "coordinate_source": "King County address point",
+      "city": "SEATAC",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98188",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8798,8 +8864,7 @@
         "58.5% renter share",
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -8929,10 +8994,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "LAKE FOREST PARK",
-      "zip": "98155",
       "latitude": 47.74916921,
       "longitude": -122.2918523,
+      "coordinate_source": "King County address point",
+      "city": "LAKE FOREST PARK",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98155",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -8959,8 +9026,7 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -9011,10 +9077,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98027",
       "latitude": 47.455790657720804,
       "longitude": -121.99267696680732,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98027",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9041,9 +9109,7 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -9254,10 +9320,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98058",
       "latitude": 47.43286497949701,
       "longitude": -122.17935931011381,
+      "coordinate_source": "King County parcel centroid",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98058",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9282,8 +9350,7 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -9330,10 +9397,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98058",
       "latitude": 47.43370113,
       "longitude": -122.17881655,
+      "coordinate_source": "King County address point",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98058",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9360,8 +9429,7 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -9834,10 +9902,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "MAPLE VALLEY",
-      "zip": "98038",
       "latitude": 47.35672081,
       "longitude": -122.04420704,
+      "coordinate_source": "King County address point",
+      "city": "MAPLE VALLEY",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98038",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9864,8 +9934,7 @@
         "14.4% renter share",
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -9912,10 +9981,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "DES MOINES",
-      "zip": "98198",
       "latitude": 47.34525362,
       "longitude": -122.32750131,
+      "coordinate_source": "King County address point",
+      "city": "DES MOINES",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98198",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -9942,8 +10013,7 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -9996,10 +10066,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "DES MOINES",
-      "zip": "98198",
       "latitude": 47.35044162074759,
       "longitude": -122.32154350681759,
+      "coordinate_source": "King County parcel centroid",
+      "city": "DES MOINES",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98198",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10024,8 +10096,7 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -10078,10 +10149,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "DES MOINES",
-      "zip": "98198",
       "latitude": 47.35044244195276,
       "longitude": -122.32170499639702,
+      "coordinate_source": "King County parcel centroid",
+      "city": "DES MOINES",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98198",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10106,8 +10179,7 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -10160,10 +10232,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "DES MOINES",
-      "zip": "98198",
       "latitude": 47.352649884798296,
       "longitude": -122.321624810409,
+      "coordinate_source": "King County parcel centroid",
+      "city": "DES MOINES",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98198",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10188,8 +10262,7 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -10242,10 +10315,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98056",
       "latitude": 47.50693316,
       "longitude": -122.18142429,
+      "coordinate_source": "King County address point",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98056",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10270,8 +10345,7 @@
         "45.7% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 21.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -10322,10 +10396,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98122",
       "latitude": 47.61634283,
       "longitude": -122.3037431,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98122",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10352,8 +10428,7 @@
         "71.6% renter share",
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -10487,10 +10562,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.53007233750003,
       "longitude": -122.28737259176619,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10517,8 +10594,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -10571,10 +10647,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "REDMOND",
-      "zip": "98053",
       "latitude": 47.6487731,
       "longitude": -121.96180318,
+      "coordinate_source": "King County address point",
+      "city": "REDMOND",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98053",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10599,8 +10677,7 @@
         "15.2% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -10651,10 +10728,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "AUBURN",
-      "zip": "98002",
       "latitude": 47.27663847,
       "longitude": -122.20654737,
+      "coordinate_source": "King County address point",
+      "city": "AUBURN",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98002",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10681,8 +10760,7 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -10729,10 +10807,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "TUKWILA",
-      "zip": "98168",
       "latitude": 47.49383981,
       "longitude": -122.28619222,
+      "coordinate_source": "King County address point",
+      "city": "TUKWILA",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98168",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10759,8 +10839,7 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -10811,10 +10890,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "TUKWILA",
-      "zip": "98168",
       "latitude": 47.486850968063706,
       "longitude": -122.28870993606442,
+      "coordinate_source": "King County parcel centroid",
+      "city": "TUKWILA",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98168",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10841,8 +10922,7 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -10893,10 +10973,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SHORELINE",
-      "zip": "98133",
       "latitude": 47.75782894,
       "longitude": -122.35597848,
+      "coordinate_source": "King County address point",
+      "city": "SHORELINE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98133",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -10923,8 +11005,7 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -10976,10 +11057,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SNOQUALMIE",
-      "zip": "98065",
       "latitude": 47.5139584,
       "longitude": -121.86783236,
+      "coordinate_source": "King County address point",
+      "city": "SNOQUALMIE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98065",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11006,8 +11089,7 @@
         "14.8% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 17.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11056,10 +11138,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98136",
       "latitude": 47.55510041,
       "longitude": -122.38257543,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98136",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11084,8 +11168,7 @@
         "36.0% renter share",
         "5.1% housing vacancy proxy",
         "median rent \u2248 15.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11142,10 +11225,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATAC",
-      "zip": "98198",
       "latitude": 47.42269269165529,
       "longitude": -122.31485933140634,
+      "coordinate_source": "King County parcel centroid",
+      "city": "SEATAC",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98198",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11172,8 +11257,7 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid"
+      ]
     },
     {
       "state": "WA",
@@ -11224,10 +11308,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "RENTON",
-      "zip": "98059",
       "latitude": 47.4857022,
       "longitude": -122.1450728,
+      "coordinate_source": "King County address point",
+      "city": "RENTON",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98059",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11254,8 +11340,7 @@
         "23.4% renter share",
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11308,10 +11393,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98031",
       "latitude": 47.42051155,
       "longitude": -122.21854204,
+      "coordinate_source": "King County address point",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98031",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11336,8 +11423,7 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11388,10 +11474,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98117",
       "latitude": 47.68556889,
       "longitude": -122.39724173,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98117",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11418,8 +11506,7 @@
         "27.4% renter share",
         "4.7% housing vacancy proxy",
         "median rent \u2248 14.3% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11470,10 +11557,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98122",
       "latitude": 47.60553728,
       "longitude": -122.31125139,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98122",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11500,8 +11589,7 @@
         "71.6% renter share",
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11552,10 +11640,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98168",
       "latitude": 47.49285877,
       "longitude": -122.32040467,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98168",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11582,8 +11672,7 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11630,10 +11719,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98118",
       "latitude": 47.54757898,
       "longitude": -122.2746618,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98118",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11660,8 +11751,7 @@
         "42.9% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11717,10 +11807,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98031",
       "latitude": 47.41742826,
       "longitude": -122.17724222,
+      "coordinate_source": "King County address point",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98031",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11747,8 +11839,7 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11795,10 +11886,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98144",
       "latitude": 47.59903705,
       "longitude": -122.31560091,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98144",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11825,8 +11918,7 @@
         "54.5% renter share",
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -11877,10 +11969,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "King County",
-      "zip": "98053",
       "latitude": 47.66054139291322,
       "longitude": -122.05281133326334,
+      "coordinate_source": "King County parcel centroid",
+      "city": "King County",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98053",
       "address_status": "No assigned situs address found in King County GIS",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11907,9 +12001,7 @@
         "15.2% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ],
-      "coordinate_source": "King County parcel centroid",
-      "city_source": "King County ArcGIS Online city/unincorporated polygon"
+      ]
     },
     {
       "state": "WA",
@@ -11958,10 +12050,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98105",
       "latitude": 47.66329959,
       "longitude": -122.30753486,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98105",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -11986,8 +12080,7 @@
         "68.6% renter share",
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -12036,10 +12129,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98133",
       "latitude": 47.71003981,
       "longitude": -122.35312125,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98133",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12064,8 +12159,7 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -12195,8 +12289,8 @@
       "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98004",
-      "latitude": 47.61883778,
-      "longitude": -122.19870165,
+      "latitude": 47.61898879,
+      "longitude": -122.19788912,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12274,10 +12368,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "REDMOND",
-      "zip": "98052",
       "latitude": 47.68405731,
       "longitude": -122.11536093,
+      "coordinate_source": "King County address point",
+      "city": "REDMOND",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98052",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12304,8 +12400,7 @@
         "55.2% renter share",
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -12356,10 +12451,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "KENT",
-      "zip": "98032",
       "latitude": 47.37806978,
       "longitude": -122.23455813,
+      "coordinate_source": "King County address point",
+      "city": "KENT",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98032",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12386,8 +12483,7 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -12438,10 +12534,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98122",
       "latitude": 47.60287044,
       "longitude": -122.30424279,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98122",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12468,8 +12566,7 @@
         "71.6% renter share",
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     },
     {
       "state": "WA",
@@ -12521,10 +12618,12 @@
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "city": "SEATTLE",
-      "zip": "98102",
       "latitude": 47.62740727,
       "longitude": -122.32201689,
+      "coordinate_source": "King County address point",
+      "city": "SEATTLE",
+      "city_source": "King County ArcGIS Online city/unincorporated polygon",
+      "zip": "98102",
       "address_status": "Official situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
@@ -12551,8 +12650,7 @@
         "73.0% renter share",
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ],
-      "coordinate_source": "King County address point"
+      ]
     }
   ]
 }

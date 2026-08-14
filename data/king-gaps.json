@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-14T13:24:08.442841+00:00",
+  "source_updated_at": "2026-08-14T13:49:48.410301+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -510,7 +510,7 @@
       "legal_description": "POR GL 3 BEG 31.05 FT W OF SW COR OF BLK 1 PORTAGE 1ST ADD TH N 14-58-00 E 524.72 FT TH N 75-58-00 E 95.7 FT TO TPOB TH S 75-58-00 W 95.7 FT TH N 11-44-40 E 10.2 FT TH N 44-28-00 E TO NELY LN OF LOT 3 TH SELY ALG SD NELY LN TO PT N 44-28-00 E OF TPOB TH S 44-28-00 W TO TPOB, LESS POR FOR RD",
       "tax_status": "T",
       "tax_due_estimate": 7833.23,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "0923049190",
