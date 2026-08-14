@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-14T20:19:30.842280+00:00",
+  "source_updated_at": "2026-08-14T20:25:13.896799+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -587,7 +587,7 @@
       "legal_description": "BURIEN LAKE VIEW TRS DIV #5 LESS CO RD",
       "tax_status": "T",
       "tax_due_estimate": 22115.67,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "1223049050",
@@ -1039,7 +1039,7 @@
       "legal_description": "FAIRWOOD PARK DIV # 8",
       "tax_status": "T",
       "tax_due_estimate": 10699.66,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "2521059032",
@@ -1718,7 +1718,7 @@
       "legal_description": "JOVITA ADD",
       "tax_status": "T",
       "tax_due_estimate": 626.72,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "3751600889",
@@ -2318,7 +2318,7 @@
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "tax_status": "T",
       "tax_due_estimate": 997.55,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "6390000370",
@@ -2971,7 +2971,7 @@
       "legal_description": "WEXFORD",
       "tax_status": "T",
       "tax_due_estimate": 35323.37,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "9825700035",
