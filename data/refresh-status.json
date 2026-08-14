@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T22:30:59.903010+00:00",
+  "updated_at": "2026-08-14T23:16:20.268940+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
   "states_tracked": 3,
@@ -12,7 +12,7 @@
       "county": "Brevard",
       "source_url": "https://www.brevardclerk.us/tax-deed-sales",
       "auction_url": "https://www.brevard.realforeclose.com/",
-      "checked_at": "2026-08-14T22:30:59.903010+00:00",
+      "checked_at": "2026-08-14T23:16:20.268940+00:00",
       "ok": true,
       "note": "Parsed 0 properties from Brevard official sale list for 2026-08-20"
     },
@@ -21,16 +21,16 @@
       "county": "Tarrant",
       "source_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings.html",
       "auction_url": null,
-      "checked_at": "2026-08-14T22:30:59.903010+00:00",
+      "checked_at": "2026-08-14T23:16:20.268940+00:00",
       "ok": true,
-      "note": "Parsed 20 for-sale accounts; TAD enrichment matched 1/20"
+      "note": "Parsed 20 for-sale accounts; TAD enrichment matched 0/20"
     },
     {
       "state": "WA",
       "county": "King",
       "source_url": "https://data.kingcounty.gov/Property-Assessments/Foreclosure-parcels/nx4x-daw6",
       "auction_url": "https://king.wa.realforeclose.com/",
-      "checked_at": "2026-08-14T22:30:59.903010+00:00",
+      "checked_at": "2026-08-14T23:16:20.268940+00:00",
       "ok": true,
       "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 124/145; coordinates 124/145; assessed value 128/145; property type 124/145; legal 143/145; neighborhood metrics 124/145. King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 21, coordinates 21, property type 21. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145. King County eReal assessed-value fallback: attempted 17 missing-value parcels; site reachable for 17; recovered 17; failures none. King County official foreclosure-status fallback filled tax status for 2/145 rows; documented individual-Recorder requirement for 2 missing legal descriptions."
     }
