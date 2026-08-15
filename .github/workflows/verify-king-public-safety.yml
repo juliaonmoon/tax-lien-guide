@@ -21,21 +21,35 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install requests
-      - name: Inspect KCSO patrol-district geometry and parcel coordinates
+      - name: Inspect KCSO patrol-district geometry and offense district values
         run: |
           python - <<'PY'
           import json, requests
+          from datetime import date,timedelta
           url='https://services.arcgis.com/Ej0PsM5Aw677QF1W/ArcGIS/rest/services/PATROL_DISTRICTS_AREA_746/FeatureServer/0/query'
           params={'f':'geojson','where':'1=1','outFields':'PatDist,CityName,Juris','outSR':'4326','returnGeometry':'true','resultRecordCount':'2000'}
-          data=requests.get(url,params=params,timeout=60).json()
-          feats=data.get('features',[])
+          data=requests.get(url,params=params,timeout=60).json(); feats=data.get('features',[])
+          start=date.today()-timedelta(days=365)
+          s=requests.get('https://data.kingcounty.gov/resource/4kmt-kfqf.json',params={
+            '$select':'district,count(*) as n', '$where':f"incident_datetime >= '{start.isoformat()}T00:00:00.000' and district is not null", '$group':'district', '$limit':'1000'},timeout=60).json()
           props=json.load(open('data/properties.json'))['properties']
-          sample=next((p for p in props if p.get('state')=='WA' and p.get('county')=='King' and str(p.get('city','')).upper() in {'KING COUNTY','VASHON'}),None)
-          print('feature_count=',len(feats))
-          print('first_properties=', (feats[0].get('properties') if feats else None))
-          print('first_geometry_type=', ((feats[0].get('geometry') or {}).get('type') if feats else None))
-          if sample:
-            print('sample_parcel=',sample.get('parcel_id'),'lat=',sample.get('latitude'),'lon=',sample.get('longitude'))
+          samples=[p for p in props if p.get('state')=='WA' and p.get('county')=='King' and str(p.get('city','')).upper() in {'KING COUNTY','VASHON'}][:3]
+          print('feature_count=',len(feats)); print('patdist_values=',sorted({str((f.get('properties') or {}).get('PatDist')) for f in feats})[:100])
+          print('offense_district_rows=',s[:100])
+          def ring(pt, r):
+            x,y=pt; inside=False; j=len(r)-1
+            for i in range(len(r)):
+              xi,yi=r[i][:2]; xj,yj=r[j][:2]
+              if ((yi>y)!=(yj>y)) and x < (xj-xi)*(y-yi)/((yj-yi) or 1e-15)+xi: inside=not inside
+              j=i
+            return inside
+          def contains(f,lon,lat):
+            g=f.get('geometry') or {}; c=g.get('coordinates') or []
+            polys=[c] if g.get('type')=='Polygon' else c if g.get('type')=='MultiPolygon' else []
+            return any(poly and ring((lon,lat),poly[0]) and not any(ring((lon,lat),h) for h in poly[1:]) for poly in polys)
+          for p in samples:
+            lon=float(p['longitude']); lat=float(p['latitude']); hits=[f.get('properties') for f in feats if contains(f,lon,lat)]
+            print('sample=',p.get('parcel_id'),p.get('city'),lat,lon,'hits=',hits[:10])
           PY
       - name: Run scoped public safety enrichment
         run: python scripts/enrich_king_public_safety.py
@@ -46,8 +60,5 @@ jobs:
           python - <<'PY'
           import json
           g=json.load(open('data/king-gaps.json'))
-          print(json.dumps({
-            'coverage': g.get('optional_metric_coverage',{}).get('public_safety'),
-            'missing_by_city': g.get('optional_metric_missing_by_city',{}).get('public_safety'),
-          }, indent=2))
+          print(json.dumps({'coverage':g.get('optional_metric_coverage',{}).get('public_safety'),'missing_by_city':g.get('optional_metric_missing_by_city',{}).get('public_safety')},indent=2))
           PY
