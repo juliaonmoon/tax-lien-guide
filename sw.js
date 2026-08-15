@@ -1,4 +1,4 @@
-const CACHE='tax-lien-guide-v2';
+const CACHE='tax-lien-guide-v3';
 const ASSETS=[
   './',
   './index.html',
@@ -6,10 +6,12 @@ const ASSETS=[
   './tax-deed.html',
   './property-screener.html',
   './calendar.html',
+  './project-management.html',
   './manifest.webmanifest',
   './app-icon.svg',
   './data/properties.json',
-  './data/tax-lien-properties.json'
+  './data/tax-lien-properties.json',
+  './data/project-management.json'
 ];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
