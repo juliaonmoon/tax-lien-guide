@@ -98,7 +98,25 @@ function syncCounties(){const st=document.querySelector('#stateFilter').value,se
 menu.addEventListener('change',e=>{if(e.target.dataset.key){visible[e.target.dataset.key]=e.target.checked;render()}});
 document.querySelector('#columnBtn').onclick=()=>menu.classList.toggle('open');document.addEventListener('click',e=>{if(!e.target.closest('.columns'))menu.classList.remove('open')});document.querySelector('#search').addEventListener('input',render);document.querySelector('#stateFilter').addEventListener('change',()=>{syncCounties();render()});document.querySelector('#countyFilter').addEventListener('change',render);document.querySelector('#statusFilter').addEventListener('change',render);render();
 </script>
-\n<style id="pwa-install-style">#installAppBtn{position:fixed;right:16px;bottom:16px;z-index:9999;border:0;border-radius:999px;padding:10px 16px;background:#1f5eff;color:#fff;font:700 14px system-ui,-apple-system,Segoe UI,Roboto,Arial;box-shadow:0 8px 24px rgba(31,94,255,.28);cursor:pointer}#installAppBtn.installed{display:none}</style>\n<button id="installAppBtn" type="button" aria-label="Install Tax Lien Guide app">Install app</button>\n<script id="pwa-install-script">\n(()=>{\n  if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}\n  let installPrompt=null;\n  const btn=document.getElementById('installAppBtn');\n  const standalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;\n  if(standalone&&btn){btn.classList.add('installed');return;}\n  window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;});\n  if(btn)btn.addEventListener('click',async()=>{\n    if(installPrompt){installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;return;}\n    alert('To install: on iPhone/iPad use Share → Add to Home Screen. On Chrome/Edge use the browser Install app option.');\n  });\n  window.addEventListener('appinstalled',()=>btn&&btn.classList.add('installed'));\n})();\n</script>\n
+
+<style id="pwa-install-style">#installAppBtn{position:fixed;right:16px;bottom:16px;z-index:9999;border:0;border-radius:999px;padding:10px 16px;background:#1f5eff;color:#fff;font:700 14px system-ui,-apple-system,Segoe UI,Roboto,Arial;box-shadow:0 8px 24px rgba(31,94,255,.28);cursor:pointer}#installAppBtn.installed{display:none}</style>
+<button id="installAppBtn" type="button" aria-label="Install Tax Lien Guide app">Install app</button>
+<script id="pwa-install-script">
+(()=>{
+  if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+  let installPrompt=null;
+  const btn=document.getElementById('installAppBtn');
+  const standalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;
+  if(standalone&&btn){btn.classList.add('installed');return;}
+  window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;});
+  if(btn)btn.addEventListener('click',async()=>{
+    if(installPrompt){installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;return;}
+    alert('To install: on iPhone/iPad use Share → Add to Home Screen. On Chrome/Edge use the browser Install app option.');
+  });
+  window.addEventListener('appinstalled',()=>btn&&btn.classList.add('installed'));
+})();
+</script>
+
 <script src="sort-controls.js" defer></script>
 </body>
 </html>
