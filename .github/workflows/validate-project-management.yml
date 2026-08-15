@@ -1,0 +1,34 @@
+name: Validate project management inventory
+
+on:
+  pull_request:
+    paths:
+      - "data/project-management.json"
+      - "project-management.html"
+      - "scripts/validate_project_management.py"
+      - ".github/workflows/validate-project-management.yml"
+      - "scripts/**"
+      - "tests/**"
+  push:
+    branches: [main]
+    paths:
+      - "data/project-management.json"
+      - "project-management.html"
+      - "scripts/validate_project_management.py"
+      - ".github/workflows/validate-project-management.yml"
+      - "scripts/**"
+      - "tests/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate proof-based query status
+        run: python scripts/validate_project_management.py
