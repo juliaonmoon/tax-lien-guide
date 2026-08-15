@@ -36,6 +36,8 @@ jobs:
         run: cp data/properties.json /tmp/properties-before-refresh.json
       - name: Refresh official property feeds
         run: python scripts/refresh_properties.py
+      - name: Refresh Florida lands-available tax deed properties
+        run: python scripts/refresh_florida_tax_deeds.py
       - name: Preserve King County rows after source-feed collapse
         run: python scripts/preserve_king_rows_on_feed_failure.py
       - name: Preserve King County tax fields after transient failures
