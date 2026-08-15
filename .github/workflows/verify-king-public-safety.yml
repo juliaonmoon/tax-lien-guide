@@ -21,6 +21,22 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install requests
+      - name: Inspect KCSO patrol-district geometry and parcel coordinates
+        run: |
+          python - <<'PY'
+          import json, requests
+          url='https://services.arcgis.com/Ej0PsM5Aw677QF1W/ArcGIS/rest/services/PATROL_DISTRICTS_AREA_746/FeatureServer/0/query'
+          params={'f':'geojson','where':'1=1','outFields':'PatDist,CityName,Juris','outSR':'4326','returnGeometry':'true','resultRecordCount':'2000'}
+          data=requests.get(url,params=params,timeout=60).json()
+          feats=data.get('features',[])
+          props=json.load(open('data/properties.json'))['properties']
+          sample=next((p for p in props if p.get('state')=='WA' and p.get('county')=='King' and str(p.get('city','')).upper() in {'KING COUNTY','VASHON'}),None)
+          print('feature_count=',len(feats))
+          print('first_properties=', (feats[0].get('properties') if feats else None))
+          print('first_geometry_type=', ((feats[0].get('geometry') or {}).get('type') if feats else None))
+          if sample:
+            print('sample_parcel=',sample.get('parcel_id'),'lat=',sample.get('latitude'),'lon=',sample.get('longitude'))
+          PY
       - name: Run scoped public safety enrichment
         run: python scripts/enrich_king_public_safety.py
       - name: Diagnose King gaps
