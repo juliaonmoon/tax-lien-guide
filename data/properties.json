@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T19:24:54.384230+00:00",
+  "updated_at": "2026-08-15T19:29:04.757749+00:00",
   "prototype": true,
   "properties": [
     {
@@ -22,7 +22,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -54,7 +54,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -86,7 +86,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -118,7 +118,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -150,7 +150,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -182,7 +182,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -214,7 +214,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -246,7 +246,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -278,7 +278,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -310,7 +310,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -342,7 +342,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -374,7 +374,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -406,7 +406,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -470,7 +470,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -502,7 +502,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -534,7 +534,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -566,7 +566,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -598,7 +598,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -620,28 +620,23 @@
       "sale_status": "For Sale",
       "opening_bid": null,
       "opening_bid_note": "Not published on Tarrant County's monthly sale listing",
-      "assessed_value": 219510.0,
-      "market_value": 219510.0,
-      "address": "5212 CAROL AVE, FORT WORTH, TX",
-      "owner": "RODRIGUEZ BARAJAS RAFAEL and RODRIGUEZ GRACIE MARIE",
-      "property_type": "A - Residential SingleFamily Georeference : 40820 - 2 - 4R Subdivision : SUNRISE ADDITION Neighborhood Code : 1H040N TADMap : 2078-380 Mapsco : TAR-079T Instrument : Notice Sent Date : 4/15/2026 Notice Value : $219,510 Documents 2026 Documents 2025 Documents Show Documents Forms Residential Appraisal Manual Links Online PIN Request Request Mailing Address Changes TAD Interactive Map Google Maps Tarrant County Tax Office Tarrant County Deed Search Truth in Taxation Quick Links Home My Dashboard Create Account Resources Forms Interactive Maps Calendar Taxpayer Liaison Property Tax Assistance News Data Downloads Rates Reports Public Information Act Request Property Tax Transparency in Texas About Board of Directors Tarrant Appraisal Review Board Careers Procurement Quick Links Take A Survey Contact Us Contact Tarrant Appraisal District 2500 Handley-Ederville Road Fort Worth, Texas 76118-6909 (817) 284-0024 Business Hours Monday - Friday 8:00am - 5:00pm \u00a9 2026 Tarrant Appraisal District",
+      "assessed_value": null,
+      "market_value": null,
+      "address": null,
+      "owner": null,
+      "property_type": null,
       "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "Enriched from Tarrant Appraisal District",
-      "appraisal_url": "https://www.tad.org/search-results?query=40465160&searchType=AccountNumber",
-      "appraisal_source": "Tarrant Appraisal District",
-      "city": "FORT WORTH",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
-        "score": 35,
-        "label": "Low research priority",
+        "score": 45,
+        "label": "Medium research priority",
         "reasons": [
-          "official appraisal/tax-roll value captured; minimum bid not yet available",
+          "appraisal-value comparison not yet available",
           "Not published on Tarrant County's monthly sale listing",
-          "recognizable residential property type",
-          "special-use parcel needs extra review",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
@@ -13271,21 +13266,21 @@
       "county": "Escambia",
       "case_number": "0226-64",
       "parcel_id": "211N301302000000",
-      "owner": null,
+      "owner": "MY FATHER'S VINEYARD",
       "legal_description": "BEG AT INTER OF W LI OF PALAFOX H/W AND N LI OF S1/2 OF SW1/4 OF NE1/4 SELY ALG H/W 406 FT WLY PARL TO N LI OF S1/2 OF SW1/4 OF NE1/4 TO E LI OF FRISCO RR R/W NLY ALG RR R/W TO N LI OF S1/2 OF SW1/4 OF NE1/4 E ALG SAID N LI TO POB OR 5347 P 1182",
       "sale_date": "03/04/2026",
       "available_date": null,
       "sale_status": "Lands available",
       "opening_bid": 3371.77,
       "opening_bid_note": null,
-      "address": null,
-      "city": null,
-      "zip": null,
-      "assessed_value": null,
-      "market_value": null,
-      "land_value": null,
-      "property_type": null,
-      "acreage": null,
+      "address": "3000 BLK HIGHWAY 29 SOUTH",
+      "city": "CANTONMENT",
+      "zip": "32533",
+      "assessed_value": 6480.0,
+      "market_value": 6480.0,
+      "land_value": 6480.0,
+      "property_type": "Vacant residential",
+      "acreage": 0.24,
       "living_area_sqft": null,
       "year_built": null,
       "homestead_value": null,
@@ -13299,10 +13294,17 @@
       "account_number": "110553000",
       "certificate_number": "06325",
       "property_viewer_url": "https://www.escpa.org/cama/Detail_a.aspx?a=110553000",
+      "building_count": null,
+      "assessed_homestead_value": null,
+      "improvement_note": "Vacant land \u2014 no building area or year built published",
+      "bid_to_assessed_ratio": 0.5203,
       "research_priority": {
-        "score": 35,
-        "label": "Low research priority",
+        "score": 50,
+        "label": "Medium research priority",
         "reasons": [
+          "physical address captured",
+          "official appraisal value captured",
+          "property use captured",
           "title and surviving liens not reviewed"
         ]
       }
@@ -13755,11 +13757,11 @@
       "address": null,
       "city": null,
       "zip": null,
-      "assessed_value": null,
-      "market_value": null,
-      "land_value": null,
-      "property_type": null,
-      "acreage": null,
+      "assessed_value": 2300.0,
+      "market_value": 2300.0,
+      "land_value": 2300.0,
+      "property_type": "Vacant residential",
+      "acreage": 0.11,
       "living_area_sqft": null,
       "year_built": null,
       "homestead_value": null,
@@ -13770,10 +13772,19 @@
       "data_completeness": "county lands-available list + FDOR cadastral enrichment",
       "appraisal_source": "Florida DOR statewide cadastral / county property appraiser",
       "appraisal_year": 2025,
+      "building_count": null,
+      "assessed_homestead_value": null,
+      "address_note": "No situs address published \u2014 vacant land",
+      "improvement_note": "Vacant land \u2014 no building area or year built published",
+      "property_viewer_url": "https://pamap.putnam-fl.gov/PropertyAppraiserPublicMap/?find=04-10-24-4940-0110-0080",
+      "bid_to_assessed_ratio": 0.7292,
       "research_priority": {
-        "score": 35,
+        "score": 25,
         "label": "Low research priority",
         "reasons": [
+          "opening bid >=70% of assessed value",
+          "official appraisal value captured",
+          "property use captured",
           "title and surviving liens not reviewed"
         ]
       }
@@ -14223,11 +14234,11 @@
       "address": null,
       "city": null,
       "zip": null,
-      "assessed_value": null,
-      "market_value": null,
-      "land_value": null,
-      "property_type": null,
-      "acreage": null,
+      "assessed_value": 2330.0,
+      "market_value": 2330.0,
+      "land_value": 2330.0,
+      "property_type": "Vacant residential",
+      "acreage": 0.11,
       "living_area_sqft": null,
       "year_built": null,
       "homestead_value": null,
@@ -14238,10 +14249,19 @@
       "data_completeness": "county lands-available list + FDOR cadastral enrichment",
       "appraisal_source": "Florida DOR statewide cadastral / county property appraiser",
       "appraisal_year": 2025,
+      "building_count": null,
+      "assessed_homestead_value": null,
+      "address_note": "No situs address published \u2014 vacant land",
+      "improvement_note": "Vacant land \u2014 no building area or year built published",
+      "property_viewer_url": "https://pamap.putnam-fl.gov/PropertyAppraiserPublicMap/?find=05-10-24-9045-0030-0450",
+      "bid_to_assessed_ratio": 0.7599,
       "research_priority": {
-        "score": 35,
+        "score": 25,
         "label": "Low research priority",
         "reasons": [
+          "opening bid >=70% of assessed value",
+          "official appraisal value captured",
+          "property use captured",
           "title and surviving liens not reviewed"
         ]
       }
