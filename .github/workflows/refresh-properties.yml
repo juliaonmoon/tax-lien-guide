@@ -56,6 +56,8 @@ jobs:
         run: python scripts/fix_king_ereal_values.py
       - name: Fill missing King County tax status from official foreclosure list
         run: python scripts/fix_king_foreclosure_status.py
+      - name: Enrich scoped King County public safety metrics
+        run: python scripts/enrich_king_public_safety.py
       - name: Diagnose remaining King County gaps
         run: python scripts/diagnose_king_gaps.py
       - name: Refresh Coconino Arizona OTC tax-lien property feed
