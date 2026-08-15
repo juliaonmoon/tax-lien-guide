@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T18:34:00.456615+00:00",
+  "source_updated_at": "2026-08-15T19:06:19.350540+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -225,9 +225,9 @@
       "missing": 145
     },
     "public_safety": {
-      "filled": 80,
+      "filled": 83,
       "total": 145,
-      "missing": 65
+      "missing": 62
     }
   },
   "optional_metric_missing_by_city": {
@@ -257,10 +257,10 @@
       "KENT": 13,
       "RENTON": 10,
       "BELLEVUE": 7,
-      "SEATTLE": 7,
       "AUBURN": 6,
       "FEDERAL WAY": 6,
       "DES MOINES": 4,
+      "SEATTLE": 4,
       "LAKE FOREST PARK": 3,
       "REDMOND": 3,
       "TUKWILA": 3,
@@ -611,7 +611,7 @@
       "legal_description": "E 1/2 OF S 1/2 OF PORTION OF SW 1/4 OF NE 1/4 AS FOLLOWS, BEGIN NW CORNER OF NE 1/4 TH S 00-16-21.5 E 1325.04 FT TO SW CORNER OF NW 1/4 OF NE 1/4 TH N 88-03-45 E 654.89 FT TH S 00-12-21 E 124 FT TO POB OF TRACT HEREIN DESCRIBED TH S 00-12-21 E 124 FT TH N 88-03-45 E 320.14 FT, TH N 00-12-21 W 124 FT TAP N 88-03-45 E OF POB TH S 88-03-45 W TO POB",
       "tax_status": "T",
       "tax_due_estimate": 3941.13,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "0925049401",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T18:56:46.869921+00:00",
+  "updated_at": "2026-08-15T19:08:59.432756+00:00",
   "prototype": true,
   "counties": [
     {
@@ -27,15 +27,6 @@
       "coverage": "property_feed_prototype"
     },
     {
-      "state": "AZ",
-      "state_name": "Arizona",
-      "county": "Coconino",
-      "source_url": "https://www.coconino.az.gov/376/Tax-Liens",
-      "auction_url": "https://coconino.arizonataxsale.com/",
-      "coverage": "verified_official_snapshot",
-      "sale_type": "tax_lien"
-    },
-    {
       "state": "FL",
       "state_name": "Florida",
       "county": "Putnam",
@@ -50,6 +41,15 @@
       "source_url": "https://public.escambiaclerk.com/taxsale/landsavailable.asp",
       "auction_url": "https://www.escambia.realtaxdeed.com/",
       "coverage": "lands_available_property_feed"
+    },
+    {
+      "state": "AZ",
+      "state_name": "Arizona",
+      "county": "Coconino",
+      "source_url": "https://www.coconino.az.gov/376/Tax-Liens",
+      "auction_url": "https://coconino.arizonataxsale.com/",
+      "coverage": "verified_official_snapshot",
+      "sale_type": "tax_lien"
     }
   ]
 }
