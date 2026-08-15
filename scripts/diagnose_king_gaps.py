@@ -48,8 +48,11 @@ SOURCE_LIMITATIONS = {
             "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
             "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
             "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk",
+            "https://bellevuewa.gov/city-news/crime-drops-again",
+            "https://www.rentonwa.gov/Government/Departments-and-Offices/Police/Police-Services/Crime-Statistics-and-Mapping/Crime-Statistics",
+            "https://www.rentonwa.gov/Government/Departments-and-Offices/Police/Police-Services/Crime-Statistics-and-Mapping/Crime-Mapping",
         ],
-        "note": "Trailing-365-day finalized offense counts are populated from KCSO for named contract cities and from SPD at the official MCPP-neighborhood level for Seattle parcels. Other independent city police jurisdictions remain blank until a legitimate refreshable source is integrated. Counts are raw report/offense counts, not population-adjusted cross-jurisdiction crime rates.",
+        "note": "Official KCSO and SPD sources support refreshable district/neighborhood metrics, and Bellevue has an official citywide 2025 reported-crime total fallback. Renton officially publishes a Power BI statistics dashboard and CityProtect mapping, but no stable public machine-readable incident/export endpoint was identified on the city site, so Renton remains blank rather than scraping an interactive dashboard or inventing a proxy. Other independent-city jurisdictions remain blank until an official or clearly licensed refreshable source is integrated. Counts are raw report/offense counts, not population-adjusted cross-jurisdiction crime rates.",
     },
     "rental_days_on_market": {
         "status": "no_reliable_public_source_integrated",
