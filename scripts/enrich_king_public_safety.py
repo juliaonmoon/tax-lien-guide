@@ -20,17 +20,11 @@ SPD_SOURCE_PAGE = "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Pr
 SPD_MCPP_GEOJSON = "https://data.seattle.gov/resource/ru88-fbhk.geojson"
 SPD_MCPP_PAGE = "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
 
-# KCSO contract cities from the Sheriff's official patrol-services page. Independent
-# city police jurisdictions are excluded unless an official city dataset is
-# deliberately integrated below.
 KCSO_CITIES = {
     "BEAUX ARTS", "BURIEN", "CARNATION", "COVINGTON", "KENMORE",
     "MAPLE VALLEY", "NEWCASTLE", "NORTH BEND", "SAMMAMISH", "SEATAC",
     "SHORELINE", "SKYKOMISH", "WOODINVILLE",
 }
-# City labels used by the property pipeline for parcels that may actually be in
-# unincorporated King County. These are spatially verified against the official
-# KCSO patrol-district layer before any district metric is attached.
 KCSO_UNINCORPORATED_LABELS = {"KING COUNTY", "VASHON"}
 
 PUBLIC_SAFETY_KEYS = [
@@ -69,34 +63,19 @@ def fetch_kcso_district_counts(start: date) -> dict[str, int]:
     return fetch_grouped_counts(start, "district")
 
 
-def lookup_kcso_district(lon: float, lat: float) -> dict[str, str] | None:
-    # Point-in-polygon lookup is performed server-side against King County's
-    # official patrol-district feature service. This prevents treating a ZIP/city
-    # label as proof that a parcel lies in KCSO jurisdiction.
+def fetch_kcso_district_features() -> list[dict[str, Any]]:
     params = {
-        "f": "json",
-        "geometry": f"{lon},{lat}",
-        "geometryType": "esriGeometryPoint",
-        "inSR": "4326",
-        "spatialRel": "esriSpatialRelIntersects",
+        "f": "geojson",
+        "where": "1=1",
         "outFields": "PatDist,CityName,Juris",
-        "returnGeometry": "false",
+        "outSR": "4326",
+        "returnGeometry": "true",
+        "resultRecordCount": "2000",
     }
-    r = requests.get(f"{KCSO_DISTRICT_LAYER}/query", params=params, timeout=30)
+    r = requests.get(f"{KCSO_DISTRICT_LAYER}/query", params=params, timeout=60)
     r.raise_for_status()
     payload = r.json()
-    features = payload.get("features") or []
-    if not features:
-        return None
-    attrs = features[0].get("attributes") or {}
-    district = str(attrs.get("PatDist") or "").strip().upper()
-    if not district:
-        return None
-    return {
-        "district": district,
-        "city": str(attrs.get("CityName") or "").strip(),
-        "jurisdiction": str(attrs.get("Juris") or "").strip(),
-    }
+    return list(payload.get("features") or [])
 
 
 def fetch_spd_neighborhood_counts(start: date) -> dict[str, int]:
@@ -159,6 +138,14 @@ def feature_contains(feature: dict[str, Any], lon: float, lat: float) -> bool:
     return False
 
 
+def find_kcso_district(features: list[dict[str, Any]], lon: float, lat: float) -> str:
+    for feature in features:
+        if feature_contains(feature, lon, lat):
+            props = feature.get("properties") or {}
+            return str(props.get("PatDist") or "").strip().upper()
+    return ""
+
+
 def find_spd_neighborhood(features: list[dict[str, Any]], lon: float, lat: float) -> str:
     for feature in features:
         if feature_contains(feature, lon, lat):
@@ -196,6 +183,7 @@ def main() -> None:
 
     kcso_counts = fetch_kcso_counts(start)
     kcso_district_counts = fetch_kcso_district_counts(start)
+    kcso_district_features = fetch_kcso_district_features()
     spd_counts = fetch_spd_neighborhood_counts(start)
     spd_features = fetch_spd_mcpp_features()
 
@@ -229,8 +217,7 @@ def main() -> None:
                     cleared += 1
                 kcso_district_unmapped += 1
                 continue
-            district_info = lookup_kcso_district(lon, lat)
-            district = (district_info or {}).get("district", "")
+            district = find_kcso_district(kcso_district_features, lon, lat)
             if district and district in kcso_district_counts:
                 set_metric(
                     p, kcso_district_counts[district], district,
