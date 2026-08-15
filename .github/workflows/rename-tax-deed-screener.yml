@@ -1,0 +1,43 @@
+name: Rename tax deed property screener
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/rename-tax-deed-screener.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rename screener navigation labels
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for name in ['index.html','tax-lien-properties.html','tax-deed.html','property-screener.html','calendar.html']:
+              p=Path(name)
+              if not p.exists():
+                  continue
+              s=p.read_text(encoding='utf-8')
+              s=s.replace('>Property Screener<','>Tax Deed Property Screener<')
+              s=s.replace('>Property screener<','>Tax Deed Property Screener<')
+              p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit rename
+        run: |
+          if git diff --quiet -- '*.html'; then
+            echo "No rename needed"
+            exit 0
+          fi
+          git config user.name "tax-lien-guide-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add '*.html'
+          git commit -m "Rename Property Screener to Tax Deed Property Screener"
+          git pull --rebase origin main
+          git push origin main
