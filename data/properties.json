@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T10:16:31.352108+00:00",
+  "updated_at": "2026-08-15T10:20:31.213062+00:00",
   "prototype": true,
   "properties": [
     {
@@ -22,7 +22,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -54,7 +54,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -86,7 +86,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -118,7 +118,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -150,7 +150,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -182,7 +182,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -214,7 +214,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -246,7 +246,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -278,7 +278,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -310,7 +310,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -342,7 +342,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -374,7 +374,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -406,7 +406,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -470,7 +470,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -502,7 +502,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -534,7 +534,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -566,7 +566,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -598,7 +598,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -620,23 +620,28 @@
       "sale_status": "For Sale",
       "opening_bid": null,
       "opening_bid_note": "Not published on Tarrant County's monthly sale listing",
-      "assessed_value": null,
-      "market_value": null,
-      "address": null,
-      "owner": null,
-      "property_type": null,
+      "assessed_value": 219510.0,
+      "market_value": 219510.0,
+      "address": "5212 CAROL AVE, FORT WORTH, TX",
+      "owner": "RODRIGUEZ BARAJAS RAFAEL and RODRIGUEZ GRACIE MARIE",
+      "property_type": "A - Residential SingleFamily Georeference : 40820 - 2 - 4R Subdivision : SUNRISE ADDITION Neighborhood Code : 1H040N TADMap : 2078-380 Mapsco : TAR-079T Instrument : Notice Sent Date : 4/15/2026 Notice Value : $219,510 Documents 2026 Documents 2025 Documents Show Documents Forms Residential Appraisal Manual Links Online PIN Request Request Mailing Address Changes TAD Interactive Map Google Maps Tarrant County Tax Office Tarrant County Deed Search Truth in Taxation Quick Links Home My Dashboard Create Account Resources Forms Interactive Maps Calendar Taxpayer Liaison Property Tax Assistance News Data Downloads Rates Reports Public Information Act Request Property Tax Transparency in Texas About Board of Directors Tarrant Appraisal Review Board Careers Procurement Quick Links Take A Survey Contact Us Contact Tarrant Appraisal District 2500 Handley-Ederville Road Fort Worth, Texas 76118-6909 (817) 284-0024 Business Hours Monday - Friday 8:00am - 5:00pm \u00a9 2026 Tarrant Appraisal District",
       "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "Enriched from Tarrant Appraisal District",
+      "appraisal_url": "https://www.tad.org/search-results?query=40465160&searchType=AccountNumber",
+      "appraisal_source": "Tarrant Appraisal District",
+      "city": "FORT WORTH",
       "research_priority": {
-        "score": 45,
-        "label": "Medium research priority",
+        "score": 35,
+        "label": "Low research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "Not published on Tarrant County's monthly sale listing",
+          "recognizable residential property type",
+          "special-use parcel needs extra review",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
