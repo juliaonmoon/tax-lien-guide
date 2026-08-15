@@ -58,6 +58,14 @@ jobs:
         run: python scripts/fix_king_foreclosure_status.py
       - name: Diagnose remaining King County gaps
         run: python scripts/diagnose_king_gaps.py
+      - name: Refresh Alabama Nebraska Arizona Colorado and Iowa tax lien markets
+        run: python scripts/add_more_tax_lien_states.py
+      - name: Add Mississippi DeSoto County tax lien market
+        run: python scripts/add_mississippi_tax_lien.py
+      - name: Add Kentucky certificate of delinquency market
+        run: python scripts/add_kentucky_tax_lien.py
+      - name: Add South Dakota Stanley County tax lien market
+        run: python scripts/add_south_dakota_tax_lien.py
       - name: Add West Virginia State Auditor tax lien market
         run: python scripts/add_west_virginia_tax_lien_market.py
       - name: Add Indiana Allen County tax lien market
