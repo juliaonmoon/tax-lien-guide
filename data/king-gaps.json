@@ -1,8 +1,9 @@
 {
-  "source_updated_at": "2026-08-15T19:31:23.436123+00:00",
+  "source_updated_at": "2026-08-15T20:16:14.389476+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
+    "assessed_value": 1,
     "legal_description": 2,
     "opening_bid": 145
   },
@@ -62,6 +63,9 @@
       "7359600625",
       "7686201640",
       "8807810290"
+    ],
+    "assessed_value": [
+      "7243300400"
     ],
     "legal_description": [
       "2188201795",
@@ -2599,6 +2603,7 @@
     {
       "parcel_id": "7243300400",
       "missing": [
+        "assessed_value",
         "opening_bid"
       ],
       "address_status": "Condo unit mapped to official condo-complex situs address",
@@ -2606,10 +2611,10 @@
       "city": "RENTON",
       "zip": "98057",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": 7.0,
-      "land_value": 7.0,
+      "assessed_value": null,
+      "land_value": null,
       "improvement_value": null,
-      "value_basis": "King County eReal Property appraised value",
+      "value_basis": null,
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "tax_status": "T",
       "tax_due_estimate": 10185.25,
