@@ -58,6 +58,11 @@ SOURCE_LIMITATIONS = {
 }
 
 
+def normalized_city(p):
+    city = str(p.get("city") or "").strip().upper()
+    return city or "UNCLASSIFIED"
+
+
 def main():
     doc = json.loads(PROPS.read_text(encoding="utf-8"))
     wa = [p for p in doc.get("properties", []) if p.get("state") == "WA" and p.get("county") == "King"]
@@ -92,9 +97,12 @@ def main():
             })
 
     optional_coverage = {}
+    optional_missing_by_city = {}
     for name, test in OPTIONAL_METRICS.items():
         filled = sum(1 for p in wa if test(p))
-        optional_coverage[name] = {"filled": filled, "total": len(wa), "missing": len(wa) - filled}
+        missing_rows = [p for p in wa if not test(p)]
+        optional_coverage[name] = {"filled": filled, "total": len(wa), "missing": len(missing_rows)}
+        optional_missing_by_city[name] = dict(sorted(Counter(normalized_city(p) for p in missing_rows).items(), key=lambda kv: (-kv[1], kv[0])))
 
     OUT.write_text(json.dumps({
         "source_updated_at": doc.get("updated_at"),
@@ -103,11 +111,13 @@ def main():
         "missing_parcel_ids_by_field": {k: v for k, v in sorted(by_field.items())},
         "missing_address_status_counts": dict(sorted(address_status_counts.items())),
         "optional_metric_coverage": optional_coverage,
+        "optional_metric_missing_by_city": optional_missing_by_city,
         "source_limitations": SOURCE_LIMITATIONS,
         "gaps": gaps,
     }, indent=2), encoding="utf-8")
     print(f"Wrote {OUT}: {len(gaps)} rows with at least one tracked gap")
     print("Optional metric coverage:", optional_coverage)
+    print("Optional metric missing by city:", optional_missing_by_city)
 
 
 if __name__ == "__main__":
