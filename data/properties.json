@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T20:19:10.832424+00:00",
+  "updated_at": "2026-08-15T20:23:50.330861+00:00",
   "prototype": true,
   "properties": [
     {
@@ -22,7 +22,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -54,7 +54,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -86,7 +86,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -118,7 +118,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -150,7 +150,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -182,7 +182,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -214,7 +214,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -246,7 +246,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -278,7 +278,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -310,7 +310,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -342,7 +342,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -374,7 +374,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -406,7 +406,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -470,7 +470,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -502,7 +502,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -534,7 +534,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -566,7 +566,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -598,7 +598,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -620,23 +620,28 @@
       "sale_status": "For Sale",
       "opening_bid": null,
       "opening_bid_note": "Not published on Tarrant County's monthly sale listing",
-      "assessed_value": null,
-      "market_value": null,
-      "address": null,
-      "owner": null,
-      "property_type": null,
+      "assessed_value": 219510.0,
+      "market_value": 219510.0,
+      "address": "5212 CAROL AVE, FORT WORTH, TX",
+      "owner": "RODRIGUEZ BARAJAS RAFAEL and RODRIGUEZ GRACIE MARIE",
+      "property_type": "A - Residential SingleFamily Georeference : 40820 - 2 - 4R Subdivision : SUNRISE ADDITION Neighborhood Code : 1H040N TADMap : 2078-380 Mapsco : TAR-079T Instrument : Notice Sent Date : 4/15/2026 Notice Value : $219,510 Documents 2026 Documents 2025 Documents Show Documents Forms Residential Appraisal Manual Links Online PIN Request Request Mailing Address Changes TAD Interactive Map Google Maps Tarrant County Tax Office Tarrant County Deed Search Truth in Taxation Quick Links Home My Dashboard Create Account Resources Forms Interactive Maps Calendar Taxpayer Liaison Property Tax Assistance News Data Downloads Rates Reports Public Information Act Request Property Tax Transparency in Texas About Board of Directors Tarrant Appraisal Review Board Careers Procurement Quick Links Take A Survey Contact Us Contact Tarrant Appraisal District 2500 Handley-Ederville Road Fort Worth, Texas 76118-6909 (817) 284-0024 Business Hours Monday - Friday 8:00am - 5:00pm \u00a9 2026 Tarrant Appraisal District",
       "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "Enriched from Tarrant Appraisal District",
+      "appraisal_url": "https://www.tad.org/search-results?query=40465160&searchType=AccountNumber",
+      "appraisal_source": "Tarrant Appraisal District",
+      "city": "FORT WORTH",
       "research_priority": {
-        "score": 45,
-        "label": "Medium research priority",
+        "score": 35,
+        "label": "Low research priority",
         "reasons": [
-          "appraisal-value comparison not yet available",
+          "official appraisal/tax-roll value captured; minimum bid not yet available",
           "Not published on Tarrant County's monthly sale listing",
+          "recognizable residential property type",
+          "special-use parcel needs extra review",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
@@ -1088,7 +1093,14 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -1178,7 +1190,14 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -1437,7 +1456,14 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7319,
+      "public_safety_area": "Auburn Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 82.3
     },
     {
       "state": "WA",
@@ -1700,7 +1726,14 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -1783,7 +1816,14 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -2234,7 +2274,14 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 387,
+      "public_safety_area": "Lake Forest Park Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 28.3
     },
     {
       "state": "WA",
@@ -2942,7 +2989,14 @@
         "47.8% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -3026,7 +3080,14 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 69702,
+      "public_safety_area": "Seattle Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 87.4
     },
     {
       "state": "WA",
@@ -3286,7 +3347,14 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -3798,7 +3866,14 @@
       "tax_status_basis": "King County official Properties in foreclosure status list",
       "tax_status_source_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions/properties",
       "legal_description_status": "Not present in King County bulk parcel/GIS or WA State Parcels feeds; individual King County Recorder parcel search required",
-      "legal_description_source_url": "https://kingcounty.gov/en/dept/executive-services/certificates-permits-licenses/records-licensing/recorders-office/records-search"
+      "legal_description_source_url": "https://kingcounty.gov/en/dept/executive-services/certificates-permits-licenses/records-licensing/recorders-office/records-search",
+      "public_safety_12mo_offenses": 8261,
+      "public_safety_area": "Federal Way Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 80.6
     },
     {
       "state": "WA",
@@ -3879,7 +3954,14 @@
       "tax_status_basis": "King County official Properties in foreclosure status list",
       "tax_status_source_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions/properties",
       "legal_description_status": "Not present in King County bulk parcel/GIS or WA State Parcels feeds; individual King County Recorder parcel search required",
-      "legal_description_source_url": "https://kingcounty.gov/en/dept/executive-services/certificates-permits-licenses/records-licensing/recorders-office/records-search"
+      "legal_description_source_url": "https://kingcounty.gov/en/dept/executive-services/certificates-permits-licenses/records-licensing/recorders-office/records-search",
+      "public_safety_12mo_offenses": 8261,
+      "public_safety_area": "Federal Way Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 80.6
     },
     {
       "state": "WA",
@@ -3964,7 +4046,14 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 8261,
+      "public_safety_area": "Federal Way Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 80.6
     },
     {
       "state": "WA",
@@ -4320,7 +4409,14 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -4493,7 +4589,14 @@
       ],
       "condo_parent_parcel": "2596200000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 8261,
+      "public_safety_area": "Federal Way Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 80.6
     },
     {
       "state": "WA",
@@ -4852,7 +4955,14 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -5111,7 +5221,14 @@
         "47.8% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -5453,7 +5570,14 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7319,
+      "public_safety_area": "Auburn Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 82.3
     },
     {
       "state": "WA",
@@ -5536,7 +5660,14 @@
         "32.4% renter share",
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 2230,
+      "public_safety_area": "Issaquah Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 53.7
     },
     {
       "state": "WA",
@@ -6074,7 +6205,14 @@
       ],
       "condo_parent_parcel": "3307850000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 69702,
+      "public_safety_area": "Seattle Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 87.4
     },
     {
       "state": "WA",
@@ -6245,7 +6383,14 @@
         "25.7% renter share",
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7319,
+      "public_safety_area": "Auburn Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 82.3
     },
     {
       "state": "WA",
@@ -6328,7 +6473,14 @@
         "45.2% renter share",
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -6411,7 +6563,14 @@
         "33.3% renter share",
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 5408,
+      "public_safety_area": "Tukwila Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 235.8
     },
     {
       "state": "WA",
@@ -6670,7 +6829,14 @@
         "17.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -7838,7 +8004,14 @@
       ],
       "condo_parent_parcel": "3894800000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 3985,
+      "public_safety_area": "Kirkland Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 41.2
     },
     {
       "state": "WA",
@@ -8190,7 +8363,14 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 387,
+      "public_safety_area": "Lake Forest Park Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 28.3
     },
     {
       "state": "WA",
@@ -8449,7 +8629,14 @@
         "34.4% renter share",
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 8261,
+      "public_safety_area": "Federal Way Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 80.6
     },
     {
       "state": "WA",
@@ -8539,7 +8726,14 @@
         "45.2% renter share",
         "3.0% housing vacancy proxy",
         "median rent \u2248 27.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -8622,7 +8816,14 @@
         "74.7% renter share",
         "6.1% housing vacancy proxy",
         "median rent \u2248 31.6% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -8705,7 +8906,14 @@
         "4.4% housing vacancy proxy",
         "median rent \u2248 21.7% of median income"
       ],
-      "condo_parent_parcel": "4205000000"
+      "condo_parent_parcel": "4205000000",
+      "public_safety_12mo_offenses": 8261,
+      "public_safety_area": "Federal Way Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 80.6
     },
     {
       "state": "WA",
@@ -8788,7 +8996,14 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7319,
+      "public_safety_area": "Auburn Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 82.3
     },
     {
       "state": "WA",
@@ -8871,7 +9086,14 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7319,
+      "public_safety_area": "Auburn Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 82.3
     },
     {
       "state": "WA",
@@ -9041,7 +9263,14 @@
         "55.2% renter share",
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 4284,
+      "public_safety_area": "Redmond Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 53.5
     },
     {
       "state": "WA",
@@ -9216,7 +9445,14 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 69702,
+      "public_safety_area": "Seattle Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 87.4
     },
     {
       "state": "WA",
@@ -9386,7 +9622,14 @@
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "condo_parent_parcel": "5419200000"
+      "condo_parent_parcel": "5419200000",
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -9469,7 +9712,14 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 387,
+      "public_safety_area": "Lake Forest Park Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 28.3
     },
     {
       "state": "WA",
@@ -9814,7 +10064,14 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -9893,7 +10150,14 @@
         "27.5% renter share",
         "4.3% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -10515,7 +10779,14 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 2037,
+      "public_safety_area": "Des Moines Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 61.0
     },
     {
       "state": "WA",
@@ -10598,7 +10869,14 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 2037,
+      "public_safety_area": "Des Moines Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 61.0
     },
     {
       "state": "WA",
@@ -10681,7 +10959,14 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 2037,
+      "public_safety_area": "Des Moines Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 61.0
     },
     {
       "state": "WA",
@@ -10764,7 +11049,14 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 2037,
+      "public_safety_area": "Des Moines Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 61.0
     },
     {
       "state": "WA",
@@ -10847,7 +11139,14 @@
         "45.7% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 21.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -10949,8 +11248,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": null,
-      "market_value": null,
+      "assessed_value": 7.0,
+      "market_value": 7.0,
       "address": "225 LOGAN AVE S, RENTON, WA, 98057",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -10961,8 +11260,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7243300400",
-      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7243300400",
-      "appraisal_source": "King County Assessor / Open Data",
+      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=7243300400",
+      "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "account_number": "724330040002",
       "tax_status": "T",
@@ -11018,7 +11317,16 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 31.6% of median income"
       ],
-      "condo_parent_parcel": "7243300000"
+      "condo_parent_parcel": "7243300000",
+      "land_value": 7.0,
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -11191,7 +11499,14 @@
         "15.2% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 4284,
+      "public_safety_area": "Redmond Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 53.5
     },
     {
       "state": "WA",
@@ -11274,7 +11589,14 @@
         "51.1% renter share",
         "5.2% housing vacancy proxy",
         "median rent \u2248 25.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7319,
+      "public_safety_area": "Auburn Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 82.3
     },
     {
       "state": "WA",
@@ -11353,7 +11675,14 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 5408,
+      "public_safety_area": "Tukwila Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 235.8
     },
     {
       "state": "WA",
@@ -11436,7 +11765,14 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 5408,
+      "public_safety_area": "Tukwila Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 235.8
     },
     {
       "state": "WA",
@@ -11609,7 +11945,14 @@
         "14.8% renter share",
         "5.5% housing vacancy proxy",
         "median rent \u2248 17.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 339,
+      "public_safety_area": "Snoqualmie Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 23.3
     },
     {
       "state": "WA",
@@ -11873,7 +12216,14 @@
         "23.4% renter share",
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 7041,
+      "public_safety_area": "Renton Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 64.7
     },
     {
       "state": "WA",
@@ -11956,7 +12306,14 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -12219,7 +12576,14 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 69702,
+      "public_safety_area": "Seattle Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 87.4
     },
     {
       "state": "WA",
@@ -12393,7 +12757,14 @@
         "32.8% renter share",
         "4.0% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -12822,7 +13193,14 @@
       ],
       "condo_parent_parcel": "8944500000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
@@ -12990,7 +13368,14 @@
         "55.2% renter share",
         "5.7% housing vacancy proxy",
         "median rent \u2248 17.7% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 4284,
+      "public_safety_area": "Redmond Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 53.5
     },
     {
       "state": "WA",
@@ -13073,7 +13458,14 @@
         "57.3% renter share",
         "7.0% housing vacancy proxy",
         "median rent \u2248 27.0% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 12378,
+      "public_safety_area": "Kent Police Department",
+      "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
+      "public_safety_period_start": "2024-01-01",
+      "public_safety_period_end": "2024-12-31",
+      "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
+      "public_safety_rate_published": 88.2
     },
     {
       "state": "WA",
