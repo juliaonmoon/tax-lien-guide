@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T12:22:51.762319+00:00",
+  "source_updated_at": "2026-08-15T12:25:51.763312+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -247,8 +247,9 @@
       "note": "Some foreclosure parcels have no assigned situs address in King County GIS. The pipeline keeps those addresses blank rather than assigning a nearby or inferred street address."
     },
     "public_safety": {
-      "status": "not_populated_as_countywide_metric",
-      "note": "Available King County Sheriff offense data does not cover every independent police jurisdiction in King County, so it is not presented as a comparable countywide parcel-level crime rate."
+      "status": "partially_populated_for_kcso_contract_cities_only",
+      "source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
+      "note": "Trailing-365-day finalized KCSO offense-report counts are populated only for parcels in named KCSO contract cities. Independent city police jurisdictions remain blank. Counts are labeled as raw KCSO reports, not a population-adjusted countywide crime rate."
     },
     "rental_days_on_market": {
       "status": "no_reliable_public_source_integrated",
