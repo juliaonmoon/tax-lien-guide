@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 PROPS = ROOT / "data" / "properties.json"
 STATUS = ROOT / "data" / "refresh-status.json"
-UA = "TaxLienGuideBot/2.2 (public King County assessor value research; no owner aggregation)"
+UA = "TaxLienGuideBot/2.3 (public King County assessor value research; no owner aggregation)"
 BASE = "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr={}"
 
 
@@ -69,6 +69,30 @@ def extract_values(html):
     return land, impr, total
 
 
+def fetch_with_retry(session, url, attempts=4):
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        try:
+            r = session.get(url, timeout=(10, 45), allow_redirects=True)
+            r.raise_for_status()
+            return r
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
+            last_error = e
+            if attempt < attempts:
+                time.sleep(1.5 * attempt)
+                continue
+            raise
+        except requests.exceptions.HTTPError as e:
+            last_error = e
+            status = getattr(e.response, "status_code", None)
+            if status in (429, 500, 502, 503, 504) and attempt < attempts:
+                time.sleep(1.5 * attempt)
+                continue
+            raise
+    if last_error:
+        raise last_error
+
+
 def main():
     doc = json.loads(PROPS.read_text(encoding="utf-8"))
     wa = [p for p in doc.get("properties", []) if p.get("state") == "WA" and p.get("county") == "King"]
@@ -83,8 +107,7 @@ def main():
         pin = str(p["parcel_id"])
         url = BASE.format(pin)
         try:
-            r = session.get(url, timeout=30, allow_redirects=True)
-            r.raise_for_status()
+            r = fetch_with_retry(session, url)
             reachable += 1
             land, impr, total = extract_values(r.text)
             if total is not None:
