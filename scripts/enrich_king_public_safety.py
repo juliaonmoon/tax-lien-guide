@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import time
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
@@ -32,6 +33,29 @@ PUBLIC_SAFETY_KEYS = [
     "public_safety_period_start", "public_safety_period_end",
     "public_safety_source", "public_safety_area", "public_safety_boundary_source",
 ]
+RETRYABLE_HTTP = {429, 500, 502, 503, 504}
+
+
+def fetch_json(url: str, params: dict[str, str] | None = None, timeout: int = 60,
+               attempts: int = 5) -> Any:
+    """Fetch public JSON with bounded retry/backoff for transient source failures."""
+    last_error: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            r = requests.get(url, params=params, timeout=timeout)
+            if r.status_code in RETRYABLE_HTTP and attempt < attempts - 1:
+                time.sleep(min(8, 2 ** attempt))
+                continue
+            r.raise_for_status()
+            return r.json()
+        except (requests.RequestException, ValueError) as exc:
+            last_error = exc
+            if attempt >= attempts - 1:
+                raise
+            time.sleep(min(8, 2 ** attempt))
+    if last_error:
+        raise last_error
+    raise RuntimeError(f"Unable to fetch JSON from {url}")
 
 
 def fetch_grouped_counts(start: date, field: str) -> dict[str, int]:
@@ -41,10 +65,9 @@ def fetch_grouped_counts(start: date, field: str) -> dict[str, int]:
         "$group": f"upper({field})",
         "$limit": "1000",
     }
-    r = requests.get(KCSO_SOURCE, params=params, timeout=60)
-    r.raise_for_status()
+    rows = fetch_json(KCSO_SOURCE, params=params)
     out: dict[str, int] = {}
-    for row in r.json():
+    for row in rows:
         area = str(row.get("area") or "").strip().upper()
         # In the offense feed most patrol districts are published as "District F6"
         # while the official patrol-district GIS layer stores the same code as "F6".
@@ -78,9 +101,7 @@ def fetch_kcso_district_features() -> list[dict[str, Any]]:
         "returnGeometry": "true",
         "resultRecordCount": "2000",
     }
-    r = requests.get(f"{KCSO_DISTRICT_LAYER}/query", params=params, timeout=60)
-    r.raise_for_status()
-    payload = r.json()
+    payload = fetch_json(f"{KCSO_DISTRICT_LAYER}/query", params=params)
     return list(payload.get("features") or [])
 
 
@@ -91,10 +112,9 @@ def fetch_spd_neighborhood_counts(start: date) -> dict[str, int]:
         "$group": "upper(neighborhood)",
         "$limit": "1000",
     }
-    r = requests.get(SPD_SOURCE, params=params, timeout=60)
-    r.raise_for_status()
+    rows = fetch_json(SPD_SOURCE, params=params)
     out: dict[str, int] = {}
-    for row in r.json():
+    for row in rows:
         area = str(row.get("neighborhood") or "").strip().upper()
         try:
             n = int(row.get("offenses") or 0)
@@ -106,9 +126,8 @@ def fetch_spd_neighborhood_counts(start: date) -> dict[str, int]:
 
 
 def fetch_spd_mcpp_features() -> list[dict[str, Any]]:
-    r = requests.get(SPD_MCPP_GEOJSON, params={"$limit": "5000"}, timeout=60)
-    r.raise_for_status()
-    return list((r.json()).get("features") or [])
+    payload = fetch_json(SPD_MCPP_GEOJSON, params={"$limit": "5000"})
+    return list(payload.get("features") or [])
 
 
 def point_in_ring(lon: float, lat: float, ring: list[list[float]]) -> bool:
