@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T17:26:20.073448+00:00",
+  "source_updated_at": "2026-08-15T17:30:29.523263+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -225,9 +225,9 @@
       "missing": 145
     },
     "public_safety": {
-      "filled": 53,
+      "filled": 80,
       "total": 145,
-      "missing": 92
+      "missing": 65
     }
   },
   "optional_metric_missing_by_city": {
@@ -254,7 +254,6 @@
       "SNOQUALMIE": 1
     },
     "public_safety": {
-      "KING COUNTY": 25,
       "KENT": 13,
       "RENTON": 10,
       "BELLEVUE": 7,
@@ -265,7 +264,6 @@
       "LAKE FOREST PARK": 3,
       "REDMOND": 3,
       "TUKWILA": 3,
-      "VASHON": 2,
       "ISSAQUAH": 1,
       "KIRKLAND": 1,
       "SNOQUALMIE": 1
