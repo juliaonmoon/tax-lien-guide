@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T14:29:35.691181+00:00",
+  "source_updated_at": "2026-08-15T15:22:10.340463+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -225,9 +225,9 @@
       "missing": 145
     },
     "public_safety": {
-      "filled": 15,
+      "filled": 53,
       "total": 145,
-      "missing": 130
+      "missing": 92
     }
   },
   "source_limitations": {
@@ -1487,7 +1487,7 @@
       "legal_description": "HILL TRACT ADD SUPL 1-2 LESS E 16.77 FT OF 3 LESS ST",
       "tax_status": "T",
       "tax_due_estimate": 9470.71,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "3339400217",
