@@ -108,15 +108,44 @@ jobs:
         run: python scripts/add_max_return_rates.py
       - name: Ensure tax lien county and market filter
         run: python scripts/add_tax_lien_county_filter.py
-      - name: Commit refreshed data and guide updates
+      - name: Publish refreshed data and guide safely
         run: |
           if git diff --quiet -- data/ index.html; then
             echo "No data or guide changes."
             exit 0
           fi
+
+          # Preserve the fully generated output, then anchor the publish commit on
+          # the newest main. This avoids rebasing generated JSON/HTML after a
+          # concurrent source/workflow commit changes main during the long refresh.
+          rm -rf /tmp/refresh-output
+          mkdir -p /tmp/refresh-output
+          cp -a data /tmp/refresh-output/data
+          cp index.html /tmp/refresh-output/index.html
+
           git config user.name "tax-deed-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/ index.html
-          git commit -m "chore: refresh tax deed and tax lien data"
-          git pull --rebase origin main
-          git push origin main
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf data
+            cp -a /tmp/refresh-output/data data
+            cp /tmp/refresh-output/index.html index.html
+
+            if git diff --quiet -- data/ index.html; then
+              echo "Latest main already contains the generated output."
+              exit 0
+            fi
+
+            git add data/ index.html
+            git commit -m "chore: refresh tax deed and tax lien data"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Publish raced with a newer main commit; retrying from latest main (attempt ${attempt}/3)."
+          done
+
+          echo "Unable to publish refreshed output after 3 safe retries."
+          exit 1
