@@ -13,58 +13,96 @@ PROPS = ROOT / "data" / "properties.json"
 
 KCSO_SOURCE = "https://data.kingcounty.gov/resource/4kmt-kfqf.json"
 KCSO_SOURCE_PAGE = "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
+KCSO_DISTRICT_LAYER = "https://services.arcgis.com/Ej0PsM5Aw677QF1W/ArcGIS/rest/services/PATROL_DISTRICTS_AREA_746/FeatureServer/0"
+KCSO_DISTRICT_PAGE = "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
 SPD_SOURCE = "https://data.seattle.gov/resource/tazs-3rd5.json"
 SPD_SOURCE_PAGE = "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5"
 SPD_MCPP_GEOJSON = "https://data.seattle.gov/resource/ru88-fbhk.geojson"
 SPD_MCPP_PAGE = "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
 
-# King County Sheriff's Office contract-city jurisdictions listed on the County's
-# official crime-data page. Independent city police jurisdictions are deliberately
-# excluded unless an official city dataset is explicitly integrated below.
+# KCSO contract cities from the Sheriff's official patrol-services page. Independent
+# city police jurisdictions are excluded unless an official city dataset is
+# deliberately integrated below.
 KCSO_CITIES = {
-    "BURIEN", "CARNATION", "COVINGTON", "KENMORE", "MAPLE VALLEY",
-    "NEWCASTLE", "NORTH BEND", "SAMMAMISH", "SEATAC", "SHORELINE",
-    "SKYKOMISH", "WOODINVILLE",
+    "BEAUX ARTS", "BURIEN", "CARNATION", "COVINGTON", "KENMORE",
+    "MAPLE VALLEY", "NEWCASTLE", "NORTH BEND", "SAMMAMISH", "SEATAC",
+    "SHORELINE", "SKYKOMISH", "WOODINVILLE",
 }
+# City labels used by the property pipeline for parcels that may actually be in
+# unincorporated King County. These are spatially verified against the official
+# KCSO patrol-district layer before any district metric is attached.
+KCSO_UNINCORPORATED_LABELS = {"KING COUNTY", "VASHON"}
 
 PUBLIC_SAFETY_KEYS = [
     "public_safety_12mo_offenses", "public_safety_scope",
     "public_safety_period_start", "public_safety_period_end",
-    "public_safety_source", "public_safety_area",
+    "public_safety_source", "public_safety_area", "public_safety_boundary_source",
 ]
 
 
-def fetch_kcso_counts(start: date) -> dict[str, int]:
+def fetch_grouped_counts(start: date, field: str) -> dict[str, int]:
     params = {
-        "$select": "upper(city) as city,count(*) as offenses",
-        "$where": f"incident_datetime >= '{start.isoformat()}T00:00:00.000'",
-        "$group": "upper(city)",
-        "$limit": "500",
+        "$select": f"upper({field}) as area,count(*) as offenses",
+        "$where": f"incident_datetime >= '{start.isoformat()}T00:00:00.000' and {field} is not null",
+        "$group": f"upper({field})",
+        "$limit": "1000",
     }
-    r = requests.get(KCSO_SOURCE, params=params, timeout=45)
+    r = requests.get(KCSO_SOURCE, params=params, timeout=60)
     r.raise_for_status()
     out: dict[str, int] = {}
     for row in r.json():
-        city = str(row.get("city") or "").strip().upper()
+        area = str(row.get("area") or "").strip().upper()
         try:
             n = int(row.get("offenses") or 0)
         except (TypeError, ValueError):
             continue
-        if city:
-            out[city] = n
+        if area:
+            out[area] = n
     return out
 
 
+def fetch_kcso_counts(start: date) -> dict[str, int]:
+    return fetch_grouped_counts(start, "city")
+
+
+def fetch_kcso_district_counts(start: date) -> dict[str, int]:
+    return fetch_grouped_counts(start, "district")
+
+
+def lookup_kcso_district(lon: float, lat: float) -> dict[str, str] | None:
+    # Point-in-polygon lookup is performed server-side against King County's
+    # official patrol-district feature service. This prevents treating a ZIP/city
+    # label as proof that a parcel lies in KCSO jurisdiction.
+    params = {
+        "f": "json",
+        "geometry": f"{lon},{lat}",
+        "geometryType": "esriGeometryPoint",
+        "inSR": "4326",
+        "spatialRel": "esriSpatialRelIntersects",
+        "outFields": "PatDist,CityName,Juris",
+        "returnGeometry": "false",
+    }
+    r = requests.get(f"{KCSO_DISTRICT_LAYER}/query", params=params, timeout=30)
+    r.raise_for_status()
+    payload = r.json()
+    features = payload.get("features") or []
+    if not features:
+        return None
+    attrs = features[0].get("attributes") or {}
+    district = str(attrs.get("PatDist") or "").strip().upper()
+    if not district:
+        return None
+    return {
+        "district": district,
+        "city": str(attrs.get("CityName") or "").strip(),
+        "jurisdiction": str(attrs.get("Juris") or "").strip(),
+    }
+
+
 def fetch_spd_neighborhood_counts(start: date) -> dict[str, int]:
-    # SPD's dataset contains finalized/UCR-approved offense rows and is refreshed
-    # daily. Group by the published MCPP neighborhood to avoid presenting a
-    # citywide count as if it were local to a parcel.
     params = {
         "$select": "upper(neighborhood) as neighborhood,count(*) as offenses",
-        "$where": (
-            f"offense_date >= '{start.isoformat()}T00:00:00.000' "
-            "and neighborhood is not null"
-        ),
+        "$where": f"offense_date >= '{start.isoformat()}T00:00:00.000' and neighborhood is not null",
         "$group": "upper(neighborhood)",
         "$limit": "1000",
     }
@@ -85,8 +123,7 @@ def fetch_spd_neighborhood_counts(start: date) -> dict[str, int]:
 def fetch_spd_mcpp_features() -> list[dict[str, Any]]:
     r = requests.get(SPD_MCPP_GEOJSON, params={"$limit": "5000"}, timeout=60)
     r.raise_for_status()
-    payload = r.json()
-    return list(payload.get("features") or [])
+    return list((r.json()).get("features") or [])
 
 
 def point_in_ring(lon: float, lat: float, ring: list[list[float]]) -> bool:
@@ -109,7 +146,6 @@ def point_in_ring(lon: float, lat: float, ring: list[list[float]]) -> bool:
 def point_in_polygon(lon: float, lat: float, polygon: list[list[list[float]]]) -> bool:
     if not polygon or not point_in_ring(lon, lat, polygon[0]):
         return False
-    # Holes in a GeoJSON polygon subtract from the exterior ring.
     return not any(point_in_ring(lon, lat, hole) for hole in polygon[1:])
 
 
@@ -138,16 +174,34 @@ def clear_metric(p: dict[str, Any]) -> bool:
     return had
 
 
+def set_metric(p: dict[str, Any], offenses: int, area: str, scope: str,
+               start: date, today: date, source: str,
+               boundary_source: str | None = None) -> None:
+    p["public_safety_12mo_offenses"] = offenses
+    p["public_safety_area"] = area
+    p["public_safety_scope"] = scope
+    p["public_safety_period_start"] = start.isoformat()
+    p["public_safety_period_end"] = today.isoformat()
+    p["public_safety_source"] = source
+    if boundary_source:
+        p["public_safety_boundary_source"] = boundary_source
+    else:
+        p.pop("public_safety_boundary_source", None)
+
+
 def main() -> None:
     doc = json.loads(PROPS.read_text(encoding="utf-8"))
     today = date.today()
     start = today - timedelta(days=365)
 
     kcso_counts = fetch_kcso_counts(start)
+    kcso_district_counts = fetch_kcso_district_counts(start)
     spd_counts = fetch_spd_neighborhood_counts(start)
     spd_features = fetch_spd_mcpp_features()
 
-    kcso_filled = 0
+    kcso_city_filled = 0
+    kcso_district_filled = 0
+    kcso_district_unmapped = 0
     seattle_filled = 0
     seattle_unmapped = 0
     cleared = 0
@@ -158,16 +212,36 @@ def main() -> None:
 
         city = str(p.get("city") or "").strip().upper()
         if city in KCSO_CITIES and city in kcso_counts:
-            p["public_safety_12mo_offenses"] = kcso_counts[city]
-            p["public_safety_area"] = city
-            p["public_safety_scope"] = (
-                "KCSO finalized offense reports in the named contract city; "
-                "trailing 365 days; raw report count, not a population-adjusted crime rate"
+            set_metric(
+                p, kcso_counts[city], city,
+                "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+                start, today, KCSO_SOURCE_PAGE,
             )
-            p["public_safety_period_start"] = start.isoformat()
-            p["public_safety_period_end"] = today.isoformat()
-            p["public_safety_source"] = KCSO_SOURCE_PAGE
-            kcso_filled += 1
+            kcso_city_filled += 1
+            continue
+
+        if city in KCSO_UNINCORPORATED_LABELS:
+            try:
+                lat = float(p.get("latitude"))
+                lon = float(p.get("longitude"))
+            except (TypeError, ValueError):
+                if clear_metric(p):
+                    cleared += 1
+                kcso_district_unmapped += 1
+                continue
+            district_info = lookup_kcso_district(lon, lat)
+            district = (district_info or {}).get("district", "")
+            if district and district in kcso_district_counts:
+                set_metric(
+                    p, kcso_district_counts[district], district,
+                    "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
+                    start, today, KCSO_SOURCE_PAGE, KCSO_DISTRICT_PAGE,
+                )
+                kcso_district_filled += 1
+            else:
+                if clear_metric(p):
+                    cleared += 1
+                kcso_district_unmapped += 1
             continue
 
         if city == "SEATTLE":
@@ -182,37 +256,29 @@ def main() -> None:
 
             area = find_spd_neighborhood(spd_features, lon, lat)
             if area and area in spd_counts:
-                p["public_safety_12mo_offenses"] = spd_counts[area]
-                p["public_safety_area"] = area
-                p["public_safety_scope"] = (
-                    "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; "
-                    "trailing 365 days; raw offense count, not a population-adjusted crime rate"
+                set_metric(
+                    p, spd_counts[area], area,
+                    "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
+                    start, today, SPD_SOURCE_PAGE, SPD_MCPP_PAGE,
                 )
-                p["public_safety_period_start"] = start.isoformat()
-                p["public_safety_period_end"] = today.isoformat()
-                p["public_safety_source"] = SPD_SOURCE_PAGE
-                p["public_safety_boundary_source"] = SPD_MCPP_PAGE
                 seattle_filled += 1
             else:
                 if clear_metric(p):
                     cleared += 1
-                p.pop("public_safety_boundary_source", None)
                 seattle_unmapped += 1
             continue
 
-        # Other independent city police jurisdictions remain blank until an
-        # official, refreshable source is deliberately integrated for that city.
         if clear_metric(p):
             cleared += 1
-        p.pop("public_safety_boundary_source", None)
 
     PROPS.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     print(
         "King County public-safety enrichment: "
-        f"KCSO {kcso_filled}; Seattle SPD {seattle_filled}; "
+        f"KCSO contract-city {kcso_city_filled}; KCSO district {kcso_district_filled}; "
+        f"KCSO district unmapped {kcso_district_unmapped}; Seattle SPD {seattle_filled}; "
         f"Seattle unmapped {seattle_unmapped}; stale values cleared {cleared}"
     )
-    print("Other independent city police jurisdictions remain blank pending official integrated sources.")
+    print("Independent city police jurisdictions remain blank pending official integrated sources.")
 
 
 if __name__ == "__main__":
