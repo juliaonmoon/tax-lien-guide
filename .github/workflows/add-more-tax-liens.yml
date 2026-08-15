@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: tax-lien-guide-data-writes
+  cancel-in-progress: false
+
 jobs:
   expand:
     runs-on: ubuntu-latest
@@ -22,6 +26,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Sync latest main before expansion
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
