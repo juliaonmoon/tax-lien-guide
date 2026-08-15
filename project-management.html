@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Management — Tax Sale Data Coverage</title>
+<meta name="description" content="Project management dashboard for nationwide tax lien and tax deed property collector coverage.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#172033">
+<link rel="icon" href="app-icon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--ink:#172033;--muted:#647087;--line:#dfe5ee;--brand:#1f5eff;--good:#137a48;--warn:#9a5a00;--bad:#a12a2a;--purple:#6d45b8;--shadow:0 10px 28px rgba(31,50,80,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:13px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{max-width:1700px;margin:auto;padding:22px 18px 46px}.tabs{display:flex;gap:8px;margin:0 0 14px;overflow:auto;padding-bottom:2px}.tab{display:inline-flex;white-space:nowrap;text-decoration:none;color:#47536b;background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:10px;font-weight:700}.tab.active{background:#172033;color:#fff;border-color:#172033}.hero{background:linear-gradient(135deg,#172033,#315fae 58%,#6d45b8);color:#fff;border-radius:20px;padding:24px 26px;box-shadow:var(--shadow)}h1{font-size:clamp(26px,4vw,36px);line-height:1.08;margin:0 0 8px}.hero p{max-width:980px;color:#dfe8ff;margin:0}.stamp{display:inline-flex;margin-top:13px;padding:6px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-size:12px}.summary{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:14px 0}.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px;box-shadow:var(--shadow)}.stat b{font-size:20px;display:block}.stat span{color:var(--muted);font-size:11px}.progress-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0;box-shadow:var(--shadow)}.progress-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.progress-track{height:12px;background:#e8edf5;border-radius:999px;overflow:hidden;margin-top:10px}.progress-fill{height:100%;background:linear-gradient(90deg,#1f5eff,#6d45b8);border-radius:999px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:22px 0 10px}.section-title h2{font-size:18px;margin:0}.section-title p{margin:0;color:var(--muted)}.workstreams{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.work-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}.work-top{display:flex;justify-content:space-between;gap:8px;align-items:start}.work-card h3{font-size:14px;margin:0}.mini-track{height:7px;background:#e8edf5;border-radius:999px;overflow:hidden;margin:12px 0 8px}.mini-track i{display:block;height:100%;background:#1f5eff}.work-card p{margin:0;color:var(--muted);font-size:12px}.toolbar{display:grid;grid-template-columns:2fr repeat(4,minmax(145px,1fr));gap:9px;margin:12px 0}.control{width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 10px;font:inherit;color:var(--ink)}.table-wrap{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:auto;box-shadow:var(--shadow);max-height:70vh}table{border-collapse:separate;border-spacing:0;min-width:1350px;width:100%}th{position:sticky;top:0;z-index:2;background:#f9fbff;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:#556177;border-bottom:1px solid var(--line);padding:10px}td{padding:9px 10px;border-bottom:1px solid #edf1f6;vertical-align:top}tbody tr:hover{background:#f8faff}.badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:800;white-space:nowrap}.type-tax_lien{background:#e9f1ff;color:#1957b4}.type-tax_deed{background:#f0eaff;color:#6739a5}.type-both{background:#e7f7f0;color:#0d7346}.status-working{background:#e4f6ec;color:#0d7346}.status-partial,.status-in_progress{background:#fff2d8;color:#8a5500}.status-snapshot,.status-zero_active{background:#fff0e3;color:#9a4f00}.status-blocked{background:#fde8e8;color:#a12a2a}.status-planned,.status-information_only,.status-not_started{background:#edf0f5;color:#536077}.query-yes{color:#137a48;font-weight:800}.query-no{color:#a12a2a;font-weight:800}.priority{font-weight:850}.p0{color:#a12a2a}.p1{color:#9a5a00}.muted{color:var(--muted)}.empty{padding:28px;text-align:center;color:var(--muted)}.legend{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.footer{margin-top:15px;color:var(--muted);font-size:11px}.error{background:#fde8e8;color:#8d2020;border:1px solid #f3bcbc;border-radius:12px;padding:14px;margin:14px 0}@media(max-width:1100px){.summary{grid-template-columns:repeat(3,1fr)}.workstreams{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar #q{grid-column:1/-1}}@media(max-width:620px){.summary{grid-template-columns:1fr 1fr}.workstreams{grid-template-columns:1fr}.hero{padding:20px}.toolbar{grid-template-columns:1fr}.toolbar #q{grid-column:auto}}
+</style>
+</head>
+<body><div class="wrap">
+<nav class="tabs"><a class="tab" href="index.html">Tax Lien Summary</a><a class="tab" href="tax-lien-properties.html">Tax Lien Details</a><a class="tab" href="tax-deed.html">Tax Deeds</a><a class="tab" href="property-screener.html">Tax Deed Property Screener</a><a class="tab" href="calendar.html">Calendar</a><a class="tab active" href="project-management.html">Project Management</a></nav>
+<section class="hero"><h1>Project Management</h1><p>Nationwide delivery dashboard for property-level collectors. Every query is explicitly classified as Tax Lien, Tax Deed, or Both. A link or market description does not count as a completed property query.</p><div class="stamp" id="updated">Loading project inventory…</div></section>
+<div id="error"></div>
+<section class="summary">
+  <div class="stat"><b id="tracked">—</b><span>queries / markets tracked</span></div>
+  <div class="stat"><b id="queryYes">—</b><span>property queries developed</span></div>
+  <div class="stat"><b id="verified">—</b><span>fully verified collectors</span></div>
+  <div class="stat"><b id="blocked">—</b><span>blocked sources</span></div>
+  <div class="stat"><b id="records">—</b><span>current property records</span></div>
+  <div class="stat"><b id="remaining">—</b><span>tracked queries remaining</span></div>
+</section>
+<section class="progress-card"><div class="progress-head"><div><strong>Tracked-query delivery progress</strong><div class="muted">Completed property collectors divided by currently tracked query targets</div></div><strong id="progressPct">—</strong></div><div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0"></div></div></section>
+
+<div class="section-title"><div><h2>PM workstreams</h2><p>Prioritized delivery streams and immediate next actions.</p></div></div>
+<section class="workstreams" id="workstreams"></section>
+
+<div class="section-title"><div><h2>Query inventory</h2><p id="shown">Loading…</p></div></div>
+<div class="legend"><span class="badge type-tax_lien">Tax Lien</span><span class="badge type-tax_deed">Tax Deed</span><span class="badge type-both">Both</span><span class="badge status-working">Working</span><span class="badge status-blocked">Blocked</span><span class="badge status-planned">Not developed</span></div>
+<div class="toolbar">
+  <input id="q" class="control" placeholder="Search state, county, task, blocker…">
+  <select id="type" class="control"><option value="">All query types</option><option value="tax_lien">Tax Lien</option><option value="tax_deed">Tax Deed</option><option value="both">Both</option></select>
+  <select id="status" class="control"><option value="">All statuses</option></select>
+  <select id="priority" class="control"><option value="">All priorities</option><option>P0</option><option>P1</option><option>P2</option><option>P3</option></select>
+  <select id="state" class="control"><option value="">All states</option></select>
+</div>
+<div class="table-wrap"><table><thead><tr><th>Query type</th><th>State</th><th>County / market</th><th>Status</th><th>Property query?</th><th>Proof</th><th>Last success</th><th>Records</th><th>Priority</th><th>Next action</th><th>Notes / blocker</th></tr></thead><tbody id="body"></tbody></table></div>
+<div class="footer">Project-management data is stored in <code>data/project-management.json</code>. Update the structured inventory whenever a collector is added, blocked, repaired, or produces a different verified record count.</div>
+</div>
+<script>
+const labels={tax_lien:'Tax Lien',tax_deed:'Tax Deed',both:'Both'};
+const statusLabels={working:'Working',partial:'Partial',snapshot:'Snapshot-backed',zero_active:'Zero active',blocked:'Blocked',planned:'Planned',information_only:'Information only',not_started:'Not started',in_progress:'In progress'};
+let data={queries:[],workstreams:[]};
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const badge=(value,kind)=>`<span class="badge ${kind}-${esc(value)}">${esc(kind==='type'?labels[value]||value:statusLabels[value]||value)}</span>`;
+function renderSummary(){
+  const items=data.queries;
+  const yes=items.filter(x=>x.query).length;
+  const verified=items.filter(x=>x.verification==='verified').length;
+  const blocked=items.filter(x=>x.status==='blocked').length;
+  const records=items.reduce((n,x)=>n+(Number(x.records)||0),0);
+  const pct=items.length?Math.round(yes/items.length*100):0;
+  $('tracked').textContent=items.length;$('queryYes').textContent=yes;$('verified').textContent=verified;$('blocked').textContent=blocked;$('records').textContent=records.toLocaleString();$('remaining').textContent=items.length-yes;$('progressPct').textContent=pct+'%';$('progressFill').style.width=pct+'%';
+}
+function renderWorkstreams(){
+  $('workstreams').innerHTML=data.workstreams.map(w=>`<article class="work-card"><div class="work-top"><h3>${esc(w.id)} · ${esc(w.name)}</h3>${badge(w.type,'type')}</div><div class="legend"><span class="priority ${String(w.priority).toLowerCase()}">${esc(w.priority)}</span>${badge(w.status,'status')}<span class="muted">${esc(w.progress)}%</span></div><div class="mini-track"><i style="width:${Math.max(0,Math.min(100,Number(w.progress)||0))}%"></i></div><p><strong>Next:</strong> ${esc(w.next_action)}</p></article>`).join('');
+}
+function renderTable(){
+  const needle=$('q').value.trim().toLowerCase(),type=$('type').value,status=$('status').value,priority=$('priority').value,state=$('state').value;
+  const rows=data.queries.filter(x=>(!type||x.type===type)&&(!status||x.status===status)&&(!priority||x.priority===priority)&&(!state||x.state===state)&&(!needle||Object.values(x).join(' ').toLowerCase().includes(needle))).sort((a,b)=>a.priority.localeCompare(b.priority)||a.type.localeCompare(b.type)||a.state_name.localeCompare(b.state_name)||a.county.localeCompare(b.county));
+  $('shown').textContent=`Showing ${rows.length} of ${data.queries.length} tracked query targets.`;
+  $('body').innerHTML=rows.length?rows.map(x=>{const proof=[`${x.collector_module?'✅':'⬜'} Code`,`${Number(x.records)>0?'✅':x.status==='zero_active'?'◌':'⬜'} Data`,`${x.test_module?'✅':'⬜'} Tests`,`${x.last_success_at?'✅':'⬜'} Run`].join('<br>');const last=x.last_success_at?new Date(x.last_success_at).toLocaleDateString():'—';return `<tr><td>${badge(x.type,'type')}</td><td><strong>${esc(x.state_name)}</strong><div class="muted">${esc(x.state)}</div></td><td>${esc(x.county)}</td><td>${badge(x.status,'status')}</td><td class="query-${x.query?'yes':'no'}">${x.query?'YES':'NO'}</td><td>${proof}</td><td>${esc(last)}</td><td>${Number(x.records||0).toLocaleString()}</td><td class="priority ${String(x.priority).toLowerCase()}">${esc(x.priority)}</td><td>${esc(x.next_action)}</td><td class="muted">${esc(x.notes)}</td></tr>`}).join(''):`<tr><td colspan="11" class="empty">No query targets match these filters.</td></tr>`;
+}
+function buildFilters(){
+  const statuses=[...new Set(data.queries.map(x=>x.status))].sort();statuses.forEach(v=>$('status').insertAdjacentHTML('beforeend',`<option value="${esc(v)}">${esc(statusLabels[v]||v)}</option>`));
+  const states=[...new Map(data.queries.map(x=>[x.state,x.state_name])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));states.forEach(([code,name])=>$('state').insertAdjacentHTML('beforeend',`<option value="${esc(code)}">${esc(name)}</option>`));
+}
+fetch('data/project-management.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(json=>{data=json;$('updated').textContent=`Inventory updated ${new Date(json.updated_at).toLocaleString()} · Structured PM tracking`;renderSummary();renderWorkstreams();buildFilters();renderTable()}).catch(err=>{$('error').innerHTML=`<div class="error"><strong>Project inventory could not be loaded.</strong> ${esc(err.message)}</div>`;$('updated').textContent='Project inventory unavailable'});
+['q','type','status','priority','state'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',renderTable));
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
