@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T07:23:51.537131+00:00",
+  "source_updated_at": "2026-08-15T08:16:08.427890+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2970,7 +2970,7 @@
       "legal_description": "VILLAGE ON JAMES ST CONDOMINIUM PCT UND INT  0.7962",
       "tax_status": "T",
       "tax_due_estimate": 367.17,
-      "enrichment_note": "legal description, tax lookup HTTPError"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "9187751900",

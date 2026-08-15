@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T07:23:51.537131+00:00",
+  "updated_at": "2026-08-15T08:16:08.427890+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -12180,12 +12180,18 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup HTTPError",
+      "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=8944500610",
       "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=8944500610",
       "appraisal_source": "King County Assessor eReal Property",
       "legal_description": "VILLAGE ON JAMES ST CONDOMINIUM PCT UND INT  0.7962",
       "account_number": "894450061003",
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 367.17,
+      "delinquent_years": [
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -12196,16 +12202,9 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "tax_status": "T",
-      "bill_year": "2026",
-      "tax_due_estimate": 367.17,
-      "delinquent_years": [
-        "2026"
-      ],
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "city": "KENT",
       "zip": "98032",
       "latitude": 47.38801485,
