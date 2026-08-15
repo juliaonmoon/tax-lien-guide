@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T09:23:12.857306+00:00",
+  "updated_at": "2026-08-15T10:16:31.352108+00:00",
   "prototype": true,
   "properties": [
     {
@@ -22,7 +22,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -54,7 +54,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -86,7 +86,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -118,7 +118,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -150,7 +150,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -182,7 +182,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -214,7 +214,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -246,7 +246,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -278,7 +278,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -310,7 +310,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -342,7 +342,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -374,7 +374,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -406,7 +406,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -470,7 +470,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -502,7 +502,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -534,7 +534,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -566,7 +566,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -598,7 +598,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -630,7 +630,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
