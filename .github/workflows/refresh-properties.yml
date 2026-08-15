@@ -72,6 +72,9 @@ jobs:
         run: python scripts/fix_seattle_spd_beat_fallback.py
       - name: Fill Bellevue public-safety gaps from official annual report
         run: python scripts/fill_bellevue_public_safety.py
+      - name: Fill remaining city public-safety gaps from official WA NIBRS data
+        continue-on-error: true
+        run: python scripts/fill_wa_state_nibrs_public_safety.py
       - name: Diagnose remaining King County gaps
         run: python scripts/diagnose_king_gaps.py
       - name: Refresh Coconino Arizona OTC tax-lien property feed
