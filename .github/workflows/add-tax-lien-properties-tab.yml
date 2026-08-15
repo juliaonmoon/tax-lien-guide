@@ -1,0 +1,45 @@
+name: Add tax lien properties tab
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/add-tax-lien-properties-tab.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Add summary/properties navigation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+          marker = '<section class="hero">'
+          nav = '''<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px"><a href="index.html" style="display:inline-block;text-decoration:none;background:#172033;color:#fff;border:1px solid #dfe5ee;padding:8px 12px;border-radius:999px;font-weight:700">Tax Lien Summary</a><a href="tax-lien-properties.html" style="display:inline-block;text-decoration:none;background:#fff;color:#40506c;border:1px solid #dfe5ee;padding:8px 12px;border-radius:999px;font-weight:700">Tax Lien Properties</a><a href="tax-deed.html" style="display:inline-block;text-decoration:none;background:#fff;color:#40506c;border:1px solid #dfe5ee;padding:8px 12px;border-radius:999px;font-weight:700">Tax Deeds</a><a href="property-screener.html" style="display:inline-block;text-decoration:none;background:#fff;color:#40506c;border:1px solid #dfe5ee;padding:8px 12px;border-radius:999px;font-weight:700">Property Screener</a><a href="calendar.html" style="display:inline-block;text-decoration:none;background:#fff;color:#40506c;border:1px solid #dfe5ee;padding:8px 12px;border-radius:999px;font-weight:700">Calendar</a></div>\n'''
+          if 'tax-lien-properties.html' not in s and marker in s:
+              s = s.replace(marker, nav + marker, 1)
+              p.write_text(s)
+          PY
+      - name: Commit navigation
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "No navigation change needed."
+            exit 0
+          fi
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html
+          git commit -m "Add Tax Lien Properties navigation tab"
+          git pull --rebase origin main
+          git push origin main
