@@ -36,6 +36,8 @@ jobs:
         run: cp data/properties.json /tmp/properties-before-refresh.json
       - name: Refresh official property feeds
         run: python scripts/refresh_properties.py
+      - name: Preserve King County rows after source-feed collapse
+        run: python scripts/preserve_king_rows_on_feed_failure.py
       - name: Preserve King County tax fields after transient failures
         run: python scripts/preserve_king_tax_on_transient_failure.py
       - name: Normalize King County tax receivables to dollars
@@ -57,8 +59,14 @@ jobs:
       - name: Fill missing King County tax status from official foreclosure list
         run: python scripts/fix_king_foreclosure_status.py
       - name: Enrich scoped King County public safety metrics
+        id: king_public_safety
+        continue-on-error: true
         run: python scripts/enrich_king_public_safety.py
+      - name: Preserve verified King public-safety data if source is unavailable
+        if: steps.king_public_safety.outcome == 'failure'
+        run: python scripts/restore_king_public_safety_after_source_failure.py
       - name: Fill Seattle public-safety gaps from official SPD beats
+        continue-on-error: true
         run: python scripts/fix_seattle_spd_beat_fallback.py
       - name: Diagnose remaining King County gaps
         run: python scripts/diagnose_king_gaps.py
