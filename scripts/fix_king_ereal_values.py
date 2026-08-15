@@ -12,8 +12,9 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 PROPS = ROOT / "data" / "properties.json"
 STATUS = ROOT / "data" / "refresh-status.json"
-UA = "TaxLienGuideBot/2.3 (public King County assessor value research; no owner aggregation)"
+UA = "TaxLienGuideBot/2.4 (public King County assessor value research; no owner aggregation)"
 BASE = "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr={}"
+RECEIVABLES = "https://data.kingcounty.gov/resource/dkna-i698.json"
 
 
 def money(text):
@@ -69,11 +70,11 @@ def extract_values(html):
     return land, impr, total
 
 
-def fetch_with_retry(session, url, attempts=4):
+def fetch_with_retry(session, url, *, params=None, attempts=4):
     last_error = None
     for attempt in range(1, attempts + 1):
         try:
-            r = session.get(url, timeout=(10, 45), allow_redirects=True)
+            r = session.get(url, params=params, timeout=(10, 45), allow_redirects=True)
             r.raise_for_status()
             return r
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
@@ -93,19 +94,64 @@ def fetch_with_retry(session, url, attempts=4):
         raise last_error
 
 
+def receivable_values(session, account_number):
+    """Return latest positive official land/improvement values for one account."""
+    if not account_number:
+        return None, None, None, None
+    safe_account = str(account_number).replace("'", "''")
+    params = {
+        "$select": "account_number,bill_year,land_value,imps_value",
+        "$where": f"account_number='{safe_account}'",
+        "$order": "bill_year DESC",
+        "$limit": "25",
+    }
+    r = fetch_with_retry(session, RECEIVABLES, params=params)
+    rows = r.json()
+    for row in rows:
+        land = money(row.get("land_value"))
+        impr = money(row.get("imps_value"))
+        total = (land or 0) + (impr or 0)
+        if total > 0:
+            return land, impr, total, row.get("bill_year")
+    return None, None, None, None
+
+
 def main():
     doc = json.loads(PROPS.read_text(encoding="utf-8"))
     wa = [p for p in doc.get("properties", []) if p.get("state") == "WA" and p.get("county") == "King"]
     targets = [p for p in wa if p.get("parcel_id") and p.get("assessed_value") in (None, "")]
     recovered = 0
+    recovered_receivables = 0
+    recovered_ereal = 0
     reachable = 0
     failures = {}
     session = requests.Session()
-    session.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"})
+    session.headers.update({"User-Agent": UA, "Accept": "application/json,text/html,application/xhtml+xml"})
 
     for p in targets:
         pin = str(p["parcel_id"])
         url = BASE.format(pin)
+        try:
+            land, impr, total, bill_year = receivable_values(session, p.get("account_number"))
+            if total is not None:
+                if land is not None:
+                    p["land_value"] = land
+                if impr is not None:
+                    p["improvement_value"] = impr
+                p["assessed_value"] = total
+                p["market_value"] = total
+                p["value_basis"] = "King County Real Property Tax Receivables land + improvements"
+                p["appraisal_url"] = "https://data.kingcounty.gov/Property-Assessments/Real-Property-Tax-Receivables/dkna-i698"
+                p["appraisal_source"] = "King County Real Property Tax Receivables"
+                if bill_year:
+                    p["appraisal_year"] = str(bill_year)
+                recovered += 1
+                recovered_receivables += 1
+                continue
+        except Exception as e:
+            key = f"receivables_{type(e).__name__}"
+            failures[key] = failures.get(key, 0) + 1
+
         try:
             r = fetch_with_retry(session, url)
             reachable += 1
@@ -121,14 +167,17 @@ def main():
                 p["appraisal_url"] = url
                 p["appraisal_source"] = "King County Assessor eReal Property"
                 recovered += 1
+                recovered_ereal += 1
         except Exception as e:
-            failures[type(e).__name__] = failures.get(type(e).__name__, 0) + 1
+            key = f"ereal_{type(e).__name__}"
+            failures[key] = failures.get(key, 0) + 1
         time.sleep(0.15)
 
     PROPS.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     summary = (
-        f"King County eReal assessed-value fallback: attempted {len(targets)} missing-value parcels; "
-        f"site reachable for {reachable}; recovered {recovered}; failures {failures or 'none'}."
+        f"King County assessed-value fallback: attempted {len(targets)} missing-value parcels; "
+        f"recovered {recovered} ({recovered_receivables} from official tax receivables, "
+        f"{recovered_ereal} from eReal); eReal reachable for {reachable}; failures {failures or 'none'}."
     )
     if STATUS.exists():
         st = json.loads(STATUS.read_text(encoding="utf-8"))
