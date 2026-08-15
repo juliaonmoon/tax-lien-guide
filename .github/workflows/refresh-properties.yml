@@ -98,8 +98,12 @@ jobs:
         run: python scripts/add_arizona_yavapai_tax_lien_market.py
       - name: Add Arizona Mohave County tax lien market
         run: python scripts/add_arizona_mohave_tax_lien_market.py
+      - name: Add Arizona Pinal County tax lien market
+        run: python scripts/add_arizona_pinal_tax_lien_market.py
       - name: Add max return rate comparison
         run: python scripts/add_max_return_rates.py
+      - name: Ensure tax lien county and market filter
+        run: python scripts/add_tax_lien_county_filter.py
       - name: Commit refreshed data and guide updates
         run: |
           if git diff --quiet -- data/ index.html; then
