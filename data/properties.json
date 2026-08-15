@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T15:50:34.757992+00:00",
+  "updated_at": "2026-08-15T15:53:29.258786+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -5970,12 +5970,18 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ReadTimeout",
+      "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3320000500",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=3320000500",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "HILL TRACT ADD SUPL 1-2 LESS E 16.77 FT OF 3 LESS ST",
       "account_number": "332000050002",
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 9470.71,
+      "delinquent_years": [
+        "2026"
+      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -5986,16 +5992,9 @@
           "title/surviving liens not reviewed"
         ]
       },
-      "tax_status": "T",
-      "bill_year": "2026",
-      "tax_due_estimate": 9470.71,
-      "delinquent_years": [
-        "2026"
-      ],
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "latitude": 47.598934405014944,
       "longitude": -122.31518823528174,
       "coordinate_source": "King County parcel centroid",
