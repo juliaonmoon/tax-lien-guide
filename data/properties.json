@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T12:25:51.763312+00:00",
+  "updated_at": "2026-08-15T13:26:21.865419+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -810,7 +810,12 @@
         "12.7% renter share",
         "2.8% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 511,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -1318,7 +1323,12 @@
         "58.5% renter share",
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 1594,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -1991,7 +2001,12 @@
         "46.2% renter share",
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 3560,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -2242,7 +2257,12 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 3560,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -3390,7 +3410,12 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 3560,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -3469,7 +3494,12 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 3560,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -3548,7 +3578,12 @@
         "49.5% renter share",
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 3560,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -5452,7 +5487,12 @@
         "14.4% renter share",
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 728,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -6447,7 +6487,12 @@
         "16.3% renter share",
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 511,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -6533,7 +6578,12 @@
         "16.3% renter share",
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 511,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -7614,7 +7664,12 @@
         "29.8% renter share",
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 2418,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -8863,7 +8918,12 @@
         "58.5% renter share",
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 1594,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -9933,7 +9993,12 @@
         "14.4% renter share",
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 728,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -11004,7 +11069,12 @@
         "51.6% renter share",
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 2418,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
@@ -11256,7 +11326,12 @@
         "45.2% renter share",
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 1594,
+      "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
+      "public_safety_period_start": "2025-08-15",
+      "public_safety_period_end": "2026-08-15",
+      "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
       "state": "WA",
