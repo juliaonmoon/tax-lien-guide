@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T18:35:01.949289+00:00",
+  "updated_at": "2026-08-15T18:56:46.869921+00:00",
   "prototype": true,
   "counties": [
     {
@@ -34,6 +34,22 @@
       "auction_url": "https://coconino.arizonataxsale.com/",
       "coverage": "verified_official_snapshot",
       "sale_type": "tax_lien"
+    },
+    {
+      "state": "FL",
+      "state_name": "Florida",
+      "county": "Putnam",
+      "source_url": "https://apps.putnam-fl.com/coc/taxdeeds/public/public_LAFT.php",
+      "auction_url": "https://apps.putnam-fl.com/coc/taxdeeds/public/public_LAFT.php",
+      "coverage": "lands_available_property_feed"
+    },
+    {
+      "state": "FL",
+      "state_name": "Florida",
+      "county": "Escambia",
+      "source_url": "https://public.escambiaclerk.com/taxsale/landsavailable.asp",
+      "auction_url": "https://www.escambia.realtaxdeed.com/",
+      "coverage": "lands_available_property_feed"
     }
   ]
 }

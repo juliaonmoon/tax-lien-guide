@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-15T18:35:01.949289+00:00",
+  "updated_at": "2026-08-15T18:56:46.869921+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
-  "states_tracked": 3,
-  "counties_tracked": 3,
-  "official_sources_registered": 3,
-  "property_count": 198,
+  "states_tracked": 4,
+  "counties_tracked": 6,
+  "official_sources_registered": 6,
+  "property_count": 235,
   "source_health": [
     {
       "state": "FL",
@@ -43,6 +43,22 @@
       "checked_at": "2026-08-15T18:35:01.949289+00:00",
       "ok": true,
       "note": "Loaded 33 Coconino OTC tax-lien certificates from the official county list. County document host blocks GitHub automation (HTTP 403); using the verified 2026-08-14 official snapshot without bypassing that restriction."
+    },
+    {
+      "state": "FL",
+      "county": "Putnam",
+      "source_url": "https://apps.putnam-fl.com/coc/taxdeeds/public/public_LAFT.php",
+      "checked_at": "2026-08-15T18:56:46.869921+00:00",
+      "ok": false,
+      "note": "Official host unavailable (HTTPError); preserved 36 parcels from verified 2026-08-15 snapshot; FDOR cadastral matched 37/37 Florida parcels"
+    },
+    {
+      "state": "FL",
+      "county": "Escambia",
+      "source_url": "https://public.escambiaclerk.com/taxsale/landsavailable.asp",
+      "checked_at": "2026-08-15T18:56:46.869921+00:00",
+      "ok": false,
+      "note": "Official host blocked automation (HTTPError); preserved 1 parcel from verified 2026-08-15 official-page snapshot; FDOR cadastral matched 37/37 Florida parcels"
     }
   ],
   "notes": [
@@ -61,6 +77,7 @@
     "King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145.",
     "King County eReal assessed-value fallback: attempted 0 missing-value parcels; site reachable for 0; recovered 0; failures none.",
     "King County official foreclosure-status fallback filled tax status for 0/145 rows; documented individual-Recorder requirement for 2 missing legal descriptions.",
-    "Loaded 33 Coconino OTC tax-lien certificates from the official county list. County document host blocks GitHub automation (HTTP 403); using the verified 2026-08-14 official snapshot without bypassing that restriction. sale_type=tax_lien keeps these rows distinct from tax deed/foreclosure rows."
+    "Loaded 33 Coconino OTC tax-lien certificates from the official county list. County document host blocks GitHub automation (HTTP 403); using the verified 2026-08-14 official snapshot without bypassing that restriction. sale_type=tax_lien keeps these rows distinct from tax deed/foreclosure rows.",
+    "Florida property expansion: 37 individual lands-available tax-deed parcels across Putnam and Escambia; FDOR cadastral matched 37/37 Florida parcels."
   ]
 }
