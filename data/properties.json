@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T20:23:50.330861+00:00",
+  "updated_at": "2026-08-15T21:20:08.303291+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -11248,8 +11248,8 @@
       "sale_status": "Foreclosure status",
       "opening_bid": null,
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
-      "assessed_value": 7.0,
-      "market_value": 7.0,
+      "assessed_value": null,
+      "market_value": null,
       "address": "225 LOGAN AVE S, RENTON, WA, 98057",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
@@ -11260,8 +11260,8 @@
       "data_completeness": "foreclosure list + King County open-data enrichment",
       "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7243300400",
-      "appraisal_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Detail.aspx?ParcelNbr=7243300400",
-      "appraisal_source": "King County Assessor eReal Property",
+      "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7243300400",
+      "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "account_number": "724330040002",
       "tax_status": "T",
@@ -11318,8 +11318,6 @@
         "median rent \u2248 31.6% of median income"
       ],
       "condo_parent_parcel": "7243300000",
-      "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value",
       "public_safety_12mo_offenses": 7041,
       "public_safety_area": "Renton Police Department",
       "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
