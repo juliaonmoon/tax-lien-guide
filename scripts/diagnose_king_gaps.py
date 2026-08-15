@@ -23,7 +23,7 @@ FIELDS = {
 
 OPTIONAL_METRICS = {
     "rental_days_on_market": lambda p: p.get("rental_days_on_market") not in (None, ""),
-    "public_safety": lambda p: p.get("public_safety_score") not in (None, "") or p.get("crime_rate") not in (None, ""),
+    "public_safety": lambda p: p.get("public_safety_12mo_offenses") not in (None, "") or p.get("public_safety_score") not in (None, "") or p.get("crime_rate") not in (None, ""),
 }
 
 SOURCE_LIMITATIONS = {
@@ -43,8 +43,9 @@ SOURCE_LIMITATIONS = {
         "note": "Some foreclosure parcels have no assigned situs address in King County GIS. The pipeline keeps those addresses blank rather than assigning a nearby or inferred street address.",
     },
     "public_safety": {
-        "status": "not_populated_as_countywide_metric",
-        "note": "Available King County Sheriff offense data does not cover every independent police jurisdiction in King County, so it is not presented as a comparable countywide parcel-level crime rate.",
+        "status": "partially_populated_for_kcso_contract_cities_only",
+        "source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
+        "note": "Trailing-365-day finalized KCSO offense-report counts are populated only for parcels in named KCSO contract cities. Independent city police jurisdictions remain blank. Counts are labeled as raw KCSO reports, not a population-adjusted countywide crime rate.",
     },
     "rental_days_on_market": {
         "status": "no_reliable_public_source_integrated",
