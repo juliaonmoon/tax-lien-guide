@@ -46,12 +46,18 @@ def fetch_grouped_counts(start: date, field: str) -> dict[str, int]:
     out: dict[str, int] = {}
     for row in r.json():
         area = str(row.get("area") or "").strip().upper()
+        # In the offense feed most patrol districts are published as "District F6"
+        # while the official patrol-district GIS layer stores the same code as "F6".
+        # Normalize only that literal prefix so the two official sources join cleanly;
+        # values such as MT10 are intentionally left unchanged.
+        if field == "district" and area.startswith("DISTRICT "):
+            area = area[len("DISTRICT "):].strip()
         try:
             n = int(row.get("offenses") or 0)
         except (TypeError, ValueError):
             continue
         if area:
-            out[area] = n
+            out[area] = out.get(area, 0) + n
     return out
 
 
