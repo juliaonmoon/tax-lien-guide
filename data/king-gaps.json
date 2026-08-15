@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T19:18:42.326685+00:00",
+  "source_updated_at": "2026-08-15T19:22:24.346600+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -225,9 +225,9 @@
       "missing": 145
     },
     "public_safety": {
-      "filled": 83,
+      "filled": 90,
       "total": 145,
-      "missing": 62
+      "missing": 55
     }
   },
   "optional_metric_missing_by_city": {
@@ -256,7 +256,6 @@
     "public_safety": {
       "KENT": 13,
       "RENTON": 10,
-      "BELLEVUE": 7,
       "AUBURN": 6,
       "FEDERAL WAY": 6,
       "DES MOINES": 4,

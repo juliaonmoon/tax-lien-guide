@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T19:21:00.301567+00:00",
+  "updated_at": "2026-08-15T19:24:54.384230+00:00",
   "prototype": true,
   "properties": [
     {
@@ -2596,7 +2596,13 @@
       ],
       "condo_parent_parcel": "1420000000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 5698,
+      "public_safety_area": "BELLEVUE",
+      "public_safety_scope": "Bellevue Police Department citywide year-end reported-crime total for 2025; annual raw count, not a parcel/neighborhood metric and not population-adjusted",
+      "public_safety_period_start": "2025-01-01",
+      "public_safety_period_end": "2025-12-31",
+      "public_safety_source": "https://bellevuewa.gov/city-news/crime-drops-again"
     },
     {
       "state": "WA",
@@ -5984,7 +5990,13 @@
       ],
       "condo_parent_parcel": "3274870000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 5698,
+      "public_safety_area": "BELLEVUE",
+      "public_safety_scope": "Bellevue Police Department citywide year-end reported-crime total for 2025; annual raw count, not a parcel/neighborhood metric and not population-adjusted",
+      "public_safety_period_start": "2025-01-01",
+      "public_safety_period_end": "2025-12-31",
+      "public_safety_source": "https://bellevuewa.gov/city-news/crime-drops-again"
     },
     {
       "state": "WA",
@@ -7290,7 +7302,13 @@
         "20.2% renter share",
         "3.7% housing vacancy proxy",
         "median rent \u2248 17.2% of median income"
-      ]
+      ],
+      "public_safety_12mo_offenses": 5698,
+      "public_safety_area": "BELLEVUE",
+      "public_safety_scope": "Bellevue Police Department citywide year-end reported-crime total for 2025; annual raw count, not a parcel/neighborhood metric and not population-adjusted",
+      "public_safety_period_start": "2025-01-01",
+      "public_safety_period_end": "2025-12-31",
+      "public_safety_source": "https://bellevuewa.gov/city-news/crime-drops-again"
     },
     {
       "state": "WA",
@@ -9964,7 +9982,13 @@
       ],
       "condo_parent_parcel": "6390000000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 5698,
+      "public_safety_area": "BELLEVUE",
+      "public_safety_scope": "Bellevue Police Department citywide year-end reported-crime total for 2025; annual raw count, not a parcel/neighborhood metric and not population-adjusted",
+      "public_safety_period_start": "2025-01-01",
+      "public_safety_period_end": "2025-12-31",
+      "public_safety_source": "https://bellevuewa.gov/city-news/crime-drops-again"
     },
     {
       "state": "WA",
@@ -10048,7 +10072,13 @@
       ],
       "condo_parent_parcel": "6390000000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 5698,
+      "public_safety_area": "BELLEVUE",
+      "public_safety_scope": "Bellevue Police Department citywide year-end reported-crime total for 2025; annual raw count, not a parcel/neighborhood metric and not population-adjusted",
+      "public_safety_period_start": "2025-01-01",
+      "public_safety_period_end": "2025-12-31",
+      "public_safety_source": "https://bellevuewa.gov/city-news/crime-drops-again"
     },
     {
       "state": "WA",
@@ -10132,7 +10162,13 @@
       ],
       "condo_parent_parcel": "6390000000",
       "land_value": 7.0,
-      "value_basis": "King County eReal Property appraised value"
+      "value_basis": "King County eReal Property appraised value",
+      "public_safety_12mo_offenses": 5698,
+      "public_safety_area": "BELLEVUE",
+      "public_safety_scope": "Bellevue Police Department citywide year-end reported-crime total for 2025; annual raw count, not a parcel/neighborhood metric and not population-adjusted",
+      "public_safety_period_start": "2025-01-01",
+      "public_safety_period_end": "2025-12-31",
+      "public_safety_source": "https://bellevuewa.gov/city-news/crime-drops-again"
     },
     {
       "state": "WA",
@@ -12872,7 +12908,13 @@
         "8.0% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "condo_parent_parcel": "9187750000"
+      "condo_parent_parcel": "9187750000",
+      "public_safety_12mo_offenses": 5698,
+      "public_safety_area": "BELLEVUE",
+      "public_safety_scope": "Bellevue Police Department citywide year-end reported-crime total for 2025; annual raw count, not a parcel/neighborhood metric and not population-adjusted",
+      "public_safety_period_start": "2025-01-01",
+      "public_safety_period_end": "2025-12-31",
+      "public_safety_source": "https://bellevuewa.gov/city-news/crime-drops-again"
     },
     {
       "state": "WA",
@@ -13229,21 +13271,21 @@
       "county": "Escambia",
       "case_number": "0226-64",
       "parcel_id": "211N301302000000",
-      "owner": "MY FATHER'S VINEYARD",
+      "owner": null,
       "legal_description": "BEG AT INTER OF W LI OF PALAFOX H/W AND N LI OF S1/2 OF SW1/4 OF NE1/4 SELY ALG H/W 406 FT WLY PARL TO N LI OF S1/2 OF SW1/4 OF NE1/4 TO E LI OF FRISCO RR R/W NLY ALG RR R/W TO N LI OF S1/2 OF SW1/4 OF NE1/4 E ALG SAID N LI TO POB OR 5347 P 1182",
       "sale_date": "03/04/2026",
       "available_date": null,
       "sale_status": "Lands available",
       "opening_bid": 3371.77,
       "opening_bid_note": null,
-      "address": "3000 BLK HIGHWAY 29 SOUTH",
-      "city": "CANTONMENT",
-      "zip": "32533",
-      "assessed_value": 6480.0,
-      "market_value": 6480.0,
-      "land_value": 6480.0,
-      "property_type": "Vacant residential",
-      "acreage": 0.24,
+      "address": null,
+      "city": null,
+      "zip": null,
+      "assessed_value": null,
+      "market_value": null,
+      "land_value": null,
+      "property_type": null,
+      "acreage": null,
       "living_area_sqft": null,
       "year_built": null,
       "homestead_value": null,
@@ -13257,17 +13299,10 @@
       "account_number": "110553000",
       "certificate_number": "06325",
       "property_viewer_url": "https://www.escpa.org/cama/Detail_a.aspx?a=110553000",
-      "building_count": null,
-      "assessed_homestead_value": null,
-      "improvement_note": "Vacant land \u2014 no building area or year built published",
-      "bid_to_assessed_ratio": 0.5203,
       "research_priority": {
-        "score": 50,
-        "label": "Medium research priority",
+        "score": 35,
+        "label": "Low research priority",
         "reasons": [
-          "physical address captured",
-          "official appraisal value captured",
-          "property use captured",
           "title and surviving liens not reviewed"
         ]
       }
@@ -13720,11 +13755,11 @@
       "address": null,
       "city": null,
       "zip": null,
-      "assessed_value": 2300.0,
-      "market_value": 2300.0,
-      "land_value": 2300.0,
-      "property_type": "Vacant residential",
-      "acreage": 0.11,
+      "assessed_value": null,
+      "market_value": null,
+      "land_value": null,
+      "property_type": null,
+      "acreage": null,
       "living_area_sqft": null,
       "year_built": null,
       "homestead_value": null,
@@ -13735,19 +13770,10 @@
       "data_completeness": "county lands-available list + FDOR cadastral enrichment",
       "appraisal_source": "Florida DOR statewide cadastral / county property appraiser",
       "appraisal_year": 2025,
-      "building_count": null,
-      "assessed_homestead_value": null,
-      "address_note": "No situs address published \u2014 vacant land",
-      "improvement_note": "Vacant land \u2014 no building area or year built published",
-      "property_viewer_url": "https://pamap.putnam-fl.gov/PropertyAppraiserPublicMap/?find=04-10-24-4940-0110-0080",
-      "bid_to_assessed_ratio": 0.7292,
       "research_priority": {
-        "score": 25,
+        "score": 35,
         "label": "Low research priority",
         "reasons": [
-          "opening bid >=70% of assessed value",
-          "official appraisal value captured",
-          "property use captured",
           "title and surviving liens not reviewed"
         ]
       }
@@ -14197,11 +14223,11 @@
       "address": null,
       "city": null,
       "zip": null,
-      "assessed_value": 2330.0,
-      "market_value": 2330.0,
-      "land_value": 2330.0,
-      "property_type": "Vacant residential",
-      "acreage": 0.11,
+      "assessed_value": null,
+      "market_value": null,
+      "land_value": null,
+      "property_type": null,
+      "acreage": null,
       "living_area_sqft": null,
       "year_built": null,
       "homestead_value": null,
@@ -14212,19 +14238,10 @@
       "data_completeness": "county lands-available list + FDOR cadastral enrichment",
       "appraisal_source": "Florida DOR statewide cadastral / county property appraiser",
       "appraisal_year": 2025,
-      "building_count": null,
-      "assessed_homestead_value": null,
-      "address_note": "No situs address published \u2014 vacant land",
-      "improvement_note": "Vacant land \u2014 no building area or year built published",
-      "property_viewer_url": "https://pamap.putnam-fl.gov/PropertyAppraiserPublicMap/?find=05-10-24-9045-0030-0450",
-      "bid_to_assessed_ratio": 0.7599,
       "research_priority": {
-        "score": 25,
+        "score": 35,
         "label": "Low research priority",
         "reasons": [
-          "opening bid >=70% of assessed value",
-          "official appraisal value captured",
-          "property use captured",
           "title and surviving liens not reviewed"
         ]
       }
