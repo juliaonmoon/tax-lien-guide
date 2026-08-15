@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T05:27:29.453621+00:00",
+  "updated_at": "2026-08-15T06:19:44.222060+00:00",
   "prototype": true,
   "counties": [
     {
@@ -25,15 +25,6 @@
       "source_url": "https://data.kingcounty.gov/Property-Assessments/Foreclosure-parcels/nx4x-daw6",
       "auction_url": "https://king.wa.realforeclose.com/",
       "coverage": "property_feed_prototype"
-    },
-    {
-      "state": "AZ",
-      "state_name": "Arizona",
-      "county": "Coconino",
-      "source_url": "https://www.coconino.az.gov/376/Tax-Liens",
-      "auction_url": "https://coconino.arizonataxsale.com/",
-      "coverage": "verified_official_snapshot",
-      "sale_type": "tax_lien"
     }
   ]
 }
