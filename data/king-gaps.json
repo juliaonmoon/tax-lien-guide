@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T15:50:55.927486+00:00",
+  "source_updated_at": "2026-08-15T15:53:29.258786+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -228,6 +228,47 @@
       "filled": 53,
       "total": 145,
       "missing": 92
+    }
+  },
+  "optional_metric_missing_by_city": {
+    "rental_days_on_market": {
+      "SEATTLE": 45,
+      "KING COUNTY": 25,
+      "KENT": 13,
+      "RENTON": 10,
+      "BELLEVUE": 7,
+      "AUBURN": 6,
+      "FEDERAL WAY": 6,
+      "BURIEN": 5,
+      "DES MOINES": 4,
+      "LAKE FOREST PARK": 3,
+      "REDMOND": 3,
+      "SAMMAMISH": 3,
+      "SEATAC": 3,
+      "TUKWILA": 3,
+      "MAPLE VALLEY": 2,
+      "SHORELINE": 2,
+      "VASHON": 2,
+      "ISSAQUAH": 1,
+      "KIRKLAND": 1,
+      "SNOQUALMIE": 1
+    },
+    "public_safety": {
+      "KING COUNTY": 25,
+      "KENT": 13,
+      "RENTON": 10,
+      "BELLEVUE": 7,
+      "SEATTLE": 7,
+      "AUBURN": 6,
+      "FEDERAL WAY": 6,
+      "DES MOINES": 4,
+      "LAKE FOREST PARK": 3,
+      "REDMOND": 3,
+      "TUKWILA": 3,
+      "VASHON": 2,
+      "ISSAQUAH": 1,
+      "KIRKLAND": 1,
+      "SNOQUALMIE": 1
     }
   },
   "source_limitations": {
