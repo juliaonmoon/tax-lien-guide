@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-15T14:26:39.059857+00:00",
+  "source_updated_at": "2026-08-15T14:29:35.691181+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -247,9 +247,13 @@
       "note": "Some foreclosure parcels have no assigned situs address in King County GIS. The pipeline keeps those addresses blank rather than assigning a nearby or inferred street address."
     },
     "public_safety": {
-      "status": "partially_populated_for_kcso_contract_cities_only",
-      "source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
-      "note": "Trailing-365-day finalized KCSO offense-report counts are populated only for parcels in named KCSO contract cities. Independent city police jurisdictions remain blank. Counts are labeled as raw KCSO reports, not a population-adjusted countywide crime rate."
+      "status": "partially_populated_from_official_jurisdiction_sources",
+      "sources": [
+        "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
+        "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
+        "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
+      ],
+      "note": "Trailing-365-day finalized offense counts are populated from KCSO for named contract cities and from SPD at the official MCPP-neighborhood level for Seattle parcels. Other independent city police jurisdictions remain blank until a legitimate refreshable source is integrated. Counts are raw report/offense counts, not population-adjusted cross-jurisdiction crime rates."
     },
     "rental_days_on_market": {
       "status": "no_reliable_public_source_integrated",
