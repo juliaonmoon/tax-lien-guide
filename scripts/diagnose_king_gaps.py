@@ -21,6 +21,37 @@ FIELDS = {
     "opening_bid": lambda p: p.get("opening_bid") not in (None, ""),
 }
 
+OPTIONAL_METRICS = {
+    "rental_days_on_market": lambda p: p.get("rental_days_on_market") not in (None, ""),
+    "public_safety": lambda p: p.get("public_safety_score") not in (None, "") or p.get("crime_rate") not in (None, ""),
+}
+
+SOURCE_LIMITATIONS = {
+    "opening_bid": {
+        "status": "awaiting_official_publication",
+        "source": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
+        "note": "King County states that opening bids for the September 9, 2026 tax-foreclosure auction will be posted in mid-to-late August 2026 when available. Do not infer or estimate opening bids before publication.",
+    },
+    "legal_description": {
+        "status": "individual_record_search_required_for_remaining_orphans",
+        "source": "https://recordsearch.kingcounty.gov/LandmarkWeb",
+        "note": "Two GIS-orphan parcels remain without legal descriptions in the machine-readable county sources. Recorder research must be done individually; the pipeline does not bulk-query or scrape restricted record-search pages.",
+    },
+    "address": {
+        "status": "no_assigned_situs_for_some_parcels",
+        "source": "https://www5.kingcounty.gov/SDC?Layer=address_point",
+        "note": "Some foreclosure parcels have no assigned situs address in King County GIS. The pipeline keeps those addresses blank rather than assigning a nearby or inferred street address.",
+    },
+    "public_safety": {
+        "status": "not_populated_as_countywide_metric",
+        "note": "Available King County Sheriff offense data does not cover every independent police jurisdiction in King County, so it is not presented as a comparable countywide parcel-level crime rate.",
+    },
+    "rental_days_on_market": {
+        "status": "no_reliable_public_source_integrated",
+        "note": "The pipeline has complete Census/ACS ZIP-level rental proxies, but no reliable public parcel/ZIP-level days-on-market source is currently integrated. Days-on-market remains blank rather than using a fabricated proxy.",
+    },
+}
+
 
 def main():
     doc = json.loads(PROPS.read_text(encoding="utf-8"))
@@ -54,15 +85,24 @@ def main():
                 "tax_due_estimate": p.get("tax_due_estimate"),
                 "enrichment_note": p.get("enrichment_note"),
             })
+
+    optional_coverage = {}
+    for name, test in OPTIONAL_METRICS.items():
+        filled = sum(1 for p in wa if test(p))
+        optional_coverage[name] = {"filled": filled, "total": len(wa), "missing": len(wa) - filled}
+
     OUT.write_text(json.dumps({
         "source_updated_at": doc.get("updated_at"),
         "king_count": len(wa),
         "missing_counts": dict(sorted(counter.items())),
         "missing_parcel_ids_by_field": {k: v for k, v in sorted(by_field.items())},
         "missing_address_status_counts": dict(sorted(address_status_counts.items())),
+        "optional_metric_coverage": optional_coverage,
+        "source_limitations": SOURCE_LIMITATIONS,
         "gaps": gaps,
     }, indent=2), encoding="utf-8")
     print(f"Wrote {OUT}: {len(gaps)} rows with at least one tracked gap")
+    print("Optional metric coverage:", optional_coverage)
 
 
 if __name__ == "__main__":
