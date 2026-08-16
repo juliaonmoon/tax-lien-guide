@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T10:23:55.600506+00:00",
+  "updated_at": "2026-08-16T11:22:11.687079+00:00",
   "prototype": true,
   "properties": [
     {
@@ -12457,22 +12457,12 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax lookup ReadTimeout",
+      "enrichment_note": "legal description, tax receivables",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7942601325",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=7942601325",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "SQUIRE PARK ADD",
       "account_number": "794260132509",
-      "research_priority": {
-        "score": 45,
-        "label": "Medium research priority",
-        "reasons": [
-          "appraisal-value comparison not yet available",
-          "King County says 2026 opening bids will be posted in mid-to-late August",
-          "currently listed by official source",
-          "title/surviving liens not reviewed"
-        ]
-      },
       "tax_status": "T",
       "bill_year": "2026",
       "tax_due_estimate": 40453.65,
@@ -12483,10 +12473,19 @@
         "2025",
         "2026"
       ],
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "appraisal-value comparison not yet available",
+          "King County says 2026 opening bids will be posted in mid-to-late August",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      },
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
-      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "latitude": 47.60553728,
       "longitude": -122.31125139,
       "coordinate_source": "King County address point",
