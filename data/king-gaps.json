@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-16T08:17:02.264881+00:00",
+  "source_updated_at": "2026-08-16T10:22:30.129080+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -444,7 +444,7 @@
       "legal_description": "ANGLE LAKE SHORE ACRES # 2 UNREC & SH LDS ADJ",
       "tax_status": "T",
       "tax_due_estimate": 4474.46,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0279000010",
@@ -2291,7 +2291,7 @@
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
       "tax_status": "T",
       "tax_due_estimate": 27278.22,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "6108450110",
@@ -2849,7 +2849,7 @@
       "legal_description": "SQUIRE PARK ADD",
       "tax_status": "T",
       "tax_due_estimate": 40453.65,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "8019200166",
