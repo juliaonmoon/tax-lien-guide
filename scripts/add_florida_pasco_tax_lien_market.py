@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from pathlib import Path
 
+from add_florida_seminole_tax_lien_market import main as add_seminole_market
+
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 MARKER = "Florida — Pasco County"
@@ -30,3 +32,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # Keep Seminole in the recurring publisher without adding another
+    # competing workflow. This remains idempotent because the Seminole
+    # appender checks for its own marker before writing.
+    add_seminole_market()
