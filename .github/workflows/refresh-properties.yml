@@ -33,9 +33,22 @@ jobs:
       - name: Install parser dependencies
         run: pip install requests beautifulsoup4 pdfplumber
       - name: Save previous verified property data
-        run: cp data/properties.json /tmp/properties-before-refresh.json
+        run: |
+          cp data/properties.json /tmp/properties-before-refresh.json
+          cp data/refresh-status.json /tmp/refresh-status-before-refresh.json
+          cp data/county-sources.json /tmp/county-sources-before-refresh.json
       - name: Refresh official property feeds
+        id: core_property_refresh
+        continue-on-error: true
+        timeout-minutes: 15
         run: python scripts/refresh_properties.py
+      - name: Preserve previous verified core data after stalled or failed refresh
+        if: steps.core_property_refresh.outcome == 'failure'
+        run: |
+          echo "Core property refresh failed or timed out; restoring previous verified core files so downstream WA repair and lien expansion can continue safely."
+          cp /tmp/properties-before-refresh.json data/properties.json
+          cp /tmp/refresh-status-before-refresh.json data/refresh-status.json
+          cp /tmp/county-sources-before-refresh.json data/county-sources.json
       - name: Refresh Florida lands-available tax deed properties
         run: python scripts/refresh_florida_tax_deeds.py
       - name: Preserve King County rows after source-feed collapse
