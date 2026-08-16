@@ -10,6 +10,7 @@ on:
       - "scripts/add_south_dakota_tax_lien.py"
       - "scripts/refresh_coconino_tax_liens.py"
       - "scripts/add_florida_miami_dade_tax_lien_market.py"
+      - "scripts/add_florida_palm_beach_tax_lien_market.py"
       - "scripts/add_max_return_rates.py"
       - ".github/workflows/add-more-tax-liens.yml"
 
@@ -48,6 +49,8 @@ jobs:
         run: python scripts/refresh_coconino_tax_liens.py
       - name: Add Florida Miami-Dade County tax lien market
         run: python scripts/add_florida_miami_dade_tax_lien_market.py
+      - name: Add Florida Palm Beach County tax lien market
+        run: python scripts/add_florida_palm_beach_tax_lien_market.py
       - name: Add max return rate comparison
         run: python scripts/add_max_return_rates.py
       - name: Publish guide and tax-lien feed updates safely
