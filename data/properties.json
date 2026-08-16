@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T13:48:53.894717+00:00",
+  "updated_at": "2026-08-16T14:31:39.765256+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "TAD lookup failed: HTTPError",
+      "enrichment_note": "No exact Tarrant Appraisal District match",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
