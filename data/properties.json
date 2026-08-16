@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T07:19:23.727031+00:00",
+  "updated_at": "2026-08-16T08:18:12.559773+00:00",
   "prototype": true,
   "properties": [
     {
@@ -1309,18 +1309,12 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax receivables",
+      "enrichment_note": "legal description, tax lookup ReadTimeout",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=0239000175",
       "appraisal_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=0239000175",
       "appraisal_source": "King County Assessor / Open Data",
       "legal_description": "ANGLE LAKE SHORE ACRES # 2 UNREC & SH LDS ADJ",
       "account_number": "023900017502",
-      "tax_status": "T",
-      "bill_year": "2026",
-      "tax_due_estimate": 4474.46,
-      "delinquent_years": [
-        "2026"
-      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -1331,9 +1325,16 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 4474.46,
+      "delinquent_years": [
+        "2026"
+      ],
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
+      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "latitude": 47.42704406,
       "longitude": -122.28015766,
       "coordinate_source": "King County address point",
@@ -9847,22 +9848,12 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax receivables",
+      "enrichment_note": "legal description, tax lookup ReadTimeout",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6075502410",
       "appraisal_url": "https://data.kingcounty.gov/Property-Assessments/Real-Property-Tax-Receivables/dkna-i698",
       "appraisal_source": "King County Real Property Tax Receivables",
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
       "account_number": "607550241006",
-      "tax_status": "T",
-      "bill_year": "2026",
-      "tax_due_estimate": 27278.22,
-      "delinquent_years": [
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-      ],
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -9873,9 +9864,20 @@
           "title/surviving liens not reviewed"
         ]
       },
+      "tax_status": "T",
+      "bill_year": "2026",
+      "tax_due_estimate": 27278.22,
+      "delinquent_years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
+      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "city": "SEATTLE",
       "zip": "98101",
       "latitude": 47.61711448,
