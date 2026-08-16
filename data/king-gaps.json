@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-16T15:20:38.143469+00:00",
+  "source_updated_at": "2026-08-16T15:24:50.905157+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2406,7 +2406,7 @@
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "tax_status": "T",
       "tax_due_estimate": 997.55,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "6649350050",
