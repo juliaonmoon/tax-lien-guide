@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from pathlib import Path
 
+from add_florida_manatee_tax_lien_market import main as add_manatee
+
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 MARKER = "Florida — Volusia County"
@@ -12,20 +14,23 @@ def main():
     text = INDEX.read_text(encoding="utf-8")
     if MARKER in text:
         print("Florida Volusia County row already present")
-        return
+    else:
+        start = text.find("const rows=[")
+        if start < 0:
+            raise SystemExit("Could not find rows array")
+        end = text.find("\n];", start)
+        if end < 0:
+            raise SystemExit("Could not find end of rows array")
 
-    start = text.find("const rows=[")
-    if start < 0:
-        raise SystemExit("Could not find rows array")
-    end = text.find("\n];", start)
-    if end < 0:
-        raise SystemExit("Could not find end of rows array")
+        before = text[:end]
+        after = text[end:]
+        insertion = "\n" + ROW if before.rstrip().endswith(',') else ",\n" + ROW
+        INDEX.write_text(before + insertion + after, encoding="utf-8")
+        print("Added Florida Volusia County tax-lien market")
 
-    before = text[:end]
-    after = text[end:]
-    insertion = "\n" + ROW if before.rstrip().endswith(',') else ",\n" + ROW
-    INDEX.write_text(before + insertion + after, encoding="utf-8")
-    print("Added Florida Volusia County tax-lien market")
+    # Keep Manatee County in every recurring refresh without adding a second
+    # competing data-write workflow.
+    add_manatee()
 
 
 if __name__ == "__main__":
