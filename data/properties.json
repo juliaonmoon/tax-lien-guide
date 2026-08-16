@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T14:35:03.879601+00:00",
+  "updated_at": "2026-08-16T15:23:07.861852+00:00",
   "prototype": true,
   "properties": [
     {
@@ -1911,7 +1911,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1543,
+      "public_safety_12mo_offenses": 1551,
       "public_safety_area": "BITTERLAKE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -3266,7 +3266,7 @@
       "improvement_value": 613200.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3819,
+      "public_safety_12mo_offenses": 3822,
       "public_safety_area": "SLU/CASCADE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -4687,7 +4687,7 @@
         "median rent \u2248 18.6% of median income"
       ],
       "condo_parent_parcel": "2646400000",
-      "public_safety_12mo_offenses": 1513,
+      "public_safety_12mo_offenses": 1515,
       "public_safety_area": "FREMONT",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -5052,7 +5052,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 18.6% of median income"
       ],
-      "public_safety_12mo_offenses": 2981,
+      "public_safety_12mo_offenses": 2982,
       "public_safety_area": "BALLARD SOUTH",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -5142,7 +5142,7 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 16.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1227,
+      "public_safety_12mo_offenses": 1233,
       "public_safety_area": "MAGNOLIA",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -5321,7 +5321,7 @@
       "improvement_value": 758100.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 2578,
+      "public_safety_12mo_offenses": 2584,
       "public_safety_area": "BELLTOWN",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -6034,7 +6034,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 899,
+      "public_safety_12mo_offenses": 904,
       "public_safety_area": "RAINIER BEACH",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -6304,7 +6304,7 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 3140,
+      "public_safety_12mo_offenses": 3146,
       "public_safety_area": "K3",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -7114,7 +7114,7 @@
       "improvement_value": 685800.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3819,
+      "public_safety_12mo_offenses": 3822,
       "public_safety_area": "SLU/CASCADE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -7296,7 +7296,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1475,
+      "public_safety_12mo_offenses": 1477,
       "public_safety_area": "GREENWOOD",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -7382,7 +7382,7 @@
         "2.0% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
       ],
-      "public_safety_12mo_offenses": 1475,
+      "public_safety_12mo_offenses": 1477,
       "public_safety_area": "GREENWOOD",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -7933,7 +7933,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 817,
+      "public_safety_12mo_offenses": 819,
       "public_safety_area": "BRIGHTON/DUNLAP",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -8290,7 +8290,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 297,
+      "public_safety_12mo_offenses": 298,
       "public_safety_area": "SOUTH BEACON HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -9911,7 +9911,7 @@
       "improvement_value": 508600.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3819,
+      "public_safety_12mo_offenses": 3822,
       "public_safety_area": "SLU/CASCADE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -9999,7 +9999,7 @@
       "improvement_value": 988100.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3159,
+      "public_safety_12mo_offenses": 3170,
       "public_safety_area": "FIRST HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -10383,12 +10383,22 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "title_review_status": "not_reviewed",
       "data_completeness": "foreclosure list + King County open-data enrichment",
-      "enrichment_note": "legal description, tax receivables",
+      "enrichment_note": "legal description, tax lookup ReadTimeout",
       "property_viewer_url": "https://gismaps.kingcounty.gov/parcelviewer2/?pin=6390000370",
       "appraisal_url": "https://data.kingcounty.gov/Property-Assessments/Real-Property-Tax-Receivables/dkna-i698",
       "appraisal_source": "King County Real Property Tax Receivables",
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "account_number": "639000037007",
+      "research_priority": {
+        "score": 45,
+        "label": "Medium research priority",
+        "reasons": [
+          "appraisal-value comparison not yet available",
+          "King County says 2026 opening bids will be posted in mid-to-late August",
+          "currently listed by official source",
+          "title/surviving liens not reviewed"
+        ]
+      },
       "tax_status": "T",
       "bill_year": "2026",
       "tax_due_estimate": 997.55,
@@ -10400,19 +10410,10 @@
         "2025",
         "2026"
       ],
-      "research_priority": {
-        "score": 45,
-        "label": "Medium research priority",
-        "reasons": [
-          "appraisal-value comparison not yet available",
-          "King County says 2026 opening bids will be posted in mid-to-late August",
-          "currently listed by official source",
-          "title/surviving liens not reviewed"
-        ]
-      },
       "tax_due_basis": "King County Real Property Tax Receivables; billed minus paid; source amount fields use 2 implied decimal places",
       "tax_due_currency": "USD",
       "tax_due_normalized": true,
+      "tax_data_status": "Last verified value preserved after transient King County lookup failure",
       "city": "BELLEVUE",
       "zip": "98004",
       "latitude": 47.60806214,
@@ -10543,7 +10544,7 @@
       "improvement_value": 100.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 1227,
+      "public_safety_12mo_offenses": 1233,
       "public_safety_area": "MAGNOLIA",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -10631,7 +10632,7 @@
       "improvement_value": 266800.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 4471,
+      "public_safety_12mo_offenses": 4475,
       "public_safety_area": "QUEEN ANNE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -11260,7 +11261,7 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1759,
+      "public_safety_12mo_offenses": 1763,
       "public_safety_area": "CENTRAL AREA/SQUIRE PARK",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -11442,7 +11443,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 297,
+      "public_safety_12mo_offenses": 298,
       "public_safety_area": "SOUTH BEACON HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -12429,7 +12430,7 @@
         "4.7% housing vacancy proxy",
         "median rent \u2248 14.3% of median income"
       ],
-      "public_safety_12mo_offenses": 1273,
+      "public_safety_12mo_offenses": 1274,
       "public_safety_area": "BALLARD NORTH",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -12519,7 +12520,7 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1759,
+      "public_safety_12mo_offenses": 1763,
       "public_safety_area": "CENTRAL AREA/SQUIRE PARK",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -12876,7 +12877,7 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 3140,
+      "public_safety_12mo_offenses": 3146,
       "public_safety_area": "K3",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -13054,7 +13055,7 @@
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
       ],
-      "public_safety_12mo_offenses": 2998,
+      "public_safety_12mo_offenses": 3000,
       "public_safety_area": "UNIVERSITY",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -13140,7 +13141,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1543,
+      "public_safety_12mo_offenses": 1551,
       "public_safety_area": "BITTERLAKE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -13583,7 +13584,7 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1759,
+      "public_safety_12mo_offenses": 1763,
       "public_safety_area": "CENTRAL AREA/SQUIRE PARK",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -13674,7 +13675,7 @@
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1574,
+      "public_safety_12mo_offenses": 1575,
       "public_safety_area": "C1",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
