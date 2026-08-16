@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T12:35:16.628423+00:00",
+  "updated_at": "2026-08-16T13:23:34.741998+00:00",
   "prototype": true,
   "properties": [
     {
@@ -22,7 +22,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -54,7 +54,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -86,7 +86,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -118,7 +118,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -150,7 +150,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -182,7 +182,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -214,7 +214,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -246,7 +246,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -278,7 +278,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -310,7 +310,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -342,7 +342,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -374,7 +374,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -406,7 +406,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -470,7 +470,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -502,7 +502,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -534,7 +534,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -566,7 +566,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -598,7 +598,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -620,28 +620,23 @@
       "sale_status": "For Sale",
       "opening_bid": null,
       "opening_bid_note": "Not published on Tarrant County's monthly sale listing",
-      "assessed_value": 219510.0,
-      "market_value": 219510.0,
-      "address": "5212 CAROL AVE, FORT WORTH, TX",
-      "owner": "RODRIGUEZ BARAJAS RAFAEL and RODRIGUEZ GRACIE MARIE",
-      "property_type": "A - Residential SingleFamily Georeference : 40820 - 2 - 4R Subdivision : SUNRISE ADDITION Neighborhood Code : 1H040N TADMap : 2078-380 Mapsco : TAR-079T Instrument : Notice Sent Date : 4/15/2026 Notice Value : $219,510 Documents 2026 Documents 2025 Documents Show Documents Forms Residential Appraisal Manual Links Online PIN Request Request Mailing Address Changes TAD Interactive Map Google Maps Tarrant County Tax Office Tarrant County Deed Search Truth in Taxation Quick Links Home My Dashboard Create Account Resources Forms Interactive Maps Calendar Taxpayer Liaison Property Tax Assistance News Data Downloads Rates Reports Public Information Act Request Property Tax Transparency in Texas About Board of Directors Tarrant Appraisal Review Board Careers Procurement Quick Links Take A Survey Contact Us Contact Tarrant Appraisal District 2500 Handley-Ederville Road Fort Worth, Texas 76118-6909 (817) 284-0024 Business Hours Monday - Friday 8:00am - 5:00pm \u00a9 2026 Tarrant Appraisal District",
+      "assessed_value": null,
+      "market_value": null,
+      "address": null,
+      "owner": null,
+      "property_type": null,
       "official_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "source_document": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings/september-1--2026.html",
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "Enriched from Tarrant Appraisal District",
-      "appraisal_url": "https://www.tad.org/search-results?query=40465160&searchType=AccountNumber",
-      "appraisal_source": "Tarrant Appraisal District",
-      "city": "FORT WORTH",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
-        "score": 35,
-        "label": "Low research priority",
+        "score": 45,
+        "label": "Medium research priority",
         "reasons": [
-          "official appraisal/tax-roll value captured; minimum bid not yet available",
+          "appraisal-value comparison not yet available",
           "Not published on Tarrant County's monthly sale listing",
-          "recognizable residential property type",
-          "special-use parcel needs extra review",
           "currently listed by official source",
           "title/surviving liens not reviewed"
         ]
@@ -729,7 +724,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "public_safety_12mo_offenses": 149,
+      "public_safety_12mo_offenses": 151,
       "public_safety_area": "F6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -818,7 +813,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
       ],
-      "public_safety_12mo_offenses": 509,
+      "public_safety_12mo_offenses": 512,
       "public_safety_area": "SAMMAMISH",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -907,7 +902,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "public_safety_12mo_offenses": 595,
+      "public_safety_12mo_offenses": 597,
       "public_safety_area": "K8",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -997,7 +992,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "public_safety_12mo_offenses": 595,
+      "public_safety_12mo_offenses": 597,
       "public_safety_area": "K8",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -1367,7 +1362,7 @@
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
       ],
-      "public_safety_12mo_offenses": 1588,
+      "public_safety_12mo_offenses": 1589,
       "public_safety_area": "SEATAC",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -1547,7 +1542,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "public_safety_12mo_offenses": 500,
+      "public_safety_12mo_offenses": 502,
       "public_safety_area": "F5",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -1637,7 +1632,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "public_safety_12mo_offenses": 228,
+      "public_safety_12mo_offenses": 229,
       "public_safety_area": "C6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -2095,7 +2090,7 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "public_safety_12mo_offenses": 3551,
+      "public_safety_12mo_offenses": 3561,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -2366,7 +2361,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3551,
+      "public_safety_12mo_offenses": 3561,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -2459,7 +2454,7 @@
         "6.4% housing vacancy proxy",
         "median rent \u2248 22.5% of median income"
       ],
-      "public_safety_12mo_offenses": 595,
+      "public_safety_12mo_offenses": 597,
       "public_safety_area": "K8",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -2730,7 +2725,7 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "public_safety_12mo_offenses": 283,
+      "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -3442,7 +3437,7 @@
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "public_safety_12mo_offenses": 283,
+      "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -3614,7 +3609,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3551,
+      "public_safety_12mo_offenses": 3561,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -3699,7 +3694,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3551,
+      "public_safety_12mo_offenses": 3561,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -3784,7 +3779,7 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3551,
+      "public_safety_12mo_offenses": 3561,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -5852,7 +5847,7 @@
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
       ],
-      "public_safety_12mo_offenses": 726,
+      "public_safety_12mo_offenses": 728,
       "public_safety_area": "MAPLE VALLEY",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -6935,7 +6930,7 @@
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
       ],
-      "public_safety_12mo_offenses": 509,
+      "public_safety_12mo_offenses": 512,
       "public_safety_area": "SAMMAMISH",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -7027,7 +7022,7 @@
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
       ],
-      "public_safety_12mo_offenses": 509,
+      "public_safety_12mo_offenses": 512,
       "public_safety_area": "SAMMAMISH",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -8201,7 +8196,7 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 2412,
+      "public_safety_12mo_offenses": 2429,
       "public_safety_area": "SHORELINE",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -8470,7 +8465,7 @@
         "2.0% housing vacancy proxy",
         "median rent \u2248 13.3% of median income"
       ],
-      "public_safety_12mo_offenses": 84,
+      "public_safety_12mo_offenses": 86,
       "public_safety_area": "C7",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -8556,7 +8551,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "public_safety_12mo_offenses": 149,
+      "public_safety_12mo_offenses": 151,
       "public_safety_area": "F6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -9372,7 +9367,7 @@
         "2.7% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "public_safety_12mo_offenses": 283,
+      "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -9554,7 +9549,7 @@
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
       ],
-      "public_safety_12mo_offenses": 1588,
+      "public_safety_12mo_offenses": 1589,
       "public_safety_area": "SEATAC",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -9819,7 +9814,7 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "public_safety_12mo_offenses": 283,
+      "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -10725,7 +10720,7 @@
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
       ],
-      "public_safety_12mo_offenses": 726,
+      "public_safety_12mo_offenses": 728,
       "public_safety_area": "MAPLE VALLEY",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -11888,7 +11883,7 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 2412,
+      "public_safety_12mo_offenses": 2429,
       "public_safety_area": "SHORELINE",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -12160,7 +12155,7 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
       ],
-      "public_safety_12mo_offenses": 1588,
+      "public_safety_12mo_offenses": 1589,
       "public_safety_area": "SEATAC",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
@@ -12968,7 +12963,7 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "public_safety_12mo_offenses": 228,
+      "public_safety_12mo_offenses": 229,
       "public_safety_area": "C6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-16",
