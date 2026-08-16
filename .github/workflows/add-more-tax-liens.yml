@@ -9,6 +9,7 @@ on:
       - "scripts/add_kentucky_tax_lien.py"
       - "scripts/add_south_dakota_tax_lien.py"
       - "scripts/refresh_coconino_tax_liens.py"
+      - "scripts/add_florida_miami_dade_tax_lien_market.py"
       - "scripts/add_max_return_rates.py"
       - ".github/workflows/add-more-tax-liens.yml"
 
@@ -45,17 +46,45 @@ jobs:
         run: python scripts/add_south_dakota_tax_lien.py
       - name: Refresh Coconino Arizona OTC tax liens
         run: python scripts/refresh_coconino_tax_liens.py
+      - name: Add Florida Miami-Dade County tax lien market
+        run: python scripts/add_florida_miami_dade_tax_lien_market.py
       - name: Add max return rate comparison
         run: python scripts/add_max_return_rates.py
-      - name: Commit guide and tax-lien feed updates
+      - name: Publish guide and tax-lien feed updates safely
         run: |
-          if [ -z "$(git status --porcelain -- index.html data/)" ]; then
+          if git diff --quiet -- index.html data/; then
             echo "No tax-lien changes."
             exit 0
           fi
+
+          rm -rf /tmp/lien-expansion-output
+          mkdir -p /tmp/lien-expansion-output
+          cp index.html /tmp/lien-expansion-output/index.html
+          cp -a data /tmp/lien-expansion-output/data
+
           git config user.name "tax-deed-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html data/
-          git commit -m "feat: refresh verified tax lien markets"
-          git pull --rebase origin main
-          git push origin main
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf data
+            cp -a /tmp/lien-expansion-output/data data
+            cp /tmp/lien-expansion-output/index.html index.html
+
+            if git diff --quiet -- index.html data/; then
+              echo "Latest main already contains the generated output."
+              exit 0
+            fi
+
+            git add index.html data/
+            git commit -m "feat: refresh verified tax lien markets"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Publish raced with a newer main commit; retrying from latest main (attempt ${attempt}/3)."
+          done
+
+          echo "Unable to publish refreshed output after 3 safe retries."
+          exit 1
