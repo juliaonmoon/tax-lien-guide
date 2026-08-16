@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T00:23:59.854576+00:00",
+  "updated_at": "2026-08-16T01:33:53.076630+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -13248,7 +13248,7 @@
       "opening_bid_note": "King County says 2026 opening bids will be posted in mid-to-late August",
       "assessed_value": 1424000.0,
       "market_value": 1424000.0,
-      "address": "10608 NE 9TH PL, BELLEVUE, WA, 98004",
+      "address": "10678 NE 9TH PL, BELLEVUE, WA, 98004",
       "owner": "Not aggregated for WA investment screening",
       "property_type": "Condominium(Residential)                          ",
       "official_url": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
@@ -13285,8 +13285,8 @@
       "tax_due_normalized": true,
       "city": "BELLEVUE",
       "zip": "98004",
-      "latitude": 47.61883778,
-      "longitude": -122.19870165,
+      "latitude": 47.61898879,
+      "longitude": -122.19788912,
       "address_status": "Condo unit mapped to official condo-complex situs address",
       "area_source": "King County GIS",
       "area_source_url": "https://www5.kingcounty.gov/SDC?Layer=address_point",
