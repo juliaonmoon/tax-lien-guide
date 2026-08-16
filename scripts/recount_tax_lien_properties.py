@@ -7,9 +7,9 @@ actual multi-state, multi-county dataset instead of only rows that repeat the
 profile metadata inline.
 
 Also update refresh-status with explicit deed, lien, and combined coverage.
-The existing top-level refresh-status counters historically described only
-``properties.json``; keeping separate counters avoids silently presenting that
-small deed/foreclosure slice as the coverage of the whole website.
+The top-level refresh-status counters are public summary fields, so keep them
+aligned with the combined website dataset while retaining the explicit
+breakdown in ``coverage_counts``.
 """
 from __future__ import annotations
 
@@ -64,6 +64,10 @@ def main() -> None:
         deed_states, deed_counties = jurisdiction_sets(deed_rows)
 
         status = json.loads(STATUS.read_text(encoding="utf-8"))
+        combined_states = deed_states | lien_states
+        combined_counties = deed_counties | lien_counties
+        combined_records = len(deed_rows) + len(props)
+
         status["coverage_counts"] = {
             "tax_deed_foreclosure": {
                 "records": len(deed_rows),
@@ -76,11 +80,19 @@ def main() -> None:
                 "counties": len(lien_counties),
             },
             "combined": {
-                "records": len(deed_rows) + len(props),
-                "states": len(deed_states | lien_states),
-                "counties": len(deed_counties | lien_counties),
+                "records": combined_records,
+                "states": len(combined_states),
+                "counties": len(combined_counties),
             },
         }
+
+        # Public summary fields should describe the whole website, not only
+        # properties.json. Keep the deed/foreclosure-only numbers available
+        # above in coverage_counts for callers that need that slice.
+        status["states_tracked"] = len(combined_states)
+        status["counties_tracked"] = len(combined_counties)
+        status["property_count"] = combined_records
+
         STATUS.write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
 
     print(json.dumps(doc["counts"], indent=2))
