@@ -1,0 +1,64 @@
+name: Add Greenlee County Arizona tax lien market
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/add_arizona_greenlee_tax_lien_market.py"
+      - ".github/workflows/add-greenlee-tax-lien.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tax-lien-guide-data-writes
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Add Greenlee County tax lien market
+        run: python scripts/add_arizona_greenlee_tax_lien_market.py
+      - name: Refresh max return rates
+        run: python scripts/add_max_return_rates.py
+      - name: Ensure county and market filters
+        run: python scripts/add_tax_lien_county_filter.py
+      - name: Publish safely
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "No guide changes."
+            exit 0
+          fi
+
+          cp index.html /tmp/index-greenlee.html
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/index-greenlee.html index.html
+            if git diff --quiet -- index.html; then
+              echo "Latest main already contains Greenlee output."
+              exit 0
+            fi
+            git add index.html
+            git commit -m "feat: publish Greenlee County tax lien market"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Publish raced with newer main; retrying (${attempt}/3)."
+          done
+
+          exit 1
