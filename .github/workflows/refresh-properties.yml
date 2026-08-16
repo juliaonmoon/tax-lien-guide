@@ -121,6 +121,10 @@ jobs:
         run: python scripts/add_florida_polk_tax_lien_market.py
       - name: Add Florida Volusia County tax lien market
         run: python scripts/add_florida_volusia_tax_lien_market.py
+      - name: Add Florida Manatee County tax lien market
+        run: python scripts/add_florida_manatee_tax_lien_market.py
+      - name: Add Florida Pasco County tax lien market
+        run: python scripts/add_florida_pasco_tax_lien_market.py
       - name: Add New Jersey municipal tax lien market
         run: python scripts/add_new_jersey_tax_lien_market.py
       - name: Add Illinois Stark County tax lien market
