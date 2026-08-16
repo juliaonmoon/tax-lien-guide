@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-16T03:27:34.152229+00:00",
+  "source_updated_at": "2026-08-16T04:23:05.132881+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1185,7 +1185,7 @@
       "legal_description": "FRYES ADD TO COLUMBIA S 1/2",
       "tax_status": "T",
       "tax_due_estimate": 31114.67,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "2660500010",
