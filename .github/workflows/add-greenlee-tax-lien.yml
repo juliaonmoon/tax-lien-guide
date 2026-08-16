@@ -2,10 +2,6 @@ name: Add Greenlee County Arizona tax lien market
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/add_arizona_greenlee_tax_lien_market.py"
-      - ".github/workflows/add-greenlee-tax-lien.yml"
 
 permissions:
   contents: write
