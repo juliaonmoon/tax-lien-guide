@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-17T05:18:13.148451+00:00",
+  "source_updated_at": "2026-08-17T06:43:32.024569+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1747,7 +1747,7 @@
       "legal_description": "JACOBSONS G I ADD LOT \"F\" OF SEATTLE SP# 3028362 REC# 20201223900016 SD SP BEING POR OF BLK 1 OF SD ADD",
       "tax_status": "T",
       "tax_due_estimate": 3309.89,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "3655500130",
