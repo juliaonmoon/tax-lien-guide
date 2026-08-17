@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-17T07:14:18.997355+00:00",
+  "source_updated_at": "2026-08-17T09:18:46.833213+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2561,7 +2561,7 @@
       "legal_description": "RENTON HIGHLANDS #2 CORRECT PLAT LOT 3 OF RENTON SHORT PLAT #LUA-04-006 REC #20050323900008 SD SP BEING LOT 4 BLK 46 OF SD PLAT",
       "tax_status": "T",
       "tax_due_estimate": 35149.13,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "7228500740",
