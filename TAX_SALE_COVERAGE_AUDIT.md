@@ -61,6 +61,8 @@ snapshot predates. The tax-deed baseline (237 records) matched exactly.
 
 ## 3. Bug found and fixed: cross-collector data loss
 
+Full incident write-up: [`BUGS.md`](BUGS.md) (BUG-001).
+
 `refresh_tax_lien_properties.py` rebuilt `data/tax-lien-properties.json` from
 scratch on every run — `properties = []`, then only ever repopulated it with
 Allen/Tippecanoe/Wabash/Coconino (now +Grant) rows. It had no knowledge of
@@ -75,6 +77,14 @@ until the next day's 13:17 UTC Cochise run put them back. This is exactly the
 kind of failure the reliability requirements were written to prevent — except
 it wasn't a network failure, it was two independently-scheduled collectors
 sharing one output file without either one knowing about the other.
+
+**This is not a hypothetical.** It fired for real on `main` while this fix was
+in progress: at 2026-08-17 ~07:09 UTC, the scheduled `refresh-tax-lien-properties.yml`
+workflow ran the still-unfixed script and dropped `main`'s live dataset from
+12,433 records to 755 (confirmed via `git show origin/main:data/tax-lien-properties.json`
+at the time). It stayed broken for about two minutes until this fix's PR
+(#4) merged and its own CI run regenerated the file correctly back to 12,518
+records. See `BUGS.md` BUG-001 for the full timeline.
 
 **Fix:** `refresh_tax_lien_properties.py` now reads the existing output file
 before writing, computes which `profile_id`s it owns (Allen/Tippecanoe/Wabash/
