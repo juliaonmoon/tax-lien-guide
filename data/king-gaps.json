@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-17T21:34:27.321810+00:00",
+  "source_updated_at": "2026-08-17T22:26:48.638037+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1807,7 +1807,7 @@
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
       "tax_due_estimate": 591.17,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3751606689",
