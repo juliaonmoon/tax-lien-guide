@@ -161,6 +161,10 @@ jobs:
         run: python scripts/add_florida_st_lucie_tax_lien_market.py
       - name: Add Florida Citrus County tax lien market
         run: python scripts/add_florida_citrus_tax_lien_market.py
+      - name: Add Florida Clay County tax lien market
+        run: python scripts/add_florida_clay_tax_lien_market.py
+      - name: Add Florida Lake County tax lien market
+        run: python scripts/add_florida_lake_tax_lien_market.py
       - name: Add New Jersey municipal tax lien market
         run: python scripts/add_new_jersey_tax_lien_market.py
       - name: Add Illinois Stark County tax lien market
