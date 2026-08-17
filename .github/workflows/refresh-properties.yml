@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: tax-lien-guide-data-writes
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   refresh:
@@ -33,9 +33,22 @@ jobs:
       - name: Install parser dependencies
         run: pip install requests beautifulsoup4 pdfplumber
       - name: Save previous verified property data
-        run: cp data/properties.json /tmp/properties-before-refresh.json
+        run: |
+          cp data/properties.json /tmp/properties-before-refresh.json
+          cp data/refresh-status.json /tmp/refresh-status-before-refresh.json
+          cp data/county-sources.json /tmp/county-sources-before-refresh.json
       - name: Refresh official property feeds
-        run: python scripts/refresh_properties.py
+        id: core_property_refresh
+        continue-on-error: true
+        timeout-minutes: 16
+        run: python scripts/run_refresh_properties_bounded.py
+      - name: Preserve previous verified core data after stalled or failed refresh
+        if: steps.core_property_refresh.outcome == 'failure'
+        run: |
+          echo "Core property refresh failed or timed out; restoring previous verified core files so downstream WA repair and lien expansion can continue safely."
+          cp /tmp/properties-before-refresh.json data/properties.json
+          cp /tmp/refresh-status-before-refresh.json data/refresh-status.json
+          cp /tmp/county-sources-before-refresh.json data/county-sources.json
       - name: Refresh Florida lands-available tax deed properties
         run: python scripts/refresh_florida_tax_deeds.py
       - name: Preserve King County rows after source-feed collapse
@@ -63,6 +76,7 @@ jobs:
       - name: Enrich scoped King County public safety metrics
         id: king_public_safety
         continue-on-error: true
+        timeout-minutes: 15
         run: python scripts/enrich_king_public_safety.py
       - name: Preserve verified King public-safety data if source is unavailable
         if: steps.king_public_safety.outcome == 'failure'
@@ -107,8 +121,30 @@ jobs:
         run: python scripts/add_florida_broward_tax_lien_market.py
       - name: Add Florida Hillsborough County tax lien market
         run: python scripts/add_florida_hillsborough_tax_lien_market.py
+      - name: Add Florida Miami-Dade County tax lien market
+        run: python scripts/add_florida_miami_dade_tax_lien_market.py
       - name: Add Florida Palm Beach County tax lien market
         run: python scripts/add_florida_palm_beach_tax_lien_market.py
+      - name: Add Florida Duval County tax lien market
+        run: python scripts/add_florida_duval_tax_lien_market.py
+      - name: Add Florida Lee County tax lien market
+        run: python scripts/add_florida_lee_tax_lien_market.py
+      - name: Add Florida Escambia County tax lien market
+        run: python scripts/add_florida_escambia_tax_lien_market.py
+      - name: Add Florida Polk County tax lien market
+        run: python scripts/add_florida_polk_tax_lien_market.py
+      - name: Add Florida Volusia County tax lien market
+        run: python scripts/add_florida_volusia_tax_lien_market.py
+      - name: Add Florida Manatee County tax lien market
+        run: python scripts/add_florida_manatee_tax_lien_market.py
+      - name: Add Florida Pasco County tax lien market
+        run: python scripts/add_florida_pasco_tax_lien_market.py
+      - name: Add Florida Seminole County tax lien market
+        run: python scripts/add_florida_seminole_tax_lien_market.py
+      - name: Add Florida Alachua County tax lien market
+        run: python scripts/add_florida_alachua_tax_lien_market.py
+      - name: Add Florida Leon County tax lien market
+        run: python scripts/add_florida_leon_tax_lien_market.py
       - name: Add New Jersey municipal tax lien market
         run: python scripts/add_new_jersey_tax_lien_market.py
       - name: Add Illinois Stark County tax lien market
@@ -133,6 +169,8 @@ jobs:
         run: python scripts/add_arizona_navajo_tax_lien_market.py
       - name: Add Arizona Santa Cruz County tax lien market
         run: python scripts/add_arizona_santa_cruz_tax_lien_market.py
+      - name: Add Arizona Greenlee County tax lien market
+        run: python scripts/add_arizona_greenlee_tax_lien_market.py
       - name: Add max return rate comparison
         run: python scripts/add_max_return_rates.py
       - name: Ensure tax lien county and market filter

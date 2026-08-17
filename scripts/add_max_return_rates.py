@@ -44,9 +44,11 @@ def rate_for(state: str) -> str:
             return value
     return "Varies — verify current jurisdiction rules"
 
-# Operate only inside individual row object literals. The row format is kept
-# deliberately simple by the guide's state-addition scripts.
-row_re = re.compile(r"\{state:'(?P<state>[^']+)'(?P<body>.*?)(?=\},\n|\}\n\];)", re.S)
+# Operate only inside individual row object literals. Appender scripts in this
+# repo use both `},\n{` and `}\n,\n{` separators, so accept whitespace before
+# the row comma. The prior stricter lookahead silently skipped dynamically
+# appended rows such as Coconino County.
+row_re = re.compile(r"\{state:'(?P<state>[^']+)'(?P<body>.*?)(?=\}\s*,|\}\s*\n\];)", re.S)
 
 def patch(match: re.Match) -> str:
     state = match.group('state')

@@ -27,7 +27,8 @@ SUMMARY_ROW = r'''{state:'Arizona — Cochise County',product:'Tax lien / Certif
 def download_rows() -> list[dict]:
     r = requests.get(CSV_URL, headers={"User-Agent": UA, "Accept": "text/csv,text/plain,*/*"}, timeout=60)
     r.raise_for_status()
-    reader = csv.DictReader(io.StringIO(r.text.lstrip("\ufeff")))
+    text = r.text.lstrip("\ufeff")
+    reader = csv.DictReader(io.StringIO(text))
     out = []
     seen = set()
     for raw in reader:
@@ -83,8 +84,20 @@ def download_rows() -> list[dict]:
             },
         })
     if not out:
-        raise RuntimeError("Cochise official TaxLienList returned no parseable rows")
+        content_type = r.headers.get("content-type", "unknown")
+        preview = " ".join(text[:160].split())
+        raise RuntimeError(
+            f"Cochise official TaxLienList returned no parseable rows "
+            f"(HTTP {r.status_code}, content-type {content_type}, preview={preview!r})"
+        )
     return out
+
+
+def existing_rows() -> list[dict]:
+    if not DETAILS.exists():
+        return []
+    doc = json.loads(DETAILS.read_text(encoding="utf-8"))
+    return [p for p in doc.get("properties", []) if p.get("profile_id") == PROFILE_ID]
 
 
 def update_details(rows: list[dict]) -> None:
@@ -142,7 +155,20 @@ def update_summary() -> None:
 
 
 def main() -> None:
-    rows = download_rows()
+    try:
+        rows = download_rows()
+    except (requests.RequestException, RuntimeError) as exc:
+        prior = existing_rows()
+        if not prior:
+            raise
+        update_summary()
+        print(
+            f"Cochise County: live official feed unavailable/unparseable; preserved "
+            f"{len(prior)} previously verified records instead of deleting or fabricating data. "
+            f"Reason: {exc}"
+        )
+        return
+
     update_details(rows)
     update_summary()
     print(f"Cochise County: loaded {len(rows)} live official tax-lien records; owner names intentionally omitted")

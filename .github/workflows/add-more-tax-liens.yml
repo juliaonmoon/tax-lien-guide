@@ -2,17 +2,6 @@ name: Add more tax lien states
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/add_more_tax_lien_states.py"
-      - "scripts/add_mississippi_tax_lien.py"
-      - "scripts/add_kentucky_tax_lien.py"
-      - "scripts/add_south_dakota_tax_lien.py"
-      - "scripts/refresh_coconino_tax_liens.py"
-      - "scripts/add_florida_miami_dade_tax_lien_market.py"
-      - "scripts/add_florida_palm_beach_tax_lien_market.py"
-      - "scripts/add_max_return_rates.py"
-      - ".github/workflows/add-more-tax-liens.yml"
 
 permissions:
   contents: write
@@ -47,10 +36,20 @@ jobs:
         run: python scripts/add_south_dakota_tax_lien.py
       - name: Refresh Coconino Arizona OTC tax liens
         run: python scripts/refresh_coconino_tax_liens.py
+      - name: Add Florida Broward County tax lien market
+        run: python scripts/add_florida_broward_tax_lien_market.py
+      - name: Add Florida Hillsborough County tax lien market
+        run: python scripts/add_florida_hillsborough_tax_lien_market.py
       - name: Add Florida Miami-Dade County tax lien market
         run: python scripts/add_florida_miami_dade_tax_lien_market.py
       - name: Add Florida Palm Beach County tax lien market
         run: python scripts/add_florida_palm_beach_tax_lien_market.py
+      - name: Add Florida Duval County tax lien market
+        run: python scripts/add_florida_duval_tax_lien_market.py
+      - name: Add Florida Lee County tax lien market
+        run: python scripts/add_florida_lee_tax_lien_market.py
+      - name: Add Florida Escambia County tax lien market
+        run: python scripts/add_florida_escambia_tax_lien_market.py
       - name: Add max return rate comparison
         run: python scripts/add_max_return_rates.py
       - name: Publish guide and tax-lien feed updates safely

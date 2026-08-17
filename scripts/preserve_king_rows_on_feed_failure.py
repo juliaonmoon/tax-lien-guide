@@ -4,6 +4,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from restore_king_enrichment_from_history import main as restore_verified_enrichment
+
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT = ROOT / "data" / "properties.json"
 PREVIOUS = Path("/tmp/properties-before-refresh.json")
@@ -15,7 +17,16 @@ def is_king(p: dict) -> bool:
 
 
 def main() -> None:
-    if not CURRENT.exists() or not PREVIOUS.exists():
+    if not CURRENT.exists():
+        return
+
+    # The previous-run snapshot is the first line of defense against a whole
+    # King County source-feed collapse. If that snapshot is itself degraded,
+    # the strict historical recovery below can still fill only missing
+    # enrichment fields from a recent verified committed state.
+    if not PREVIOUS.exists():
+        print("King County feed resilience: no /tmp previous snapshot; checking verified repository history.")
+        restore_verified_enrichment()
         return
 
     cur_doc = json.loads(CURRENT.read_text(encoding="utf-8"))
@@ -30,7 +41,8 @@ def main() -> None:
     # Treat a collapse below 80% of the prior parcel count as source failure and
     # preserve the entire previous verified King County slice for this run.
     if not prev_king:
-        print("King County feed resilience: no previous verified King rows available.")
+        print("King County feed resilience: no previous King rows in /tmp snapshot; checking verified repository history.")
+        restore_verified_enrichment()
         return
 
     threshold = max(1, int(len(prev_king) * 0.80))
@@ -39,6 +51,7 @@ def main() -> None:
             f"King County feed resilience: current feed has {len(cur_king)} rows "
             f"vs {len(prev_king)} previous; no whole-slice restore needed."
         )
+        restore_verified_enrichment()
         return
 
     non_king = [p for p in cur_props if not is_king(p)]
@@ -60,6 +73,8 @@ def main() -> None:
                 h["status"] = "degraded-preserved"
                 h["note"] = (str(h.get("note") or "") + " " + msg).strip()
         STATUS.write_text(json.dumps(st, indent=2), encoding="utf-8")
+
+    restore_verified_enrichment()
 
 
 if __name__ == "__main__":
