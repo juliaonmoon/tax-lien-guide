@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T00:31:21.957937+00:00",
+  "updated_at": "2026-08-17T01:37:08.385642+00:00",
   "prototype": true,
   "counties": [
     {
@@ -25,22 +25,6 @@
       "source_url": "https://data.kingcounty.gov/Property-Assessments/Foreclosure-parcels/nx4x-daw6",
       "auction_url": "https://king.wa.realforeclose.com/",
       "coverage": "property_feed_prototype"
-    },
-    {
-      "state": "FL",
-      "state_name": "Florida",
-      "county": "Putnam",
-      "source_url": "https://apps.putnam-fl.com/coc/taxdeeds/public/public_LAFT.php",
-      "auction_url": "https://apps.putnam-fl.com/coc/taxdeeds/public/public_LAFT.php",
-      "coverage": "lands_available_property_feed"
-    },
-    {
-      "state": "FL",
-      "state_name": "Florida",
-      "county": "Escambia",
-      "source_url": "https://public.escambiaclerk.com/taxsale/landsavailable.asp",
-      "auction_url": "https://www.escambia.realtaxdeed.com/",
-      "coverage": "lands_available_property_feed"
     },
     {
       "state": "AZ",
