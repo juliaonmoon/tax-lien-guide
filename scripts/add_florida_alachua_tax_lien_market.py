@@ -31,7 +31,8 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # Keep Brevard and Sarasota on the same recurring Florida publication path
-    # without adding competing workflows. Both appenders are idempotent.
+    # Keep Brevard, Sarasota, and Flagler on the same recurring Florida publication path
+    # without adding competing workflows. These appenders are idempotent.
     runpy.run_path(str(ROOT / "scripts" / "add_florida_brevard_tax_lien_market.py"), run_name="__main__")
     runpy.run_path(str(ROOT / "scripts" / "add_florida_sarasota_tax_lien_market.py"), run_name="__main__")
+    runpy.run_path(str(ROOT / "scripts" / "add_florida_flagler_tax_lien_market.py"), run_name="__main__")
