@@ -40,8 +40,8 @@ jobs:
       - name: Refresh official property feeds
         id: core_property_refresh
         continue-on-error: true
-        timeout-minutes: 15
-        run: python scripts/refresh_properties.py
+        timeout-minutes: 16
+        run: python scripts/run_refresh_properties_bounded.py
       - name: Preserve previous verified core data after stalled or failed refresh
         if: steps.core_property_refresh.outcome == 'failure'
         run: |
