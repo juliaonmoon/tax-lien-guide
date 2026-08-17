@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import subprocess
-import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,10 +30,6 @@ def add_pinellas():
 
 def main():
     add_pinellas()
-    subprocess.run(
-        [sys.executable, str(ROOT / "scripts" / "add_florida_marion_tax_lien_market.py")],
-        check=True,
-    )
 
 
 if __name__ == "__main__":
