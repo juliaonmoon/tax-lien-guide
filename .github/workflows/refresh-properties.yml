@@ -117,6 +117,8 @@ jobs:
         run: python scripts/add_dc_tax_lien_market.py
       - name: Add Florida Pinellas County tax lien market
         run: python scripts/add_florida_tax_lien_market.py
+      - name: Add Florida Marion County tax lien market
+        run: python scripts/add_florida_marion_tax_lien_market.py
       - name: Add Florida Broward County tax lien market
         run: python scripts/add_florida_broward_tax_lien_market.py
       - name: Add Florida Hillsborough County tax lien market
@@ -143,10 +145,20 @@ jobs:
         run: python scripts/add_florida_seminole_tax_lien_market.py
       - name: Add Florida Alachua County tax lien market
         run: python scripts/add_florida_alachua_tax_lien_market.py
+      - name: Add Florida Brevard County tax lien market
+        run: python scripts/add_florida_brevard_tax_lien_market.py
+      - name: Add Florida Sarasota County tax lien market
+        run: python scripts/add_florida_sarasota_tax_lien_market.py
+      - name: Add Florida Flagler County tax lien market
+        run: python scripts/add_florida_flagler_tax_lien_market.py
       - name: Add Florida Leon County tax lien market
         run: python scripts/add_florida_leon_tax_lien_market.py
+      - name: Add Florida Monroe County tax lien market
+        run: python scripts/add_florida_monroe_tax_lien_market.py
       - name: Add Florida Collier County tax lien market
         run: python scripts/add_florida_collier_tax_lien_market.py
+      - name: Add Florida St. Lucie County tax lien market
+        run: python scripts/add_florida_st_lucie_tax_lien_market.py
       - name: Add New Jersey municipal tax lien market
         run: python scripts/add_new_jersey_tax_lien_market.py
       - name: Add Illinois Stark County tax lien market
