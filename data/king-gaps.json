@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-17T13:57:46.925683+00:00",
+  "source_updated_at": "2026-08-17T14:27:51.033671+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -424,8 +424,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "S 1/2 OF N 1/2 OF SE 1/4 OF NE 1/4 OF NE 1/4 LESS CO RD & S 1/2 OF NE 1/4 OF SW 1/4 OF NE 1/4 OF NE 1/4 CLASSIFIED AS OPEN SPACE LAND UNDER CHAPTER 84.34 RCW",
       "tax_status": "T",
-      "tax_due_estimate": 36384.76,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 28438.81,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "0239000175",
@@ -636,7 +636,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BROOKSIDE TO LAKE FOREST UNREC VAL OF UNDEEDED STS & ALLEYS ARE INCL IN ADJ LOTS LESS S 100 FT",
       "tax_status": "T",
-      "tax_due_estimate": 15248.46,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -655,7 +655,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BURIEN LAKE VIEW TRS DIV #5 LESS CO RD",
       "tax_status": "T",
-      "tax_due_estimate": 22115.67,
+      "tax_due_estimate": 2204.91,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -695,8 +695,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "BURR ADD LESS ST HWY",
       "tax_status": "T",
-      "tax_due_estimate": 10182.39,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 1001.31,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "1420000290",
@@ -1590,7 +1590,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILLMANS MEADOW GARDENS DIV #2 PORTION OF LOTS 22 & 23 LY NLY OF FOLLOWING LINE - BEGIN NE CORNER OF LOT 22 TH S 06-49-30 E 235 FT TO POINT OF BEGINNING TH N 71-03-51 W 50 FT TH N 69-28-57 W 49.26 FT TAP S 06-49-30 E 244.73 FT FROM N W CORNER OF LOT 23, AND TERMINUS OF SAID LINE - PARCEL A OF CITY OF SEATTLE LOT BOUNDARY ADJUSTMENT NO 9602638 RECORDING NO 9711191075",
       "tax_status": "T",
-      "tax_due_estimate": 10579.18,
+      "tax_due_estimate": 1071.95,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2271,7 +2271,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MIRRORMONT DIV # 2 LESS C & M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 4638.99,
+      "tax_due_estimate": 612.89,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2598,8 +2598,8 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "tax_status": "T",
-      "tax_due_estimate": 10185.25,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 3225.95,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "7243500007",
