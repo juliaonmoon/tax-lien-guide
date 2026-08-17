@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import runpy
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
@@ -30,6 +29,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # Keep Monroe County on the same serialized recurring Florida publication path.
-    # The Monroe appender is idempotent and uses only official county-published rules.
-    runpy.run_path(str(ROOT / "scripts" / "add_florida_monroe_tax_lien_market.py"), run_name="__main__")
