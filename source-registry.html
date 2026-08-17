@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nationwide Source Registry — Tax Sale Data Coverage</title>
+<meta name="description" content="Nationwide source registry of state and county tax lien / tax deed authorities: collector status, property-query evidence, and blockers.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#172033">
+<link rel="icon" href="app-icon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--ink:#172033;--muted:#647087;--line:#dfe5ee;--brand:#1f5eff;--good:#137a48;--warn:#9a5a00;--bad:#a12a2a;--purple:#6d45b8;--shadow:0 10px 28px rgba(31,50,80,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:13px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.wrap{max-width:1700px;margin:auto;padding:22px 18px 46px}.tabs{display:flex;gap:8px;margin:0 0 14px;overflow:auto;padding-bottom:2px}.tab{display:inline-flex;white-space:nowrap;text-decoration:none;color:#47536b;background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:10px;font-weight:700}.tab.active{background:#172033;color:#fff;border-color:#172033}.hero{background:linear-gradient(135deg,#172033,#315fae 58%,#6d45b8);color:#fff;border-radius:20px;padding:24px 26px;box-shadow:var(--shadow)}h1{font-size:clamp(26px,4vw,36px);line-height:1.08;margin:0 0 8px}.hero p{max-width:980px;color:#dfe8ff;margin:0}.stamp{display:inline-flex;margin-top:13px;padding:6px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-size:12px}.summary{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:14px 0}.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px;box-shadow:var(--shadow)}.stat b{font-size:20px;display:block}.stat span{color:var(--muted);font-size:11px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:22px 0 10px}.section-title h2{font-size:18px;margin:0}.section-title p{margin:0;color:var(--muted)}.breakdowns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}.breakdown-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}.breakdown-card h3{margin:0 0 10px;font-size:14px}.bar-row{display:grid;grid-template-columns:120px 1fr 60px;gap:8px;align-items:center;margin:6px 0;font-size:12px}.bar-track{height:9px;background:#e8edf5;border-radius:999px;overflow:hidden}.bar-fill{height:100%;background:linear-gradient(90deg,#1f5eff,#6d45b8);border-radius:999px}.toolbar{display:grid;grid-template-columns:2fr repeat(4,minmax(145px,1fr));gap:9px;margin:12px 0}.control{width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 10px;font:inherit;color:var(--ink)}.table-wrap{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:auto;box-shadow:var(--shadow);max-height:70vh}table{border-collapse:separate;border-spacing:0;min-width:1450px;width:100%}th{position:sticky;top:0;z-index:2;background:#f9fbff;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:#556177;border-bottom:1px solid var(--line);padding:10px}td{padding:9px 10px;border-bottom:1px solid #edf1f6;vertical-align:top}tbody tr:hover{background:#f8faff}.badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:800;white-space:nowrap}.status-live{background:#e4f6ec;color:#0d7346}.status-snapshot,.status-zero_active{background:#fff0e3;color:#9a4f00}.status-blocked{background:#fde8e8;color:#a12a2a}.status-identified,.status-not_started,.status-not_applicable{background:#edf0f5;color:#536077}.query-yes{color:#137a48;font-weight:800}.query-no{color:#a12a2a;font-weight:800}.muted{color:var(--muted)}.empty{padding:28px;text-align:center;color:var(--muted)}.footer{margin-top:15px;color:var(--muted);font-size:11px}.error{background:#fde8e8;color:#8d2020;border:1px solid #f3bcbc;border-radius:12px;padding:14px;margin:14px 0}a.src{color:var(--brand);text-decoration:none}a.src:hover{text-decoration:underline}@media(max-width:1100px){.summary{grid-template-columns:repeat(3,1fr)}.breakdowns{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.toolbar #q{grid-column:1/-1}}@media(max-width:620px){.summary{grid-template-columns:1fr 1fr}.hero{padding:20px}.toolbar{grid-template-columns:1fr}.toolbar #q{grid-column:auto}}
+</style>
+</head>
+<body><div class="wrap">
+<nav class="tabs"><a class="tab" href="index.html">Tax Lien Summary</a><a class="tab" href="tax-lien-properties.html">Tax Lien Details</a><a class="tab" href="tax-deed.html">Tax Deeds</a><a class="tab" href="property-screener.html">Tax Deed Property Screener</a><a class="tab" href="calendar.html">Calendar</a><a class="tab" href="project-management.html">Project Management</a><a class="tab active" href="source-registry.html">Source Registry</a></nav>
+<section class="hero"><h1>Nationwide Source Registry</h1><p>Every state, county, parish, or statewide authority this project has evidence about, with an honest collector status. A jurisdiction is only marked as a real property query when executable collector code produces individually verified records — a market summary or link is never counted as coverage.</p><div class="stamp" id="updated">Loading source registry…</div></section>
+<div id="error"></div>
+<section class="summary">
+  <div class="stat"><b id="total">—</b><span>jurisdictions inventoried</span></div>
+  <div class="stat"><b id="live">—</b><span>live collectors</span></div>
+  <div class="stat"><b id="snapshot">—</b><span>snapshot-backed collectors</span></div>
+  <div class="stat"><b id="zeroActive">—</b><span>zero-active sources</span></div>
+  <div class="stat"><b id="blocked">—</b><span>blocked sources</span></div>
+  <div class="stat"><b id="notStarted">—</b><span>not-started jurisdictions</span></div>
+</section>
+<section class="summary" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+  <div class="stat"><b id="records">—</b><span>total verified property records</span></div>
+  <div class="stat"><b id="queryYes">—</b><span>jurisdictions with property_query = true</span></div>
+  <div class="stat"><b id="lastRefresh">—</b><span>last successful refresh across all sources</span></div>
+</section>
+
+<div class="section-title"><div><h2>Coverage breakdowns</h2><p>Verified record counts by state and by sale system.</p></div></div>
+<section class="breakdowns">
+  <div class="breakdown-card"><h3>Records by state</h3><div id="byState"></div></div>
+  <div class="breakdown-card"><h3>Records by sale system</h3><div id="bySystem"></div></div>
+</section>
+
+<div class="section-title"><div><h2>Jurisdiction registry</h2><p id="shown">Loading…</p></div></div>
+<div class="toolbar">
+  <input id="q" class="control" placeholder="Search state, county, blocker…">
+  <select id="status" class="control"><option value="">All statuses</option></select>
+  <select id="query" class="control"><option value="">Property query: any</option><option value="true">Yes</option><option value="false">No</option></select>
+  <select id="system" class="control"><option value="">All sale systems</option></select>
+  <select id="state" class="control"><option value="">All states</option></select>
+</div>
+<div class="table-wrap"><table><thead><tr><th>State</th><th>County / locality</th><th>Sale system</th><th>Status</th><th>Property query?</th><th>Records</th><th>Last success</th><th>Collector</th><th>Official source</th><th>Blocker / notes</th></tr></thead><tbody id="body"></tbody></table></div>
+<div class="footer">Source data: <code>data/source-registry.json</code>, validated by <code>scripts/validate_source_registry.py</code>. See <code>TAX_SALE_COVERAGE_AUDIT.md</code> for the full narrative audit.</div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const statusLabels={live:'Live',snapshot:'Snapshot',zero_active:'Zero active',identified:'Identified (info only)',blocked:'Blocked',not_started:'Not started',not_applicable:'Not applicable'};
+let rows=[];
+function bars(container,entries,total){
+  const sorted=entries.sort((a,b)=>b[1]-a[1]).slice(0,12);
+  const max=sorted.length?sorted[0][1]:1;
+  container.innerHTML=sorted.map(([label,value])=>`<div class="bar-row"><span>${esc(label)}</span><div class="bar-track"><div class="bar-fill" style="width:${max?Math.round(value/max*100):0}%"></div></div><span>${value.toLocaleString()}</span></div>`).join('')||'<p class="muted">No records yet.</p>';
+}
+function renderSummary(doc){
+  const s=doc.summary||{};
+  const byStatus=s.by_collector_status||{};
+  $('total').textContent=rows.length;
+  $('live').textContent=byStatus.live||0;
+  $('snapshot').textContent=byStatus.snapshot||0;
+  $('zeroActive').textContent=byStatus.zero_active||0;
+  $('blocked').textContent=byStatus.blocked||0;
+  $('notStarted').textContent=byStatus.not_started||0;
+  $('records').textContent=(s.total_verified_property_records||0).toLocaleString();
+  $('queryYes').textContent=rows.filter(r=>r.property_query).length;
+  const successDates=rows.map(r=>r.last_success_at).filter(Boolean).sort();
+  $('lastRefresh').textContent=successDates.length?new Date(successDates[successDates.length-1]).toLocaleString():'—';
+
+  const byState={};
+  rows.forEach(r=>{if(r.current_record_count)byState[r.state]=(byState[r.state]||0)+r.current_record_count;});
+  bars($('byState'),Object.entries(byState),rows.length);
+
+  const bySystem={};
+  rows.forEach(r=>{if(r.current_record_count&&r.sale_system)bySystem[r.sale_system]=(bySystem[r.sale_system]||0)+r.current_record_count;});
+  bars($('bySystem'),Object.entries(bySystem),rows.length);
+}
+function renderTable(){
+  const needle=$('q').value.trim().toLowerCase(),status=$('status').value,queryVal=$('query').value,system=$('system').value,state=$('state').value;
+  const filtered=rows.filter(r=>(!status||r.collector_status===status)&&(!queryVal||String(r.property_query)===queryVal)&&(!system||r.sale_system===system)&&(!state||r.state===state)&&(!needle||Object.values(r).join(' ').toLowerCase().includes(needle)))
+    .sort((a,b)=>(b.property_query-a.property_query)||String(a.state).localeCompare(b.state)||String(a.county_or_locality).localeCompare(b.county_or_locality));
+  $('shown').textContent=`Showing ${filtered.length} of ${rows.length} jurisdictions.`;
+  $('body').innerHTML=filtered.length?filtered.map(r=>{
+    const last=r.last_success_at?new Date(r.last_success_at).toLocaleDateString():'—';
+    const src=r.official_information_url?`<a class="src" href="${esc(r.official_information_url)}" target="_blank" rel="noopener">source</a>`:'<span class="muted">—</span>';
+    return `<tr><td><strong>${esc(r.state)}</strong></td><td>${esc(r.county_or_locality)}</td><td>${esc(r.sale_system||'—')}</td><td><span class="badge status-${esc(r.collector_status)}">${esc(statusLabels[r.collector_status]||r.collector_status)}</span></td><td class="query-${r.property_query?'yes':'no'}">${r.property_query?'YES':'NO'}</td><td>${Number(r.current_record_count||0).toLocaleString()}</td><td>${esc(last)}</td><td class="muted">${esc(r.collector_module||'—')}</td><td>${src}</td><td class="muted">${esc(r.blocker||'')}</td></tr>`;
+  }).join(''):`<tr><td colspan="10" class="empty">No jurisdictions match these filters.</td></tr>`;
+}
+function buildFilters(){
+  [...new Set(rows.map(r=>r.collector_status))].sort().forEach(v=>$('status').insertAdjacentHTML('beforeend',`<option value="${esc(v)}">${esc(statusLabels[v]||v)}</option>`));
+  [...new Set(rows.map(r=>r.sale_system).filter(Boolean))].sort().forEach(v=>$('system').insertAdjacentHTML('beforeend',`<option value="${esc(v)}">${esc(v)}</option>`));
+  [...new Set(rows.map(r=>r.state))].sort().forEach(v=>$('state').insertAdjacentHTML('beforeend',`<option value="${esc(v)}">${esc(v)}</option>`));
+}
+fetch('data/source-registry.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}`);return r.json()}).then(doc=>{
+  rows=doc.jurisdictions||[];
+  $('updated').textContent=`Registry updated ${new Date(doc.updated_at).toLocaleString()} · ${rows.length} jurisdictions tracked`;
+  renderSummary(doc);buildFilters();renderTable();
+}).catch(err=>{$('error').innerHTML=`<div class="error"><strong>Source registry could not be loaded.</strong> ${esc(err.message)}</div>`;$('updated').textContent='Source registry unavailable';});
+['q','status','query','system','state'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',renderTable));
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>

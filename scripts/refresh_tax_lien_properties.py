@@ -45,6 +45,13 @@ WABASH_LISTING = (
     "saleDateVal=&saleFormat=&saleStatus=&saleType=F&searchText=&sortBy=AD&"
     "sortOrder=desc&state=IN"
 )
+GRANT_PAGE = "https://www.grantcounty.in.gov"
+GRANT_PDF = "https://www.in.gov/counties/grant/files/Grant-County-2026-Certificate-Sale-Advertisement.pdf"
+GRANT_LISTING = (
+    "https://properties.sriservices.com/properties?county=Grant&saleDate=AF&"
+    "saleDateVal=&saleFormat=&saleStatus=&saleType=F&searchText=&sortBy=AD&"
+    "sortOrder=desc&state=IN"
+)
 
 REQUIRED_FIELDS = [
     "state", "county", "parcel_id", "sale_item_number", "property_address",
@@ -184,6 +191,8 @@ def indiana_ad_rows(
     raw: bytes, *, county: str, sale_date: str, sale_time: str,
     sale_location: str, page_url: str, source_url: str, listing_url: str,
     verified: str, expected_prefix: str, minimum_expected: int,
+    sale_status: str | None = None,
+    important_rules: str | None = None, data_source_label: str | None = None,
 ) -> list[dict]:
     word_matches = []
     with pdfplumber.open(io.BytesIO(raw)) as pdf:
@@ -238,13 +247,14 @@ def indiana_ad_rows(
             "delinquent_tax_amount": None,
             "fees_costs": "Included in minimum bid but not separated per row",
             "assessed_value": None, "market_value": None, "acreage": None,
-            "tax_years_delinquent": None, "sale_status": "Published — subject to removal or change",
+            "tax_years_delinquent": None,
+            "sale_status": sale_status or "Published — subject to removal or change",
             "lien_type": "Indiana tax sale certificate / lien", "sale_type": "tax_lien",
             "maximum_statutory_return": "110% within 6 months; 115% after 6 months and within 1 year (penalty, not APR)",
             "winning_rate_mechanism": "Highest bid; statutory redemption return is not bid down",
             "redemption_period": "Approximately 1 year; confirm certificate-specific deadline",
-            "important_rules": "The legal advertisement warns that addresses may be inaccurate and the list can change before sale. A certificate is a lien, not immediate ownership.",
-            "data_source": f"{county} County official 2026 legal advertisement PDF",
+            "important_rules": important_rules or "The legal advertisement warns that addresses may be inaccurate and the list can change before sale. A certificate is a lien, not immediate ownership.",
+            "data_source": data_source_label or f"{county} County official 2026 legal advertisement PDF",
             "last_verified": verified, "source_mode": "live_official_pdf",
             "county_information_url": page_url,
         }
@@ -306,6 +316,31 @@ def prior_by_source() -> dict[str, list[dict]]:
     for row in rows:
         result.setdefault(row.get("data_source") or "unknown", []).append(row)
     return result
+
+
+def foreign_entries(managed_profile_ids: set[str]) -> tuple[list[dict], dict[str, dict], list[dict]]:
+    """Records already in OUTPUT that belong to a profile this script does not manage.
+
+    This script fully rebuilds the sources it owns on every run, so it must
+    never silently drop records another collector wrote for a profile it
+    does not manage (e.g. refresh_arizona_cochise_tax_liens.py, which shares
+    this same output file). Returns the already-compact property rows and
+    their profile entries untouched, so their profile_id and compacted shape
+    are preserved exactly as the owning collector wrote them, plus a fully
+    reconstructed (profile-merged) copy for accurate summary counts.
+    """
+    if not OUTPUT.exists():
+        return [], {}, []
+    try:
+        doc = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return [], {}, []
+    profiles = doc.get("profiles", {})
+    compact = [p for p in doc.get("properties", []) if p.get("profile_id") not in managed_profile_ids]
+    kept_profile_ids = {p.get("profile_id") for p in compact}
+    kept_profiles = {pid: profiles[pid] for pid in kept_profile_ids if pid in profiles}
+    full = [{**profiles.get(p.get("profile_id"), {}), **p} for p in compact]
+    return compact, kept_profiles, full
 
 
 def compact_rows(rows: list[dict]) -> tuple[list[dict], dict[str, dict]]:
@@ -373,6 +408,24 @@ def main() -> int:
                 expected_prefix="8526", minimum_expected=20,
             ),
         ),
+        (
+            "Grant County official 2026 Commissioners' Certificate Sale advertisement PDF", GRANT_PDF,
+            lambda raw: indiana_ad_rows(
+                raw, county="Grant", sale_date="2026-04-28", sale_time="10:00 ET",
+                sale_location="Grant County Complex, Council Chambers, 1607 S Adams St, Marion, IN 46953",
+                page_url=GRANT_PAGE, source_url=GRANT_PDF,
+                listing_url=GRANT_LISTING, verified=verified,
+                expected_prefix="2725", minimum_expected=50,
+                sale_status="Commissioners' Certificate Sale published for 2026-04-28 — that sale date has passed; this is a verified snapshot of the official notice and per-item availability has not been reconfirmed since.",
+                important_rules=(
+                    "This is a Commissioners' Certificate Sale of certificates the county already holds, distinct from Grant "
+                    "County's regular annual tax sale. The advertised sale date has passed as of this refresh; confirm "
+                    "current availability, redemption, or purchase status for any specific item with the Grant County "
+                    "Auditor before relying on it. A certificate is a lien, not immediate ownership."
+                ),
+                data_source_label="Grant County official 2026 Commissioners' Certificate Sale advertisement PDF",
+            ),
+        ),
     ]
 
     for name, url, parser in sources:
@@ -400,7 +453,6 @@ def main() -> int:
         "note": "Normalized from the repository's verified official Coconino snapshot; the county document host returns HTTP 403 to automation.",
     })
 
-    properties.sort(key=lambda row: (row.get("auction_date") or "9999-99-99", row.get("state") or "", row.get("county") or "", row.get("sale_item_number") or ""))
     seen = set()
     unique = []
     for row in properties:
@@ -409,6 +461,17 @@ def main() -> int:
             continue
         seen.add(key)
         unique.append(row)
+
+    if len(unique) < 100:
+        raise SystemExit("Refusing to publish fewer than 100 individual lien records from this script's own sources")
+
+    managed_profile_ids = {f"{row.get('state')}-{row.get('county')}-2026" for row in unique}
+    foreign_compact, foreign_profiles, foreign_full = foreign_entries(managed_profile_ids)
+    if foreign_full:
+        print(f"Preserved {len(foreign_full)} rows from other collectors (e.g. Cochise County) not managed by this script")
+
+    unique.sort(key=lambda row: (row.get("auction_date") or "9999-99-99", row.get("state") or "", row.get("county") or "", row.get("sale_item_number") or ""))
+    all_rows_for_counts = unique + foreign_full
 
     blockers = [
         {
@@ -429,17 +492,19 @@ def main() -> int:
     ]
 
     counts = {
-        "total_records": len(unique),
-        "states": len({row.get("state") for row in unique if row.get("state")}),
-        "counties": len({(row.get("state"), row.get("county")) for row in unique if row.get("state") and row.get("county")}),
-        "with_parcel_id": sum(bool(row.get("parcel_id")) for row in unique),
-        "with_address": sum(bool(row.get("property_address")) for row in unique),
-        "with_auction_date": sum(bool(row.get("auction_date")) for row in unique),
-        "with_minimum_bid": sum(row.get("minimum_bid") is not None for row in unique),
-        "with_assessed_value": sum(row.get("assessed_value") is not None for row in unique),
-        "with_research_priority": sum(row.get("research_priority") is not None for row in unique),
+        "total_records": len(all_rows_for_counts),
+        "states": len({row.get("state") for row in all_rows_for_counts if row.get("state")}),
+        "counties": len({(row.get("state"), row.get("county")) for row in all_rows_for_counts if row.get("state") and row.get("county")}),
+        "with_parcel_id": sum(bool(row.get("parcel_id")) for row in all_rows_for_counts),
+        "with_address": sum(bool(row.get("property_address")) for row in all_rows_for_counts),
+        "with_auction_date": sum(bool(row.get("auction_date")) for row in all_rows_for_counts),
+        "with_minimum_bid": sum(row.get("minimum_bid") is not None for row in all_rows_for_counts),
+        "with_assessed_value": sum(row.get("assessed_value") is not None for row in all_rows_for_counts),
+        "with_research_priority": sum(row.get("research_priority") is not None for row in all_rows_for_counts),
     }
     compact, profiles = compact_rows(unique)
+    compact.extend(foreign_compact)
+    profiles.update(foreign_profiles)
     output = {
         "schema_version": 1, "updated_at": now.isoformat(), "counts": counts,
         "profiles": profiles, "properties": compact,
@@ -450,8 +515,6 @@ def main() -> int:
     # Keep the deploy payload compact; the collector and schema remain readable.
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     print(json.dumps(counts, indent=2))
-    if counts["total_records"] < 100:
-        raise SystemExit("Refusing to publish fewer than 100 individual lien records")
     return 0
 
 

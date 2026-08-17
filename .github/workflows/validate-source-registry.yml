@@ -1,0 +1,32 @@
+name: Validate nationwide source registry
+
+on:
+  pull_request:
+    paths:
+      - "data/source-registry.json"
+      - "scripts/validate_source_registry.py"
+      - ".github/workflows/validate-source-registry.yml"
+      - "scripts/**"
+      - "tests/**"
+  push:
+    branches: [main]
+    paths:
+      - "data/source-registry.json"
+      - "scripts/validate_source_registry.py"
+      - ".github/workflows/validate-source-registry.yml"
+      - "scripts/**"
+      - "tests/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate registry schema and evidence for property_query=true rows
+        run: python scripts/validate_source_registry.py

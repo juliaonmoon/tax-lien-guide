@@ -1,10 +1,13 @@
 import json
+import sys
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "tax-lien-properties.json"
+sys.path.insert(0, str(ROOT / "scripts"))
+import refresh_tax_lien_properties as refresher  # noqa: E402
 
 
 class TaxLienDatasetTests(unittest.TestCase):
@@ -55,6 +58,56 @@ class TaxLienDatasetTests(unittest.TestCase):
     def test_pwa_caches_lien_dataset(self):
         worker = (ROOT / "sw.js").read_text(encoding="utf-8")
         self.assertIn("./data/tax-lien-properties.json", worker)
+
+    def test_grant_county_present_with_expected_profile(self):
+        grant = [row for row in self.rows if row.get("county") == "Grant" and row.get("state") == "IN"]
+        self.assertGreaterEqual(len(grant), 50)
+        for row in grant:
+            self.assertEqual(row["profile_id"], "IN-Grant-2026")
+            self.assertTrue(row.get("parcel_id"))
+            self.assertIn("2026-04-28", row.get("sale_status") or "")
+
+
+class ForeignCollectorPreservationTests(unittest.TestCase):
+    """Regression test: this script must never delete records another
+    collector (e.g. refresh_arizona_cochise_tax_liens.py) wrote to the same
+    output file for a profile_id it does not manage."""
+
+    def setUp(self):
+        self.original_output = refresher.OUTPUT
+        fixture = {
+            "schema_version": 1,
+            "properties": [
+                {"record_id": "AZ-Cochise-OTC-12345", "profile_id": "AZ-Cochise-OTC", "parcel_id": "12345"},
+                {"record_id": "AZ-Cochise-OTC-67890", "profile_id": "AZ-Cochise-OTC", "parcel_id": "67890"},
+            ],
+            "profiles": {
+                "AZ-Cochise-OTC": {"state": "AZ", "county": "Cochise", "sale_type": "tax_lien"},
+            },
+        }
+        fixture_path = ROOT / "tests" / "_fixture_tax_lien_properties.json"
+        fixture_path.write_text(json.dumps(fixture), encoding="utf-8")
+        refresher.OUTPUT = fixture_path
+        self.fixture_path = fixture_path
+
+    def tearDown(self):
+        refresher.OUTPUT = self.original_output
+        self.fixture_path.unlink(missing_ok=True)
+
+    def test_unmanaged_profile_is_preserved(self):
+        managed = {"IN-Allen-2026", "IN-Tippecanoe-2026", "IN-Wabash-2026", "IN-Grant-2026", "AZ-Coconino-2026"}
+        compact, profiles, full = refresher.foreign_entries(managed)
+        self.assertEqual(len(compact), 2)
+        self.assertEqual(len(full), 2)
+        self.assertIn("AZ-Cochise-OTC", profiles)
+        self.assertTrue(all(row["profile_id"] == "AZ-Cochise-OTC" for row in compact))
+
+    def test_managed_profile_is_excluded(self):
+        managed = {"AZ-Cochise-OTC"}
+        compact, profiles, full = refresher.foreign_entries(managed)
+        self.assertEqual(compact, [])
+        self.assertEqual(profiles, {})
+        self.assertEqual(full, [])
 
 
 if __name__ == "__main__":
