@@ -1,0 +1,76 @@
+name: Ensure Colorado tax lien markets
+
+on:
+  workflow_run:
+    workflows: ["Refresh tax deed property data"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tax-lien-data-writer
+  cancel-in-progress: false
+
+jobs:
+  ensure-colorado:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ensure verified Colorado tax lien markets
+        run: |
+          python scripts/add_colorado_arapahoe_tax_lien_market.py
+          python scripts/add_colorado_el_paso_tax_lien_market.py
+          python scripts/add_colorado_larimer_tax_lien_market.py
+          python scripts/add_colorado_adams_tax_lien_market.py
+          if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
+            python scripts/add_colorado_weld_tax_lien_market.py
+          fi
+          python scripts/add_max_return_rates.py
+          python scripts/add_tax_lien_county_filter.py
+          python scripts/recount_tax_lien_properties.py
+      - name: Publish Colorado market updates safely
+        run: |
+          if git diff --quiet -- data/ index.html; then
+            echo "No Colorado market changes."
+            exit 0
+          fi
+
+          rm -rf /tmp/colorado-output
+          mkdir -p /tmp/colorado-output
+          cp -a data /tmp/colorado-output/data
+          cp index.html /tmp/colorado-output/index.html
+
+          git config user.name "tax-lien-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf data
+            cp -a /tmp/colorado-output/data data
+            cp /tmp/colorado-output/index.html index.html
+
+            if git diff --quiet -- data/ index.html; then
+              echo "Latest main already contains the Colorado output."
+              exit 0
+            fi
+
+            git add data/ index.html
+            git commit -m "chore: ensure verified Colorado tax lien markets"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Publish raced with a newer main commit; retrying (${attempt}/3)."
+          done
+
+          echo "Unable to publish Colorado market output after 3 safe retries."
+          exit 1
