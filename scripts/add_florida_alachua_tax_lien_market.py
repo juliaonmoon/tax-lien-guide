@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import runpy
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
@@ -31,8 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # Keep Brevard, Sarasota, and Flagler on the same recurring Florida publication path
-    # without adding competing workflows. These appenders are idempotent.
-    runpy.run_path(str(ROOT / "scripts" / "add_florida_brevard_tax_lien_market.py"), run_name="__main__")
-    runpy.run_path(str(ROOT / "scripts" / "add_florida_sarasota_tax_lien_market.py"), run_name="__main__")
-    runpy.run_path(str(ROOT / "scripts" / "add_florida_flagler_tax_lien_market.py"), run_name="__main__")
