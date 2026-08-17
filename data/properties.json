@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T23:32:31.483921+00:00",
+  "updated_at": "2026-08-17T00:31:21.957937+00:00",
   "prototype": true,
   "properties": [
     {
@@ -438,7 +438,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "sale listing + appraisal enrichment",
-      "enrichment_note": "No exact Tarrant Appraisal District match",
+      "enrichment_note": "TAD lookup failed: HTTPError",
       "research_priority": {
         "score": 45,
         "label": "Medium research priority",
@@ -729,11 +729,11 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "public_safety_12mo_offenses": 151,
+      "public_safety_12mo_offenses": 150,
       "public_safety_area": "F6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -818,11 +818,11 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
       ],
-      "public_safety_12mo_offenses": 512,
+      "public_safety_12mo_offenses": 511,
       "public_safety_area": "SAMMAMISH",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -910,8 +910,8 @@
       "public_safety_12mo_offenses": 597,
       "public_safety_area": "K8",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -1000,8 +1000,8 @@
       "public_safety_12mo_offenses": 597,
       "public_safety_area": "K8",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -1281,11 +1281,11 @@
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "public_safety_12mo_offenses": 173,
+      "public_safety_12mo_offenses": 172,
       "public_safety_area": "V1",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -1367,11 +1367,11 @@
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
       ],
-      "public_safety_12mo_offenses": 1589,
+      "public_safety_12mo_offenses": 1585,
       "public_safety_area": "SEATAC",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -1547,11 +1547,11 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "public_safety_12mo_offenses": 502,
+      "public_safety_12mo_offenses": 501,
       "public_safety_area": "F5",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -1637,11 +1637,11 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "public_safety_12mo_offenses": 229,
+      "public_safety_12mo_offenses": 227,
       "public_safety_area": "C6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -1911,11 +1911,11 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1551,
+      "public_safety_12mo_offenses": 1545,
       "public_safety_area": "BITTERLAKE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -2005,11 +2005,11 @@
         "23.5% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "public_safety_12mo_offenses": 173,
+      "public_safety_12mo_offenses": 172,
       "public_safety_area": "V1",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -2095,11 +2095,11 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 24.8% of median income"
       ],
-      "public_safety_12mo_offenses": 3561,
+      "public_safety_12mo_offenses": 3549,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -2184,11 +2184,11 @@
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
       ],
-      "public_safety_12mo_offenses": 2563,
+      "public_safety_12mo_offenses": 2555,
       "public_safety_area": "ROOSEVELT/RAVENNA",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -2366,11 +2366,11 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3561,
+      "public_safety_12mo_offenses": 3549,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -2462,8 +2462,8 @@
       "public_safety_12mo_offenses": 597,
       "public_safety_area": "K8",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -2552,8 +2552,8 @@
       "public_safety_12mo_offenses": 460,
       "public_safety_area": "RAINIER VIEW",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -2733,8 +2733,8 @@
       "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -2816,11 +2816,11 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 15.3% of median income"
       ],
-      "public_safety_12mo_offenses": 255,
+      "public_safety_12mo_offenses": 254,
       "public_safety_area": "C1",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -2906,11 +2906,11 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 445,
+      "public_safety_12mo_offenses": 443,
       "public_safety_area": "CLAREMONT/RAINIER VISTA",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -3173,11 +3173,11 @@
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "public_safety_12mo_offenses": 507,
+      "public_safety_12mo_offenses": 505,
       "public_safety_area": "MID BEACON HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -3266,11 +3266,11 @@
       "improvement_value": 613200.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3822,
+      "public_safety_12mo_offenses": 3808,
       "public_safety_area": "SLU/CASCADE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -3445,8 +3445,8 @@
       "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -3528,11 +3528,11 @@
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "public_safety_12mo_offenses": 447,
+      "public_safety_12mo_offenses": 446,
       "public_safety_area": "MONTLAKE/PORTAGE BAY",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -3614,11 +3614,11 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3561,
+      "public_safety_12mo_offenses": 3549,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -3699,11 +3699,11 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3561,
+      "public_safety_12mo_offenses": 3549,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -3784,11 +3784,11 @@
         "11.5% housing vacancy proxy",
         "median rent \u2248 25.0% of median income"
       ],
-      "public_safety_12mo_offenses": 3561,
+      "public_safety_12mo_offenses": 3549,
       "public_safety_area": "BURIEN",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -4146,8 +4146,8 @@
       "public_safety_12mo_offenses": 8,
       "public_safety_area": "G1",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -4232,8 +4232,8 @@
       "public_safety_12mo_offenses": 70,
       "public_safety_area": "PIGEON POINT",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -4323,8 +4323,8 @@
       "public_safety_12mo_offenses": 70,
       "public_safety_area": "PIGEON POINT",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -4507,8 +4507,8 @@
       "public_safety_12mo_offenses": 111,
       "public_safety_area": "F8",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -4687,11 +4687,11 @@
         "median rent \u2248 18.6% of median income"
       ],
       "condo_parent_parcel": "2646400000",
-      "public_safety_12mo_offenses": 1515,
+      "public_safety_12mo_offenses": 1511,
       "public_safety_area": "FREMONT",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -4780,8 +4780,8 @@
       "public_safety_12mo_offenses": 465,
       "public_safety_area": "COLUMBIA CITY",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -4870,8 +4870,8 @@
       "public_safety_12mo_offenses": 465,
       "public_safety_area": "COLUMBIA CITY",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -5052,11 +5052,11 @@
         "6.5% housing vacancy proxy",
         "median rent \u2248 18.6% of median income"
       ],
-      "public_safety_12mo_offenses": 2982,
+      "public_safety_12mo_offenses": 2970,
       "public_safety_area": "BALLARD SOUTH",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -5142,11 +5142,11 @@
         "6.1% housing vacancy proxy",
         "median rent \u2248 16.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1233,
+      "public_safety_12mo_offenses": 1228,
       "public_safety_area": "MAGNOLIA",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -5321,11 +5321,11 @@
       "improvement_value": 758100.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 2584,
+      "public_safety_12mo_offenses": 2570,
       "public_safety_area": "BELLTOWN",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -5407,11 +5407,11 @@
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
       ],
-      "public_safety_12mo_offenses": 170,
+      "public_safety_12mo_offenses": 167,
       "public_safety_area": "F9",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -5493,11 +5493,11 @@
         "3.6% housing vacancy proxy",
         "median rent \u2248 20.2% of median income"
       ],
-      "public_safety_12mo_offenses": 170,
+      "public_safety_12mo_offenses": 167,
       "public_safety_area": "F9",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -5759,11 +5759,11 @@
         "2.1% housing vacancy proxy",
         "median rent \u2248 15.2% of median income"
       ],
-      "public_safety_12mo_offenses": 158,
+      "public_safety_12mo_offenses": 157,
       "public_safety_area": "F7",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -5852,11 +5852,11 @@
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
       ],
-      "public_safety_12mo_offenses": 728,
+      "public_safety_12mo_offenses": 726,
       "public_safety_area": "MAPLE VALLEY",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -5944,8 +5944,8 @@
       "public_safety_12mo_offenses": 131,
       "public_safety_area": "C2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -6037,8 +6037,8 @@
       "public_safety_12mo_offenses": 904,
       "public_safety_area": "RAINIER BEACH",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -6304,11 +6304,11 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 3146,
+      "public_safety_12mo_offenses": 3133,
       "public_safety_area": "K3",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt",
       "public_safety_precinct": "W",
@@ -6669,8 +6669,8 @@
       "public_safety_12mo_offenses": 460,
       "public_safety_area": "RAINIER VIEW",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -6759,8 +6759,8 @@
       "public_safety_12mo_offenses": 460,
       "public_safety_area": "RAINIER VIEW",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -6935,11 +6935,11 @@
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
       ],
-      "public_safety_12mo_offenses": 512,
+      "public_safety_12mo_offenses": 511,
       "public_safety_area": "SAMMAMISH",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -7027,11 +7027,11 @@
         "1.5% housing vacancy proxy",
         "median rent \u2248 13.7% of median income"
       ],
-      "public_safety_12mo_offenses": 512,
+      "public_safety_12mo_offenses": 511,
       "public_safety_area": "SAMMAMISH",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -7114,11 +7114,11 @@
       "improvement_value": 685800.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3822,
+      "public_safety_12mo_offenses": 3808,
       "public_safety_area": "SLU/CASCADE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -7205,11 +7205,11 @@
         "4.2% housing vacancy proxy",
         "median rent \u2248 18.8% of median income"
       ],
-      "public_safety_12mo_offenses": 158,
+      "public_safety_12mo_offenses": 157,
       "public_safety_area": "F7",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -7296,11 +7296,11 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1477,
+      "public_safety_12mo_offenses": 1475,
       "public_safety_area": "GREENWOOD",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -7382,11 +7382,11 @@
         "2.0% housing vacancy proxy",
         "median rent \u2248 15.9% of median income"
       ],
-      "public_safety_12mo_offenses": 1477,
+      "public_safety_12mo_offenses": 1475,
       "public_safety_area": "GREENWOOD",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -7573,8 +7573,8 @@
       "public_safety_12mo_offenses": 95,
       "public_safety_area": "G7",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -7666,8 +7666,8 @@
       "public_safety_12mo_offenses": 150,
       "public_safety_area": "G6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -7756,8 +7756,8 @@
       "public_safety_12mo_offenses": 95,
       "public_safety_area": "G7",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -7846,8 +7846,8 @@
       "public_safety_12mo_offenses": 95,
       "public_safety_area": "G7",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -7936,8 +7936,8 @@
       "public_safety_12mo_offenses": 819,
       "public_safety_area": "BRIGHTON/DUNLAP",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -8114,8 +8114,8 @@
       "public_safety_12mo_offenses": 460,
       "public_safety_area": "RAINIER VIEW",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -8201,11 +8201,11 @@
         "4.1% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 2429,
+      "public_safety_12mo_offenses": 2425,
       "public_safety_area": "SHORELINE",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -8290,11 +8290,11 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 298,
+      "public_safety_12mo_offenses": 294,
       "public_safety_area": "SOUTH BEACON HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -8473,8 +8473,8 @@
       "public_safety_12mo_offenses": 86,
       "public_safety_area": "C7",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -8556,11 +8556,11 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 19.9% of median income"
       ],
-      "public_safety_12mo_offenses": 151,
+      "public_safety_12mo_offenses": 150,
       "public_safety_area": "F6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -9189,11 +9189,11 @@
         "5.5% housing vacancy proxy",
         "median rent \u2248 18.4% of median income"
       ],
-      "public_safety_12mo_offenses": 507,
+      "public_safety_12mo_offenses": 505,
       "public_safety_area": "MID BEACON HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -9375,8 +9375,8 @@
       "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -9554,11 +9554,11 @@
         "8.2% housing vacancy proxy",
         "median rent \u2248 26.3% of median income"
       ],
-      "public_safety_12mo_offenses": 1589,
+      "public_safety_12mo_offenses": 1585,
       "public_safety_area": "SEATAC",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -9822,8 +9822,8 @@
       "public_safety_12mo_offenses": 284,
       "public_safety_area": "F2",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -9911,11 +9911,11 @@
       "improvement_value": 508600.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3822,
+      "public_safety_12mo_offenses": 3808,
       "public_safety_area": "SLU/CASCADE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -9999,11 +9999,11 @@
       "improvement_value": 988100.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 3170,
+      "public_safety_12mo_offenses": 3166,
       "public_safety_area": "FIRST HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -10543,11 +10543,11 @@
       "improvement_value": 100.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 1233,
+      "public_safety_12mo_offenses": 1228,
       "public_safety_area": "MAGNOLIA",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -10631,11 +10631,11 @@
       "improvement_value": 266800.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "appraisal_year": "2026",
-      "public_safety_12mo_offenses": 4475,
+      "public_safety_12mo_offenses": 4461,
       "public_safety_area": "QUEEN ANNE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -10725,11 +10725,11 @@
         "2.5% housing vacancy proxy",
         "median rent \u2248 18.3% of median income"
       ],
-      "public_safety_12mo_offenses": 728,
+      "public_safety_12mo_offenses": 726,
       "public_safety_area": "MAPLE VALLEY",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -11260,11 +11260,11 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1763,
+      "public_safety_12mo_offenses": 1761,
       "public_safety_area": "CENTRAL AREA/SQUIRE PARK",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -11442,11 +11442,11 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 19.4% of median income"
       ],
-      "public_safety_12mo_offenses": 298,
+      "public_safety_12mo_offenses": 294,
       "public_safety_area": "SOUTH BEACON HILL",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -11888,11 +11888,11 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 2429,
+      "public_safety_12mo_offenses": 2425,
       "public_safety_area": "SHORELINE",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -12064,11 +12064,11 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 15.8% of median income"
       ],
-      "public_safety_12mo_offenses": 1234,
+      "public_safety_12mo_offenses": 1228,
       "public_safety_area": "ALASKA JUNCTION",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -12160,11 +12160,11 @@
         "4.5% housing vacancy proxy",
         "median rent \u2248 25.2% of median income"
       ],
-      "public_safety_12mo_offenses": 1589,
+      "public_safety_12mo_offenses": 1585,
       "public_safety_area": "SEATAC",
       "public_safety_scope": "KCSO finalized offense reports in the named contract city; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf"
     },
     {
@@ -12429,11 +12429,11 @@
         "4.7% housing vacancy proxy",
         "median rent \u2248 14.3% of median income"
       ],
-      "public_safety_12mo_offenses": 1274,
+      "public_safety_12mo_offenses": 1270,
       "public_safety_area": "BALLARD NORTH",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -12519,11 +12519,11 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1763,
+      "public_safety_12mo_offenses": 1761,
       "public_safety_area": "CENTRAL AREA/SQUIRE PARK",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -12698,8 +12698,8 @@
       "public_safety_12mo_offenses": 271,
       "public_safety_area": "HILLMAN CITY",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -12876,11 +12876,11 @@
         "5.1% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 3146,
+      "public_safety_12mo_offenses": 3133,
       "public_safety_area": "K3",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt",
       "public_safety_precinct": "W",
@@ -12968,11 +12968,11 @@
         "2.8% housing vacancy proxy",
         "median rent \u2248 16.6% of median income"
       ],
-      "public_safety_12mo_offenses": 229,
+      "public_safety_12mo_offenses": 227,
       "public_safety_area": "C6",
       "public_safety_scope": "KCSO finalized offense reports in the official patrol district containing the parcel; trailing 365 days; raw report count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.kingcounty.gov/Law-Enforcement-Safety/KCSO-Offense-Reports-2020-to-Present/4kmt-kfqf",
       "public_safety_boundary_source": "https://www.arcgis.com/home/item.html?id=4eb36844125d4e53a6144474a88042ea"
     },
@@ -13054,11 +13054,11 @@
         "11.7% housing vacancy proxy",
         "median rent \u2248 29.8% of median income"
       ],
-      "public_safety_12mo_offenses": 3000,
+      "public_safety_12mo_offenses": 2989,
       "public_safety_area": "UNIVERSITY",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -13140,11 +13140,11 @@
         "6.3% housing vacancy proxy",
         "median rent \u2248 23.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1551,
+      "public_safety_12mo_offenses": 1545,
       "public_safety_area": "BITTERLAKE",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -13583,11 +13583,11 @@
         "6.8% housing vacancy proxy",
         "median rent \u2248 22.4% of median income"
       ],
-      "public_safety_12mo_offenses": 1763,
+      "public_safety_12mo_offenses": 1761,
       "public_safety_area": "CENTRAL AREA/SQUIRE PARK",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official MCPP neighborhood; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Micro-Community-Policing/ru88-fbhk"
     },
@@ -13674,11 +13674,11 @@
         "5.4% housing vacancy proxy",
         "median rent \u2248 20.1% of median income"
       ],
-      "public_safety_12mo_offenses": 1575,
+      "public_safety_12mo_offenses": 1569,
       "public_safety_area": "C1",
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
-      "public_safety_period_start": "2025-08-16",
-      "public_safety_period_end": "2026-08-16",
+      "public_safety_period_start": "2025-08-17",
+      "public_safety_period_end": "2026-08-17",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt",
       "public_safety_precinct": "E",
