@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-17T12:27:23.812323+00:00",
+  "source_updated_at": "2026-08-17T13:26:18.503674+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -3021,7 +3021,7 @@
       "legal_description": "WASHINGTON SQ TOWERS 1 & 2 CONDO PCT UND INT  0.4299",
       "tax_status": "T",
       "tax_due_estimate": 5298.41,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "9332400170",
