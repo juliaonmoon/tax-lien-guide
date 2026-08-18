@@ -1,9 +1,9 @@
 name: Ensure Yuma County tax lien market
 
+# Yuma is now an explicit step in the main recurring refresh. Keep this
+# workflow manual-only for targeted repair/debugging so every successful main
+# refresh does not enqueue a redundant writer behind the shared data lock.
 on:
-  workflow_run:
-    workflows: ["Refresh tax deed property data"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,6 @@ concurrency:
 
 jobs:
   ensure-yuma:
-    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
