@@ -14,6 +14,14 @@ on:
       - "calendar.html"
       - "sw.js"
       - ".github/workflows/refresh-tax-lien-properties.yml"
+  pull_request:
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - "tax-lien-properties.html"
+      - "calendar.html"
+      - "sw.js"
+      - ".github/workflows/refresh-tax-lien-properties.yml"
 
 permissions:
   contents: write
