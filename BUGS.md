@@ -1,5 +1,64 @@
 # Bug Log & Fixes
-### Last updated: August 18, 2026 (BUG-003)
+### Last updated: August 18, 2026 (BUG-004)
+
+---
+
+## BUG-004 — Tarrant County tax-deed collector silently harvested real owner names, contradicting the repo's no-bulk-owner-names privacy convention
+**Severity:** Medium (privacy-policy inconsistency; not a data-integrity or availability bug like BUG-001/002/003 — no incorrect data was ever published, but the code was one working upstream page away from violating a documented convention)
+**Found:** August 18, 2026, flagged as an already-known-but-unreconciled gap in `STATUS.md`'s "Hard-won gotchas" section, then confirmed by reading the code
+**Affected:** `scripts/refresh_properties.py` (`tad_enrich()`, used by `tarrant_properties()`)
+**Status:** Fixed
+
+### What happened
+Every other collector in this repo enforces "owner names are intentionally
+never collected in bulk tax-lien data" (`STATUS.md`) — King County's `owner`
+field is always a fixed placeholder string, and Arizona/Indiana collectors
+never touch an owner field at all. `tad_enrich()`, which enriches Tarrant
+County TX tax-deed rows from the public Tarrant Appraisal District site,
+was the one exception: its results-table parser read the owner-name cell at
+`tail[2]` into `out["owner"]`, which `tarrant_properties()` then merged
+straight into the published row via `row.update(extra)`.
+
+This hadn't actually surfaced in `data/properties.json` yet — every current
+Tarrant row shows `TAD lookup failed: HTTPError` in `enrichment_note`, so
+the owner-scraping code path wasn't executing in practice — but it was live
+and would have started publishing real names the moment TAD's site started
+responding normally again. No test caught it: `test_refresh_properties.py`
+only asserted the King placeholder, not that Tarrant/TAD enrichment stays
+owner-free.
+
+### Fix
+Removed the `out["owner"]=tail[2]` line from `tad_enrich()` entirely — the
+owner cell is simply skipped now, same as if the convention had been
+followed from day one. Market-value extraction (`tail[3]`) is unaffected
+since it doesn't depend on the owner assignment happening first.
+
+### Tests added
+`tests/test_refresh_properties.py`:
+- `test_tarrant_rows_never_carry_a_real_owner_name` — asserts every live
+  Tarrant row in `data/properties.json` has `owner is None`, mirroring the
+  existing King placeholder test.
+- `TadEnrichOwnerNameTests.test_owner_column_is_skipped_even_though_present_in_source_html`
+  — feeds `tad_enrich()` a fixture HTML table row that *does* contain a
+  plausible owner name in the TAD column position, and asserts the
+  returned dict never has an `"owner"` key, while address/city/market
+  value still parse correctly. This is the regression guard: it fails if
+  the owner line is ever reintroduced, even before the live site would
+  reveal it.
+
+### Files changed
+- `scripts/refresh_properties.py` — `tad_enrich()` no longer extracts an
+  owner name.
+- `tests/test_refresh_properties.py` — new regression tests (above).
+
+### Rule for future collectors
+**"Owner names are never collected in bulk" applies to every collector,
+with no ad-hoc exceptions, even when the upstream public source makes the
+name trivially available in the same response as the fields you do want.**
+If a future collector's source happens to expose owner data alongside
+useful fields, skip that specific field explicitly (as `tad_enrich()` now
+does) rather than accepting a "TODO reconcile with convention" callout in
+`STATUS.md`.
 
 ---
 

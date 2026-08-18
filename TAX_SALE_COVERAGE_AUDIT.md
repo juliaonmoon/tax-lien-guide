@@ -301,6 +301,22 @@ reuse potential), not by state alphabetically:
    system uses — the same standard already applied to Indiana's 50 IAC
    26-20-4 rather than reverse-engineering byte positions from samples).
 
+   Checked again 2026-08-18: still blocked, no new evidence gathered this
+   session — the session's environment had no general internet egress
+   (confirmed via direct `curl` test, GitHub-only network policy), so
+   live research against `publicaccess.hillsclerk.com` wasn't possible.
+   Same constraint applied to rechecking whether Hamilton County IN's 2026
+   list has been published. Both remain open for a session with broader
+   network access.
+
+8b. ~~Tarrant County tax-deed collector was scraping real owner names from
+   the Tarrant Appraisal District into the published `owner` field~~ —
+   **fixed 2026-08-18, see BUG-004 in `BUGS.md`.** This was a privacy-
+   convention violation waiting to happen (not yet visible in published
+   data because TAD lookups were failing at the time it was found), not a
+   coverage gap — `tad_enrich()` now skips the owner column entirely, with
+   a regression test guarding it.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,
