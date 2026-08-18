@@ -14,6 +14,7 @@ on:
       - "scripts/refresh_tax_lien_properties.py"
       - "scripts/refresh_iowa_johnson_tax_liens.py"
       - "scripts/refresh_iowa_linn_tax_liens.py"
+      - "scripts/refresh_iowa_linn_tax_liens_xlsx.py"
       - "scripts/enrich_indiana_assessed_values.py"
       - "scripts/recount_tax_lien_properties.py"
       - "tests/test_tax_lien_properties.py"
@@ -64,8 +65,8 @@ jobs:
         run: python scripts/enrich_indiana_assessed_values.py
       - name: Refresh Johnson County Iowa tax liens
         run: python scripts/refresh_iowa_johnson_tax_liens.py
-      - name: Refresh Linn County Iowa tax liens
-        run: python scripts/refresh_iowa_linn_tax_liens.py
+      - name: Refresh Linn County Iowa tax liens from official Excel with PDF fallback
+        run: python scripts/refresh_iowa_linn_tax_liens_xlsx.py
       - name: Recount lien and combined website coverage
         run: python scripts/recount_tax_lien_properties.py
       - name: Validate generated data and pages
