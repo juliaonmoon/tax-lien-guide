@@ -1,5 +1,42 @@
 # Bug Log & Fixes
-### Last updated: August 18, 2026 (BUG-004)
+### Last updated: August 18, 2026 (BUG-005)
+
+---
+
+## BUG-005 — Florida tax-deed collector was actually publishing real owner names for 38 live Putnam/Escambia rows, not just latently capable of it like BUG-004
+**Severity:** High (unlike BUG-004, this one had already fired — real individual names, not just business names, were live in `data/properties.json` on GitHub Pages)
+**Found:** August 18, 2026, immediately after fixing BUG-004, by auditing the rest of `scripts/` for the same `"owner"` pattern
+**Affected:** `scripts/refresh_florida_tax_deeds.py` (`putnam_live()`/`base_row()`/`cadastral_enrich()`), `data/properties.json` (Putnam + Escambia rows)
+**Status:** Fixed
+
+### What happened
+While fixing BUG-004 (Tarrant County), a repo-wide grep for other `"owner"` assignments turned up a second, more severe instance of the exact same convention violation:
+
+1. `putnam_live()`'s regex captures the text immediately following each `T.D. <case-number>` line on Putnam Clerk's own official "Lands Available for Taxes" list. That text is the property owner's name printed on the document itself (confirmed directly in `data/florida-putnam-verified-snapshot.json`, e.g. record `["2018-0008244", "KARY M BEARD JR", ...]`). This value flowed straight through `base_row()`'s `owner` parameter into the published row.
+2. `cadastral_enrich()` separately requested `OWN_NAME` from the Florida DOR statewide cadastral feed and used it to backfill `owner` when not already set (covering Escambia, which has no owner in its own source list).
+
+Unlike BUG-004, this wasn't just live-and-unexercised — checking `data/properties.json` directly showed **all 39 Florida rows (38 Putnam, 1 Escambia) had a real owner name populated**, including real individuals' full names (e.g. "CRYSTAL SCHEERER", "KARY M BEARD JR"), not just business names. This had been true since Putnam/Escambia were added (2026-08-15) and was still live at the time of this fix.
+
+### Fix
+- `base_row()` no longer takes an `owner` parameter; it always emits `"owner": None`.
+- `putnam_live()`'s record tuples still carry the raw owner-name text at index 1 (unchanged, to stay compatible with the existing snapshot fixture format), but the two call sites that build rows from those tuples now explicitly skip that slot before calling `base_row()`.
+- `cadastral_enrich()` no longer requests `OWN_NAME` from the FDOR feed at all (removed from the `outFields` list) and no longer has an owner-backfill branch.
+- Cleared the `owner` field to `null` on all 39 already-published Florida rows in `data/properties.json` (targeted values-only change; every other field on those rows is untouched).
+
+### Tests added
+`tests/test_florida_tax_deeds.py`:
+- `test_florida_rows_never_carry_a_real_owner_name` — asserts every live Putnam/Escambia row has `owner is None`.
+- `OwnerNameNeverCollectedTests.test_base_row_never_emits_an_owner` — `base_row()` never produces an owner key from its own logic.
+- `OwnerNameNeverCollectedTests.test_putnam_record_unpacking_skips_the_owner_slot` — feeds a record shaped exactly like a `putnam_live()`/snapshot tuple, with a real name at index 1, and asserts it never reaches the row (checked both via the `owner` field and via a full-row string search, so a future refactor that puts the name somewhere else in the row is also caught).
+- `OwnerNameNeverCollectedTests.test_cadastral_enrich_does_not_set_owner_name_even_if_the_feed_returns_one` — feeds `cadastral_enrich()` a fake FDOR response that does include `OWN_NAME`, and asserts the row's `owner` stays `None`.
+
+### Files changed
+- `scripts/refresh_florida_tax_deeds.py` — see Fix above.
+- `data/properties.json` — 39 Florida rows' `owner` field set to `null`.
+- `tests/test_florida_tax_deeds.py` — new regression tests (above).
+
+### Rule for future collectors
+Same rule as BUG-004, restated because it was violated twice independently in the same session: **check every field a source response contains against the no-bulk-owner-names convention before wiring it into a row, not just the fields you intentionally asked for.** A source can hand you a name whether or not you requested it (Putnam's list prints it inline; FDOR's `outFields` had to be explicitly asked to stop including it) — the discipline has to be "never let this specific field through," not "don't go looking for it."
 
 ---
 

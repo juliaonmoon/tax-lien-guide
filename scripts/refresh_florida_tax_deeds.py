@@ -91,12 +91,15 @@ def putnam_snapshot() -> tuple[list[list], str]:
     return payload["records"], payload["verified_at"]
 
 
-def base_row(county: str, case: str, owner: str | None, parcel: str,
+def base_row(county: str, case: str, parcel: str,
              legal: str | None, sale_date: str, available_date: str | None,
              opening_bid: float | None, source_url: str) -> dict:
+    # Owner names are intentionally never collected in bulk (privacy
+    # convention, see STATUS.md) even though Putnam's own official list and
+    # the FDOR cadastral feed both make one available -- always None.
     return {
         "state": "FL", "state_name": "Florida", "county": county,
-        "case_number": case, "parcel_id": parcel, "owner": owner,
+        "case_number": case, "parcel_id": parcel, "owner": None,
         "legal_description": legal, "sale_date": sale_date,
         "available_date": available_date, "sale_status": "Lands available",
         "opening_bid": opening_bid,
@@ -122,7 +125,7 @@ def escambia_live() -> list[dict]:
     )
     rows = []
     for m in pattern.finditer(text):
-        row = base_row("Escambia", m.group(1), None, m.group(4),
+        row = base_row("Escambia", m.group(1), m.group(4),
                        re.sub(r"\s+", " ", m.group(7)).strip(), m.group(5), None,
                        money(m.group(6)), ESCAMBIA_URL)
         row["account_number"] = m.group(2)
@@ -135,9 +138,11 @@ def escambia_live() -> list[dict]:
 def cadastral_enrich(rows: list[dict]) -> tuple[int, str]:
     by_parcel = {row["parcel_id"]: row for row in rows}
     matched = 0
+    # OWN_NAME is deliberately not requested -- owner names are never
+    # collected in bulk (privacy convention, see STATUS.md / BUG-004/BUG-005).
     fields = ("PARCEL_ID,ASMNT_YR,DOR_UC,JV,AV_SD,AV_NSD,JV_HMSTD,AV_HMSTD,"
               "LND_VAL,LND_SQFOOT,TOT_LVG_AR,NO_BULDNG,ACT_YR_BLT,PHY_ADDR1,"
-              "PHY_ADDR2,PHY_CITY,PHY_ZIPCD,S_LEGAL,OWN_NAME")
+              "PHY_ADDR2,PHY_CITY,PHY_ZIPCD,S_LEGAL")
     parcels = list(by_parcel)
     errors = []
     for start in range(0, len(parcels), 18):
@@ -179,8 +184,6 @@ def cadastral_enrich(rows: list[dict]) -> tuple[int, str]:
             })
             if not row.get("legal_description") and a.get("S_LEGAL"):
                 row["legal_description"] = str(a["S_LEGAL"]).strip()
-            if not row.get("owner") and a.get("OWN_NAME"):
-                row["owner"] = str(a["OWN_NAME"]).strip()
             if not row.get("address") and row.get("property_type", "").lower().startswith("vacant"):
                 row["address_note"] = "No situs address published — vacant land"
             if not row.get("living_area_sqft") and row.get("property_type", "").lower().startswith("vacant"):
@@ -240,7 +243,9 @@ def main() -> None:
         records, verified = putnam_snapshot()
         putnam_note = f"Official host unavailable ({type(exc).__name__}); preserved {len(records)} parcels from verified {verified} snapshot"
         putnam_ok = False
-    florida = [base_row("Putnam", *record, PUTNAM_URL) for record in records]
+    # records is (case, owner, parcel, legal, sale_date, available_date, opening_bid) --
+    # skip the owner slot (index 1), never passed into base_row.
+    florida = [base_row("Putnam", record[0], *record[2:], PUTNAM_URL) for record in records]
     try:
         escambia = escambia_live()
         escambia_note = f"Live official list parsed: {len(escambia)} lands-available parcels"
@@ -250,7 +255,7 @@ def main() -> None:
         # row during Cloudflare/automation blocks; a later successful live
         # parse replaces it rather than accumulating stale rows.
         row = base_row(
-            "Escambia", "0226-64", None, "211N301302000000",
+            "Escambia", "0226-64", "211N301302000000",
             "BEG AT INTER OF W LI OF PALAFOX H/W AND N LI OF S1/2 OF SW1/4 OF NE1/4 SELY ALG H/W 406 FT WLY PARL TO N LI OF S1/2 OF SW1/4 OF NE1/4 TO E LI OF FRISCO RR R/W NLY ALG RR R/W TO N LI OF S1/2 OF SW1/4 OF NE1/4 E ALG SAID N LI TO POB OR 5347 P 1182",
             "03/04/2026", None, 3371.77, ESCAMBIA_URL,
         )

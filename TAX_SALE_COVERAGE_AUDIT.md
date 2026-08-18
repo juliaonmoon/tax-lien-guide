@@ -317,6 +317,17 @@ reuse potential), not by state alphabetically:
    coverage gap — `tad_enrich()` now skips the owner column entirely, with
    a regression test guarding it.
 
+8c. ~~Florida (Putnam/Escambia) tax-deed collector was actually publishing
+   real individual owner names for all 39 live rows~~ — **fixed
+   2026-08-18, see BUG-005 in `BUGS.md`.** Found immediately after 8b by
+   auditing the rest of `scripts/` for the same pattern. Unlike 8b, this
+   one had already fired in production: Putnam's own official "Lands
+   Available for Taxes" list prints an owner name inline (captured by
+   `putnam_live()`'s regex), and the FDOR cadastral feed's `OWN_NAME`
+   backfilled it for Escambia. Both paths removed; `owner` is now always
+   `null` for these 39 rows, with regression tests covering both source
+   paths.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,

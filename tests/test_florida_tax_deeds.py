@@ -37,6 +37,47 @@ class FloridaTaxDeedDatasetTests(unittest.TestCase):
             self.assertNotIn(key, seen, f"duplicate parcel: {key}")
             seen.add(key)
 
+    def test_florida_rows_never_carry_a_real_owner_name(self):
+        for row in self.florida_rows:
+            self.assertIsNone(row.get("owner"))
+
+
+class OwnerNameNeverCollectedTests(unittest.TestCase):
+    """Regression test: Putnam's own official "Lands Available" list and the
+    FDOR cadastral feed both put a real owner name directly in band with the
+    fields this collector wants -- see BUG-005 in BUGS.md. base_row() and the
+    Putnam record-unpacking in main() must never let it through, even though
+    it's sitting right there in the source data at a fixed position."""
+
+    def test_base_row_never_emits_an_owner(self):
+        row = refresher.base_row("Putnam", "case-1", "parcel-1", "legal", "01/01/2026", None, 100.0, "https://example.com")
+        self.assertIsNone(row.get("owner"))
+
+    def test_putnam_record_unpacking_skips_the_owner_slot(self):
+        # Same shape as a putnam_live()/putnam_snapshot() record: a real
+        # owner name sits at index 1, exactly where it appears in
+        # data/florida-putnam-verified-snapshot.json.
+        record = ["case-1", "REAL PERSON NAME", "parcel-1", "legal", "01/01/2026", "02/01/2026", 100.0]
+        row = refresher.base_row("Putnam", record[0], *record[2:], "https://example.com")
+        self.assertIsNone(row.get("owner"))
+        self.assertNotIn("REAL PERSON NAME", json.dumps(row))
+
+    def test_cadastral_enrich_does_not_set_owner_name_even_if_the_feed_returns_one(self):
+        rows = [{"parcel_id": "parcel-1", "county": "Putnam", "owner": None}]
+
+        def fake_fetch(url, params=None, timeout=35):
+            return json.dumps({"features": [{"attributes": {
+                "PARCEL_ID": "parcel-1", "OWN_NAME": "REAL PERSON NAME", "JV": 1000, "DOR_UC": "0001",
+            }}]})
+
+        original_fetch = refresher.fetch
+        refresher.fetch = fake_fetch
+        try:
+            refresher.cadastral_enrich(rows)
+        finally:
+            refresher.fetch = original_fetch
+        self.assertIsNone(rows[0].get("owner"))
+
 
 class MergeStateRowsTests(unittest.TestCase):
     """Regression test for merge_state_rows(): a Florida refresh must never
