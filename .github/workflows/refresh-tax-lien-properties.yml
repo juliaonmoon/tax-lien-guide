@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "37 14 * * *"
+  workflow_run:
+    workflows:
+      - "Refresh tax deed property data"
+    types:
+      - completed
   push:
     paths:
       - "scripts/refresh_tax_lien_properties.py"
@@ -36,13 +41,14 @@ concurrency:
 
 jobs:
   refresh:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Sync latest main
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_run'
         run: |
           git fetch origin main
           git reset --hard origin/main
@@ -62,7 +68,7 @@ jobs:
       - name: Validate generated data and pages
         run: python -m unittest discover -s tests -v
       - name: Publish refreshed lien data safely
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_run'
         run: |
           if git diff --quiet -- data/tax-lien-properties.json; then
             echo "No property-level lien changes."
