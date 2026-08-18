@@ -16,6 +16,18 @@ on:
       - "calendar.html"
       - "sw.js"
       - ".github/workflows/refresh-tax-lien-properties.yml"
+  pull_request:
+    paths:
+      - "scripts/refresh_tax_lien_properties.py"
+      - "scripts/refresh_iowa_johnson_tax_liens.py"
+      - "scripts/enrich_indiana_assessed_values.py"
+      - "tests/test_tax_lien_properties.py"
+      - "tests/test_iowa_johnson_tax_liens.py"
+      - "tests/test_enrich_indiana_assessed_values.py"
+      - "tax-lien-properties.html"
+      - "calendar.html"
+      - "sw.js"
+      - ".github/workflows/refresh-tax-lien-properties.yml"
 
 permissions:
   contents: write
