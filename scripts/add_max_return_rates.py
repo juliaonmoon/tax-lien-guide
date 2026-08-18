@@ -12,6 +12,13 @@ if "['maxReturn','Max return rate'" not in text:
         raise SystemExit("Could not locate interest column definition")
     text = text.replace(old_col, new_col, 1)
 
+# County/market-specific values take precedence whenever an official source has
+# published the current certificate rate. This prevents the generic state rule
+# from overwriting a more precise verified value supplied by a county publisher.
+MARKET_RATES = {
+    "Colorado — Logan County": "14%/yr for 2026 certificate",
+}
+
 # These labels intentionally preserve the legal return mechanism instead of
 # pretending every state pays a directly comparable APR.
 RATES = [
@@ -39,6 +46,8 @@ RATES = [
 ]
 
 def rate_for(state: str) -> str:
+    if state in MARKET_RATES:
+        return MARKET_RATES[state]
     for prefix, value in RATES:
         if state.startswith(prefix):
             return value
