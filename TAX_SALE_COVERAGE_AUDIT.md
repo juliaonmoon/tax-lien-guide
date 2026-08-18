@@ -211,9 +211,23 @@ reuse potential), not by state alphabetically:
    (not blocked, not SharePoint-only) is close to zero-marginal-cost to add.
    Hamilton County's 2026 list was "available mid-August 2026" per the
    county's own page — worth checking again shortly.
-3. **Assessor/GIS enrichment for the existing 755 non-Cochise tax-lien
-   records** (`assessed_value` is 0/null across the board today) — flagged
-   already in `data/project-management.json` WS-03.
+3. ~~Assessor/GIS enrichment for the existing 755 non-Cochise tax-lien
+   records~~ — **done 2026-08-17.** `scripts/enrich_indiana_assessed_values.py`
+   pulls the official DLGF "Real Property" fixed-width file for each of the
+   4 Indiana counties from the Indiana Gateway for Government Units
+   (`gateway.ifionline.org`, no login/CAPTCHA/access-control workaround —
+   a public form on an official state-partnered portal), matches by
+   digit-normalized parcel number, and fills `assessed_value`,
+   `market_value`, `property_address`/`address`, `city`, `zip`, and
+   `legal_description` when missing (never overwrites an existing value).
+   Field byte positions come from the authoritative regulation defining
+   this fixed-width format, 50 IAC 26-20-4, not guesswork — verified
+   against 5 known real Allen County parcels before writing the parser
+   (5/5 matched with correct addresses/values). Result: 807/807 (100%)
+   Indiana tax-lien records matched; `with_assessed_value` went from 0 to
+   805 (2 parcels have a genuine $0 assessment, left as `null`, not
+   fabricated). Wired into `refresh-tax-lien-properties.yml` to run after
+   the base collector on every daily refresh.
 4. ~~Tests for `refresh_properties.py`, `refresh_florida_tax_deeds.py`, and
    `refresh_arizona_cochise_tax_liens.py`~~ — **done 2026-08-17.** Every
    live/snapshot collector now has a dedicated test module:

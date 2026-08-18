@@ -1,5 +1,88 @@
 # Bug Log & Fixes
-### Last updated: August 17, 2026 (BUG-002)
+### Last updated: August 18, 2026 (BUG-003)
+
+---
+
+## BUG-003 — Both data-refresh workflows silently tested `main` on PR pushes, and could publish branch content straight to `main` without review
+**Severity:** Critical (a `push`-triggered run on any branch could commit and push directly to `main`, bypassing PR review entirely -- confirmed to have actually happened, see below)
+**Found:** August 18, 2026, in two stages -- first as a CI crash, then as an actual unreviewed push to `main`
+**Affected:** `.github/workflows/refresh-tax-lien-properties.yml` and `.github/workflows/refresh-properties.yml` (both present since each workflow's original commit -- not introduced in this change)
+**Status:** Fixed
+
+### What happened -- part 1 (CI silently tested main, not the PR)
+Both data-refresh workflows trigger on `push` (for fast feedback when a
+collector script changes) in addition to `schedule` and `workflow_dispatch`.
+Both also start with:
+```yaml
+- uses: actions/checkout@v4
+- name: Sync latest main
+  run: |
+    git fetch origin main
+    git reset --hard origin/main
+```
+This unconditional `reset --hard origin/main` runs regardless of which ref
+triggered the workflow. For a `push` to a feature/PR branch, `checkout@v4`
+correctly checks out that branch's commit -- and then this step immediately
+throws it away and resets to `main` instead. Every step after it (running
+the collector, running the test suite) then operates on `main`, not on the
+actual pushed diff. This was invisible on prior PRs because the affected
+files already existed on `main` in a working, older form -- the check would
+silently re-validate `main` and report "pass" regardless of what the PR
+changed. It surfaced when a PR added a brand new file
+(`scripts/enrich_indiana_assessed_values.py`) that only existed on the PR
+branch: the workflow reset the checkout away from it, then crashed trying
+to run a script that (from its point of view) didn't exist.
+
+**First fix attempt:** added `if: github.ref == 'refs/heads/main'` to the
+"Sync latest main" step in both workflows, reasoning that the "Publish"
+step's own `reset --hard origin/main` (further down each workflow, inside
+its retry loop) was a separate, correctly-unconditional concern since
+publishing always needs to target the latest `main`.
+
+### What happened -- part 2 (that "separate concern" was actually the same bug, and it fired for real)
+That reasoning was wrong. Once the "Sync latest main" step stopped wiping
+the branch checkout, both workflows' **Publish** steps -- which build their
+commit from a wholesale copy of the entire `data/` directory
+(`cp -a data /tmp/refresh-output/data` in `refresh-properties.yml`) and then
+unconditionally `git push origin HEAD:main` -- started publishing *whatever
+was in the branch's checkout*, not just the output of that workflow's own
+scripts. On a `push`-triggered run for a PR branch, that includes any data
+file the branch had already modified for reasons that had nothing to do
+with that workflow's own steps.
+
+This was confirmed to actually happen, not just a theoretical read of the
+code: a manually-triggered run of "Refresh property-level tax liens" on a
+PR branch (queued to verify the BUG-003 fix above) picked up that branch's
+already-enriched `data/tax-lien-properties.json` and committed+pushed it
+directly to `main` as `d423057` ("chore: refresh property-level tax
+liens"), and a run of "Refresh tax deed property data" on the same branch
+did the same via its own wholesale-directory-copy publish step
+(`b47696a`). Neither the enrichment script nor the workflow step that runs
+it existed on `main` at the time -- only the *output* landed there,
+unreviewed, ahead of the code that produces it. The data itself was real
+and correct (verified official Indiana assessed values, not fabricated),
+so no incorrect data reached `main` -- but the process violation is real:
+a `push` to a feature branch was able to write directly to `main` with no
+PR, no review, and no branch protection in the way.
+
+### Fix
+Extended the same guard to the **Publish** step in both workflows:
+`if: github.ref == 'refs/heads/main'`. A workflow run now only ever pushes
+to `main` when it is actually running on `main` itself (scheduled runs,
+`workflow_dispatch` on `main`, or a `push` landing on `main` post-merge).
+A `push`-triggered run on any other branch now validates (runs the
+collector, runs the test suite) without ever being able to write to
+`main` -- publishing only ever happens through an actual merge to `main`,
+same as everywhere else in this repo's workflow.
+
+### Rule for future workflow changes
+**Any step that runs `git push origin HEAD:main` (or resets to `main`)
+must be scoped to `if: github.ref == 'refs/heads/main'`, full stop --
+including "obviously main-only" steps like Publish.** Don't reason about
+which steps are "safe" to leave unconditional; if a workflow triggers on
+`push` to non-default branches at all, every write-to-main step needs the
+guard, or a `push` to any branch matching that workflow's path filters can
+write to `main` without review.
 
 ---
 
