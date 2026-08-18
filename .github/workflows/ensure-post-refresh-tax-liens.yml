@@ -45,6 +45,7 @@ jobs:
           fi
           python scripts/add_florida_hernando_tax_lien_market.py
           python scripts/add_florida_putnam_tax_lien_market.py
+          python scripts/add_iowa_polk_tax_lien_market.py
           python scripts/add_max_return_rates.py
           python scripts/add_tax_lien_county_filter.py
           python scripts/recount_tax_lien_properties.py
