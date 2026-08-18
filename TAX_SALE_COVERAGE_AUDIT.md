@@ -251,23 +251,55 @@ reuse potential), not by state alphabetically:
 6. **State-by-state `not_started` expansion** — turn each of the 28
    `not_started` registry rows into real per-county rows once an official
    source is actually found and verified for that state.
-7. **Hillsborough County, FL tax-deed "Lands Available" — real API found,
-   not yet built into a collector (2026-08-18).** The Clerk of Court's
-   public-access system (`publicaccess.hillsclerk.com/TD/`) is a genuine,
-   unblocked JSON API (`POST /TD/api/CustomQuery/KeywordSearch` with a
-   `ToFromDate` range and query-type ID `285`, "PAV - TD - List of Lands
-   Available"). A test query returned real folio numbers and case numbers
-   (e.g. folio `1890690000`, case `2024/16568`) — this is genuinely
-   individual-property data, not a summary. **Not yet a collector** because
-   each folio's full property details (address, opening bid, assessed
-   value) live in separate linked documents (e.g. "TD - O & E Report", "TD
-   - Tax Collector Cert (DR513)") that would need their own fetch/parse
-   step, not yet investigated. Whoever picks this up next: start by opening
-   one of those documents for a known folio and confirming what structured
-   data (if any) is extractable before committing to a parsing approach —
-   don't guess at fields the way 50 IAC 26-20-4 was required for Indiana's
-   assessed values rather than reverse-engineering byte positions from
-   samples alone.
+7. **Hillsborough County, FL tax-deed "Lands Available" — real API found and
+   mapped in detail (2026-08-18), but blocked on one specific unresolved
+   question before it can safely become a collector.**
+
+   The Clerk of Court's public-access system
+   (`publicaccess.hillsclerk.com/TD/`) is a genuine, unblocked JSON API:
+   `POST /TD/api/CustomQuery/KeywordSearch` with body
+   `{"QueryID":285,"Keywords":[{"ID":412,"Value":"","KeywordOperator":"="},
+   {"ID":413,"Value":"","KeywordOperator":"="},{"ID":1013,"Value":"",
+   "KeywordOperator":"="},{"ID":1014,"Value":"","KeywordOperator":"="}],
+   "FromDate":"<ISO date>","ToDate":"<ISO date>","QueryLimit":<n>}`
+   (query type `285` = "PAV - TD - List of Lands Available"). No login,
+   CAPTCHA, or access-control workaround — confirmed reachable via a real
+   browser; a plain HTTP fetch got a 403 (likely basic bot-UA filtering,
+   not a real access control), so a collector should set a real
+   User-Agent, same as every other collector in this repo already does.
+
+   Each result row's `DisplayColumnValues` is a fixed 8-item array whose
+   meaning is given directly by the UI's own column headers — no
+   guessing required: `[0]=File#, [1]=Folio#, [2]=Auction Date,
+   [3]=Certificate#, [4]=Case Status, [5]=Opening Bid, [6]=Winning Bid,
+   [7]=Document Type`. Confirmed real values exist for every column (e.g.
+   `File# "2026-541", Folio# "0384720000", Auction Date "8/13/2026",
+   Certificate# "2023/3694", Case Status "SOLD", Opening Bid "$1,502.05",
+   Winning Bid "$2,100.00"`), so — unlike first thought — the opening bid
+   and property-identifying fields do NOT require opening a separate PDF
+   per property; they're already in this response for cases far enough
+   along in the process. Each case also appears multiple times (once per
+   associated document — "TD - Tax Deed", "TD - O & E Report", "TD - Tax
+   Collector Cert (DR513)", "TD - Tax Collector App (DR512)", "TD -
+   Certificate of Mailing"), so a collector needs to dedupe by File# and
+   merge/prefer the row with the most populated fields.
+
+   **The actual blocker:** across a 500-row sample, observed `Case Status`
+   values were `SALE` (377), `REDEEMED` (28), `SOLD` (25), `BANKRUPTCY`
+   (3), `PENDING` (2) — **none of them says "available."** Florida
+   Statute 197.502 is specific about when a property legally becomes
+   "lands available for taxes": only after the auction produced *no
+   bidder* (or the certificate holder failed to pay within 30 days) —
+   that's a distinct state from "SALE" (which reads more like "in the
+   sale process," i.e. scheduled/upcoming, not resolved). Guessing which
+   of these statuses maps to genuinely-still-available would risk telling
+   someone a sold or redeemed property is available — not acceptable.
+   **Do not build a collector against this API until this is resolved
+   with actual evidence** (e.g. cross-reference a case with a known
+   real-world "lands available" listing and see what status/fields it
+   carries, or find official documentation of the status codes this
+   system uses — the same standard already applied to Indiana's 50 IAC
+   26-20-4 rather than reverse-engineering byte positions from samples).
 
 ## 8. Relationship to `data/project-management.json`
 
