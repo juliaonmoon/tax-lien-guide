@@ -1,0 +1,70 @@
+name: Ensure Yuma County tax lien market
+
+on:
+  workflow_run:
+    workflows: ["Refresh tax deed property data"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tax-lien-guide-data-writes
+  cancel-in-progress: false
+
+jobs:
+  ensure-yuma:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ensure Yuma County Arizona tax lien market
+        run: |
+          python scripts/add_arizona_yuma_tax_lien_market.py
+          python scripts/add_max_return_rates.py
+          python scripts/add_tax_lien_county_filter.py
+          python scripts/recount_tax_lien_properties.py
+      - name: Publish Yuma market update safely
+        run: |
+          if git diff --quiet -- data/ index.html; then
+            echo "No Yuma market changes."
+            exit 0
+          fi
+
+          rm -rf /tmp/yuma-output
+          mkdir -p /tmp/yuma-output
+          cp -a data /tmp/yuma-output/data
+          cp index.html /tmp/yuma-output/index.html
+
+          git config user.name "tax-lien-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf data
+            cp -a /tmp/yuma-output/data data
+            cp /tmp/yuma-output/index.html index.html
+
+            if git diff --quiet -- data/ index.html; then
+              echo "Latest main already contains the Yuma output."
+              exit 0
+            fi
+
+            git add data/ index.html
+            git commit -m "chore: ensure Yuma County Arizona tax lien market"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Publish raced with a newer main commit; retrying (${attempt}/3)."
+          done
+
+          echo "Unable to publish Yuma market output after 3 safe retries."
+          exit 1
