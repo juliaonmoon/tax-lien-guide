@@ -1,13 +1,10 @@
 name: Publish Hernando County tax lien market
 
 on:
+  workflow_run:
+    workflows: ["Refresh tax deed property data"]
+    types: [completed]
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/add_florida_hernando_tax_lien_market.py"
-      - ".github/workflows/publish-hernando-tax-lien.yml"
-  schedule:
-    - cron: "43 14 * * *"
 
 permissions:
   contents: write
@@ -18,10 +15,12 @@ concurrency:
 
 jobs:
   publish:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
       - name: Sync latest main
         run: |
