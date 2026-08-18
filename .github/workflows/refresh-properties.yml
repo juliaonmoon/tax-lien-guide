@@ -32,7 +32,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install parser dependencies
-        run: pip install requests beautifulsoup4 pdfplumber
+        run: pip install requests beautifulsoup4 pdfplumber pypdf openpyxl
       - name: Save previous verified property data
         run: |
           cp data/properties.json /tmp/properties-before-refresh.json
@@ -92,6 +92,34 @@ jobs:
         run: python scripts/fill_wa_state_nibrs_public_safety.py
       - name: Diagnose remaining King County gaps
         run: python scripts/diagnose_king_gaps.py
+      - name: Rebuild individual tax-lien property dataset
+        run: python scripts/refresh_tax_lien_properties.py
+      - name: Enrich Indiana tax-lien records with official assessed values
+        run: python scripts/enrich_indiana_assessed_values.py
+      - name: Refresh Johnson County Iowa property-level tax liens
+        run: python scripts/refresh_iowa_johnson_tax_liens.py
+      - name: Refresh Linn County Iowa property-level tax liens from official Excel with PDF fallback
+        run: python scripts/refresh_iowa_linn_tax_liens_xlsx.py
+      - name: Verify Iowa property-level lien output before continuing
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          doc = json.loads(Path("data/tax-lien-properties.json").read_text(encoding="utf-8"))
+          rows = doc.get("properties", [])
+          minimums = {"IA-Johnson-2026": 700, "IA-Linn-2026": 1500}
+          for profile_id, minimum in minimums.items():
+              county_rows = [row for row in rows if row.get("profile_id") == profile_id]
+              if len(county_rows) < minimum:
+                  raise SystemExit(f"{profile_id}: only {len(county_rows)} generated rows; expected at least {minimum}")
+              if any(any("owner" in str(key).lower() for key in row) for row in county_rows):
+                  raise SystemExit(f"{profile_id}: restricted owner-name field appeared in generated output")
+          linn_items = [int(row["sale_item_number"]) for row in rows if row.get("profile_id") == "IA-Linn-2026" and row.get("sale_item_number")]
+          if linn_items and max(linn_items) > 1568:
+              raise SystemExit("IA-Linn-2026: generated output crossed into the mobile-home section")
+          print("Verified Johnson and Linn property-level lien output thresholds and safety constraints.")
+          PY
       - name: Refresh Coconino Arizona OTC tax-lien property feed
         run: python scripts/refresh_coconino_tax_liens.py
       - name: Refresh Cochise Arizona available tax-lien property feed
