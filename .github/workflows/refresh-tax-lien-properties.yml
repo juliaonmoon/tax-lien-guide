@@ -15,6 +15,7 @@ on:
       - "scripts/refresh_iowa_johnson_tax_liens.py"
       - "scripts/refresh_iowa_linn_tax_liens.py"
       - "scripts/enrich_indiana_assessed_values.py"
+      - "scripts/recount_tax_lien_properties.py"
       - "tests/test_tax_lien_properties.py"
       - "tests/test_iowa_johnson_tax_liens.py"
       - "tests/test_iowa_linn_tax_liens.py"
@@ -65,28 +66,32 @@ jobs:
         run: python scripts/refresh_iowa_johnson_tax_liens.py
       - name: Refresh Linn County Iowa tax liens
         run: python scripts/refresh_iowa_linn_tax_liens.py
+      - name: Recount lien and combined website coverage
+        run: python scripts/recount_tax_lien_properties.py
       - name: Validate generated data and pages
         run: python -m unittest discover -s tests -v
       - name: Publish refreshed lien data safely
         if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_run'
         run: |
-          if git diff --quiet -- data/tax-lien-properties.json; then
-            echo "No property-level lien changes."
+          if git diff --quiet -- data/tax-lien-properties.json data/refresh-status.json; then
+            echo "No property-level lien or coverage changes."
             exit 0
           fi
           cp data/tax-lien-properties.json /tmp/tax-lien-properties.json
+          cp data/refresh-status.json /tmp/refresh-status.json
           git config user.name "tax-lien-data-bot"
           git config user.email "actions@users.noreply.github.com"
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
             cp /tmp/tax-lien-properties.json data/tax-lien-properties.json
-            if git diff --quiet -- data/tax-lien-properties.json; then
-              echo "Latest main already contains this dataset."
+            cp /tmp/refresh-status.json data/refresh-status.json
+            if git diff --quiet -- data/tax-lien-properties.json data/refresh-status.json; then
+              echo "Latest main already contains this dataset and coverage summary."
               exit 0
             fi
-            git add data/tax-lien-properties.json
-            git commit -m "chore: refresh property-level tax liens"
+            git add data/tax-lien-properties.json data/refresh-status.json
+            git commit -m "chore: refresh property-level tax liens and coverage"
             if git push origin HEAD:main; then exit 0; fi
           done
           echo "Unable to publish after three safe retries."
