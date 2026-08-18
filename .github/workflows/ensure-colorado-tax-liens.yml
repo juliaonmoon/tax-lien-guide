@@ -9,8 +9,11 @@ on:
 permissions:
   contents: write
 
+# Use the same writer lock as the main property/tax-lien refresh.  Both
+# workflows replace generated data/index output, so allowing them to publish
+# concurrently can race and overwrite a newer generated snapshot.
 concurrency:
-  group: tax-lien-data-writer
+  group: tax-lien-guide-data-writes
   cancel-in-progress: false
 
 jobs:
