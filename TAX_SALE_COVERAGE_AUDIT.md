@@ -99,8 +99,17 @@ This is a systemic risk worth flagging for future work: **any** two scripts
 that write to the same JSON file without coordinating ownership can reproduce
 this bug. `refresh_properties.py` and `refresh_florida_tax_deeds.py` share
 `data/properties.json` in a similar way — they were checked and are mutually
-safe today (each merges rather than overwrites), but there's no structural
-guard preventing a future regression there. Consider it a backlog item.
+safe today (each merges rather than overwrites).
+
+**Follow-up (2026-08-17, BUG-002):** while adding test coverage, found and
+fixed a related-but-different gap in `refresh_properties.py` itself: it had
+no fallback if fetching/parsing one of its own sources (Brevard/Tarrant/King)
+failed — that source's rows would simply be missing from that run's output,
+with no retained-previous-rows fallback like the Indiana/Cochise scripts
+have. This wasn't the cross-collector conflict BUG-001 was (Florida already
+merges correctly via the new `merge_state_rows()`), just a missing fallback
+for the script's own sources. Fixed via `prior_by_county()`; see `BUGS.md`
+BUG-002 for the full write-up.
 
 ## 4. New collector added this session
 
@@ -205,11 +214,15 @@ reuse potential), not by state alphabetically:
 3. **Assessor/GIS enrichment for the existing 755 non-Cochise tax-lien
    records** (`assessed_value` is 0/null across the board today) — flagged
    already in `data/project-management.json` WS-03.
-4. **Tests for `refresh_properties.py`, `refresh_florida_tax_deeds.py`, and
-   `refresh_arizona_cochise_tax_liens.py`** — none have dedicated test
-   modules yet; only the Indiana/Coconino/Grant path
-   (`tests/test_tax_lien_properties.py`) and the new registry
-   (`tests/test_source_registry.py`) do.
+4. ~~Tests for `refresh_properties.py`, `refresh_florida_tax_deeds.py`, and
+   `refresh_arizona_cochise_tax_liens.py`~~ — **done 2026-08-17.** Every
+   live/snapshot collector now has a dedicated test module:
+   `tests/test_refresh_properties.py`, `tests/test_florida_tax_deeds.py`,
+   `tests/test_arizona_cochise_tax_liens.py` (plus the pre-existing
+   `tests/test_tax_lien_properties.py` and `tests/test_source_registry.py`).
+   Writing these tests also surfaced and fixed BUG-002. Remaining gap: a
+   Brevard-specific zero-active parser fixture (Brevard currently has 0
+   active records, so there's nothing live to assert a parse against yet).
 5. **California tax-defaulted property auctions** (Bid4Assets/GovEase-based,
    LA County and San Diego flagged P1 in the existing backlog) — Riverside's
    direct inventory page is blocked; Bid4Assets' own auction catalog pages

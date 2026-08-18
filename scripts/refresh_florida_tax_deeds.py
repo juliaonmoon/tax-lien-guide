@@ -218,6 +218,17 @@ def score(row: dict) -> dict:
     return {"score": points, "label": "High research priority" if points >= 70 else "Medium research priority" if points >= 45 else "Low research priority", "reasons": reasons}
 
 
+def merge_state_rows(existing_properties: list[dict], new_rows: list[dict], state: str) -> list[dict]:
+    """Replace only `state`'s rows, leaving every other state's rows untouched.
+
+    Extracted so this repo-critical "don't clobber other collectors' rows"
+    behavior (see BUG-001 in BUGS.md) has its own direct test, independent
+    of network access.
+    """
+    kept = [p for p in existing_properties if p.get("state") != state]
+    return kept + new_rows
+
+
 def main() -> None:
     now = datetime.now(timezone.utc).isoformat()
     health = []
@@ -255,12 +266,11 @@ def main() -> None:
         row["research_priority"] = score(row)
 
     payload = json.loads(PROPS.read_text(encoding="utf-8"))
-    existing = [p for p in payload.get("properties", []) if p.get("state") != "FL"]
     payload["updated_at"] = now
     # Preserve the existing collector order so a Florida refresh does not
     # create a huge unrelated diff for Washington, Texas, and Arizona rows.
     florida.sort(key=lambda p: (p.get("county") or "", p.get("parcel_id") or ""))
-    payload["properties"] = existing + florida
+    payload["properties"] = merge_state_rows(payload.get("properties", []), florida, "FL")
     PROPS.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))

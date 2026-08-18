@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-16T07:02:53.828587+00:00",
+  "updated_at": "2026-08-18T00:39:57.502751+00:00",
   "methodology": "Initial nationwide source registry populated from the repository's actual collector scripts, data files, and source-health records, cross-checked against current official government pages as of 2026-08-16. Every row marked collector_status=live or snapshot with property_query=true corresponds to a collector script that produces individually identified, verified records. Rows marked not_started or identified are honest placeholders, not fabricated coverage — a county or state only changes to property_query=true once tested, executable collector code exists and produces validated individual records.",
   "definitions": {
     "property_query_true": "Executable collector code produces one verified row per certificate, parcel, sale item, or property.",
@@ -124,9 +124,9 @@
       "last_attempt_at": "2026-08-15",
       "last_success_at": "2026-08-15",
       "current_record_count": 11678,
-      "blocker": "No dedicated test module yet; only tests/test_tax_lien_properties.py exercises the combined output file.",
+      "blocker": null,
       "collector_module": "scripts/refresh_arizona_cochise_tax_liens.py",
-      "test_module": null
+      "test_module": "tests/test_arizona_cochise_tax_liens.py"
     },
     {
       "state": "WA",
@@ -140,9 +140,9 @@
       "last_attempt_at": "2026-08-16",
       "last_success_at": "2026-08-16",
       "current_record_count": 145,
-      "blocker": "No dedicated test module for this collector yet (WS-05 backlog item).",
+      "blocker": null,
       "collector_module": "scripts/refresh_properties.py",
-      "test_module": null
+      "test_module": "tests/test_refresh_properties.py"
     },
     {
       "state": "TX",
@@ -156,9 +156,9 @@
       "last_attempt_at": "2026-08-16",
       "last_success_at": "2026-08-16",
       "current_record_count": 20,
-      "blocker": "Assessor (TAD) enrichment currently matches only 1/20 parcels; no dedicated test module yet.",
+      "blocker": "Assessor (TAD) enrichment currently matches only 1/20 parcels.",
       "collector_module": "scripts/refresh_properties.py",
-      "test_module": null
+      "test_module": "tests/test_refresh_properties.py"
     },
     {
       "state": "FL",
@@ -174,7 +174,7 @@
       "current_record_count": 38,
       "blocker": null,
       "collector_module": "scripts/refresh_florida_tax_deeds.py",
-      "test_module": null
+      "test_module": "tests/test_florida_tax_deeds.py"
     },
     {
       "state": "FL",
@@ -190,7 +190,7 @@
       "current_record_count": 1,
       "blocker": "Official host blocks automated retrieval (HTTPError); collector preserves the last verified official-page snapshot rather than publishing zero.",
       "collector_module": "scripts/refresh_florida_tax_deeds.py",
-      "test_module": null
+      "test_module": "tests/test_florida_tax_deeds.py"
     },
     {
       "state": "FL",
@@ -206,7 +206,7 @@
       "current_record_count": 0,
       "blocker": "Collector runs successfully but the official list currently has zero active lands-available rows for the next sale date.",
       "collector_module": "scripts/refresh_properties.py",
-      "test_module": null
+      "test_module": "tests/test_refresh_properties.py"
     },
     {
       "state": "AZ",
