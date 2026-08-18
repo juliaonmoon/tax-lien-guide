@@ -7,7 +7,9 @@ on:
   push:
     paths:
       - "scripts/refresh_tax_lien_properties.py"
+      - "scripts/enrich_indiana_assessed_values.py"
       - "tests/test_tax_lien_properties.py"
+      - "tests/test_enrich_indiana_assessed_values.py"
       - "tax-lien-properties.html"
       - "calendar.html"
       - "sw.js"
@@ -35,9 +37,11 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install collector dependencies
-        run: pip install openpyxl pdfplumber pypdf
+        run: pip install openpyxl pdfplumber pypdf requests beautifulsoup4
       - name: Refresh individual tax-lien records
         run: python scripts/refresh_tax_lien_properties.py
+      - name: Enrich Indiana records with official assessed values
+        run: python scripts/enrich_indiana_assessed_values.py
       - name: Validate generated data and pages
         run: python -m unittest discover -s tests -v
       - name: Publish refreshed lien data safely
