@@ -1,11 +1,10 @@
 name: Add Graham County Arizona tax lien market
 
+# Graham is already an explicit step in the main recurring refresh. Keep this
+# targeted publisher manual-only to avoid duplicate serialized writers when
+# its script changes.
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/add_arizona_graham_tax_lien_market.py"
-      - ".github/workflows/add-graham-tax-lien.yml"
 
 permissions:
   contents: write
