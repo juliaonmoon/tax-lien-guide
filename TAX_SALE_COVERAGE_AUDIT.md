@@ -202,15 +202,17 @@ reuse potential), not by state alphabetically:
 
 1. **Florida certificate sales beyond LienHub-blocked counties.** Orange,
    Broward, Miami-Dade, Palm Beach, Pinellas, Hillsborough all have real
-   informational sources but no collector. Their *annual* certificate auction
-   (as opposed to the blocked county-held resale) may publish a structured
-   pre-auction certificate list separately from LienHub — not yet checked.
+   informational sources but no collector. Checked 2026-08-18: Hillsborough's
+   *annual* certificate sale for 2026 has already passed (next one May 2027),
+   so a pre-auction certificate list isn't currently obtainable there. Not
+   yet checked for Orange/Broward/Miami-Dade/Palm Beach/Pinellas specifically.
 2. **More Indiana counties via the existing `indiana_ad_rows()` parser.**
    It is already generic and proven on 4 counties now. Any Indiana county
    with a same-format legal-ad PDF on a reachable `in.gov`/county domain
    (not blocked, not SharePoint-only) is close to zero-marginal-cost to add.
-   Hamilton County's 2026 list was "available mid-August 2026" per the
-   county's own page — worth checking again shortly.
+   Checked 2026-08-18: Hamilton County's 2026 list still isn't published
+   ("mid-August" came and went) — check again in a week or two. Montgomery
+   County's page returns HTTP 403.
 3. ~~Assessor/GIS enrichment for the existing 755 non-Cochise tax-lien
    records~~ — **done 2026-08-17.** `scripts/enrich_indiana_assessed_values.py`
    pulls the official DLGF "Real Property" fixed-width file for each of the
@@ -239,11 +241,33 @@ reuse potential), not by state alphabetically:
    active records, so there's nothing live to assert a parse against yet).
 5. **California tax-defaulted property auctions** (Bid4Assets/GovEase-based,
    LA County and San Diego flagged P1 in the existing backlog) — Riverside's
-   direct inventory page is blocked; Bid4Assets' own auction catalog pages
-   were not yet checked and may be more permissive.
+   direct inventory page is blocked. Checked 2026-08-18: Bid4Assets itself is
+   reachable via a real browser (not via plain HTTP fetch — that gets a 403,
+   likely bot detection) but has no active California auction between now
+   and the next one (Santa Clara County, Oct 23-26 2026) — nothing to
+   collect yet, and no public API was found on the site. LA County's own
+   Bid4Assets page confirms no sale currently scheduled. Worth rechecking
+   closer to an actual auction date.
 6. **State-by-state `not_started` expansion** — turn each of the 28
    `not_started` registry rows into real per-county rows once an official
    source is actually found and verified for that state.
+7. **Hillsborough County, FL tax-deed "Lands Available" — real API found,
+   not yet built into a collector (2026-08-18).** The Clerk of Court's
+   public-access system (`publicaccess.hillsclerk.com/TD/`) is a genuine,
+   unblocked JSON API (`POST /TD/api/CustomQuery/KeywordSearch` with a
+   `ToFromDate` range and query-type ID `285`, "PAV - TD - List of Lands
+   Available"). A test query returned real folio numbers and case numbers
+   (e.g. folio `1890690000`, case `2024/16568`) — this is genuinely
+   individual-property data, not a summary. **Not yet a collector** because
+   each folio's full property details (address, opening bid, assessed
+   value) live in separate linked documents (e.g. "TD - O & E Report", "TD
+   - Tax Collector Cert (DR513)") that would need their own fetch/parse
+   step, not yet investigated. Whoever picks this up next: start by opening
+   one of those documents for a known folio and confirming what structured
+   data (if any) is extractable before committing to a parsing approach —
+   don't guess at fields the way 50 IAC 26-20-4 was required for Indiana's
+   assessed values rather than reverse-engineering byte positions from
+   samples alone.
 
 ## 8. Relationship to `data/project-management.json`
 
