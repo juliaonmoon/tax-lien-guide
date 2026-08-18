@@ -182,14 +182,38 @@ def king_properties():
     return rows, f"Parsed {len(rows)} King County foreclosure parcels; open-data enrichment matched {enriched}/{len(rows)}"
 
 
+def prior_by_county():
+    """Previously published rows for each (state, county), keyed for fallback.
+
+    Each source in this script fully rebuilds its own rows every run. Without
+    this, a transient fetch failure for one source silently erases that
+    source's rows from the published file, with nothing to fall back on.
+    """
+    if not PROPS.exists():
+        return {}
+    try:
+        doc = json.loads(PROPS.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    result: dict[tuple, list] = {}
+    for p in doc.get("properties", []):
+        result.setdefault((p.get("state"), p.get("county")), []).append(p)
+    return result
+
+
 def main():
     now=datetime.now(timezone.utc).isoformat(); registry=[]; health=[]; properties=[]; collectors={"brevard":brevard_properties,"tarrant":tarrant_properties,"king":king_properties}
+    previous = prior_by_county()
     for src in SOURCES:
         registry.append({"state":src["state"],"state_name":src["state_name"],"county":src["county"],"source_url":src["source_url"],"auction_url":src.get("auction_url"),"coverage":"property_feed_prototype"})
         h={"state":src["state"],"county":src["county"],"source_url":src["source_url"],"auction_url":src.get("auction_url"),"checked_at":now,"ok":False,"note":""}
         try:
             get(src.get("feed_url") or src["source_url"]); h["ok"]=True; rows,note=collectors[src["collector"]](); properties.extend(rows); h["note"]=note
-        except Exception as e: h["note"]=f"{type(e).__name__}: {str(e)[:220]}"
+        except Exception as e:
+            retained = previous.get((src["state"], src["county"]), [])
+            properties.extend(retained)
+            h["note"]=f"{type(e).__name__}: {str(e)[:220]}; retained {len(retained)} prior rows"
+            h["retained_previous_rows"]=bool(retained)
         health.append(h)
     for p in properties: p["research_priority"]=score(p)
     properties.sort(key=lambda x:(x.get("sale_date") or "",x.get("state") or "",x.get("county") or "",x.get("parcel_id") or ""))

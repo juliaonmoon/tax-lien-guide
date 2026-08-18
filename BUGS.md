@@ -1,5 +1,74 @@
 # Bug Log & Fixes
-### Last updated: August 17, 2026 (BUG-001)
+### Last updated: August 17, 2026 (BUG-002)
+
+---
+
+## BUG-002 — `refresh_properties.py` had no fallback if a source fetch failed; a source's rows would just vanish for that run
+**Severity:** High (same bug class as BUG-001, not yet observed firing in production, found while adding test coverage)
+**Found:** August 17, 2026, while writing `tests/test_refresh_properties.py`
+**Affected:** `data/properties.json` (King, Tarrant, Brevard rows)
+**Status:** Fixed
+
+### What happened
+`refresh_properties.py`'s `main()` rebuilt its list of properties from
+scratch every run: `properties = []`, then for each of its 3 sources
+(Brevard, Tarrant, King) it tried to fetch and parse that county's data,
+and on success extended `properties` with the parsed rows. If the fetch or
+parse for a source raised an exception, the `except` branch only logged
+the error into `source_health` — it never fell back to that source's
+previously published rows. The whole `properties` list (missing whatever
+source had just failed) was then written out unconditionally.
+
+This is the same failure class as BUG-001 (a source's data silently
+disappearing from the published file on a transient failure), just in a
+different script and not yet confirmed to have fired in production —
+found by inspection while writing tests, not by observing a live
+incident.
+
+Unlike BUG-001, this wasn't a *cross-collector* conflict — `refresh_properties.py`
+is the sole owner of the King/Tarrant/Brevard rows in `data/properties.json`
+(Florida rows are owned separately by `refresh_florida_tax_deeds.py`, which
+already merges correctly — see `merge_state_rows()` and its tests). The gap
+here was simpler: no per-source retry/fallback logic existed at all for its
+own sources.
+
+### Fix
+Added `prior_by_county()`, which reads the current `data/properties.json`
+and groups existing rows by `(state, county)`. In `main()`, if a source's
+fetch/parse raises, the except branch now falls back to that source's rows
+from `prior_by_county()` instead of contributing nothing, and records
+`retained_previous_rows` in that source's `source_health` entry.
+
+### Tests added
+`tests/test_refresh_properties.py`:
+- `PropertiesDatasetTests` — schema and per-county-parcel uniqueness checks
+  on the live dataset, plus a check that King's `owner` field is always the
+  documented placeholder string, never a real name.
+- `PriorByCountyFallbackTests` — regression test for `prior_by_county()`
+  against a fixture file, including the missing-file case.
+
+Also added `tests/test_florida_tax_deeds.py`, which extracts and directly
+tests `merge_state_rows()` (a small refactor, no behavior change) —
+confirming the Florida side of this same file-sharing relationship stays
+correct in isolation, and `tests/test_arizona_cochise_tax_liens.py`, which
+covers CSV parsing/dedup/no-owner-names and the `main()` fallback path
+already present in `refresh_arizona_cochise_tax_liens.py`.
+
+### Files changed
+- `scripts/refresh_properties.py` — added `prior_by_county()`; `main()`
+  now falls back to prior rows per-source on failure.
+- `scripts/refresh_florida_tax_deeds.py` — extracted `merge_state_rows()`
+  from inline logic in `main()` (no behavior change; done for testability).
+- `tests/test_refresh_properties.py` — new.
+- `tests/test_florida_tax_deeds.py` — new.
+- `tests/test_arizona_cochise_tax_liens.py` — new.
+
+### Rule for future collectors
+Same rule as BUG-001, extended: **every collector must be able to survive
+its own source failing**, not just failures caused by another collector
+sharing its output file. If a fetch or parse can raise, there must be a
+fallback to the previously published rows for that specific source — never
+an unconditional rebuild-from-scratch.
 
 ---
 
