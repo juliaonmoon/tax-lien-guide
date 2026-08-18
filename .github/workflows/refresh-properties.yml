@@ -191,6 +191,8 @@ jobs:
         run: python scripts/add_arizona_santa_cruz_tax_lien_market.py
       - name: Add Arizona Greenlee County tax lien market
         run: python scripts/add_arizona_greenlee_tax_lien_market.py
+      - name: Add Arizona Yuma County tax lien market
+        run: python scripts/add_arizona_yuma_tax_lien_market.py
       - name: Add Colorado Arapahoe County tax lien market
         run: python scripts/add_colorado_arapahoe_tax_lien_market.py
       - name: Add Colorado El Paso County tax lien market
