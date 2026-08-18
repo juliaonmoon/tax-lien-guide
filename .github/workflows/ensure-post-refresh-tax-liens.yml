@@ -48,6 +48,8 @@ jobs:
           python scripts/add_max_return_rates.py
           python scripts/add_tax_lien_county_filter.py
           python scripts/recount_tax_lien_properties.py
+      - name: Verify required post-refresh markets survived generation
+        run: python scripts/validate_post_refresh_market_durability.py
       - name: Publish consolidated market updates safely
         run: |
           if git diff --quiet -- data/ index.html; then
