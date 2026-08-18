@@ -24,6 +24,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Sync latest main before refresh
+        if: github.ref == 'refs/heads/main'
         run: |
           git fetch origin main
           git reset --hard origin/main
