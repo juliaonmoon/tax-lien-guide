@@ -38,6 +38,7 @@ jobs:
           python scripts/add_colorado_mesa_tax_lien_market.py
           python scripts/add_colorado_pueblo_tax_lien_market.py
           python scripts/add_colorado_douglas_tax_lien_market.py
+          python scripts/add_colorado_logan_tax_lien_market.py
           if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
             python scripts/add_colorado_weld_tax_lien_market.py
           fi
