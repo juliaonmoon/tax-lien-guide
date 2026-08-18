@@ -1,9 +1,6 @@
-name: Publish Hernando County tax lien market
+name: Repair Hernando County tax lien market
 
 on:
-  workflow_run:
-    workflows: ["Refresh tax deed property data"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -14,8 +11,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  publish:
-    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+  repair:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,47 +25,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Publish verified Hernando County tax-lien market
-        run: python scripts/add_florida_hernando_tax_lien_market.py
-      - name: Reapply max return rates
-        run: python scripts/add_max_return_rates.py
-      - name: Reapply tax-lien county and market filters
-        run: python scripts/add_tax_lien_county_filter.py
-      - name: Recount tax-lien property coverage
-        run: python scripts/recount_tax_lien_properties.py
-      - name: Safely publish guide changes
+      - name: Repair verified Hernando County tax-lien market
+        run: |
+          python scripts/add_florida_hernando_tax_lien_market.py
+          python scripts/add_max_return_rates.py
+          python scripts/add_tax_lien_county_filter.py
+          python scripts/recount_tax_lien_properties.py
+      - name: Publish repair safely
         run: |
           if git diff --quiet -- data/ index.html; then
-            echo "No Hernando publication changes."
+            echo "No Hernando repair changes."
             exit 0
           fi
-
-          rm -rf /tmp/hernando-output
-          mkdir -p /tmp/hernando-output
-          cp -a data /tmp/hernando-output/data
-          cp index.html /tmp/hernando-output/index.html
-
-          git config user.name "tax-deed-data-bot"
+          git config user.name "tax-lien-data-bot"
           git config user.email "actions@users.noreply.github.com"
-
-          for attempt in 1 2 3; do
-            git fetch origin main
-            git reset --hard origin/main
-            rm -rf data
-            cp -a /tmp/hernando-output/data data
-            cp /tmp/hernando-output/index.html index.html
-
-            if git diff --quiet -- data/ index.html; then
-              echo "Latest main already contains Hernando output."
-              exit 0
-            fi
-
-            git add data/ index.html
-            git commit -m "feat: publish Hernando County tax lien market"
-            if git push origin HEAD:main; then
-              exit 0
-            fi
-          done
-
-          echo "Unable to publish Hernando output after 3 safe retries."
-          exit 1
+          git add data/ index.html
+          git commit -m "chore: repair Hernando tax lien market"
+          git pull --rebase origin main
+          git push origin HEAD:main
