@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Fail publication if a required post-refresh tax-lien market silently disappears.
 
-This validator intentionally checks only public market labels in index.html. It does not
-read, collect, or aggregate owner names or other restricted personal information.
+This validator intentionally checks only public market labels and published return-rule
+text in index.html. It does not read, collect, or aggregate owner names or other
+restricted personal information.
 """
 from __future__ import annotations
 
@@ -29,6 +30,13 @@ REQUIRED_PUBLISHERS = [
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
+# County-specific current rates that must survive the generic state-level rate
+# pass. Keep this deliberately narrow: add an assertion only when an official
+# source has published a rate for the current certificate/sale year.
+REQUIRED_MARKET_RATE_TEXT = {
+    "Colorado — Logan County": "14%/yr for 2026 certificate",
+}
+
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
 
 
@@ -44,6 +52,17 @@ def marker_for(script_path: Path) -> str:
     if not isinstance(marker, str) or not marker.strip():
         raise SystemExit(f"{script_path}: MARKER must be a non-empty string")
     return marker
+
+
+def market_row(index_text: str, marker: str) -> str | None:
+    """Return the generated JS object body for one market marker."""
+    start = index_text.find("{state:'" + marker + "'")
+    if start == -1:
+        return None
+    end_match = re.search(r"\}\s*(?:,|\n\];)", index_text[start:])
+    if not end_match:
+        return None
+    return index_text[start : start + end_match.end()]
 
 
 def main() -> None:
@@ -63,6 +82,17 @@ def main() -> None:
         if marker not in index_text:
             missing.append(f"missing generated market row: {marker}")
 
+    for marker, expected_rate in REQUIRED_MARKET_RATE_TEXT.items():
+        row = market_row(index_text, marker)
+        if row is None:
+            missing.append(f"cannot validate rate because market row is missing: {marker}")
+            continue
+        expected_field = f"maxReturn:'{expected_rate}'"
+        if expected_field not in row:
+            missing.append(
+                f"{marker}: expected verified max-return text {expected_rate!r} was overwritten or missing"
+            )
+
     if missing:
         raise SystemExit(
             "Post-refresh market durability validation failed:\n- " + "\n- ".join(missing)
@@ -71,6 +101,8 @@ def main() -> None:
     print(f"Verified {len(checked)} required post-refresh tax-lien market rows in index.html")
     for marker in checked:
         print(f"  OK: {marker}")
+    for marker, expected_rate in REQUIRED_MARKET_RATE_TEXT.items():
+        print(f"  RATE OK: {marker} -> {expected_rate}")
 
 
 if __name__ == "__main__":
