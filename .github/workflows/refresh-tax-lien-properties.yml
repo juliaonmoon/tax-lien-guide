@@ -7,8 +7,10 @@ on:
   push:
     paths:
       - "scripts/refresh_tax_lien_properties.py"
+      - "scripts/refresh_iowa_johnson_tax_liens.py"
       - "scripts/enrich_indiana_assessed_values.py"
       - "tests/test_tax_lien_properties.py"
+      - "tests/test_iowa_johnson_tax_liens.py"
       - "tests/test_enrich_indiana_assessed_values.py"
       - "tax-lien-properties.html"
       - "calendar.html"
@@ -43,6 +45,8 @@ jobs:
         run: python scripts/refresh_tax_lien_properties.py
       - name: Enrich Indiana records with official assessed values
         run: python scripts/enrich_indiana_assessed_values.py
+      - name: Refresh Johnson County Iowa tax liens
+        run: python scripts/refresh_iowa_johnson_tax_liens.py
       - name: Validate generated data and pages
         run: python -m unittest discover -s tests -v
       - name: Publish refreshed lien data safely
