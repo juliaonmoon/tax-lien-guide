@@ -25,6 +25,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_logan_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
+    "scripts/add_iowa_polk_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
