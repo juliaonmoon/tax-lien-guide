@@ -46,6 +46,7 @@ jobs:
       - name: Validate generated data and pages
         run: python -m unittest discover -s tests -v
       - name: Publish refreshed lien data safely
+        if: github.ref == 'refs/heads/main'
         run: |
           if git diff --quiet -- data/tax-lien-properties.json; then
             echo "No property-level lien changes."
