@@ -30,6 +30,7 @@ UA = "TaxLienGuideBot/2.6 (public tax-lien research; no access-control bypass)"
 ITEM_RE = re.compile(r"^\s*(\d{1,3})\)\s*(.*)$")
 PARCEL_RE = re.compile(r"\b(\d{10})\b")
 MONEY_RE = re.compile(r"\$\s*([\d,]+(?:\.\d{2})?)")
+REAL_ESTATE_ITEM_COUNT = 576
 
 
 def fetch_pdf() -> bytes:
@@ -74,8 +75,10 @@ def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
         if not match:
             continue
         item_number = int(match.group(1))
-        # Official PDF switches from REAL ESTATE to MOBILE HOMES after item 576.
-        if not 1 <= item_number <= 576:
+        # The official 2026 publication has exactly items 1-576 in the REAL
+        # ESTATE section, then switches to MOBILE HOMES. Do not cross that
+        # boundary or silently accept an incomplete real-estate extraction.
+        if not 1 <= item_number <= REAL_ESTATE_ITEM_COUNT:
             continue
         parcel_id = _nearest_parcel(lines, i)
         if not parcel_id or item_number in seen_items or parcel_id in seen_parcels:
@@ -146,10 +149,18 @@ def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
         })
 
     rows.sort(key=lambda row: int(row["sale_item_number"]))
-    if len(rows) < 550:
-        raise RuntimeError(f"Dubuque County parser found only {len(rows)} real-estate rows; expected at least 550")
-    if any(int(row["sale_item_number"]) > 576 for row in rows):
-        raise RuntimeError("Dubuque County parser crossed into the mobile-home section")
+    expected_items = set(range(1, REAL_ESTATE_ITEM_COUNT + 1))
+    actual_items = {int(row["sale_item_number"]) for row in rows}
+    missing_items = sorted(expected_items - actual_items)
+    extra_items = sorted(actual_items - expected_items)
+    if missing_items or extra_items or len(rows) != REAL_ESTATE_ITEM_COUNT:
+        missing_preview = ", ".join(map(str, missing_items[:20])) or "none"
+        extra_preview = ", ".join(map(str, extra_items[:20])) or "none"
+        raise RuntimeError(
+            "Dubuque County parser did not recover the complete official REAL ESTATE section: "
+            f"loaded {len(rows)}/{REAL_ESTATE_ITEM_COUNT}; missing items [{missing_preview}]; "
+            f"unexpected items [{extra_preview}]"
+        )
     if any(any("owner" in str(key).lower() or "taxpayer" in str(key).lower() for key in row) for row in rows):
         raise RuntimeError("Dubuque County output contains a restricted owner/taxpayer-name field")
     return rows
