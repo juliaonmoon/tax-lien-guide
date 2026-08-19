@@ -15,6 +15,7 @@ on:
       - "scripts/refresh_iowa_johnson_tax_liens.py"
       - "scripts/refresh_iowa_linn_tax_liens.py"
       - "scripts/refresh_iowa_linn_tax_liens_xlsx.py"
+      - "scripts/repair_iowa_linn_pdf_parser.py"
       - "scripts/enrich_indiana_assessed_values.py"
       - "scripts/recount_tax_lien_properties.py"
       - "tests/test_tax_lien_properties.py"
@@ -67,10 +68,10 @@ jobs:
         id: iowa_johnson
         continue-on-error: true
         run: python scripts/refresh_iowa_johnson_tax_liens.py
-      - name: Refresh Linn County Iowa tax liens from official Excel with PDF fallback
+      - name: Refresh Linn County Iowa tax liens from official Excel with resilient PDF fallback
         id: iowa_linn
         continue-on-error: true
-        run: python scripts/refresh_iowa_linn_tax_liens_xlsx.py
+        run: python scripts/repair_iowa_linn_pdf_parser.py
       - name: Verify Iowa collectors materially populated generated output
         run: |
           python - <<'PY'
@@ -83,11 +84,6 @@ jobs:
           for profile_id, minimum in minimums.items():
               county_rows = [row for row in rows if row.get("profile_id") == profile_id]
               if not county_rows:
-                  # Collector has never successfully published yet (source
-                  # unreachable/unparseable on every run so far, see BUG-006 in
-                  # BUGS.md). That's a "not yet live" state, not a regression --
-                  # it must not block the rest of this shared pipeline (Indiana,
-                  # Cochise, the other Iowa county) from publishing.
                   print(f"WARNING: {profile_id} has no rows yet; not blocking the shared pipeline.")
                   continue
               if len(county_rows) < minimum:
