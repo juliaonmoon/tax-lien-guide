@@ -13,6 +13,7 @@ on:
     paths:
       - "scripts/refresh_tax_lien_properties.py"
       - "scripts/refresh_iowa_johnson_tax_liens.py"
+      - "scripts/repair_iowa_johnson_parser.py"
       - "scripts/refresh_iowa_linn_tax_liens.py"
       - "scripts/refresh_iowa_linn_tax_liens_xlsx.py"
       - "scripts/repair_iowa_linn_pdf_parser.py"
@@ -64,10 +65,10 @@ jobs:
         run: python scripts/refresh_tax_lien_properties.py
       - name: Enrich Indiana records with official assessed values
         run: python scripts/enrich_indiana_assessed_values.py
-      - name: Refresh Johnson County Iowa tax liens
+      - name: Refresh Johnson County Iowa tax liens with resilient item-anchored parser
         id: iowa_johnson
         continue-on-error: true
-        run: python scripts/refresh_iowa_johnson_tax_liens.py
+        run: python scripts/repair_iowa_johnson_parser.py
       - name: Refresh Linn County Iowa tax liens from official Excel with resilient PDF fallback
         id: iowa_linn
         continue-on-error: true
