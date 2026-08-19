@@ -94,7 +94,12 @@ def parse_real_estate_rows(text: str, verified: str) -> list[dict]:
                 break
             end_index = k
 
-        row_public_bidder = public_bidder or marker_seen_in_block
+        # A "PUBLIC BIDDER TAX SALE" heading that shows up inside this item's
+        # own block is a PDF-extraction artifact: it's actually the start of
+        # the *next* section, glued onto this item's line because the source
+        # PDF has no real line break there. It must only flip `public_bidder`
+        # for items still to come, never retroactively reclassify this row.
+        row_public_bidder = public_bidder
         if marker_seen_in_block:
             public_bidder = True
         if published_total is None or item_number in seen_items:
