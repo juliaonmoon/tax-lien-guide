@@ -62,7 +62,7 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   `refresh-properties.yml` (cron 13:17 UTC) — daily data refresh +
   publish. Share concurrency group `tax-lien-guide-data-writes`.
 - `tests/` — one test module per collector, fixture-based (no live network
-  calls in tests). 49 tests as of 2026-08-18.
+  calls in tests). 55 tests as of 2026-08-18.
 
 ## What works (verified)
 
@@ -77,7 +77,7 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   collector, genuinely nothing active right now).
 - Total: 12,518 tax-lien records + ~204 tax-deed records (Coconino is
   intentionally cross-listed in both, clearly labeled).
-- Full test suite green (49/49) as of the last merge to `main`.
+- Full test suite green (55/55) as of the last merge to `main`.
 
 ## Hard-won gotchas
 
@@ -116,10 +116,16 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   verified against 5 known real parcels before trusting it).
 - Owner names are intentionally never collected in bulk tax-lien data
   (established privacy convention, enforced by
-  `test_owner_names_are_not_collected`-style tests) — Tarrant County's
-  tax-deed collector is the one exception (pulls real owner names from
-  the public Tarrant Appraisal District site), not yet reconciled with
-  this convention.
+  `test_owner_names_are_not_collected`-style tests). Two collectors were
+  found violating it and fixed 2026-08-18: Tarrant County TX (BUG-004,
+  latent — TAD lookups were failing, so no real name had actually
+  published yet) and Florida Putnam/Escambia (BUG-005, **live** — 39
+  published rows had real individual owner names, e.g. from Putnam's own
+  official "Lands Available" list and the FDOR cadastral feed's
+  `OWN_NAME`). Both collectors now hard-code `owner: null` with a
+  regression test guarding it; check any *new* collector's source fields
+  against this convention explicitly, since a source can hand you a name
+  whether or not you asked for it.
 - `gh pr checks` and even `gh pr create`/`gh api` can 503 transiently —
   retry once after a short wait rather than assuming it's broken.
 

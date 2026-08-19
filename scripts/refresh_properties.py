@@ -85,7 +85,9 @@ def tad_enrich(account):
     if len(tail)>=1: out["address"]=tail[0]
     if len(tail)>=2: out["city"]=tail[1]
     if out.get("address") and out.get("city"): out["address"]=f"{out['address']}, {out['city']}, TX"
-    if len(tail)>=3: out["owner"]=tail[2]
+    # Owner names are intentionally never collected in bulk (privacy convention,
+    # see STATUS.md) even though TAD's public results table includes one at
+    # tail[2] -- skip straight to market value.
     if len(tail)>=4:
         mv=num(tail[3])
         if mv is not None: out["market_value"]=mv; out["assessed_value"]=mv

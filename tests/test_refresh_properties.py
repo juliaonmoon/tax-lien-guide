@@ -2,6 +2,7 @@ import json
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,6 +44,42 @@ class PropertiesDatasetTests(unittest.TestCase):
         king_rows = [r for r in self.rows if r["state"] == "WA" and r["county"] == "King"]
         for row in king_rows:
             self.assertEqual(row.get("owner"), "Not aggregated for WA investment screening")
+
+    def test_tarrant_rows_never_carry_a_real_owner_name(self):
+        tarrant_rows = [r for r in self.rows if r["state"] == "TX" and r["county"] == "Tarrant"]
+        for row in tarrant_rows:
+            self.assertIsNone(row.get("owner"))
+
+
+class TadEnrichOwnerNameTests(unittest.TestCase):
+    """Regression test: the Tarrant Appraisal District results table includes
+    a real owner name in its results, but STATUS.md's privacy convention says
+    owner names are never collected in bulk. tad_enrich() must not surface it,
+    even though it's present in the raw HTML it scrapes."""
+
+    def test_owner_column_is_skipped_even_though_present_in_source_html(self):
+        html = """
+        <table>
+          <tr>
+            <td>01234567</td>
+            <td>123 MAIN ST</td>
+            <td>FORT WORTH</td>
+            <td>SMITH JOHN D</td>
+            <td>150,000</td>
+          </tr>
+        </table>
+        """
+
+        class FakeResponse:
+            text = html
+
+        with patch.object(refresher, "get", return_value=FakeResponse()):
+            out, note = refresher.tad_enrich("01234567")
+
+        self.assertNotIn("owner", out)
+        self.assertEqual(out.get("address"), "123 MAIN ST, FORT WORTH, TX")
+        self.assertEqual(out.get("market_value"), 150000.0)
+        self.assertEqual(note, "Enriched from Tarrant Appraisal District")
 
 
 class PriorByCountyFallbackTests(unittest.TestCase):
