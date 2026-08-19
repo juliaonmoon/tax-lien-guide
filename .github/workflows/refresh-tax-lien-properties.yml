@@ -45,9 +45,12 @@ on:
 permissions:
   contents: write
 
+# PR runs are read-only validation and must not queue behind or interfere with
+# production data publishers. Main/scheduled/workflow_run jobs keep the shared
+# serialization lock used by every generated-data writer.
 concurrency:
-  group: tax-lien-guide-data-writes
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('tax-lien-guide-pr-{0}', github.event.pull_request.number) || 'tax-lien-guide-data-writes' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   refresh:
