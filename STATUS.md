@@ -145,9 +145,13 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   still-open parsing shortfall itself). Cause unknown — needs a session
   with real internet access to fetch and inspect the actual current PDF
   against the parser's assumptions; not something to guess at from code
-  alone. Linn County IA (`refresh_iowa_linn_tax_liens_xlsx.py` /
-  `refresh_iowa_linn_tax_liens.py`) has the same never-yet-succeeded
-  status as of this note but no confirmed parsing failure reason.
+  alone. Linn County IA has the same never-yet-succeeded status:
+  confirmed via a real (non-sandboxed) CI run on PR #18, 2026-08-19 —
+  `refresh_iowa_linn_tax_liens_xlsx.py`'s XLSX parser finds 0 rows
+  (`Linn County XLSX parser found only 0 rows; using PDF fallback`), and
+  its PDF fallback (`refresh_iowa_linn_tax_liens.py`) then finds only
+  214 of the expected 1500+ rows. Same "needs a session with real
+  internet access to inspect the live sources" situation as Johnson.
 - **Hillsborough County, FL tax-deed collector** — real, unblocked JSON
   API fully mapped (`POST publicaccess.hillsclerk.com/TD/api/CustomQuery/KeywordSearch`,
   query type `285`). Blocked on one specific question: none of the
