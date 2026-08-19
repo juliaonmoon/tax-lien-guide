@@ -32,6 +32,7 @@ UA = "TaxLienGuideBot/2.7 (public tax-lien research; no access-control bypass)"
 # is offered first and mobile homes last. Real-estate parcel IDs are 11 digits.
 REAL_ESTATE_ITEM_COUNT = 426
 ITEM_RE = re.compile(r"^\s*(\d{1,3})\)\s*(.*)$")
+ITEM_TOKEN_RE = re.compile(r"^(\d{1,3})\)$")
 PARCEL_RE = re.compile(r"\b(\d{11})\b")
 MONEY_RE = re.compile(r"\$\s*([\d,]+(?:\.\d{2})?)")
 DISTRICT_RE = re.compile(r"^\s*\d{5}\s+-\s+")
@@ -49,11 +50,85 @@ def fetch_pdf() -> bytes:
     return response.content
 
 
+def _cluster_positions(values: list[float], tolerance: float = 18.0) -> list[float]:
+    """Cluster x positions for numbered-item starts in the newspaper proof."""
+    if not values:
+        return []
+    groups: list[list[float]] = []
+    for value in sorted(values):
+        if not groups or value - (sum(groups[-1]) / len(groups[-1])) > tolerance:
+            groups.append([value])
+        else:
+            groups[-1].append(value)
+    # Real newspaper columns contain multiple numbered sale items; ignore
+    # isolated numeric tokens that only happen to look like item numbers.
+    return [sum(group) / len(group) for group in groups if len(group) >= 3]
+
+
+def _words_to_lines(words: list[dict], y_tolerance: float = 3.0) -> list[str]:
+    if not words:
+        return []
+    ordered = sorted(words, key=lambda word: (float(word["top"]), float(word["x0"])))
+    lines: list[list[dict]] = []
+    line_tops: list[float] = []
+    for word in ordered:
+        top = float(word["top"])
+        if not lines or abs(top - line_tops[-1]) > y_tolerance:
+            lines.append([word])
+            line_tops.append(top)
+        else:
+            lines[-1].append(word)
+            line_tops[-1] = sum(float(item["top"]) for item in lines[-1]) / len(lines[-1])
+    return [
+        " ".join(str(word["text"]) for word in sorted(line, key=lambda word: float(word["x0"]))).strip()
+        for line in lines
+    ]
+
+
 def extract_lines(raw: bytes) -> list[str]:
+    """Extract Warren's multi-column publication in column reading order.
+
+    Plain ``page.extract_text(layout=False)`` interleaves neighboring newspaper
+    columns and caused the live PR run to recover only 197/426 official real-
+    estate items. Detect the x positions of official ``N)`` item tokens, split
+    each page into those columns, and rebuild each column top-to-bottom before
+    parsing. This only changes geometry/reading order; it does not retain owner
+    or taxpayer names in generated output.
+    """
+    page_lines: list[str] = []
     with pdfplumber.open(io.BytesIO(raw)) as pdf:
-        text = "\n".join(page.extract_text(layout=False) or "" for page in pdf.pages)
-    # Page extraction can glue the next taxpayer/parcel line to the prior
-    # amount. Split before an 11-digit parcel token when it follows other text.
+        for page in pdf.pages:
+            words = page.extract_words(
+                keep_blank_chars=False,
+                use_text_flow=False,
+                x_tolerance=2,
+                y_tolerance=2,
+            ) or []
+            item_x: list[float] = []
+            for word in words:
+                match = ITEM_TOKEN_RE.match(str(word.get("text", "")))
+                if match and 1 <= int(match.group(1)) <= REAL_ESTATE_ITEM_COUNT:
+                    item_x.append(float(word["x0"]))
+            starts = sorted(_cluster_positions(item_x))
+            if not starts:
+                page_lines.extend((page.extract_text(layout=False) or "").splitlines())
+                continue
+
+            boundaries = [0.0]
+            boundaries.extend((starts[index] + starts[index + 1]) / 2 for index in range(len(starts) - 1))
+            boundaries.append(float(page.width))
+            for index in range(len(starts)):
+                left, right = boundaries[index], boundaries[index + 1]
+                column_words = [
+                    word
+                    for word in words
+                    if left <= (float(word["x0"]) + float(word["x1"])) / 2 < right
+                ]
+                page_lines.extend(_words_to_lines(column_words))
+
+    # Extraction can occasionally glue the next taxpayer/parcel line to the
+    # prior amount. Split before a new 11-digit parcel block when that happens.
+    text = "\n".join(page_lines)
     text = re.sub(r"(?<=\d\.\d{2})(?=[A-Z*].*?\b\d{11}\b)", "\n", text)
     return text.splitlines()
 
@@ -63,8 +138,12 @@ def _nearest_parcel(lines: list[str], item_index: int) -> tuple[str | None, bool
 
     Warren marks public-bidder source rows with a leading asterisk on the
     taxpayer/parcel line. The surrounding taxpayer text is never retained.
+    Search backward within the current sale-item block instead of using a fixed
+    four-line window because wrapped legal/publication lines vary by column.
     """
-    for idx in range(item_index - 1, max(-1, item_index - 5), -1):
+    for idx in range(item_index - 1, max(-1, item_index - 20), -1):
+        if ITEM_RE.match(lines[idx]):
+            break
         matches = PARCEL_RE.findall(lines[idx])
         if matches:
             return matches[-1], lines[idx].lstrip().startswith("*")
@@ -92,7 +171,7 @@ def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
 
         description_parts = [match.group(2).strip()]
         amount = None
-        for j in range(i, min(len(lines), i + 10)):
+        for j in range(i, min(len(lines), i + 20)):
             current = line if j == i else lines[j]
             money = MONEY_RE.search(current)
             if money:
