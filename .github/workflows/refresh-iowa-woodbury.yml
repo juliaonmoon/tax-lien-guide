@@ -1,0 +1,91 @@
+name: Refresh Woodbury Iowa tax liens
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/refresh_iowa_woodbury_tax_liens.py"
+      - ".github/workflows/refresh-iowa-woodbury.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tax-lien-guide-data-writes
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install parser dependencies
+        run: pip install requests pdfplumber
+      - name: Refresh Woodbury County property-level tax liens
+        run: python scripts/refresh_iowa_woodbury_tax_liens.py
+      - name: Verify Woodbury coverage and privacy constraints
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          doc = json.loads(Path("data/tax-lien-properties.json").read_text(encoding="utf-8"))
+          rows = [row for row in doc.get("properties", []) if row.get("profile_id") == "IA-Woodbury-2026"]
+          if len(rows) < 1500:
+              raise SystemExit(f"IA-Woodbury-2026: only {len(rows)} rows; expected at least 1500 official real-estate items")
+          if any(any("owner" in str(key).lower() for key in row) for row in rows):
+              raise SystemExit("IA-Woodbury-2026: restricted owner-name field appeared in output")
+          items = [int(row["sale_item_number"]) for row in rows if row.get("sale_item_number")]
+          if items and max(items) > 1569:
+              raise SystemExit("IA-Woodbury-2026: output crossed into mobile-home items")
+          if any(row.get("opening_bid") is not None or row.get("minimum_bid") is not None for row in rows):
+              raise SystemExit("IA-Woodbury-2026: published tax/certificate amounts were misclassified as dollar opening/minimum bids")
+          print(f"Verified {len(rows)} Woodbury real-estate tax-lien rows with owner names omitted.")
+          PY
+      - name: Recount tax lien detail coverage
+        run: python scripts/recount_tax_lien_properties.py
+      - name: Publish Woodbury data safely
+        run: |
+          if git diff --quiet -- data/; then
+            echo "No Woodbury data changes."
+            exit 0
+          fi
+
+          rm -rf /tmp/woodbury-output
+          mkdir -p /tmp/woodbury-output
+          cp -a data /tmp/woodbury-output/data
+
+          git config user.name "tax-deed-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            rm -rf data
+            cp -a /tmp/woodbury-output/data data
+
+            if git diff --quiet -- data/; then
+              echo "Latest main already contains Woodbury output."
+              exit 0
+            fi
+
+            git add data/
+            git commit -m "chore: refresh Woodbury Iowa tax lien data"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Woodbury publish raced with a newer main commit; retrying from latest main (attempt ${attempt}/3)."
+          done
+
+          echo "Unable to publish Woodbury output after 3 safe retries."
+          exit 1
