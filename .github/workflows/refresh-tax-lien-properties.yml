@@ -20,6 +20,7 @@ on:
       - "scripts/refresh_iowa_woodbury_tax_liens.py"
       - "scripts/refresh_iowa_dubuque_tax_liens.py"
       - "scripts/refresh_iowa_warren_tax_liens.py"
+      - "scripts/repair_iowa_warren_textlayer.py"
       - "scripts/enrich_indiana_assessed_values.py"
       - "scripts/recount_tax_lien_properties.py"
       - "tests/test_tax_lien_properties.py"
@@ -85,7 +86,7 @@ jobs:
         continue-on-error: ${{ github.event_name == 'pull_request' }}
         run: python scripts/refresh_iowa_dubuque_tax_liens.py
       - name: Refresh Warren County Iowa property-level tax liens
-        run: python scripts/refresh_iowa_warren_tax_liens.py
+        run: python scripts/repair_iowa_warren_textlayer.py
       - name: Verify Iowa collectors materially populated generated output
         env:
           EVENT_NAME: ${{ github.event_name }}
@@ -106,8 +107,6 @@ jobs:
           }
           blocked_zero_ok = {"IA-Johnson-2026", "IA-Linn-2026"}
           if os.environ.get("EVENT_NAME") == "pull_request":
-              # PR validation must prove the newly changed collector, while known
-              # unrelated live-source/parser gaps must not prevent it from running.
               blocked_zero_ok.update({"IA-Woodbury-2026", "IA-Dubuque-2026"})
           for profile_id, minimum in minimums.items():
               county_rows = [row for row in rows if row.get("profile_id") == profile_id]
