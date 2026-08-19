@@ -60,9 +60,15 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   shared-file caution as above (see BUG-002).
 - `.github/workflows/refresh-tax-lien-properties.yml` (cron 14:37 UTC) and
   `refresh-properties.yml` (cron 13:17 UTC) — daily data refresh +
-  publish. Share concurrency group `tax-lien-guide-data-writes`.
+  publish. Share concurrency group `tax-lien-guide-data-writes`. Every
+  collector step in these shared jobs must be resilient to its own total
+  failure (`continue-on-error: true` + a downstream check that tolerates
+  zero rows for a collector that's never gone live yet) — see BUG-006,
+  where a single brand-new collector's day-zero failure blocked the
+  entire pipeline, including long-established Indiana/Cochise, for 15+
+  consecutive runs.
 - `tests/` — one test module per collector, fixture-based (no live network
-  calls in tests). 55 tests as of 2026-08-18.
+  calls in tests). 61 tests as of 2026-08-19.
 
 ## What works (verified)
 
@@ -131,6 +137,17 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
 
 ## Pending / blocked
 
+- **Johnson County, IA tax liens never actually gone live** —
+  `scripts/refresh_iowa_johnson_tax_liens.py` currently parses only ~159
+  of the expected 700+ real-estate rows from the live PDF (confirmed via
+  GitHub Actions logs, 2026-08-19), so it keeps preserving zero rows
+  (see BUG-006 for the pipeline-blocking fix; this note is about the
+  still-open parsing shortfall itself). Cause unknown — needs a session
+  with real internet access to fetch and inspect the actual current PDF
+  against the parser's assumptions; not something to guess at from code
+  alone. Linn County IA (`refresh_iowa_linn_tax_liens_xlsx.py` /
+  `refresh_iowa_linn_tax_liens.py`) has the same never-yet-succeeded
+  status as of this note but no confirmed parsing failure reason.
 - **Hillsborough County, FL tax-deed collector** — real, unblocked JSON
   API fully mapped (`POST publicaccess.hillsclerk.com/TD/api/CustomQuery/KeywordSearch`,
   query type `285`). Blocked on one specific question: none of the
