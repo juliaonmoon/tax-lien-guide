@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 """Resilient Johnson County, Iowa 2026 tax-sale publication parser.
 
-The county PDF is a newspaper proof and text extraction can separate a taxpayer
-name/parcel line from its numbered sale item.  This parser anchors on the
-official numbered real-estate items (1-799), searches only the preceding item
-boundary for the 10-digit parcel ID, and never stores taxpayer/owner names.
-It stops before the separate MOBILE HOMES section.
+The county source is a multi-column newspaper proof. Plain pdfplumber text
+extraction can interleave columns and was only exposing a fraction of the 799
+official real-estate sale items. This parser reconstructs each page column by
+column from word coordinates, then anchors on numbered items 1-799. It never
+stores taxpayer/owner names and stops before the separate MOBILE HOMES section.
 """
 
 from __future__ import annotations
 
+import io
 import re
 from datetime import date
 
+import pdfplumber
 import requests
 
 from refresh_iowa_johnson_tax_liens import (
@@ -20,12 +22,93 @@ from refresh_iowa_johnson_tax_liens import (
     MONEY,
     PROFILE_ID,
     existing_rows,
-    extract_text,
     fetch_pdf,
     update_details,
 )
 
 PARCEL_ANYWHERE = re.compile(r"\b(\d{10})\b")
+ITEM_TOKEN = re.compile(r"^(\d{1,4})\)$")
+
+
+def _cluster_positions(values: list[float], tolerance: float = 18.0) -> list[float]:
+    """Cluster near-identical x positions used by numbered-item column starts."""
+    if not values:
+        return []
+    groups: list[list[float]] = []
+    for value in sorted(values):
+        if not groups or value - (sum(groups[-1]) / len(groups[-1])) > tolerance:
+            groups.append([value])
+        else:
+            groups[-1].append(value)
+    # Ignore accidental numeric tokens; a real newspaper column has many items.
+    return [sum(group) / len(group) for group in groups if len(group) >= 4]
+
+
+def _words_to_lines(words: list[dict], y_tolerance: float = 3.0) -> list[str]:
+    """Rebuild readable lines from words already restricted to one column."""
+    if not words:
+        return []
+    ordered = sorted(words, key=lambda w: (float(w["top"]), float(w["x0"])))
+    lines: list[list[dict]] = []
+    line_tops: list[float] = []
+    for word in ordered:
+        top = float(word["top"])
+        if not lines or abs(top - line_tops[-1]) > y_tolerance:
+            lines.append([word])
+            line_tops.append(top)
+        else:
+            lines[-1].append(word)
+            line_tops[-1] = sum(float(w["top"]) for w in lines[-1]) / len(lines[-1])
+    return [" ".join(str(w["text"]) for w in sorted(line, key=lambda w: float(w["x0"]))).strip() for line in lines]
+
+
+def extract_text_column_aware(raw: bytes) -> str:
+    """Extract the official newspaper proof in column reading order.
+
+    pdfplumber's default layout=False text extraction sorts primarily by page
+    geometry. On this source that can interleave neighboring newspaper columns,
+    causing only the leftmost numbered items to begin a line. We instead detect
+    column starts from the x positions of the official ``N)`` item tokens and
+    rebuild each column independently from top to bottom.
+    """
+    page_chunks: list[str] = []
+    with pdfplumber.open(io.BytesIO(raw)) as pdf:
+        for page in pdf.pages:
+            words = page.extract_words(
+                keep_blank_chars=False,
+                use_text_flow=False,
+                x_tolerance=2,
+                y_tolerance=2,
+            ) or []
+            item_x = [
+                float(word["x0"])
+                for word in words
+                if ITEM_TOKEN.match(str(word.get("text", "")))
+                and 1 <= int(ITEM_TOKEN.match(str(word["text"])).group(1)) <= 799
+            ]
+            starts = _cluster_positions(item_x)
+            if not starts:
+                page_chunks.append(page.extract_text(layout=False) or "")
+                continue
+
+            starts = sorted(starts)
+            # Midpoints between detected item-start clusters form safe column
+            # boundaries. Include page edges so owner/taxpayer text immediately
+            # before each item stays in the same column for parcel-ID lookup.
+            boundaries = [0.0]
+            boundaries.extend((starts[i] + starts[i + 1]) / 2 for i in range(len(starts) - 1))
+            boundaries.append(float(page.width))
+
+            column_texts: list[str] = []
+            for idx in range(len(starts)):
+                left, right = boundaries[idx], boundaries[idx + 1]
+                column_words = [
+                    word for word in words
+                    if left <= (float(word["x0"]) + float(word["x1"])) / 2 < right
+                ]
+                column_texts.append("\n".join(_words_to_lines(column_words)))
+            page_chunks.append("\n".join(column_texts))
+    return "\n".join(page_chunks)
 
 
 def parse_real_estate_rows_by_item(text: str, verified: str) -> list[dict]:
@@ -46,10 +129,6 @@ def parse_real_estate_rows_by_item(text: str, verified: str) -> list[dict]:
         if not (1 <= item_number <= 799) or item_number in seen_items:
             continue
 
-        # Find the nearest parcel identifier between this item and the prior
-        # numbered item.  Long taxpayer names can cause the parcel ID to be
-        # extracted onto a separate line, so fixed look-behind distances are
-        # unreliable.  We never retain the surrounding taxpayer text.
         parcel = None
         j = item_index - 1
         while j >= 0:
@@ -67,9 +146,6 @@ def parse_real_estate_rows_by_item(text: str, verified: str) -> list[dict]:
         published_total = None
         marker_inside_block = False
 
-        # Read this item's description only until the next numbered item or
-        # the next parcel/taxpayer line.  This prevents owner names from ever
-        # entering the emitted legal description.
         for k in range(item_index, min(item_index + 80, len(lines))):
             candidate = lines[k]
             if k > item_index:
@@ -152,7 +228,7 @@ def parse_real_estate_rows_by_item(text: str, verified: str) -> list[dict]:
 
     rows.sort(key=lambda row: int(row["sale_item_number"]))
     if len(rows) < 700:
-        raise RuntimeError(f"Johnson County item-anchored parser found only {len(rows)} real-estate rows; expected at least 700")
+        raise RuntimeError(f"Johnson County column-aware parser found only {len(rows)} real-estate rows; expected at least 700")
     if any(int(row["sale_item_number"]) > 799 for row in rows):
         raise RuntimeError("Johnson County parser crossed into the mobile-home section")
     if any(any("owner" in str(key).lower() for key in row) for row in rows):
@@ -162,7 +238,7 @@ def parse_real_estate_rows_by_item(text: str, verified: str) -> list[dict]:
 
 def main() -> None:
     try:
-        rows = parse_real_estate_rows_by_item(extract_text(fetch_pdf()), date.today().isoformat())
+        rows = parse_real_estate_rows_by_item(extract_text_column_aware(fetch_pdf()), date.today().isoformat())
     except (requests.RequestException, RuntimeError) as exc:
         prior = existing_rows()
         if not prior:
@@ -175,7 +251,7 @@ def main() -> None:
     update_details(rows)
     print(
         f"Johnson County IA: loaded {len(rows)} official real-estate tax-lien rows "
-        "with item-anchored parser; owner names intentionally omitted"
+        "with column-aware item parser; owner names intentionally omitted"
     )
 
 
