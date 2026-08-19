@@ -60,13 +60,18 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   shared-file caution as above (see BUG-002).
 - `.github/workflows/refresh-tax-lien-properties.yml` (cron 14:37 UTC) and
   `refresh-properties.yml` (cron 13:17 UTC) — daily data refresh +
-  publish. Share concurrency group `tax-lien-guide-data-writes`. Every
-  collector step in these shared jobs must be resilient to its own total
-  failure (`continue-on-error: true` + a downstream check that tolerates
-  zero rows for a collector that's never gone live yet) — see BUG-006,
-  where a single brand-new collector's day-zero failure blocked the
-  entire pipeline, including long-established Indiana/Cochise, for 15+
-  consecutive runs.
+  publish. Share concurrency group `tax-lien-guide-data-writes`. These
+  two workflows duplicate the same Johnson/Linn Iowa steps and a
+  "Verify Iowa ... output" gate almost verbatim — see BUG-006: a
+  brand-new collector's day-zero failure blocked the entire pipeline
+  (Indiana/Cochise included) for 15+ runs; fixed with
+  `continue-on-error: true` + zero-row tolerance, then **deliberately
+  reverted** for `refresh-tax-lien-properties.yml` on 2026-08-19 in
+  favor of hard-blocking publish until Iowa coverage is real (see
+  BUG-006's "Update" section before touching this again — it's an
+  intentional tradeoff tied to active work fixing the Linn/Johnson
+  parsers themselves, not an oversight). As of this note, both
+  workflows still hard-block on Iowa's current 0-row state.
 - `tests/` — one test module per collector, fixture-based (no live network
   calls in tests). 61 tests as of 2026-08-19.
 
@@ -145,13 +150,18 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   still-open parsing shortfall itself). Cause unknown — needs a session
   with real internet access to fetch and inspect the actual current PDF
   against the parser's assumptions; not something to guess at from code
-  alone. Linn County IA has the same never-yet-succeeded status:
-  confirmed via a real (non-sandboxed) CI run on PR #18, 2026-08-19 —
-  `refresh_iowa_linn_tax_liens_xlsx.py`'s XLSX parser finds 0 rows
-  (`Linn County XLSX parser found only 0 rows; using PDF fallback`), and
-  its PDF fallback (`refresh_iowa_linn_tax_liens.py`) then finds only
-  214 of the expected 1500+ rows. Same "needs a session with real
-  internet access to inspect the live sources" situation as Johnson.
+  alone. Linn County IA is improving but still short: a real
+  (non-sandboxed) CI run on PR #18 (2026-08-19, early) found the XLSX
+  parser returning 0 rows and its then-PDF-fallback finding 214 of the
+  1500+ expected; a separate session then shipped
+  `scripts/repair_iowa_linn_pdf_parser.py` (multi-row Excel header
+  recognition + trailing-text tolerance), and a later same-day run
+  (05:13 UTC) shows genuine progress to **524** rows — still short of
+  1500, but real movement, unlike Johnson which is unchanged at 159.
+  See BUG-006's "Update" section: because the Verify step checks
+  Johnson first, Johnson alone is currently the sole blocker for
+  `refresh-tax-lien-properties.yml`'s daily publish, independent of
+  Linn's progress.
 - **Hillsborough County, FL tax-deed collector** — real, unblocked JSON
   API fully mapped (`POST publicaccess.hillsclerk.com/TD/api/CustomQuery/KeywordSearch`,
   query type `285`). Blocked on one specific question: none of the
