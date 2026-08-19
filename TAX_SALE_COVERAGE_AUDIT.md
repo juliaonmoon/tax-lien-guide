@@ -328,6 +328,44 @@ reuse potential), not by state alphabetically:
    `null` for these 39 rows, with regression tests covering both source
    paths.
 
+8d. **Iowa (Johnson/Linn County) property-level tax-lien collectors —
+   real code exists, currently 0 records live, actively being
+   worked on by multiple sessions (2026-08-18/19).** Not yet reflected
+   correctly in `data/project-management.json` until this entry (was a
+   single stale `TL-IA-ALL` "no property collector" row; now split into
+   `TL-IA-JOHNSON` / `TL-IA-LINN`, both `in_progress`).
+
+   Both counties have real collectors (`scripts/repair_iowa_johnson_parser.py`,
+   `scripts/repair_iowa_linn_pdf_parser.py`) wired into both daily
+   workflows, with dedicated test modules
+   (`tests/test_iowa_johnson_tax_liens.py`, `tests/test_iowa_linn_tax_liens.py`).
+   Neither has ever published a single row: both workflows share a hard
+   "Verify Iowa ... output" gate requiring >=700 Johnson rows and >=1500
+   Linn rows before anything (including the long-established Indiana and
+   Cochise data in the same job) is allowed to publish. That gate briefly
+   became a same-blast-radius incident of its own — see BUG-001-class
+   BUG-006 in `BUGS.md` — fixed to tolerate a not-yet-live collector,
+   then **deliberately reverted** by a later commit in favor of "refuse
+   to publish incomplete Iowa data," which is the current, intentional
+   policy. Don't re-litigate that without reading BUG-006's "Update"
+   section first.
+
+   Current verified numbers (checked directly against GitHub Actions
+   logs and `data/tax-lien-properties.json` on `main`, 2026-08-19):
+   Johnson County's parser finds 159 of the ~700+ expected real-estate
+   rows from the official PDF (unchanged across multiple runs — root
+   cause still unknown, needs a session with real internet access to
+   inspect the actual PDF, not guesswork); Linn County genuinely
+   improved from 0 (XLSX)/214 (PDF fallback) to **524** of 1500+
+   expected rows after a same-day parser fix (multi-row Excel header
+   recognition + PDF trailing-text tolerance) — real progress, still
+   short. Because the Verify gate checks Johnson first and raises
+   immediately, **Johnson is currently the sole blocker** for
+   `refresh-tax-lien-properties.yml`'s daily publish, independent of
+   Linn's progress. No data was corrupted at any point — both
+   collectors fail before writing anything, so the failure mode is
+   staleness/non-publication, not incorrect data.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,
