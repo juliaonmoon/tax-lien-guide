@@ -29,6 +29,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_iowa_polk_tax_lien_market.py",
     "scripts/add_iowa_dallas_tax_lien_market.py",
     "scripts/add_iowa_pottawattamie_tax_lien_market.py",
+    "scripts/add_iowa_black_hawk_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -37,6 +38,13 @@ OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 # source has published a rate for the current certificate/sale year.
 REQUIRED_MARKET_RATE_TEXT = {
     "Colorado — Logan County": "14%/yr for 2026 certificate",
+}
+
+# Some public sources permit viewing but explicitly restrict redistribution.
+# Their market row must preserve that safety boundary so a later refactor cannot
+# accidentally turn them into property-level ingestion targets.
+REQUIRED_MARKET_SAFETY_TEXT = {
+    "Iowa — Black Hawk County": "MARKET-LEVEL ONLY",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
@@ -95,6 +103,16 @@ def main() -> None:
                 f"{marker}: expected verified max-return text {expected_rate!r} was overwritten or missing"
             )
 
+    for marker, expected_text in REQUIRED_MARKET_SAFETY_TEXT.items():
+        row = market_row(index_text, marker)
+        if row is None:
+            missing.append(f"cannot validate safety boundary because market row is missing: {marker}")
+            continue
+        if expected_text not in row:
+            missing.append(
+                f"{marker}: required source-redistribution safety text {expected_text!r} is missing"
+            )
+
     if missing:
         raise SystemExit(
             "Post-refresh market durability validation failed:\n- " + "\n- ".join(missing)
@@ -105,6 +123,8 @@ def main() -> None:
         print(f"  OK: {marker}")
     for marker, expected_rate in REQUIRED_MARKET_RATE_TEXT.items():
         print(f"  RATE OK: {marker} -> {expected_rate}")
+    for marker, expected_text in REQUIRED_MARKET_SAFETY_TEXT.items():
+        print(f"  SAFETY OK: {marker} preserves {expected_text!r}")
 
 
 if __name__ == "__main__":
