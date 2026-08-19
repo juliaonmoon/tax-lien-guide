@@ -1,5 +1,33 @@
 # Bug Log & Fixes
-### Last updated: August 18, 2026 (BUG-005)
+### Last updated: August 19, 2026 (BUG-006)
+
+---
+
+## BUG-006 — A brand-new Iowa collector that had never gone live was crashing the entire shared daily data pipeline, blocking Indiana/Cochise/Linn publishing for 15+ consecutive runs
+**Severity:** Critical (same blast-radius class as BUG-001: one collector's problem silently stopped the whole project's daily data refresh from publishing anything, for over a day)
+**Found:** August 19, 2026, while checking GitHub Actions run history after merging the Johnson County parser fix (PR #17) — found the scheduled "Refresh property-level tax liens" workflow had been failing since 2026-08-18T08:29 UTC, including its actual 14:37 UTC daily cron run
+**Affected:** `.github/workflows/refresh-tax-lien-properties.yml`
+**Status:** Fixed
+
+### What happened
+`scripts/refresh_iowa_johnson_tax_liens.py` was recently added to this workflow's steps (no `continue-on-error`), followed by a "Verify Iowa collectors materially populated generated output" step that hard-requires `IA-Johnson-2026` to have >=700 rows and `IA-Linn-2026` to have >=1500 rows, with no exception.
+
+Both `refresh_iowa_johnson_tax_liens.py` and `refresh_iowa_linn_tax_liens.py` already had a fallback-to-prior-data pattern matching BUG-002's convention (`existing_rows()` / preserve on failure) -- but only when prior data exists. Neither county's collector has ever successfully published a single row yet. So every time the live source was unreachable or unparseable (confirmed live: `RuntimeError: Johnson County parser found only 159 real-estate rows; expected at least 700`), `main()`'s fallback found `existing_rows()` empty and re-raised, crashing the job with exit code 1 -- before the Linn step, the Verify step, `recount_tax_lien_properties.py`, the test suite, or the Publish step ever ran. That blocked *every* collector in this shared job, including the long-established, currently-working Indiana and Cochise County data, from being republished. Confirmed via GitHub Actions run history: repeated `failure` conclusions on `push` events from 2026-08-18T08:29 UTC through at least 2026-08-19T01:45 UTC, including the actual `schedule`-triggered 14:37 UTC production run.
+
+No data was corrupted -- the scripts raise before writing anything, and the Publish step (which does a fresh `git reset --hard origin/main` before committing) never ran. The failure mode was staleness (the site's Indiana/Cochise data stopped getting daily refreshes), not incorrect published data.
+
+### Fix
+Two changes to `refresh-tax-lien-properties.yml`, following the same pattern already established for exactly this problem in `refresh-properties.yml` (`core_property_refresh` / `king_public_safety` steps):
+1. Added `continue-on-error: true` to the Johnson and Linn refresh steps, so a failure in either no longer aborts the job.
+2. Changed the "Verify Iowa collectors" step: a profile with **zero** rows now prints a warning and is skipped (not yet live -- expected and acceptable), while a profile with **some but too few** rows (a genuine partial/corrupt parse, like the live 159-row case) still hard-fails as before. Only `if not county_rows: continue` was added; the `len(county_rows) < minimum` regression check is unchanged for any profile that does produce rows.
+
+The underlying question of *why* the Johnson County PDF currently parses to only 159 of the expected 700+ rows is still open -- this fix does not address that, it only stops that open question from taking down the rest of the project's daily data pipeline while it's unresolved. Investigating the live PDF requires an environment with real internet access (this session's did not, see `HANDOFF.md`).
+
+### Files changed
+- `.github/workflows/refresh-tax-lien-properties.yml` -- `continue-on-error: true` on the two Iowa steps; the Verify step tolerates zero rows for a profile that has never gone live.
+
+### Rule for future collectors
+**A brand-new collector that has never had a successful run is a *day-zero* case, not the same as an established collector suddenly losing its data (BUG-002's case) -- both need a fallback, but "fall back to nothing" must never be allowed to abort a shared job that other, already-working collectors depend on.** When adding a new collector to an existing shared workflow: (1) wrap its own step in `continue-on-error: true` if it's genuinely independent of the steps around it, and (2) any downstream validation step with a hard minimum-row-count requirement must explicitly tolerate zero rows for a profile that has no baseline yet, while still failing hard on a non-zero-but-implausibly-low count (that's a real parsing regression, not a pending launch).
 
 ---
 
