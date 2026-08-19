@@ -11,6 +11,7 @@ on:
       - ".github/workflows/ensure-post-refresh-tax-liens.yml"
       - "scripts/validate_post_refresh_market_durability.py"
       - "scripts/add_iowa_dallas_tax_lien_market.py"
+      - "scripts/add_iowa_pottawattamie_tax_lien_market.py"
 
 permissions:
   contents: write
@@ -53,6 +54,7 @@ jobs:
           python scripts/add_florida_putnam_tax_lien_market.py
           python scripts/add_iowa_polk_tax_lien_market.py
           python scripts/add_iowa_dallas_tax_lien_market.py
+          python scripts/add_iowa_pottawattamie_tax_lien_market.py
           python scripts/add_max_return_rates.py
           python scripts/add_tax_lien_county_filter.py
           python scripts/recount_tax_lien_properties.py
