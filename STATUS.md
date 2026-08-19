@@ -142,15 +142,22 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
 
 ## Pending / blocked
 
-- **Johnson County, IA tax liens never actually gone live** —
-  `scripts/refresh_iowa_johnson_tax_liens.py` currently parses only ~159
-  of the expected 700+ real-estate rows from the live PDF (confirmed via
-  GitHub Actions logs, 2026-08-19), so it keeps preserving zero rows
-  (see BUG-006 for the pipeline-blocking fix; this note is about the
-  still-open parsing shortfall itself). Cause unknown — needs a session
-  with real internet access to fetch and inspect the actual current PDF
-  against the parser's assumptions; not something to guess at from code
-  alone. Linn County IA is improving but still short: a real
+- **Johnson County, IA tax liens never actually gone live, and the source
+  itself is now blocked** — `scripts/repair_iowa_johnson_parser.py`
+  currently parses only ~159 of the expected 700+ real-estate rows from
+  the live PDF (confirmed via GitHub Actions logs, 2026-08-19), so it
+  keeps preserving zero rows (see BUG-006 for the pipeline-blocking fix;
+  this note is about the parsing shortfall itself). A session with real
+  internet access confirmed 2026-08-19 that `johnsoncountyiowa.gov` now
+  returns an interactive Cloudflare challenge (HTTP 403) sitewide —
+  curl, WebFetch, a real Chrome browser, and GitHub Actions itself all
+  get the same block, which appeared between two runs today after two
+  different parser versions each successfully fetched the real PDF and
+  both landed on exactly 159 rows. The 159-vs-700+ question is
+  unanswerable until the block lifts; do not guess at a parser fix
+  without a live fetch. See BUGS.md BUG-006's 2026-08-19 afternoon
+  update. `data/project-management.json`'s `TL-IA-JOHNSON` row is now
+  marked `blocked`. Linn County IA is improving but still short: a real
   (non-sandboxed) CI run on PR #18 (2026-08-19, early) found the XLSX
   parser returning 0 rows and its then-PDF-fallback finding 214 of the
   1500+ expected; a separate session then shipped

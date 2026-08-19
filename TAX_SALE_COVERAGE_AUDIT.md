@@ -353,18 +353,40 @@ reuse potential), not by state alphabetically:
    Current verified numbers (checked directly against GitHub Actions
    logs and `data/tax-lien-properties.json` on `main`, 2026-08-19):
    Johnson County's parser finds 159 of the ~700+ expected real-estate
-   rows from the official PDF (unchanged across multiple runs — root
-   cause still unknown, needs a session with real internet access to
-   inspect the actual PDF, not guesswork); Linn County genuinely
-   improved from 0 (XLSX)/214 (PDF fallback) to **524** of 1500+
-   expected rows after a same-day parser fix (multi-row Excel header
-   recognition + PDF trailing-text tolerance) — real progress, still
-   short. Because the Verify gate checks Johnson first and raises
-   immediately, **Johnson is currently the sole blocker** for
+   rows from the official PDF (unchanged across two different parser
+   versions and two independent live fetches, 05:13 and 06:29 UTC);
+   Linn County genuinely improved from 0 (XLSX)/214 (PDF fallback) to
+   **524** of 1500+ expected rows after a same-day parser fix (multi-row
+   Excel header recognition + PDF trailing-text tolerance) — real
+   progress, still short. Because the Verify gate checks Johnson first
+   and raises immediately, **Johnson is currently the sole blocker** for
    `refresh-tax-lien-properties.yml`'s daily publish, independent of
    Linn's progress. No data was corrupted at any point — both
    collectors fail before writing anything, so the failure mode is
    staleness/non-publication, not incorrect data.
+
+   **2026-08-19 afternoon update — the Johnson County source itself is
+   now blocked, superseding the parsing investigation for now.** A
+   session with real, unrestricted internet access set out to fetch the
+   live PDF and compare its structure to the parser's assumptions, and
+   found `johnsoncountyiowa.gov` now returns an interactive Cloudflare
+   challenge (HTTP 403) for every request — the PDF, the treasurer page,
+   the bare homepage, even `robots.txt` — confirmed via `curl`, `WebFetch`,
+   and a real (non-headless-flagged) Chrome browser driven by Playwright.
+   GitHub Actions run logs confirm this is new and sitewide, not specific
+   to this session: the 06:29 UTC run still fetched the real PDF fine
+   (159 rows, pre-column-rewrite parser); the very next run at 07:18 UTC
+   failed with `requests.exceptions.HTTPError: 403 Client Error:
+   Forbidden` on `fetch_pdf()` before extracting anything. The
+   column-aware coordinate-based rewrite (`repair_iowa_johnson_parser.py`
+   at commit `7dad1a9`) has therefore never actually been tested against
+   real data — its first live run hit this new wall. No Wayback Machine
+   snapshot of the PDF exists to substitute. Per the standing "don't
+   fabricate or infer without live evidence" rule, no parser change was
+   made; `TL-IA-JOHNSON` in `data/project-management.json` was set to
+   `status: "blocked"`. Full detail in `BUGS.md` BUG-006's matching
+   2026-08-19 afternoon update. Next session: recheck the site (a plain
+   `curl` to the homepage is enough) before re-attempting anything here.
 
 ## 8. Relationship to `data/project-management.json`
 
