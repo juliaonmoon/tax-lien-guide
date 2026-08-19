@@ -36,26 +36,6 @@ def fetch_xlsx() -> bytes:
     return response.content
 
 
-def _find_header(rows: list[list[str]]) -> tuple[int, dict[str, int]]:
-    for idx, row in enumerate(rows[:80]):
-        lowered = [cell.lower() for cell in row]
-        columns: dict[str, int] = {}
-        for col, cell in enumerate(lowered):
-            if not cell:
-                continue
-            if "parcel" in cell and "parcel" not in columns:
-                columns["parcel"] = col
-            if ("legal" in cell or "description" in cell) and "legal" not in columns:
-                columns["legal"] = col
-            if (cell in {"item", "item #", "item no", "number", "no."} or "item number" in cell) and "item" not in columns:
-                columns["item"] = col
-            if any(token in cell for token in ("total", "amount due", "tax sale amount", "delinquent amount")):
-                columns["amount"] = col
-        if "parcel" in columns and "amount" in columns:
-            return idx, columns
-    raise RuntimeError("Linn County XLSX headers were not recognized safely")
-
-
 def _parcel(value) -> str | None:
     text = _text(value).replace("-", "").replace(" ", "")
     if PARCEL_RE.fullmatch(text):
@@ -65,6 +45,87 @@ def _parcel(value) -> str | None:
         if PARCEL_RE.fullmatch(candidate):
             return candidate
     return None
+
+
+def _find_header(rows: list[list[str]]) -> tuple[int, dict[str, int]]:
+    """Resolve split/merged spreadsheet headers without touching owner-name data.
+
+    Linn County's CivicPlus workbook can render a logical column heading across
+    multiple worksheet rows.  The old parser required "parcel" and "total" to
+    appear on the same physical row, which caused a valid workbook to produce
+    zero records.  Find the first actual parcel row, then combine only the
+    preceding header-band text vertically per column.
+    """
+    if not rows:
+        raise RuntimeError("Linn County XLSX workbook is empty")
+
+    data_start = None
+    parcel_candidates: dict[int, int] = {}
+    scan_limit = min(len(rows), 160)
+    for ridx, row in enumerate(rows[:scan_limit]):
+        for col, cell in enumerate(row):
+            if _parcel(cell):
+                parcel_candidates[col] = parcel_candidates.get(col, 0) + 1
+                if data_start is None:
+                    data_start = ridx
+
+    if data_start is None or not parcel_candidates:
+        raise RuntimeError("Linn County XLSX contains no recognizable parcel rows")
+
+    parcel_col = max(parcel_candidates, key=parcel_candidates.get)
+    header_start = max(0, data_start - 30)
+    width = max((len(row) for row in rows[header_start:data_start]), default=0)
+    combined: list[str] = []
+    for col in range(width):
+        parts: list[str] = []
+        for row in rows[header_start:data_start]:
+            if col >= len(row):
+                continue
+            text = row[col].strip().lower()
+            if text and text not in parts:
+                parts.append(text)
+        combined.append(" ".join(parts))
+
+    columns: dict[str, int] = {"parcel": parcel_col}
+    for col, label in enumerate(combined):
+        if not label:
+            continue
+        if "legal" in label or "description" in label:
+            columns.setdefault("legal", col)
+        if (
+            label in {"item", "item #", "item no", "number", "no."}
+            or "item number" in label
+            or "sale item" in label
+        ):
+            columns.setdefault("item", col)
+        if any(token in label for token in ("total", "amount due", "tax sale amount", "delinquent amount")):
+            columns.setdefault("amount", col)
+
+    # Some CivicPlus exports leave the item heading blank/merged. Infer only
+    # the item column from the first three columns when its values are a clean
+    # 1..1568 sequence. This does not inspect or retain taxpayer/owner names.
+    if "item" not in columns:
+        best_col = None
+        best_hits = 0
+        for col in range(min(3, width)):
+            hits = 0
+            for row in rows[data_start : min(len(rows), data_start + 120)]:
+                if col >= len(row):
+                    continue
+                m = re.fullmatch(r"(\d{1,4})\.?", row[col].strip())
+                if m and 1 <= int(m.group(1)) <= 1568:
+                    hits += 1
+            if hits > best_hits:
+                best_col, best_hits = col, hits
+        if best_col is not None and best_hits >= 5:
+            columns["item"] = best_col
+
+    if "amount" not in columns:
+        raise RuntimeError(
+            "Linn County XLSX amount/total column was not recognized safely; "
+            f"header labels seen: {combined[:20]}"
+        )
+    return data_start - 1, columns
 
 
 def parse_xlsx(raw: bytes, verified: str) -> list[dict]:
