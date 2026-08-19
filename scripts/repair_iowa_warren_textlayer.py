@@ -4,14 +4,15 @@
 The county publication has multiple usable text-layer interpretations. Prefer a
 single complete interpretation, but when each is incomplete, reconstruct the
 official 1-426 real-estate set item-by-item across independent extractors. A
-candidate is accepted only when its parcel, amount, and public-bidder status do
-not conflict across strategies. Owner/taxpayer names remain intentionally
-excluded by the shared Warren parser.
+candidate is accepted only when at least two extraction strategies agree on the
+parcel, amount, and public-bidder status. Owner/taxpayer names remain
+intentionally excluded by the shared Warren parser.
 """
 from __future__ import annotations
 
 import io
 import re
+from collections import Counter
 from datetime import date
 
 import pdfplumber
@@ -120,16 +121,28 @@ def _merge_item_candidates(strategy_lines: list[tuple[str, list[str]]], verified
             missing.append(item_number)
             continue
 
-        signatures = {_candidate_signature(row) for _, row in candidates}
-        if len(signatures) != 1:
+        # Multi-column extraction can attach a neighboring dollar amount to the
+        # correct parcel in one text interpretation. Requiring *all* extractors
+        # to agree made those known layout artifacts veto otherwise corroborated
+        # official data. Accept only an exact signature that is supported by at
+        # least two strategies and has strictly more support than any alternative.
+        # This is still fail-closed: a lone interpretation or a tie remains a
+        # conflict and cannot be published.
+        signatures = [_candidate_signature(row) for _, row in candidates]
+        counts = Counter(signatures)
+        ranked = counts.most_common()
+        winner, support = ranked[0]
+        runner_up = ranked[1][1] if len(ranked) > 1 else 0
+        if support < 2 or support <= runner_up:
             conflicts.append(item_number)
             details = "; ".join(f"{label}={_candidate_signature(row)}" for label, row in candidates)
-            print(f"Warren County IA: conflicting official text-layer interpretations for item {item_number}: {details}")
+            print(f"Warren County IA: unresolved official text-layer interpretations for item {item_number}: {details}")
             continue
 
-        # When key facts agree, prefer the candidate with the most complete legal
-        # description. This affects only public legal-description text, never owner data.
-        chosen = max(candidates, key=lambda pair: len(str(pair[1].get("legal_description") or "")))[1]
+        corroborated = [(label, row) for label, row in candidates if _candidate_signature(row) == winner]
+        # When key facts agree, prefer the corroborated candidate with the most
+        # complete public legal description. Owner/taxpayer text is never emitted.
+        chosen = max(corroborated, key=lambda pair: len(str(pair[1].get("legal_description") or "")))[1]
         merged.append(chosen)
 
     if missing or conflicts:
@@ -163,7 +176,6 @@ def main() -> None:
         ("pdfplumber geometry fallback", lambda: warren.extract_lines(raw)),
     ]
 
-    failures: list[str] = []
     extracted: list[tuple[str, list[str]]] = []
     for label, extractor in strategies:
         lines = extractor()
@@ -171,7 +183,6 @@ def main() -> None:
         try:
             rows = warren.parse_real_estate_rows(lines, verified)
         except RuntimeError as exc:
-            failures.append(f"{label}: {exc}")
             print(f"Warren County IA: {label} incomplete; retaining it for item-level reconciliation. Reason: {exc}")
             continue
         warren.update_details(rows)
