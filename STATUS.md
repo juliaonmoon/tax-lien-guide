@@ -179,8 +179,10 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   status-to-availability mapping before writing a parser — full detail in
   `TAX_SALE_COVERAGE_AUDIT.md` §7, item 7.
 - **Hamilton County, IN** — 2026 tax sale list not yet published as of
-  2026-08-18 (was promised "mid-August"). Check again in a week or two;
-  same generic `indiana_ad_rows()` parser should work once it's out.
+  2026-08-19 (was promised "mid-August"; live-confirmed via `curl` against
+  `secure2.hamiltoncounty.in.gov/taxsale/`, which 503s with a "Tax Sale
+  Listing Coming 2026" placeholder). Check again in a week or two; same
+  generic `indiana_ad_rows()` parser should work once it's out.
 - **Montgomery County, IN** — page returns HTTP 403. Not pursued further.
 - **Arizona statewide assessor enrichment** — no equivalent to Indiana's
   DLGF Gateway exists; Cochise/Coconino's own GIS/open-data sites are

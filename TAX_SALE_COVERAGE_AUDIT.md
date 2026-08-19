@@ -213,6 +213,14 @@ reuse potential), not by state alphabetically:
    Checked 2026-08-18: Hamilton County's 2026 list still isn't published
    ("mid-August" came and went) — check again in a week or two. Montgomery
    County's page returns HTTP 403.
+
+   Checked again 2026-08-19 (live `curl`, real network access): still not
+   published — `secure2.hamiltoncounty.in.gov/taxsale/` (the actual data
+   host behind `hamiltoncounty.in.gov/taxsale`'s redirect) returns HTTP 503
+   with a static placeholder page titled *"Tax Sale Listing Coming 2026"*
+   and body text *"...2026 is not available."* Not a transient error — a
+   deliberate placeholder with `Retry-After: 3600`. Check again in another
+   1-2 weeks.
 3. ~~Assessor/GIS enrichment for the existing 755 non-Cochise tax-lien
    records~~ — **done 2026-08-17.** `scripts/enrich_indiana_assessed_values.py`
    pulls the official DLGF "Real Property" fixed-width file for each of the
@@ -308,6 +316,33 @@ reuse potential), not by state alphabetically:
    Same constraint applied to rechecking whether Hamilton County IN's 2026
    list has been published. Both remain open for a session with broader
    network access.
+
+   Checked again 2026-08-19 (this session's environment does have general
+   egress, confirmed via `curl`): still blocked, but with one incremental,
+   authoritative confirmation — `publicaccess.hillsclerk.com` runs on
+   Hyland OnBase Public Access (`/_obpa/` client assets), and that
+   platform's own `GetQueryDefinition` API returns an `Instructions` string
+   for QueryID 285 written by the county itself: *"To search for a
+   complete list of Tax Deeds Lands Available use a start and end date
+   with a 3 year span."* This confirms (from the source's own metadata,
+   not just the query's name) that 285 is genuinely the right query — but
+   it says nothing about which `Case Status` value marks a specific row as
+   *currently* available. Tried several guesses at a keyword-metadata
+   endpoint that might expose a status legend/dropdown
+   (`GetKeywordValues`, `GetKeywords`, `GetKeywordList`,
+   `GetKeywordDefinitions` for QueryID 285) — all either 404'd or fell
+   back to the same generic document-type list, not a status enum. The
+   OnBase client JS (`obpa_app.js`) is generic/vendor-side, no
+   Hillsborough-specific status strings baked in. `hillsborough.realtaxdeed.com`
+   (the county's separate RealAuction auction site, also linked from
+   hillsclerk.com/taxdeeds) is a JS-rendered SPA that returns nothing
+   useful to a plain fetch — would need an actual interactive browser
+   session to drive its search UI and read the rendered status labels,
+   which this session didn't have (browser extension not connected).
+   **Still not resolved. Next attempt needs either a working interactive
+   browser session against this exact site, or a direct answer from the
+   Clerk's office** — do not guess a status→availability mapping from
+   field names alone.
 
 8b. ~~Tarrant County tax-deed collector was scraping real owner names from
    the Tarrant Appraisal District into the published `owner` field~~ —
