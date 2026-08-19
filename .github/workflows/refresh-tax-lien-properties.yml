@@ -19,12 +19,14 @@ on:
       - "scripts/repair_iowa_linn_pdf_parser.py"
       - "scripts/refresh_iowa_woodbury_tax_liens.py"
       - "scripts/refresh_iowa_dubuque_tax_liens.py"
+      - "scripts/refresh_iowa_warren_tax_liens.py"
       - "scripts/enrich_indiana_assessed_values.py"
       - "scripts/recount_tax_lien_properties.py"
       - "tests/test_tax_lien_properties.py"
       - "tests/test_iowa_johnson_tax_liens.py"
       - "tests/test_iowa_linn_tax_liens.py"
       - "tests/test_iowa_woodbury_tax_liens.py"
+      - "tests/test_iowa_warren_tax_liens.py"
       - "tests/test_enrich_indiana_assessed_values.py"
       - "tax-lien-properties.html"
       - "calendar.html"
@@ -80,6 +82,8 @@ jobs:
         run: python scripts/refresh_iowa_woodbury_tax_liens.py
       - name: Refresh Dubuque County Iowa property-level tax liens
         run: python scripts/refresh_iowa_dubuque_tax_liens.py
+      - name: Refresh Warren County Iowa property-level tax liens
+        run: python scripts/refresh_iowa_warren_tax_liens.py
       - name: Verify Iowa collectors materially populated generated output
         run: |
           python - <<'PY'
@@ -93,6 +97,7 @@ jobs:
               "IA-Linn-2026": 1500,
               "IA-Woodbury-2026": 1500,
               "IA-Dubuque-2026": 576,
+              "IA-Warren-2026": 426,
           }
           blocked_zero_ok = {"IA-Johnson-2026", "IA-Linn-2026"}
           for profile_id, minimum in minimums.items():
@@ -119,6 +124,9 @@ jobs:
           dubuque_items = sorted(int(row["sale_item_number"]) for row in rows if row.get("profile_id") == "IA-Dubuque-2026" and row.get("sale_item_number"))
           if dubuque_items and dubuque_items != list(range(1, 577)):
               raise SystemExit("IA-Dubuque-2026: generated output is not the complete official real-estate item set 1-576")
+          warren_items = sorted(int(row["sale_item_number"]) for row in rows if row.get("profile_id") == "IA-Warren-2026" and row.get("sale_item_number"))
+          if warren_items != list(range(1, 427)):
+              raise SystemExit("IA-Warren-2026: generated output is not the complete official real-estate item set 1-426")
           print("Verified Iowa property-level lien output thresholds and safety constraints.")
           PY
       - name: Recount lien and combined website coverage
