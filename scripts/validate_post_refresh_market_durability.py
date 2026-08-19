@@ -30,6 +30,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_iowa_dallas_tax_lien_market.py",
     "scripts/add_iowa_pottawattamie_tax_lien_market.py",
     "scripts/add_iowa_black_hawk_tax_lien_market.py",
+    "scripts/add_iowa_story_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -40,11 +41,13 @@ REQUIRED_MARKET_RATE_TEXT = {
     "Colorado — Logan County": "14%/yr for 2026 certificate",
 }
 
-# Some public sources permit viewing but explicitly restrict redistribution.
-# Their market row must preserve that safety boundary so a later refactor cannot
-# accidentally turn them into property-level ingestion targets.
+# Some public sources permit viewing but explicitly restrict redistribution or
+# do not expose a verified machine-readable parcel list. Their market rows must
+# preserve that safety boundary so a later refactor cannot accidentally turn
+# them into unsupported property-level ingestion targets.
 REQUIRED_MARKET_SAFETY_TEXT = {
     "Iowa — Black Hawk County": "MARKET-LEVEL ONLY",
+    "Iowa — Story County": "MARKET-LEVEL ONLY",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
