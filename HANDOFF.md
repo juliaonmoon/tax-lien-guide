@@ -2,93 +2,100 @@
 
 ## ⚡ In-flight work
 
-**Clean stop.** No collector or fix is mid-implementation. This session
-started by re-reading `STATUS.md`/`HANDOFF.md`, then discovered its
-environment had no general internet egress (only GitHub reachable —
-confirmed via a direct `curl` 403 on the CONNECT tunnel, `WebFetch`/`WebSearch`-driven
-page fetches to non-GitHub domains failed the same way), which ruled out
-the two obvious next steps from the prior handoff (resolving the
-Hillsborough status-mapping blocker, rechecking Hamilton County IN's tax
-sale list) — both need live fetches against county/state government sites.
+**Clean stop.** No collector or fix is mid-implementation.
 
-Pivoted to something verifiable without network access: fixed BUG-004
-(`BUGS.md`) — `scripts/refresh_properties.py`'s `tad_enrich()` was scraping
-a real owner name from the Tarrant Appraisal District into the published
-`owner` field, contradicting the repo's documented "owner names never
-collected in bulk" convention. This was flagged as a known-but-unreconciled
-gap in the previous `STATUS.md`. Fixed by dropping the owner-column
-extraction; added two regression tests (`tests/test_refresh_properties.py`)
-including one that feeds `tad_enrich()` a fixture HTML row with a real name
-in the owner-column position and asserts it never comes out.
+This session picked up from the prior handoff's two open items — both
+needed live internet beyond GitHub, which the prior (cloud) session's
+environment didn't have. This session's environment (Windows local clone)
+does — confirmed via `curl` to example.com (200) before relying on it.
 
-Committed, pushed, and opened **PR #13**
-(`claude/tax-lien-guide-handoff-990v3q` → `main`), then subscribed to its
-CI/review activity. While CI was running, audited the rest of `scripts/`
-for the same `"owner"` pattern and found a second, worse instance: BUG-005
-— `scripts/refresh_florida_tax_deeds.py` was **actually publishing** real
-individual owner names for all 39 live Putnam/Escambia rows (not just
-latently capable of it like BUG-004), sourced from Putnam's own official
-"Lands Available" list text and the FDOR cadastral feed's `OWN_NAME`. Fixed
-the same way — `owner` now always `null`, four new regression tests in
-`tests/test_florida_tax_deeds.py` — and additionally cleared the `owner`
-field on the 39 already-published rows in `data/properties.json` (targeted
-values-only edit). Pushed as a second commit onto the same branch/PR #13.
+1. **Hillsborough County FL status-mapping question** — made incremental
+   progress but still blocked. Confirmed via the site's own OnBase
+   (`/_obpa/`) API metadata that QueryID 285 really is the "Lands
+   Available" query (the vendor's own `Instructions` field for that query
+   says so explicitly), but found no endpoint exposing a Case Status
+   legend/dropdown, and `hillsborough.realtaxdeed.com` (the county's
+   RealAuction site) is a JS SPA that returns nothing to a plain fetch —
+   would need a real interactive browser session to drive its UI and read
+   rendered labels. The Claude-in-Chrome browser extension was not
+   connected this session (tried, got "extension is not connected"), so
+   that avenue wasn't available either. **Next attempt needs either a
+   working interactive browser session against this exact site, or a
+   direct answer from the Clerk's office** — do not guess a status →
+   availability mapping from field names alone. Full detail added to
+   `TAX_SALE_COVERAGE_AUDIT.md` §7 item 7.
 
-Full suite is 55/55 (was 49/49 at session start). Also updated
-`STATUS.md`, `TAX_SALE_COVERAGE_AUDIT.md` (§7 items 8b/8c), and
-`data/project-management.json`'s `TD-TX-TARRANT`/`TD-FL-PUTNAM`/
-`TD-FL-ESCAMBIA` notes per the standing conventions.
+2. **Hamilton County IN 2026 list** — rechecked live, still not published.
+   `secure2.hamiltoncounty.in.gov/taxsale/` returns HTTP 503 with a
+   placeholder page ("Tax Sale Listing Coming 2026"). Posted an update to
+   the existing tracking issue (#6) rather than just noting it locally.
+   Recheck again in 1-2 weeks.
 
-**Check PR #13's current state before doing anything else** —
-`https://github.com/juliaonmoon/tax-lien-guide/pull/13`. This session
-subscribed to its activity and scheduled a ~1hr self-check-in
-(`send_later`), so it may already be merged, may have review comments to
-address, or may still be waiting; don't assume based on this file alone.
+3. **Swept `scripts/` for the BUG-004/BUG-005 owner-name privacy
+   pattern** (real owner/taxpayer names leaking into published data).
+   Clean — no new violations. The newer Iowa collectors (Linn, Johnson,
+   Dubuque, Woodbury), added by other sessions since the last handoff,
+   already build in the exclusion proactively, and Johnson/Dubuque/
+   Woodbury even have a runtime guard that raises if an owner/taxpayer key
+   appears in an output row. King County's enrichment scripts were also
+   checked specifically (per the prior handoff's flag) — clean, they only
+   pull parcel/value/zoning fields from King County's "...and Ownership
+   Information" open-data layer, never the ownership fields themselves.
 
-Next concrete step after that: same as the prior handoff's still-open
-items — resolve the Hillsborough status-mapping question with real
-evidence, or check whether Hamilton County IN's list has been published —
-but only from a session/environment with actual internet access beyond
-GitHub. Worth checking your own environment's egress with a quick `curl`
-before assuming those are reachable. Also worth another pass over the
-remaining `scripts/` files (King County enrichment/fix scripts especially)
-for the same class of privacy-convention gap, in case BUG-004/BUG-005
-weren't the only two.
+All three findings shipped as a docs-only PR (#24, merged to `main`,
+squashed). No collector code touched, so the existing 62/62 test suite
+was unaffected (confirmed green both before and after this session's pull
+of `main`, which had moved: new Iowa Woodbury/Dubuque/Black Hawk/Story
+County work landed from other sessions in between).
+
+**Noticed but did not touch** — a draft PR #23 ("Add Warren County Iowa
+property-level tax liens", branch `agent/add-warren-iowa-tax-liens`) is
+in flight from another session. Per the standing concurrent-work
+convention, left it alone; didn't check it for overlap since this
+session's own changes were docs-only and unrelated to Iowa collector code.
+Also open: issue #16 (Scott County IA — official XLSX list blocked by
+HTTP 403), not investigated this session.
+
+Next concrete step: none picked yet. Candidates, roughly in order of
+being unblocked already vs. needing new groundwork:
+- Recheck Hamilton County IN and the Hillsborough status question in
+  1-2 weeks (both have a natural due date, not urgent now).
+- Check in on PR #23 (Warren County IA) if it's still open next session —
+  it's another session's work, just worth knowing whether it merged
+  clean.
+- Pick a `not_started` state from `data/source-registry.json` (28
+  remain) for net-new collector research — open-ended, no specific one
+  chosen yet.
 
 ## ❓ Open decisions
 
-None pending. The user said "keep going" / "you decide" for backlog
-prioritization generally — no specific open question is blocking work.
+None pending. Standing "keep going / you decide" authorization for
+backlog prioritization still applies — no specific open question is
+blocking work.
 
 ## 🆕 New gotchas this session
 
-- **Not every session/environment running this project has general
-  internet access.** This one only reached GitHub (its network policy);
-  `curl` to `example.com` and `www.google.com` both got a 403 on the
-  CONNECT tunnel, same as the actual government sites this project's
-  collectors need. If live research against an external site is the next
-  task, verify egress first (`curl -sS -o /dev/null -w "%{http_code}\n"
-  https://example.com`) rather than assuming it'll work — this project's
-  own collector scripts only ever actually run inside GitHub Actions
-  (which does have full internet), not necessarily inside whatever session
-  is editing them.
-- BUG-004/BUG-005 (see `BUGS.md`) are a reminder that "not yet reconciled
-  with convention" callouts in `STATUS.md` are real open bugs, not just
-  notes — worth treating them as backlog items even when there's no live
-  network to do "real" collector work. They're also a reminder that a
-  known violation in one collector is worth grepping the rest of `scripts/`
-  for immediately — BUG-005 (Florida, live, 39 real names actually
-  published) was strictly worse than BUG-004 (Tarrant, latent) and was
-  only found by checking whether the same mistake had been made elsewhere.
+- The Claude-in-Chrome browser extension was not connected in this
+  session (Windows local clone), which blocked the one research avenue
+  that most likely would have resolved the Hillsborough status-mapping
+  question (driving the RealAuction JS SPA's actual search UI). Worth
+  checking extension connectivity early if that's the next task picked
+  up, rather than rediscovering the same dead end via plain `curl`/
+  WebFetch against JS-rendered pages.
+- Hillsborough's public-records platform is Hyland OnBase Public Access
+  (`/_obpa/` client assets) — useful to know if another OnBase-based FL
+  clerk site needs the same kind of investigation later; the generic
+  client JS carries no county-specific data, all of that is server-side/
+  API-driven.
 
 ## 📁 Project path
 
-This session's working directory is `/home/user/tax-lien-guide` (a Claude
-Code web/cloud session, not the Windows local clone `C:\Users\jules\tax-lien-guide`
-referenced in earlier handoffs — both are valid clones of the same GitHub
-repo, just from different sessions/machines).
+`C:\Users\jules\tax-lien-guide\` (Windows local clone). This session had
+full internet egress (unlike some cloud sessions — always verify with a
+quick `curl` before assuming either way).
 
 ## 📜 Transcript path
 
-Not applicable to this session (cloud/remote execution, no local
-`~/.claude/projects/` transcript file).
+`C:\Users\jules\.claude\projects\C--Users-jules\` (this machine's local
+Claude Code transcript directory) — exact session file not recorded here;
+grep by date (2026-08-19) if exact wording is ever needed.
