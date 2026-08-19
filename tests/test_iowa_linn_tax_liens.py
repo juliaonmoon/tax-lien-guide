@@ -1,10 +1,14 @@
+import io
 import sys
 import unittest
 from pathlib import Path
 
+from openpyxl import Workbook
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import refresh_iowa_linn_tax_liens as linn  # noqa: E402
+import refresh_iowa_linn_tax_liens_xlsx as linn_xlsx  # noqa: E402
 
 
 SAMPLE = """Real Estate
@@ -30,7 +34,6 @@ Park: MHP79 - Vernon Village....................................................
 
 class LinnParserTests(unittest.TestCase):
     def test_parser_keeps_real_estate_and_excludes_mobile_homes(self):
-        original_threshold = None
         # The production parser intentionally enforces >=1500 rows. Exercise its
         # parsing logic on a synthetic sample by padding real-estate items.
         text = SAMPLE
@@ -52,6 +55,27 @@ class LinnParserTests(unittest.TestCase):
         match = linn.ITEM.match("10. SOME NAME 152137800100000")
         self.assertIsNotNone(match)
         self.assertIsNone(linn.ITEM.match("1569. MOBILE NAME 112000HDC412621A"))
+
+    def test_xlsx_parser_accepts_split_multirow_headers(self):
+        wb = Workbook()
+        ws = wb.active
+        ws.append(["2026 Tax Sale Publication", "", "", ""])
+        ws.append(["Sale", "Parcel", "Legal", "Tax Sale"])
+        ws.append(["Item Number", "Number", "Description", "Amount Due"])
+        for n in range(1, 1569):
+            ws.append([n, f"{n:015d}", f"LOT {n}", float(n) + 0.25])
+        ws.append(["", "", "Mobile Homes Offered for Sale", ""])
+        ws.append([1569, "112000HDC412621A", "MOBILE HOME", 105.0])
+        raw = io.BytesIO()
+        wb.save(raw)
+
+        rows = linn_xlsx.parse_xlsx(raw.getvalue(), "2026-08-18")
+        self.assertEqual(len(rows), 1568)
+        self.assertEqual(rows[0]["sale_item_number"], "1")
+        self.assertEqual(rows[0]["parcel_id"], "000000000000001")
+        self.assertEqual(rows[0]["delinquent_tax_amount"], 1.25)
+        self.assertEqual(rows[-1]["sale_item_number"], "1568")
+        self.assertTrue(all("owner" not in key.lower() for row in rows for key in row.keys()))
 
 
 if __name__ == "__main__":
