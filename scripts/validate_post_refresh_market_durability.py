@@ -24,6 +24,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_pueblo_tax_lien_market.py",
     "scripts/add_colorado_douglas_tax_lien_market.py",
     "scripts/add_colorado_logan_tax_lien_market.py",
+    "scripts/add_colorado_alamosa_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
     "scripts/add_iowa_polk_tax_lien_market.py",
@@ -50,6 +51,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Iowa — Black Hawk County": "MARKET-LEVEL ONLY",
     "Iowa — Story County": "MARKET-LEVEL ONLY",
     "Iowa — Warren County": "MARKET-LEVEL ONLY",
+    "Colorado — Alamosa County": "does not publish amounts due",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
