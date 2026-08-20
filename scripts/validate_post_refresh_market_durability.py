@@ -30,6 +30,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_delta_tax_lien_market.py",
     "scripts/add_colorado_garfield_tax_lien_market.py",
     "scripts/add_colorado_routt_tax_lien_market.py",
+    "scripts/add_colorado_chaffee_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
     "scripts/add_iowa_polk_tax_lien_market.py",
@@ -55,6 +56,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Colorado — Delta County": "MARKET-LEVEL ONLY",
     "Colorado — Garfield County": "MARKET-LEVEL ONLY",
     "Colorado — Routt County": "MARKET-LEVEL ONLY",
+    "Colorado — Chaffee County": "MARKET-LEVEL ONLY",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
