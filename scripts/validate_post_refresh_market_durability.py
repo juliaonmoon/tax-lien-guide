@@ -31,6 +31,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_iowa_pottawattamie_tax_lien_market.py",
     "scripts/add_iowa_black_hawk_tax_lien_market.py",
     "scripts/add_iowa_story_tax_lien_market.py",
+    "scripts/add_iowa_warren_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -48,6 +49,7 @@ REQUIRED_MARKET_RATE_TEXT = {
 REQUIRED_MARKET_SAFETY_TEXT = {
     "Iowa — Black Hawk County": "MARKET-LEVEL ONLY",
     "Iowa — Story County": "MARKET-LEVEL ONLY",
+    "Iowa — Warren County": "MARKET-LEVEL ONLY",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
