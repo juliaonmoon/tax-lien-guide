@@ -26,6 +26,10 @@ def _bucket(value: float, size: int = 25) -> int:
     return int(value // size) * size
 
 
+def _column(x: float) -> str:
+    return "left" if x < 250 else "right"
+
+
 def main() -> None:
     raw = dubuque.fetch_pdf()
     print(f"pdf_bytes={len(raw)}")
@@ -36,10 +40,14 @@ def main() -> None:
     item_numbers: list[int] = []
     row_money_distances: list[float] = []
     preceding_parcel_distances: list[float] = []
+    fallback_signed_gaps = Counter()
+    fallback_x_diffs = Counter()
+    missing_by_page = Counter()
+    missing_by_column = Counter()
     page_counts: list[tuple[int, int, int]] = []
 
     with pdfplumber.open(io.BytesIO(raw)) as pdf:
-        for page in pdf.pages:
+        for page_no, page in enumerate(pdf.pages, start=1):
             words = page.extract_words(use_text_flow=False, keep_blank_chars=False)
             items = []
             parcels = []
@@ -68,6 +76,7 @@ def main() -> None:
                     money for money in monies
                     if abs(((float(money["top"]) + float(money["bottom"])) / 2) - iy) <= 3
                     and float(money["x0"]) > ix
+                    and _column(float(money["x0"]) - 200) == _column(ix)
                 ]
                 if same_row_money:
                     nearest = min(same_row_money, key=lambda money: float(money["x0"]) - ix)
@@ -75,13 +84,30 @@ def main() -> None:
 
                 prior = [
                     parcel for parcel in parcels
-                    if float(parcel["bottom"]) <= float(item["top"]) + 1
+                    if _column(float(parcel["x0"])) == _column(ix)
+                    and float(parcel["bottom"]) <= float(item["top"]) + 1
                     and 0 <= float(item["top"]) - float(parcel["bottom"]) <= 45
-                    and abs(float(parcel["x0"]) - ix) <= 180
                 ]
                 if prior:
                     nearest_parcel = min(prior, key=lambda parcel: float(item["top"]) - float(parcel["bottom"]))
                     preceding_parcel_distances.append(float(item["top"]) - float(nearest_parcel["bottom"]))
+                    continue
+
+                missing_by_page[page_no] += 1
+                missing_by_column[_column(ix)] += 1
+                same_col = [parcel for parcel in parcels if _column(float(parcel["x0"])) == _column(ix)]
+                if same_col:
+                    nearest_any = min(
+                        same_col,
+                        key=lambda parcel: abs(
+                            ((float(parcel["top"]) + float(parcel["bottom"])) / 2) - iy
+                        ),
+                    )
+                    py = (float(nearest_any["top"]) + float(nearest_any["bottom"])) / 2
+                    fallback_signed_gaps[_bucket(py - iy, 5)] += 1
+                    fallback_x_diffs[_bucket(float(nearest_any["x0"]) - ix, 25)] += 1
+                else:
+                    fallback_signed_gaps[999] += 1
 
     number_counts = Counter(item_numbers)
     print(f"pages={len(page_counts)} page_structural_counts={page_counts}")
@@ -100,6 +126,9 @@ def main() -> None:
         f"items_with_near_preceding_parcel={len(preceding_parcel_distances)} "
         f"median_item_to_parcel_vertical_gap={median(preceding_parcel_distances) if preceding_parcel_distances else None}"
     )
+    print(f"missing_join_by_page={dict(missing_by_page)} missing_join_by_column={dict(missing_by_column)}")
+    print(f"missing_join_nearest_parcel_signed_gap_buckets={dict(fallback_signed_gaps)}")
+    print(f"missing_join_nearest_parcel_xdiff_buckets={dict(fallback_x_diffs)}")
 
 
 if __name__ == "__main__":
