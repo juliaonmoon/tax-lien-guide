@@ -65,96 +65,115 @@ def _nearest_parcel(lines: list[str], item_index: int) -> str | None:
     return None
 
 
+def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str) -> dict | None:
+    item_number = int(match.group(1))
+    if not 1 <= item_number <= REAL_ESTATE_ITEM_COUNT:
+        return None
+
+    parcel_id = _nearest_parcel(lines, i)
+    if not parcel_id:
+        return None
+
+    parts = [match.group(2).strip()]
+    amount = None
+    # Legal descriptions can wrap for several lines. Stop as soon as the
+    # official dollar amount appears; this prevents the next taxpayer line
+    # from entering the stored description.
+    for j in range(i, min(len(lines), i + 7)):
+        current = lines[j]
+        money = MONEY_RE.search(current)
+        if money:
+            amount = round(float(money.group(1).replace(",", "")), 2)
+            if j > i:
+                before = current[: money.start()].strip(" .")
+                if before:
+                    parts.append(before)
+            break
+        if j > i:
+            if ITEM_RE.match(current):
+                break
+            # A 10-digit parcel token marks the next owner/parcel line.
+            if PARCEL_RE.search(current):
+                break
+            cleaned = current.strip(" .")
+            if cleaned:
+                parts.append(cleaned)
+    if amount is None:
+        return None
+
+    legal = " ".join(part for part in parts if part)
+    legal = re.sub(r"\.{2,}", " ", legal)
+    legal = re.sub(r"\s+", " ", legal).strip(" ;")
+    return {
+        "record_id": f"IA-Dubuque-2026-{item_number}",
+        "profile_id": PROFILE_ID,
+        "state": "IA",
+        "state_name": "Iowa",
+        "county": "Dubuque",
+        "parcel_id": parcel_id,
+        "sale_item_number": str(item_number),
+        "legal_description": legal or None,
+        "auction_date": "2026-06-15",
+        "sale_date": "2026-06-15",
+        "auction_time": "09:00 CT",
+        "auction_format": "Online; Dubuque County directs bidders to Iowa Tax Auction",
+        "auction_location": "Online; administered by Dubuque County Treasurer",
+        "auction_url": AUCTION_URL,
+        "official_source_url": SOURCE_PDF,
+        "direct_listing_url": SOURCE_PDF,
+        "minimum_bid": None,
+        "opening_bid": None,
+        "delinquent_tax_amount": amount,
+        "sale_status": "Official 2026 publication snapshot; June 15 annual sale has passed and current parcel/certificate status must be reconfirmed",
+        "lien_type": "Iowa tax sale certificate / property-tax lien",
+        "sale_type": "tax_lien",
+        "maximum_statutory_return": "2% per month redemption interest under Iowa tax-sale redemption law",
+        "winning_rate_mechanism": "Iowa tax-sale percentage-interest bidding; verify Dubuque County purchaser terms for the specific sale",
+        "redemption_period": "Certificate/redemption process is governed by Iowa Code Chapters 446 and 447; deed is a separate later stage after statutory notice and redemption requirements",
+        "important_rules": "Published delinquent tax due is not labeled as an opening/minimum bid and is not presented as one. The county warns some published taxes may have been paid before publication. A tax-sale certificate is distinct from a later tax deed.",
+        "data_source": "Dubuque County Treasurer official 2026 delinquent-tax publication",
+        "last_verified": verified,
+        "source_mode": "official_2026_publication_snapshot",
+    }
+
+
 def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
-    rows: list[dict] = []
-    seen_parcels: set[str] = set()
-    expected_item = 1
+    # Parse every official item independently. A previous sequential gate meant
+    # that one malformed extraction (for example item 10) prevented every later
+    # otherwise-valid item from being considered. Exact-set validation below is
+    # the fail-closed control instead: all 1..576 items still must be recovered.
+    by_item: dict[int, dict] = {}
+    parcel_to_item: dict[str, int] = {}
 
     for i, line in enumerate(lines):
         match = ITEM_RE.match(line)
         if not match:
             continue
-        item_number = int(match.group(1))
-        # The official 2026 REAL ESTATE publication is one monotonic sequence
-        # from 1 through 576; MOBILE HOMES begins at 577. pdfplumber can expose
-        # stray line-start tokens that look like repeated item numbers inside
-        # wrapped legal text. Accept only the next expected official item so a
-        # noisy duplicate cannot poison the county-wide parse.
-        if item_number != expected_item:
+        candidate = _candidate_row(lines, i, match, verified)
+        if not candidate:
             continue
-        parcel_id = _nearest_parcel(lines, i)
-        if not parcel_id or parcel_id in seen_parcels:
-            continue
+        item_number = int(candidate["sale_item_number"])
+        parcel_id = candidate["parcel_id"]
 
-        parts = [match.group(2).strip()]
-        amount = None
-        # Legal descriptions can wrap for several lines. Stop as soon as the
-        # official dollar amount appears; this prevents the next taxpayer line
-        # from entering the stored description.
-        for j in range(i, min(len(lines), i + 7)):
-            current = line if j == i else lines[j]
-            money = MONEY_RE.search(current)
-            if money:
-                amount = round(float(money.group(1).replace(",", "")), 2)
-                if j > i:
-                    before = current[: money.start()].strip(" .")
-                    if before:
-                        parts.append(before)
-                break
-            if j > i:
-                if ITEM_RE.match(current):
-                    break
-                # A 10-digit parcel token marks the next owner/parcel line.
-                if PARCEL_RE.search(current):
-                    break
-                cleaned = current.strip(" .")
-                if cleaned:
-                    parts.append(cleaned)
-        if amount is None:
+        prior_item = parcel_to_item.get(parcel_id)
+        if prior_item is not None and prior_item != item_number:
+            raise RuntimeError(
+                f"Dubuque County extraction mapped parcel {parcel_id} to conflicting items {prior_item} and {item_number}"
+            )
+
+        prior = by_item.get(item_number)
+        if prior is not None:
+            comparable = ("parcel_id", "delinquent_tax_amount", "legal_description")
+            if any(prior.get(key) != candidate.get(key) for key in comparable):
+                raise RuntimeError(f"Dubuque County extraction produced conflicting candidates for item {item_number}")
             continue
 
-        legal = " ".join(part for part in parts if part)
-        legal = re.sub(r"\.{2,}", " ", legal)
-        legal = re.sub(r"\s+", " ", legal).strip(" ;")
-        seen_parcels.add(parcel_id)
-        rows.append({
-            "record_id": f"IA-Dubuque-2026-{item_number}",
-            "profile_id": PROFILE_ID,
-            "state": "IA",
-            "state_name": "Iowa",
-            "county": "Dubuque",
-            "parcel_id": parcel_id,
-            "sale_item_number": str(item_number),
-            "legal_description": legal or None,
-            "auction_date": "2026-06-15",
-            "sale_date": "2026-06-15",
-            "auction_time": "09:00 CT",
-            "auction_format": "Online; Dubuque County directs bidders to Iowa Tax Auction",
-            "auction_location": "Online; administered by Dubuque County Treasurer",
-            "auction_url": AUCTION_URL,
-            "official_source_url": SOURCE_PDF,
-            "direct_listing_url": SOURCE_PDF,
-            "minimum_bid": None,
-            "opening_bid": None,
-            "delinquent_tax_amount": amount,
-            "sale_status": "Official 2026 publication snapshot; June 15 annual sale has passed and current parcel/certificate status must be reconfirmed",
-            "lien_type": "Iowa tax sale certificate / property-tax lien",
-            "sale_type": "tax_lien",
-            "maximum_statutory_return": "2% per month redemption interest under Iowa tax-sale redemption law",
-            "winning_rate_mechanism": "Iowa tax-sale percentage-interest bidding; verify Dubuque County purchaser terms for the specific sale",
-            "redemption_period": "Certificate/redemption process is governed by Iowa Code Chapters 446 and 447; deed is a separate later stage after statutory notice and redemption requirements",
-            "important_rules": "Published delinquent tax due is not labeled as an opening/minimum bid and is not presented as one. The county warns some published taxes may have been paid before publication. A tax-sale certificate is distinct from a later tax deed.",
-            "data_source": "Dubuque County Treasurer official 2026 delinquent-tax publication",
-            "last_verified": verified,
-            "source_mode": "official_2026_publication_snapshot",
-        })
-        expected_item += 1
-        if expected_item > REAL_ESTATE_ITEM_COUNT:
-            break
+        by_item[item_number] = candidate
+        parcel_to_item[parcel_id] = item_number
 
-    rows.sort(key=lambda row: int(row["sale_item_number"]))
+    rows = [by_item[item] for item in sorted(by_item)]
     expected_items = set(range(1, REAL_ESTATE_ITEM_COUNT + 1))
-    actual_items = {int(row["sale_item_number"]) for row in rows}
+    actual_items = set(by_item)
     missing_items = sorted(expected_items - actual_items)
     extra_items = sorted(actual_items - expected_items)
     if missing_items or extra_items or len(rows) != REAL_ESTATE_ITEM_COUNT:
