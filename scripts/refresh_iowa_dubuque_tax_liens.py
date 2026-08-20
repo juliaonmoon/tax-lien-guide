@@ -6,6 +6,11 @@ contains taxpayer names, but this collector deliberately does not store,
 aggregate, or emit them. It retains only numbered real-estate sale items,
 official parcel IDs, legal descriptions, and the county-published delinquent
 amount. Mobile-home items are excluded.
+
+The publication's PDF text order is not stable across extractors. To avoid
+associating a parcel from one visual column with an item from another, this
+collector extracts the official PDF several independent ways and only accepts
+an item when at least two strategies agree on parcel ID and delinquent amount.
 """
 
 from __future__ import annotations
@@ -13,11 +18,13 @@ from __future__ import annotations
 import io
 import json
 import re
+from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
 import pdfplumber
 import requests
+from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
 DETAILS = ROOT / "data" / "tax-lien-properties.json"
@@ -25,7 +32,7 @@ PROFILE_ID = "IA-Dubuque-2026"
 SOURCE_PAGE = "https://dubuquecountyiowa.gov/248/Treasurer"
 SOURCE_PDF = "https://dubuquecountyiowa.gov/DocumentCenter/View/8222/2026-Publication-Report-5-26-2026-PDF"
 AUCTION_URL = "https://www.iowataxauction.com/"
-UA = "TaxLienGuideBot/2.6 (public tax-lien research; no access-control bypass)"
+UA = "TaxLienGuideBot/2.7 (public tax-lien research; no access-control bypass)"
 
 ITEM_RE = re.compile(r"^\s*(\d{1,3})\)\s*(.*)$")
 PARCEL_RE = re.compile(r"\b(\d{10})\b")
@@ -45,20 +52,65 @@ def fetch_pdf() -> bytes:
     return response.content
 
 
-def extract_lines(raw: bytes) -> list[str]:
-    with pdfplumber.open(io.BytesIO(raw)) as pdf:
-        text = "\n".join(page.extract_text(layout=False) or "" for page in pdf.pages)
-    # PDF extraction can join the final item of one page to the first owner line
-    # of the next. Re-split before a numbered item token when needed.
+def _split_lines(text: str) -> list[str]:
+    # Page boundaries and some text engines can glue a numbered item to the
+    # preceding text. Re-split immediately before item tokens.
     text = re.sub(r"(?<!\n)(?=(?:\d{1,3})\)\s)", "\n", text)
-    return text.splitlines()
+    return [line.rstrip() for line in text.splitlines() if line.strip()]
+
+
+def _crop_columns(page, count: int) -> str:
+    """Extract visual columns independently to avoid cross-column line joins."""
+    width = float(page.width)
+    parts: list[str] = []
+    for col in range(count):
+        x0 = width * col / count
+        x1 = width * (col + 1) / count
+        # Small inset keeps glyphs on a boundary from being duplicated.
+        if col:
+            x0 += 1
+        if col < count - 1:
+            x1 -= 1
+        cropped = page.crop((x0, 0, x1, page.height))
+        parts.append(cropped.extract_text(layout=False) or "")
+    return "\n".join(parts)
+
+
+def extract_line_strategies(raw: bytes) -> dict[str, list[str]]:
+    strategies: dict[str, list[str]] = {}
+
+    with pdfplumber.open(io.BytesIO(raw)) as pdf:
+        strategies["pdfplumber"] = _split_lines(
+            "\n".join(page.extract_text(layout=False) or "" for page in pdf.pages)
+        )
+        strategies["pdfplumber_layout"] = _split_lines(
+            "\n".join(page.extract_text(layout=True) or "" for page in pdf.pages)
+        )
+        # Newspaper/publication PDFs sometimes encode two or three visual
+        # columns in an order unrelated to reading order. Test both common
+        # layouts independently rather than guessing one global structure.
+        strategies["two_columns"] = _split_lines(
+            "\n".join(_crop_columns(page, 2) for page in pdf.pages)
+        )
+        strategies["three_columns"] = _split_lines(
+            "\n".join(_crop_columns(page, 3) for page in pdf.pages)
+        )
+
+    reader = PdfReader(io.BytesIO(raw))
+    strategies["pypdf"] = _split_lines(
+        "\n".join(page.extract_text() or "" for page in reader.pages)
+    )
+    return strategies
 
 
 def _nearest_parcel(lines: list[str], item_index: int) -> str | None:
-    # The parcel is printed with the taxpayer name immediately before each
-    # numbered item; long taxpayer names can wrap, so inspect a small window but
-    # retain only the parcel token, never the surrounding owner text.
-    for idx in range(item_index - 1, max(-1, item_index - 5), -1):
+    # The parcel is printed on the taxpayer line immediately before the item.
+    # Restrict the search window and stop at another numbered item so an item
+    # cannot reach backwards into an earlier record after extraction reorders
+    # nearby text.
+    for idx in range(item_index - 1, max(-1, item_index - 6), -1):
+        if ITEM_RE.match(lines[idx]):
+            break
         matches = PARCEL_RE.findall(lines[idx])
         if matches:
             return matches[-1]
@@ -76,9 +128,6 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
 
     parts = [match.group(2).strip()]
     amount = None
-    # Legal descriptions can wrap for several lines. Stop as soon as the
-    # official dollar amount appears; this prevents the next taxpayer line
-    # from entering the stored description.
     for j in range(i, min(len(lines), i + 7)):
         current = lines[j]
         money = MONEY_RE.search(current)
@@ -90,10 +139,7 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
                     parts.append(before)
             break
         if j > i:
-            if ITEM_RE.match(current):
-                break
-            # A 10-digit parcel token marks the next owner/parcel line.
-            if PARCEL_RE.search(current):
+            if ITEM_RE.match(current) or PARCEL_RE.search(current):
                 break
             cleaned = current.strip(" .")
             if cleaned:
@@ -137,53 +183,70 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
     }
 
 
-def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
-    # Parse every official item independently. A previous sequential gate meant
-    # that one malformed extraction (for example item 10) prevented every later
-    # otherwise-valid item from being considered. Exact-set validation below is
-    # the fail-closed control instead: all 1..576 items still must be recovered.
-    by_item: dict[int, dict] = {}
-    parcel_to_item: dict[str, int] = {}
-
+def _strategy_candidates(lines: list[str], verified: str) -> dict[int, dict]:
+    """Return only unambiguous candidates within one extraction strategy."""
+    found: dict[int, list[dict]] = defaultdict(list)
     for i, line in enumerate(lines):
         match = ITEM_RE.match(line)
         if not match:
             continue
         candidate = _candidate_row(lines, i, match, verified)
-        if not candidate:
-            continue
-        item_number = int(candidate["sale_item_number"])
-        parcel_id = candidate["parcel_id"]
+        if candidate:
+            found[int(candidate["sale_item_number"])].append(candidate)
 
-        prior_item = parcel_to_item.get(parcel_id)
-        if prior_item is not None and prior_item != item_number:
+    result: dict[int, dict] = {}
+    for item, candidates in found.items():
+        unique = {}
+        for row in candidates:
+            key = (row["parcel_id"], row["delinquent_tax_amount"])
+            unique.setdefault(key, row)
+        if len(unique) == 1:
+            result[item] = next(iter(unique.values()))
+    return result
+
+
+def parse_real_estate_rows(strategies: dict[str, list[str]], verified: str) -> list[dict]:
+    parsed = {name: _strategy_candidates(lines, verified) for name, lines in strategies.items()}
+    rows: list[dict] = []
+    used_parcels: dict[str, int] = {}
+    unresolved: list[int] = []
+
+    for item in range(1, REAL_ESTATE_ITEM_COUNT + 1):
+        candidates: list[dict] = [items[item] for items in parsed.values() if item in items]
+        votes = Counter((row["parcel_id"], row["delinquent_tax_amount"]) for row in candidates)
+        if not votes:
+            unresolved.append(item)
+            continue
+        ranked = votes.most_common()
+        winner_key, winner_votes = ranked[0]
+        runner_votes = ranked[1][1] if len(ranked) > 1 else 0
+        # Require corroboration from at least two independent text/geometry
+        # strategies and a strict lead over any competing mapping.
+        if winner_votes < 2 or winner_votes <= runner_votes:
+            unresolved.append(item)
+            continue
+
+        matching = [row for row in candidates if (row["parcel_id"], row["delinquent_tax_amount"]) == winner_key]
+        # Prefer the richest legal description among agreeing strategies.
+        chosen = max(matching, key=lambda row: len(row.get("legal_description") or ""))
+        parcel_id = chosen["parcel_id"]
+        prior_item = used_parcels.get(parcel_id)
+        if prior_item is not None and prior_item != item:
             raise RuntimeError(
-                f"Dubuque County extraction mapped parcel {parcel_id} to conflicting items {prior_item} and {item_number}"
+                f"Dubuque County corroborated extraction reused parcel {parcel_id} for items {prior_item} and {item}"
             )
+        used_parcels[parcel_id] = item
+        rows.append(chosen)
 
-        prior = by_item.get(item_number)
-        if prior is not None:
-            comparable = ("parcel_id", "delinquent_tax_amount", "legal_description")
-            if any(prior.get(key) != candidate.get(key) for key in comparable):
-                raise RuntimeError(f"Dubuque County extraction produced conflicting candidates for item {item_number}")
-            continue
-
-        by_item[item_number] = candidate
-        parcel_to_item[parcel_id] = item_number
-
-    rows = [by_item[item] for item in sorted(by_item)]
-    expected_items = set(range(1, REAL_ESTATE_ITEM_COUNT + 1))
-    actual_items = set(by_item)
-    missing_items = sorted(expected_items - actual_items)
-    extra_items = sorted(actual_items - expected_items)
-    if missing_items or extra_items or len(rows) != REAL_ESTATE_ITEM_COUNT:
-        missing_preview = ", ".join(map(str, missing_items[:20])) or "none"
-        extra_preview = ", ".join(map(str, extra_items[:20])) or "none"
+    if unresolved or len(rows) != REAL_ESTATE_ITEM_COUNT:
+        preview = ", ".join(map(str, unresolved[:30])) or "none"
+        coverage = ", ".join(f"{name}:{len(items)}" for name, items in parsed.items())
         raise RuntimeError(
-            "Dubuque County parser did not recover the complete official REAL ESTATE section: "
-            f"loaded {len(rows)}/{REAL_ESTATE_ITEM_COUNT}; missing items [{missing_preview}]; "
-            f"unexpected items [{extra_preview}]"
+            "Dubuque County parser did not obtain corroborated mappings for the complete official REAL ESTATE section: "
+            f"loaded {len(rows)}/{REAL_ESTATE_ITEM_COUNT}; unresolved items [{preview}]; strategy coverage [{coverage}]"
         )
+
+    rows.sort(key=lambda row: int(row["sale_item_number"]))
     if any(any("owner" in str(key).lower() or "taxpayer" in str(key).lower() for key in row) for row in rows):
         raise RuntimeError("Dubuque County output contains a restricted owner/taxpayer-name field")
     return rows
@@ -227,7 +290,8 @@ def update_details(rows: list[dict]) -> None:
 
 def main() -> None:
     try:
-        rows = parse_real_estate_rows(extract_lines(fetch_pdf()), date.today().isoformat())
+        raw = fetch_pdf()
+        rows = parse_real_estate_rows(extract_line_strategies(raw), date.today().isoformat())
     except (requests.RequestException, RuntimeError) as exc:
         prior = existing_rows()
         if not prior:
@@ -235,7 +299,7 @@ def main() -> None:
         print(f"Dubuque County IA: source unavailable/unparseable; preserved {len(prior)} previously verified rows. Reason: {exc}")
         return
     update_details(rows)
-    print(f"Dubuque County IA: loaded {len(rows)} official real-estate tax-lien rows; taxpayer names intentionally omitted")
+    print(f"Dubuque County IA: loaded {len(rows)} corroborated official real-estate tax-lien rows; taxpayer names intentionally omitted")
 
 
 if __name__ == "__main__":
