@@ -18,18 +18,18 @@
   "summary": {
     "total_jurisdictions": 79,
     "by_collector_status": {
-      "live": 8,
+      "live": 9,
       "snapshot": 3,
       "zero_active": 1,
       "identified": 35,
       "blocked": 5,
-      "not_started": 27
+      "not_started": 26
     },
     "by_property_query": {
-      "true": 12,
-      "false": 67
+      "true": 13,
+      "false": 66
     },
-    "total_verified_property_records": 12918
+    "total_verified_property_records": 12942
   },
   "jurisdictions": [
     {
@@ -1010,19 +1010,19 @@
     },
     {
       "state": "MI",
-      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
-      "sale_system": null,
-      "official_information_url": null,
-      "current_list_url": null,
+      "county_or_locality": "Statewide (surplus/unsold post-auction parcels; multi-county, currently Arenac/Bay/Jackson/Monroe/Otsego)",
+      "sale_system": "tax-sale.info statewide surplus-property listing (post-auction, first-come-first-served)",
+      "official_information_url": "https://www.tax-sale.info/surplus",
+      "current_list_url": "https://www.tax-sale.info/listings/surplus",
       "assessor_url": null,
-      "collector_status": "not_started",
-      "property_query": false,
-      "last_attempt_at": null,
-      "last_success_at": null,
-      "current_record_count": 0,
-      "blocker": "No research has been done for this state yet; sale system type has not been verified and is intentionally left blank rather than guessed.",
-      "collector_module": null,
-      "test_module": null
+      "collector_status": "live",
+      "property_query": true,
+      "last_attempt_at": "2026-08-20T06:17:07+00:00",
+      "last_success_at": "2026-08-20T06:17:07+00:00",
+      "current_record_count": 24,
+      "blocker": null,
+      "collector_module": "scripts/refresh_michigan_surplus_tax_properties.py",
+      "test_module": "tests/test_michigan_surplus_tax_properties.py"
     },
     {
       "state": "MN",
