@@ -184,6 +184,13 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   Listing Coming 2026" placeholder). Check again in a week or two; same
   generic `indiana_ad_rows()` parser should work once it's out.
 - **Montgomery County, IN** — page returns HTTP 403. Not pursued further.
+- **Scott County, IA** — official 2026 XLSX list's HTTP 403 cleared
+  2026-08-19 (was bot-UA filtering, not real access control), but the row
+  structure is genuinely more complex than Linn/Johnson/Dubuque/Woodbury
+  (multi-year receipt rows per Item Number, no obvious single
+  current-amount-owed field) — not safe to build a parser without an
+  authoritative explanation or cross-referencing known items against a
+  live source first. See `TAX_SALE_COVERAGE_AUDIT.md` §8e and issue #16.
 - **Arizona statewide assessor enrichment** — no equivalent to Indiana's
   DLGF Gateway exists; Cochise/Coconino's own GIS/open-data sites are
   dead ends (empty portals, no parcel dataset found). Not pursued further
