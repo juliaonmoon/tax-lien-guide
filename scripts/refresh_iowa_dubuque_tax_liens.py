@@ -32,9 +32,12 @@ PROFILE_ID = "IA-Dubuque-2026"
 SOURCE_PAGE = "https://dubuquecountyiowa.gov/248/Treasurer"
 SOURCE_PDF = "https://dubuquecountyiowa.gov/DocumentCenter/View/8222/2026-Publication-Report-5-26-2026-PDF"
 AUCTION_URL = "https://www.iowataxauction.com/"
-UA = "TaxLienGuideBot/2.7 (public tax-lien research; no access-control bypass)"
+UA = "TaxLienGuideBot/2.8 (public tax-lien research; no access-control bypass)"
 
-ITEM_RE = re.compile(r"^\s*(\d{1,3})\)\s*(.*)$")
+# PDF text engines sometimes emit the sale marker as "1 )" instead of "1)".
+# Accept extractor-added whitespace around the closing parenthesis, but keep the
+# item-number shape constrained to 1-3 digits so unrelated prose is not matched.
+ITEM_RE = re.compile(r"^\s*(\d{1,3})\s*\)\s*(.*)$")
 PARCEL_RE = re.compile(r"\b(\d{10})\b")
 MONEY_RE = re.compile(r"\$\s*([\d,]+(?:\.\d{2})?)")
 REAL_ESTATE_ITEM_COUNT = 576
@@ -54,8 +57,9 @@ def fetch_pdf() -> bytes:
 
 def _split_lines(text: str) -> list[str]:
     # Page boundaries and some text engines can glue a numbered item to the
-    # preceding text. Re-split immediately before item tokens.
-    text = re.sub(r"(?<!\n)(?=(?:\d{1,3})\)\s)", "\n", text)
+    # preceding text. Re-split immediately before item tokens, tolerating the
+    # same extractor-added whitespace accepted by ITEM_RE.
+    text = re.sub(r"(?<!\n)(?=(?:\d{1,3})\s*\)\s)", "\n", text)
     return [line.rstrip() for line in text.splitlines() if line.strip()]
 
 
@@ -66,7 +70,6 @@ def _crop_columns(page, count: int) -> str:
     for col in range(count):
         x0 = width * col / count
         x1 = width * (col + 1) / count
-        # Small inset keeps glyphs on a boundary from being duplicated.
         if col:
             x0 += 1
         if col < count - 1:
@@ -86,9 +89,6 @@ def extract_line_strategies(raw: bytes) -> dict[str, list[str]]:
         strategies["pdfplumber_layout"] = _split_lines(
             "\n".join(page.extract_text(layout=True) or "" for page in pdf.pages)
         )
-        # Newspaper/publication PDFs sometimes encode two or three visual
-        # columns in an order unrelated to reading order. Test both common
-        # layouts independently rather than guessing one global structure.
         strategies["two_columns"] = _split_lines(
             "\n".join(_crop_columns(page, 2) for page in pdf.pages)
         )
@@ -104,10 +104,6 @@ def extract_line_strategies(raw: bytes) -> dict[str, list[str]]:
 
 
 def _nearest_parcel(lines: list[str], item_index: int) -> str | None:
-    # The parcel is printed on the taxpayer line immediately before the item.
-    # Restrict the search window and stop at another numbered item so an item
-    # cannot reach backwards into an earlier record after extraction reorders
-    # nearby text.
     for idx in range(item_index - 1, max(-1, item_index - 6), -1):
         if ITEM_RE.match(lines[idx]):
             break
@@ -184,7 +180,6 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
 
 
 def _strategy_candidates(lines: list[str], verified: str) -> dict[int, dict]:
-    """Return only unambiguous candidates within one extraction strategy."""
     found: dict[int, list[dict]] = defaultdict(list)
     for i, line in enumerate(lines):
         match = ITEM_RE.match(line)
@@ -220,14 +215,11 @@ def parse_real_estate_rows(strategies: dict[str, list[str]], verified: str) -> l
         ranked = votes.most_common()
         winner_key, winner_votes = ranked[0]
         runner_votes = ranked[1][1] if len(ranked) > 1 else 0
-        # Require corroboration from at least two independent text/geometry
-        # strategies and a strict lead over any competing mapping.
         if winner_votes < 2 or winner_votes <= runner_votes:
             unresolved.append(item)
             continue
 
         matching = [row for row in candidates if (row["parcel_id"], row["delinquent_tax_amount"]) == winner_key]
-        # Prefer the richest legal description among agreeing strategies.
         chosen = max(matching, key=lambda row: len(row.get("legal_description") or ""))
         parcel_id = chosen["parcel_id"]
         prior_item = used_parcels.get(parcel_id)
