@@ -67,21 +67,23 @@ def _nearest_parcel(lines: list[str], item_index: int) -> str | None:
 
 def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
     rows: list[dict] = []
-    seen_items: set[int] = set()
     seen_parcels: set[str] = set()
+    expected_item = 1
 
     for i, line in enumerate(lines):
         match = ITEM_RE.match(line)
         if not match:
             continue
         item_number = int(match.group(1))
-        # The official 2026 publication has exactly items 1-576 in the REAL
-        # ESTATE section, then switches to MOBILE HOMES. Do not cross that
-        # boundary or silently accept an incomplete real-estate extraction.
-        if not 1 <= item_number <= REAL_ESTATE_ITEM_COUNT:
+        # The official 2026 REAL ESTATE publication is one monotonic sequence
+        # from 1 through 576; MOBILE HOMES begins at 577. pdfplumber can expose
+        # stray line-start tokens that look like repeated item numbers inside
+        # wrapped legal text. Accept only the next expected official item so a
+        # noisy duplicate cannot poison the county-wide parse.
+        if item_number != expected_item:
             continue
         parcel_id = _nearest_parcel(lines, i)
-        if not parcel_id or item_number in seen_items or parcel_id in seen_parcels:
+        if not parcel_id or parcel_id in seen_parcels:
             continue
 
         parts = [match.group(2).strip()]
@@ -114,7 +116,6 @@ def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
         legal = " ".join(part for part in parts if part)
         legal = re.sub(r"\.{2,}", " ", legal)
         legal = re.sub(r"\s+", " ", legal).strip(" ;")
-        seen_items.add(item_number)
         seen_parcels.add(parcel_id)
         rows.append({
             "record_id": f"IA-Dubuque-2026-{item_number}",
@@ -147,6 +148,9 @@ def parse_real_estate_rows(lines: list[str], verified: str) -> list[dict]:
             "last_verified": verified,
             "source_mode": "official_2026_publication_snapshot",
         })
+        expected_item += 1
+        if expected_item > REAL_ESTATE_ITEM_COUNT:
+            break
 
     rows.sort(key=lambda row: int(row["sale_item_number"]))
     expected_items = set(range(1, REAL_ESTATE_ITEM_COUNT + 1))
