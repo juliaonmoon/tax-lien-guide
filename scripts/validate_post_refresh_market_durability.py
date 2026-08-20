@@ -34,6 +34,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_pitkin_tax_lien_market.py",
     "scripts/add_colorado_san_miguel_tax_lien_market.py",
     "scripts/add_colorado_broomfield_tax_lien_market.py",
+    "scripts/add_colorado_teller_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
     "scripts/add_florida_bay_tax_lien_market.py",
@@ -65,6 +66,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Colorado — Pitkin County": "MARKET-LEVEL ONLY",
     "Colorado — San Miguel County": "MARKET-LEVEL ONLY",
     "Colorado — Broomfield County": "MARKET-LEVEL ONLY",
+    "Colorado — Teller County": "MARKET-LEVEL ONLY",
     "Florida — Bay County": "MARKET-LEVEL ONLY",
     "Florida — Broward County": "MARKET-LEVEL ONLY",
 }
