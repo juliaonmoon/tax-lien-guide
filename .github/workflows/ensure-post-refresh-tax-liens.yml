@@ -13,6 +13,7 @@ on:
       - "scripts/add_colorado_alamosa_tax_lien_market.py"
       - "scripts/add_colorado_morgan_tax_lien_market.py"
       - "scripts/add_colorado_fremont_tax_lien_market.py"
+      - "scripts/add_colorado_delta_tax_lien_market.py"
       - "scripts/add_iowa_dallas_tax_lien_market.py"
       - "scripts/add_iowa_pottawattamie_tax_lien_market.py"
       - "scripts/add_iowa_black_hawk_tax_lien_market.py"
@@ -62,6 +63,7 @@ jobs:
             python scripts/add_colorado_alamosa_tax_lien_market.py
             python scripts/add_colorado_morgan_tax_lien_market.py
             python scripts/add_colorado_fremont_tax_lien_market.py
+            python scripts/add_colorado_delta_tax_lien_market.py
             if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
               python scripts/add_colorado_weld_tax_lien_market.py
             fi
