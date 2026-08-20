@@ -20,6 +20,7 @@ on:
       - "scripts/add_colorado_pitkin_tax_lien_market.py"
       - "scripts/add_colorado_san_miguel_tax_lien_market.py"
       - "scripts/add_florida_bay_tax_lien_market.py"
+      - "scripts/add_florida_broward_tax_lien_market.py"
       - "scripts/add_iowa_dallas_tax_lien_market.py"
       - "scripts/add_iowa_pottawattamie_tax_lien_market.py"
       - "scripts/add_iowa_black_hawk_tax_lien_market.py"
@@ -29,9 +30,6 @@ on:
 permissions:
   contents: write
 
-# Keep only the newest market-only publish attempt. This workflow regenerates
-# from the latest main before every push attempt, so it does not need to queue
-# behind long-running full data refreshes.
 concurrency:
   group: tax-lien-guide-post-refresh-market-writes
   cancel-in-progress: true
@@ -81,6 +79,7 @@ jobs:
             python scripts/add_florida_hernando_tax_lien_market.py
             python scripts/add_florida_putnam_tax_lien_market.py
             python scripts/add_florida_bay_tax_lien_market.py
+            python scripts/add_florida_broward_tax_lien_market.py
             python scripts/add_iowa_polk_tax_lien_market.py
             python scripts/add_iowa_dallas_tax_lien_market.py
             python scripts/add_iowa_pottawattamie_tax_lien_market.py
