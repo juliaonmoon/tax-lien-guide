@@ -423,6 +423,45 @@ reuse potential), not by state alphabetically:
    2026-08-19 afternoon update. Next session: recheck the site (a plain
    `curl` to the homepage is enough) before re-attempting anything here.
 
+8e. **Scott County, IA — a promising fifth Iowa county, but not built,
+   2026-08-19.** Tracked previously only as GitHub issue #16 (official
+   2026 XLSX blocked with HTTP 403 as of 2026-08-18). Rechecked this
+   session with live network access: the block was bot-UA filtering, not
+   a real access-control wall — a standard browser User-Agent gets a
+   clean HTTP 200 and a real 71,973-byte, 297-data-row workbook from
+   `https://www3.scottcountyiowa.gov/treasurer/pub/tax_sale/2026/20260616_Tax_Sale_List.xlsx`.
+
+   Did not build a collector against it — the row structure is
+   meaningfully different from Linn/Johnson/Dubuque/Woodbury's and not
+   safe to guess at. Findings: (1) real owner names/mailing addresses are
+   in cleanly named columns (`Name 1/2/3`, `Address Lines 1/2/3`, etc.) —
+   trivial to exclude, not the blocker; (2) the same `Item Number` recurs
+   across multiple `Year`/`Receipt` rows (e.g. item 1847 has rows from
+   tax years 2011 *and* 2012, several `Type: SA` special-assessment rows
+   per year alongside one `Type: DT` row) — this reads as a running
+   receipt ledger per certificate, not a flat one-row-per-parcel list,
+   and the correct dedup/aggregation rule to reach a single authoritative
+   current-amount-owed per item is not obvious from the data alone: the
+   precomputed `Sale Amount` column is populated on some but not all of a
+   given item's rows, with no visible pattern yet checked; (3) real
+   estate (`Class: R`) and mobile-home (`Type: MH`, `Class` blank) items
+   are interleaved by `Item Number`, not cleanly sectioned the way
+   Johnson County's PDF separates them. Checked the 2023 Annual Tax Sale
+   Rules PDF for a format spec — procedural only, no column
+   documentation. Tried to cross-reference one item's current balance
+   against Iowa's statewide treasurer parcel-lookup site
+   (`iowa.govtechtaxpro.com`) to empirically confirm what `Sale Amount`
+   means — connection timed out, not reachable this session. Logged as
+   `TL-IA-SCOTT` (`status: "blocked"`, P2) in
+   `data/project-management.json`; full detail also posted to issue #16.
+   **Next attempt needs either an authoritative explanation of the row
+   format from the Treasurer's office, or successfully cross-referencing
+   a handful of known items against a live independent source** — same
+   standard already applied to Indiana's DLGF byte-position parser
+   (verified against 5 known parcels before shipping). Do not guess the
+   aggregation rule; a wrong guess here would mean publishing incorrect
+   dollar amounts, not just missing rows.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,
