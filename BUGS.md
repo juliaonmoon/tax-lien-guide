@@ -1,5 +1,38 @@
 # Bug Log & Fixes
-### Last updated: August 20, 2026 (BUG-007)
+### Last updated: August 20, 2026 (BUG-008)
+
+---
+
+## BUG-008 -- Woodbury County IA collector was silently dropping ~30% of rows to a PDF text-extraction artifact; Dubuque County IA collector found independently broken (9/576) while fixing it
+
+**Severity:** High for Woodbury (real data was wrong/incomplete, not just missing -- see below), Medium for Dubuque (currently 0 published rows, but was already 0 before this was found, so no regression)
+**Found:** August 20, 2026, while investigating issue #29 ("Woodbury County IA tax-lien collector regressed to 1100 rows (below 1500 minimum), blocking refresh-properties.yml on main")
+**Affected:** `scripts/refresh_iowa_woodbury_tax_liens.py` (fixed), `scripts/refresh_iowa_dubuque_tax_liens.py` (not fixed, see issue #35), both workflow files' Iowa Verify step
+**Status:** Woodbury fixed and verified live (1569/1569 rows). Dubuque worked around at the pipeline level (no longer blocks the shared job) but not fixed at the root -- see issue #35.
+
+### What happened -- Woodbury
+
+`refresh_iowa_woodbury_tax_liens.py`'s `_published_amounts()` requires a row's two trailing dollar amounts to differ by exactly the county's $20 certificate fee, as a safety check against misreading unrelated numbers as the sale amount. That check is sound -- the bug is upstream of it: pdfplumber extracts roughly 30% of the 2026 publication's real-estate rows with a stray space inserted inside the dollar figure itself. `$348.00` comes out as `$ 3 48.00`; `$8.00` comes out as `$ 8 .00`; `$11,646.00` comes out as `$ 1 1,646.00`. The existing `MONEY` regex doesn't match across that gap, so it silently picks up only the fragment after the space (`48.00` instead of `348.00`), the $20-fee check correctly rejects the resulting nonsense pair, and the whole row -- including its otherwise-correct parcel ID -- gets dropped. Confirmed live against the real 2026 PDF: exactly 469 of 1569 real-estate rows hit this, and every single one recovers to the correct value once the stray internal whitespace is collapsed (verified the recovered values still satisfy the same $20-fee invariant, not just that a value appeared).
+
+**Not a source-data problem, not a fabrication risk** -- this is undoing a text-extraction artifact in front of digits the PDF already contains, the same category of fix as `repair_iowa_linn_pdf_parser.py`'s multi-row-header handling.
+
+### Fix -- Woodbury
+
+Added `_fix_split_money()` to `refresh_iowa_woodbury_tax_liens.py`: collapses all whitespace between a `$` and the next non-money character before running the existing `MONEY` regex. Applied inside `_published_amounts()` so every caller benefits automatically. Result: 1100 -> **1569/1569** (the complete official real-estate item range), verified live. 7 new regression tests in `tests/test_iowa_woodbury_tax_liens.py`, including one confirming the fix never bridges across the boundary into the *second* dollar amount on a line (each amount starts with its own `$`, so the collapse correctly resets there), and one confirming the existing $20-fee safety check still rejects genuinely wrong pairs.
+
+### What happened -- Dubuque (found while verifying the fix unblocks the full pipeline)
+
+Running the downstream pipeline in order (Woodbury -> Dubuque -> Verify) to confirm issue #29's "blocks the whole shared job" problem was actually resolved surfaced that `refresh_iowa_dubuque_tax_liens.py` has never successfully published -- it currently recovers only 9 of the expected 576 real-estate items, and always has (0 `IA-Dubuque-2026` rows exist in the currently-published `main` data, so this predates today, not a regression from anything in this change). Root cause, confirmed by grepping the live PDF: item numbers like `8)` and `9)` are **not unique across the document** -- the county's publication resets numbering per township/district, so "item 8" and "item 9" each legitimately appear well over 100 times throughout the PDF for different parcels in different districts. The parser dedupes globally by raw item number (`seen_items: set[int]`), so it keeps only the very first "8)" and "9)" it encounters and silently discards every later, equally-legitimate reuse of those numbers -- which is why extraction stops dead right after item 9 and "items 10-29" never appear at all. This is architecturally different from Woodbury/Linn's PDFs, which number continuously 1-N for the whole county with no resets.
+
+**Not fixed** -- this needs the item-identification key reworked to include district (or similar) before the parser can be trusted, and needs confirming that "576" is even the right total under a per-district-aware count. Filed as issue #35 with full evidence rather than guessed at.
+
+### Workaround shipped for Dubuque (pipeline resilience, not a real fix)
+
+Same pattern already established for Johnson/Linn in this same bug's history: added `id: iowa_dubuque` + `continue-on-error: true` to Dubuque's refresh step, and added `"IA-Dubuque-2026"` to `blocked_zero_ok` in the Verify step -- in **both** `refresh-properties.yml` and `refresh-tax-lien-properties.yml` (they duplicate this block, see the "Rule" in BUG-006 above about keeping them in sync). Dubuque producing 0 rows no longer aborts the shared job; it just prints a warning and lets Indiana/Cochise/Woodbury/downstream market appenders continue publishing, exactly like Johnson and Linn already do.
+
+### Rule for future collectors
+
+**A safety check that correctly rejects bad data can mask a completely different bug upstream of it** -- Woodbury's $20-fee invariant check was doing its job (rejecting `48.00`/`368.00` as not a valid fee pair), but the real problem was a text-extraction artifact feeding it wrong inputs in the first place. When a parser's own safety gate is silently dropping rows, check what's actually reaching the gate before assuming the gate's logic is wrong. Separately: **never assume a numbering scheme is globally unique just because it looks sequential in one section** -- Dubuque's per-district reset vs. Woodbury/Linn's county-wide continuous numbering is exactly the kind of source-specific structural difference this repo's "verify against 5 known parcels" / "find the authoritative spec" convention exists to catch.
 
 ---
 

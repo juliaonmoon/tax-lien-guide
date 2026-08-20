@@ -75,10 +75,18 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   favor of hard-blocking publish until Iowa coverage is real (see
   BUG-006's "Update" section before touching this again — it's an
   intentional tradeoff tied to active work fixing the Linn/Johnson
-  parsers themselves, not an oversight). As of this note, both
-  workflows still hard-block on Iowa's current 0-row state.
+  parsers themselves, not an oversight). **Update 2026-08-20 (BUG-008):**
+  Woodbury was found to be the thing actually hard-blocking both
+  workflows (a PDF-extraction bug, not the Johnson/Linn source-access
+  issues) — fixed and verified live (1569/1569 rows). Dubuque was found
+  independently broken (0 rows, see issue #35) and added to
+  `blocked_zero_ok` in both workflows alongside Johnson/Linn, matching
+  the same established pattern, so it no longer blocks the shared job
+  either. `refresh-tax-lien-properties.yml`'s hard-block-on-Iowa policy
+  (the "deliberately reverted" tradeoff above) still applies to
+  Johnson/Linn specifically — untouched by this fix.
 - `tests/` — one test module per collector, fixture-based (no live network
-  calls in tests). 87 tests as of 2026-08-20.
+  calls in tests). 94 tests as of 2026-08-20.
 
 ## What works (verified)
 
@@ -100,12 +108,16 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   rolling Surplus Properties list — deliberately chosen over that same
   platform's per-county live auction catalogs, which are single scheduled
   events that go stale within hours.
-- Iowa property-level tax liens (Johnson/Linn/Woodbury/Dubuque) exist as
-  real collector code but have not cleared their publish-safety gates yet
+- **Iowa Woodbury tax liens (1569, live — fixed 2026-08-20)**: a PDF
+  text-extraction artifact was splitting dollar amounts with a stray
+  internal space and silently dropping ~30% of rows; fixed, verified
+  against the live 2026 publication (see BUG-008 in BUGS.md, closes
+  issue #29). Johnson/Linn/Dubuque property-level tax liens still exist
+  as real collector code but have not cleared their publish-safety gates
   — see "Pending / blocked" below; not counted here.
-- Total: 12,518 tax-lien records + 454 tax-deed records as of 2026-08-20
+- Total: 14,087 tax-lien records + 454 tax-deed records as of 2026-08-20
   (Coconino is intentionally cross-listed in both, clearly labeled).
-- Full test suite green (87/87) as of 2026-08-20.
+- Full test suite green (94/94) as of 2026-08-20.
 
 ## Hard-won gotchas
 
