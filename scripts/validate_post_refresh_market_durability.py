@@ -29,6 +29,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_fremont_tax_lien_market.py",
     "scripts/add_colorado_delta_tax_lien_market.py",
     "scripts/add_colorado_garfield_tax_lien_market.py",
+    "scripts/add_colorado_routt_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
     "scripts/add_iowa_polk_tax_lien_market.py",
@@ -40,17 +41,10 @@ REQUIRED_PUBLISHERS = [
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
-# County-specific current rates that must survive the generic state-level rate
-# pass. Keep this deliberately narrow: add an assertion only when an official
-# source has published a rate for the current certificate/sale year.
 REQUIRED_MARKET_RATE_TEXT = {
     "Colorado — Logan County": "14%/yr for 2026 certificate",
 }
 
-# Some public sources permit viewing but explicitly restrict redistribution or
-# do not expose a verified machine-readable parcel list. Their market rows must
-# preserve that safety boundary so a later refactor cannot accidentally turn
-# them into unsupported property-level ingestion targets.
 REQUIRED_MARKET_SAFETY_TEXT = {
     "Iowa — Black Hawk County": "MARKET-LEVEL ONLY",
     "Iowa — Story County": "MARKET-LEVEL ONLY",
@@ -60,6 +54,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Colorado — Fremont County": "MARKET-LEVEL ONLY",
     "Colorado — Delta County": "MARKET-LEVEL ONLY",
     "Colorado — Garfield County": "MARKET-LEVEL ONLY",
+    "Colorado — Routt County": "MARKET-LEVEL ONLY",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
@@ -80,7 +75,6 @@ def marker_for(script_path: Path) -> str:
 
 
 def market_row(index_text: str, marker: str) -> str | None:
-    """Return the generated JS object body for one market marker."""
     start = index_text.find("{state:'" + marker + "'")
     if start == -1:
         return None
