@@ -34,13 +34,18 @@ SOURCE_PDF = "https://dubuquecountyiowa.gov/DocumentCenter/View/8222/2026-Public
 AUCTION_URL = "https://www.iowataxauction.com/"
 UA = "TaxLienGuideBot/2.8 (public tax-lien research; no access-control bypass)"
 
-# PDF text engines sometimes emit the sale marker as "1 )" instead of "1)".
-# Accept extractor-added whitespace around the closing parenthesis, but keep the
-# item-number shape constrained to 1-3 digits so unrelated prose is not matched.
-ITEM_RE = re.compile(r"^\s*(\d{1,3})\s*\)\s*(.*)$")
+# PDF text engines sometimes emit the sale marker as "1 )" instead of "1)" and
+# can also glue district/column text in front of the marker. Keep the number
+# shape constrained to 1-3 digits, but search within an extracted line instead
+# of requiring the marker to be the first token on that line.
+ITEM_RE = re.compile(r"(?<!\d)(\d{1,3})\s*\)\s*(.*)$")
 PARCEL_RE = re.compile(r"\b(\d{10})\b")
 MONEY_RE = re.compile(r"\$\s*([\d,]+(?:\.\d{2})?)")
 REAL_ESTATE_ITEM_COUNT = 576
+
+
+def _item_match(line: str) -> re.Match[str] | None:
+    return ITEM_RE.search(line)
 
 
 def fetch_pdf() -> bytes:
@@ -58,7 +63,8 @@ def fetch_pdf() -> bytes:
 def _split_lines(text: str) -> list[str]:
     # Page boundaries and some text engines can glue a numbered item to the
     # preceding text. Re-split immediately before item tokens, tolerating the
-    # same extractor-added whitespace accepted by ITEM_RE.
+    # same extractor-added whitespace accepted by ITEM_RE. This is only a
+    # normalization aid; _item_match() also searches within lines as a fallback.
     text = re.sub(r"(?<!\n)(?=(?:\d{1,3})\s*\)\s)", "\n", text)
     return [line.rstrip() for line in text.splitlines() if line.strip()]
 
@@ -105,7 +111,7 @@ def extract_line_strategies(raw: bytes) -> dict[str, list[str]]:
 
 def _nearest_parcel(lines: list[str], item_index: int) -> str | None:
     for idx in range(item_index - 1, max(-1, item_index - 6), -1):
-        if ITEM_RE.match(lines[idx]):
+        if _item_match(lines[idx]):
             break
         matches = PARCEL_RE.findall(lines[idx])
         if matches:
@@ -135,7 +141,7 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
                     parts.append(before)
             break
         if j > i:
-            if ITEM_RE.match(current) or PARCEL_RE.search(current):
+            if _item_match(current) or PARCEL_RE.search(current):
                 break
             cleaned = current.strip(" .")
             if cleaned:
@@ -182,7 +188,7 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
 def _strategy_candidates(lines: list[str], verified: str) -> dict[int, dict]:
     found: dict[int, list[dict]] = defaultdict(list)
     for i, line in enumerate(lines):
-        match = ITEM_RE.match(line)
+        match = _item_match(line)
         if not match:
             continue
         candidate = _candidate_row(lines, i, match, verified)
