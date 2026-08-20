@@ -34,10 +34,6 @@ SOURCE_PDF = "https://dubuquecountyiowa.gov/DocumentCenter/View/8222/2026-Public
 AUCTION_URL = "https://www.iowataxauction.com/"
 UA = "TaxLienGuideBot/2.8 (public tax-lien research; no access-control bypass)"
 
-# PDF text engines sometimes emit the sale marker as "1 )" instead of "1)" and
-# can also glue district/column text in front of the marker. Keep the number
-# shape constrained to 1-3 digits, but search within an extracted line instead
-# of requiring the marker to be the first token on that line.
 ITEM_RE = re.compile(r"(?<!\d)(\d{1,3})\s*\)\s*(.*)$")
 PARCEL_RE = re.compile(r"\b(\d{10})\b")
 MONEY_RE = re.compile(r"\$\s*([\d,]+(?:\.\d{2})?)")
@@ -46,6 +42,24 @@ REAL_ESTATE_ITEM_COUNT = 576
 
 def _item_match(line: str) -> re.Match[str] | None:
     return ITEM_RE.search(line)
+
+
+def _sale_item_match(line: str) -> re.Match[str] | None:
+    """Return a real sale-row marker, not an incidental numbered text token.
+
+    The official publication places the delinquent dollar amount on the sale
+    item's numbered line. Diagnostics against the live county PDF show many
+    additional N) tokens in legal/notice text; treating those as item boundaries
+    breaks parcel association. Requiring both structures is a fail-closed way to
+    distinguish actual sale rows without reading or storing taxpayer names.
+    """
+    match = _item_match(line)
+    if not match or not MONEY_RE.search(line):
+        return None
+    item_number = int(match.group(1))
+    if not 1 <= item_number <= REAL_ESTATE_ITEM_COUNT:
+        return None
+    return match
 
 
 def fetch_pdf() -> bytes:
@@ -61,10 +75,6 @@ def fetch_pdf() -> bytes:
 
 
 def _split_lines(text: str) -> list[str]:
-    # Page boundaries and some text engines can glue a numbered item to the
-    # preceding text. Re-split immediately before item tokens, tolerating the
-    # same extractor-added whitespace accepted by ITEM_RE. This is only a
-    # normalization aid; _item_match() also searches within lines as a fallback.
     text = re.sub(r"(?<!\n)(?=(?:\d{1,3})\s*\)\s)", "\n", text)
     return [line.rstrip() for line in text.splitlines() if line.strip()]
 
@@ -110,8 +120,10 @@ def extract_line_strategies(raw: bytes) -> dict[str, list[str]]:
 
 
 def _nearest_parcel(lines: list[str], item_index: int) -> str | None:
-    for idx in range(item_index - 1, max(-1, item_index - 6), -1):
-        if _item_match(lines[idx]):
+    for idx in range(item_index - 1, max(-1, item_index - 8), -1):
+        # Only another actual sale row is a hard item boundary. Incidental N)
+        # tokens in notice/legal text must not block the parcel search.
+        if _sale_item_match(lines[idx]):
             break
         matches = PARCEL_RE.findall(lines[idx])
         if matches:
@@ -141,7 +153,7 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
                     parts.append(before)
             break
         if j > i:
-            if _item_match(current) or PARCEL_RE.search(current):
+            if _sale_item_match(current) or PARCEL_RE.search(current):
                 break
             cleaned = current.strip(" .")
             if cleaned:
@@ -188,7 +200,7 @@ def _candidate_row(lines: list[str], i: int, match: re.Match[str], verified: str
 def _strategy_candidates(lines: list[str], verified: str) -> dict[int, dict]:
     found: dict[int, list[dict]] = defaultdict(list)
     for i, line in enumerate(lines):
-        match = _item_match(line)
+        match = _sale_item_match(line)
         if not match:
             continue
         candidate = _candidate_row(lines, i, match, verified)
