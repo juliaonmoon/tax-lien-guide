@@ -2,10 +2,10 @@
   "updated_at": "2026-08-18T14:24:08.539854+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
-  "states_tracked": 6,
-  "counties_tracked": 11,
+  "states_tracked": 7,
+  "counties_tracked": 16,
   "official_sources_registered": 5,
-  "property_count": 12948,
+  "property_count": 12972,
   "source_health": [
     {
       "state": "FL",
@@ -80,9 +80,9 @@
   ],
   "coverage_counts": {
     "tax_deed_foreclosure": {
-      "records": 430,
-      "states": 5,
-      "counties": 6
+      "records": 454,
+      "states": 6,
+      "counties": 11
     },
     "tax_lien": {
       "records": 12518,
@@ -90,9 +90,9 @@
       "counties": 6
     },
     "combined": {
-      "records": 12948,
-      "states": 6,
-      "counties": 11
+      "records": 12972,
+      "states": 7,
+      "counties": 16
     }
   }
 }
