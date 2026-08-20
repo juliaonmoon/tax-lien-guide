@@ -48,6 +48,21 @@ def extract_text(raw: bytes) -> str:
         return "\n".join(page.extract_text(layout=False) or "" for page in pdf.pages)
 
 
+def _fix_split_money(line: str) -> str:
+    """Rejoin a dollar amount that pdfplumber split with a stray internal space.
+
+    On roughly 30% of 2026 real-estate rows, the amount's right-aligned digits
+    extract with a gap after the leading digit(s) -- "$ 3 48.00" for what the
+    PDF actually renders as $348.00, or "$ 8 .00" for $8.00. Confirmed against
+    the live 2026 publication: collapsing all whitespace between "$" and the
+    next non-money character recovers every one of these rows, and the
+    recovered values still satisfy the same-fee invariant _published_amounts()
+    checks below -- this isn't guessing a value, it's undoing an extraction
+    artifact in front of digits the PDF already contains.
+    """
+    return re.sub(r"\$((?:\s*[\d,.])+)", lambda m: "$" + re.sub(r"\s+", "", m.group(1)), line)
+
+
 def _published_amounts(line: str) -> tuple[float, float] | None:
     """Return (publication amount, sale amount) without reading owner text.
 
@@ -56,6 +71,7 @@ def _published_amounts(line: str) -> tuple[float, float] | None:
     publication amount plus the county's $20 certificate fee. Use that invariant
     to normalize the pair instead of depending on column extraction order.
     """
+    line = _fix_split_money(line)
     values = [round(float(raw.replace(",", "")), 2) for raw in MONEY.findall(line)]
     if len(values) < 2:
         return None

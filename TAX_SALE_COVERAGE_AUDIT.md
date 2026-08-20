@@ -551,6 +551,38 @@ reuse potential), not by state alphabetically:
    parsed as `null`, never `0`, so a not-yet-priced property never looks
    like a free one.
 
+8h. **Woodbury County, IA tax liens -- 469 missing rows recovered
+   (1100 -> 1569/1569), root cause fixed; Dubuque County, IA found
+   independently broken while verifying the fix, 2026-08-20.** Picked up
+   issue #29 (Woodbury regressed below its 1500-row publish minimum,
+   blocking the entire shared `refresh-properties.yml` job). Root cause:
+   a pdfplumber text-extraction artifact was splitting dollar amounts
+   with a stray internal space (`$348.00` extracted as `$ 3 48.00`),
+   which broke the parser's own $20-certificate-fee safety check and
+   silently dropped the row -- the safety check was doing its job
+   correctly, the bug was in what reached it. Confirmed live against the
+   real 2026 PDF and fixed by collapsing the stray whitespace before
+   parsing; recovered the complete 1569/1569 real-estate item range,
+   verified (not just row-count-verified -- spot-checked that recovered
+   values still satisfy the fee invariant). Full detail in BUGS.md
+   BUG-008.
+
+   Running the downstream pipeline in order to confirm issue #29 was
+   *actually* resolved (not just Woodbury's own step) surfaced that
+   Dubuque has never successfully published either -- 9/576 items, not a
+   regression from this change. Root cause: the county's PDF resets item
+   numbering per district (item "8)" and "9)" each appear 100+ times
+   across different districts), but the parser dedupes globally by raw
+   item number, discarding every reuse after the first. Filed as issue
+   #35 with full evidence; not fixed -- needs the identification key
+   reworked to include district, and needs confirming 576 is even the
+   right total under a per-district-aware count.
+
+   Workaround shipped so Dubuque's still-broken state doesn't re-block
+   the shared pipeline the way Woodbury did: added to `blocked_zero_ok`
+   in both workflow files' Verify step, plus `continue-on-error: true`
+   on its own refresh step, mirroring the existing Johnson/Linn pattern.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,
