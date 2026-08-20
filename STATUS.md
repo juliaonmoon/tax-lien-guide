@@ -54,10 +54,13 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   `market_value`, `property_address`, `city`, `zip`, `legal_description`
   for the 4 Indiana counties from the official Indiana Gateway
   (`gateway.ifionline.org`). Only fills missing fields, never overwrites.
-- `data/properties.json` — tax deed dataset (WA/TX/FL). Written by
-  `scripts/refresh_properties.py` (King, Tarrant, Brevard) and
-  `scripts/refresh_florida_tax_deeds.py` (Putnam, Escambia). Same
-  shared-file caution as above (see BUG-002).
+- `data/properties.json` — tax deed dataset (WA/TX/FL/OK). Written by
+  `scripts/refresh_properties.py` (King, Tarrant, Brevard),
+  `scripts/refresh_florida_tax_deeds.py` (Putnam, Escambia), and
+  `scripts/refresh_oklahoma_county_ok_tax_deeds.py` (Oklahoma County — new
+  2026-08-20). Same shared-file caution as above (see BUG-002); the
+  Oklahoma writer merges scoped by (state, county), not state alone, to
+  avoid the state-wide-clobber failure mode BUG-001/002 already found.
 - `.github/workflows/refresh-tax-lien-properties.yml` (cron 14:37 UTC) and
   `refresh-properties.yml` (cron 13:17 UTC) — daily data refresh +
   publish. Share concurrency group `tax-lien-guide-data-writes`. These
@@ -73,7 +76,7 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   parsers themselves, not an oversight). As of this note, both
   workflows still hard-block on Iowa's current 0-row state.
 - `tests/` — one test module per collector, fixture-based (no live network
-  calls in tests). 61 tests as of 2026-08-19.
+  calls in tests). 73 tests as of 2026-08-20.
 
 ## What works (verified)
 
@@ -83,12 +86,19 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   parcels before trusting the parser).
 - **Arizona tax liens**: Coconino (33, snapshot), Cochise (11,678, live —
   the largest dataset in the project).
-- **Tax deeds**: King WA (145, live), Tarrant TX (20, live), Putnam FL
-  (38, live), Escambia FL (1, snapshot), Brevard FL (0, zero_active — real
-  collector, genuinely nothing active right now).
-- Total: 12,518 tax-lien records + ~204 tax-deed records (Coconino is
-  intentionally cross-listed in both, clearly labeled).
-- Full test suite green (55/55) as of the last merge to `main`.
+- **Tax deeds**: King WA (145, live), Tarrant TX (live, count fluctuates
+  daily), Putnam FL (38, live), Escambia FL (1, snapshot), Brevard FL (0,
+  zero_active — real collector, genuinely nothing active right now),
+  **Oklahoma County OK (196, live — new 2026-08-20)**: county-owned
+  resale parcels (received no bidder at the annual June auction), from
+  the Treasurer's own server-rendered HTML list. No owner names published
+  by the source at all.
+- Iowa property-level tax liens (Johnson/Linn/Woodbury/Dubuque) exist as
+  real collector code but have not cleared their publish-safety gates yet
+  — see "Pending / blocked" below; not counted here.
+- Total: 12,518 tax-lien records + 430 tax-deed records as of 2026-08-20
+  (Coconino is intentionally cross-listed in both, clearly labeled).
+- Full test suite green (73/73) as of 2026-08-20.
 
 ## Hard-won gotchas
 
@@ -199,8 +209,10 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   real browser (plain HTTP fetch gets a 403, likely bot-UA filtering), no
   public API found, and no active CA auction currently listed (next one:
   Santa Clara County, Oct 23–26, 2026). Recheck closer to that date.
-- 28 states in `data/source-registry.json` are honestly marked
-  `not_started` — no fabricated coverage, just not yet researched.
+- 27 states in `data/source-registry.json` are honestly marked
+  `not_started` — no fabricated coverage, just not yet researched. (Was
+  28; Oklahoma moved to `live` 2026-08-20 via Oklahoma County's
+  county-owned resale list.)
 
 ## Conventions
 

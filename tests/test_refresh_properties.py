@@ -25,7 +25,9 @@ class PropertiesDatasetTests(unittest.TestCase):
             # AZ/Coconino is the tax-lien cross-listing described in
             # TAX_SALE_COVERAGE_AUDIT.md -- intentionally present here too,
             # clearly distinguished by sale_type elsewhere in the record.
-            self.assertIn(row["state"], {"WA", "TX", "FL", "AZ"})
+            # OK/Oklahoma County is written by
+            # scripts/refresh_oklahoma_county_ok_tax_deeds.py.
+            self.assertIn(row["state"], {"WA", "TX", "FL", "AZ", "OK"})
             self.assertTrue(row.get("county"))
             self.assertTrue(row.get("parcel_id"))
             self.assertTrue(row.get("official_url"))

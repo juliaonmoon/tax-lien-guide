@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-08-18T00:39:57.502751+00:00",
-  "methodology": "Initial nationwide source registry populated from the repository's actual collector scripts, data files, and source-health records, cross-checked against current official government pages as of 2026-08-16. Every row marked collector_status=live or snapshot with property_query=true corresponds to a collector script that produces individually identified, verified records. Rows marked not_started or identified are honest placeholders, not fabricated coverage — a county or state only changes to property_query=true once tested, executable collector code exists and produces validated individual records.",
+  "methodology": "Initial nationwide source registry populated from the repository's actual collector scripts, data files, and source-health records, cross-checked against current official government pages as of 2026-08-16. Every row marked collector_status=live or snapshot with property_query=true corresponds to a collector script that produces individually identified, verified records. Rows marked not_started or identified are honest placeholders, not fabricated coverage \u2014 a county or state only changes to property_query=true once tested, executable collector code exists and produces validated individual records.",
   "definitions": {
     "property_query_true": "Executable collector code produces one verified row per certificate, parcel, sale item, or property.",
     "property_query_false": "Only informational/market rows, links, schedules, or an unimplemented/blocked source exist.",
@@ -18,18 +18,18 @@
   "summary": {
     "total_jurisdictions": 79,
     "by_collector_status": {
-      "live": 7,
+      "live": 8,
       "snapshot": 3,
       "zero_active": 1,
       "identified": 35,
       "blocked": 5,
-      "not_started": 28
+      "not_started": 27
     },
     "by_property_query": {
-      "true": 11,
-      "false": 68
+      "true": 12,
+      "false": 67
     },
-    "total_verified_property_records": 12722
+    "total_verified_property_records": 12918
   },
   "jurisdictions": [
     {
@@ -850,7 +850,7 @@
     },
     {
       "state": "AK",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -866,7 +866,7 @@
     },
     {
       "state": "AR",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -882,7 +882,7 @@
     },
     {
       "state": "CT",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -898,7 +898,7 @@
     },
     {
       "state": "DE",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -914,7 +914,7 @@
     },
     {
       "state": "HI",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -930,7 +930,7 @@
     },
     {
       "state": "ID",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -946,7 +946,7 @@
     },
     {
       "state": "KS",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -962,7 +962,7 @@
     },
     {
       "state": "LA",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -978,7 +978,7 @@
     },
     {
       "state": "ME",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -994,7 +994,7 @@
     },
     {
       "state": "MA",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1010,7 +1010,7 @@
     },
     {
       "state": "MI",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1026,7 +1026,7 @@
     },
     {
       "state": "MN",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1042,7 +1042,7 @@
     },
     {
       "state": "MT",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1058,7 +1058,7 @@
     },
     {
       "state": "NH",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1074,7 +1074,7 @@
     },
     {
       "state": "NM",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1090,7 +1090,7 @@
     },
     {
       "state": "NY",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1106,7 +1106,7 @@
     },
     {
       "state": "NC",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1122,7 +1122,7 @@
     },
     {
       "state": "ND",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1138,23 +1138,23 @@
     },
     {
       "state": "OK",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
-      "sale_system": null,
-      "official_information_url": null,
-      "current_list_url": null,
-      "assessor_url": null,
-      "collector_status": "not_started",
-      "property_query": false,
-      "last_attempt_at": null,
-      "last_success_at": null,
-      "current_record_count": 0,
-      "blocker": "No research has been done for this state yet; sale system type has not been verified and is intentionally left blank rather than guessed.",
-      "collector_module": null,
-      "test_module": null
+      "county_or_locality": "Oklahoma County",
+      "sale_system": "county-owned resale (post-auction) property list",
+      "official_information_url": "https://www.oklahomacounty.org/elected-offices/treasurer",
+      "current_list_url": "https://docs.oklahomacounty.org/treasurer/CountyOwnedList.asp",
+      "assessor_url": "https://docs.oklahomacounty.org/AssessorWP5/",
+      "collector_status": "live",
+      "property_query": true,
+      "last_attempt_at": "2026-08-20T00:57:56+00:00",
+      "last_success_at": "2026-08-20T00:57:56+00:00",
+      "current_record_count": 196,
+      "blocker": null,
+      "collector_module": "scripts/refresh_oklahoma_county_ok_tax_deeds.py",
+      "test_module": "tests/test_oklahoma_county_ok_tax_deeds.py"
     },
     {
       "state": "OR",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1170,7 +1170,7 @@
     },
     {
       "state": "PA",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1186,7 +1186,7 @@
     },
     {
       "state": "RI",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1202,7 +1202,7 @@
     },
     {
       "state": "SC",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1218,7 +1218,7 @@
     },
     {
       "state": "TN",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1234,7 +1234,7 @@
     },
     {
       "state": "UT",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1250,7 +1250,7 @@
     },
     {
       "state": "VA",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1266,7 +1266,7 @@
     },
     {
       "state": "VT",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,
@@ -1282,7 +1282,7 @@
     },
     {
       "state": "WI",
-      "county_or_locality": "Not yet inventoried — no county or locality reviewed",
+      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
       "sale_system": null,
       "official_information_url": null,
       "current_list_url": null,

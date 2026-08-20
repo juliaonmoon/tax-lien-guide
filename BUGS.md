@@ -1,5 +1,30 @@
 # Bug Log & Fixes
-### Last updated: August 19, 2026 (BUG-006)
+### Last updated: August 20, 2026 (BUG-007)
+
+---
+
+## BUG-007 — `refresh_florida_tax_deeds.py`'s shared-file merge is scoped by state only, not (state, county); latent, not yet fired
+
+**Severity:** Medium (same failure shape as BUG-001/BUG-002 -- a shared-file collector clobbering another collector's rows -- but currently dormant, not actively happening)
+**Found:** August 20, 2026, while adding a new tax-deed collector (Oklahoma County, OK) to `data/properties.json` and reviewing how the file's existing writers avoid clobbering each other
+**Affected:** `scripts/refresh_florida_tax_deeds.py`
+**Status:** Not fixed. Flagged and documented; the fix belongs to a dedicated change, not bundled into an unrelated new-collector PR.
+
+### What's wrong
+`data/properties.json` has three writers: `refresh_properties.py` (fully rebuilds its own 3 hardcoded sources -- Brevard FL, Tarrant TX, King WA -- every run), `refresh_florida_tax_deeds.py` (Putnam FL, Escambia FL), and now `scripts/refresh_oklahoma_county_ok_tax_deeds.py` (Oklahoma County, OK). The workflow runs them in that order every day.
+
+`refresh_florida_tax_deeds.py`'s `merge_state_rows(existing, new_rows, state)` drops every existing row where `row["state"] == state` before adding its own new rows back. It is called with `state="FL"`. But **two different counties share the FL state code in this file**: Brevard (written by `refresh_properties.py`, upstream in the same job) and Putnam/Escambia (written by this script). Because the merge key is state-only, every time `refresh_florida_tax_deeds.py` runs, it silently drops *all* FL rows -- including whatever Brevard rows `refresh_properties.py` just wrote earlier in the same job -- before re-adding only its own Putnam/Escambia rows.
+
+This has not actually caused data loss yet, purely by luck of current conditions: Brevard is currently `zero_active` (STATUS.md: "0, zero_active -- real collector, genuinely nothing active right now"), so there has been nothing for the FL-wide merge to drop. **The moment Brevard's official sale-list page has an active listing again, this will silently delete it from the published file every single day**, the same way BUG-001 silently deleted Cochise County's 11,678 records every day until fixed.
+
+### Why this wasn't fixed here
+Found as a side effect of adding a new collector to the same shared file, not the task at hand. Following this repo's "no cross-project/unrelated fixes bundled into an unrelated change" discipline -- flagging it here (and in `TAX_SALE_COVERAGE_AUDIT.md` §8f) rather than silently patching someone else's collector inside an unrelated PR. The new Oklahoma collector added in the same session as this bug was found does **not** have this problem: its own `merge_state_county_rows()` is scoped by `(state, county)` deliberately, specifically because writing it surfaced this issue in the neighboring Florida script.
+
+### Fix (for whoever picks this up)
+Change `refresh_florida_tax_deeds.py`'s `merge_state_rows(existing, new_rows, state)` to accept and filter by `(state, county)` pairs instead of state alone -- e.g. drop rows matching `(row["state"], row["county"]) in {("FL","Putnam"), ("FL","Escambia")}`, mirroring the pattern in `refresh_oklahoma_county_ok_tax_deeds.py`'s `merge_state_county_rows()`. Add a regression test asserting a Florida refresh does not remove a Brevard row (the mirror image of `MergeStateRowsTests.test_replaces_only_the_target_state` in `tests/test_florida_tax_deeds.py`, which currently only tests that *other states* survive, not that *other counties in the same state* survive).
+
+### Rule for future collectors
+**When multiple collectors share one output file and are distinguished by more than one field (state *and* county), the merge/replace key used to avoid clobbering must include every field that distinguishes one collector's ownership from another's -- not just the first one that happens to be unique among the collectors that exist today.** A merge key that's "unique enough for now" silently stops being safe the moment a new collector is added that shares the coarser key, and the failure is invisible until the clobbered collector's row count is nonzero again.
 
 ---
 
