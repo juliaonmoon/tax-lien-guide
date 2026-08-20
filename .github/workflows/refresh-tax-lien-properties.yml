@@ -43,8 +43,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: tax-lien-guide-data-writes
-  cancel-in-progress: false
+  group: tax-lien-guide-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || 'data-writes' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   refresh:
