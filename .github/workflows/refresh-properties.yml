@@ -52,6 +52,10 @@ jobs:
           cp /tmp/county-sources-before-refresh.json data/county-sources.json
       - name: Refresh Florida lands-available tax deed properties
         run: python scripts/refresh_florida_tax_deeds.py
+      - name: Refresh Oklahoma County OK county-owned resale properties
+        id: oklahoma_county_ok
+        continue-on-error: true
+        run: python scripts/refresh_oklahoma_county_ok_tax_deeds.py
       - name: Preserve King County rows after source-feed collapse
         run: python scripts/preserve_king_rows_on_feed_failure.py
       - name: Preserve King County tax fields after transient failures

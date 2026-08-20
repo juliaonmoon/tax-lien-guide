@@ -462,6 +462,50 @@ reuse potential), not by state alphabetically:
    aggregation rule; a wrong guess here would mean publishing incorrect
    dollar amounts, not just missing rows.
 
+8f. **Oklahoma County, OK -- new tax-deed collector shipped, 2026-08-20.**
+   Picked from the 28 `not_started` states as a tractable first entry.
+   Source: the Treasurer's own "ACTIVE RESALE ACCOUNTS"/county-owned
+   parcel list (`docs.oklahomacounty.org/treasurer/CountyOwnedList.asp`)
+   -- properties that received no bidder at the annual June resale
+   auction and are now county-owned, available for direct purchase (or,
+   rarely, scheduled for a future public resale). A plain fetch without a
+   browser-like User-Agent looked blocked; a normal one works fine, same
+   "bot-UA filtering, not real access control" pattern already seen
+   elsewhere in this project.
+
+   Chose this source over the many other candidates checked because it is
+   unusually clean: a live, server-rendered classic-ASP HTML table (no JS
+   rendering needed), one row per parcel, and -- unlike most of this
+   project's sources -- **the table itself never publishes an owner name
+   at all**, so there was nothing to filter out. 196 real parcels parsed
+   and committed (`scripts/refresh_oklahoma_county_ok_tax_deeds.py`,
+   `tests/test_oklahoma_county_ok_tax_deeds.py`, 11 tests). Verified the
+   "Suggested Initial Bid Amount" column is the real asking price (never
+   $0 across all 196 rows, range $210-$17,840) versus "Initial Bid
+   Amount", which is $0.00 for every row except the one formally
+   scheduled for a specific future public sale -- confirmed by checking
+   the full table, not guessed from one sample row.
+
+   Deliberately scoped as a base-fields-only first version: no
+   legal description, land value, or assessed value yet. Each row does
+   carry a link to a per-parcel Oklahoma County Assessor detail page
+   (`AssessorWP5/AN-R.asp`) that *would* let a follow-up enrich those
+   fields -- but that same page also carries the parcel's current owner
+   name and full historical deed Grantor/Grantee names, so enriching from
+   it safely needs the parser to explicitly stop before the "Deed
+   Transaction History" section, the same discipline already applied to
+   Tarrant's TAD lookup and King County's assessor enrichment. Not done
+   in this change; documented as the collector's `next_action` in
+   `data/project-management.json` (`TD-OK-OKLAHOMA`) rather than rushed.
+
+   Writes to the shared `data/properties.json` (same file as King/Tarrant/
+   Brevard/Putnam/Escambia). Deliberately merges scoped by *(state,
+   county)*, not state alone -- writing this surfaced a latent, currently-
+   dormant version of the same clobbering risk in the neighboring
+   `refresh_florida_tax_deeds.py` (its merge is state-only, safe today
+   only because Brevard currently has 0 active rows). Logged as BUG-007
+   in `BUGS.md` rather than fixed here -- out of scope for this change.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,
