@@ -11,6 +11,7 @@ on:
       - ".github/workflows/ensure-post-refresh-tax-liens.yml"
       - "scripts/validate_post_refresh_market_durability.py"
       - "scripts/add_colorado_alamosa_tax_lien_market.py"
+      - "scripts/add_colorado_morgan_tax_lien_market.py"
       - "scripts/add_iowa_dallas_tax_lien_market.py"
       - "scripts/add_iowa_pottawattamie_tax_lien_market.py"
       - "scripts/add_iowa_black_hawk_tax_lien_market.py"
@@ -58,6 +59,7 @@ jobs:
             python scripts/add_colorado_douglas_tax_lien_market.py
             python scripts/add_colorado_logan_tax_lien_market.py
             python scripts/add_colorado_alamosa_tax_lien_market.py
+            python scripts/add_colorado_morgan_tax_lien_market.py
             if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
               python scripts/add_colorado_weld_tax_lien_market.py
             fi
