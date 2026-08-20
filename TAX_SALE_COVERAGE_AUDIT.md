@@ -506,6 +506,51 @@ reuse potential), not by state alphabetically:
    only because Brevard currently has 0 active rows). Logged as BUG-007
    in `BUGS.md` rather than fixed here -- out of scope for this change.
 
+8g. **Michigan statewide surplus properties -- new tax-deed collector
+   shipped, 2026-08-20, same session as Oklahoma (8f).** Second pick from
+   the (now 26) `not_started` states. Considered Michigan because the
+   state's tax-foreclosure system is unusually centralized: the Michigan
+   Department of Treasury and dozens of counties all run their auctions
+   through one platform, tax-sale.info.
+
+   That platform has two very different kinds of listing. Its per-county
+   live auction catalogs (e.g. `/listings/catalog/2830` for Antrim) are
+   real, public, no-login, per-parcel data (Parcel ID, State Equalized
+   Value, legal description, minimum bid) -- but each one is a single
+   scheduled event that opens and closes within hours (the Antrim catalog
+   checked while researching this happened to be *the day of* its own
+   auction), making it a poor fit for a daily-refreshed dataset. Its
+   **Surplus Properties** list (`/surplus` -> `/listings/surplus`) is the
+   durable alternative: parcels that already went through an auction,
+   received no bidder, and are being reoffered first-come-first-served
+   with "no schedule" for when new ones are added or old ones are
+   claimed -- the same rolling-inventory shape as Florida's Lands
+   Available and Oklahoma's county-owned resale list (8f). Chose this one
+   deliberately over the live catalogs for that durability reason, not
+   because it was the only option found.
+
+   24 real parcels parsed and committed
+   (`scripts/refresh_michigan_surplus_tax_properties.py`,
+   `tests/test_michigan_surplus_tax_properties.py`, 14 tests), spanning 5
+   of the roughly 8 counties tax-sale.info listed as having surplus
+   inventory at collection time (Arenac, Bay, Jackson, Monroe, Otsego);
+   the rest had zero, which the source's own page explicitly says is
+   normal ("Some counties may have many parcels, and others none").
+   Confirmed the parser correctly *excludes* the live-auction catalog
+   pages sharing the same site (a fixture test asserts a live-catalog
+   page's HTML, which lacks the "Surplus <year>" title marker, returns no
+   row) so a future change to this collector can't accidentally start
+   pulling in the time-sensitive dataset instead.
+
+   Like Oklahoma, this source never publishes an owner name anywhere on
+   the parcel detail page -- confirmed by grepping the full rendered text
+   of five real sample pages (not just the fields being extracted) for
+   the word "owner"; the only hits were generic policy text such as "Can
+   Only Be Sold To Adjacent Owner". Money fields that read "TBA" (minimum
+   bid, current tax -- common on properties not yet fully processed) are
+   parsed as `null`, never `0`, so a not-yet-priced property never looks
+   like a free one.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,

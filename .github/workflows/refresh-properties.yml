@@ -56,6 +56,10 @@ jobs:
         id: oklahoma_county_ok
         continue-on-error: true
         run: python scripts/refresh_oklahoma_county_ok_tax_deeds.py
+      - name: Refresh Michigan statewide surplus tax properties
+        id: michigan_surplus
+        continue-on-error: true
+        run: python scripts/refresh_michigan_surplus_tax_properties.py
       - name: Preserve King County rows after source-feed collapse
         run: python scripts/preserve_king_rows_on_feed_failure.py
       - name: Preserve King County tax fields after transient failures

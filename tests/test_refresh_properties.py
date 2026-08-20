@@ -26,8 +26,10 @@ class PropertiesDatasetTests(unittest.TestCase):
             # TAX_SALE_COVERAGE_AUDIT.md -- intentionally present here too,
             # clearly distinguished by sale_type elsewhere in the record.
             # OK/Oklahoma County is written by
-            # scripts/refresh_oklahoma_county_ok_tax_deeds.py.
-            self.assertIn(row["state"], {"WA", "TX", "FL", "AZ", "OK"})
+            # scripts/refresh_oklahoma_county_ok_tax_deeds.py. MI/statewide
+            # surplus properties are written by
+            # scripts/refresh_michigan_surplus_tax_properties.py.
+            self.assertIn(row["state"], {"WA", "TX", "FL", "AZ", "OK", "MI"})
             self.assertTrue(row.get("county"))
             self.assertTrue(row.get("parcel_id"))
             self.assertTrue(row.get("official_url"))
