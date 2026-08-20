@@ -20,9 +20,12 @@ on:
 permissions:
   contents: write
 
+# Keep only the newest market-only publish attempt. This workflow regenerates
+# from the latest main before every push attempt, so it does not need to queue
+# behind long-running full data refreshes.
 concurrency:
-  group: tax-lien-guide-data-writes
-  cancel-in-progress: false
+  group: tax-lien-guide-post-refresh-market-writes
+  cancel-in-progress: true
 
 jobs:
   ensure-markets:
@@ -33,65 +36,46 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Sync latest main
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Ensure verified post-refresh tax lien markets
+      - name: Publish consolidated market updates from latest main
         run: |
-          python scripts/add_colorado_arapahoe_tax_lien_market.py
-          python scripts/add_colorado_el_paso_tax_lien_market.py
-          python scripts/add_colorado_larimer_tax_lien_market.py
-          python scripts/add_colorado_adams_tax_lien_market.py
-          python scripts/add_colorado_boulder_tax_lien_market.py
-          python scripts/add_colorado_mesa_tax_lien_market.py
-          python scripts/add_colorado_pueblo_tax_lien_market.py
-          python scripts/add_colorado_douglas_tax_lien_market.py
-          python scripts/add_colorado_logan_tax_lien_market.py
-          python scripts/add_colorado_alamosa_tax_lien_market.py
-          if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
-            python scripts/add_colorado_weld_tax_lien_market.py
-          fi
-          python scripts/add_florida_hernando_tax_lien_market.py
-          python scripts/add_florida_putnam_tax_lien_market.py
-          python scripts/add_iowa_polk_tax_lien_market.py
-          python scripts/add_iowa_dallas_tax_lien_market.py
-          python scripts/add_iowa_pottawattamie_tax_lien_market.py
-          python scripts/add_iowa_black_hawk_tax_lien_market.py
-          python scripts/add_iowa_story_tax_lien_market.py
-          python scripts/add_iowa_warren_tax_lien_market.py
-          python scripts/add_max_return_rates.py
-          python scripts/add_tax_lien_county_filter.py
-          python scripts/recount_tax_lien_properties.py
-      - name: Verify required post-refresh markets survived generation
-        run: python scripts/validate_post_refresh_market_durability.py
-      - name: Publish consolidated market updates safely
-        run: |
-          if git diff --quiet -- data/ index.html; then
-            echo "No post-refresh market changes."
-            exit 0
-          fi
-
-          rm -rf /tmp/post-refresh-output
-          mkdir -p /tmp/post-refresh-output
-          cp -a data /tmp/post-refresh-output/data
-          cp index.html /tmp/post-refresh-output/index.html
-
           git config user.name "tax-lien-data-bot"
           git config user.email "actions@users.noreply.github.com"
 
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
-            rm -rf data
-            cp -a /tmp/post-refresh-output/data data
-            cp /tmp/post-refresh-output/index.html index.html
+
+            python scripts/add_colorado_arapahoe_tax_lien_market.py
+            python scripts/add_colorado_el_paso_tax_lien_market.py
+            python scripts/add_colorado_larimer_tax_lien_market.py
+            python scripts/add_colorado_adams_tax_lien_market.py
+            python scripts/add_colorado_boulder_tax_lien_market.py
+            python scripts/add_colorado_mesa_tax_lien_market.py
+            python scripts/add_colorado_pueblo_tax_lien_market.py
+            python scripts/add_colorado_douglas_tax_lien_market.py
+            python scripts/add_colorado_logan_tax_lien_market.py
+            python scripts/add_colorado_alamosa_tax_lien_market.py
+            if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
+              python scripts/add_colorado_weld_tax_lien_market.py
+            fi
+            python scripts/add_florida_hernando_tax_lien_market.py
+            python scripts/add_florida_putnam_tax_lien_market.py
+            python scripts/add_iowa_polk_tax_lien_market.py
+            python scripts/add_iowa_dallas_tax_lien_market.py
+            python scripts/add_iowa_pottawattamie_tax_lien_market.py
+            python scripts/add_iowa_black_hawk_tax_lien_market.py
+            python scripts/add_iowa_story_tax_lien_market.py
+            python scripts/add_iowa_warren_tax_lien_market.py
+            python scripts/add_max_return_rates.py
+            python scripts/add_tax_lien_county_filter.py
+            python scripts/recount_tax_lien_properties.py
+            python scripts/validate_post_refresh_market_durability.py
 
             if git diff --quiet -- data/ index.html; then
-              echo "Latest main already contains the generated output."
+              echo "Latest main already contains the generated market output."
               exit 0
             fi
 
@@ -100,8 +84,9 @@ jobs:
             if git push origin HEAD:main; then
               exit 0
             fi
-            echo "Publish raced with a newer main commit; retrying (${attempt}/3)."
+
+            echo "Publish raced with a newer main commit; regenerating from latest main (${attempt}/3)."
           done
 
-          echo "Unable to publish post-refresh market output after 3 safe retries."
+          echo "Unable to publish post-refresh market output after 3 fresh-generation retries."
           exit 1
