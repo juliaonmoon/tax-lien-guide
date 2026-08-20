@@ -19,6 +19,7 @@ on:
       - "scripts/add_colorado_chaffee_tax_lien_market.py"
       - "scripts/add_colorado_pitkin_tax_lien_market.py"
       - "scripts/add_colorado_san_miguel_tax_lien_market.py"
+      - "scripts/add_florida_bay_tax_lien_market.py"
       - "scripts/add_iowa_dallas_tax_lien_market.py"
       - "scripts/add_iowa_pottawattamie_tax_lien_market.py"
       - "scripts/add_iowa_black_hawk_tax_lien_market.py"
@@ -79,6 +80,7 @@ jobs:
             fi
             python scripts/add_florida_hernando_tax_lien_market.py
             python scripts/add_florida_putnam_tax_lien_market.py
+            python scripts/add_florida_bay_tax_lien_market.py
             python scripts/add_iowa_polk_tax_lien_market.py
             python scripts/add_iowa_dallas_tax_lien_market.py
             python scripts/add_iowa_pottawattamie_tax_lien_market.py
