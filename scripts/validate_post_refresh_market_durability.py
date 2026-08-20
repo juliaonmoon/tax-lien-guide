@@ -35,6 +35,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_san_miguel_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
+    "scripts/add_florida_bay_tax_lien_market.py",
     "scripts/add_iowa_polk_tax_lien_market.py",
     "scripts/add_iowa_dallas_tax_lien_market.py",
     "scripts/add_iowa_pottawattamie_tax_lien_market.py",
@@ -61,6 +62,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Colorado — Chaffee County": "MARKET-LEVEL ONLY",
     "Colorado — Pitkin County": "MARKET-LEVEL ONLY",
     "Colorado — San Miguel County": "MARKET-LEVEL ONLY",
+    "Florida — Bay County": "MARKET-LEVEL ONLY",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
