@@ -157,6 +157,10 @@ jobs:
         run: python scripts/refresh_coconino_tax_liens.py
       - name: Refresh Cochise Arizona available tax-lien property feed
         run: python scripts/refresh_arizona_cochise_tax_liens.py
+      - name: Refresh Yellowstone County Montana tax-lien property feed
+        id: montana_yellowstone
+        continue-on-error: true
+        run: python scripts/refresh_montana_yellowstone_tax_liens.py
       - name: Refresh Alabama Nebraska Arizona Colorado and Iowa tax lien markets
         run: python scripts/add_more_tax_lien_states.py
       - name: Add Mississippi DeSoto County tax lien market

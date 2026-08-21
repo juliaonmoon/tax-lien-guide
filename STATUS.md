@@ -44,12 +44,14 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   string/Edit-tool replacement only — never `json.dump(..., indent=2)` the
   whole file, it produces a huge noisy diff). Validated by
   `scripts/validate_project_management.py`.
-- `data/tax-lien-properties.json` — tax lien dataset (Indiana + Arizona).
-  Written by `scripts/refresh_tax_lien_properties.py` (Allen, Tippecanoe,
-  Wabash, Grant, Coconino) and `scripts/refresh_arizona_cochise_tax_liens.py`
-  (Cochise — 93% of all tax-lien records). **Both scripts write to the
-  same file; each must only touch its own `profile_id`s and preserve
-  everything else** (see BUG-001).
+- `data/tax-lien-properties.json` — tax lien dataset (Indiana + Arizona +
+  Montana). Written by `scripts/refresh_tax_lien_properties.py` (Allen,
+  Tippecanoe, Wabash, Grant, Coconino),
+  `scripts/refresh_arizona_cochise_tax_liens.py` (Cochise — 93% of all
+  tax-lien records), and `scripts/refresh_montana_yellowstone_tax_liens.py`
+  (Yellowstone — new 2026-08-20). **All scripts write to the same file;
+  each must only touch its own `profile_id`s and preserve everything
+  else** (see BUG-001).
 - `scripts/enrich_indiana_assessed_values.py` — fills `assessed_value`,
   `market_value`, `property_address`, `city`, `zip`, `legal_description`
   for the 4 Indiana counties from the official Indiana Gateway
@@ -96,6 +98,11 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   parcels before trusting the parser).
 - **Arizona tax liens**: Coconino (33, snapshot), Cochise (11,678, live —
   the largest dataset in the project).
+- **Montana tax liens**: Yellowstone (1,504, live — new 2026-08-20), first
+  Montana coverage (was `not_started`). County's rolling two-year
+  delinquent-list export plus a separate "Additional Properties" list;
+  merged and deduped on `(tax_code, tax_year, total_due)` since a parcel
+  can carry more than one certificate per year. No owner names published.
 - **Tax deeds**: King WA (145, live), Tarrant TX (live, count fluctuates
   daily), Putnam FL (38, live), Escambia FL (1, snapshot), Brevard FL (0,
   zero_active — real collector, genuinely nothing active right now),
@@ -115,9 +122,9 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   issue #29). Johnson/Linn/Dubuque property-level tax liens still exist
   as real collector code but have not cleared their publish-safety gates
   — see "Pending / blocked" below; not counted here.
-- Total: 14,087 tax-lien records + 454 tax-deed records as of 2026-08-20
+- Total: 16,150 tax-lien records + 454 tax-deed records as of 2026-08-20
   (Coconino is intentionally cross-listed in both, clearly labeled).
-- Full test suite green (94/94) as of 2026-08-20.
+- Full test suite green (106/106) as of 2026-08-20.
 
 ## Hard-won gotchas
 
@@ -228,9 +235,9 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   real browser (plain HTTP fetch gets a 403, likely bot-UA filtering), no
   public API found, and no active CA auction currently listed (next one:
   Santa Clara County, Oct 23–26, 2026). Recheck closer to that date.
-- 26 states in `data/source-registry.json` are honestly marked
+- 25 states in `data/source-registry.json` are honestly marked
   `not_started` — no fabricated coverage, just not yet researched. (Was
-  28; Oklahoma and Michigan both moved to `live` 2026-08-20.)
+  28; Oklahoma, Michigan, and Montana all moved to `live` 2026-08-20.)
 
 ## Conventions
 

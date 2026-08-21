@@ -583,6 +583,45 @@ reuse potential), not by state alphabetically:
    in both workflow files' Verify step, plus `continue-on-error: true`
    on its own refresh step, mirroring the existing Johnson/Linn pattern.
 
+8i. **Yellowstone County, MT -- new tax-lien property collector shipped,
+   2026-08-20.** Picked from the 26 `not_started` states (Montana had zero
+   prior research). Confirmed via the county Treasurer's own page heading
+   ("Tax Lien Certificate Lists") that this is genuinely lien-certificate
+   data, not a generic delinquent-tax notice: liens attach August 1 each
+   year, an assignment lottery runs in mid-to-late August for tax-code
+   order preference, and remaining unassigned liens go first-come,
+   first-served afterward -- functionally the same "annual sale + rolling
+   OTC-style availability" shape as Cochise County, AZ.
+
+   Source is a classic-ASP HTML table (served with an `.xls` extension but
+   not real Excel) with three separate exports: a rolling "current year"
+   two-year window, a rolling "prior year" two-year window (the two
+   overlap by one tax year), and a separate "Additional Properties" list.
+   Confirmed the overlap is exact -- all 206 tax-year-2024 rows in the
+   prior-year export byte-for-byte match their counterparts in the
+   current-year export (same tax code, same total) -- before choosing
+   `(tax_code, tax_year, total_due)` as the cross-file dedup key.
+   Discovered `(tax_code, tax_year)` alone is *not* unique: some parcels
+   carry two distinct certificates in the same year with different dollar
+   amounts (confirmed against the live data, not assumed), so the
+   collector keeps both and appends a stable numeric suffix to
+   `record_id` only when that happens.
+
+   1,504 unique records after dedup (`scripts/refresh_montana_yellowstone_tax_liens.py`,
+   `tests/test_montana_yellowstone_tax_liens.py`, 12 tests). No owner name
+   published -- the source's "Name" column is never even parsed into a
+   field, matching the BUG-004/BUG-005 convention. The source's own "Total
+   Due" column is explicitly labeled "P/I not inc." (penalty and interest
+   not included); surfaced verbatim in each row's `fees_costs` rather than
+   presented as a final payoff figure. Statutory interest (10%/yr, 5/6 of
+   1% per month) and the 3-year redemption period were verified against
+   the official Montana Code Annotated text (MCA 15-16-102, MCA
+   15-18-111) directly, not a secondary/reseller site. Registered in
+   `data/source-registry.json` (Montana: `not_started` -> `live`) and
+   `data/project-management.json` (`TL-MT-YELLOWSTONE`). Wired into
+   `refresh-properties.yml` right after Cochise, with
+   `continue-on-error: true` since it's a day-zero collector.
+
 ## 8. Relationship to `data/project-management.json`
 
 This repository already had an equivalent structured backlog/dashboard,

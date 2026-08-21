@@ -2,10 +2,10 @@
   "updated_at": "2026-08-21T04:22:47.445150+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
-  "states_tracked": 8,
-  "counties_tracked": 18,
+  "states_tracked": 9,
+  "counties_tracked": 19,
   "official_sources_registered": 5,
-  "property_count": 15100,
+  "property_count": 16604,
   "source_health": [
     {
       "state": "FL",
@@ -85,14 +85,14 @@
       "counties": 11
     },
     "tax_lien": {
-      "records": 14646,
-      "states": 3,
-      "counties": 8
+      "records": 16150,
+      "states": 4,
+      "counties": 9
     },
     "combined": {
-      "records": 15100,
-      "states": 8,
-      "counties": 18
+      "records": 16604,
+      "states": 9,
+      "counties": 19
     }
   }
 }
