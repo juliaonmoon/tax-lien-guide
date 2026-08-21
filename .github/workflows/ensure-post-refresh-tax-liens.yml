@@ -46,9 +46,12 @@ on:
 permissions:
   contents: write
 
+# Serialize market writers instead of cancelling an in-flight regeneration.
+# Each run resets to the newest main before generating, so queued runs remain fresh
+# while a late workflow_run event cannot cancel a valid push-triggered publication.
 concurrency:
   group: tax-lien-guide-post-refresh-market-writes
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   ensure-markets:
