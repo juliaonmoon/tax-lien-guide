@@ -38,6 +38,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_montrose_tax_lien_market.py",
     "scripts/add_colorado_elbert_tax_lien_market.py",
     "scripts/add_colorado_grand_tax_lien_market.py",
+    "scripts/add_colorado_archuleta_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
     "scripts/add_florida_bay_tax_lien_market.py",
@@ -73,6 +74,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Colorado — Montrose County": "MARKET-LEVEL ONLY",
     "Colorado — Elbert County": "MARKET-LEVEL ONLY",
     "Colorado — Grand County": "MARKET-LEVEL ONLY",
+    "Colorado — Archuleta County": "MARKET-LEVEL ONLY",
     "Florida — Bay County": "MARKET-LEVEL ONLY",
     "Florida — Broward County": "MARKET-LEVEL ONLY",
 }
