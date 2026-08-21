@@ -12,6 +12,7 @@ on:
       - "scripts/validate_post_refresh_market_durability.py"
       - "scripts/validate_montana_lewis_clark_market.py"
       - "scripts/validate_montana_lake_market.py"
+      - "scripts/validate_montana_park_market.py"
       - "scripts/add_montana_gallatin_tax_lien_market.py"
       - "scripts/add_montana_missoula_tax_lien_market.py"
       - "scripts/add_montana_cascade_tax_lien_market.py"
@@ -21,6 +22,7 @@ on:
       - "scripts/add_montana_flathead_tax_lien_market.py"
       - "scripts/add_montana_ravalli_tax_lien_market.py"
       - "scripts/add_montana_butte_silver_bow_tax_lien_market.py"
+      - "scripts/add_montana_park_tax_lien_market.py"
       - "scripts/add_colorado_alamosa_tax_lien_market.py"
       - "scripts/add_colorado_morgan_tax_lien_market.py"
       - "scripts/add_colorado_fremont_tax_lien_market.py"
@@ -129,12 +131,14 @@ jobs:
             python scripts/add_montana_flathead_tax_lien_market.py
             python scripts/add_montana_ravalli_tax_lien_market.py
             python scripts/add_montana_butte_silver_bow_tax_lien_market.py
+            python scripts/add_montana_park_tax_lien_market.py
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
             python scripts/validate_post_refresh_market_durability.py
             python scripts/validate_montana_lewis_clark_market.py
             python scripts/validate_montana_lake_market.py
+            python scripts/validate_montana_park_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated market output."
