@@ -60,6 +60,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_lake_tax_lien_market.py",
     "scripts/add_montana_flathead_tax_lien_market.py",
     "scripts/add_montana_ravalli_tax_lien_market.py",
+    "scripts/add_montana_glacier_tax_lien_market.py",
     "scripts/add_montana_butte_silver_bow_tax_lien_market.py",
     "scripts/add_montana_richland_tax_lien_market.py",
 ]
@@ -79,6 +80,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Montana — Yellowstone County": "MARKET-LEVEL ONLY",
     "Montana — Flathead County": "MARKET-LEVEL ONLY",
     "Montana — Ravalli County": "MARKET-LEVEL ONLY",
+    "Montana — Glacier County": "MARKET-LEVEL ONLY",
     "Montana — Butte-Silver Bow": "MARKET-LEVEL ONLY",
     "Montana — Richland County": "MARKET-LEVEL ONLY",
     "Colorado — Alamosa County": "does not publish amounts due",
