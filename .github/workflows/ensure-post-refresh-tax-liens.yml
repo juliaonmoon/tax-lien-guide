@@ -24,6 +24,7 @@ on:
       - "scripts/add_montana_flathead_tax_lien_market.py"
       - "scripts/add_montana_ravalli_tax_lien_market.py"
       - "scripts/add_montana_glacier_tax_lien_market.py"
+      - "scripts/add_montana_beaverhead_tax_lien_market.py"
       - "scripts/add_montana_carter_tax_lien_market.py"
       - "scripts/add_montana_sanders_tax_lien_market.py"
       - "scripts/add_montana_butte_silver_bow_tax_lien_market.py"
@@ -59,9 +60,6 @@ on:
 permissions:
   contents: write
 
-# Serialize market writers instead of cancelling an in-flight regeneration.
-# Each run resets to the newest main before generating, so queued runs remain fresh
-# while a late workflow_run event cannot cancel a valid push-triggered publication.
 concurrency:
   group: tax-lien-guide-post-refresh-market-writes
   cancel-in-progress: false
@@ -137,6 +135,7 @@ jobs:
             python scripts/add_montana_flathead_tax_lien_market.py
             python scripts/add_montana_ravalli_tax_lien_market.py
             python scripts/add_montana_glacier_tax_lien_market.py
+            python scripts/add_montana_beaverhead_tax_lien_market.py
             python scripts/add_montana_carter_tax_lien_market.py
             python scripts/add_montana_sanders_tax_lien_market.py
             python scripts/add_montana_butte_silver_bow_tax_lien_market.py
