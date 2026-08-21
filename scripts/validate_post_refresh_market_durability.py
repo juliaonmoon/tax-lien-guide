@@ -55,6 +55,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_gallatin_tax_lien_market.py",
     "scripts/add_montana_missoula_tax_lien_market.py",
     "scripts/add_montana_cascade_tax_lien_market.py",
+    "scripts/add_montana_yellowstone_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -69,6 +70,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Montana — Gallatin County": "MARKET-LEVEL ONLY",
     "Montana — Missoula County": "MARKET-LEVEL ONLY",
     "Montana — Cascade County": "MARKET-LEVEL ONLY",
+    "Montana — Yellowstone County": "MARKET-LEVEL ONLY",
     "Colorado — Alamosa County": "does not publish amounts due",
     "Colorado — Morgan County": "MARKET-LEVEL ONLY",
     "Colorado — Fremont County": "MARKET-LEVEL ONLY",
