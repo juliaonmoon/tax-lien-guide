@@ -59,6 +59,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_lewis_clark_tax_lien_market.py",
     "scripts/add_montana_lake_tax_lien_market.py",
     "scripts/add_montana_flathead_tax_lien_market.py",
+    "scripts/add_montana_ravalli_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -75,6 +76,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Montana — Cascade County": "MARKET-LEVEL ONLY",
     "Montana — Yellowstone County": "MARKET-LEVEL ONLY",
     "Montana — Flathead County": "MARKET-LEVEL ONLY",
+    "Montana — Ravalli County": "MARKET-LEVEL ONLY",
     "Colorado — Alamosa County": "does not publish amounts due",
     "Colorado — Morgan County": "MARKET-LEVEL ONLY",
     "Colorado — Fremont County": "MARKET-LEVEL ONLY",
