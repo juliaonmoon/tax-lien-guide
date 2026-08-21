@@ -14,6 +14,7 @@ on:
       - "scripts/validate_montana_lake_market.py"
       - "scripts/validate_montana_park_market.py"
       - "scripts/validate_montana_carter_market.py"
+      - "scripts/validate_montana_sanders_market.py"
       - "scripts/add_montana_gallatin_tax_lien_market.py"
       - "scripts/add_montana_missoula_tax_lien_market.py"
       - "scripts/add_montana_cascade_tax_lien_market.py"
@@ -147,6 +148,7 @@ jobs:
             python scripts/validate_montana_lake_market.py
             python scripts/validate_montana_park_market.py
             python scripts/validate_montana_carter_market.py
+            python scripts/validate_montana_sanders_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated market output."
