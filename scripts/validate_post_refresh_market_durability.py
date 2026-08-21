@@ -56,6 +56,8 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_missoula_tax_lien_market.py",
     "scripts/add_montana_cascade_tax_lien_market.py",
     "scripts/add_montana_yellowstone_tax_lien_market.py",
+    "scripts/add_montana_lewis_clark_tax_lien_market.py",
+    "scripts/add_montana_lake_tax_lien_market.py",
     "scripts/add_montana_flathead_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
