@@ -23,6 +23,7 @@ on:
       - "scripts/add_montana_lake_tax_lien_market.py"
       - "scripts/add_montana_flathead_tax_lien_market.py"
       - "scripts/add_montana_ravalli_tax_lien_market.py"
+      - "scripts/add_montana_glacier_tax_lien_market.py"
       - "scripts/add_montana_carter_tax_lien_market.py"
       - "scripts/add_montana_sanders_tax_lien_market.py"
       - "scripts/add_montana_butte_silver_bow_tax_lien_market.py"
@@ -135,6 +136,7 @@ jobs:
             python scripts/add_montana_lake_tax_lien_market.py
             python scripts/add_montana_flathead_tax_lien_market.py
             python scripts/add_montana_ravalli_tax_lien_market.py
+            python scripts/add_montana_glacier_tax_lien_market.py
             python scripts/add_montana_carter_tax_lien_market.py
             python scripts/add_montana_sanders_tax_lien_market.py
             python scripts/add_montana_butte_silver_bow_tax_lien_market.py
