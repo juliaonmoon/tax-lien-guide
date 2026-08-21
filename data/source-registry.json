@@ -18,18 +18,18 @@
   "summary": {
     "total_jurisdictions": 79,
     "by_collector_status": {
-      "live": 9,
+      "live": 10,
       "snapshot": 3,
       "zero_active": 1,
       "identified": 35,
       "blocked": 5,
-      "not_started": 26
+      "not_started": 25
     },
     "by_property_query": {
-      "true": 13,
-      "false": 66
+      "true": 14,
+      "false": 65
     },
-    "total_verified_property_records": 12942
+    "total_verified_property_records": 14446
   },
   "jurisdictions": [
     {
@@ -1042,19 +1042,19 @@
     },
     {
       "state": "MT",
-      "county_or_locality": "Not yet inventoried \u2014 no county or locality reviewed",
-      "sale_system": null,
-      "official_information_url": null,
-      "current_list_url": null,
+      "county_or_locality": "Yellowstone",
+      "sale_system": "tax_lien",
+      "official_information_url": "https://www.yellowstonecountymt.gov/treasurer/TaxSales.asp",
+      "current_list_url": "https://www.yellowstonecountymt.gov/treasurer/TaxDel_Export.asp?year=2025&wv=False",
       "assessor_url": null,
-      "collector_status": "not_started",
-      "property_query": false,
-      "last_attempt_at": null,
-      "last_success_at": null,
-      "current_record_count": 0,
-      "blocker": "No research has been done for this state yet; sale system type has not been verified and is intentionally left blank rather than guessed.",
-      "collector_module": null,
-      "test_module": null
+      "collector_status": "live",
+      "property_query": true,
+      "last_attempt_at": "2026-08-20",
+      "last_success_at": "2026-08-20",
+      "current_record_count": 1504,
+      "blocker": null,
+      "collector_module": "scripts/refresh_montana_yellowstone_tax_liens.py",
+      "test_module": "tests/test_montana_yellowstone_tax_liens.py"
     },
     {
       "state": "NH",
