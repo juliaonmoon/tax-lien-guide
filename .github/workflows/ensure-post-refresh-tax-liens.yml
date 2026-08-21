@@ -23,6 +23,7 @@ on:
       - "scripts/add_colorado_broomfield_tax_lien_market.py"
       - "scripts/add_colorado_teller_tax_lien_market.py"
       - "scripts/add_colorado_montrose_tax_lien_market.py"
+      - "scripts/add_colorado_elbert_tax_lien_market.py"
       - "scripts/add_florida_bay_tax_lien_market.py"
       - "scripts/add_florida_broward_tax_lien_market.py"
       - "scripts/add_iowa_dallas_tax_lien_market.py"
@@ -81,6 +82,7 @@ jobs:
             python scripts/add_colorado_broomfield_tax_lien_market.py
             python scripts/add_colorado_teller_tax_lien_market.py
             python scripts/add_colorado_montrose_tax_lien_market.py
+            python scripts/add_colorado_elbert_tax_lien_market.py
             if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
               python scripts/add_colorado_weld_tax_lien_market.py
             fi
