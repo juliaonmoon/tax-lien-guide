@@ -53,6 +53,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_iowa_story_tax_lien_market.py",
     "scripts/add_iowa_warren_tax_lien_market.py",
     "scripts/add_montana_gallatin_tax_lien_market.py",
+    "scripts/add_montana_missoula_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -65,6 +66,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Iowa — Story County": "MARKET-LEVEL ONLY",
     "Iowa — Warren County": "MARKET-LEVEL ONLY",
     "Montana — Gallatin County": "MARKET-LEVEL ONLY",
+    "Montana — Missoula County": "MARKET-LEVEL ONLY",
     "Colorado — Alamosa County": "does not publish amounts due",
     "Colorado — Morgan County": "MARKET-LEVEL ONLY",
     "Colorado — Fremont County": "MARKET-LEVEL ONLY",
