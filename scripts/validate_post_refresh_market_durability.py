@@ -40,6 +40,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_colorado_grand_tax_lien_market.py",
     "scripts/add_colorado_archuleta_tax_lien_market.py",
     "scripts/add_colorado_eagle_tax_lien_market.py",
+    "scripts/add_colorado_rio_blanco_tax_lien_market.py",
     "scripts/add_florida_hernando_tax_lien_market.py",
     "scripts/add_florida_putnam_tax_lien_market.py",
     "scripts/add_florida_bay_tax_lien_market.py",
@@ -77,6 +78,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Colorado — Grand County": "MARKET-LEVEL ONLY",
     "Colorado — Archuleta County": "MARKET-LEVEL ONLY",
     "Colorado — Eagle County": "MARKET-LEVEL ONLY",
+    "Colorado — Rio Blanco County": "MARKET-LEVEL ONLY",
     "Florida — Bay County": "MARKET-LEVEL ONLY",
     "Florida — Broward County": "MARKET-LEVEL ONLY",
 }
