@@ -28,6 +28,7 @@ on:
       - "scripts/add_colorado_archuleta_tax_lien_market.py"
       - "scripts/add_colorado_eagle_tax_lien_market.py"
       - "scripts/add_colorado_rio_blanco_tax_lien_market.py"
+      - "scripts/add_colorado_moffat_tax_lien_market.py"
       - "scripts/add_florida_bay_tax_lien_market.py"
       - "scripts/add_florida_broward_tax_lien_market.py"
       - "scripts/add_iowa_dallas_tax_lien_market.py"
@@ -91,6 +92,7 @@ jobs:
             python scripts/add_colorado_archuleta_tax_lien_market.py
             python scripts/add_colorado_eagle_tax_lien_market.py
             python scripts/add_colorado_rio_blanco_tax_lien_market.py
+            python scripts/add_colorado_moffat_tax_lien_market.py
             if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
               python scripts/add_colorado_weld_tax_lien_market.py
             fi
