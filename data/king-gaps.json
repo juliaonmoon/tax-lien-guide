@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-21T20:28:00.587098+00:00",
+  "source_updated_at": "2026-08-22T01:18:53.447794+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1591,7 +1591,7 @@
       "legal_description": "HILLMANS MEADOW GARDENS DIV #2 PORTION OF LOTS 22 & 23 LY NLY OF FOLLOWING LINE - BEGIN NE CORNER OF LOT 22 TH S 06-49-30 E 235 FT TO POINT OF BEGINNING TH N 71-03-51 W 50 FT TH N 69-28-57 W 49.26 FT TAP S 06-49-30 E 244.73 FT FROM N W CORNER OF LOT 23, AND TERMINUS OF SAID LINE - PARCEL A OF CITY OF SEATTLE LOT BOUNDARY ADJUSTMENT NO 9602638 RECORDING NO 9711191075",
       "tax_status": "T",
       "tax_due_estimate": 1071.95,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "3348401552",
