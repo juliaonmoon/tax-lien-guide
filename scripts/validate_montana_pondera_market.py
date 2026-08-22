@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+"""Guard Pondera County's market-level tax-lien safety boundary."""
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+INDEX = ROOT / "index.html"
+MARKER = "Montana — Pondera County"
+
+
+def main() -> None:
+    text = INDEX.read_text(encoding="utf-8")
+    start = text.find("{state:'" + MARKER + "'")
+    if start < 0:
+        raise SystemExit("Pondera County market row is missing")
+    end = text.find("}\n", start)
+    if end < 0:
+        end = text.find("},", start)
+    row = text[start : end + 2 if end >= 0 else len(text)]
+
+    required = [
+        "MARKET-LEVEL ONLY",
+        "10%/yr statutory delinquent-tax interest",
+        "tax lien sales, assignments, redemptions and tax deed sales",
+    ]
+    for value in required:
+        if value not in row:
+            raise SystemExit(f"Pondera County safety text missing: {value}")
+
+    forbidden = ["owner_name:", "taxpayer_name:", "opening_bid:"]
+    for field in forbidden:
+        if field in row:
+            raise SystemExit(f"Pondera County market row must not publish restricted/unsupported field: {field}")
+
+    print("Pondera County market-level tax-lien safety boundary verified")
+
+
+if __name__ == "__main__":
+    main()
