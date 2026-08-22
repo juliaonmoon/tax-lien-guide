@@ -70,6 +70,7 @@ on:
       - "scripts/add_iowa_black_hawk_tax_lien_market.py"
       - "scripts/add_iowa_story_tax_lien_market.py"
       - "scripts/add_iowa_warren_tax_lien_market.py"
+      - "scripts/add_iowa_ida_tax_lien_market.py"
 
 permissions:
   contents: write
@@ -140,6 +141,7 @@ jobs:
             python scripts/add_iowa_black_hawk_tax_lien_market.py
             python scripts/add_iowa_story_tax_lien_market.py
             python scripts/add_iowa_warren_tax_lien_market.py
+            python scripts/add_iowa_ida_tax_lien_market.py
             python scripts/add_montana_gallatin_tax_lien_market.py
             python scripts/add_montana_missoula_tax_lien_market.py
             python scripts/add_montana_cascade_tax_lien_market.py
