@@ -19,6 +19,7 @@ on:
       - "scripts/repair_iowa_linn_pdf_parser.py"
       - "scripts/refresh_iowa_woodbury_tax_liens.py"
       - "scripts/refresh_iowa_dubuque_tax_liens.py"
+      - "scripts/refresh_iowa_des_moines_tax_liens.py"
       - "scripts/enrich_indiana_assessed_values.py"
       - "scripts/recount_tax_lien_properties.py"
       - "tests/test_tax_lien_properties.py"
@@ -82,6 +83,9 @@ jobs:
         id: iowa_dubuque
         continue-on-error: true
         run: python scripts/refresh_iowa_dubuque_tax_liens.py
+      - name: Refresh Des Moines County Iowa property-level tax liens
+        id: iowa_des_moines
+        run: python scripts/refresh_iowa_des_moines_tax_liens.py
       - name: Verify Iowa collectors materially populated generated output
         run: |
           python - <<'PY'
@@ -95,6 +99,7 @@ jobs:
               "IA-Linn-2026": 1500,
               "IA-Woodbury-2026": 1500,
               "IA-Dubuque-2026": 576,
+              "IA-Des-Moines-2026": 600,
           }
           blocked_zero_ok = {"IA-Johnson-2026", "IA-Linn-2026", "IA-Dubuque-2026"}
           for profile_id, minimum in minimums.items():
@@ -121,6 +126,9 @@ jobs:
           dubuque_items = sorted(int(row["sale_item_number"]) for row in rows if row.get("profile_id") == "IA-Dubuque-2026" and row.get("sale_item_number"))
           if dubuque_items and dubuque_items != list(range(1, 577)):
               raise SystemExit("IA-Dubuque-2026: generated output is not the complete official real-estate item set 1-576")
+          des_moines_items = [int(row["sale_item_number"]) for row in rows if row.get("profile_id") == "IA-Des-Moines-2026" and row.get("sale_item_number")]
+          if des_moines_items and max(des_moines_items) > 723:
+              raise SystemExit("IA-Des-Moines-2026: generated output crossed into the mobile-home section beginning at official item 724")
           print("Verified Iowa property-level lien output thresholds and safety constraints.")
           PY
       - name: Recount lien and combined website coverage
