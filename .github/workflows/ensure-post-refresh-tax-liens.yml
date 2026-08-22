@@ -42,6 +42,7 @@ on:
       - "scripts/add_montana_madison_tax_lien_market.py"
       - "scripts/add_montana_jefferson_tax_lien_market.py"
       - "scripts/add_montana_liberty_tax_lien_market.py"
+      - "scripts/add_montana_broadwater_tax_lien_market.py"
       - "scripts/add_colorado_alamosa_tax_lien_market.py"
       - "scripts/add_colorado_morgan_tax_lien_market.py"
       - "scripts/add_colorado_fremont_tax_lien_market.py"
@@ -160,6 +161,7 @@ jobs:
             python scripts/add_montana_madison_tax_lien_market.py
             python scripts/add_montana_jefferson_tax_lien_market.py
             python scripts/add_montana_liberty_tax_lien_market.py
+            python scripts/add_montana_broadwater_tax_lien_market.py
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
