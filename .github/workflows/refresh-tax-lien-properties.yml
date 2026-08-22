@@ -99,7 +99,10 @@ jobs:
               "IA-Linn-2026": 1500,
               "IA-Woodbury-2026": 1500,
               "IA-Dubuque-2026": 576,
-              "IA-Des-Moines-2026": 600,
+              # 597 is the corroborated 2026 publication count recovered identically
+              # by the independent text-row and word-geometry parsers. Item 724
+              # begins the separate mobile-home section.
+              "IA-Des-Moines-2026": 597,
           }
           blocked_zero_ok = {"IA-Johnson-2026", "IA-Linn-2026", "IA-Dubuque-2026"}
           for profile_id, minimum in minimums.items():
