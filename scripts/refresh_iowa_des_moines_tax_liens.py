@@ -15,7 +15,9 @@ at item 724 and uses title/VIN-like identifiers instead. This collector therefor
 
 The 2026 PDF has rows that sometimes wrap the district label. We therefore parse
 with two independent strategies: direct text rows and word geometry. Conflicting
-item/parcel mappings fail closed rather than guessing.
+item/parcel mappings fail closed rather than guessing. The current official PDF
+produces the same 597 real-property item keys from both strategies, so 597 is the
+corroborated publication floor rather than a rounded heuristic threshold.
 """
 
 from __future__ import annotations
@@ -39,7 +41,7 @@ AUCTION_URL = "https://www.iowataxauction.com/"
 UA = "TaxLienGuideBot/3.1 (public tax-lien research; no access-control bypass)"
 
 REAL_ESTATE_LAST_ITEM = 723
-MIN_EXPECTED_REAL_ESTATE_ROWS = 600
+MIN_EXPECTED_REAL_ESTATE_ROWS = 597
 PARCEL_RE = re.compile(r"^\d{2}-\d{2}-\d{3}-\d{3}$")
 ITEM_RE = re.compile(r"^\*?(\d{1,3})$")
 MONEY_RE = re.compile(r"^\$?([\d,]+\.\d{2})$")
@@ -178,22 +180,29 @@ def _merge_mapping(
 
 def parse_pdf(raw: bytes, verified: str) -> list[dict]:
     mapping: dict[int, tuple[str, float | None, bool]] = {}
+    text_mapping: dict[int, tuple[str, float | None, bool]] = {}
+    geometry_mapping: dict[int, tuple[str, float | None, bool]] = {}
 
     with pdfplumber.open(io.BytesIO(raw)) as pdf:
-        text_hits = 0
-        geometry_hits = 0
         for page in pdf.pages:
-            text_rows = _parse_text_rows(page)
-            geometry_rows = _geometry_candidates(page)
-            text_hits += len(text_rows)
-            geometry_hits += len(geometry_rows)
-            _merge_mapping(mapping, text_rows, "text")
-            _merge_mapping(mapping, geometry_rows, "geometry")
+            _merge_mapping(text_mapping, _parse_text_rows(page), "text")
+            _merge_mapping(geometry_mapping, _geometry_candidates(page), "geometry")
+
+    if set(text_mapping) != set(geometry_mapping):
+        only_text = sorted(set(text_mapping) - set(geometry_mapping))
+        only_geometry = sorted(set(geometry_mapping) - set(text_mapping))
+        raise RuntimeError(
+            "Des Moines parser strategies disagree on published real-property items: "
+            f"text_only={only_text[:20]}, geometry_only={only_geometry[:20]}"
+        )
+
+    _merge_mapping(mapping, text_mapping, "text")
+    _merge_mapping(mapping, geometry_mapping, "geometry")
 
     if len(mapping) < MIN_EXPECTED_REAL_ESTATE_ROWS:
         raise RuntimeError(
-            f"Des Moines County parser recovered only {len(mapping)} real-property rows "
-            f"(text={text_hits}, geometry={geometry_hits}); expected at least {MIN_EXPECTED_REAL_ESTATE_ROWS}"
+            f"Des Moines County parser recovered only {len(mapping)} corroborated real-property rows; "
+            f"expected at least {MIN_EXPECTED_REAL_ESTATE_ROWS}"
         )
 
     parcel_ids = [value[0] for value in mapping.values()]
@@ -300,7 +309,7 @@ def main() -> None:
     update_details(rows)
     with_amount = sum(1 for row in rows if row.get("delinquent_tax_amount") is not None)
     print(
-        f"Des Moines County IA: published {len(rows)} real-property tax-lien rows; "
+        f"Des Moines County IA: published {len(rows)} corroborated real-property tax-lien rows; "
         f"{with_amount} include the county-published delinquent Total Due."
     )
 
