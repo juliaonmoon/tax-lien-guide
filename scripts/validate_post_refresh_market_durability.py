@@ -63,6 +63,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_glacier_tax_lien_market.py",
     "scripts/add_montana_beaverhead_tax_lien_market.py",
     "scripts/add_montana_rosebud_tax_lien_market.py",
+    "scripts/add_montana_carbon_tax_lien_market.py",
     "scripts/add_montana_butte_silver_bow_tax_lien_market.py",
     "scripts/add_montana_richland_tax_lien_market.py",
 ]
@@ -85,6 +86,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Montana — Glacier County": "MARKET-LEVEL ONLY",
     "Montana — Beaverhead County": "MARKET-LEVEL ONLY",
     "Montana — Rosebud County": "MARKET-LEVEL ONLY",
+    "Montana — Carbon County": "MARKET-LEVEL ONLY",
     "Montana — Butte-Silver Bow": "MARKET-LEVEL ONLY",
     "Montana — Richland County": "MARKET-LEVEL ONLY",
     "Colorado — Alamosa County": "does not publish amounts due",
