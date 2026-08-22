@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-22T22:20:51.107830+00:00",
+  "source_updated_at": "2026-08-22T22:29:43.366979+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2404,9 +2404,9 @@
       "improvement_value": 1900.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
-      "tax_status": "T",
-      "tax_due_estimate": 997.55,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_status": "In tax foreclosure",
+      "tax_due_estimate": null,
+      "enrichment_note": "legal lookup HTTPError"
     },
     {
       "parcel_id": "6649350050",
