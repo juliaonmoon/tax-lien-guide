@@ -66,6 +66,7 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_carbon_tax_lien_market.py",
     "scripts/add_montana_butte_silver_bow_tax_lien_market.py",
     "scripts/add_montana_richland_tax_lien_market.py",
+    "scripts/add_montana_stillwater_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -89,6 +90,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Montana — Carbon County": "MARKET-LEVEL ONLY",
     "Montana — Butte-Silver Bow": "MARKET-LEVEL ONLY",
     "Montana — Richland County": "MARKET-LEVEL ONLY",
+    "Montana — Stillwater County": "MARKET-LEVEL ONLY",
     "Colorado — Alamosa County": "does not publish amounts due",
     "Colorado — Morgan County": "MARKET-LEVEL ONLY",
     "Colorado — Fremont County": "MARKET-LEVEL ONLY",
