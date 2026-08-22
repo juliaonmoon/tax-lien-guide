@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-22T06:23:28.254882+00:00",
+  "source_updated_at": "2026-08-22T06:27:33.403242+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2773,7 +2773,7 @@
       "legal_description": "SEELEYS TO DES MOINES VAC S 25 FT OF N 225 FT",
       "tax_status": "T",
       "tax_due_estimate": 753.54,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7787890350",
