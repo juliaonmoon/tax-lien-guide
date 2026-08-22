@@ -1,0 +1,64 @@
+name: Ensure Clayton Iowa tax lien market
+
+on:
+  workflow_run:
+    workflows: ["Refresh tax deed property data", "Ensure post-refresh tax lien markets"]
+    types: [completed]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ensure-clayton-tax-lien.yml"
+      - "scripts/add_iowa_clayton_tax_lien_market.py"
+      - "scripts/validate_iowa_clayton_market.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tax-lien-guide-post-refresh-market-writes
+  cancel-in-progress: false
+
+jobs:
+  ensure-clayton:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publish Clayton market from latest main
+        run: |
+          git config user.name "tax-lien-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            python scripts/add_iowa_clayton_tax_lien_market.py
+            python scripts/add_max_return_rates.py
+            python scripts/add_tax_lien_county_filter.py
+            python scripts/recount_tax_lien_properties.py
+            python scripts/validate_iowa_clayton_market.py
+
+            if git diff --quiet -- data/ index.html; then
+              echo "Latest main already contains the generated Clayton County market output."
+              exit 0
+            fi
+
+            git add data/ index.html
+            git commit -m "chore: ensure Clayton Iowa tax lien market"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Publish raced with a newer main commit; regenerating from latest main (${attempt}/3)."
+          done
+
+          echo "Unable to publish Clayton market output after 3 fresh-generation retries."
+          exit 1
