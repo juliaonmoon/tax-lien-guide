@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-22T01:24:51.533352+00:00",
+  "source_updated_at": "2026-08-22T02:21:21.931966+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1029,7 +1029,7 @@
       "legal_description": "EAST TACOMA ADD PP ACT 39929104 MOBILE HOME LESS C & M RGTS",
       "tax_status": "T",
       "tax_due_estimate": 19800.97,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2222049066",
@@ -1827,7 +1827,7 @@
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
       "tax_due_estimate": 3144.68,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3751606695",
