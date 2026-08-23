@@ -5,12 +5,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 GAPS = ROOT / "data" / "king-gaps.json"
+STATUS = ROOT / "data" / "refresh-status.json"
+REFRESH_SCRIPT = ROOT / "scripts" / "refresh_properties.py"
 
 
 class KingCountyIntegrityTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.doc = json.loads(GAPS.read_text(encoding="utf-8"))
+        cls.status = json.loads(STATUS.read_text(encoding="utf-8"))
+        cls.refresh_script = REFRESH_SCRIPT.read_text(encoding="utf-8")
 
     def test_foreclosure_slice_did_not_collapse(self):
         # The current official King County foreclosure slice is 145 parcels.
@@ -43,6 +47,18 @@ class KingCountyIntegrityTests(unittest.TestCase):
         if self.doc.get("missing_counts", {}).get("opening_bid", 0):
             self.assertEqual(limitation.get("status"), "awaiting_official_publication")
             self.assertIn("kingcounty", limitation.get("source", "").lower())
+
+    def test_opening_bid_provenance_does_not_reintroduce_stale_august_promise(self):
+        stale = "mid-to-late August"
+        self.assertNotIn(stale, self.refresh_script)
+        status_notes = " ".join(self.status.get("notes", []))
+        self.assertNotIn(stale, status_notes)
+
+        # The canonical collector language must remain fail-closed: no estimates
+        # and no substitution of the separate Sheriff judicial-foreclosure bids.
+        self.assertIn("not currently published", self.refresh_script)
+        self.assertIn("do not estimate", self.refresh_script)
+        self.assertIn("Sheriff judicial-foreclosure opening bids", self.refresh_script)
 
 
 if __name__ == "__main__":
