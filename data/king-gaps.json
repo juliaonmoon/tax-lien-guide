@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-23T09:42:49.912195+00:00",
+  "source_updated_at": "2026-08-23T09:55:53.411123+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -259,7 +259,7 @@
     "opening_bid": {
       "status": "awaiting_official_publication",
       "source": "https://kingcounty.gov/en/dept/executive-services/buildings-property/treasury-operations/tax-foreclosures/auctions",
-      "note": "King County states that opening bids for the September 9, 2026 tax-foreclosure auction will be posted in mid-to-late August 2026 when available. Do not infer or estimate opening bids before publication."
+      "note": "King County's current official foreclosure pages confirm the September 9, 16, and 23, 2026 online auction schedule but do not currently publish the tax-foreclosure opening-bid amounts. Do not infer, estimate, or substitute Sheriff judicial-foreclosure bids."
     },
     "legal_description": {
       "status": "individual_record_search_required_for_remaining_orphans",
