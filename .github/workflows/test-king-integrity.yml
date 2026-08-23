@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - "data/king-gaps.json"
+      - "data/refresh-status.json"
+      - "scripts/refresh_properties.py"
       - "tests/test_king_county_integrity.py"
       - ".github/workflows/test-king-integrity.yml"
 
