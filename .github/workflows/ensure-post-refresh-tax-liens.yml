@@ -23,6 +23,7 @@ on:
       - "scripts/validate_montana_broadwater_market.py"
       - "scripts/validate_iowa_cedar_market.py"
       - "scripts/validate_iowa_delaware_market.py"
+      - "scripts/validate_iowa_jasper_market.py"
       - "scripts/add_montana_gallatin_tax_lien_market.py"
       - "scripts/add_montana_missoula_tax_lien_market.py"
       - "scripts/add_montana_cascade_tax_lien_market.py"
@@ -75,6 +76,7 @@ on:
       - "scripts/add_iowa_ida_tax_lien_market.py"
       - "scripts/add_iowa_cedar_tax_lien_market.py"
       - "scripts/add_iowa_delaware_tax_lien_market.py"
+      - "scripts/add_iowa_jasper_tax_lien_market.py"
 
 permissions:
   contents: write
@@ -148,6 +150,7 @@ jobs:
             python scripts/add_iowa_ida_tax_lien_market.py
             python scripts/add_iowa_cedar_tax_lien_market.py
             python scripts/add_iowa_delaware_tax_lien_market.py
+            python scripts/add_iowa_jasper_tax_lien_market.py
             python scripts/add_montana_gallatin_tax_lien_market.py
             python scripts/add_montana_missoula_tax_lien_market.py
             python scripts/add_montana_cascade_tax_lien_market.py
@@ -188,6 +191,7 @@ jobs:
             python scripts/validate_montana_broadwater_market.py
             python scripts/validate_iowa_cedar_market.py
             python scripts/validate_iowa_delaware_market.py
+            python scripts/validate_iowa_jasper_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated market output."
