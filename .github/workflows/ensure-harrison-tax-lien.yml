@@ -2,7 +2,7 @@ name: Ensure Harrison Iowa tax lien market
 
 on:
   workflow_run:
-    workflows: ["Ensure post-refresh tax lien markets"]
+    workflows: ["Refresh tax deed property data"]
     types: [completed]
   workflow_dispatch:
   push:
