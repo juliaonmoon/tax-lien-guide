@@ -63,7 +63,7 @@
   "notes": [
     "Prototype now prioritizes King County, Washington in addition to Brevard FL and Tarrant TX.",
     "King County foreclosure parcels are enriched from King County Open Data for legal description, tax-roll value and receivable/tax information when available.",
-    "King County says 2026 opening bids will be posted in mid-to-late August; the collector will pick them up after an official source becomes available.",
+    "King County has not currently published the 2026 tax-foreclosure opening-bid amounts on its official auction page; do not estimate them or substitute separate Sheriff judicial-foreclosure opening bids.",
     "WA owner names are not bulk-aggregated into this investment screener because King County's eReal Property page warns that RCW 42.56.070(9) restricts use of lists of individuals for commercial purposes.",
     "Research priority is a transparent triage score, not a recommendation to bid or purchase.",
     "Florida property expansion: 39 individual lands-available tax-deed parcels across Putnam and Escambia; FDOR cadastral matched 39/39 Florida parcels.",
