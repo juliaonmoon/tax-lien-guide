@@ -2,7 +2,7 @@ name: Ensure Sioux Iowa tax lien market
 
 on:
   workflow_run:
-    workflows: ["Refresh tax deed property data", "Ensure post-refresh tax lien markets"]
+    workflows: ["Ensure post-refresh tax lien markets"]
     types: [completed]
   workflow_dispatch:
   push:
