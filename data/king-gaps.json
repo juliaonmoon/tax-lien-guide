@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-23T09:55:53.411123+00:00",
+  "source_updated_at": "2026-08-23T10:19:08.361324+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -715,7 +715,7 @@
       "legal_description": "CASA HERMOSA CONDOMINIUM PCT OF VALUE 2.2985 & P-38",
       "tax_status": "T",
       "tax_due_estimate": 5521.53,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "1423069142",
@@ -2887,7 +2887,7 @@
       "legal_description": "SUNNYSIDE 5-ACRE TRS PARCEL \"C\" SEATTLE SHORT SUBDIVISION NO. 9801327 REC NO. 9807089010 SD SHORT SUBDIVISION DAF- THAT POR OF THE NORTH 1/2 OF TRACT 27 IN SUNNYSIDE FIVE ACRE TRACTS LY WEST OF 47TH AVE S - LESS THE WEST 119.58 FT THOF",
       "tax_status": "T",
       "tax_due_estimate": 4926.91,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "8155900520",
