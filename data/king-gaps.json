@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-24T12:29:16.097535+00:00",
+  "source_updated_at": "2026-08-24T13:40:09.316704+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -225,9 +225,9 @@
       "missing": 145
     },
     "public_safety": {
-      "filled": 103,
+      "filled": 145,
       "total": 145,
-      "missing": 42
+      "missing": 0
     }
   },
   "optional_metric_missing_by_city": {
@@ -253,15 +253,7 @@
       "KIRKLAND": 1,
       "SNOQUALMIE": 1
     },
-    "public_safety": {
-      "KING COUNTY": 25,
-      "BURIEN": 5,
-      "SAMMAMISH": 3,
-      "SEATAC": 3,
-      "MAPLE VALLEY": 2,
-      "SHORELINE": 2,
-      "VASHON": 2
-    }
+    "public_safety": {}
   },
   "source_limitations": {
     "opening_bid": {
