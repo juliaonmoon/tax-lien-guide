@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-24T14:19:37.405737+00:00",
+  "source_updated_at": "2026-08-24T14:38:37.416644+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -1922,7 +1922,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAGO VISTA ADD LESS S 59 FT",
       "tax_status": "T",
-      "tax_due_estimate": 40670.97,
+      "tax_due_estimate": 3962.52,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2425,7 +2425,7 @@
       "legal_description": "PARKSIDE LOFTS CONDOMINIUM PCT UND INT  8.00",
       "tax_status": "T",
       "tax_due_estimate": 6765.82,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "6780800400",
@@ -2592,13 +2592,13 @@
       "city": "RENTON",
       "zip": "98057",
       "property_type": "Condominium(Residential)                          ",
-      "assessed_value": 234000.0,
-      "land_value": 18600.0,
-      "improvement_value": 215400.0,
+      "assessed_value": 190000.0,
+      "land_value": 18300.0,
+      "improvement_value": 171700.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "tax_status": "T",
-      "tax_due_estimate": 3225.95,
+      "tax_due_estimate": 2993.33,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
