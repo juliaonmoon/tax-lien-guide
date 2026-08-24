@@ -33,6 +33,7 @@ MARKET_RATES = {
     "Maryland — Cecil County": "12%/yr county redemption rate",
     "Maryland — Talbot County": "6%/yr county redemption rate",
     "Maryland — Allegany County": "2026 redemption rate: 10%/yr owner-occupied; 18%/yr non-owner-occupied",
+    "Maryland — Washington County": "6%/yr county redemption rate",
 }
 
 # These labels intentionally preserve the legal return mechanism instead of
