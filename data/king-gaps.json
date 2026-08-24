@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-24T04:18:08.041727+00:00",
+  "source_updated_at": "2026-08-24T05:25:49.438974+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -694,9 +694,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "BURR ADD LESS ST HWY",
-      "tax_status": "In tax foreclosure",
-      "tax_due_estimate": null,
-      "enrichment_note": "legal lookup HTTPError"
+      "tax_status": "T",
+      "tax_due_estimate": 1001.31,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "1420000290",
