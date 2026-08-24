@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-24T10:31:53.308248+00:00",
+  "source_updated_at": "2026-08-24T11:25:24.987642+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -599,7 +599,7 @@
       "legal_description": "E 1/2 OF S 1/2 OF PORTION OF SW 1/4 OF NE 1/4 AS FOLLOWS, BEGIN NW CORNER OF NE 1/4 TH S 00-16-21.5 E 1325.04 FT TO SW CORNER OF NW 1/4 OF NE 1/4 TH N 88-03-45 E 654.89 FT TH S 00-12-21 E 124 FT TO POB OF TRACT HEREIN DESCRIBED TH S 00-12-21 E 124 FT TH N 88-03-45 E 320.14 FT, TH N 00-12-21 W 124 FT TAP N 88-03-45 E OF POB TH S 88-03-45 W TO POB",
       "tax_status": "T",
       "tax_due_estimate": 3941.13,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "0925049401",
