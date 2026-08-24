@@ -18,6 +18,7 @@ if "['maxReturn','Max return rate'" not in text:
 MARKET_RATES = {
     "Colorado — Logan County": "14%/yr for 2026 certificate",
     "Maryland — Howard County": "18%/yr county redemption rate; owner-occupied residential subject to Maryland statutory cap",
+    "Maryland — Baltimore County": "12%/yr county redemption rate",
 }
 
 # These labels intentionally preserve the legal return mechanism instead of
