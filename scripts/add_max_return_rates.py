@@ -28,6 +28,7 @@ MARKET_RATES = {
     "Maryland — Harford County": "10%/yr county redemption rate",
     "Maryland — Calvert County": "10%/yr county redemption rate",
     "Maryland — Queen Anne's County": "10%/yr county redemption rate",
+    "Maryland — Worcester County": "10%/yr county redemption rate",
 }
 
 # These labels intentionally preserve the legal return mechanism instead of
