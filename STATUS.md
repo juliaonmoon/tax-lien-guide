@@ -46,7 +46,7 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   `scripts/validate_project_management.py`.
 - `data/tax-lien-properties.json` — tax lien dataset (Indiana + Arizona +
   Montana). Written by `scripts/refresh_tax_lien_properties.py` (Allen,
-  Tippecanoe, Wabash, Grant, Coconino),
+  Tippecanoe, Wabash, Grant, Coconino, **Hamilton — new 2026-08-24**),
   `scripts/refresh_arizona_cochise_tax_liens.py` (Cochise — 93% of all
   tax-lien records), and `scripts/refresh_montana_yellowstone_tax_liens.py`
   (Yellowstone — new 2026-08-20). **All scripts write to the same file;
@@ -98,6 +98,16 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   parcels before trusting the parser).
 - **Arizona tax liens**: Coconino (33, snapshot), Cochise (11,678, live —
   the largest dataset in the project).
+- **Hamilton County, IN tax liens (144, live — new 2026-08-24)**: county's
+  2026 list was unpublished (HTTP 503 placeholder) as of 2026-08-19; went
+  live between sessions. Not a PDF legal ad like the other 4 Indiana
+  counties — the county runs its own live search UI backed by an
+  unauthenticated Kendo-grid JSON POST endpoint
+  (`/TaxSale/TaxSaleWeb/TaxSale_Read`), found by reading the grid config
+  out of the page's deferred Kendo script. Returns all 144 rows in one
+  call, no paging. Source also publishes an owner-name field (`NAME1`)
+  alongside every row; `hamilton_rows()` never binds it to a variable so
+  it structurally cannot leak (same privacy class as BUG-004/BUG-005).
 - **Montana tax liens**: Yellowstone (1,504, live — new 2026-08-20), first
   Montana coverage (was `not_started`). County's rolling two-year
   delinquent-list export plus a separate "Additional Properties" list;
@@ -122,9 +132,14 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   issue #29). Johnson/Linn/Dubuque property-level tax liens still exist
   as real collector code but have not cleared their publish-safety gates
   — see "Pending / blocked" below; not counted here.
-- Total: 16,150 tax-lien records + 454 tax-deed records as of 2026-08-20
-  (Coconino is intentionally cross-listed in both, clearly labeled).
-- Full test suite green (106/106) as of 2026-08-20.
+- Total: 16,860 tax-lien records + 454 tax-deed records as of 2026-08-24
+  (Coconino is intentionally cross-listed in both, clearly labeled). Note:
+  this line only reflects the counties this file documents in detail above
+  — other sessions have independently added many more live Iowa/Maryland/
+  Montana county markets since 2026-08-20 (see `git log` and
+  `data/project-management.json` for the current full list); this file's
+  narrative sections haven't been reconciled against all of them yet.
+- Full test suite green (112/112) as of 2026-08-24.
 
 ## Hard-won gotchas
 
@@ -214,11 +229,6 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   auction, or buyer failed to pay). Needs real evidence for the
   status-to-availability mapping before writing a parser — full detail in
   `TAX_SALE_COVERAGE_AUDIT.md` §7, item 7.
-- **Hamilton County, IN** — 2026 tax sale list not yet published as of
-  2026-08-19 (was promised "mid-August"; live-confirmed via `curl` against
-  `secure2.hamiltoncounty.in.gov/taxsale/`, which 503s with a "Tax Sale
-  Listing Coming 2026" placeholder). Check again in a week or two; same
-  generic `indiana_ad_rows()` parser should work once it's out.
 - **Montgomery County, IN** — page returns HTTP 403. Not pursued further.
 - **Scott County, IA** — official 2026 XLSX list's HTTP 403 cleared
   2026-08-19 (was bot-UA filtering, not real access control), but the row

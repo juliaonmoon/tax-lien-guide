@@ -221,6 +221,30 @@ reuse potential), not by state alphabetically:
    and body text *"...2026 is not available."* Not a transient error — a
    deliberate placeholder with `Retry-After: 3600`. Check again in another
    1-2 weeks.
+
+   **Done 2026-08-24.** The placeholder is gone; `secure2.hamiltoncounty.
+   in.gov/taxsale/` now serves a real Kendo Grid app for the 2026 Real
+   Property Tax Sale. It is not `indiana_ad_rows()`-compatible after
+   all — no legal-ad PDF, the county instead runs its own live search UI —
+   but it turned out to be even simpler: the grid's data source is an
+   unauthenticated JSON POST endpoint, `/TaxSale/TaxSaleWeb/TaxSale_Read`,
+   found by fetching the page's deferred Kendo script and reading the
+   `transport.read.url` out of the grid config. `curl -X POST` against it
+   with no body returns all 144 rows in one response (no paging needed).
+   Auction date/format confirmed from the county's own tax-sale info page
+   (`hamiltoncounty.in.gov/452/Real-Property-Tax-Sale`, which 301-redirects
+   from the old `/452/` link): Thursday 2026-10-08, 10:00 AM, Hamilton
+   County Historic Courthouse, 2nd Floor Historic Courtroom, Noblesville.
+   One thing to flag: the API's row objects include a `NAME1` owner-name
+   field the county publishes alongside every row — same privacy class as
+   BUG-004/BUG-005. `hamilton_rows()` in `scripts/refresh_tax_lien_
+   properties.py` never reads that key into a variable at all (not just
+   excludes it when building the output row), so it structurally cannot
+   leak. New collector wired into the existing shared-file/foreign-entries
+   pattern as a fifth Indiana county alongside Allen/Tippecanoe/Wabash/
+   Grant; test `test_hamilton_county_present_with_expected_profile` added
+   to `tests/test_tax_lien_properties.py`. 144/144 rows verified with
+   `parcel_id` and the confirmed auction date.
 3. ~~Assessor/GIS enrichment for the existing 755 non-Cochise tax-lien
    records~~ — **done 2026-08-17.** `scripts/enrich_indiana_assessed_values.py`
    pulls the official DLGF "Real Property" fixed-width file for each of the
