@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "scripts/enrich_king_public_safety.py"
+      - "scripts/enrich_king_public_safety_impl.py"
       - "scripts/diagnose_king_gaps.py"
       - ".github/workflows/verify-king-public-safety.yml"
 
@@ -21,6 +22,40 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install requests
+      - name: Guard independent-city public-safety preservation
+        run: |
+          python - <<'PY'
+          import json
+          import tempfile
+          from pathlib import Path
+          import scripts.enrich_king_public_safety_impl as m
+
+          with tempfile.TemporaryDirectory() as td:
+              props = Path(td) / 'properties.json'
+              original = {
+                  'state': 'WA', 'county': 'King', 'city': 'RENTON', 'parcel_id': 'TEST',
+                  'public_safety_12mo_offenses': 123,
+                  'public_safety_scope': 'official WA NIBRS citywide annual offense count',
+                  'public_safety_period_start': '2024-01-01',
+                  'public_safety_period_end': '2024-12-31',
+                  'public_safety_source': 'https://example.invalid/official-wa-nibrs',
+                  'public_safety_area': 'RENTON',
+              }
+              props.write_text(json.dumps({'properties': [original]}))
+              m.PROPS = props
+              m.fetch_kcso_counts = lambda start: {}
+              m.fetch_kcso_district_counts = lambda start: {}
+              m.fetch_kcso_district_features = lambda: []
+              m.fetch_spd_neighborhood_counts = lambda start: {}
+              m.fetch_spd_mcpp_features = lambda: []
+              m.main()
+              row = json.loads(props.read_text())['properties'][0]
+              for key in m.PUBLIC_SAFETY_KEYS:
+                  if key in original:
+                      assert row.get(key) == original.get(key), (key, row.get(key), original.get(key))
+              assert row['public_safety_12mo_offenses'] == 123
+          print('Independent-city verified public-safety values survive KCSO/SPD refresh.')
+          PY
       - name: Inspect KCSO patrol-district geometry and offense district values
         run: |
           python - <<'PY'
