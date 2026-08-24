@@ -66,12 +66,15 @@ def rate_for(state: str) -> str:
 
 # Operate only inside individual row object literals. Appender scripts in this
 # repo use both `},\n{` and `}\n,\n{` separators, so accept whitespace before
-# the row comma. The prior stricter lookahead silently skipped dynamically
-# appended rows such as Coconino County.
-row_re = re.compile(r"\{state:'(?P<state>[^']+)'(?P<body>.*?)(?=\}\s*,|\}\s*\n\];)", re.S)
+# the row comma. State labels may contain escaped apostrophes (for example
+# Prince George\'s, St. Mary\'s, and Queen Anne\'s), so match escaped characters
+# instead of stopping at the first apostrophe byte.
+row_re = re.compile(r"\{state:'(?P<state>(?:\\.|[^'])+)'(?P<body>.*?)(?=\}\s*,|\}\s*\n\];)", re.S)
 
 def patch(match: re.Match) -> str:
-    state = match.group('state')
+    # The HTML stores apostrophes escaped for JavaScript single-quoted strings;
+    # normalize the key before looking it up in MARKET_RATES.
+    state = match.group('state').replace("\\'", "'")
     whole = match.group(0)
     if "maxReturn:" in whole:
         # Refresh an existing generated value so future rule corrections can
