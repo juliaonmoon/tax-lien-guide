@@ -21,6 +21,7 @@ MARKET_RATES = {
     "Maryland — Baltimore County": "12%/yr county redemption rate",
     "Maryland — Montgomery County": "2026 redemption rate: 6%/yr owner-occupied; 20%/yr non-owner-occupied",
     "Maryland — Frederick County": "8%/yr county redemption rate",
+    "Maryland — Prince George's County": "2026 redemption rate: 10%/yr owner-occupied; 20%/yr non-principal residence or unimproved parcel",
 }
 
 # These labels intentionally preserve the legal return mechanism instead of
