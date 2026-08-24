@@ -2,7 +2,7 @@ name: Ensure Guthrie Iowa tax lien market
 
 on:
   workflow_run:
-    workflows: ["Refresh tax deed property data"]
+    workflows: ["Refresh tax deed property data", "Refresh property-level tax lien data"]
     types: [completed]
   workflow_dispatch:
   push:
