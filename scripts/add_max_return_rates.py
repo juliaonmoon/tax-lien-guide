@@ -26,6 +26,7 @@ MARKET_RATES = {
     "Maryland — St. Mary's County": "6%/yr county redemption rate",
     "Maryland — Charles County": "12%/yr county redemption rate",
     "Maryland — Harford County": "10%/yr county redemption rate",
+    "Maryland — Calvert County": "10%/yr county redemption rate",
 }
 
 # These labels intentionally preserve the legal return mechanism instead of
