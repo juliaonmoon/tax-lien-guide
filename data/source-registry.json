@@ -16,9 +16,9 @@
     ]
   },
   "summary": {
-    "total_jurisdictions": 79,
+    "total_jurisdictions": 80,
     "by_collector_status": {
-      "live": 10,
+      "live": 11,
       "snapshot": 3,
       "zero_active": 1,
       "identified": 35,
@@ -26,10 +26,10 @@
       "not_started": 25
     },
     "by_property_query": {
-      "true": 14,
+      "true": 15,
       "false": 65
     },
-    "total_verified_property_records": 14446
+    "total_verified_property_records": 14590
   },
   "jurisdictions": [
     {
@@ -93,6 +93,22 @@
       "last_success_at": "2026-08-16T07:02:53.828587+00:00",
       "current_record_count": 85,
       "blocker": "Advertised Commissioners' Certificate Sale date (2026-04-28) has passed; per-item current availability has not been reconfirmed with the County Auditor since. Records are real, individually-identified certificates from the official notice.",
+      "collector_module": "scripts/refresh_tax_lien_properties.py",
+      "test_module": "tests/test_tax_lien_properties.py"
+    },
+    {
+      "state": "IN",
+      "county_or_locality": "Hamilton",
+      "sale_system": "tax_lien",
+      "official_information_url": "https://www.hamiltoncounty.in.gov/452/Real-Property-Tax-Sale",
+      "current_list_url": "https://secure2.hamiltoncounty.in.gov/taxsale/",
+      "assessor_url": null,
+      "collector_status": "live",
+      "property_query": true,
+      "last_attempt_at": "2026-08-24T00:00:00+00:00",
+      "last_success_at": "2026-08-24",
+      "current_record_count": 144,
+      "blocker": null,
       "collector_module": "scripts/refresh_tax_lien_properties.py",
       "test_module": "tests/test_tax_lien_properties.py"
     },

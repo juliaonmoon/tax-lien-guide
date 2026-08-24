@@ -52,6 +52,14 @@ GRANT_LISTING = (
     "saleDateVal=&saleFormat=&saleStatus=&saleType=F&searchText=&sortBy=AD&"
     "sortOrder=desc&state=IN"
 )
+HAMILTON_PAGE = "https://www.hamiltoncounty.in.gov/452/Real-Property-Tax-Sale"
+HAMILTON_LISTING_APP = "https://secure2.hamiltoncounty.in.gov/taxsale/"
+HAMILTON_API = "https://secure2.hamiltoncounty.in.gov/TaxSale/TaxSaleWeb/TaxSale_Read"
+HAMILTON_LISTING = (
+    "https://properties.sriservices.com/properties?county=Hamilton&saleDate=AF&"
+    "saleDateVal=&saleFormat=&saleStatus=&saleType=F&searchText=&sortBy=AD&"
+    "sortOrder=desc&state=IN"
+)
 
 REQUIRED_FIELDS = [
     "state", "county", "parcel_id", "sale_item_number", "property_address",
@@ -303,6 +311,65 @@ def coconino_rows(verified: str) -> list[dict]:
     return rows
 
 
+def hamilton_rows(verified: str) -> list[dict]:
+    # Live Kendo-grid JSON API behind the county's public tax-sale listing tool.
+    # No auth, no paging needed (144 total rows fit in one response). The source
+    # publishes an owner-name field (NAME1) alongside each row; it is deliberately
+    # never read into a variable here so it cannot leak into published output
+    # (see BUG-004/BUG-005 in BUGS.md).
+    req = urllib.request.Request(
+        HAMILTON_API, data=b"", method="POST",
+        headers={
+            "User-Agent": USER_AGENT, "Accept": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-Requested-With": "XMLHttpRequest",
+        },
+    )
+    context = ssl.create_default_context()
+    with urllib.request.urlopen(req, timeout=90, context=context) as response:
+        payload = json.loads(response.read())
+    rows = []
+    for item in payload.get("Data", []):
+        sale_id = clean(item.get("Sale_Id"))
+        parcel = clean(item.get("Property_Id"))
+        if not (sale_id and parcel):
+            continue
+        address = clean(item.get("Address1"))
+        row = {
+            "record_id": f"IN-Hamilton-2026-{sale_id}",
+            "state": "IN", "state_name": "Indiana", "county": "Hamilton",
+            "parcel_id": parcel, "sale_item_number": sale_id,
+            "certificate_number": None, "property_address": address, "address": address,
+            "city": clean(item.get("LOCATIONCITY")), "zip": clean(item.get("LOCATIONZIP")),
+            "legal_description": clean(item.get("Legal_Desc")), "property_type": None,
+            "auction_date": "2026-10-08", "sale_date": "2026-10-08",
+            "auction_time": "10:00 ET", "auction_format": "In person",
+            "auction_location": "Hamilton County Historic Courthouse, 33 N 9th St, "
+                                 "2nd Floor Historic Courtroom, Noblesville, IN 46060",
+            "auction_url": HAMILTON_LISTING, "direct_listing_url": HAMILTON_LISTING_APP,
+            "official_source_url": HAMILTON_LISTING_APP,
+            "minimum_bid": number(item.get("MDASCALC")), "opening_bid": number(item.get("MDASCALC")),
+            "delinquent_tax_amount": None,
+            "fees_costs": "Included in minimum sale price but not separated per row",
+            "assessed_value": None, "market_value": None, "acreage": None,
+            "tax_years_delinquent": None, "sale_status": "Published — subject to removal or change",
+            "lien_type": "Indiana tax sale certificate / lien", "sale_type": "tax_lien",
+            "maximum_statutory_return": "110% within 6 months; 115% after 6 months and within 1 year (penalty, not APR)",
+            "winning_rate_mechanism": "Highest bid; statutory redemption return is not bid down",
+            "redemption_period": "Approximately 1 year; confirm certificate-specific deadline",
+            "important_rules": "Official county tax-sale listing tool; the county warns this list is a "
+                                "constantly-changing public-records snapshot and may not reflect the most "
+                                "current information. A certificate is a lien, not immediate ownership.",
+            "data_source": "Hamilton County official 2026 Tax Sale Listing (live JSON grid)",
+            "last_verified": verified, "source_mode": "live_official_json_api",
+            "county_information_url": HAMILTON_PAGE,
+        }
+        rows.append(finish(row))
+    if len(rows) < 100:
+        raise RuntimeError(f"Hamilton parser found only {len(rows)} rows; refusing suspicious output")
+    return rows
+
+
 def prior_by_source() -> dict[str, list[dict]]:
     if not OUTPUT.exists():
         return {}
@@ -443,6 +510,22 @@ def main() -> int:
                 "retained_previous_rows": bool(retained),
             })
             print(f"{name}: FAILED ({exc}); retained {len(retained)} prior rows", file=sys.stderr)
+
+    hamilton_name = "Hamilton County official 2026 Tax Sale Listing (live JSON grid)"
+    try:
+        hamilton = hamilton_rows(verified)
+        properties.extend(hamilton)
+        health.append({"source": hamilton_name, "url": HAMILTON_API, "ok": True, "records": len(hamilton), "checked_at": now.isoformat()})
+        print(f"{hamilton_name}: {len(hamilton)} rows")
+    except Exception as exc:  # preserve verified data on any transient/source format failure
+        retained = previous.get(hamilton_name, [])
+        properties.extend(retained)
+        health.append({
+            "source": hamilton_name, "url": HAMILTON_API, "ok": False, "records": len(retained),
+            "checked_at": now.isoformat(), "error": f"{type(exc).__name__}: {exc}",
+            "retained_previous_rows": bool(retained),
+        })
+        print(f"{hamilton_name}: FAILED ({exc}); retained {len(retained)} prior rows", file=sys.stderr)
 
     coco = coconino_rows(verified)
     properties.extend(coco)

@@ -67,6 +67,14 @@ class TaxLienDatasetTests(unittest.TestCase):
             self.assertTrue(row.get("parcel_id"))
             self.assertIn("2026-04-28", row.get("sale_status") or "")
 
+    def test_hamilton_county_present_with_expected_profile(self):
+        hamilton = [row for row in self.rows if row.get("county") == "Hamilton" and row.get("state") == "IN"]
+        self.assertGreaterEqual(len(hamilton), 100)
+        for row in hamilton:
+            self.assertEqual(row["profile_id"], "IN-Hamilton-2026")
+            self.assertTrue(row.get("parcel_id"))
+            self.assertEqual(row.get("auction_date"), "2026-10-08")
+
 
 class ForeignCollectorPreservationTests(unittest.TestCase):
     """Regression test: this script must never delete records another
