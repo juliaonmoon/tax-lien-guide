@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-24T18:25:21.022726+00:00",
+  "source_updated_at": "2026-08-24T21:36:24.641480+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2099,7 +2099,7 @@
       "legal_description": "MABLEY ADD N 1/2",
       "tax_status": "T",
       "tax_due_estimate": 23687.41,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "5001700007",
