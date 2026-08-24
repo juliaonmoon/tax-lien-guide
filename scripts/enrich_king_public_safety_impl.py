@@ -218,6 +218,7 @@ def main() -> None:
     seattle_filled = 0
     seattle_unmapped = 0
     cleared = 0
+    independent_preserved = 0
 
     for p in doc.get("properties", []):
         if p.get("state") != "WA" or p.get("county") != "King":
@@ -280,17 +281,23 @@ def main() -> None:
                 seattle_unmapped += 1
             continue
 
-        if clear_metric(p):
-            cleared += 1
+        # This collector owns KCSO and Seattle SPD jurisdictions only. Independent
+        # cities are enriched by the downstream official WA NIBRS/Bellevue steps.
+        # Never clear a previously verified independent-city value here: if the
+        # downstream source is temporarily unavailable, clearing first causes a
+        # real coverage regression even though no source has invalidated the data.
+        if any(k in p for k in PUBLIC_SAFETY_KEYS):
+            independent_preserved += 1
 
     PROPS.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     print(
         "King County public-safety enrichment: "
         f"KCSO contract-city {kcso_city_filled}; KCSO district {kcso_district_filled}; "
         f"KCSO district unmapped {kcso_district_unmapped}; Seattle SPD {seattle_filled}; "
-        f"Seattle unmapped {seattle_unmapped}; stale values cleared {cleared}"
+        f"Seattle unmapped {seattle_unmapped}; stale owned values cleared {cleared}; "
+        f"independent-city values preserved {independent_preserved}"
     )
-    print("Independent city police jurisdictions remain blank pending official integrated sources.")
+    print("Independent city police jurisdictions are preserved for downstream official WA NIBRS/Bellevue refreshes.")
 
 
 if __name__ == "__main__":
