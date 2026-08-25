@@ -3,9 +3,9 @@
   "refresh_frequency": "daily",
   "prototype": true,
   "states_tracked": 9,
-  "counties_tracked": 21,
+  "counties_tracked": 22,
   "official_sources_registered": 5,
-  "property_count": 17246,
+  "property_count": 17438,
   "source_health": [
     {
       "state": "FL",
@@ -85,14 +85,14 @@
       "counties": 11
     },
     "tax_lien": {
-      "records": 16796,
+      "records": 16988,
       "states": 4,
-      "counties": 11
+      "counties": 12
     },
     "combined": {
-      "records": 17246,
+      "records": 17438,
       "states": 9,
-      "counties": 21
+      "counties": 22
     }
   }
 }

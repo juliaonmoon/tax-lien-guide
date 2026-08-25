@@ -486,6 +486,40 @@ reuse potential), not by state alphabetically:
    aggregation rule; a wrong guess here would mean publishing incorrect
    dollar amounts, not just missing rows.
 
+   **Done 2026-08-25.** Cross-referenced 64 sample items by hand (every
+   item in the 2026-06-16 workbook that has both a CT/MH primary row and
+   one or more SA sibling rows, plus a spread of CT/MH-only items) and
+   found a 100% match: the primary row's `Sale Amount` always equals the
+   sum of `(First Half + Second Half + Interest + Costs)` across that row
+   and every SA sibling sharing its Item Number, plus a flat $20.00. The
+   county's own 2026 Annual Tax Sale Rules PDF independently confirms the
+   $20.00 figure in plain text ("You still pay the full amount of the tax
+   and $20 tax sale certificate fee"), so this isn't just a data-shape
+   coincidence. The collector (`scripts/refresh_iowa_scott_tax_liens.py`)
+   re-derives that sum for every row it publishes and refuses to publish
+   any item where it doesn't reconcile, rather than trusting the source's
+   `Sale Amount` field on its own say-so — same fail-closed posture as the
+   other Iowa collectors' safety guards.
+
+   Also resolved a second, previously-unrecognized ambiguity: the annual
+   sale itself was Monday 2026-06-15 (confirmed in the rules PDF), and the
+   county has not published a newer list since 2026-06-16. That makes the
+   06-16 file the day-after list of items that got **no bidder** at the
+   live sale — the rules PDF calls these "county held" certificates,
+   available afterward only by assignment through the Treasurer's office
+   ($100 assignment fee, separate from the published amount), not a
+   preview of a scheduled future auction. `sale_status`/`auction_format`
+   describe that honestly instead of implying an upcoming public sale.
+
+   193 items have exactly one CT/MH row (55 real estate, 138 mobile home);
+   one of those (item 1847, a single parcel with an unbroken run of DT/SA
+   rows from 2011 through 2023 and no populated `Sale Amount` on its 2024
+   CT row) is excluded rather than guessed at, leaving 192 published rows.
+   No other item in the workbook spans more than one `Year` value — 1847
+   is a genuine one-off, not evidence of a broader pattern. Wired into
+   `refresh-tax-lien-properties.yml` as a new step after Des Moines, with
+   its own 150-row safety floor in the shared Iowa minimum-count check.
+
 8f. **Oklahoma County, OK -- new tax-deed collector shipped, 2026-08-20.**
    Picked from the 28 `not_started` states as a tractable first entry.
    Source: the Treasurer's own "ACTIVE RESALE ACCOUNTS"/county-owned

@@ -20,12 +20,14 @@ on:
       - "scripts/refresh_iowa_woodbury_tax_liens.py"
       - "scripts/refresh_iowa_dubuque_tax_liens.py"
       - "scripts/refresh_iowa_des_moines_tax_liens.py"
+      - "scripts/refresh_iowa_scott_tax_liens.py"
       - "scripts/enrich_indiana_assessed_values.py"
       - "scripts/recount_tax_lien_properties.py"
       - "tests/test_tax_lien_properties.py"
       - "tests/test_iowa_johnson_tax_liens.py"
       - "tests/test_iowa_linn_tax_liens.py"
       - "tests/test_iowa_woodbury_tax_liens.py"
+      - "tests/test_iowa_scott_tax_liens.py"
       - "tests/test_enrich_indiana_assessed_values.py"
       - "tax-lien-properties.html"
       - "calendar.html"
@@ -86,6 +88,9 @@ jobs:
       - name: Refresh Des Moines County Iowa property-level tax liens
         id: iowa_des_moines
         run: python scripts/refresh_iowa_des_moines_tax_liens.py
+      - name: Refresh Scott County Iowa property-level tax liens
+        id: iowa_scott
+        run: python scripts/refresh_iowa_scott_tax_liens.py
       - name: Verify Iowa collectors materially populated generated output
         run: |
           python - <<'PY'
@@ -103,6 +108,11 @@ jobs:
               # by the independent text-row and word-geometry parsers. Item 724
               # begins the separate mobile-home section.
               "IA-Des-Moines-2026": 597,
+              # 192 is the verified post-sale county-held certificate count (of 193
+              # candidate CT/MH items, 1 excluded for failing the $20-fee invariant
+              # check); this list naturally shrinks over time as items are assigned
+              # or redeemed, so the floor is set well below 192, not at it.
+              "IA-Scott-2026": 150,
           }
           blocked_zero_ok = {"IA-Johnson-2026", "IA-Linn-2026", "IA-Dubuque-2026"}
           for profile_id, minimum in minimums.items():
