@@ -6,6 +6,7 @@ on:
     paths:
       - "scripts/enrich_king_public_safety.py"
       - "scripts/enrich_king_public_safety_impl.py"
+      - "scripts/restore_king_public_safety_after_source_failure.py"
       - "scripts/diagnose_king_gaps.py"
       - ".github/workflows/verify-king-public-safety.yml"
 
@@ -17,11 +18,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 40
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install requests
+      - name: Save pre-refresh snapshot for resilience path
+        run: cp data/properties.json /tmp/properties-before-refresh.json
       - name: Guard independent-city public-safety preservation
         run: |
           python - <<'PY'
@@ -87,13 +92,22 @@ jobs:
             print('sample=',p.get('parcel_id'),p.get('city'),lat,lon,'hits=',hits[:10])
           PY
       - name: Run scoped public safety enrichment
+        id: scoped
+        continue-on-error: true
         run: python scripts/enrich_king_public_safety.py
+      - name: Restore verified public safety after incomplete or failed refresh
+        if: steps.scoped.outcome == 'failure'
+        run: python scripts/restore_king_public_safety_after_source_failure.py
       - name: Diagnose King gaps
         run: python scripts/diagnose_king_gaps.py
-      - name: Print public-safety coverage
+      - name: Verify public-safety coverage is complete after recovery
         run: |
           python - <<'PY'
           import json
           g=json.load(open('data/king-gaps.json'))
-          print(json.dumps({'coverage':g.get('optional_metric_coverage',{}).get('public_safety'),'missing_by_city':g.get('optional_metric_missing_by_city',{}).get('public_safety')},indent=2))
+          coverage=g.get('optional_metric_coverage',{}).get('public_safety',{})
+          missing=g.get('optional_metric_missing_by_city',{}).get('public_safety',{})
+          print(json.dumps({'coverage':coverage,'missing_by_city':missing},indent=2))
+          assert coverage.get('missing') == 0, coverage
+          assert coverage.get('filled') == g.get('king_count'), (coverage, g.get('king_count'))
           PY
