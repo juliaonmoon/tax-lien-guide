@@ -68,11 +68,13 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_butte_silver_bow_tax_lien_market.py",
     "scripts/add_montana_richland_tax_lien_market.py",
     "scripts/add_montana_stillwater_tax_lien_market.py",
+    "scripts/add_maryland_somerset_county_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
 REQUIRED_MARKET_RATE_TEXT = {
     "Colorado — Logan County": "14%/yr for 2026 certificate",
+    "Maryland — Somerset County": "County-specific 2026 certificate redemption rate not verified; confirm with Somerset County",
 }
 
 REQUIRED_MARKET_SAFETY_TEXT = {
@@ -113,6 +115,7 @@ REQUIRED_MARKET_SAFETY_TEXT = {
     "Colorado — Moffat County": "MARKET-LEVEL ONLY",
     "Florida — Bay County": "MARKET-LEVEL ONLY",
     "Florida — Broward County": "MARKET-LEVEL ONLY",
+    "Maryland — Somerset County": "MARKET-LEVEL ONLY",
 }
 
 MARKER_RE = re.compile(r"^MARKER\s*=\s*(.+)$", re.MULTILINE)
