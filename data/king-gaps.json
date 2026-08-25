@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-25T13:27:10.044307+00:00",
+  "source_updated_at": "2026-08-25T14:11:00.215004+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -891,7 +891,7 @@
       "legal_description": "POR GL 7 - BEG NE COR TH S 89-23-37 W ALG N LN 137.94 FT TH S 10-56-43 E 30.49 FT TO TPOB TH CONTG S 10-56-43 E 96.73 FT TH S 89-45-04 W 100.12 FT TH N 10-56-43 W 96.73 FT TH N 89-23-37 E 100 FT TO TPOB",
       "tax_status": "T",
       "tax_due_estimate": 2621.29,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "1912100625",
