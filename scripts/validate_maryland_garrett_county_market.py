@@ -21,7 +21,7 @@ def main():
         "Tax Sale Certificate / property-tax lien",
         "May 18, 2026",
         "May 22, 2026",
-        "not immediate ownership",
+        "rather than immediate ownership",
         "Current 2026 certificate redemption rate not independently verified",
         "judicial foreclosure/deed-sale records",
     ]
