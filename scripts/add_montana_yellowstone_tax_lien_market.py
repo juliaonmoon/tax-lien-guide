@@ -10,8 +10,13 @@ ROW = r'''{state:'Montana — Yellowstone County',product:'Tax lien assignment /
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    if MARKER in text:
-        print("Montana Yellowstone County row already present")
+    start = text.find("{state:'" + MARKER + "'")
+    if start >= 0:
+        end = text.find("}", start)
+        if end < 0:
+            raise SystemExit("Could not find end of existing Yellowstone County row")
+        INDEX.write_text(text[:start] + ROW + text[end + 1 :], encoding="utf-8")
+        print("Refreshed Montana Yellowstone County tax-lien market")
         return
 
     start = text.find("const rows=[")
