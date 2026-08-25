@@ -19,6 +19,7 @@ MARKET_RATES = {
     "Colorado — Logan County": "14%/yr for 2026 certificate",
     "Maryland — Howard County": "18%/yr county redemption rate; owner-occupied residential subject to Maryland statutory cap",
     "Maryland — Baltimore County": "12%/yr county redemption rate",
+    "Maryland — Baltimore City": "2026 redemption rate: 12%/yr owner-occupied residential; 18%/yr all other property",
     "Maryland — Montgomery County": "2026 redemption rate: 6%/yr owner-occupied; 20%/yr non-owner-occupied",
     "Maryland — Frederick County": "8%/yr county redemption rate",
     "Maryland — Prince George's County": "2026 redemption rate: 10%/yr owner-occupied; 20%/yr non-principal residence or unimproved parcel",
