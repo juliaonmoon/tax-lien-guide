@@ -16,7 +16,7 @@ required = [
     "Tax Sale Certificate/lien, not the real estate",
     "SRI",
     "Commissioners Certificate Sale",
-    "Do not bulk republish owner/taxpayer names",
+    "does not bulk republish owner/taxpayer names",
     "https://www.in.gov/counties/randolph/departments/treasurer/tax-certificate-sales/",
 ]
 for phrase in required:
