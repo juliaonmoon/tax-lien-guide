@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-25T22:44:10.704771+00:00",
+  "source_updated_at": "2026-08-25T23:30:40.049663+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -755,7 +755,7 @@
       "legal_description": "CIRCLE RIVER RANCH ADD TRACT R OF KING COUNTY BOUNDARY LINE ADJUSTMENT NO 01L0051 RECORDING NO 20020213900001 SAID TRACT R DEFINED - LOT 121 CIRCLE RIVER RANCH ADD SUBJ TO AGREEMENT PER DEV RGTS PER REC #8609051038",
       "tax_status": "T",
       "tax_due_estimate": 308.06,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "1604601775",
