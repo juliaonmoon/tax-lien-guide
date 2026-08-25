@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-25T17:26:03.839955+00:00",
+  "source_updated_at": "2026-08-25T18:28:08.464984+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -2156,7 +2156,7 @@
       "legal_description": "MARYMOOR HILL DIV NO 02",
       "tax_status": "T",
       "tax_due_estimate": 76004.54,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "5229300235",
