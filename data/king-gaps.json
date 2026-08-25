@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-25T11:29:35.647601+00:00",
+  "source_updated_at": "2026-08-25T12:30:04.687875+00:00",
   "king_count": 145,
   "missing_counts": {
     "address": 54,
@@ -225,9 +225,9 @@
       "missing": 145
     },
     "public_safety": {
-      "filled": 145,
+      "filled": 118,
       "total": 145,
-      "missing": 0
+      "missing": 27
     }
   },
   "optional_metric_missing_by_city": {
@@ -253,7 +253,10 @@
       "KIRKLAND": 1,
       "SNOQUALMIE": 1
     },
-    "public_safety": {}
+    "public_safety": {
+      "KING COUNTY": 25,
+      "VASHON": 2
+    }
   },
   "source_limitations": {
     "opening_bid": {
