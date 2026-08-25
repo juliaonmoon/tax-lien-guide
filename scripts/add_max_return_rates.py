@@ -37,6 +37,7 @@ MARKET_RATES = {
     "Maryland — Washington County": "6%/yr county redemption rate",
     "Maryland — Caroline County": "Current 2026 certificate redemption rate not independently verified; confirm with Caroline County",
     "Maryland — Somerset County": "County-specific 2026 certificate redemption rate not verified; confirm with Somerset County",
+    "Maryland — Kent County": "Current 2026 certificate redemption rate not independently verified; confirm with Kent County",
 }
 
 # These labels intentionally preserve the legal return mechanism instead of
