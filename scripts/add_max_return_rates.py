@@ -35,6 +35,7 @@ MARKET_RATES = {
     "Maryland — Allegany County": "2026 redemption rate: 10%/yr owner-occupied; 18%/yr non-owner-occupied",
     "Maryland — Washington County": "6%/yr county redemption rate",
     "Maryland — Caroline County": "Current 2026 certificate redemption rate not independently verified; confirm with Caroline County",
+    "Maryland — Somerset County": "County-specific 2026 certificate redemption rate not verified; confirm with Somerset County",
 }
 
 # These labels intentionally preserve the legal return mechanism instead of
