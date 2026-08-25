@@ -16,9 +16,9 @@
     ]
   },
   "summary": {
-    "total_jurisdictions": 80,
+    "total_jurisdictions": 81,
     "by_collector_status": {
-      "live": 11,
+      "live": 12,
       "snapshot": 3,
       "zero_active": 1,
       "identified": 35,
@@ -26,10 +26,10 @@
       "not_started": 25
     },
     "by_property_query": {
-      "true": 15,
+      "true": 16,
       "false": 65
     },
-    "total_verified_property_records": 14590
+    "total_verified_property_records": 14782
   },
   "jurisdictions": [
     {
@@ -588,9 +588,25 @@
       "last_attempt_at": null,
       "last_success_at": null,
       "current_record_count": 0,
-      "blocker": "Official market/informational page is linked from the guide, but no property-level collector has been implemented yet.",
+      "blocker": "Official market/informational page is linked from the guide. Note: this row is stale in one respect -- several individual Iowa counties (Johnson, Linn, Woodbury, Dubuque, Des Moines, Scott) already have real property-level collectors; see their own scripts/tests and data/project-management.json rather than treating Iowa as uncovered.",
       "collector_module": null,
       "test_module": null
+    },
+    {
+      "state": "IA",
+      "county_or_locality": "Scott",
+      "sale_system": "tax_lien",
+      "official_information_url": "https://www.scottcountyiowa.gov/treasurer/tax-sale",
+      "current_list_url": "https://www3.scottcountyiowa.gov/treasurer/pub/tax_sale/2026/20260616_Tax_Sale_List.xlsx",
+      "assessor_url": null,
+      "collector_status": "live",
+      "property_query": true,
+      "last_attempt_at": "2026-08-25T00:00:00+00:00",
+      "last_success_at": "2026-08-25",
+      "current_record_count": 192,
+      "blocker": null,
+      "collector_module": "scripts/refresh_iowa_scott_tax_liens.py",
+      "test_module": "tests/test_iowa_scott_tax_liens.py"
     },
     {
       "state": "NV",

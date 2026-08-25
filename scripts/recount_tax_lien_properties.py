@@ -27,7 +27,11 @@ def resolved(row: dict, profiles: dict) -> dict:
     return {
         "state": row.get("state") or profile.get("state"),
         "county": row.get("county") or profile.get("county"),
-        "auction_date": row.get("auction_date") or row.get("sale_date") or profile.get("auction_date") or profile.get("sale_date"),
+        # Deliberately no sale_date fallback here: sale_date can be a historical
+        # date (e.g. a county-held certificate's original, already-passed sale)
+        # with no scheduled future auction, and with_auction_date must not count
+        # that as one.
+        "auction_date": row.get("auction_date") or profile.get("auction_date"),
     }
 
 

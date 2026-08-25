@@ -36,7 +36,7 @@ class SourceRegistryTests(unittest.TestCase):
 
     def test_covers_every_state_touched_by_real_data(self):
         states_with_data = {row["state"] for row in self.rows if row["property_query"]}
-        self.assertEqual(states_with_data, {"IN", "AZ", "WA", "TX", "FL", "OK", "MI", "MT"})
+        self.assertEqual(states_with_data, {"IN", "AZ", "WA", "TX", "FL", "OK", "MI", "MT", "IA"})
 
     def test_blocked_rows_document_a_reason(self):
         for row in self.rows:

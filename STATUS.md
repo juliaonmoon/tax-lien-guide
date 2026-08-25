@@ -132,14 +132,27 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   issue #29). Johnson/Linn/Dubuque property-level tax liens still exist
   as real collector code but have not cleared their publish-safety gates
   — see "Pending / blocked" below; not counted here.
-- Total: 16,860 tax-lien records + 454 tax-deed records as of 2026-08-24
+- **Iowa Scott county-held certificates (192, live — new 2026-08-25)**:
+  not the same shape as the other Iowa counties. Scott's own annual sale
+  was 2026-06-15; the collector reads the county's 2026-06-16 post-sale
+  list (the newest the county has published), which is the set of items
+  that got no bidder and are now available only by Treasurer assignment,
+  not a preview of a future auction. The workbook is a running per-item
+  receipt ledger, not one row per certificate — the collector reconciles
+  each published `Sale Amount` against the sum of its own and its sibling
+  rows' amounts plus a flat $20 statutory fee (verified against 64 sample
+  items and the county's own rules PDF) and refuses to publish any item
+  where that doesn't check out. One item (a 14-year unbroken delinquency
+  history with no current `Sale Amount`) excluded rather than guessed at.
+  Closes GitHub issue #16.
+- Total: 16,988 tax-lien records + 450 tax-deed records as of 2026-08-25
   (Coconino is intentionally cross-listed in both, clearly labeled). Note:
   this line only reflects the counties this file documents in detail above
   — other sessions have independently added many more live Iowa/Maryland/
   Montana county markets since 2026-08-20 (see `git log` and
   `data/project-management.json` for the current full list); this file's
   narrative sections haven't been reconciled against all of them yet.
-- Full test suite green (112/112) as of 2026-08-24.
+- Full test suite green (120/120) as of 2026-08-25.
 
 ## Hard-won gotchas
 
@@ -230,13 +243,6 @@ Python deps used across collectors: `requests`, `beautifulsoup4`,
   status-to-availability mapping before writing a parser — full detail in
   `TAX_SALE_COVERAGE_AUDIT.md` §7, item 7.
 - **Montgomery County, IN** — page returns HTTP 403. Not pursued further.
-- **Scott County, IA** — official 2026 XLSX list's HTTP 403 cleared
-  2026-08-19 (was bot-UA filtering, not real access control), but the row
-  structure is genuinely more complex than Linn/Johnson/Dubuque/Woodbury
-  (multi-year receipt rows per Item Number, no obvious single
-  current-amount-owed field) — not safe to build a parser without an
-  authoritative explanation or cross-referencing known items against a
-  live source first. See `TAX_SALE_COVERAGE_AUDIT.md` §8e and issue #16.
 - **Arizona statewide assessor enrichment** — no equivalent to Indiana's
   DLGF Gateway exists; Cochise/Coconino's own GIS/open-data sites are
   dead ends (empty portals, no parcel dataset found). Not pursued further
