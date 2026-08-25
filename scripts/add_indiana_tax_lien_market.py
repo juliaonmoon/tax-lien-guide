@@ -14,7 +14,7 @@ ROWS = {
 def ensure_row(text: str, marker: str, row: str) -> tuple[str, str]:
     if marker in text:
         row_re = re.compile(
-            rf"\\{{state:'{re.escape(marker)}'.*?\\}}(?=\\s*,|\\s*\\n\\];)",
+            rf"\{{state:'{re.escape(marker)}'.*?\}}(?=\s*,|\s*\n\];)",
             re.S,
         )
         updated, count = row_re.subn(row, text, count=1)
