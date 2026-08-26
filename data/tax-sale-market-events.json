@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-26T15:12:30Z",
+  "updated_at": "2026-08-26T16:26:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -41,6 +41,26 @@
       "secondary_official_source_url": "https://legacy.lakecountyin.org/",
       "important_rules": "Market-level calendar event only. This is Lake County's Treasurer Tax Sale, not its separate Commissioners Tax Sale and not a Sheriff/judicial foreclosure sale. No owner names or parcel inventory are republished here, and no parcel-level minimum bid is inferred or frozen from a changing sale list.",
       "data_source": "Lake County Indiana Auditor Tax Sales page and official July 14, 2026 Treasurer Tax Sale notice",
+      "last_verified": "2026-08-26",
+      "market_level_only": true
+    },
+    {
+      "record_id": "IN-AllenCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "IN",
+      "state_name": "Indiana",
+      "county": "Allen County",
+      "sale_type": "tax_lien",
+      "product_type": "Delinquent real-property tax sale / redeemable tax-sale interest",
+      "auction_date": "2026-09-16",
+      "sale_date": "2026-09-16",
+      "auction_time": "Time not yet published on the official county page",
+      "auction_format": "Allen County 2026 Tax Sale; current county page confirms the date but does not yet publish the auction platform or start time",
+      "sale_status": "Scheduled by Allen County for September 16, 2026. The county published a 2026 Tax Sale List dated August 20, 2026 and states that information is subject to change; verify current status with the County before relying on this event.",
+      "official_source_url": "https://www.allencounty.in.gov/270/Tax-Sale",
+      "secondary_official_source_url": "https://www.allencounty.in.gov/284/Treasurer",
+      "important_rules": "Market-level calendar event only. Allen County states delinquent property sold at tax sale can still be redeemed, so this is not a parcel listing, not immediate deed ownership, and not a Sheriff/judicial foreclosure sale. No owner names or parcel inventory are republished here; no parcel-level minimum bid is inferred or frozen from the changing official list.",
+      "data_source": "Allen County Indiana official Tax Sale page and Treasurer page",
       "last_verified": "2026-08-26",
       "market_level_only": true
     },
