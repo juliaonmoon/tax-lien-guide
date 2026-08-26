@@ -14,6 +14,26 @@ ROOT = Path(__file__).resolve().parents[1]
 EVENTS_PATH = ROOT / "data" / "tax-sale-market-events.json"
 
 VERIFIED_EVENTS = {
+    "IN-AllenCounty-2026-market-event": {
+        "record_id": "IN-AllenCounty-2026-market-event",
+        "record_type": "market_event",
+        "state": "IN",
+        "state_name": "Indiana",
+        "county": "Allen County",
+        "sale_type": "tax_lien",
+        "product_type": "Delinquent real-property tax sale / redeemable tax-sale interest",
+        "auction_date": "2026-09-16",
+        "sale_date": "2026-09-16",
+        "auction_time": "Time not yet published on the official county page",
+        "auction_format": "Allen County 2026 Tax Sale; current county page confirms the date but does not yet publish the auction platform or start time",
+        "sale_status": "Scheduled by Allen County for September 16, 2026. The county published a 2026 Tax Sale List dated August 20, 2026 and states that information is subject to change; verify current status with the County before relying on this event.",
+        "official_source_url": "https://www.allencounty.in.gov/270/Tax-Sale",
+        "secondary_official_source_url": "https://www.allencounty.in.gov/284/Treasurer",
+        "important_rules": "Market-level calendar event only. Allen County states delinquent property sold at tax sale can still be redeemed, so this is not a parcel listing, not immediate deed ownership, and not a Sheriff/judicial foreclosure sale. No owner names or parcel inventory are republished here; no parcel-level minimum bid is inferred or frozen from the changing official list.",
+        "data_source": "Allen County Indiana official Tax Sale page and Treasurer page",
+        "last_verified": "2026-08-26",
+        "market_level_only": True,
+    },
     "IN-DecaturCounty-2026-market-event": {
         "record_id": "IN-DecaturCounty-2026-market-event",
         "record_type": "market_event",
