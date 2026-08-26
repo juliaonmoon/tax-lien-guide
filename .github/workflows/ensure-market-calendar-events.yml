@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'data/tax-sale-market-events.json'
+      - 'scripts/ensure_market_calendar_events.py'
       - 'scripts/add_market_events_to_calendar.py'
       - 'scripts/validate_tax_sale_market_events.py'
       - '.github/workflows/ensure-market-calendar-events.yml'
@@ -23,11 +24,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
       - name: Use Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Restore verified market events
+        run: python scripts/ensure_market_calendar_events.py
       - name: Validate event feed
         run: python scripts/validate_tax_sale_market_events.py
       - name: Enable market events in calendar
@@ -36,16 +40,16 @@ jobs:
         run: |
           grep -q "data/tax-sale-market-events.json" calendar.html
           python scripts/validate_tax_sale_market_events.py
-      - name: Publish generated calendar change
+      - name: Publish repaired event feed and generated calendar change
         run: |
-          if git diff --quiet -- calendar.html; then
-            echo "Calendar already current"
+          if git diff --quiet -- data/tax-sale-market-events.json calendar.html; then
+            echo "Market event feed and calendar already current"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add calendar.html
-          git commit -m "chore: include market-level tax sale events in calendar"
+          git add data/tax-sale-market-events.json calendar.html
+          git commit -m "chore: ensure verified market-level tax sale events"
           for attempt in 1 2 3; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
             echo "Push raced another main writer; retrying ($attempt/3)"
