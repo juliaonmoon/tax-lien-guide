@@ -17,6 +17,8 @@ ALLOWED_HOSTS = {
     "www.hancockin.gov",
     "hamiltoncounty.in.gov",
     "www.hamiltoncounty.in.gov",
+    "allencounty.in.gov",
+    "www.allencounty.in.gov",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
 
