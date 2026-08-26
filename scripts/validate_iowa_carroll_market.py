@@ -16,6 +16,11 @@ def main():
         end = text.find("},", start)
     row = text[start:end if end > start else start + 5000]
 
+    # The row is stored as a JavaScript single-quoted literal, so apostrophes
+    # inside field values are escaped (Treasurer\'s). Normalize that storage
+    # encoding before checking the human-readable source/safety text.
+    readable_row = row.replace("\\'", "'")
+
     required = [
         "MARKET-LEVEL ONLY",
         "third Monday in June",
@@ -25,7 +30,7 @@ def main():
         "Treasurer's Office",
     ]
     for expected in required:
-        if expected not in row:
+        if expected not in readable_row:
             raise SystemExit(f"Carroll County safety/rule text missing: {expected}")
 
     forbidden = ["owner_name:", "taxpayer_name:", "opening_bid:"]
