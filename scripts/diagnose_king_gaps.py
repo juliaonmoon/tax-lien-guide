@@ -59,6 +59,13 @@ SOURCE_LIMITATIONS = {
     },
 }
 
+# Missing fields in this set are not actionable by the automated enrichment pipeline
+# until the cited official source changes or an individual, non-bulk public-record lookup
+# is performed. Keeping this classification explicit prevents scheduled runs from
+# repeatedly treating proven source limitations as code defects.
+BOUNDED_FIELDS = {"address", "legal_description", "opening_bid"}
+BOUNDED_OPTIONAL_METRICS = {"rental_days_on_market"}
+
 
 def normalized_city(p):
     city = str(p.get("city") or "").strip().upper()
@@ -106,9 +113,38 @@ def main():
         optional_coverage[name] = {"filled": filled, "total": len(wa), "missing": len(missing_rows)}
         optional_missing_by_city[name] = dict(sorted(Counter(normalized_city(p) for p in missing_rows).items(), key=lambda kv: (-kv[1], kv[0])))
 
+    fixable_missing = {k: v for k, v in sorted(counter.items()) if k not in BOUNDED_FIELDS and v}
+    bounded_missing = {k: v for k, v in sorted(counter.items()) if k in BOUNDED_FIELDS and v}
+    optional_fixable_missing = {
+        name: info["missing"]
+        for name, info in optional_coverage.items()
+        if name not in BOUNDED_OPTIONAL_METRICS and info["missing"]
+    }
+    optional_bounded_missing = {
+        name: info["missing"]
+        for name, info in optional_coverage.items()
+        if name in BOUNDED_OPTIONAL_METRICS and info["missing"]
+    }
+    no_fixable_gaps = not fixable_missing and not optional_fixable_missing
+
+    completion = {
+        "status": "bounded_complete" if no_fixable_gaps else "fixable_gaps_remain",
+        "no_fixable_gaps_remain": no_fixable_gaps,
+        "fixable_missing_counts": fixable_missing,
+        "bounded_missing_counts": bounded_missing,
+        "optional_fixable_missing_counts": optional_fixable_missing,
+        "optional_bounded_missing_counts": optional_bounded_missing,
+        "note": (
+            "All remaining blanks are documented source limitations; future runs should only reopen WA enrichment when an official source changes or a new legitimate public source is added."
+            if no_fixable_gaps
+            else "At least one tracked field lacks coverage without a documented source limitation and should be investigated as a pipeline defect."
+        ),
+    }
+
     OUT.write_text(json.dumps({
         "source_updated_at": doc.get("updated_at"),
         "king_count": len(wa),
+        "completion": completion,
         "missing_counts": dict(sorted(counter.items())),
         "missing_parcel_ids_by_field": {k: v for k, v in sorted(by_field.items())},
         "missing_address_status_counts": dict(sorted(address_status_counts.items())),
@@ -118,6 +154,7 @@ def main():
         "gaps": gaps,
     }, indent=2), encoding="utf-8")
     print(f"Wrote {OUT}: {len(gaps)} rows with at least one tracked gap")
+    print("Completion:", completion)
     print("Optional metric coverage:", optional_coverage)
     print("Optional metric missing by city:", optional_missing_by_city)
 
