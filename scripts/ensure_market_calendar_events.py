@@ -14,6 +14,26 @@ ROOT = Path(__file__).resolve().parents[1]
 EVENTS_PATH = ROOT / "data" / "tax-sale-market-events.json"
 
 VERIFIED_EVENTS = {
+    "IN-DecaturCounty-2026-market-event": {
+        "record_id": "IN-DecaturCounty-2026-market-event",
+        "record_type": "market_event",
+        "state": "IN",
+        "state_name": "Indiana",
+        "county": "Decatur County",
+        "sale_type": "tax_lien",
+        "product_type": "Real property tax sale / tax sale certificate",
+        "auction_date": "2026-09-25",
+        "sale_date": "2026-09-25",
+        "auction_time": "10:00 local time",
+        "auction_format": "Public auction at the Decatur County Courthouse meeting room; official notice allows local officials to switch to an electronic ZeusAuction sale on the same date/time with updates posted before the sale",
+        "sale_status": "Scheduled by Decatur County for September 25, 2026 beginning at 10:00 AM local time. Parcels can be paid, withheld, or otherwise become ineligible before or during the sale; verify current status with the County before relying on this event.",
+        "official_source_url": "https://decaturcounty.in.gov/wp-content/uploads/2026/08/2nd-Advertisement-08-18-26.pdf",
+        "secondary_official_source_url": "https://decaturcounty.in.gov/auditor/",
+        "important_rules": "Market-level calendar event only. The official notice says the delinquent-tax auction is subject to the right of redemption and minimum bids are prescribed by law but can change before the auction. This is not a parcel listing, not a Sheriff mortgage/judicial foreclosure sale, and not a representation of immediate deed ownership. No owner names or parcel inventory are republished here; no parcel-level minimum bid is inferred or frozen from the changing official list.",
+        "data_source": "Decatur County Auditor 2026 Notice of Real Property Tax Sale (second advertisement) and Auditor page",
+        "last_verified": "2026-08-26",
+        "market_level_only": True,
+    },
     "IN-HancockCounty-2026-market-event": {
         "record_id": "IN-HancockCounty-2026-market-event",
         "record_type": "market_event",
