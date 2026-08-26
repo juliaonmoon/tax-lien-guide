@@ -1,0 +1,96 @@
+name: Ensure consolidated Indiana and Maryland tax lien markets
+
+on:
+  workflow_run:
+    workflows: ["Ensure post-refresh tax lien markets"]
+    types: [completed]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ensure-consolidated-indiana-maryland-tax-liens.yml"
+      - "scripts/add_indiana_*"
+      - "scripts/add_maryland_*"
+      - "scripts/validate_indiana_*"
+      - "scripts/validate_maryland_*"
+
+permissions:
+  contents: write
+
+# One workflow serializes these publishers internally.  Do not reuse the
+# per-county shared concurrency group: GitHub retains only one running and one
+# pending run per group, which caused most county ensure jobs to be cancelled.
+concurrency:
+  group: tax-lien-guide-consolidated-indiana-maryland
+  cancel-in-progress: false
+
+jobs:
+  ensure-markets:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publish all existing Indiana and Maryland market publishers from latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+
+          git config user.name "tax-lien-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          for attempt in 1 2 3 4 5 6; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            publishers=(
+              scripts/add_indiana_*_tax_lien_market.py
+              scripts/add_indiana_*certificate*sale*.py
+              scripts/add_maryland_*_tax_lien_market.py
+            )
+
+            if [ ${#publishers[@]} -eq 0 ]; then
+              echo "No Indiana/Maryland market publishers found; refusing to fabricate output."
+              exit 1
+            fi
+
+            for script in "${publishers[@]}"; do
+              echo "Running publisher: $script"
+              python "$script"
+            done
+
+            python scripts/add_max_return_rates.py
+            python scripts/add_tax_lien_county_filter.py
+            python scripts/recount_tax_lien_properties.py
+
+            validators=(
+              scripts/validate_indiana_*_market.py
+              scripts/validate_maryland_*_market.py
+            )
+            for validator in "${validators[@]}"; do
+              echo "Running validator: $validator"
+              python "$validator"
+            done
+
+            if git diff --quiet -- data/ index.html; then
+              echo "Latest main already contains all consolidated Indiana/Maryland market output."
+              exit 0
+            fi
+
+            git add data/ index.html
+            git commit -m "chore: ensure consolidated Indiana and Maryland tax lien markets"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Publish raced with a newer main commit; regenerating from latest main (${attempt}/6)."
+          done
+
+          echo "Unable to publish consolidated Indiana/Maryland market output after 6 fresh-generation retries."
+          exit 1
