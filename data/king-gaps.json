@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-26T16:45:17.351846+00:00",
+  "source_updated_at": "2026-08-26T16:51:11.305552+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1162,7 +1162,7 @@
       "legal_description": "FOREST LANE CONDOMINIUM PCT UND INT  1.08",
       "tax_status": "T",
       "tax_due_estimate": 17081.01,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup HTTPError"
     },
     {
       "parcel_id": "2646400160",
@@ -1413,7 +1413,7 @@
       "legal_description": "POR OF GL 1 LY WLY OF LANDSBERG RD LESS N 1060 FT",
       "tax_status": "T",
       "tax_due_estimate": 5489.13,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3023000490",
@@ -2191,7 +2191,7 @@
       "legal_description": "MAY VALLEY DIV # 1 E 35 FT OF 40 ALL 39 LESS C & M RGTS",
       "tax_status": "T",
       "tax_due_estimate": 21579.57,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "5357200012",
@@ -2304,9 +2304,9 @@
       "improvement_value": 508600.0,
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
-      "tax_status": "In tax foreclosure",
-      "tax_due_estimate": null,
-      "enrichment_note": "legal lookup ReadTimeout"
+      "tax_status": "T",
+      "tax_due_estimate": 27278.22,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "6108450110",
@@ -2902,7 +2902,7 @@
       "legal_description": "SUNNYSIDE 5-ACRE TRS PARCEL \"C\" SEATTLE SHORT SUBDIVISION NO. 9801327 REC NO. 9807089010 SD SHORT SUBDIVISION DAF- THAT POR OF THE NORTH 1/2 OF TRACT 27 IN SUNNYSIDE FIVE ACRE TRACTS LY WEST OF 47TH AVE S - LESS THE WEST 119.58 FT THOF",
       "tax_status": "T",
       "tax_due_estimate": 4926.91,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "8155900520",
