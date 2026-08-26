@@ -11,6 +11,8 @@ EVENTS = ROOT / "data" / "tax-sale-market-events.json"
 ALLOWED_HOSTS = {
     "taxsale.baltimorecountymd.gov",
     "dat.maryland.gov",
+    "hamiltoncounty.in.gov",
+    "www.hamiltoncounty.in.gov",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
 
