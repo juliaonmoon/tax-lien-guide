@@ -1,6 +1,21 @@
 {
-  "source_updated_at": "2026-08-26T03:32:52.863645+00:00",
+  "source_updated_at": "2026-08-26T03:37:21.612312+00:00",
   "king_count": 145,
+  "completion": {
+    "status": "bounded_complete",
+    "no_fixable_gaps_remain": true,
+    "fixable_missing_counts": {},
+    "bounded_missing_counts": {
+      "address": 54,
+      "legal_description": 2,
+      "opening_bid": 145
+    },
+    "optional_fixable_missing_counts": {},
+    "optional_bounded_missing_counts": {
+      "rental_days_on_market": 145
+    },
+    "note": "All remaining blanks are documented source limitations; future runs should only reopen WA enrichment when an official source changes or a new legitimate public source is added."
+  },
   "missing_counts": {
     "address": 54,
     "legal_description": 2,
