@@ -14,6 +14,27 @@ ROOT = Path(__file__).resolve().parents[1]
 EVENTS_PATH = ROOT / "data" / "tax-sale-market-events.json"
 
 VERIFIED_EVENTS = {
+    "IN-LakeCounty-2026-market-event": {
+        "record_id": "IN-LakeCounty-2026-market-event",
+        "record_type": "market_event",
+        "state": "IN",
+        "state_name": "Indiana",
+        "county": "Lake County",
+        "sale_type": "tax_lien",
+        "product_type": "Treasurer tax sale / tax sale certificate",
+        "auction_date": "2026-09-04",
+        "sale_date": "2026-09-04",
+        "auction_end_date": "2026-09-08",
+        "auction_time": "Online sale window",
+        "auction_format": "Online-only Treasurer Tax Sale through ZeusAuction; official county notice states the sale runs September 4 through September 8, 2026",
+        "sale_status": "Scheduled by Lake County for September 4 through September 8, 2026. Verify current eligibility and sale status with Lake County before relying on this event.",
+        "official_source_url": "https://legacy.lakecountyin.org/departments/auditor-taxsales",
+        "secondary_official_source_url": "https://legacy.lakecountyin.org/",
+        "important_rules": "Market-level calendar event only. This is Lake County's Treasurer Tax Sale, not its separate Commissioners Tax Sale and not a Sheriff/judicial foreclosure sale. No owner names or parcel inventory are republished here, and no parcel-level minimum bid is inferred or frozen from a changing sale list.",
+        "data_source": "Lake County Indiana Auditor Tax Sales page and official July 14, 2026 Treasurer Tax Sale notice",
+        "last_verified": "2026-08-26",
+        "market_level_only": True,
+    },
     "IN-AllenCounty-2026-market-event": {
         "record_id": "IN-AllenCounty-2026-market-event",
         "record_type": "market_event",
