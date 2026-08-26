@@ -16,10 +16,15 @@ def main():
         end = text.find("},", start)
     row = text[start:end if end > start else start + 5000]
 
+    # This validator runs after add_max_return_rates.py. That shared generator
+    # intentionally normalizes Iowa's comparison-column display to the
+    # canonical state rule below, while the county publisher's interest text
+    # still documents that the return is certificate/redemption interest.
     required = [
         "MARKET-LEVEL ONLY",
         "June 15, 2026",
-        "2%/month redemption interest",
+        "2%/month (24% nominal/yr)",
+        "2% interest per month",
         "does not itself convey title",
         "Sheriff mortgage-foreclosure sales",
         "Audubon County Courthouse",
