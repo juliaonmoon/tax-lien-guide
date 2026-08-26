@@ -177,11 +177,9 @@ jobs:
             python scripts/add_maryland_somerset_county_tax_lien_market.py
             python scripts/add_maryland_dorchester_county_tax_lien_market.py
 
-            python scripts/add_max_return_rates.py
-            python scripts/add_tax_lien_county_filter.py
-            python scripts/recount_tax_lien_properties.py
-
-            python scripts/validate_post_refresh_market_durability.py
+            # County validators validate each publisher's source/legal/safety row
+            # before the shared comparison-column generator normalizes maxReturn.
+            # This keeps source validation independent from presentation wording.
             for validator in scripts/validate_iowa_*_market.py; do
               python "$validator"
             done
@@ -199,6 +197,13 @@ jobs:
             python scripts/validate_maryland_caroline_county_market.py
             python scripts/validate_maryland_somerset_county_market.py
             python scripts/validate_maryland_dorchester_county_market.py
+
+            # Normalize display/comparison fields only after county source/safety
+            # validation, then verify the final generated site contract.
+            python scripts/add_max_return_rates.py
+            python scripts/add_tax_lien_county_filter.py
+            python scripts/recount_tax_lien_properties.py
+            python scripts/validate_post_refresh_market_durability.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated market output."
