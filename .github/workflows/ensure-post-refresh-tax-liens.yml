@@ -26,6 +26,7 @@ on:
       - "scripts/validate_iowa_jasper_market.py"
       - "scripts/validate_maryland_caroline_county_market.py"
       - "scripts/validate_maryland_somerset_county_market.py"
+      - "scripts/validate_maryland_dorchester_county_market.py"
       - "scripts/add_montana_gallatin_tax_lien_market.py"
       - "scripts/add_montana_missoula_tax_lien_market.py"
       - "scripts/add_montana_cascade_tax_lien_market.py"
@@ -81,6 +82,7 @@ on:
       - "scripts/add_iowa_jasper_tax_lien_market.py"
       - "scripts/add_maryland_caroline_county_tax_lien_market.py"
       - "scripts/add_maryland_somerset_county_tax_lien_market.py"
+      - "scripts/add_maryland_dorchester_county_tax_lien_market.py"
 
 permissions:
   contents: write
@@ -180,6 +182,7 @@ jobs:
             python scripts/add_montana_broadwater_tax_lien_market.py
             python scripts/add_maryland_caroline_county_tax_lien_market.py
             python scripts/add_maryland_somerset_county_tax_lien_market.py
+            python scripts/add_maryland_dorchester_county_tax_lien_market.py
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
@@ -200,6 +203,7 @@ jobs:
             python scripts/validate_iowa_jasper_market.py
             python scripts/validate_maryland_caroline_county_market.py
             python scripts/validate_maryland_somerset_county_market.py
+            python scripts/validate_maryland_dorchester_county_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated market output."
