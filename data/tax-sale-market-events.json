@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-26T07:17:00Z",
+  "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
+  "properties": [
+    {
+      "record_id": "MD-BaltimoreCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "MD",
+      "state_name": "Maryland",
+      "county": "Baltimore County",
+      "sale_type": "tax_lien",
+      "product_type": "Tax sale certificate / property-tax lien",
+      "auction_date": "2026-08-27",
+      "sale_date": "2026-08-27",
+      "auction_time": "09:00-12:00 ET",
+      "auction_format": "County online tax sale",
+      "sale_status": "Scheduled by Baltimore County for August 27, 2026; bidder registration is closed. Verify status with the County before relying on this event.",
+      "official_source_url": "https://taxsale.baltimorecountymd.gov/ords/r/obf/tax_sale_ext/tax-sale-closure-public",
+      "secondary_official_source_url": "https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx",
+      "important_rules": "Market-level calendar event only. It represents Baltimore County's annual tax-lien certificate sale, not a deed/foreclosure sale and not a parcel listing. No owner names or parcel inventory are republished here.",
+      "data_source": "Baltimore County Office of Budget and Finance Tax Sale 2026; Maryland SDAT 2026 Tax Sale Schedule",
+      "last_verified": "2026-08-26",
+      "market_level_only": true
+    }
+  ]
+}
