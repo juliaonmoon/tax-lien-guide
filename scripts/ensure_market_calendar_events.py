@@ -14,6 +14,26 @@ ROOT = Path(__file__).resolve().parents[1]
 EVENTS_PATH = ROOT / "data" / "tax-sale-market-events.json"
 
 VERIFIED_EVENTS = {
+    "IN-HancockCounty-2026-market-event": {
+        "record_id": "IN-HancockCounty-2026-market-event",
+        "record_type": "market_event",
+        "state": "IN",
+        "state_name": "Indiana",
+        "county": "Hancock County",
+        "sale_type": "tax_lien",
+        "product_type": "Tax sale / certificate of lien",
+        "auction_date": "2026-09-18",
+        "sale_date": "2026-09-18",
+        "auction_time": "10:00 ET",
+        "auction_format": "Online auction through ZeusAuction conducted by SRI; parcels close in batches and unsold properties may be offered again in a final batch",
+        "sale_status": "Scheduled by Hancock County for September 18, 2026 starting at 10:00 AM Eastern. Eligible parcels can change before the sale; verify current status with the County before relying on this event.",
+        "official_source_url": "https://www.hancockin.gov/606/Tax-Sale",
+        "secondary_official_source_url": "https://www.hancockin.gov/421/Sheriffs-Sale",
+        "important_rules": "Market-level calendar event only. Hancock County states the winning bidder buys a certificate of lien, not immediate ownership, and the purchaser has no right to enter or alter the property during the redemption period. This is not a parcel listing and is separate from Sheriff/foreclosure sales. No owner names or parcel inventory are republished here; no parcel-level minimum bid is inferred or frozen from a changing list.",
+        "data_source": "Hancock County Treasurer/Auditor Tax Sale page and Hancock County Sheriff sale distinction page",
+        "last_verified": "2026-08-26",
+        "market_level_only": True,
+    },
     "IN-HamiltonCounty-2026-market-event": {
         "record_id": "IN-HamiltonCounty-2026-market-event",
         "record_type": "market_event",
