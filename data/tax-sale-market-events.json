@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-26T09:24:00Z",
+  "updated_at": "2026-08-26T07:17:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -20,26 +20,6 @@
       "secondary_official_source_url": "https://dat.maryland.gov/Pages/Tax-Sale-Schedule.aspx",
       "important_rules": "Market-level calendar event only. It represents Baltimore County's annual tax-lien certificate sale, not a deed/foreclosure sale and not a parcel listing. No owner names or parcel inventory are republished here.",
       "data_source": "Baltimore County Office of Budget and Finance Tax Sale 2026; Maryland SDAT 2026 Tax Sale Schedule",
-      "last_verified": "2026-08-26",
-      "market_level_only": true
-    },
-    {
-      "record_id": "IN-HamiltonCounty-2026-market-event",
-      "record_type": "market_event",
-      "state": "IN",
-      "state_name": "Indiana",
-      "county": "Hamilton County",
-      "sale_type": "tax_lien",
-      "product_type": "Real property tax sale / tax sale certificate",
-      "auction_date": "2026-10-08",
-      "sale_date": "2026-10-08",
-      "auction_time": "10:00 ET",
-      "auction_format": "Public auction at the Hamilton County Historic Courthouse; official notice allows local officials to switch to an electronic sale with location updates published before the sale",
-      "sale_status": "Scheduled by Hamilton County for October 8, 2026 at 10:00 AM. The official property listing is updated periodically and parcels may be withdrawn; verify current status with the County before relying on this event.",
-      "official_source_url": "https://hamiltoncounty.in.gov/452/Real-Property-Tax-Sale",
-      "secondary_official_source_url": "https://www.hamiltoncounty.in.gov/1380/Tax-Sale-Notice-2026",
-      "important_rules": "Market-level calendar event only. Hamilton County's delinquent real-property tax sale is subject to the right of redemption and is not a parcel listing, Sheriff foreclosure sale, or representation of immediate deed ownership. No owner names or parcel inventory are republished here; minimum bids are not copied because the County states they can change before auction.",
-      "data_source": "Hamilton County Auditor/Treasurer Real Property Tax Sale and 2026 official tax-sale notice",
       "last_verified": "2026-08-26",
       "market_level_only": true
     }
