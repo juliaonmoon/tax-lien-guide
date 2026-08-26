@@ -11,6 +11,8 @@ EVENTS = ROOT / "data" / "tax-sale-market-events.json"
 ALLOWED_HOSTS = {
     "taxsale.baltimorecountymd.gov",
     "dat.maryland.gov",
+    "decaturcounty.in.gov",
+    "www.decaturcounty.in.gov",
     "hancockin.gov",
     "www.hancockin.gov",
     "hamiltoncounty.in.gov",
