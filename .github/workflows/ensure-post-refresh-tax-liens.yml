@@ -10,6 +10,8 @@ on:
     paths:
       - ".github/workflows/ensure-post-refresh-tax-liens.yml"
       - "scripts/validate_post_refresh_market_durability.py"
+      - "scripts/add_iowa_*_tax_lien_market.py"
+      - "scripts/validate_iowa_*_market.py"
       - "scripts/validate_montana_lewis_clark_market.py"
       - "scripts/validate_montana_lake_market.py"
       - "scripts/validate_montana_park_market.py"
@@ -21,12 +23,6 @@ on:
       - "scripts/validate_montana_jefferson_market.py"
       - "scripts/validate_montana_liberty_market.py"
       - "scripts/validate_montana_broadwater_market.py"
-      - "scripts/validate_iowa_cedar_market.py"
-      - "scripts/validate_iowa_delaware_market.py"
-      - "scripts/validate_iowa_jasper_market.py"
-      - "scripts/validate_maryland_caroline_county_market.py"
-      - "scripts/validate_maryland_somerset_county_market.py"
-      - "scripts/validate_maryland_dorchester_county_market.py"
       - "scripts/add_montana_gallatin_tax_lien_market.py"
       - "scripts/add_montana_missoula_tax_lien_market.py"
       - "scripts/add_montana_cascade_tax_lien_market.py"
@@ -71,24 +67,21 @@ on:
       - "scripts/add_colorado_moffat_tax_lien_market.py"
       - "scripts/add_florida_bay_tax_lien_market.py"
       - "scripts/add_florida_broward_tax_lien_market.py"
-      - "scripts/add_iowa_dallas_tax_lien_market.py"
-      - "scripts/add_iowa_pottawattamie_tax_lien_market.py"
-      - "scripts/add_iowa_black_hawk_tax_lien_market.py"
-      - "scripts/add_iowa_story_tax_lien_market.py"
-      - "scripts/add_iowa_warren_tax_lien_market.py"
-      - "scripts/add_iowa_ida_tax_lien_market.py"
-      - "scripts/add_iowa_cedar_tax_lien_market.py"
-      - "scripts/add_iowa_delaware_tax_lien_market.py"
-      - "scripts/add_iowa_jasper_tax_lien_market.py"
       - "scripts/add_maryland_caroline_county_tax_lien_market.py"
       - "scripts/add_maryland_somerset_county_tax_lien_market.py"
       - "scripts/add_maryland_dorchester_county_tax_lien_market.py"
+      - "scripts/validate_maryland_caroline_county_market.py"
+      - "scripts/validate_maryland_somerset_county_market.py"
+      - "scripts/validate_maryland_dorchester_county_market.py"
 
 permissions:
   contents: write
 
+# This consolidated workflow is the authoritative post-refresh repair path.
+# It intentionally has its own concurrency group so a burst of legacy county
+# workflow_run jobs cannot cancel the only complete repair run before it starts.
 concurrency:
-  group: tax-lien-guide-post-refresh-market-writes
+  group: tax-lien-guide-consolidated-post-refresh-market-writes
   cancel-in-progress: false
 
 jobs:
@@ -143,20 +136,19 @@ jobs:
             if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
               python scripts/add_colorado_weld_tax_lien_market.py
             fi
+
             python scripts/add_florida_hernando_tax_lien_market.py
             python scripts/add_florida_putnam_tax_lien_market.py
             python scripts/add_florida_bay_tax_lien_market.py
             python scripts/add_florida_broward_tax_lien_market.py
-            python scripts/add_iowa_polk_tax_lien_market.py
-            python scripts/add_iowa_dallas_tax_lien_market.py
-            python scripts/add_iowa_pottawattamie_tax_lien_market.py
-            python scripts/add_iowa_black_hawk_tax_lien_market.py
-            python scripts/add_iowa_story_tax_lien_market.py
-            python scripts/add_iowa_warren_tax_lien_market.py
-            python scripts/add_iowa_ida_tax_lien_market.py
-            python scripts/add_iowa_cedar_tax_lien_market.py
-            python scripts/add_iowa_delaware_tax_lien_market.py
-            python scripts/add_iowa_jasper_tax_lien_market.py
+
+            # Run every currently committed Iowa market publisher in one fresh-main
+            # transaction. This prevents newly added counties from silently falling
+            # out of the site after the property refresh replaces generated data.
+            for publisher in scripts/add_iowa_*_tax_lien_market.py; do
+              python "$publisher"
+            done
+
             python scripts/add_montana_gallatin_tax_lien_market.py
             python scripts/add_montana_missoula_tax_lien_market.py
             python scripts/add_montana_cascade_tax_lien_market.py
@@ -180,13 +172,19 @@ jobs:
             python scripts/add_montana_jefferson_tax_lien_market.py
             python scripts/add_montana_liberty_tax_lien_market.py
             python scripts/add_montana_broadwater_tax_lien_market.py
+
             python scripts/add_maryland_caroline_county_tax_lien_market.py
             python scripts/add_maryland_somerset_county_tax_lien_market.py
             python scripts/add_maryland_dorchester_county_tax_lien_market.py
+
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
+
             python scripts/validate_post_refresh_market_durability.py
+            for validator in scripts/validate_iowa_*_market.py; do
+              python "$validator"
+            done
             python scripts/validate_montana_lewis_clark_market.py
             python scripts/validate_montana_lake_market.py
             python scripts/validate_montana_park_market.py
@@ -198,9 +196,6 @@ jobs:
             python scripts/validate_montana_jefferson_market.py
             python scripts/validate_montana_liberty_market.py
             python scripts/validate_montana_broadwater_market.py
-            python scripts/validate_iowa_cedar_market.py
-            python scripts/validate_iowa_delaware_market.py
-            python scripts/validate_iowa_jasper_market.py
             python scripts/validate_maryland_caroline_county_market.py
             python scripts/validate_maryland_somerset_county_market.py
             python scripts/validate_maryland_dorchester_county_market.py
