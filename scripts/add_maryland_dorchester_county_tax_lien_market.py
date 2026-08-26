@@ -10,17 +10,35 @@ ROW = r'''{state:'Maryland — Dorchester County',product:'Tax Sale Certificate 
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    if MARKER in text:
-        print("Dorchester County Maryland row already present")
+    count = text.count(MARKER)
+    if count > 1:
+        raise SystemExit(f"Refusing to update duplicate Dorchester rows: {count}")
+
+    if count == 1:
+        start = text.find("{state:'" + MARKER + "'")
+        if start < 0:
+            raise SystemExit("Dorchester marker exists outside expected market row")
+        end = text.find("\n", start)
+        if end < 0:
+            raise SystemExit("Could not find end of Dorchester market row")
+        old = text[start:end]
+        comma = "," if old.rstrip().endswith(",") else ""
+        replacement = ROW + comma
+        if old == replacement:
+            print("Dorchester County Maryland row already current")
+            return
+        INDEX.write_text(text[:start] + replacement + text[end:], encoding="utf-8")
+        print("Updated Dorchester County Maryland tax-lien market")
         return
-    start = text.find("const rows=[")
-    if start < 0:
+
+    rows_start = text.find("const rows=[")
+    if rows_start < 0:
         raise SystemExit("Could not find rows array")
-    end = text.find("\n];", start)
-    if end < 0:
+    rows_end = text.find("\n];", rows_start)
+    if rows_end < 0:
         raise SystemExit("Could not find end of rows array")
-    before = text[:end]
-    after = text[end:]
+    before = text[:rows_end]
+    after = text[rows_end:]
     insertion = "\n" + ROW if before.rstrip().endswith(',') else ",\n" + ROW
     INDEX.write_text(before + insertion + after, encoding="utf-8")
     print("Added Dorchester County Maryland tax-lien market")
