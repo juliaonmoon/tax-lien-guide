@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-26T12:57:28.470504+00:00",
+  "source_updated_at": "2026-08-26T14:10:04.833593+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2076,7 +2076,7 @@
       "legal_description": "LATIMERS N H LAKE WN PLAT LOT 2 OF CITY OF RENTON SHORT PLAT NO LUA 93-64 SHPL RECORDING NO 9406169004 SAID SHORT PLAT DAF - N 45 FT OF TRACT 46 OF N H LATIMERS LAKE WASHINGTON PLAT TGW S 1/2 OF VACATED S 129TH S NW 3RD PLACE ADJ",
       "tax_status": "T",
       "tax_due_estimate": 26609.39,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "4205001560",
