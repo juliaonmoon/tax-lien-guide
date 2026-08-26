@@ -9,6 +9,9 @@ on:
       - 'scripts/add_market_events_to_calendar.py'
       - 'scripts/validate_tax_sale_market_events.py'
       - '.github/workflows/ensure-market-calendar-events.yml'
+  workflow_run:
+    workflows: ['Refresh tax deed property data']
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -20,6 +23,7 @@ concurrency:
 
 jobs:
   validate-and-publish:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
