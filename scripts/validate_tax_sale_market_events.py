@@ -19,6 +19,7 @@ ALLOWED_HOSTS = {
     "www.hamiltoncounty.in.gov",
     "allencounty.in.gov",
     "www.allencounty.in.gov",
+    "legacy.lakecountyin.org",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
 
