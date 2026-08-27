@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-27T11:28:46.190473+00:00",
+  "source_updated_at": "2026-08-27T12:29:14.072571+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -730,7 +730,7 @@
       "legal_description": "CASA HERMOSA CONDOMINIUM PCT OF VALUE 2.2985 & P-38",
       "tax_status": "T",
       "tax_due_estimate": 5521.53,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "1423069142",
