@@ -1,9 +1,6 @@
 name: Ensure Iowa County Iowa tax lien market
 
 on:
-  workflow_run:
-    workflows: ["Refresh tax deed property data", "Ensure post-refresh tax lien markets"]
-    types: [completed]
   workflow_dispatch:
   push:
     branches: [main]
@@ -21,7 +18,6 @@ concurrency:
 
 jobs:
   ensure-iowa-county:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,10 +37,10 @@ jobs:
             git reset --hard origin/main
 
             python scripts/add_iowa_iowa_county_tax_lien_market.py
+            python scripts/validate_iowa_iowa_county_market.py
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
-            python scripts/validate_iowa_iowa_county_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated Iowa County market output."
