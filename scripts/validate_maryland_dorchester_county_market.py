@@ -13,10 +13,12 @@ def main():
     start = text.find("{state:'" + MARKER + "'")
     if start < 0:
         raise SystemExit("Dorchester County market row is missing")
-    end = text.find("}\n", start)
-    if end < 0:
-        end = text.find("},", start)
-    row = text[start:end if end > start else start + 7000]
+
+    # Market rows are serialized one object per line. Bound validation to the
+    # Dorchester line itself so claims from later county rows cannot be
+    # misattributed to Dorchester (for example another county's return rate).
+    line_end = text.find("\n", start)
+    row = text[start:line_end if line_end > start else len(text)]
 
     required = [
         "MARKET-LEVEL ONLY",
