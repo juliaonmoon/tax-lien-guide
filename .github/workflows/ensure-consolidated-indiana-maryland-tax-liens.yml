@@ -17,7 +17,7 @@ on:
 permissions:
   contents: write
 
-# One workflow serializes these publishers internally.  Do not reuse the
+# One workflow serializes these publishers internally. Do not reuse the
 # per-county shared concurrency group: GitHub retains only one running and one
 # pending run per group, which caused most county ensure jobs to be cancelled.
 concurrency:
@@ -65,18 +65,22 @@ jobs:
               python "$script"
             done
 
-            python scripts/add_max_return_rates.py
-            python scripts/add_tax_lien_county_filter.py
-            python scripts/recount_tax_lien_properties.py
-
+            # Validate the county-authored legal/source rows before shared
+            # presentation normalization rewrites display wording. This keeps
+            # strict validators meaningful and prevents normalization-induced
+            # false failures or repeated canonical-row repair loops.
             validators=(
               scripts/validate_indiana_*_market.py
               scripts/validate_maryland_*_market.py
             )
             for validator in "${validators[@]}"; do
-              echo "Running validator: $validator"
+              echo "Running validator before normalization: $validator"
               python "$validator"
             done
+
+            python scripts/add_max_return_rates.py
+            python scripts/add_tax_lien_county_filter.py
+            python scripts/recount_tax_lien_properties.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains all consolidated Indiana/Maryland market output."
