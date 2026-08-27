@@ -37,10 +37,12 @@ jobs:
             git reset --hard origin/main
 
             python scripts/add_iowa_benton_tax_lien_market.py
+            # Validate the county-authored legal/safety wording before shared
+            # presentation normalizers rewrite display fields.
+            python scripts/validate_iowa_benton_market.py
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
-            python scripts/validate_iowa_benton_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated Benton County market output."
