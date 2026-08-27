@@ -30,7 +30,7 @@ VERIFIED_EVENTS = {
         "sale_status": "Scheduled by Lake County for September 4 through September 8, 2026. Verify current eligibility and sale status with Lake County before relying on this event.",
         "official_source_url": "https://legacy.lakecountyin.org/departments/auditor-taxsales",
         "secondary_official_source_url": "https://legacy.lakecountyin.org/",
-        "important_rules": "Market-level calendar event only. This is Lake County's Treasurer Tax Sale, not its separate Commissioners Tax Sale and not a Sheriff/judicial foreclosure sale. No owner names or parcel inventory are republished here, and no parcel-level minimum bid is inferred or frozen from a changing sale list.",
+        "important_rules": "Market-level calendar event only. This is Lake County's Treasurer Tax Sale, not its separate Commissioners Tax Sale and not a Sheriff/judicial foreclosure sale. This is not a parcel listing. No owner names or parcel inventory are republished here, and no parcel-level minimum bid is inferred or frozen from a changing sale list.",
         "data_source": "Lake County Indiana Auditor Tax Sales page and official July 14, 2026 Treasurer Tax Sale notice",
         "last_verified": "2026-08-26",
         "market_level_only": True,
