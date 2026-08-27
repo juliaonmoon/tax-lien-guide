@@ -2,7 +2,9 @@ name: Ensure post-refresh tax lien markets
 
 on:
   workflow_run:
-    workflows: ["Refresh tax deed property data"]
+    workflows:
+      - "Refresh tax deed property data"
+      - "Refresh property-level tax liens"
     types: [completed]
   workflow_dispatch:
   push:
