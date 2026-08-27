@@ -36,11 +36,13 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
 
+            # Restore and validate county-authoritative legal/source wording
+            # before shared presentation normalization rewrites comparison text.
             python scripts/add_iowa_muscatine_tax_lien_market.py
+            python scripts/validate_iowa_muscatine_market.py
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
-            python scripts/validate_iowa_muscatine_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated Muscatine County market output."
