@@ -10,8 +10,25 @@ ROW = r'''{state:'Montana — Teton County',product:'Tax lien assignment / certi
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    if MARKER in text:
-        print("Montana Teton County row already present")
+    start = text.find("{state:'" + MARKER + "'")
+    if start >= 0:
+        # Restore the canonical county-authored row before strict validation.
+        # Shared presentation normalization may rewrite comparison fields later,
+        # so marker presence alone is not a sufficient idempotency check.
+        end = text.find("}\n", start)
+        comma = text.find("},", start)
+        if comma >= 0 and (end < 0 or comma < end):
+            end = comma + 1
+        elif end >= 0:
+            end += 1
+        else:
+            raise SystemExit("Could not find end of existing Teton County row")
+        existing = text[start:end]
+        if existing == ROW:
+            print("Montana Teton County canonical row already present")
+            return
+        INDEX.write_text(text[:start] + ROW + text[end:], encoding="utf-8")
+        print("Restored canonical Montana Teton County tax-lien market row")
         return
 
     start = text.find("const rows=[")
