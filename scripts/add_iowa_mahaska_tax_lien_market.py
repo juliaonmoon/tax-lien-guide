@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -10,8 +11,17 @@ ROW = r'''{state:'Iowa — Mahaska County',product:'Tax Sale Certificate of Purc
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
+
     if MARKER in text:
-        print("Iowa Mahaska County row already present")
+        pattern = re.compile(r"\{state:'Iowa — Mahaska County'.*?\}", re.DOTALL)
+        repaired, count = pattern.subn(ROW, text, count=1)
+        if count != 1:
+            raise SystemExit("Mahaska marker exists but canonical market row could not be located safely")
+        if repaired == text:
+            print("Iowa Mahaska County canonical row already present")
+            return
+        INDEX.write_text(repaired, encoding="utf-8")
+        print("Repaired Iowa Mahaska County canonical tax-lien market row")
         return
 
     start = text.find("const rows=[")
