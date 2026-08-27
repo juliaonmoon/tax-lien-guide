@@ -37,10 +37,12 @@ jobs:
             git reset --hard origin/main
 
             python scripts/add_iowa_boone_tax_lien_market.py
+            # Validate Boone's authoritative county-specific rule text before
+            # shared presentation normalizers rewrite display wording.
+            python scripts/validate_iowa_boone_market.py
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
-            python scripts/validate_iowa_boone_market.py
 
             if git diff --quiet -- data/ index.html; then
               echo "Latest main already contains the generated Boone County market output."
