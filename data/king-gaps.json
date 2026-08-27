@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-27T03:29:39.914221+00:00",
+  "source_updated_at": "2026-08-27T04:21:40.431178+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -925,7 +925,7 @@
       "legal_description": "DAVIS ADD UNIT LOT \"Z\" OF SEATTLE SP #3032908-LU REC #20221018900002 & AMD BY REC #20230302900004 SD SP LOC IN LOTS 24-25 BLK 3 OF SD ADD",
       "tax_status": "T",
       "tax_due_estimate": 6939.01,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "2023049242",
@@ -1084,7 +1084,7 @@
       "legal_description": "FAEGRES 1ST ADD TO W S",
       "tax_status": "T",
       "tax_due_estimate": 422.35,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "2444600450",
