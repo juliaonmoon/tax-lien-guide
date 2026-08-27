@@ -9,77 +9,24 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/ensure-post-refresh-tax-liens.yml"
-      - "scripts/validate_post_refresh_market_durability.py"
+      - "scripts/add_colorado_*_tax_lien_market.py"
+      - "scripts/add_florida_*_tax_lien_market.py"
       - "scripts/add_iowa_*_tax_lien_market.py"
+      - "scripts/add_montana_*_tax_lien_market.py"
+      - "scripts/add_maryland_*_tax_lien_market.py"
+      - "scripts/validate_colorado_*_market.py"
+      - "scripts/validate_florida_*_market.py"
       - "scripts/validate_iowa_*_market.py"
-      - "scripts/validate_montana_lewis_clark_market.py"
-      - "scripts/validate_montana_lake_market.py"
-      - "scripts/validate_montana_park_market.py"
-      - "scripts/validate_montana_carter_market.py"
-      - "scripts/validate_montana_sanders_market.py"
-      - "scripts/validate_montana_beaverhead_market.py"
-      - "scripts/validate_montana_powell_market.py"
-      - "scripts/validate_montana_madison_market.py"
-      - "scripts/validate_montana_jefferson_market.py"
-      - "scripts/validate_montana_liberty_market.py"
-      - "scripts/validate_montana_broadwater_market.py"
-      - "scripts/add_montana_gallatin_tax_lien_market.py"
-      - "scripts/add_montana_missoula_tax_lien_market.py"
-      - "scripts/add_montana_cascade_tax_lien_market.py"
-      - "scripts/add_montana_yellowstone_tax_lien_market.py"
-      - "scripts/add_montana_lewis_clark_tax_lien_market.py"
-      - "scripts/add_montana_lake_tax_lien_market.py"
-      - "scripts/add_montana_flathead_tax_lien_market.py"
-      - "scripts/add_montana_ravalli_tax_lien_market.py"
-      - "scripts/add_montana_glacier_tax_lien_market.py"
-      - "scripts/add_montana_beaverhead_tax_lien_market.py"
-      - "scripts/add_montana_rosebud_tax_lien_market.py"
-      - "scripts/add_montana_carbon_tax_lien_market.py"
-      - "scripts/add_montana_carter_tax_lien_market.py"
-      - "scripts/add_montana_sanders_tax_lien_market.py"
-      - "scripts/add_montana_butte_silver_bow_tax_lien_market.py"
-      - "scripts/add_montana_park_tax_lien_market.py"
-      - "scripts/add_montana_richland_tax_lien_market.py"
-      - "scripts/add_montana_stillwater_tax_lien_market.py"
-      - "scripts/add_montana_powell_tax_lien_market.py"
-      - "scripts/add_montana_madison_tax_lien_market.py"
-      - "scripts/add_montana_jefferson_tax_lien_market.py"
-      - "scripts/add_montana_liberty_tax_lien_market.py"
-      - "scripts/add_montana_broadwater_tax_lien_market.py"
-      - "scripts/add_colorado_alamosa_tax_lien_market.py"
-      - "scripts/add_colorado_morgan_tax_lien_market.py"
-      - "scripts/add_colorado_fremont_tax_lien_market.py"
-      - "scripts/add_colorado_delta_tax_lien_market.py"
-      - "scripts/add_colorado_garfield_tax_lien_market.py"
-      - "scripts/add_colorado_routt_tax_lien_market.py"
-      - "scripts/add_colorado_chaffee_tax_lien_market.py"
-      - "scripts/add_colorado_pitkin_tax_lien_market.py"
-      - "scripts/add_colorado_san_miguel_tax_lien_market.py"
-      - "scripts/add_colorado_clear_creek_tax_lien_market.py"
-      - "scripts/add_colorado_broomfield_tax_lien_market.py"
-      - "scripts/add_colorado_teller_tax_lien_market.py"
-      - "scripts/add_colorado_montrose_tax_lien_market.py"
-      - "scripts/add_colorado_elbert_tax_lien_market.py"
-      - "scripts/add_colorado_grand_tax_lien_market.py"
-      - "scripts/add_colorado_archuleta_tax_lien_market.py"
-      - "scripts/add_colorado_eagle_tax_lien_market.py"
-      - "scripts/add_colorado_rio_blanco_tax_lien_market.py"
-      - "scripts/add_colorado_moffat_tax_lien_market.py"
-      - "scripts/add_florida_bay_tax_lien_market.py"
-      - "scripts/add_florida_broward_tax_lien_market.py"
-      - "scripts/add_maryland_caroline_county_tax_lien_market.py"
-      - "scripts/add_maryland_somerset_county_tax_lien_market.py"
-      - "scripts/add_maryland_dorchester_county_tax_lien_market.py"
-      - "scripts/validate_maryland_caroline_county_market.py"
-      - "scripts/validate_maryland_somerset_county_market.py"
-      - "scripts/validate_maryland_dorchester_county_market.py"
+      - "scripts/validate_montana_*_market.py"
+      - "scripts/validate_maryland_*_market.py"
+      - "scripts/validate_post_refresh_market_durability.py"
+      - "scripts/add_max_return_rates.py"
+      - "scripts/add_tax_lien_county_filter.py"
+      - "scripts/recount_tax_lien_properties.py"
 
 permissions:
   contents: write
 
-# This consolidated workflow is the authoritative post-refresh repair path.
-# It intentionally has its own concurrency group so a burst of legacy county
-# workflow_run jobs cannot cancel the only complete repair run before it starts.
 concurrency:
   group: tax-lien-guide-consolidated-post-refresh-market-writes
   cancel-in-progress: false
@@ -97,109 +44,38 @@ jobs:
         with:
           python-version: "3.12"
       - name: Publish consolidated market updates from latest main
+        shell: bash
         run: |
+          set -euo pipefail
+          shopt -s nullglob
           git config user.name "tax-lien-data-bot"
           git config user.email "actions@users.noreply.github.com"
+
+          states=(colorado florida iowa montana maryland)
 
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
 
-            python scripts/add_colorado_arapahoe_tax_lien_market.py
-            python scripts/add_colorado_el_paso_tax_lien_market.py
-            python scripts/add_colorado_larimer_tax_lien_market.py
-            python scripts/add_colorado_adams_tax_lien_market.py
-            python scripts/add_colorado_boulder_tax_lien_market.py
-            python scripts/add_colorado_mesa_tax_lien_market.py
-            python scripts/add_colorado_pueblo_tax_lien_market.py
-            python scripts/add_colorado_douglas_tax_lien_market.py
-            python scripts/add_colorado_logan_tax_lien_market.py
-            python scripts/add_colorado_alamosa_tax_lien_market.py
-            python scripts/add_colorado_morgan_tax_lien_market.py
-            python scripts/add_colorado_fremont_tax_lien_market.py
-            python scripts/add_colorado_delta_tax_lien_market.py
-            python scripts/add_colorado_garfield_tax_lien_market.py
-            python scripts/add_colorado_routt_tax_lien_market.py
-            python scripts/add_colorado_chaffee_tax_lien_market.py
-            python scripts/add_colorado_pitkin_tax_lien_market.py
-            python scripts/add_colorado_san_miguel_tax_lien_market.py
-            python scripts/add_colorado_clear_creek_tax_lien_market.py
-            python scripts/add_colorado_broomfield_tax_lien_market.py
-            python scripts/add_colorado_teller_tax_lien_market.py
-            python scripts/add_colorado_montrose_tax_lien_market.py
-            python scripts/add_colorado_elbert_tax_lien_market.py
-            python scripts/add_colorado_grand_tax_lien_market.py
-            python scripts/add_colorado_archuleta_tax_lien_market.py
-            python scripts/add_colorado_eagle_tax_lien_market.py
-            python scripts/add_colorado_rio_blanco_tax_lien_market.py
-            python scripts/add_colorado_moffat_tax_lien_market.py
-            if [ -f scripts/add_colorado_weld_tax_lien_market.py ]; then
-              python scripts/add_colorado_weld_tax_lien_market.py
-            fi
-
-            python scripts/add_florida_hernando_tax_lien_market.py
-            python scripts/add_florida_putnam_tax_lien_market.py
-            python scripts/add_florida_bay_tax_lien_market.py
-            python scripts/add_florida_broward_tax_lien_market.py
-
-            # Run every currently committed Iowa market publisher in one fresh-main
-            # transaction. This prevents newly added counties from silently falling
-            # out of the site after the property refresh replaces generated data.
-            for publisher in scripts/add_iowa_*_tax_lien_market.py; do
-              python "$publisher"
+            echo "Discovering all committed market publishers from fresh main"
+            for state in "${states[@]}"; do
+              publishers=(scripts/add_${state}_*_tax_lien_market.py)
+              for publisher in "${publishers[@]}"; do
+                echo "PUBLISH $publisher"
+                python "$publisher"
+              done
             done
 
-            python scripts/add_montana_gallatin_tax_lien_market.py
-            python scripts/add_montana_missoula_tax_lien_market.py
-            python scripts/add_montana_cascade_tax_lien_market.py
-            python scripts/add_montana_yellowstone_tax_lien_market.py
-            python scripts/add_montana_lewis_clark_tax_lien_market.py
-            python scripts/add_montana_lake_tax_lien_market.py
-            python scripts/add_montana_flathead_tax_lien_market.py
-            python scripts/add_montana_ravalli_tax_lien_market.py
-            python scripts/add_montana_glacier_tax_lien_market.py
-            python scripts/add_montana_beaverhead_tax_lien_market.py
-            python scripts/add_montana_rosebud_tax_lien_market.py
-            python scripts/add_montana_carbon_tax_lien_market.py
-            python scripts/add_montana_carter_tax_lien_market.py
-            python scripts/add_montana_sanders_tax_lien_market.py
-            python scripts/add_montana_butte_silver_bow_tax_lien_market.py
-            python scripts/add_montana_park_tax_lien_market.py
-            python scripts/add_montana_richland_tax_lien_market.py
-            python scripts/add_montana_stillwater_tax_lien_market.py
-            python scripts/add_montana_powell_tax_lien_market.py
-            python scripts/add_montana_madison_tax_lien_market.py
-            python scripts/add_montana_jefferson_tax_lien_market.py
-            python scripts/add_montana_liberty_tax_lien_market.py
-            python scripts/add_montana_broadwater_tax_lien_market.py
-
-            python scripts/add_maryland_caroline_county_tax_lien_market.py
-            python scripts/add_maryland_somerset_county_tax_lien_market.py
-            python scripts/add_maryland_dorchester_county_tax_lien_market.py
-
-            # County validators validate each publisher's source/legal/safety row
-            # before the shared comparison-column generator normalizes maxReturn.
-            # This keeps source validation independent from presentation wording.
-            for validator in scripts/validate_iowa_*_market.py; do
-              python "$validator"
+            # Validate county/source/legal safety before shared presentation
+            # normalization can rewrite comparison fields such as maxReturn.
+            for state in "${states[@]}"; do
+              validators=(scripts/validate_${state}_*_market.py)
+              for validator in "${validators[@]}"; do
+                echo "VALIDATE $validator"
+                python "$validator"
+              done
             done
-            python scripts/validate_montana_lewis_clark_market.py
-            python scripts/validate_montana_lake_market.py
-            python scripts/validate_montana_park_market.py
-            python scripts/validate_montana_carter_market.py
-            python scripts/validate_montana_sanders_market.py
-            python scripts/validate_montana_beaverhead_market.py
-            python scripts/validate_montana_powell_market.py
-            python scripts/validate_montana_madison_market.py
-            python scripts/validate_montana_jefferson_market.py
-            python scripts/validate_montana_liberty_market.py
-            python scripts/validate_montana_broadwater_market.py
-            python scripts/validate_maryland_caroline_county_market.py
-            python scripts/validate_maryland_somerset_county_market.py
-            python scripts/validate_maryland_dorchester_county_market.py
 
-            # Normalize display/comparison fields only after county source/safety
-            # validation, then verify the final generated site contract.
             python scripts/add_max_return_rates.py
             python scripts/add_tax_lien_county_filter.py
             python scripts/recount_tax_lien_properties.py
