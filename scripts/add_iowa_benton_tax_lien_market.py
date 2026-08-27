@@ -10,8 +10,25 @@ ROW = r'''{state:'Iowa — Benton County',product:'Tax sale certificate / proper
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    if MARKER in text:
-        print("Iowa Benton County row already present")
+    start = text.find("{state:'" + MARKER + "'")
+    if start >= 0:
+        # Restore the canonical county-authored row before strict validation.
+        # Shared presentation normalizers may rewrite display wording later,
+        # so marker presence alone is not an idempotent repair guarantee.
+        end = text.find("}\n", start)
+        comma = text.find("},", start)
+        if comma >= 0 and (end < 0 or comma < end):
+            end = comma + 1
+        elif end >= 0:
+            end += 1
+        else:
+            raise SystemExit("Could not find end of existing Benton County row")
+        existing = text[start:end]
+        if existing == ROW:
+            print("Iowa Benton County canonical row already present")
+            return
+        INDEX.write_text(text[:start] + ROW + text[end:], encoding="utf-8")
+        print("Restored canonical Iowa Benton County tax-lien market row")
         return
 
     start = text.find("const rows=[")
