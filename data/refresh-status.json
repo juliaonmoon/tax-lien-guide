@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T22:32:46.425174+00:00",
+  "updated_at": "2026-08-27T23:03:16.407122+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
   "states_tracked": 9,
@@ -12,7 +12,7 @@
       "county": "Brevard",
       "source_url": "https://www.brevardclerk.us/tax-deed-sales",
       "auction_url": "https://www.brevard.realforeclose.com/",
-      "checked_at": "2026-08-27T22:29:33.422331+00:00",
+      "checked_at": "2026-08-27T22:59:06.586881+00:00",
       "ok": true,
       "note": "Parsed 0 properties from Brevard official sale list for 2026-09-17"
     },
@@ -21,7 +21,7 @@
       "county": "Tarrant",
       "source_url": "https://www.tarrantcountytx.gov/en/constables/constable-3/delinquent-tax-sales/monthly-tax-sales-listings.html",
       "auction_url": null,
-      "checked_at": "2026-08-27T22:29:33.422331+00:00",
+      "checked_at": "2026-08-27T22:59:06.586881+00:00",
       "ok": true,
       "note": "Parsed 8 for-sale accounts; TAD enrichment matched 1/8"
     },
@@ -30,7 +30,7 @@
       "county": "King",
       "source_url": "https://data.kingcounty.gov/Property-Assessments/Foreclosure-parcels/nx4x-daw6",
       "auction_url": "https://king.wa.realforeclose.com/",
-      "checked_at": "2026-08-27T22:29:33.422331+00:00",
+      "checked_at": "2026-08-27T22:59:06.586881+00:00",
       "ok": true,
       "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145. King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145. King County assessed-value fallback: attempted 0 missing-value parcels; recovered 0 (0 from official tax receivables, 0 from eReal); eReal reachable for 0; failures none. King County official foreclosure-status fallback filled tax status for 2/145 rows; documented individual-Recorder requirement for 2 missing legal descriptions."
     },
@@ -38,7 +38,7 @@
       "state": "FL",
       "county": "Putnam",
       "source_url": "https://apps.putnam-fl.com/coc/taxdeeds/public/public_LAFT.php",
-      "checked_at": "2026-08-27T22:30:47.519121+00:00",
+      "checked_at": "2026-08-27T23:00:43.256198+00:00",
       "ok": true,
       "note": "Live official list parsed: 38 lands-available parcels; FDOR cadastral matched 39/39 Florida parcels"
     },
@@ -46,7 +46,7 @@
       "state": "FL",
       "county": "Escambia",
       "source_url": "https://public.escambiaclerk.com/taxsale/landsavailable.asp",
-      "checked_at": "2026-08-27T22:30:47.519121+00:00",
+      "checked_at": "2026-08-27T23:00:43.256198+00:00",
       "ok": false,
       "note": "Official host blocked automation (HTTPError); preserved 1 parcel from verified 2026-08-15 official-page snapshot; FDOR cadastral matched 39/39 Florida parcels"
     },
@@ -55,7 +55,7 @@
       "county": "Coconino",
       "source_url": "https://www.coconino.az.gov/376/Tax-Liens",
       "auction_url": "https://coconino.arizonataxsale.com/",
-      "checked_at": "2026-08-27T22:32:46.425174+00:00",
+      "checked_at": "2026-08-27T23:03:16.407122+00:00",
       "ok": true,
       "note": "Loaded 33 Coconino OTC tax-lien certificates from the official county list. County document host blocks GitHub automation (HTTP 403); using the verified 2026-08-14 official snapshot without bypassing that restriction."
     }
