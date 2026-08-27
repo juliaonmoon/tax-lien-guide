@@ -10,8 +10,24 @@ ROW = r'''{state:'Iowa — Fayette County',product:'Tax Sale Certificate of Purc
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
+
     if MARKER in text:
-        print("Iowa Fayette County row already present")
+        start = text.index("{state:'Iowa — Fayette County'")
+        end = text.find("},\n", start)
+        suffix_len = 1
+        if end < 0:
+            end = text.find("}\n", start)
+        if end < 0:
+            end = text.find("}\r\n", start)
+        if end < 0:
+            raise SystemExit("Could not locate end of existing Fayette County row")
+        end += suffix_len
+        current = text[start:end]
+        if current == ROW:
+            print("Iowa Fayette County canonical row already present")
+            return
+        INDEX.write_text(text[:start] + ROW + text[end:], encoding="utf-8")
+        print("Repaired Iowa Fayette County tax-lien market row to canonical county-authored output")
         return
 
     start = text.find("const rows=[")
