@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-28T11:19:31.488056+00:00",
+  "source_updated_at": "2026-08-28T12:15:13.631651+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1353,9 +1353,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "SEE \"0\" ACCOUNT FOR FULL LEGAL (REMOVAL ENTIRE PARCEL FROM THE FARM & AGRICULTURAL LAND DESIGNATION PER RCW 84.34)",
-      "tax_status": "T",
-      "tax_due_estimate": 47253.51,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_status": "In tax foreclosure",
+      "tax_due_estimate": null,
+      "enrichment_note": "legal lookup HTTPError"
     },
     {
       "parcel_id": "2921069026",
@@ -1393,7 +1393,7 @@
       "legal_description": "GREENWOOD POINT",
       "tax_status": "T",
       "tax_due_estimate": 62467.32,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3022079006",
