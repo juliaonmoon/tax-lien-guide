@@ -11,10 +11,17 @@ def main():
     start = text.find("{state:'" + MARKER + "'")
     if start < 0:
         raise SystemExit("Garrett County Maryland market row is missing")
-    end = text.find("}\n", start)
-    if end < 0:
-        end = text.find("},", start)
-    row = text[start:end if end > start else start + 6000]
+
+    comma_end = text.find("},", start)
+    array_end = text.find("}\n];", start)
+    candidates = []
+    if comma_end >= 0:
+        candidates.append(comma_end + 1)
+    if array_end >= 0:
+        candidates.append(array_end + 1)
+    if not candidates:
+        raise SystemExit("Could not find end of Garrett County Maryland market row")
+    row = text[start:min(candidates)]
 
     required = [
         "MARKET-LEVEL ONLY",
