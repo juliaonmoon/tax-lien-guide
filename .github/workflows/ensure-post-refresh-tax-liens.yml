@@ -55,7 +55,11 @@ jobs:
           git config user.name "tax-lien-data-bot"
           git config user.email "actions@users.noreply.github.com"
 
-          states=(colorado florida iowa montana maryland)
+          # Keep Indiana before Maryland. Some Indiana certificate-sale publishers
+          # replace their terminal market row and can otherwise strip Maryland rows
+          # that were appended immediately after it. This order matches the stable
+          # consolidated Indiana/Maryland workflow and makes generation idempotent.
+          states=(colorado florida iowa montana)
 
           for attempt in 1 2 3; do
             git fetch origin main
@@ -70,14 +74,17 @@ jobs:
               done
             done
 
-            # Indiana has both *_tax_lien_market.py publishers and certificate-sale
-            # publishers. Run both here so post-refresh cannot delete Indiana rows
-            # that the consolidated Indiana/Maryland workflow must add back.
             indiana_publishers=(
               scripts/add_indiana_*_tax_lien_market.py
               scripts/add_indiana_*certificate*sale*.py
             )
             for publisher in "${indiana_publishers[@]}"; do
+              echo "PUBLISH $publisher"
+              python "$publisher"
+            done
+
+            maryland_publishers=(scripts/add_maryland_*_tax_lien_market.py)
+            for publisher in "${maryland_publishers[@]}"; do
               echo "PUBLISH $publisher"
               python "$publisher"
             done
@@ -93,6 +100,11 @@ jobs:
             done
             indiana_validators=(scripts/validate_indiana_*_market.py)
             for validator in "${indiana_validators[@]}"; do
+              echo "VALIDATE $validator"
+              python "$validator"
+            done
+            maryland_validators=(scripts/validate_maryland_*_market.py)
+            for validator in "${maryland_validators[@]}"; do
               echo "VALIDATE $validator"
               python "$validator"
             done
