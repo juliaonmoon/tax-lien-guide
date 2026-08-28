@@ -11,10 +11,12 @@ def main():
     start = text.find("{state:'" + MARKER + "'")
     if start < 0:
         raise SystemExit("Chickasaw County market row is missing")
-    end = text.find("}\n", start)
-    if end < 0:
-        end = text.find("},", start)
-    row = text[start:end if end > start else start + 5000]
+
+    candidates = [p for p in (text.find("},\n", start), text.find("}\n", start)) if p >= 0]
+    if not candidates:
+        raise SystemExit("Could not find end of Chickasaw County market row")
+    end = min(candidates) + 1
+    row = text[start:end]
 
     required = [
         "MARKET-LEVEL ONLY",
