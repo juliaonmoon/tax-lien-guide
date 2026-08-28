@@ -13,11 +13,13 @@ on:
       - ".github/workflows/ensure-post-refresh-tax-liens.yml"
       - "scripts/add_colorado_*_tax_lien_market.py"
       - "scripts/add_florida_*_tax_lien_market.py"
+      - "scripts/add_indiana_*"
       - "scripts/add_iowa_*_tax_lien_market.py"
       - "scripts/add_montana_*_tax_lien_market.py"
       - "scripts/add_maryland_*_tax_lien_market.py"
       - "scripts/validate_colorado_*_market.py"
       - "scripts/validate_florida_*_market.py"
+      - "scripts/validate_indiana_*"
       - "scripts/validate_iowa_*_market.py"
       - "scripts/validate_montana_*_market.py"
       - "scripts/validate_maryland_*_market.py"
@@ -68,6 +70,18 @@ jobs:
               done
             done
 
+            # Indiana has both *_tax_lien_market.py publishers and certificate-sale
+            # publishers. Run both here so post-refresh cannot delete Indiana rows
+            # that the consolidated Indiana/Maryland workflow must add back.
+            indiana_publishers=(
+              scripts/add_indiana_*_tax_lien_market.py
+              scripts/add_indiana_*certificate*sale*.py
+            )
+            for publisher in "${indiana_publishers[@]}"; do
+              echo "PUBLISH $publisher"
+              python "$publisher"
+            done
+
             # Validate county/source/legal safety before shared presentation
             # normalization can rewrite comparison fields such as maxReturn.
             for state in "${states[@]}"; do
@@ -76,6 +90,11 @@ jobs:
                 echo "VALIDATE $validator"
                 python "$validator"
               done
+            done
+            indiana_validators=(scripts/validate_indiana_*_market.py)
+            for validator in "${indiana_validators[@]}"; do
+              echo "VALIDATE $validator"
+              python "$validator"
             done
 
             python scripts/add_max_return_rates.py
