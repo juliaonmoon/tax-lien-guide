@@ -5,13 +5,35 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 MARKER = "Colorado — Adams County"
 
-ROW = r'''{state:'Colorado — Adams County',product:'Tax lien / Tax Lien Sale Certificate of Purchase',schedule:'Adams County holds an annual internet tax-lien sale. As of Aug 17, 2026, the county’s dedicated tax-lien page still displays its 2025 live-sale dates and says current-year sale information is posted in mid-October; the county tax calendar separately describes the annual online sale window as Oct 7–Nov 6. Verify the final 2026 dates when Adams publishes its current-year notice.',availability:'2026 schedule pending official current-year notice',maxReturn:'2026 rate not yet published; 2025 was 14%/yr',interest:'Colorado sets the statutory redemption interest rate annually. Adams County states the 2025 rate was 14%. The guide does not reuse that value as the 2026 rate until Adams or the state publishes the 2026 rate. Premium/bonus bids do not earn interest and are not returned.',bid:'https://adamscountyco.gov/our-county/elected-officials/treasurer-public-trustee/treasurer-division/tax-lien-sale/',canadian:'The official Adams County materials reviewed do not clearly establish eligibility for non-U.S. persons. Confirm bidder registration and tax-document requirements directly with the Treasurer before planning to participate.',itin:'Current official materials reviewed do not state whether an ITIN or foreign tax form is accepted; verify directly with Adams County.',online:'YES — Adams County states its tax-lien sale is an internet tax sale.',otc:'YES — Adams County publishes a County Held Lien List and an Unredeemed Tax Lien List. Availability changes as liens are redeemed or assigned.',deed:'A tax-lien certificate is not property ownership. Under Colorado’s current Treasurer’s Deed process, the later option for Treasurer’s Deed is sold through a separate public auction rather than automatically conveying the property to the lienholder.',special:'Keep this annual tax-lien/certificate market separate from Adams County Public Trustee foreclosure auctions and from the later Treasurer’s Deed option auction. The county explicitly says a tax-sale purchaser receives a recorded lien and no right of possession.',source:'https://adamscountyco.gov/our-county/elected-officials/treasurer-public-trustee/treasurer-division/tax-lien-sale/'}'''
+ROW = r'''{state:'Colorado — Adams County',product:'Tax lien / Tax Lien Sale Certificate of Purchase',schedule:'Adams County’s official Treasurer page now lists 2026 internet tax-lien registration for <span class="schedule-date">October 19–30, 2026</span> and the live tax sale for <span class="schedule-date">October 26–November 6, 2026</span>. The county says its delinquent-tax list is scheduled for newspaper publication September 24, October 1, and October 8, 2026; dates remain subject to change.',availability:'2026 annual internet sale scheduled for October 26–November 6, 2026 — use the county auction site/current official Treasurer page for actual sale inventory and status.',maxReturn:'2026 redemption rate not yet stated on the official county tax-lien page reviewed Aug 28, 2026; do not reuse the 2025 14% rate as a 2026 rate.',interest:'Colorado sets the redemption interest rate for tax-lien certificates under state law. Adams County’s current page does not state a 2026 redemption rate yet. Premium/bonus bids are not returned and do not earn interest; verify the current published rate before bidding.',bid:'https://adamscountyco.gov/our-county/elected-officials/treasurer-public-trustee/treasurer-division/tax-lien-sale/',canadian:'The official Adams County materials reviewed do not clearly establish eligibility for non-U.S. persons. Confirm bidder registration, identity, and tax-document requirements directly with the Treasurer before planning to participate.',itin:'Current official materials reviewed do not state whether an ITIN or foreign tax form is accepted; verify directly with Adams County.',online:'YES — Adams County states its 2026 tax-lien sale is an internet tax sale.',otc:'Adams County publishes County Held Lien and Unredeemed Tax Lien lists. These lists change as liens are redeemed or assigned; do not treat a historical list as proof that a lien remains available.',deed:'A Tax Lien Sale Certificate of Purchase is a lien and does not convey possession, use, improvement, access, or immediate ownership. Adams County describes a separate Treasurer’s Deed process for an eligible unredeemed certificate after the statutory period; do not present a tax-lien purchase as a property purchase.',special:'Keep the annual Treasurer tax-lien sale separate from Public Trustee foreclosure auctions and from the later Treasurer’s Deed process. Market-level only: do not bulk republish owner/taxpayer names or fabricate parcel inventory, opening/minimum bids, amounts due, current lien availability, property characteristics, redemption outcomes, or deed outcomes. Use the current official Treasurer/auction publication for sale-specific facts.',source:'https://adamscountyco.gov/our-county/elected-officials/treasurer-public-trustee/treasurer-division/tax-lien-sale/'}'''
+
+
+def find_row_bounds(text: str):
+    marker_pos = text.find(MARKER)
+    if marker_pos < 0:
+        return None
+    row_start = text.rfind("{state:", 0, marker_pos + 1)
+    if row_start < 0:
+        raise SystemExit("Found Adams County marker but could not locate row start")
+    row_end = text.find("}\n", marker_pos)
+    if row_end < 0:
+        row_end = text.find("},\n", marker_pos)
+        if row_end < 0:
+            raise SystemExit("Found Adams County marker but could not locate row end")
+    return row_start, row_end + 1
 
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    if MARKER in text:
-        print("Colorado Adams County row already present")
+    bounds = find_row_bounds(text)
+    if bounds:
+        start, end = bounds
+        existing = text[start:end]
+        if existing == ROW:
+            print("Colorado Adams County row already canonical")
+            return
+        INDEX.write_text(text[:start] + ROW + text[end:], encoding="utf-8")
+        print("Restored canonical Colorado Adams County tax-lien market row")
         return
 
     start = text.find("const rows=[")
