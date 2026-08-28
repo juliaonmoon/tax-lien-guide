@@ -69,6 +69,8 @@ REQUIRED_PUBLISHERS = [
     "scripts/add_montana_richland_tax_lien_market.py",
     "scripts/add_montana_stillwater_tax_lien_market.py",
     "scripts/add_maryland_somerset_county_tax_lien_market.py",
+    "scripts/add_maryland_prince_georges_tax_lien_market.py",
+    "scripts/add_maryland_st_marys_tax_lien_market.py",
 ]
 OPTIONAL_PUBLISHERS = ["scripts/add_colorado_weld_tax_lien_market.py"]
 
@@ -159,8 +161,11 @@ def main() -> None:
             continue
         marker = marker_for(path)
         checked.append(marker)
-        if marker not in index_text:
+        count = index_text.count(marker)
+        if count == 0:
             missing.append(f"missing generated market row: {marker}")
+        elif count != 1:
+            missing.append(f"duplicate generated market rows ({count}): {marker}")
 
     for marker, expected_rate in REQUIRED_MARKET_RATE_TEXT.items():
         row = market_row(index_text, marker)
