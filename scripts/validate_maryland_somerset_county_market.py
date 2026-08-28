@@ -11,10 +11,18 @@ def main():
     start = text.find("{state:'" + MARKER + "'")
     if start < 0:
         raise SystemExit("Somerset County market row is missing")
-    end = text.find("}\n", start)
-    if end < 0:
-        end = text.find("},", start)
-    row = text[start:end if end > start else start + 6000]
+
+    # Bound validation to Somerset's serialized row only. Market rows are
+    # normally separated by "},"; looking for a later "}\n" first can sweep
+    # subsequent counties into this check and falsely attribute their rates or
+    # safety wording to Somerset.
+    candidates = [
+        pos
+        for pos in (text.find("},", start), text.find("}\n", start))
+        if pos >= start
+    ]
+    end = min(candidates) + 1 if candidates else min(len(text), start + 6000)
+    row = text[start:end]
 
     required = [
         "MARKET-LEVEL ONLY",
