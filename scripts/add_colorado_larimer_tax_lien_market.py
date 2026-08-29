@@ -15,11 +15,20 @@ def find_row_bounds(text: str):
     row_start = text.rfind("{state:", 0, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found Larimer County marker but could not locate row start")
-    row_end = text.find("}\n", marker_pos)
-    if row_end < 0:
-        row_end = text.find("},\n", marker_pos)
-        if row_end < 0:
-            raise SystemExit("Found Larimer County marker but could not locate row end")
+
+    # Rows in index.html use more than one separator style: `},\n{...}` and
+    # `}\n,\n{...}`. Looking for `}\n` first is unsafe because a row that
+    # actually ends `},\n` does not contain that byte sequence; the search can
+    # then jump forward to a later row and replacement deletes every row in
+    # between. Choose the nearest valid row terminator instead.
+    endings = []
+    for token in ("},\n", "}\n,", "}\n];"):
+        pos = text.find(token, marker_pos)
+        if pos >= 0:
+            endings.append(pos)
+    if not endings:
+        raise SystemExit("Found Larimer County marker but could not locate row end")
+    row_end = min(endings)
     return row_start, row_end + 1
 
 
