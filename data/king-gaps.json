@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-29T06:26:52.706804+00:00",
+  "source_updated_at": "2026-08-29T07:19:10.658864+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2595,7 +2595,7 @@
       "legal_description": "RENTON HILL ADD N 1/2",
       "tax_status": "T",
       "tax_due_estimate": 36453.59,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7243300400",
