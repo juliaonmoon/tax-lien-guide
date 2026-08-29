@@ -15,11 +15,18 @@ def find_row_bounds(text: str):
     row_start = text.rfind("{state:", 0, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found Boulder County marker but could not locate row start")
-    row_end = text.find("}\n", marker_pos)
-    if row_end < 0:
-        row_end = text.find("},\n", marker_pos)
-        if row_end < 0:
-            raise SystemExit("Found Boulder County marker but could not locate row end")
+
+    # Rows may be followed by either `},\n` or `}\n` depending on whether
+    # another row follows. Always choose the nearest valid terminator so a
+    # canonical repair cannot consume adjacent market rows.
+    candidates = []
+    for terminator in ("},\n", "}\n"):
+        pos = text.find(terminator, marker_pos)
+        if pos >= 0:
+            candidates.append(pos)
+    if not candidates:
+        raise SystemExit("Found Boulder County marker but could not locate row end")
+    row_end = min(candidates)
     return row_start, row_end + 1
 
 
