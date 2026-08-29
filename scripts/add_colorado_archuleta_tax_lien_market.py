@@ -15,11 +15,13 @@ def find_row_bounds(text: str):
     row_start = text.rfind("{state:", 0, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found Archuleta County marker but could not locate row start")
-    row_end = text.find("}\n", marker_pos)
-    if row_end < 0:
-        row_end = text.find("},\n", marker_pos)
-        if row_end < 0:
-            raise SystemExit("Found Archuleta County marker but could not locate row end")
+    row_end_candidates = [
+        pos for terminator in ("},\n", "}\n")
+        if (pos := text.find(terminator, marker_pos)) >= 0
+    ]
+    if not row_end_candidates:
+        raise SystemExit("Found Archuleta County marker but could not locate row end")
+    row_end = min(row_end_candidates)
     return row_start, row_end + 1
 
 
