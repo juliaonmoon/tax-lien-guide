@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-29T02:34:37.066560+00:00",
+  "source_updated_at": "2026-08-29T03:16:47.324540+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2421,7 +2421,7 @@
       "legal_description": "101 MEYDENBAUER COND PCT OF VAL .0908",
       "tax_status": "T",
       "tax_due_estimate": 997.55,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "6649350050",
@@ -3093,7 +3093,7 @@
       "legal_description": "YESLERS H L 1ST ADD W 68 FT",
       "tax_status": "T",
       "tax_due_estimate": 65728.54,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "9831200460",
