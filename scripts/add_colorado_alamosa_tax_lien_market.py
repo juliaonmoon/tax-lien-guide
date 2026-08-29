@@ -15,11 +15,17 @@ def find_row_bounds(text: str):
     row_start = text.rfind("{state:", 0, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found Alamosa County marker but could not locate row start")
-    row_end = text.find("}\n", marker_pos)
-    if row_end < 0:
-        row_end = text.find("},\n", marker_pos)
-        if row_end < 0:
-            raise SystemExit("Found Alamosa County marker but could not locate row end")
+
+    candidates = []
+    for terminator in ("},\n", "}\n", "},\r\n", "}\r\n"):
+        pos = text.find(terminator, marker_pos)
+        if pos >= 0:
+            candidates.append((pos, terminator))
+    if not candidates:
+        raise SystemExit("Found Alamosa County marker but could not locate row end")
+
+    row_end, terminator = min(candidates, key=lambda item: item[0])
+    # Replace only the object itself; preserve any comma/newline separator already in index.html.
     return row_start, row_end + 1
 
 
