@@ -15,11 +15,18 @@ def find_row_bounds(text: str):
     row_start = text.rfind("{state:", 0, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found El Paso County marker but could not locate row start")
-    row_end = text.find("}\n", marker_pos)
-    if row_end < 0:
-        row_end = text.find("},\n", marker_pos)
-        if row_end < 0:
-            raise SystemExit("Found El Paso County marker but could not locate row end")
+
+    # A row can be followed by either `},\n` or `}\n` depending on whether it
+    # is currently the final entry.  Always select the nearest valid terminator;
+    # checking one form first can otherwise jump across neighboring rows.
+    terminators = []
+    for token in ("},\n", "}\n"):
+        pos = text.find(token, marker_pos)
+        if pos >= 0:
+            terminators.append(pos)
+    if not terminators:
+        raise SystemExit("Found El Paso County marker but could not locate row end")
+    row_end = min(terminators)
     return row_start, row_end + 1
 
 
