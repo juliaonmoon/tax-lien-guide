@@ -5,13 +5,39 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 MARKER = "Colorado — Douglas County"
 
-ROW = r'''{state:'Colorado — Douglas County',product:'Tax lien / tax sale certificate',schedule:'Douglas County maintains official tax-lien sale and Treasurer records. As of Aug 17, 2026, the county has not published a clearly accessible 2026 annual tax-lien sale date/list on its public pages, so the 2026 schedule is marked pending rather than inferred from prior-year records.',availability:'2026 annual sale date/list pending official publication',maxReturn:'2026 rate not yet set; Colorado rate is set after Sep 1',interest:'Colorado sets the annual tax-lien redemption rate after September 1. Douglas County has not yet published a 2026 rate, so this guide does not carry forward a prior-year rate.',bid:'https://www.douglas.co.us/treasurer/',canadian:'The reviewed Douglas County public materials do not clearly establish a non-U.S.-person/W-8 bidder pathway. Verify current registration and taxpayer-ID requirements directly with the Treasurer before funding.',itin:'Current public Douglas County materials reviewed do not clearly state whether an ITIN/W-8 is accepted for a non-U.S. bidder; verify with the Treasurer.',online:'Current-year auction format should be verified from the Treasurer\'s official sale instructions when posted.',otc:'County-held/assignment availability must be verified from current Douglas County Treasurer records; do not infer availability from older sale certificates.',deed:'A tax-sale certificate/tax lien is not immediate property ownership. Douglas County separately publishes Treasurer\'s Deed process materials after the statutory lien/redemption process.',special:'Douglas County records include Tax Sale Certificates and Treasurer\'s Certificates of Purchase. Keep those lien instruments separate from Public Trustee mortgage foreclosures and later Treasurer\'s Deed proceedings. The guide deliberately leaves the 2026 sale date and return rate pending until officially published.',source:'https://www.douglas.co.us/file-category/treasurer-documents/'}'''
+ROW = r'''{state:'Colorado — Douglas County',product:'Tax lien / tax sale certificate',schedule:'Douglas County maintains official Treasurer tax-lien records. As of Aug 29, 2026, the reviewed official public material does not publish a clearly accessible 2026 annual tax-lien sale date or current-year parcel list, so the guide keeps the 2026 annual sale pending rather than inferring it from historical records. Separately published 2026 Treasurer’s Deed / Certificate of Option auction notices are later-stage deed-process auctions and are not annual tax-lien sale dates.',availability:'2026 annual tax-lien sale date/list pending official publication; verify any certificate or assignment availability directly from current Treasurer records',maxReturn:'2026 rate not yet published; Colorado annual tax-lien redemption rate is determined from the September 1 statutory benchmark',interest:'Douglas County has not yet published the 2026 annual tax-lien redemption rate in the reviewed official material, so this guide does not carry forward a prior-year rate.',bid:'https://www.douglas.co.us/treasurer/',canadian:'The reviewed current Douglas County public material does not clearly establish a non-U.S.-person/W-8 bidder pathway. Verify current registration and taxpayer-ID requirements directly with the Treasurer before funding.',itin:'Current public Douglas County material reviewed does not clearly state whether an ITIN/W-8 is accepted for a non-U.S. bidder; verify with the Treasurer.',online:'Do not infer the 2026 annual-sale format from historical auction instructions. Verify the current-year format only from official Treasurer sale instructions when published.',otc:'County-held or assignment availability must be verified from current Douglas County Treasurer records; do not infer present availability from historical Certificates of Purchase or later deed-auction notices.',deed:'A tax-sale certificate/tax lien is not immediate property ownership. Douglas County separately publishes Treasurer’s Deed / Certificate of Option public-auction notices after the statutory lien/redemption process; those auctions are distinct from the annual tax-lien sale.',special:'MARKET-LEVEL ONLY. Keep Douglas County tax-sale Certificates of Purchase separate from Public Trustee mortgage foreclosures and later Treasurer’s Deed / Certificate of Option auctions. Historical Douglas County tax-lien instructions state that the minimum starting bid equals delinquent tax, interest, advertising, and fees shown for that sale, but no current 2026 parcel-level opening/minimum bids or annual parcel list are inferred from those older instructions. Do not fabricate parcel inventory, opening/minimum bids, lien/payoff amounts, current availability, property or ownership characteristics, redemption/deed outcomes, or bulk owner/taxpayer data.',source:'https://www.douglas.co.us/file-category/treasurer-documents/'}'''
+
+
+def find_row_bounds(text: str):
+    marker_pos = text.find(MARKER)
+    if marker_pos < 0:
+        return None
+    row_start = text.rfind("{state:", 0, marker_pos + 1)
+    if row_start < 0:
+        raise SystemExit("Found Douglas County marker but could not locate row start")
+
+    endings = []
+    for token in ("},\n", "}\n,", "}\n];"):
+        pos = text.find(token, marker_pos)
+        if pos >= 0:
+            endings.append(pos)
+    if not endings:
+        raise SystemExit("Found Douglas County marker but could not locate row end")
+    row_end = min(endings)
+    return row_start, row_end + 1
 
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    if MARKER in text:
-        print("Colorado Douglas County row already present")
+    bounds = find_row_bounds(text)
+    if bounds:
+        start, end = bounds
+        existing = text[start:end]
+        if existing == ROW:
+            print("Colorado Douglas County row already canonical")
+            return
+        INDEX.write_text(text[:start] + ROW + text[end:], encoding="utf-8")
+        print("Restored canonical Colorado Douglas County tax-lien market row")
         return
 
     start = text.find("const rows=[")
