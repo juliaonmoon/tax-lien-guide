@@ -5,13 +5,35 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 MARKER = "Colorado — Archuleta County"
 
-ROW = r'''{state:'Colorado — Archuleta County',product:'Tax lien / Certificate of Purchase',schedule:'MARKET-LEVEL ONLY — Archuleta County officially conducts Treasurer tax-lien sales and publishes delinquent-tax sale lists, but the currently indexed official publication is not a verified 2026 list. No 2026 parcel rows or sale date are inferred.',availability:'2026 details pending official publication',maxReturn:'Variable annual statutory rate; 2026 rate pending',interest:'Colorado tax-lien certificate interest is set under state law. Archuleta County administers tax liens and a later separate Treasurer’s Deed process; no prior-year certificate rate is carried forward as a 2026 return.',bid:'https://www.archuletacounty.org/301/Treasurer-Deeds',canadian:'Foreign-bidder eligibility is not clearly published in the current official county materials; verify registration and taxpayer-ID requirements directly with the Archuleta County Treasurer.',itin:'Current public materials do not clearly state foreign taxpayer-ID eligibility; verify directly with the Treasurer before funding.',online:'Archuleta County has used an internet tax-lien auction for its published sale lists; verify the current 2026 auction platform/rules when posted.',otc:'County-held or assignment availability is not clearly published for 2026; verify directly with the Treasurer.',deed:'A tax-lien Certificate of Purchase is not immediate ownership. Archuleta County separately administers Treasurer’s Deed applications after the statutory holding period.',special:'MARKET-LEVEL ONLY until Archuleta County publishes a current 2026 delinquent tax-lien list in a form that can be safely ingested. Do not substitute Public Trustee mortgage foreclosures, Treasurer’s Deed rows, owner-name data, prior-year parcel lists, or deed-auction amounts for tax-lien listings.',source:'https://www.archuletacounty.org/301/Treasurer-Deeds'}'''
+ROW = r'''{state:'Colorado — Archuleta County',product:'Tax lien / Certificate of Purchase',schedule:'MARKET-LEVEL ONLY — Archuleta County officially conducts Treasurer tax-lien sales. As of Aug 28, 2026, the latest official delinquent-tax publication located on the county site is the 2024 publication for the Nov 7, 2024 internet tax-lien sale; no current 2026 sale date or parcel list is inferred from that older publication.',availability:'2026 tax-lien sale date/list not verified on the official county site; verify directly with the Treasurer and current county publication before treating any parcel, date, amount, or availability as current.',maxReturn:'2026 rate not verified; do not carry a prior-year certificate rate forward',interest:'Colorado tax-lien certificate interest is set under state law. Archuleta County administers tax liens and a later separate Treasurer’s Deed process; no prior-year certificate rate is carried forward as a 2026 return.',bid:'https://archuletacounty.org/DocumentCenter/View/4571/DELINQUENT-TAXES-2024-RP-PUBLICATION-LIST-',canadian:'Foreign-bidder eligibility is not clearly published in the current official county materials reviewed; verify registration and taxpayer-ID requirements directly with the Archuleta County Treasurer.',itin:'Current official materials reviewed do not clearly establish ITIN-only or non-U.S.-person eligibility; verify directly with the Treasurer before funding.',online:'The latest official delinquent-tax publication located on the county site used an internet auction for the Nov 7, 2024 sale; do not assume the same format for 2026 unless the county publishes it.',otc:'County-held or assignment availability is not verified for 2026; do not infer current inventory from prior-year materials.',deed:'A tax-lien Certificate of Purchase is a lien, not immediate ownership. Archuleta County separately states that after a lien is 3 years old, the lienholder may apply for a Treasurer’s Deed, subject to the statutory process and redemption.',special:'MARKET-LEVEL ONLY until Archuleta County publishes current 2026 tax-lien material that can be safely verified. Keep the Treasurer tax-lien sale separate from Public Trustee deed-of-trust foreclosure sales and from the later Treasurer’s Deed process. Do not fabricate parcel inventory, opening/minimum bids, lien/payoff amounts, current availability, ownership/property characteristics, redemption outcomes, or deed outcomes, and do not bulk republish owner/taxpayer names.',source:'https://www.archuletacounty.org/301/Treasurer-Deeds'}'''
+
+
+def find_row_bounds(text: str):
+    marker_pos = text.find(MARKER)
+    if marker_pos < 0:
+        return None
+    row_start = text.rfind("{state:", 0, marker_pos + 1)
+    if row_start < 0:
+        raise SystemExit("Found Archuleta County marker but could not locate row start")
+    row_end = text.find("}\n", marker_pos)
+    if row_end < 0:
+        row_end = text.find("},\n", marker_pos)
+        if row_end < 0:
+            raise SystemExit("Found Archuleta County marker but could not locate row end")
+    return row_start, row_end + 1
 
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    if MARKER in text:
-        print("Colorado Archuleta County row already present")
+    bounds = find_row_bounds(text)
+    if bounds:
+        start, end = bounds
+        existing = text[start:end]
+        if existing == ROW:
+            print("Colorado Archuleta County row already canonical")
+            return
+        INDEX.write_text(text[:start] + ROW + text[end:], encoding="utf-8")
+        print("Restored canonical Colorado Archuleta County tax-lien market row")
         return
 
     start = text.find("const rows=[")
