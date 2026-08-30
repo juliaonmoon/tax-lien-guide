@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-30T06:34:04.064004+00:00",
+  "source_updated_at": "2026-08-30T07:34:36.971631+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -498,7 +498,7 @@
       "legal_description": "S 360 FT AS MEAS ALG W LN OF N 1/2 OF SE 1/4 OF SE 1/4 LESS W 1143 FT LESS CO RD LESS C/M RGTS",
       "tax_status": "T",
       "tax_due_estimate": 7142.99,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0525069023",
@@ -983,7 +983,7 @@
       "legal_description": "S 100 FT OF N 150 FT OF E 150 FT OF W 195 FT OF S 1/2 OF NW 1/4 OF NW 1/4 OF  SW 1/4",
       "tax_status": "T",
       "tax_due_estimate": 8083.05,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2188201795",
