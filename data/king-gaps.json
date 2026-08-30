@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-30T08:39:15.693039+00:00",
+  "source_updated_at": "2026-08-30T09:31:53.402085+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1432,7 +1432,7 @@
       "legal_description": "HALEY'S TERRACE TGW UND INT IN TRACT F",
       "tax_status": "T",
       "tax_due_estimate": 45051.04,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3224079075",
