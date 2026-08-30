@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T13:31:04.626837+00:00",
+  "updated_at": "2026-08-30T14:36:42.011447+00:00",
   "prototype": true,
   "properties": [
     {
@@ -2680,13 +2680,13 @@
       "tax_due_normalized": true,
       "rent_trend_pct": null,
       "rent_trend_period": null,
+      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match",
       "public_safety_12mo_offenses": 69702,
       "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
       "public_safety_period_start": "2024-01-01",
       "public_safety_period_end": "2024-12-31",
       "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
-      "public_safety_area": "Seattle Police Department",
-      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match"
+      "public_safety_area": "Seattle Police Department"
     },
     {
       "state": "WA",
@@ -5803,13 +5803,13 @@
       "tax_due_normalized": true,
       "rent_trend_pct": null,
       "rent_trend_period": null,
+      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match",
       "public_safety_12mo_offenses": 69702,
       "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
       "public_safety_period_start": "2024-01-01",
       "public_safety_period_end": "2024-12-31",
       "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
-      "public_safety_area": "Seattle Police Department",
-      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match"
+      "public_safety_area": "Seattle Police Department"
     },
     {
       "state": "WA",
@@ -5891,14 +5891,14 @@
       "tax_due_normalized": true,
       "rent_trend_pct": null,
       "rent_trend_period": null,
+      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match",
       "public_safety_12mo_offenses": 3120,
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-25",
       "public_safety_period_end": "2026-08-25",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_area": "K3",
-      "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt",
-      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match"
+      "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt"
     },
     {
       "state": "WA",
@@ -9039,13 +9039,13 @@
       "tax_due_normalized": true,
       "rent_trend_pct": null,
       "rent_trend_period": null,
+      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match",
       "public_safety_12mo_offenses": 69702,
       "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
       "public_safety_period_start": "2024-01-01",
       "public_safety_period_end": "2024-12-31",
       "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
-      "public_safety_area": "Seattle Police Department",
-      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match"
+      "public_safety_area": "Seattle Police Department"
     },
     {
       "state": "WA",
@@ -12175,13 +12175,13 @@
       "tax_due_normalized": true,
       "rent_trend_pct": null,
       "rent_trend_period": null,
+      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match",
       "public_safety_12mo_offenses": 69702,
       "public_safety_scope": "Washington OFM/SAC NIBRS annual reported-crime total for the reporting law-enforcement agency, calendar 2024; citywide agency fallback, not a parcel/neighborhood crime rate and not directly comparable to KCSO/SPD trailing-365-day metrics",
       "public_safety_period_start": "2024-01-01",
       "public_safety_period_end": "2024-12-31",
       "public_safety_source": "https://data.wa.gov/Public-Safety/Washington-State-Uniform-Crime-Reporting-National-/vvfu-ry7f",
-      "public_safety_area": "Seattle Police Department",
-      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match"
+      "public_safety_area": "Seattle Police Department"
     },
     {
       "state": "WA",
@@ -12444,14 +12444,14 @@
       "tax_due_normalized": true,
       "rent_trend_pct": null,
       "rent_trend_period": null,
+      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match",
       "public_safety_12mo_offenses": 3120,
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-25",
       "public_safety_period_end": "2026-08-25",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_area": "K3",
-      "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt",
-      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match"
+      "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt"
     },
     {
       "state": "WA",
@@ -13242,14 +13242,14 @@
       "tax_due_normalized": true,
       "rent_trend_pct": null,
       "rent_trend_period": null,
+      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match",
       "public_safety_12mo_offenses": 1550,
       "public_safety_scope": "SPD finalized/UCR-approved offense rows in the official current police beat containing the parcel; trailing 365 days; raw offense count, not a population-adjusted crime rate",
       "public_safety_period_start": "2025-08-25",
       "public_safety_period_end": "2026-08-25",
       "public_safety_source": "https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5",
       "public_safety_area": "C1",
-      "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt",
-      "public_safety_data_status": "Prior verified official-source value preserved when scoped refresh had no current geographic match"
+      "public_safety_boundary_source": "https://data.seattle.gov/dataset/Seattle-Police-Department-Beats-Web-Mercator-/vhna-33bt"
     },
     {
       "state": "FL",
@@ -15240,7 +15240,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15284,7 +15284,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15328,7 +15328,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15372,7 +15372,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15416,7 +15416,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15460,7 +15460,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15504,7 +15504,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15548,7 +15548,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15592,7 +15592,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15636,7 +15636,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15680,7 +15680,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15724,7 +15724,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15768,7 +15768,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15812,7 +15812,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15856,7 +15856,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15900,7 +15900,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15944,7 +15944,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -15988,7 +15988,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16032,7 +16032,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16076,7 +16076,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16120,7 +16120,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16164,7 +16164,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16208,7 +16208,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16252,7 +16252,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16296,7 +16296,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16340,7 +16340,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16384,7 +16384,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -16428,7 +16428,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -16472,7 +16472,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16516,7 +16516,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16560,7 +16560,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16604,7 +16604,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16648,7 +16648,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16692,7 +16692,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16736,7 +16736,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16780,7 +16780,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16824,7 +16824,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16868,7 +16868,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16912,7 +16912,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -16956,7 +16956,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17000,7 +17000,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17044,7 +17044,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17088,7 +17088,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17132,7 +17132,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17176,7 +17176,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17220,7 +17220,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17264,7 +17264,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17308,7 +17308,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17352,7 +17352,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17396,7 +17396,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17440,7 +17440,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17484,7 +17484,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17528,7 +17528,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17572,7 +17572,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17616,7 +17616,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17660,7 +17660,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17704,7 +17704,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -17748,7 +17748,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17792,7 +17792,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17836,7 +17836,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17880,7 +17880,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17924,7 +17924,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -17968,7 +17968,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18012,7 +18012,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18056,7 +18056,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18100,7 +18100,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18144,7 +18144,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18188,7 +18188,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18232,7 +18232,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18276,7 +18276,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18320,7 +18320,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18364,7 +18364,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18408,7 +18408,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18452,7 +18452,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18496,7 +18496,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18540,7 +18540,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18584,7 +18584,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18628,7 +18628,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18672,7 +18672,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18716,7 +18716,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18760,7 +18760,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18804,7 +18804,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18848,7 +18848,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -18892,7 +18892,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18936,7 +18936,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -18980,7 +18980,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19024,7 +19024,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19068,7 +19068,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -19112,7 +19112,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19156,7 +19156,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19200,7 +19200,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19244,7 +19244,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19288,7 +19288,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19332,7 +19332,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19376,7 +19376,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19420,7 +19420,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19464,7 +19464,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 70,
         "label": "High research priority",
@@ -19508,7 +19508,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19552,7 +19552,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19596,7 +19596,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19640,7 +19640,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19684,7 +19684,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19728,7 +19728,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19772,7 +19772,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19816,7 +19816,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19860,7 +19860,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19904,7 +19904,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19948,7 +19948,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -19992,7 +19992,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20036,7 +20036,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20080,7 +20080,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20124,7 +20124,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20168,7 +20168,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20212,7 +20212,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20256,7 +20256,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20300,7 +20300,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20344,7 +20344,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20388,7 +20388,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20432,7 +20432,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20476,7 +20476,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20520,7 +20520,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20564,7 +20564,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20608,7 +20608,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20652,7 +20652,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20696,7 +20696,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20740,7 +20740,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20784,7 +20784,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20828,7 +20828,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20872,7 +20872,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20916,7 +20916,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -20960,7 +20960,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21004,7 +21004,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21048,7 +21048,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21092,7 +21092,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21136,7 +21136,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21180,7 +21180,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21224,7 +21224,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21268,7 +21268,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21312,7 +21312,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21356,7 +21356,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21400,7 +21400,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21444,7 +21444,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21488,7 +21488,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21532,7 +21532,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21576,7 +21576,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21620,7 +21620,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21664,7 +21664,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21708,7 +21708,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21752,7 +21752,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21796,7 +21796,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21840,7 +21840,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21884,7 +21884,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21928,7 +21928,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -21972,7 +21972,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22016,7 +22016,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -22060,7 +22060,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22104,7 +22104,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22148,7 +22148,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22192,7 +22192,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22236,7 +22236,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22280,7 +22280,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -22324,7 +22324,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22368,7 +22368,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22412,7 +22412,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22456,7 +22456,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22500,7 +22500,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22544,7 +22544,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22588,7 +22588,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22632,7 +22632,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22676,7 +22676,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22720,7 +22720,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22764,7 +22764,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22808,7 +22808,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22852,7 +22852,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22896,7 +22896,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22940,7 +22940,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -22984,7 +22984,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23028,7 +23028,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -23072,7 +23072,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23116,7 +23116,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23160,7 +23160,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23204,7 +23204,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23248,7 +23248,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23292,7 +23292,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23336,7 +23336,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23380,7 +23380,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23424,7 +23424,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23468,7 +23468,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23512,7 +23512,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23556,7 +23556,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23600,7 +23600,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23644,7 +23644,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23688,7 +23688,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 55,
         "label": "Medium research priority",
@@ -23732,7 +23732,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23776,7 +23776,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23820,7 +23820,7 @@
       "auction_url": null,
       "title_review_status": "not_reviewed",
       "data_completeness": "county-owned resale list (base fields only; per-parcel Assessor enrichment not yet added)",
-      "last_verified": "2026-08-30T13:29:11.903560+00:00",
+      "last_verified": "2026-08-30T14:34:49.797329+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -23861,7 +23861,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "105218",
       "source_lot_number": "40124",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -23902,7 +23902,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111143",
       "source_lot_number": "90101",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -23943,7 +23943,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111299",
       "source_lot_number": "380419",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -23984,7 +23984,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111300",
       "source_lot_number": "380420",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24025,7 +24025,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111301",
       "source_lot_number": "380421",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24066,7 +24066,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111302",
       "source_lot_number": "380422",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24107,7 +24107,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111304",
       "source_lot_number": "380424",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24148,7 +24148,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111305",
       "source_lot_number": "380425",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24189,7 +24189,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111306",
       "source_lot_number": "380426",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24230,7 +24230,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111312",
       "source_lot_number": "580300",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24271,7 +24271,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98066",
       "source_lot_number": "580201",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24312,7 +24312,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98067",
       "source_lot_number": "580202",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24353,7 +24353,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98068",
       "source_lot_number": "580203",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24394,7 +24394,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98069",
       "source_lot_number": "580204",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24435,7 +24435,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98087",
       "source_lot_number": "580222",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24476,7 +24476,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98088",
       "source_lot_number": "580223",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24517,7 +24517,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98090",
       "source_lot_number": "580225",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24558,7 +24558,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98094",
       "source_lot_number": "580228",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24599,7 +24599,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98096",
       "source_lot_number": "580230",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24640,7 +24640,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "98089",
       "source_lot_number": "580224",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 60,
         "label": "Medium research priority",
@@ -24681,7 +24681,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "119699",
       "source_lot_number": "690840",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24722,7 +24722,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111248",
       "source_lot_number": "690738",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24763,7 +24763,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "105145",
       "source_lot_number": "690588",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
@@ -24804,7 +24804,7 @@
       "data_completeness": "statewide surplus-property listing (base fields; no per-county enrichment)",
       "source_lot_id": "111254",
       "source_lot_number": "690744",
-      "last_verified": "2026-08-30T13:29:13.449381+00:00",
+      "last_verified": "2026-08-30T14:34:51.294074+00:00",
       "research_priority": {
         "score": 75,
         "label": "High research priority",
