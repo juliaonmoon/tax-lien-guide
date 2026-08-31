@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-31T20:23:29.043918+00:00",
+  "source_updated_at": "2026-08-31T21:31:34.268962+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2768,7 +2768,7 @@
       "legal_description": "SEA VIEW PARK ADD",
       "tax_status": "T",
       "tax_due_estimate": 5698.57,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "7686201640",
