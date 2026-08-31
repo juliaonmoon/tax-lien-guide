@@ -8,6 +8,30 @@ MARKER = "Arizona — Graham County"
 ROW = r'''{state:'Arizona — Graham County',product:'Tax lien / Certificate of Purchase',schedule:'Annual in-person tax-lien sale is held each February; the official 2026 sale was February 25, 2026. State-owned liens not sold at auction may be purchased later by assignment when the Treasurer\'s current Active Certificate Report shows Investor ID 1.',availability:'2026 annual auction passed — check the current official Active Certificate Report for state-owned assignment liens',maxReturn:'16%/yr statutory max',interest:'Graham County states competitive bidding is based on the least interest rate accepted by the bidder, with 16% as the maximum; state-owned liens available by assignment carry 16% interest. Actual yield depends on the certificate rate and redemption timing.',bid:'https://www.graham.az.gov/360/Tax-Lien-Information',canadian:'County registration requires bidder and taxpayer-identification information. A non-U.S. bidder should confirm directly with the Treasurer which foreign taxpayer documentation is accepted before participating.',itin:'Do not assume a U.S.-person tax form applies to a foreign bidder. Confirm the current taxpayer-identification and withholding documentation accepted by Graham County before funding or bidding.',online:'NO — Graham County states the annual sale is held in person; telephone and mail bids are not accepted.',otc:'YES, BY ASSIGNMENT WHEN OFFICIALLY LISTED — parcels not sold at the annual sale are assigned to the state. Only certificates shown with Investor ID 1 on the county\'s current Active Certificate Report should be treated as available for assignment; obtain the current total due from the Treasurer.',deed:'A tax-lien purchase is a Certificate of Purchase, not an immediate deed or ownership interest. Any later foreclosure/Treasurer\'s-deed process is legally distinct and must follow Arizona law.',special:'Market-level summary only. Do not bulk republish owner/taxpayer names from county records. Do not fabricate parcel inventory, opening/minimum bids, current assignment availability, or amounts due. Graham County separately operates tax-deed processes; keep those distinct from this tax-lien Certificate of Purchase market.',source:'https://www.graham.az.gov/362/Tax-Sale-Lien-Guidelines'}'''
 
 
+def find_row_bounds(text: str, start: int, end: int):
+    marker_pos = text.find(MARKER, start, end)
+    if marker_pos < 0:
+        return None
+
+    row_start = text.rfind("{state:", start, marker_pos + 1)
+    if row_start < 0:
+        raise SystemExit("Found Graham County marker but could not locate row start")
+
+    # index.html contains multiple valid row-separator styles. Choose the
+    # nearest valid terminator so a stale-row repair cannot consume subsequent
+    # county rows when a farther `}\n` appears before the first fallback check.
+    endings = []
+    for token in ("},\n", "}\n,", "}\n];"):
+        pos = text.find(token, marker_pos, end + 3)
+        if pos >= 0:
+            endings.append(pos)
+    if not endings:
+        raise SystemExit("Found Graham County marker but could not locate row end")
+
+    row_end = min(endings)
+    return row_start, row_end + 1
+
+
 def main():
     text = INDEX.read_text(encoding="utf-8")
 
@@ -18,17 +42,9 @@ def main():
     if end < 0:
         raise SystemExit("Could not find end of rows array")
 
-    marker_pos = text.find(MARKER, start, end)
-    if marker_pos >= 0:
-        row_start = text.rfind("{state:", start, marker_pos + 1)
-        if row_start < 0:
-            raise SystemExit("Could not find Graham row start")
-        row_end = text.find("}\n", marker_pos, end)
-        if row_end < 0:
-            row_end = text.find("},\n", marker_pos, end)
-            if row_end < 0:
-                raise SystemExit("Could not find Graham row end")
-        row_end += 1
+    bounds = find_row_bounds(text, start, end)
+    if bounds:
+        row_start, row_end = bounds
         existing = text[row_start:row_end]
         if existing == ROW:
             print("Arizona Graham County canonical row already present")
