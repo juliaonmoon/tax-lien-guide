@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-31T12:27:42.624558+00:00",
+  "source_updated_at": "2026-08-31T15:30:12.444969+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -690,8 +690,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "BEG ON N LN OF SW 1/4 OF NW 1/4 296 FT W OF NE COR TH S 00-30-07 W 85.08 FT TH N 75-41-40 W ALG S MGN OF DIXON RD 295.74 FT TH ON CURVE TO RGT RAD 690.83 FT DIST 64.15 FT TO N LN SD SUBD TH E TO BEG LESS POR W OF LN RNG S FR PT 545.03 FT W OF NE COR OF SUBD",
       "tax_status": "T",
-      "tax_due_estimate": 379.73,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 134.96,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "1262700030",
@@ -729,7 +729,7 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "CASA HERMOSA CONDOMINIUM PCT OF VALUE 2.2985 & P-38",
       "tax_status": "T",
-      "tax_due_estimate": 5521.53,
+      "tax_due_estimate": 270.34,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1276,8 +1276,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "GILMANS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 41038.23,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2822059206",
@@ -1489,7 +1489,7 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "HIDDEN CREEK CONDOMINIUM PCT UND INT  0.8400",
       "tax_status": "T",
-      "tax_due_estimate": 16535.39,
+      "tax_due_estimate": 1644.53,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2036,7 +2036,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKOTA ADD LESS SWLY 140 FT THOF",
       "tax_status": "T",
-      "tax_due_estimate": 6386.38,
+      "tax_due_estimate": 1212.9,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2748,7 +2748,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RUMBOLZ SUNSET HIGHWAY TRS PARCEL 1 OF KC SHORT PLAT NO 881069 RECORDING NO 8208260418 SD PLAT DAF - LOT 3 BLK 1 RUMBOLZ SUNSET HIGHWAY TRACTS LESS ST HWY LESS N 30 FT FOR RD",
       "tax_status": "T",
-      "tax_due_estimate": 32233.19,
+      "tax_due_estimate": 7923.1,
       "enrichment_note": "legal description, tax receivables"
     },
     {
