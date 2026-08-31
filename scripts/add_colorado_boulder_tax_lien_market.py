@@ -9,24 +9,30 @@ ROW = r'''{state:'Colorado — Boulder County',product:'Tax lien / Tax Lien Sale
 
 
 def find_row_bounds(text: str):
-    marker_pos = text.find(MARKER)
+    rows_start = text.find("const rows=[")
+    if rows_start < 0:
+        raise SystemExit("Could not find rows array")
+    rows_end = text.find("\n];", rows_start)
+    if rows_end < 0:
+        raise SystemExit("Could not find end of rows array")
+
+    marker_pos = text.find(MARKER, rows_start, rows_end)
     if marker_pos < 0:
         return None
-    row_start = text.rfind("{state:", 0, marker_pos + 1)
+    row_start = text.rfind("{state:", rows_start, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found Boulder County marker but could not locate row start")
 
     # Rows may be followed by either `},\n` or `}\n` depending on whether
-    # another row follows. Always choose the nearest valid terminator so a
-    # canonical repair cannot consume adjacent market rows.
-    candidates = []
-    for terminator in ("},\n", "}\n"):
-        pos = text.find(terminator, marker_pos)
-        if pos >= 0:
-            candidates.append(pos)
-    if not candidates:
-        raise SystemExit("Found Boulder County marker but could not locate row end")
-    row_end = min(candidates)
+    # another row follows. Always choose the nearest valid terminator within
+    # the rows array so a canonical repair cannot consume adjacent content.
+    row_end_candidates = [
+        pos for terminator in ("},\n", "}\n")
+        if (pos := text.find(terminator, marker_pos, rows_end)) >= 0
+    ]
+    if not row_end_candidates:
+        raise SystemExit("Found Boulder County marker but could not locate row end within rows array")
+    row_end = min(row_end_candidates)
     return row_start, row_end + 1
 
 
