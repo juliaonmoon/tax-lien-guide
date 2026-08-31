@@ -9,19 +9,26 @@ ROW = r'''{state:'Colorado — Clear Creek County',product:'Tax lien certificate
 
 
 def find_row_bounds(text: str):
-    marker_pos = text.find(MARKER)
+    rows_start = text.find("const rows=[")
+    if rows_start < 0:
+        raise SystemExit("Could not find rows array")
+    rows_end = text.find("\n];", rows_start)
+    if rows_end < 0:
+        raise SystemExit("Could not find end of rows array")
+
+    marker_pos = text.find(MARKER, rows_start, rows_end)
     if marker_pos < 0:
         return None
-    row_start = text.rfind("{state:", 0, marker_pos + 1)
+    row_start = text.rfind("{state:", rows_start, marker_pos + 1)
     if row_start < 0:
-        raise SystemExit("Found Clear Creek County marker but could not locate row start")
+        raise SystemExit("Found Clear Creek County marker but could not locate row start within rows array")
     endings = []
     for token in ("},\n", "}\n,", "}\n];"):
-        pos = text.find(token, marker_pos)
+        pos = text.find(token, marker_pos, rows_end + 4)
         if pos >= 0:
             endings.append(pos)
     if not endings:
-        raise SystemExit("Found Clear Creek County marker but could not locate row end")
+        raise SystemExit("Found Clear Creek County marker but could not locate row end within rows array")
     return row_start, min(endings) + 1
 
 
