@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-31T09:21:11.856334+00:00",
+  "source_updated_at": "2026-08-31T10:20:59.930012+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2383,7 +2383,7 @@
       "legal_description": "101 MEYDENBAUER CONDO PERCENTAGE OF VALUE 3.47",
       "tax_status": "T",
       "tax_due_estimate": 86887.28,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "6390000360",
