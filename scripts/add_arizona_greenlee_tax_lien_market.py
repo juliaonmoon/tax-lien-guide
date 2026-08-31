@@ -23,12 +23,18 @@ def add_greenlee():
         row_start = text.rfind("{state:", start, marker_pos + 1)
         if row_start < 0:
             raise SystemExit("Could not find Greenlee row start")
-        row_end = text.find("}\n", marker_pos, end)
-        if row_end < 0:
-            row_end = text.find("},\n", marker_pos, end)
-            if row_end < 0:
-                raise SystemExit("Could not find Greenlee row end")
-        row_end += 1
+
+        terminators = [
+            pos for pos in (
+                text.find("},\n", marker_pos, end),
+                text.find("}\n", marker_pos, end),
+            )
+            if pos >= 0
+        ]
+        if not terminators:
+            raise SystemExit("Could not find Greenlee row end")
+        row_end = min(terminators) + 1
+
         existing = text[row_start:row_end]
         if existing == ROW:
             print("Arizona Greenlee County canonical row already present")
