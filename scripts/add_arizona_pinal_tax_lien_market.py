@@ -9,18 +9,30 @@ ROW = r'''{state:'Arizona — Pinal County',product:'Tax lien / Certificate of P
 
 
 def find_row_bounds(text: str):
-    marker_pos = text.find(MARKER)
+    rows_start = text.find("const rows=[")
+    if rows_start < 0:
+        raise SystemExit("Could not find rows array")
+    rows_end = text.find("\n];", rows_start)
+    if rows_end < 0:
+        raise SystemExit("Could not find end of rows array")
+
+    marker_pos = text.find(MARKER, rows_start, rows_end)
     if marker_pos < 0:
         return None
-    row_start = text.rfind("{state:", 0, marker_pos + 1)
+    row_start = text.rfind("{state:", rows_start, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found Pinal marker but could not locate row start")
-    row_end = text.find("}\n", marker_pos)
-    if row_end < 0:
-        row_end = text.find("},\n", marker_pos)
-        if row_end < 0:
-            raise SystemExit("Found Pinal marker but could not locate row end")
-    return row_start, row_end + 1
+
+    terminators = [
+        pos for pos in (
+            text.find("},\n", marker_pos, rows_end),
+            text.find("}\n", marker_pos, rows_end),
+        )
+        if pos >= 0
+    ]
+    if not terminators:
+        raise SystemExit("Found Pinal marker but could not locate row end")
+    return row_start, min(terminators) + 1
 
 
 def main():
