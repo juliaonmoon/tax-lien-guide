@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import subprocess
-import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
@@ -47,13 +45,6 @@ def add_greenlee():
 
 def main():
     add_greenlee()
-    # Keep the newly verified Colorado market in the recurring refresh without
-    # creating a second data-writing workflow. This script is already an
-    # explicit recurring market-publisher step in refresh-properties.yml.
-    subprocess.run(
-        [sys.executable, str(ROOT / "scripts" / "add_colorado_arapahoe_tax_lien_market.py")],
-        check=True,
-    )
 
 
 if __name__ == "__main__":
