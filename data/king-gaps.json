@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-31T05:25:14.268663+00:00",
+  "source_updated_at": "2026-08-31T06:27:44.139037+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2364,7 +2364,7 @@
       "legal_description": "NORTHWESTERN GARDEN TRS DIV #5 TR 4 LESS E 60 FT KC SEPARATE LOT REVIEW FILE NO S92M0024 DATED MAY 1, 1992",
       "tax_status": "T",
       "tax_due_estimate": 3774.84,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "6390000220",
