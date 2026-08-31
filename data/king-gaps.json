@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-08-31T10:20:59.930012+00:00",
+  "source_updated_at": "2026-08-31T11:39:27.956199+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1219,7 +1219,7 @@
       "legal_description": "FRYES ADD TO COLUMBIA N 1/2",
       "tax_status": "T",
       "tax_due_estimate": 8567.51,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "2722059263",
@@ -2267,7 +2267,7 @@
       "legal_description": "MILLERS TO LAKE FOREST PARK ADD",
       "tax_status": "T",
       "tax_due_estimate": 42137.26,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "5561100420",
@@ -2383,7 +2383,7 @@
       "legal_description": "101 MEYDENBAUER CONDO PERCENTAGE OF VALUE 3.47",
       "tax_status": "T",
       "tax_due_estimate": 86887.28,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "6390000360",
@@ -2788,7 +2788,7 @@
       "legal_description": "SEELEYS TO DES MOINES VAC S 25 FT OF N 225 FT",
       "tax_status": "T",
       "tax_due_estimate": 753.54,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "7787890350",
