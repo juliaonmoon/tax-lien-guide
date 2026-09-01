@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-01T12:29:04.861699+00:00",
+  "source_updated_at": "2026-09-01T13:32:08.805233+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -341,7 +341,7 @@
       "legal_description": "GL 1 LESS W 830 FT LESS S 135 FT LESS POR GL 1 DAF - BEG NXN E LN W 1/2 - NW 1/4 SD SEC WITH N LN S 135 FT SD SUBD TH W PLT S LN GL 1 SD SEC 450 FT M/L TAP ON ON LOW WATER LN OF UPPER BEAVER LK TH NELY TAP ON E LN SD SUBD 84 FT N TPOB TH S ALG SD E LN TPOB (PER DEED REC # 9411100750) - AKA LOT B KC BLA, #L93L0036 REC #94111089005 - LESS POR LY SLY OF NLY LN E BEAVER LK DR SE PER KC SEPARATE LOT REVIEW #L95M0131 DTD 12-12-95",
       "tax_status": "T",
       "tax_due_estimate": 8826.11,
-      "enrichment_note": "legal description, tax lookup HTTPError"
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "0185000051",
