@@ -22,14 +22,22 @@ def find_row_bounds(text: str):
     row_start = text.rfind("{state:", rows_start, marker_pos + 1)
     if row_start < 0:
         raise SystemExit("Found Archuleta County marker but could not locate row start")
-    row_end_candidates = [
-        pos for terminator in ("},\n", "}\n")
-        if (pos := text.find(terminator, marker_pos, rows_end)) >= 0
-    ]
-    if not row_end_candidates:
+
+    # Include the rows-array closing newline in the terminator search so a
+    # canonical repair also works when Archuleta is the final row. Still refuse
+    # any terminator that would escape beyond the rows array closing sequence.
+    search_end = rows_end + len("\n];")
+    terminators = []
+    for token in ("},\n", "}\n,", "}\n];"):
+        pos = text.find(token, marker_pos, search_end)
+        if pos >= 0:
+            terminators.append(pos)
+    if not terminators:
         raise SystemExit("Found Archuleta County marker but could not locate row end within rows array")
-    row_end = min(row_end_candidates)
-    return row_start, row_end + 1
+    row_end = min(terminators) + 1
+    if row_start < rows_start or row_end > rows_end + 1:
+        raise SystemExit("Refusing Archuleta County repair outside rows array")
+    return row_start, row_end
 
 
 def main():
