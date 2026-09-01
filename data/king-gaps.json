@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-01T16:22:55.305396+00:00",
+  "source_updated_at": "2026-09-01T16:28:12.476844+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2037,7 +2037,7 @@
       "legal_description": "LAKOTA ADD LESS SWLY 140 FT THOF",
       "tax_status": "T",
       "tax_due_estimate": 1212.9,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "4193100130",
