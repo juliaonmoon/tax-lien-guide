@@ -23,18 +23,21 @@ def find_row_bounds(text: str):
     if row_start < 0:
         raise SystemExit("Found El Paso County marker but could not locate row start")
 
-    # A row can be followed by either `},\n` or `}\n` depending on whether it
-    # is currently the final entry. Always select the nearest valid terminator,
-    # but never search beyond the actual market rows array.
+    # Include the rows-array closing newline in the terminator search so a
+    # canonical repair also works when El Paso is the final row. Still refuse
+    # any terminator that would escape beyond the rows array closing sequence.
+    search_end = rows_end + len("\n];")
     terminators = []
-    for token in ("},\n", "}\n"):
-        pos = text.find(token, marker_pos, rows_end)
+    for token in ("},\n", "}\n,", "}\n];"):
+        pos = text.find(token, marker_pos, search_end)
         if pos >= 0:
             terminators.append(pos)
     if not terminators:
-        raise SystemExit("Found El Paso County marker but could not locate row end")
-    row_end = min(terminators)
-    return row_start, row_end + 1
+        raise SystemExit("Found El Paso County marker but could not locate row end within rows array")
+    row_end = min(terminators) + 1
+    if row_start < rows_start or row_end > rows_end + 1:
+        raise SystemExit("Refusing El Paso County repair outside rows array")
+    return row_start, row_end
 
 
 def main():
