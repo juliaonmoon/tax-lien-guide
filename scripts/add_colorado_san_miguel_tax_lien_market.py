@@ -8,28 +8,41 @@ MARKER = "Colorado — San Miguel County"
 ROW = r'''{state:'Colorado — San Miguel County',product:'Tax lien certificate / Certificate of Purchase',schedule:'San Miguel County’s current Treasurer page announces its annual online tax-lien sale for October 27 at 10:00 a.m. MDT through GovEase. The extracted official page does not print a year beside that date, so verify the current-year sale notice and parcel list before bidding.',availability:'Annual online sale announced for October 27; current-year parcel list/rules should be verified on the official Treasurer/GovEase notice',maxReturn:'Variable annual statutory rate; 2026 rate pending',interest:'Colorado tax-lien certificate interest is set annually under state law. San Miguel County’s page confirms investors earn interest on purchased tax liens; do not carry a prior-year percentage into 2026 before the current rate is officially set/published.',bid:'https://sanmiguelcountyco.gov/261/Tax-Lien-Sale',canadian:'The current county page does not clearly publish foreign-bidder eligibility. Confirm GovEase registration, identity, payment and U.S. tax-document requirements before funding.',itin:'Not clearly published for foreign bidders on the current county page; verify taxpayer-identification requirements with San Miguel County/GovEase.',online:'Yes — San Miguel County says the annual tax-lien sale is online through GovEase.',otc:'County-held tax liens that are not purchased at the annual sale may be available to the public. The county page currently states there are no county-held tax liens available.',deed:'Buying a tax lien does not transfer ownership or possession. San Miguel County separately maintains Treasurer Deed procedures, which are a later stage distinct from the original tax-lien purchase.',special:'MARKET-LEVEL ONLY until San Miguel County publishes a current-year parcel list in a form that can be safely and unambiguously ingested. Do not substitute Public Trustee mortgage foreclosures, Treasurer Deed records, owner-name data, prior-year parcel lists, or fabricated opening-bid amounts.',source:'https://sanmiguelcountyco.gov/261/Tax-Lien-Sale'}'''
 
 
-def find_row_bounds(text: str):
-    marker_pos = text.find(MARKER)
+def rows_array_bounds(text: str):
+    start = text.find("const rows=[")
+    if start < 0:
+        raise SystemExit("Could not find rows array")
+    end = text.find("\n];", start)
+    if end < 0:
+        raise SystemExit("Could not find end of rows array")
+    return start, end
+
+
+def find_row_bounds(text: str, rows_start: int, rows_end: int):
+    marker_pos = text.find(MARKER, rows_start, rows_end)
     if marker_pos < 0:
         return None
-    row_start = text.rfind("{state:", 0, marker_pos + 1)
-    if row_start < 0:
-        raise SystemExit("Found San Miguel County marker but could not locate row start")
+    row_start = text.rfind("{state:", rows_start, marker_pos + 1)
+    if row_start < rows_start:
+        raise SystemExit("Found San Miguel County marker but could not locate row start inside rows array")
 
     endings = []
     for token in ("},\n", "}\n,", "}\n];"):
-        pos = text.find(token, marker_pos)
-        if pos >= 0:
+        pos = text.find(token, marker_pos, rows_end + len("\n];"))
+        if pos >= 0 and pos <= rows_end:
             endings.append(pos)
     if not endings:
-        raise SystemExit("Found San Miguel County marker but could not locate row end")
-    row_end = min(endings)
-    return row_start, row_end + 1
+        raise SystemExit("Found San Miguel County marker but could not locate row end inside rows array")
+    row_end = min(endings) + 1
+    if row_end > rows_end:
+        raise SystemExit("San Miguel County row repair would escape rows array")
+    return row_start, row_end
 
 
 def main():
     text = INDEX.read_text(encoding="utf-8")
-    bounds = find_row_bounds(text)
+    rows_start, rows_end = rows_array_bounds(text)
+    bounds = find_row_bounds(text, rows_start, rows_end)
     if bounds:
         start, end = bounds
         existing = text[start:end]
@@ -40,14 +53,7 @@ def main():
         print("Restored canonical Colorado San Miguel County tax-lien market row")
         return
 
-    start = text.find("const rows=[")
-    if start < 0:
-        raise SystemExit("Could not find rows array")
-    end = text.find("\n];", start)
-    if end < 0:
-        raise SystemExit("Could not find end of rows array")
-
-    before, after = text[:end], text[end:]
+    before, after = text[:rows_end], text[rows_end:]
     insertion = "\n" + ROW if before.rstrip().endswith(',') else ",\n" + ROW
     INDEX.write_text(before + insertion + after, encoding="utf-8")
     print("Added Colorado San Miguel County tax-lien market")
