@@ -28,8 +28,10 @@ def find_row_bounds(text: str, start: int, end: int):
     if not endings:
         raise SystemExit("Found Mohave marker but could not locate row end")
 
-    row_end = min(endings)
-    return row_start, row_end + 1
+    row_end = min(endings) + 1
+    if not (start <= row_start < row_end <= end + 1):
+        raise SystemExit("Refusing Mohave repair outside rows array")
+    return row_start, row_end
 
 
 def main():
