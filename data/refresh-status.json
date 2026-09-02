@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-02T08:34:03.089055+00:00",
+  "updated_at": "2026-09-02T09:30:51.814610+00:00",
   "refresh_frequency": "daily",
   "prototype": true,
   "states_tracked": 9,
   "counties_tracked": 22,
-  "official_sources_registered": 5,
-  "property_count": 17261,
+  "official_sources_registered": 6,
+  "property_count": 17259,
   "source_health": [
     {
       "state": "FL",
@@ -32,13 +32,13 @@
       "auction_url": "https://king.wa.realforeclose.com/",
       "checked_at": "2026-09-02T08:30:15.509643+00:00",
       "ok": true,
-      "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145. King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145. King County assessed-value fallback: attempted 0 missing-value parcels; recovered 0 (0 from official tax receivables, 0 from eReal); eReal reachable for 0; failures none. King County official foreclosure-status fallback filled tax status for 2/145 rows; documented individual-Recorder requirement for 2 missing legal descriptions."
+      "note": "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145. King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145. King County assessed-value fallback: attempted 0 missing-value parcels; recovered 0 (0 from official tax receivables, 0 from eReal); eReal reachable for 0; failures none. King County official foreclosure-status fallback filled tax status for 0/145 rows; documented individual-Recorder requirement for 2 missing legal descriptions."
     },
     {
       "state": "FL",
       "county": "Putnam",
       "source_url": "https://apps.putnam-fl.com/coc/taxdeeds/public/public_LAFT.php",
-      "checked_at": "2026-09-02T08:31:45.471099+00:00",
+      "checked_at": "2026-09-02T09:27:35.690148+00:00",
       "ok": true,
       "note": "Live official list parsed: 40 lands-available parcels; FDOR cadastral matched 41/41 Florida parcels"
     },
@@ -46,7 +46,7 @@
       "state": "FL",
       "county": "Escambia",
       "source_url": "https://public.escambiaclerk.com/taxsale/landsavailable.asp",
-      "checked_at": "2026-09-02T08:31:45.471099+00:00",
+      "checked_at": "2026-09-02T09:27:35.690148+00:00",
       "ok": false,
       "note": "Official host blocked automation (HTTPError); preserved 1 parcel from verified 2026-08-15 official-page snapshot; FDOR cadastral matched 41/41 Florida parcels"
     },
@@ -55,7 +55,7 @@
       "county": "Coconino",
       "source_url": "https://www.coconino.az.gov/376/Tax-Liens",
       "auction_url": "https://coconino.arizonataxsale.com/",
-      "checked_at": "2026-09-02T08:34:03.089055+00:00",
+      "checked_at": "2026-09-02T09:30:51.814610+00:00",
       "ok": true,
       "note": "Loaded 33 Coconino OTC tax-lien certificates from the official county list. County document host blocks GitHub automation (HTTP 403); using the verified 2026-08-14 official snapshot without bypassing that restriction."
     }
@@ -66,7 +66,6 @@
     "King County has not currently published the 2026 tax-foreclosure opening-bid amounts on its official auction page; do not estimate them or substitute separate Sheriff judicial-foreclosure opening bids.",
     "WA owner names are not bulk-aggregated into this investment screener because King County's eReal Property page warns that RCW 42.56.070(9) restricts use of lists of individuals for commercial purposes.",
     "Research priority is a transparent triage score, not a recommendation to bid or purchase.",
-    "Florida property expansion: 41 individual lands-available tax-deed parcels across Putnam and Escambia; FDOR cadastral matched 41/41 Florida parcels.",
     "King County tax normalization: corrected 143/145 rows from fixed-width cents to dollars; 0 rows were already normalized.",
     "King County coordinate repair: 145/145 parcels now have latitude+longitude (70 address-point, 0 parcel-address, 52 parcel-centroid in this run).",
     "King County coordinate-to-area repair changed 0/145 rows; recovered 0 city/jurisdiction values and 0 ZIP codes. Current city+ZIP fill: 145/145.",
@@ -76,6 +75,17 @@
     "King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145.",
     "King County assessed-value fallback: attempted 0 missing-value parcels; recovered 0 (0 from official tax receivables, 0 from eReal); eReal reachable for 0; failures none.",
     "King County official foreclosure-status fallback filled tax status for 2/145 rows; documented individual-Recorder requirement for 2 missing legal descriptions.",
+    "Loaded 33 Coconino OTC tax-lien certificates from the official county list. County document host blocks GitHub automation (HTTP 403); using the verified 2026-08-14 official snapshot without bypassing that restriction. sale_type=tax_lien keeps these rows distinct from tax deed/foreclosure rows.",
+    "Florida property expansion: 41 individual lands-available tax-deed parcels across Putnam and Escambia; FDOR cadastral matched 41/41 Florida parcels.",
+    "King County tax normalization: corrected 0/145 rows from fixed-width cents to dollars; 143 rows were already normalized.",
+    "King County coordinate repair: 145/145 parcels now have latitude+longitude (70 address-point, 0 parcel-address, 52 parcel-centroid in this run).",
+    "King County coordinate-to-area repair changed 0/145 rows; recovered 0 city/jurisdiction values and 0 ZIP codes. Current city+ZIP fill: 145/145.",
+    "King County orphan public fallback changed 0/145 rows; recovered city+ZIP 0, property type 0, zoning 0, lot size 0. No street address, coordinates, value, legal or tax fields were inferred.",
+    "WA State Parcels orphan fallback: targeted 0 King County rows; matched 0; changed 0; recovered value 0, coordinates 0, address 0.",
+    "King County verified fill: parcel-layer 122/145; address 70/145 (+0 recovered spatially); city+ZIP 145/145; coordinates 145/145; assessed value 145/145; property type 145/145; legal 143/145; neighborhood metrics 145/145.",
+    "King County condo-parent fallback changed 21/145 rows; recovered address 21, city/ZIP 0, coordinates 0, property type 0. Current fill: address 91/145, city+ZIP 145/145, coordinates 145/145, property type 145/145, neighborhood metrics 145/145.",
+    "King County assessed-value fallback: attempted 0 missing-value parcels; recovered 0 (0 from official tax receivables, 0 from eReal); eReal reachable for 0; failures none.",
+    "King County official foreclosure-status fallback filled tax status for 0/145 rows; documented individual-Recorder requirement for 2 missing legal descriptions.",
     "Loaded 33 Coconino OTC tax-lien certificates from the official county list. County document host blocks GitHub automation (HTTP 403); using the verified 2026-08-14 official snapshot without bypassing that restriction. sale_type=tax_lien keeps these rows distinct from tax deed/foreclosure rows."
   ],
   "coverage_counts": {
@@ -85,12 +95,12 @@
       "counties": 11
     },
     "tax_lien": {
-      "records": 16794,
+      "records": 16792,
       "states": 4,
       "counties": 12
     },
     "combined": {
-      "records": 17261,
+      "records": 17259,
       "states": 9,
       "counties": 22
     }
