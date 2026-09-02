@@ -11,6 +11,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/ensure-post-refresh-tax-liens.yml"
+      - "scripts/add_arizona_*_tax_lien_market.py"
       - "scripts/add_colorado_*_tax_lien_market.py"
       - "scripts/add_florida_*_tax_lien_market.py"
       - "scripts/add_indiana_*"
@@ -59,7 +60,7 @@ jobs:
           # replace their terminal market row and can otherwise strip Maryland rows
           # that were appended immediately after it. This order matches the stable
           # consolidated Indiana/Maryland workflow and makes generation idempotent.
-          states=(colorado florida iowa montana)
+          states=(arizona colorado florida iowa montana)
 
           for attempt in 1 2 3; do
             git fetch origin main
