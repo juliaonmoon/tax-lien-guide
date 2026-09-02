@@ -17,6 +17,7 @@ on:
       - "scripts/add_indiana_*"
       - "scripts/add_iowa_*_tax_lien_market.py"
       - "scripts/add_montana_*_tax_lien_market.py"
+      - "scripts/add_nebraska_*_tax_lien_market.py"
       - "scripts/add_maryland_*_tax_lien_market.py"
       - "scripts/validate_arizona_*_market.py"
       - "scripts/validate_colorado_*_market.py"
@@ -24,6 +25,7 @@ on:
       - "scripts/validate_indiana_*"
       - "scripts/validate_iowa_*_market.py"
       - "scripts/validate_montana_*_market.py"
+      - "scripts/validate_nebraska_*_market.py"
       - "scripts/validate_maryland_*_market.py"
       - "scripts/validate_post_refresh_market_durability.py"
       - "scripts/add_max_return_rates.py"
@@ -60,8 +62,8 @@ jobs:
           # Keep Indiana before Maryland. Some Indiana certificate-sale publishers
           # replace their terminal market row and can otherwise strip Maryland rows
           # that were appended immediately after it. This order matches the stable
-          # # consolidated Indiana/Maryland workflow and makes generation idempotent.
-          states=(arizona colorado florida iowa montana)
+          # consolidated Indiana/Maryland workflow and makes generation idempotent.
+          states=(arizona colorado florida iowa montana nebraska)
 
           for attempt in 1 2 3; do
             git fetch origin main
