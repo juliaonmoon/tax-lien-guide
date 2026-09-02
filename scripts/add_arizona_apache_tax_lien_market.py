@@ -14,7 +14,7 @@ def find_row_bounds(text: str, start: int, end: int):
         return None
 
     row_start = text.rfind("{state:", start, marker_pos + 1)
-    if row_start < 0:
+    if row_start < start:
         raise SystemExit("Found Apache County marker but could not locate row start")
 
     # index.html contains multiple valid row-separator styles. Choose the
@@ -29,8 +29,10 @@ def find_row_bounds(text: str, start: int, end: int):
     if not endings:
         raise SystemExit("Found Apache County marker but could not locate row end")
 
-    row_end = min(endings)
-    return row_start, row_end + 1
+    row_end = min(endings) + 1
+    if not (start <= row_start < row_end <= end):
+        raise SystemExit("Refusing Apache County repair outside rows array")
+    return row_start, row_end
 
 
 def main():
