@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-02T14:25:54.852097+00:00",
+  "source_updated_at": "2026-09-02T14:35:59.020820+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1862,7 +1862,7 @@
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
       "tax_due_estimate": 2678.4,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "3812400071",
@@ -2267,7 +2267,7 @@
       "legal_description": "MILLERS TO LAKE FOREST PARK ADD",
       "tax_status": "T",
       "tax_due_estimate": 42137.26,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "5561100420",
