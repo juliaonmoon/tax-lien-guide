@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-01T23:17:30.034637+00:00",
+  "source_updated_at": "2026-09-02T00:17:35.031550+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -459,7 +459,7 @@
       "legal_description": "ANGLE LAKE SHORE ACRES # 2 UNREC & SH LDS ADJ",
       "tax_status": "T",
       "tax_due_estimate": 4474.46,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "0279000010",
