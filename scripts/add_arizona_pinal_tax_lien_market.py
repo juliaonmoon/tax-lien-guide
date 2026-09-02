@@ -20,19 +20,25 @@ def find_row_bounds(text: str):
     if marker_pos < 0:
         return None
     row_start = text.rfind("{state:", rows_start, marker_pos + 1)
-    if row_start < 0:
+    if row_start < rows_start:
         raise SystemExit("Found Pinal marker but could not locate row start")
 
-    terminators = [
-        pos for pos in (
-            text.find("},\n", marker_pos, rows_end),
-            text.find("}\n", marker_pos, rows_end),
-        )
-        if pos >= 0
-    ]
-    if not terminators:
+    # Include the array-closing sequence in the bounded search so Pinal can be
+    # repaired safely even when it is the final row. Choose the nearest valid
+    # separator style rather than allowing a farther terminator to consume
+    # following rows.
+    endings = []
+    for token in ("},\n", "}\n,", "}\n];"):
+        pos = text.find(token, marker_pos, rows_end + 3)
+        if pos >= 0:
+            endings.append(pos)
+    if not endings:
         raise SystemExit("Found Pinal marker but could not locate row end")
-    return row_start, min(terminators) + 1
+
+    row_end = min(endings) + 1
+    if row_start < rows_start or row_end > rows_end + 1:
+        raise SystemExit("Refusing to repair Pinal row outside rows array")
+    return row_start, row_end
 
 
 def main():
