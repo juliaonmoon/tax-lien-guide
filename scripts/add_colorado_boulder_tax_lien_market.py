@@ -23,16 +23,18 @@ def find_row_bounds(text: str):
     if row_start < 0:
         raise SystemExit("Found Boulder County marker but could not locate row start")
 
-    # Rows may be followed by either `},\n` or `}\n` depending on whether
-    # another row follows. Always choose the nearest valid terminator within
-    # the rows array so a canonical repair cannot consume adjacent content.
+    # Include the array-closing sequence in the bounded search so the county
+    # can also be repaired safely when it is the final market row.
+    search_end = rows_end + len("\n];")
     row_end_candidates = [
         pos for terminator in ("},\n", "}\n")
-        if (pos := text.find(terminator, marker_pos, rows_end)) >= 0
+        if (pos := text.find(terminator, marker_pos, search_end)) >= 0
     ]
     if not row_end_candidates:
         raise SystemExit("Found Boulder County marker but could not locate row end within rows array")
     row_end = min(row_end_candidates)
+    if row_end > rows_end:
+        raise SystemExit("Boulder County row repair would escape rows array")
     return row_start, row_end + 1
 
 
