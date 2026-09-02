@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-02T17:40:12.239871+00:00",
+  "source_updated_at": "2026-09-02T18:18:25.037465+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2517,7 +2517,7 @@
       "legal_description": "REDONDO BEACH DIV # 1",
       "tax_status": "T",
       "tax_due_estimate": 12115.79,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "7203601510",
