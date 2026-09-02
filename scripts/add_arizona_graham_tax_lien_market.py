@@ -14,8 +14,8 @@ def find_row_bounds(text: str, start: int, end: int):
         return None
 
     row_start = text.rfind("{state:", start, marker_pos + 1)
-    if row_start < 0:
-        raise SystemExit("Found Graham County marker but could not locate row start")
+    if row_start < start:
+        raise SystemExit("Found Graham County marker but could not locate row start inside rows array")
 
     # index.html contains multiple valid row-separator styles. Choose the
     # nearest valid terminator so a stale-row repair cannot consume subsequent
@@ -28,8 +28,10 @@ def find_row_bounds(text: str, start: int, end: int):
     if not endings:
         raise SystemExit("Found Graham County marker but could not locate row end")
 
-    row_end = min(endings)
-    return row_start, row_end + 1
+    row_end = min(endings) + 1
+    if row_end > end + 1:
+        raise SystemExit("Refusing Graham County repair outside rows array")
+    return row_start, row_end
 
 
 def main():
