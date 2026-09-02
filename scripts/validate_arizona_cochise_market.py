@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
@@ -18,7 +19,6 @@ REQUIRED = (
 
 FORBIDDEN = (
     "guaranteed return",
-    "guaranteed inventory",
     "immediate ownership",
     "current opening bid",
 )
@@ -64,7 +64,13 @@ def main():
     if bad:
         raise SystemExit(f"Cochise County row contains unsafe/misleading language: {bad}")
 
-    if "availability:'guaranteed" in lowered:
+    # Reject affirmative inventory guarantees, while permitting explicit safety
+    # disclaimers such as "do not treat ... as guaranteed inventory".
+    guarantee_patterns = (
+        r"availability\s*:\s*['\"]guaranteed\b",
+        r"\b(?:is|are|remains?|offers?|provides?)\s+guaranteed\s+inventory\b",
+    )
+    if any(re.search(pattern, lowered) for pattern in guarantee_patterns):
         raise SystemExit("Cochise County availability must remain live-source-qualified")
 
     print("Cochise County tax-lien market row validated")
