@@ -45,6 +45,8 @@ def main():
     bounds = find_row_bounds(text, start, end)
     if bounds:
         row_start, row_end = bounds
+        if row_start < start or row_end > end + 1:
+            raise SystemExit("Refusing to repair Navajo row outside rows array")
         existing = text[row_start:row_end]
         if existing == ROW:
             print("Arizona Navajo County row already canonical")
