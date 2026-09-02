@@ -39,6 +39,9 @@ def find_row_bounds(text: str):
         row_end = rows_end
     else:
         raise SystemExit("Found Santa Cruz marker but could not locate row end")
+
+    if not (rows_start <= row_start < row_end <= rows_end):
+        raise SystemExit("Refusing Santa Cruz row repair outside rows array")
     return row_start, row_end
 
 
