@@ -29,6 +29,8 @@ ALLOWED_HOSTS = {
     "www.scottsbluffcountyne.gov",
     "thurstoncountyne.gov",
     "www.thurstoncountyne.gov",
+    "adamscountyne.gov",
+    "www.adamscountyne.gov",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
 
