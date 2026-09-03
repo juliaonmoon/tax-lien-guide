@@ -25,7 +25,7 @@ EVENT = {
     "sale_status": "Buffalo County's officially published 2026 public sale occurred March 2, 2026. Historical market-level event only; no current parcel or certificate inventory is asserted.",
     "official_source_url": "https://buffalocounty.ne.gov/Portals/0/2026%20TAX%20SALE%20INFORMATION%20FOR%20WEBSITE%20%281%29.pdf",
     "secondary_official_source_url": "https://buffalocounty.ne.gov/county-offices/treasurer",
-    "important_rules": "Market-level calendar event only. The 2026 procedure was an in-person tax-sale certificate sale, not an online auction or immediate property transfer. The registration materials require a W-9 but do not establish foreign-bidder or ITIN acceptance. No owner names, current parcel inventory, opening/minimum bids, property characteristics, redemption outcomes, or deed outcomes are republished or inferred.",
+    "important_rules": "Market-level calendar event only. The 2026 procedure was an in-person tax-sale certificate sale, not an online auction, and not immediate property transfer. The registration materials require a W-9 but do not establish foreign-bidder or ITIN acceptance. No owner names, current parcel inventory, opening/minimum bids, property characteristics, redemption outcomes, or deed outcomes are republished or inferred.",
     "data_source": "Buffalo County Treasurer 2026 Tax Sale Information and Treasurer page",
     "last_verified": "2026-09-03",
     "market_level_only": True,
