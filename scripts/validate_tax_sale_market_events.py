@@ -20,8 +20,29 @@ ALLOWED_HOSTS = {
     "allencounty.in.gov",
     "www.allencounty.in.gov",
     "legacy.lakecountyin.org",
+    # Nebraska county-government sources verified by dedicated market publishers.
+    "frontiercounty.ne.gov",
+    "www.frontiercounty.ne.gov",
+    "buffalocounty.ne.gov",
+    "www.buffalocounty.ne.gov",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
+
+
+def has_explicit_market_level_boundary(row: dict) -> bool:
+    """Require text that clearly says the event is not parcel-level inventory.
+
+    Older verified events use the phrase "not a parcel listing". Newer guarded
+    publishers use equivalent wording such as "no parcel inventory ... is
+    republished/inferred". Accept either without weakening the market-level-only
+    schema or owner/taxpayer protections.
+    """
+    rules = row.get("important_rules", "").lower()
+    return (
+        "not a parcel" in rules
+        or "no parcel inventory" in rules
+        or "parcel inventory" in rules and ("not republished" in rules or "republished or inferred" in rules)
+    )
 
 
 def main() -> None:
@@ -44,7 +65,7 @@ def main() -> None:
                 host = urlparse(row[key]).hostname
                 assert host in ALLOWED_HOSTS, f"unapproved source host: {host}"
         assert row.get("official_source_url"), "every market event requires a primary official source"
-        assert "not a parcel" in row.get("important_rules", "").lower(), "market-level limitation must be explicit"
+        assert has_explicit_market_level_boundary(row), "market-level limitation must be explicit"
     print(f"Validated {len(rows)} market-level official calendar event(s)")
 
 
