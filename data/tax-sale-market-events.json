@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03T11:30:00Z",
+  "updated_at": "2026-09-03T12:11:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -141,6 +141,26 @@
       "secondary_official_source_url": "https://frontiercounty.ne.gov/wp-content/uploads/sites/43/2026/02/Tax-Sale-Registration-Form.pdf",
       "important_rules": "Market-level calendar event only. Frontier County states certificate purchasers buy delinquent taxes, not the property; its page states a three-year redemption time and 14% interest. The public sale is separate from any later foreclosure process. No owner names, parcel inventory, opening/minimum bids, or current private-sale availability are republished or inferred here.",
       "data_source": "Frontier County Treasurer Public Tax Sale Information and official 2026 Tax Sale Registration Form",
+      "last_verified": "2026-09-03",
+      "market_level_only": true
+    },
+    {
+      "record_id": "NE-BuffaloCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "NE",
+      "state_name": "Nebraska",
+      "county": "Buffalo County",
+      "sale_type": "tax_lien",
+      "product_type": "Public Tax Sale / tax sale certificate",
+      "auction_date": "2026-03-02",
+      "sale_date": "2026-03-02",
+      "auction_time": "09:00 CT",
+      "auction_format": "In-person Public Tax Sale at the Buffalo County Courthouse in Kearney",
+      "sale_status": "Buffalo County's officially published 2026 public sale occurred March 2, 2026. Historical market-level event only; no current parcel or certificate inventory is asserted.",
+      "official_source_url": "https://buffalocounty.ne.gov/Portals/0/2026%20TAX%20SALE%20INFORMATION%20FOR%20WEBSITE%20%281%29.pdf",
+      "secondary_official_source_url": "https://buffalocounty.ne.gov/county-offices/treasurer",
+      "important_rules": "Market-level calendar event only. The 2026 procedure was an in-person tax-sale certificate sale, not an online auction, and not immediate property transfer. The registration materials require a W-9 but do not establish foreign-bidder or ITIN acceptance. No owner names, current parcel inventory, opening/minimum bids, property characteristics, redemption outcomes, or deed outcomes are republished or inferred.",
+      "data_source": "Buffalo County Treasurer 2026 Tax Sale Information and Treasurer page",
       "last_verified": "2026-09-03",
       "market_level_only": true
     }
