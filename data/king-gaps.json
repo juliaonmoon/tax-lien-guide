@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-03T09:27:24.194125+00:00",
+  "source_updated_at": "2026-09-03T10:22:07.279457+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2634,7 +2634,7 @@
       "legal_description": "REXFORDS 1ST ADD PARCEL 'B' SEATTLE SHORT SUBDIVISION NO. 9606509 REC NO. 9705169001 SD SHORT SUBDIVISION DAF - LOTS 5 & 6 IN BLOCK 1 OF REXFORDS 1ST ADDITION PLAT",
       "tax_status": "T",
       "tax_due_estimate": 15337.62,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "7302000102",
