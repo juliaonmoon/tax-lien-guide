@@ -50,7 +50,6 @@ def main():
         "canadian bidders are eligible",
         "itin accepted",
         "itin is accepted",
-        "immediate tax-deed auction",
         "immediate ownership and possession",
         "online auction is available",
     ]
@@ -58,6 +57,11 @@ def main():
     if bad:
         raise SystemExit("Dodge County row contains unsupported claim(s): " + ", ".join(bad))
 
+    # The canonical row deliberately contains the phrase "immediate tax-deed auction"
+    # inside an explicit negative distinction. Reject affirmative/ambiguous uses without
+    # making that safety disclaimer itself a false positive.
+    if "immediate tax-deed auction" in lower and "not a sheriff foreclosure or an immediate tax-deed auction" not in lower:
+        raise SystemExit("Dodge County row must not represent the Treasurer tax-lien sale as an immediate tax-deed auction")
     if "immediate ownership" in lower and "not immediate ownership" not in lower:
         raise SystemExit("Dodge County row must preserve certificate versus ownership distinction")
     if "no for the published 2026 procedure" not in lower:
