@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-03T08:24:14.448143+00:00",
+  "source_updated_at": "2026-09-03T08:29:20.609956+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1219,7 +1219,7 @@
       "legal_description": "FRYES ADD TO COLUMBIA N 1/2",
       "tax_status": "T",
       "tax_due_estimate": 8567.51,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2722059263",
@@ -1762,7 +1762,7 @@
       "legal_description": "JACOBSONS G I ADD LOT \"F\" OF SEATTLE SP# 3028362 REC# 20201223900016 SD SP BEING POR OF BLK 1 OF SD ADD",
       "tax_status": "T",
       "tax_due_estimate": 3309.89,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3655500130",
