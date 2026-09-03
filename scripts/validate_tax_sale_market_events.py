@@ -25,6 +25,8 @@ ALLOWED_HOSTS = {
     "www.frontiercounty.ne.gov",
     "buffalocounty.ne.gov",
     "www.buffalocounty.ne.gov",
+    "scottsbluffcountyne.gov",
+    "www.scottsbluffcountyne.gov",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
 
