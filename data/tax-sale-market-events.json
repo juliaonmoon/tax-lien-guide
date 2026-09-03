@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03T21:11:00Z",
+  "updated_at": "2026-09-03T22:20:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -241,6 +241,25 @@
       "secondary_official_source_url": "https://adamscountyne.gov/treasurer",
       "important_rules": "Market-level calendar event only. This is Adams County's delinquent-real-property tax-lien/certificate process, not an immediate tax-deed, sheriff-foreclosure sale, or immediate property ownership. No owner/taxpayer names, parcel inventory, opening/minimum bids, amounts due, or bidder-eligibility claims are republished or inferred here.",
       "data_source": "Adams County Treasurer official Tax Sales page and Treasurer page; Nebraska redemption statutes",
+      "last_verified": "2026-09-03",
+      "market_level_only": true
+    },
+    {
+      "record_id": "NE-ColfaxCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "NE",
+      "state_name": "Nebraska",
+      "county": "Colfax County",
+      "sale_type": "tax_lien",
+      "product_type": "County Tax Sale / certificate of tax sale",
+      "auction_date": "2026-03-02",
+      "sale_date": "2026-03-02",
+      "auction_time": "09:00 CT",
+      "auction_format": "In-person county tax sale at the County Courthouse; randomly drawn bidder order with one choice per bidder per round",
+      "sale_status": "Colfax County's officially published 2026 County Tax Sale occurred March 2, 2026. Historical market-level event only; no current parcel or certificate inventory is asserted.",
+      "official_source_url": "https://colfaxcountyne.gov/treasurer-office/public-tax-sale-information/",
+      "important_rules": "Market-level calendar event only. This is Colfax County's delinquent-real-property tax-lien/certificate process, not an immediate tax-deed, sheriff-foreclosure sale, or immediate property ownership. No owner/taxpayer names, parcel inventory, opening/minimum bids, amounts due, property characteristics, or bidder-eligibility claims are republished or inferred here.",
+      "data_source": "Colfax County Treasurer official Public Tax Sale Information page; Nebraska redemption statutes",
       "last_verified": "2026-09-03",
       "market_level_only": true
     }
