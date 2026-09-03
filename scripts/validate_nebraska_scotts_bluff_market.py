@@ -20,7 +20,6 @@ FORBIDDEN = (
     "guaranteed deed",
     "Canadian eligible: yes",
     "current inventory is available",
-    "immediate ownership",
 )
 
 
@@ -69,7 +68,7 @@ def validate_calendar_event():
     missing = [phrase for phrase in required_text if phrase not in text]
     if missing:
         raise SystemExit("Scotts Bluff County calendar event missing safety/source text: " + ", ".join(missing))
-    bad = [phrase for phrase in ("currently available parcels", "guaranteed return", "guaranteed deed", "immediate ownership") if phrase in text]
+    bad = [phrase for phrase in ("currently available parcels", "guaranteed return", "guaranteed deed") if phrase in text]
     if bad:
         raise SystemExit("Scotts Bluff County calendar event contains unsupported claim(s): " + ", ".join(bad))
 
@@ -87,6 +86,8 @@ def main():
         raise SystemExit("Scotts Bluff row must preserve the official in-person sale method")
     if "no particular parcel or certificate is asserted as currently available" not in lowered:
         raise SystemExit("Scotts Bluff row must not imply current private-sale inventory")
+    if "not immediate ownership or possession" not in lowered or "purchasing delinquent taxes, not the property" not in lowered:
+        raise SystemExit("Scotts Bluff row must explicitly preserve lien-versus-ownership separation")
     validate_calendar_event()
     print("Scotts Bluff Nebraska tax-lien market and calendar validation passed")
 
