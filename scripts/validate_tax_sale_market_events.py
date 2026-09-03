@@ -33,6 +33,8 @@ ALLOWED_HOSTS = {
     "www.adamscountyne.gov",
     "colfaxcountyne.gov",
     "www.colfaxcountyne.gov",
+    "lancaster.ne.gov",
+    "www.lancaster.ne.gov",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
 
