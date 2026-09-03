@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
+EVENTS = ROOT / "data" / "tax-sale-market-events.json"
 MARKER = "Nebraska — Adams County"
+EVENT_ID = "NE-AdamsCounty-2026-market-event"
 
 REQUIRED = [
     "March 2, 2026",
@@ -34,6 +37,42 @@ def extract_row(text: str) -> str:
     return text[start:min(endings) + 1]
 
 
+def validate_calendar_event() -> None:
+    payload = json.loads(EVENTS.read_text(encoding="utf-8"))
+    matches = [item for item in payload.get("properties", []) if item.get("record_id") == EVENT_ID]
+    if len(matches) != 1:
+        raise SystemExit(f"Expected exactly one Adams County calendar event, found {len(matches)}")
+    event = matches[0]
+    expected = {
+        "record_type": "market_event",
+        "state": "NE",
+        "county": "Adams County",
+        "sale_type": "tax_lien",
+        "auction_date": "2026-03-02",
+        "sale_date": "2026-03-02",
+        "market_level_only": True,
+        "official_source_url": "https://adamscountyne.gov/treasurer/57-tax-sales",
+    }
+    for key, value in expected.items():
+        if event.get(key) != value:
+            raise SystemExit(f"Adams County calendar event has unexpected {key}: {event.get(key)!r}")
+    rules = event.get("important_rules", "").lower()
+    required_rules = [
+        "market-level calendar event only",
+        "tax-lien/certificate",
+        "not an immediate tax-deed",
+        "no owner/taxpayer names",
+        "parcel inventory",
+        "opening/minimum bids",
+    ]
+    missing_rules = [phrase for phrase in required_rules if phrase not in rules]
+    if missing_rules:
+        raise SystemExit("Adams County calendar event missing safety boundary text: " + ", ".join(missing_rules))
+    forbidden_keys = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
+    if forbidden_keys & set(event):
+        raise SystemExit("Adams County market event must not contain owner/taxpayer fields")
+
+
 def main():
     row = extract_row(INDEX.read_text(encoding="utf-8"))
     missing = [item for item in REQUIRED if item not in row]
@@ -62,7 +101,8 @@ def main():
     if "no for the published 2026 procedure" not in lower:
         raise SystemExit("Adams County row must preserve the official in-person 2026 sale method")
 
-    print("Adams County Nebraska market validation passed")
+    validate_calendar_event()
+    print("Adams County Nebraska market and calendar validation passed")
 
 
 if __name__ == "__main__":
