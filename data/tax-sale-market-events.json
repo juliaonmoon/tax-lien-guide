@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03T17:20:00Z",
+  "updated_at": "2026-09-03T15:15:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -181,26 +181,6 @@
       "secondary_official_source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-1824",
       "important_rules": "Market-level calendar event only. This is a tax-lien/certificate sale, not an immediate property transfer. Nebraska redemption interest is governed by section 77-1824 and the rate referenced in section 45-104.01. No owner names, parcel inventory, opening/minimum bids, or bidder-eligibility claims are republished or inferred here.",
       "data_source": "Hall County Treasurer official delinquent-tax sale notice and Nebraska Legislature",
-      "last_verified": "2026-09-03",
-      "market_level_only": true
-    },
-    {
-      "record_id": "NE-ScottsBluffCounty-2026-market-event",
-      "record_type": "market_event",
-      "state": "NE",
-      "state_name": "Nebraska",
-      "county": "Scotts Bluff County",
-      "sale_type": "tax_lien",
-      "product_type": "Public tax sale / tax sale certificate",
-      "auction_date": "2026-03-02",
-      "sale_date": "2026-03-02",
-      "auction_time": "09:00 MT",
-      "auction_format": "In-person public tax sale; round-robin bidder procedure",
-      "sale_status": "The 2026 public tax sale has passed. Historical market-level event only; no current parcel inventory is asserted. The county says remaining parcel taxes may move to Private Tax Sale after the public sale, subject to current official availability and procedure.",
-      "official_source_url": "https://scottsbluffcountyne.gov/treasurer-office/public-tax-sale-information/",
-      "secondary_official_source_url": "https://scottsbluffcountyne.gov/treasurer-office/public-tax-sale-information/public-tax-sale-registration-form/",
-      "important_rules": "Market-level calendar event only. This is a tax-lien/certificate sale, not an immediate property transfer. The county states certificate holders have a lien, not ownership; no owner names, parcel inventory, opening/minimum bids, or bidder-eligibility claims are republished or inferred here.",
-      "data_source": "Scotts Bluff County Treasurer official Public Tax Sale Information and 2026 registration form",
       "last_verified": "2026-09-03",
       "market_level_only": true
     }
