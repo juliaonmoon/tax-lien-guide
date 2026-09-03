@@ -19,7 +19,6 @@ FORBIDDEN = (
     "guaranteed deed",
     "Canadian eligible: yes",
     "current otc inventory",
-    "online auction",
 )
 
 
@@ -48,6 +47,15 @@ def main():
     bad = [value for value in FORBIDDEN if value.lower() in lowered]
     if bad:
         raise SystemExit("Hall Nebraska row contains unsafe/unverified claims: " + ", ".join(bad))
+
+    # The canonical row is allowed to mention "online auction" only inside the
+    # explicit negative disclaimer below. Reject affirmative or ambiguous use.
+    online_phrase = "online auction"
+    allowed_online_context = (
+        "do not represent the 2026 sale as an online auction unless the treasurer publishes that information"
+    )
+    if online_phrase in lowered and allowed_online_context not in lowered:
+        raise SystemExit("Hall Nebraska row contains an unverified online-auction claim")
 
     print("Hall Nebraska tax-lien market validation passed")
 
