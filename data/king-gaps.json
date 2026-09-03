@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-03T11:41:57.692004+00:00",
+  "source_updated_at": "2026-09-03T12:16:26.259121+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1958,7 +1958,7 @@
       "legal_description": "LAKE DELL N 65 FT OF E 140 FT LESS ST",
       "tax_status": "T",
       "tax_due_estimate": 20080.88,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "4019301335",
