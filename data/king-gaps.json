@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-03T15:29:17.550036+00:00",
+  "source_updated_at": "2026-09-03T15:35:21.663075+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -983,7 +983,7 @@
       "legal_description": "S 100 FT OF N 150 FT OF E 150 FT OF W 195 FT OF S 1/2 OF NW 1/4 OF NW 1/4 OF  SW 1/4",
       "tax_status": "T",
       "tax_due_estimate": 8083.05,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2188201795",
@@ -2595,7 +2595,7 @@
       "legal_description": "RENTON HILL ADD N 1/2",
       "tax_status": "T",
       "tax_due_estimate": 36453.59,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7243300400",
