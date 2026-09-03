@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03T11:30:00Z",
+  "updated_at": "2026-08-27T11:25:45Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -122,26 +122,6 @@
       "important_rules": "Market-level calendar event only. Hamilton County's delinquent real-property tax sale is subject to the right of redemption and is not a parcel listing, Sheriff foreclosure sale, or representation of immediate deed ownership. No owner names or parcel inventory are republished here; minimum bids are not copied because the County states they can change before auction.",
       "data_source": "Hamilton County Auditor/Treasurer Real Property Tax Sale and 2026 official tax-sale notice",
       "last_verified": "2026-08-26",
-      "market_level_only": true
-    },
-    {
-      "record_id": "NE-FrontierCounty-2026-market-event",
-      "record_type": "market_event",
-      "state": "NE",
-      "state_name": "Nebraska",
-      "county": "Frontier County",
-      "sale_type": "tax_lien",
-      "product_type": "Public Tax Sale / tax sale certificate",
-      "auction_date": "2026-03-02",
-      "sale_date": "2026-03-02",
-      "auction_time": "09:00 CT",
-      "auction_format": "In-person County Tax Sale at the Frontier County Courthouse; bidder order is determined by drawing and each round allows one choice per bidder",
-      "sale_status": "Frontier County's officially published 2026 public sale occurred March 2, 2026. This is a historical market-level event, not current parcel inventory; verify any current Private Tax Sale availability directly with the Treasurer.",
-      "official_source_url": "https://frontiercounty.ne.gov/treasurer-office/public-tax-sale-information/",
-      "secondary_official_source_url": "https://frontiercounty.ne.gov/wp-content/uploads/sites/43/2026/02/Tax-Sale-Registration-Form.pdf",
-      "important_rules": "Market-level calendar event only. Frontier County states certificate purchasers buy delinquent taxes, not the property; its page states a three-year redemption time and 14% interest. The public sale is separate from any later foreclosure process. No owner names, parcel inventory, opening/minimum bids, or current private-sale availability are republished or inferred here.",
-      "data_source": "Frontier County Treasurer Public Tax Sale Information and official 2026 Tax Sale Registration Form",
-      "last_verified": "2026-09-03",
       "market_level_only": true
     }
   ]
