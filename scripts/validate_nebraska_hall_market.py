@@ -82,10 +82,10 @@ def validate_calendar_event():
 
 def main():
     row = extract_row(INDEX.read_text(encoding="utf-8"))
-    missing = [value for value in REQUIRED if value not in row]
+    lowered = row.lower()
+    missing = [value for value in REQUIRED if value.lower() not in lowered]
     if missing:
         raise SystemExit("Hall Nebraska row missing required safety/source facts: " + ", ".join(missing))
-    lowered = row.lower()
     bad = [value for value in FORBIDDEN if value.lower() in lowered]
     if bad:
         raise SystemExit("Hall Nebraska row contains unsafe/unverified claims: " + ", ".join(bad))
