@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-04T04:15:00Z",
+  "updated_at": "2026-09-04T05:10:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -375,6 +375,25 @@
       "official_source_url": "https://www.coconino.az.gov/376/Tax-Liens",
       "important_rules": "Market-level calendar event only. A Certificate of Purchase is a tax lien against real property and conveys no immediate property rights. Do not bulk republish owner/taxpayer names. Do not fabricate or mirror parcel inventory, property characteristics, assessed/appraised values, purchase amounts, opening/minimum bids, current availability, bidder eligibility, redemption outcomes, or later foreclosure/deed outcomes.",
       "data_source": "Coconino County Treasurer official Tax Liens page and tax-certificate materials",
+      "last_verified": "2026-09-04",
+      "market_level_only": true
+    },
+    {
+      "record_id": "AZ-YavapaiCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "AZ",
+      "state_name": "Arizona",
+      "county": "Yavapai County",
+      "sale_type": "tax_lien",
+      "product_type": "Tax lien / Certificate of Purchase",
+      "auction_date": "2026-02-10",
+      "sale_date": "2026-02-10",
+      "auction_time": "Online; consult the official Treasurer/auction system for archived batch timing",
+      "auction_format": "Online annual tax-lien auction through the official county-linked auction system",
+      "sale_status": "The officially published 2026 auction occurred February 10, 2026. Historical market-level event only; no current certificate or parcel availability is asserted.",
+      "official_source_url": "https://www.yavapaiaz.gov/Mapping-and-Properties/Property-Taxes/Treasurers-Office/Treasurers-Tax-Lien-Sale",
+      "important_rules": "Market-level calendar event only. This is Yavapai County's Treasurer tax-lien sale, not the separate county Tax Deed Sales program and not immediate ownership or possession. Do not bulk republish owner/taxpayer names. No parcel inventory, property characteristics, assessed/appraised values, purchase amounts, opening/minimum bids, current availability, bidder eligibility, redemption outcomes, or later foreclosure/deed outcomes are republished or inferred.",
+      "data_source": "Yavapai County Treasurer official Treasurer's Tax Lien Sale page",
       "last_verified": "2026-09-04",
       "market_level_only": true
     }
