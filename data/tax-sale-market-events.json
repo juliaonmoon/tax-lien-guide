@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03T23:20:00Z",
+  "updated_at": "2026-09-04T00:30:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -280,6 +280,44 @@
       "secondary_official_source_url": "https://www.lancaster.ne.gov/DocumentCenter/View/641/Tax-Sale-Purchasing-Information-PDF",
       "important_rules": "Market-level calendar event only. This is Lancaster County's delinquent-real-property tax-lien/certificate process, not an immediate tax-deed, sheriff-foreclosure sale, or immediate property ownership. No owner/taxpayer names, parcel inventory, opening/minimum bids, amounts due, property characteristics, or bidder-eligibility claims are republished or inferred here.",
       "data_source": "Lancaster County Treasurer official Tax Sale Information and Purchasing Tax Sale Certificates instructions",
+      "last_verified": "2026-09-03",
+      "market_level_only": true
+    },
+    {
+      "record_id": "NE-DodgeCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "NE",
+      "state_name": "Nebraska",
+      "county": "Dodge County",
+      "sale_type": "tax_lien",
+      "product_type": "Public tax sale / certificate of tax sale",
+      "auction_date": "2026-03-02",
+      "sale_date": "2026-03-02",
+      "auction_time": "08:30 CT",
+      "auction_format": "In-person public tax sale in the Dodge County Board Room, 3rd floor of the Dodge County Courthouse",
+      "sale_status": "Dodge County's officially published 2026 tax sale occurred March 2, 2026. Historical market-level event only; no current parcel or certificate inventory is asserted here.",
+      "official_source_url": "https://dodgecounty.nebraska.gov/treasurer",
+      "important_rules": "Market-level calendar event only. This is the Dodge County Treasurer delinquent-real-property tax-lien/certificate process, not an immediate tax-deed, sheriff-foreclosure sale, or immediate property ownership. No owner/taxpayer names, parcel inventory, opening/minimum bids, amounts due, property characteristics, or bidder-eligibility claims are republished or inferred here.",
+      "data_source": "Dodge County Treasurer official 2026 Tax Sale Information",
+      "last_verified": "2026-09-03",
+      "market_level_only": true
+    },
+    {
+      "record_id": "NE-DouglasCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "NE",
+      "state_name": "Nebraska",
+      "county": "Douglas County",
+      "sale_type": "tax_lien",
+      "product_type": "Public tax sale / certificate of tax sale",
+      "auction_date": "2026-03-02",
+      "sale_date": "2026-03-02",
+      "auction_time": "Online bidding through March 2, 2026",
+      "auction_format": "Online public tax-lien sale; the published 2026 notice accepted online bids from February 5 through March 2, 2026",
+      "sale_status": "Douglas County's officially published 2026 annual tax-lien sale has passed. Historical market-level event only; no current parcel or certificate inventory is asserted here.",
+      "official_source_url": "https://treasurer.douglascounty-ne.gov/public-tax-sale/",
+      "important_rules": "Market-level calendar event only. This is the Douglas County Treasurer delinquent-real-property tax-lien/certificate sale, not a sheriff foreclosure, tax-deed auction, or immediate ownership transfer. No owner/taxpayer names, parcel inventory, opening/minimum bids, amounts due, property characteristics, bidder eligibility, redemption outcomes, or deed outcomes are republished or inferred here.",
+      "data_source": "Douglas County Treasurer official Public Tax Sale page and published 2026 delinquent-tax notice",
       "last_verified": "2026-09-03",
       "market_level_only": true
     }
