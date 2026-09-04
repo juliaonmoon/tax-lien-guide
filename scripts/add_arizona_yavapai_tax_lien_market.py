@@ -1,11 +1,35 @@
 #!/usr/bin/env python3
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
+EVENTS = ROOT / "data" / "tax-sale-market-events.json"
 MARKER = "Arizona — Yavapai County"
+EVENT_ID = "AZ-YavapaiCounty-2026-market-event"
+SOURCE = "https://www.yavapaiaz.gov/Mapping-and-Properties/Property-Taxes/Treasurers-Office/Treasurers-Tax-Lien-Sale"
 
 ROW = r'''{state:'Arizona — Yavapai County',product:'Tax lien / Certificate of Purchase',schedule:'Yavapai County\'s official Treasurer page lists the previous online tax-lien auction as <span class="schedule-date">February 10, 2026</span> and the next auction as <span class="schedule-date">February 9, 2027</span>. Verify the Treasurer page before relying on the future date because schedules can change.',availability:'2026 annual auction passed. The county publishes auction results and an official auction site, but this row does not claim that any specific certificate remains available after the sale; verify current county/auction records before acting.',maxReturn:'Up to 16%/yr bid rate; competitive bidding may reduce the rate to 0%',interest:'Arizona law requires tax-lien sales in February and awards a lien to the bidder paying the delinquent amount who accepts the lowest redemption-interest rate, subject to the statutory maximum. Yavapai\'s official historical results show certificates can sell from 16% down to 0%. Verify current statutes and auction rules before bidding.',bid:'https://www.yavapaiaz.gov/Mapping-and-Properties/Property-Taxes/Treasurers-Office/Treasurers-Tax-Lien-Sale',canadian:'The public Treasurer page does not establish a simple foreign-bidder rule. Do not assume Canadian eligibility; confirm registration, taxpayer-identification, payment, and withholding requirements through the official auction site/Treasurer.',itin:'The public Treasurer page does not establish that an ITIN is sufficient for every bidder. Confirm current taxpayer-identification requirements with the official auction provider and Treasurer before registration.',online:'YES — the official Treasurer page identifies an online tax-lien auction and links to the official auction website.',otc:'Do not infer current over-the-counter inventory from prior-year notices or results. Confirm any post-auction certificate availability directly through the Treasurer/official auction records.',deed:'Purchase of a tax-lien certificate does not convey immediate ownership or possession. Arizona law provides a separate redemption and foreclosure process before a deed may issue. Yavapai also maintains a separate Tax Deed Sales page for properties already deeded to the state.',special:'This row covers Yavapai County Treasurer tax-lien certificates, not the county\'s separate tax-deed sales. Do not bulk aggregate owner/taxpayer names and do not fabricate parcel inventory, opening/minimum bids, amounts due, property characteristics, bidder eligibility, redemption outcomes, or deed outcomes. Official Treasurer tax-lien page: https://www.yavapaiaz.gov/Mapping-and-Properties/Property-Taxes/Treasurers-Office/Treasurers-Tax-Lien-Sale . Arizona statutes: https://www.azleg.gov/ars/42/18112.htm , https://www.azleg.gov/ars/42/18114.htm , and https://www.azleg.gov/ars/42/18118.htm .',source:'https://www.yavapaiaz.gov/Mapping-and-Properties/Property-Taxes/Treasurers-Office/Treasurers-Tax-Lien-Sale'}'''
+
+EVENT = {
+    "record_id": EVENT_ID,
+    "record_type": "market_event",
+    "state": "AZ",
+    "state_name": "Arizona",
+    "county": "Yavapai County",
+    "sale_type": "tax_lien",
+    "product_type": "Tax lien / Certificate of Purchase",
+    "auction_date": "2026-02-10",
+    "sale_date": "2026-02-10",
+    "auction_time": "Online; consult the official Treasurer/auction system for archived batch timing",
+    "auction_format": "Online annual tax-lien auction through the official county-linked auction system",
+    "sale_status": "The officially published 2026 auction occurred February 10, 2026. Historical market-level event only; no current certificate or parcel availability is asserted.",
+    "official_source_url": SOURCE,
+    "important_rules": "Market-level calendar event only. This is Yavapai County's Treasurer tax-lien sale, not the separate county Tax Deed Sales program and not immediate ownership or possession. Do not bulk republish owner/taxpayer names. No parcel inventory, property characteristics, assessed/appraised values, purchase amounts, opening/minimum bids, current availability, bidder eligibility, redemption outcomes, or later foreclosure/deed outcomes are republished or inferred.",
+    "data_source": "Yavapai County Treasurer official Treasurer's Tax Lien Sale page",
+    "last_verified": "2026-09-04",
+    "market_level_only": True,
+}
 
 
 def find_row_bounds(text: str, start: int, end: int):
@@ -31,7 +55,7 @@ def find_row_bounds(text: str, start: int, end: int):
     return row_start, row_end
 
 
-def main():
+def add_yavapai():
     text = INDEX.read_text(encoding="utf-8")
 
     start = text.find("const rows=[")
@@ -56,6 +80,31 @@ def main():
     insertion = "\n" + ROW if before.rstrip().endswith(',') else ",\n" + ROW
     INDEX.write_text(before + insertion + after, encoding="utf-8")
     print("Added Arizona Yavapai County tax-lien market")
+
+
+def ensure_calendar_event():
+    payload = json.loads(EVENTS.read_text(encoding="utf-8"))
+    properties = payload.setdefault("properties", [])
+    matches = [i for i, item in enumerate(properties) if item.get("record_id") == EVENT_ID]
+    if len(matches) > 1:
+        raise SystemExit("Refusing to repair duplicate Yavapai County market events automatically")
+    if matches:
+        idx = matches[0]
+        if properties[idx] == EVENT:
+            print("Yavapai County calendar event already canonical")
+            return
+        properties[idx] = EVENT
+        print("Restored canonical Yavapai County calendar event")
+    else:
+        properties.append(EVENT)
+        print("Added Yavapai County calendar event")
+    payload["updated_at"] = "2026-09-04T05:10:00Z"
+    EVENTS.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def main():
+    add_yavapai()
+    ensure_calendar_event()
 
 
 if __name__ == "__main__":
