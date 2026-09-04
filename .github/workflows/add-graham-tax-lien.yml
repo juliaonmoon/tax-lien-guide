@@ -33,12 +33,12 @@ jobs:
         run: python scripts/add_tax_lien_county_filter.py
       - name: Publish Graham County market
         run: |
-          if git diff --quiet -- index.html; then
-            echo "No Graham County guide changes."
+          if git diff --quiet -- index.html data/tax-sale-market-events.json; then
+            echo "No Graham County guide/calendar changes."
             exit 0
           fi
           git config user.name "tax-deed-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html
+          git add index.html data/tax-sale-market-events.json
           git commit -m "feat: publish Graham County Arizona tax lien market"
           git push origin HEAD:main
