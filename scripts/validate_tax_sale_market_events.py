@@ -35,6 +35,8 @@ ALLOWED_HOSTS = {
     "www.colfaxcountyne.gov",
     "lancaster.ne.gov",
     "www.lancaster.ne.gov",
+    "dodgecounty.nebraska.gov",
+    "www.dodgecounty.nebraska.gov",
 }
 FORBIDDEN_KEYS = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name"}
 
