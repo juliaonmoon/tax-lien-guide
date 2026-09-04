@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-04T05:10:00Z",
+  "updated_at": "2026-09-04T06:00:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -394,6 +394,26 @@
       "official_source_url": "https://www.yavapaiaz.gov/Mapping-and-Properties/Property-Taxes/Treasurers-Office/Treasurers-Tax-Lien-Sale",
       "important_rules": "Market-level calendar event only. This is Yavapai County's Treasurer tax-lien sale, not the separate county Tax Deed Sales program and not immediate ownership or possession. Do not bulk republish owner/taxpayer names. No parcel inventory, property characteristics, assessed/appraised values, purchase amounts, opening/minimum bids, current availability, bidder eligibility, redemption outcomes, or later foreclosure/deed outcomes are republished or inferred.",
       "data_source": "Yavapai County Treasurer official Treasurer's Tax Lien Sale page",
+      "last_verified": "2026-09-04",
+      "market_level_only": true
+    },
+    {
+      "record_id": "AZ-NavajoCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "AZ",
+      "state_name": "Arizona",
+      "county": "Navajo County",
+      "sale_type": "tax_lien",
+      "product_type": "Tax lien / Certificate of Purchase",
+      "auction_date": "2026-02-11",
+      "sale_date": "2026-02-11",
+      "auction_time": "07:00 MST; batches close hourly from 08:00 through 12:00 MST",
+      "auction_format": "Electronic annual tax-lien sale through the county-linked RealAuction system",
+      "sale_status": "Navajo County's officially published 2026 tax-lien sale occurred February 11, 2026. Historical market-level event only; no current parcel or certificate availability is asserted.",
+      "official_source_url": "https://www.navajocountyaz.gov/459/February-Lien-Sale-Instructions",
+      "secondary_official_source_url": "https://www.navajocountyaz.gov/457/Property-Tax-Calendar",
+      "important_rules": "Market-level calendar event only. Navajo County states this is a sale of delinquent-tax liens/Certificates of Purchase, not an immediate sale of the property; the county separately operates a Back Tax Land/deed program. Do not bulk republish owner/taxpayer names. No parcel inventory, property characteristics, assessed/appraised values, amounts due, opening/minimum bids, current OTC availability, bidder eligibility, redemption outcomes, or later deed outcomes are republished or inferred.",
+      "data_source": "Navajo County Treasurer February Lien Sale Instructions and Property Tax Calendar",
       "last_verified": "2026-09-04",
       "market_level_only": true
     }
