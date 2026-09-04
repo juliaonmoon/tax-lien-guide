@@ -24,6 +24,8 @@ ALLOWED_HOSTS = {
     "www.apachecountyaz.gov",
     "to.pima.gov",
     "www.to.pima.gov",
+    "www.coconino.az.gov",
+    "www.yavapaiaz.gov",
     # Nebraska county-government sources verified by dedicated market publishers.
     "frontiercounty.ne.gov",
     "www.frontiercounty.ne.gov",
