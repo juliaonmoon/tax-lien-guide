@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-03T23:20:49.782465+00:00",
+  "source_updated_at": "2026-09-04T00:24:42.125428+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -923,9 +923,9 @@
       "improvement_value": 272000.0,
       "value_basis": "King County appraised value",
       "legal_description": "DAVIS ADD UNIT LOT \"Z\" OF SEATTLE SP #3032908-LU REC #20221018900002 & AMD BY REC #20230302900004 SD SP LOC IN LOTS 24-25 BLK 3 OF SD ADD",
-      "tax_status": "In tax foreclosure",
-      "tax_due_estimate": null,
-      "enrichment_note": "legal lookup ReadTimeout"
+      "tax_status": "T",
+      "tax_due_estimate": 6939.01,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2023049242",
