@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-04T04:15:00Z",
+  "updated_at": "2026-09-04T03:40:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -356,25 +356,6 @@
       "official_source_url": "https://www.to.pima.gov/taxLienSale/",
       "important_rules": "Market-level calendar event only; no parcel inventory is republished or inferred. A Certificate of Purchase is a tax lien against property, not a purchase of the property or an immediate deed/ownership right. Do not bulk republish owner/taxpayer names and do not fabricate parcel inventory, purchase amounts, opening/minimum bids, current availability, bidder eligibility, redemption outcomes, or later foreclosure outcomes.",
       "data_source": "Pima County Treasurer official Tax Lien Sale Information and 2026 Tax Lien Sale materials",
-      "last_verified": "2026-09-04",
-      "market_level_only": true
-    },
-    {
-      "record_id": "AZ-CoconinoCounty-2026-market-event",
-      "record_type": "market_event",
-      "state": "AZ",
-      "state_name": "Arizona",
-      "county": "Coconino County",
-      "sale_type": "tax_lien",
-      "product_type": "Tax lien / Certificate of Purchase",
-      "auction_date": "2026-02-10",
-      "sale_date": "2026-02-10",
-      "auction_time": "Online; consult the official Treasurer/auction system for archived batch timing",
-      "auction_format": "Online annual tax-lien certificate sale through the county's official auction system",
-      "sale_status": "The 2026 annual auction has passed. The Coconino County Treasurer currently publishes a September 2026 over-the-counter list; live availability can change and is not mirrored here.",
-      "official_source_url": "https://www.coconino.az.gov/376/Tax-Liens",
-      "important_rules": "Market-level calendar event only. A Certificate of Purchase is a tax lien against real property and conveys no immediate property rights. Do not bulk republish owner/taxpayer names. Do not fabricate or mirror parcel inventory, property characteristics, assessed/appraised values, purchase amounts, opening/minimum bids, current availability, bidder eligibility, redemption outcomes, or later foreclosure/deed outcomes.",
-      "data_source": "Coconino County Treasurer official Tax Liens page and tax-certificate materials",
       "last_verified": "2026-09-04",
       "market_level_only": true
     }
