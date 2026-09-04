@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-04T00:30:00Z",
+  "updated_at": "2026-09-04T01:20:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -319,6 +319,25 @@
       "important_rules": "Market-level calendar event only. This is the Douglas County Treasurer delinquent-real-property tax-lien/certificate sale, not a sheriff foreclosure, tax-deed auction, or immediate ownership transfer. No owner/taxpayer names, parcel inventory, opening/minimum bids, amounts due, property characteristics, bidder eligibility, redemption outcomes, or deed outcomes are republished or inferred here.",
       "data_source": "Douglas County Treasurer official Public Tax Sale page and published 2026 delinquent-tax notice",
       "last_verified": "2026-09-03",
+      "market_level_only": true
+    },
+    {
+      "record_id": "AZ-ApacheCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "AZ",
+      "state_name": "Arizona",
+      "county": "Apache County",
+      "sale_type": "tax_lien",
+      "product_type": "Tax lien / Certificate of Purchase",
+      "auction_date": "2026-02-18",
+      "sale_date": "2026-02-18",
+      "auction_time": "8:00 AM MST start; first batch closed 8:30 AM; published batches continued through the day",
+      "auction_format": "Electronic tax-lien sale through the county-linked RealAuction platform; the official notice opened bidding February 4, 2026 and held the sale February 18, 2026",
+      "sale_status": "Apache County's officially published 2026 annual tax-lien auction has passed. Historical market-level event only; no current parcel or over-the-counter inventory is asserted here.",
+      "official_source_url": "https://www.apachecountyaz.gov/treasurer",
+      "important_rules": "Market-level calendar event only. A Certificate of Purchase is a tax lien, not a deed, ownership, or possession right. Do not bulk republish owner/taxpayer names and do not fabricate parcel inventory, opening/minimum bids, current OTC availability, bidder eligibility, redemption outcomes, or later foreclosure/deed outcomes.",
+      "data_source": "Apache County Treasurer official Tax Liens page and official 2026 Public Notice of Tax Lien Auction",
+      "last_verified": "2026-09-04",
       "market_level_only": true
     }
   ]
