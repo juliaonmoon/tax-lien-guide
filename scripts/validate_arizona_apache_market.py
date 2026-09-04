@@ -64,7 +64,7 @@ def main():
         "certificate of purchase",
         "tax lien",
         "not a deed",
-        "no owner/taxpayer names",
+        "do not bulk republish owner/taxpayer names",
         "no current parcel or over-the-counter inventory",
     )
     for text in required_event_text:
