@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
+EVENTS = ROOT / "data" / "tax-sale-market-events.json"
 MARKER = "Nebraska — Dodge County"
+EVENT_ID = "NE-DodgeCounty-2026-market-event"
 
 REQUIRED = [
     "March 2, 2026",
@@ -35,6 +38,45 @@ def extract_row(text: str) -> str:
     return text[start:min(endings) + 1]
 
 
+def validate_event():
+    payload = json.loads(EVENTS.read_text(encoding="utf-8"))
+    matches = [item for item in payload.get("properties", []) if item.get("record_id") == EVENT_ID]
+    if len(matches) != 1:
+        raise SystemExit(f"Expected exactly one Dodge County calendar event, found {len(matches)}")
+    event = matches[0]
+    expected = {
+        "record_type": "market_event",
+        "state": "NE",
+        "county": "Dodge County",
+        "sale_type": "tax_lien",
+        "auction_date": "2026-03-02",
+        "sale_date": "2026-03-02",
+        "market_level_only": True,
+    }
+    for key, value in expected.items():
+        if event.get(key) != value:
+            raise SystemExit(f"Dodge County calendar event has unexpected {key}: {event.get(key)!r}")
+    if event.get("official_source_url") != "https://dodgecounty.nebraska.gov/treasurer":
+        raise SystemExit("Dodge County calendar event must use the official Treasurer source")
+    forbidden_keys = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name", "parcel_id", "opening_bid", "minimum_bid"}
+    bad_keys = forbidden_keys & set(event)
+    if bad_keys:
+        raise SystemExit("Dodge County calendar event contains forbidden parcel/owner field(s): " + ", ".join(sorted(bad_keys)))
+    rules = event.get("important_rules", "").lower()
+    required_rules = [
+        "market-level calendar event only",
+        "tax-lien/certificate",
+        "not an immediate tax-deed",
+        "no owner/taxpayer names",
+        "parcel inventory",
+        "opening/minimum bids",
+        "bidder-eligibility claims",
+    ]
+    missing = [phrase for phrase in required_rules if phrase not in rules]
+    if missing:
+        raise SystemExit("Dodge County calendar event missing safety boundary text: " + ", ".join(missing))
+
+
 def main():
     row = extract_row(INDEX.read_text(encoding="utf-8"))
     missing = [item for item in REQUIRED if item not in row]
@@ -57,9 +99,6 @@ def main():
     if bad:
         raise SystemExit("Dodge County row contains unsupported claim(s): " + ", ".join(bad))
 
-    # The canonical row deliberately contains the phrase "immediate tax-deed auction"
-    # inside an explicit negative distinction. Reject affirmative/ambiguous uses without
-    # making that safety disclaimer itself a false positive.
     if "immediate tax-deed auction" in lower and "not a sheriff foreclosure or an immediate tax-deed auction" not in lower:
         raise SystemExit("Dodge County row must not represent the Treasurer tax-lien sale as an immediate tax-deed auction")
     if "immediate ownership" in lower and "not immediate ownership" not in lower:
@@ -69,6 +108,7 @@ def main():
     if "verify current law" not in lower:
         raise SystemExit("Dodge County row must preserve statutory freshness caveat")
 
+    validate_event()
     print("Dodge County Nebraska market validation passed")
 
 
