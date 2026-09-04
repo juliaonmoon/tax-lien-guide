@@ -20,6 +20,10 @@ ALLOWED_HOSTS = {
     "allencounty.in.gov",
     "www.allencounty.in.gov",
     "legacy.lakecountyin.org",
+    # Arizona county-government sources verified by dedicated market publishers.
+    "www.apachecountyaz.gov",
+    "to.pima.gov",
+    "www.to.pima.gov",
     # Nebraska county-government sources verified by dedicated market publishers.
     "frontiercounty.ne.gov",
     "www.frontiercounty.ne.gov",
