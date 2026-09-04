@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-04T01:20:00Z",
+  "updated_at": "2026-09-04T03:40:00Z",
   "description": "Officially verified jurisdiction-level tax-sale events used by the calendar when no parcel-level collector is available. These rows are calendar events only, not property inventory.",
   "properties": [
     {
@@ -337,6 +337,25 @@
       "official_source_url": "https://www.apachecountyaz.gov/treasurer",
       "important_rules": "Market-level calendar event only. A Certificate of Purchase is a tax lien, not a deed, ownership, or possession right. Do not bulk republish owner/taxpayer names and do not fabricate parcel inventory, opening/minimum bids, current OTC availability, bidder eligibility, redemption outcomes, or later foreclosure/deed outcomes.",
       "data_source": "Apache County Treasurer official Tax Liens page and official 2026 Public Notice of Tax Lien Auction",
+      "last_verified": "2026-09-04",
+      "market_level_only": true
+    },
+    {
+      "record_id": "AZ-PimaCounty-2026-market-event",
+      "record_type": "market_event",
+      "state": "AZ",
+      "state_name": "Arizona",
+      "county": "Pima County",
+      "sale_type": "tax_lien",
+      "product_type": "Tax lien / Certificate of Purchase",
+      "auction_date": "2026-02-26",
+      "sale_date": "2026-02-26",
+      "auction_time": "Online batches closed from 8:00 AM through 12:00 PM MST; auxiliary session 1:00 PM–3:00 PM MST",
+      "auction_format": "Online annual tax-lien sale hosted by RealAuction; interest-rate bidding started at 16% and decreased in 1% increments, with 0% bids accepted",
+      "sale_status": "The 2026 annual auction has passed. Pima County states New Assignments (over-the-counter liens) are available April 1 through December 15, 2026; live inventory must be checked through the Treasurer/RealAuction and is not mirrored here.",
+      "official_source_url": "https://www.to.pima.gov/taxLienSale/",
+      "important_rules": "Market-level calendar event only; no parcel inventory is republished or inferred. A Certificate of Purchase is a tax lien against property, not a purchase of the property or an immediate deed/ownership right. Do not bulk republish owner/taxpayer names and do not fabricate parcel inventory, purchase amounts, opening/minimum bids, current availability, bidder eligibility, redemption outcomes, or later foreclosure outcomes.",
+      "data_source": "Pima County Treasurer official Tax Lien Sale Information and 2026 Tax Lien Sale materials",
       "last_verified": "2026-09-04",
       "market_level_only": true
     }
