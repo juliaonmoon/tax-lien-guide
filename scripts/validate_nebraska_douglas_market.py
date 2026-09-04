@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
+import json
 from pathlib import Path
 
-INDEX = Path(__file__).resolve().parents[1] / "index.html"
+ROOT = Path(__file__).resolve().parents[1]
+INDEX = ROOT / "index.html"
+EVENTS = ROOT / "data" / "tax-sale-market-events.json"
 MARKER = "Nebraska — Douglas County"
+EVENT_ID = "NE-DouglasCounty-2026-market-event"
 
 REQUIRED = (
     "March 2, 2026",
@@ -26,6 +30,46 @@ FORBIDDEN_AFFIRMATIVE = (
     "2027 sale confirmed",
     "March 1, 2027 confirmed",
 )
+
+
+def validate_calendar_event():
+    payload = json.loads(EVENTS.read_text(encoding="utf-8"))
+    matches = [row for row in payload.get("properties", []) if row.get("record_id") == EVENT_ID]
+    if len(matches) != 1:
+        raise SystemExit(f"Expected exactly one Douglas County calendar event, found {len(matches)}")
+    event = matches[0]
+    expected = {
+        "record_type": "market_event",
+        "state": "NE",
+        "county": "Douglas County",
+        "sale_type": "tax_lien",
+        "auction_date": "2026-03-02",
+        "sale_date": "2026-03-02",
+        "market_level_only": True,
+    }
+    for key, value in expected.items():
+        if event.get(key) != value:
+            raise SystemExit(f"Douglas County calendar event has unexpected {key}: {event.get(key)!r}")
+    if event.get("official_source_url") != "https://treasurer.douglascounty-ne.gov/public-tax-sale/":
+        raise SystemExit("Douglas County calendar event must use the official Treasurer source")
+    forbidden_keys = {"owner", "owner_name", "taxpayer", "taxpayer_name", "mailing_name", "parcel_id", "opening_bid", "minimum_bid"}
+    bad_keys = forbidden_keys & set(event)
+    if bad_keys:
+        raise SystemExit("Douglas County calendar event contains forbidden parcel/owner field(s): " + ", ".join(sorted(bad_keys)))
+    rules = event.get("important_rules", "").lower()
+    required_rules = [
+        "market-level calendar event only",
+        "tax-lien/certificate",
+        "not a sheriff foreclosure",
+        "tax-deed auction",
+        "no owner/taxpayer names",
+        "parcel inventory",
+        "opening/minimum bids",
+        "bidder eligibility",
+    ]
+    missing = [phrase for phrase in required_rules if phrase not in rules]
+    if missing:
+        raise SystemExit("Douglas County calendar event missing safety boundary text: " + ", ".join(missing))
 
 
 def main():
@@ -53,14 +97,12 @@ def main():
     bad = [value for value in FORBIDDEN_AFFIRMATIVE if value.lower() in lowered]
     if bad:
         raise SystemExit("Douglas Nebraska row contains unsafe/unverified claims: " + ", ".join(bad))
-
-    # Current-inventory claims must remain explicitly disclaimed; the completed
-    # 2026 advertisement is historical evidence, not a live parcel feed.
     if "no current parcel inventory is asserted here" not in lowered:
         raise SystemExit("Douglas Nebraska row must disclaim current parcel inventory")
     if "do not infer current private-sale, over-the-counter, or county-held certificate inventory" not in lowered:
         raise SystemExit("Douglas Nebraska row must disclaim inferred post-sale inventory")
 
+    validate_calendar_event()
     print("Douglas Nebraska tax-lien market validation passed")
 
 
