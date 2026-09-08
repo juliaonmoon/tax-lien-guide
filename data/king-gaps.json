@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-07T18:20:34.077995+00:00",
+  "source_updated_at": "2026-09-08T17:23:46.062707+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -517,7 +517,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LOT B KC BLA 12-0003 REC #20120920900001 SD BLA LYING IN N 20 AC OF GL 1 NE 1/4 5-25-6 LESS S 280 FT OF W 750 FT & LESS W 30 FT THOF & A POR OF TR 28 STROMSLAND TRS UNREC LYING IN SE 1/4 OF SE 32-26-6 BEG 418.5 FT W OF SE COR TH N0-21-54 W 392.5 FT TO S LN CO RD TH SWLY, ALG SD LN 874.5 FT TO S LN SD SE 1/4 TH E ALG SD S LN 944.75 FT TO POB LESS WLY 73.8 FT FOR RD PER REC 4426612 & 6705334 & LESS POR FOR R/W PER REC #20020502000248",
       "tax_status": "T",
-      "tax_due_estimate": 27379.64,
+      "tax_due_estimate": 3231.48,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -690,7 +690,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BEG ON N LN OF SW 1/4 OF NW 1/4 296 FT W OF NE COR TH S 00-30-07 W 85.08 FT TH N 75-41-40 W ALG S MGN OF DIXON RD 295.74 FT TH ON CURVE TO RGT RAD 690.83 FT DIST 64.15 FT TO N LN SD SUBD TH E TO BEG LESS POR W OF LN RNG S FR PT 545.03 FT W OF NE COR OF SUBD",
       "tax_status": "T",
-      "tax_due_estimate": 134.96,
+      "tax_due_estimate": 50.61,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -846,8 +846,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "COLUMBIA RIDGE ADD",
       "tax_status": "T",
-      "tax_due_estimate": 9124.6,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "1766002130",
@@ -1161,8 +1161,8 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "FOREST LANE CONDOMINIUM PCT UND INT  1.08",
       "tax_status": "T",
-      "tax_due_estimate": 17081.01,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 1911.18,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "2646400160",
@@ -1180,8 +1180,8 @@
       "value_basis": null,
       "legal_description": "FREMONT TERRACE CONDOMINIUM PCT UND INT  0.47",
       "tax_status": "T",
-      "tax_due_estimate": 1184.33,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 296.49,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2660500005",
@@ -1257,8 +1257,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "GILMAN PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 66287.0,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 7522.72,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2771603290",
@@ -1392,7 +1392,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "GREENWOOD POINT",
       "tax_status": "T",
-      "tax_due_estimate": 62467.32,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1624,8 +1624,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "HILLMANS CD MEADOW GARDENS DIV# 2 S 1/2 LESS PIPE LINE R/W PER KCSCC#121648 & SEA ORD#37022",
       "tax_status": "T",
-      "tax_due_estimate": 24075.55,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 2905.4,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3422059238",
@@ -1841,7 +1841,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 3144.68,
+      "tax_due_estimate": 397.56,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1918,8 +1918,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "KNOLL WOOD ADD",
       "tax_status": "T",
-      "tax_due_estimate": 10477.7,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 3486.2,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "3971702251",
@@ -1957,7 +1957,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKE DELL N 65 FT OF E 140 FT LESS ST",
       "tax_status": "T",
-      "tax_due_estimate": 20080.88,
+      "tax_due_estimate": 2216.22,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1976,7 +1976,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKE FOREST PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 25633.0,
+      "tax_due_estimate": 2927.57,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2094,8 +2094,8 @@
       "value_basis": null,
       "legal_description": "LATITUDE CONDOMINIUM PCT UND INT  0.56",
       "tax_status": "T",
-      "tax_due_estimate": 18087.16,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "5001700005",
@@ -2209,7 +2209,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MC KINLEY HEIGHTS UNREC W 150 FT",
       "tax_status": "T",
-      "tax_due_estimate": 33510.02,
+      "tax_due_estimate": 3673.42,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2305,7 +2305,7 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
       "tax_status": "T",
-      "tax_due_estimate": 27278.22,
+      "tax_due_estimate": 2739.71,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2516,8 +2516,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "REDONDO BEACH DIV # 1",
       "tax_status": "T",
-      "tax_due_estimate": 12115.79,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 1423.68,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7203601510",
@@ -2536,8 +2536,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "REDONDO BEACH DIV # 1",
       "tax_status": "T",
-      "tax_due_estimate": 12236.16,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 1462.93,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7204200055",
@@ -2633,7 +2633,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "REXFORDS 1ST ADD PARCEL 'B' SEATTLE SHORT SUBDIVISION NO. 9606509 REC NO. 9705169001 SD SHORT SUBDIVISION DAF - LOTS 5 & 6 IN BLOCK 1 OF REXFORDS 1ST ADDITION PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 15337.62,
+      "tax_due_estimate": 1734.54,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2748,7 +2748,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RUMBOLZ SUNSET HIGHWAY TRS PARCEL 1 OF KC SHORT PLAT NO 881069 RECORDING NO 8208260418 SD PLAT DAF - LOT 3 BLK 1 RUMBOLZ SUNSET HIGHWAY TRACTS LESS ST HWY LESS N 30 FT FOR RD",
       "tax_status": "T",
-      "tax_due_estimate": 7923.1,
+      "tax_due_estimate": 3241.77,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2882,7 +2882,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "STIMSON PARK DIV # 2 UNREC",
       "tax_status": "T",
-      "tax_due_estimate": 18207.38,
+      "tax_due_estimate": 2040.12,
       "enrichment_note": "legal description, tax receivables"
     },
     {
