@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-13T17:02:03.465388+00:00",
+  "source_updated_at": "2026-09-14T18:44:57.219029+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -497,7 +497,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "S 360 FT AS MEAS ALG W LN OF N 1/2 OF SE 1/4 OF SE 1/4 LESS W 1143 FT LESS CO RD LESS C/M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 7142.99,
+      "tax_due_estimate": 1719.28,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -555,7 +555,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "BENSON HEIGHTS ADD LESS RD",
       "tax_status": "T",
-      "tax_due_estimate": 26908.86,
+      "tax_due_estimate": 3425.07,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -789,8 +789,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "CLAREMONT ADD",
       "tax_status": "T",
-      "tax_due_estimate": 30553.99,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 3650.65,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "1612500165",
@@ -827,8 +827,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "CLINKINGBEARDS 1/4 ACRE TRS LESS N 39 FT",
       "tax_status": "T",
-      "tax_due_estimate": 34396.25,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 3493.69,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "1708400910",
@@ -1180,7 +1180,7 @@
       "value_basis": null,
       "legal_description": "FREMONT TERRACE CONDOMINIUM PCT UND INT  0.47",
       "tax_status": "T",
-      "tax_due_estimate": 296.49,
+      "tax_due_estimate": 115.01,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1199,8 +1199,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "FRYES ADD TO COLUMBIA S 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 31114.67,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 3815.23,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "2660500010",
@@ -1218,7 +1218,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "FRYES ADD TO COLUMBIA N 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 8567.51,
+      "tax_due_estimate": 1036.04,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1314,8 +1314,8 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "GRANDVIEW CONDOMINIUM PCT OF VALUE 1.5665",
       "tax_status": "T",
-      "tax_due_estimate": 52421.14,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 12207.97,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "2921069015",
@@ -2382,8 +2382,8 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "101 MEYDENBAUER CONDO PERCENTAGE OF VALUE 3.47",
       "tax_status": "T",
-      "tax_due_estimate": 86887.28,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 6397.54,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "6390000360",
@@ -2594,7 +2594,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "RENTON HILL ADD N 1/2",
       "tax_status": "T",
-      "tax_due_estimate": 36453.59,
+      "tax_due_estimate": 4586.9,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2825,8 +2825,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "SOPHIA GLENN TGW UND INT IN TRACT D",
       "tax_status": "T",
-      "tax_due_estimate": 35180.99,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 4052.2,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7927600065",
@@ -2863,7 +2863,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SQUIRE PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 40453.65,
+      "tax_due_estimate": 5060.67,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -3073,7 +3073,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "YESLERS 1ST ADD TO KENT",
       "tax_status": "T",
-      "tax_due_estimate": 24288.87,
+      "tax_due_estimate": 2686.31,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -3092,8 +3092,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "YESLERS H L 1ST ADD W 68 FT",
       "tax_status": "T",
-      "tax_due_estimate": 65728.54,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 7990.63,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "9831200460",
@@ -3111,7 +3111,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "YESLERS SARAH B 1ST ADD",
       "tax_status": "T",
-      "tax_due_estimate": 76501.77,
+      "tax_due_estimate": 7329.71,
       "enrichment_note": "legal description, tax receivables"
     }
   ]
