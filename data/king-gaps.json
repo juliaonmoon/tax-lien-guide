@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-20T16:53:24.595535+00:00",
+  "source_updated_at": "2026-09-21T18:48:54.854635+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1314,7 +1314,7 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "GRANDVIEW CONDOMINIUM PCT OF VALUE 1.5665",
       "tax_status": "T",
-      "tax_due_estimate": 12207.97,
+      "tax_due_estimate": 4433.62,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2209,7 +2209,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "MC KINLEY HEIGHTS UNREC W 150 FT",
       "tax_status": "T",
-      "tax_due_estimate": 3673.42,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
