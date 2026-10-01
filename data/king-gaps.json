@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-09-30T18:31:53.101722+00:00",
+  "source_updated_at": "2026-10-01T18:57:47.472878+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -380,8 +380,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALLENTOWN ACRES REPLAT UNREC LESS NELY 111.31 FT",
       "tax_status": "T",
-      "tax_due_estimate": 5974.55,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "0200000045",
@@ -593,8 +593,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR GL 3 BEG 31.05 FT W OF SW COR OF BLK 1 PORTAGE 1ST ADD TH N 14-58-00 E 524.72 FT TH N 75-58-00 E 95.7 FT TO TPOB TH S 75-58-00 W 95.7 FT TH N 11-44-40 E 10.2 FT TH N 44-28-00 E TO NELY LN OF LOT 3 TH SELY ALG SD NELY LN TO PT N 44-28-00 E OF TPOB TH S 44-28-00 W TO TPOB, LESS POR FOR RD",
       "tax_status": "T",
-      "tax_due_estimate": 7833.23,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0923049190",
@@ -905,7 +905,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR GL 7 - BEG NE COR TH S 89-23-37 W ALG N LN 137.94 FT TH S 10-56-43 E 30.49 FT TO TPOB TH CONTG S 10-56-43 E 96.73 FT TH S 89-45-04 W 100.12 FT TH N 10-56-43 W 96.73 FT TH N 89-23-37 E 100 FT TO TPOB",
       "tax_status": "T",
-      "tax_due_estimate": 2621.29,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1043,8 +1043,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "EAST TACOMA ADD PP ACT 39929104 MOBILE HOME LESS C & M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 19800.97,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "2222049066",
@@ -1103,8 +1103,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "FAEGRES 1ST ADD TO W S",
       "tax_status": "T",
-      "tax_due_estimate": 6028.89,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "2473370090",
@@ -1663,7 +1663,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "INGLEWOOD ADD LESS CO RD",
       "tax_status": "T",
-      "tax_due_estimate": 527.53,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1781,8 +1781,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "JACQUES PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 284.77,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 71.47,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3750606873",
@@ -1918,8 +1918,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "KNOLL WOOD ADD",
       "tax_status": "T",
-      "tax_due_estimate": 3486.2,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3971702251",
@@ -1996,7 +1996,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKE MARCEL # 4 TGW UND INT IN TRS A & B LAKE & COMMUNITY BEACHES",
       "tax_status": "T",
-      "tax_due_estimate": 8255.08,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2170,8 +2170,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "MARYMOOR HILL DIV NO 02",
       "tax_status": "T",
-      "tax_due_estimate": 76004.54,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "5229300235",
@@ -2439,7 +2439,7 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "PARKSIDE LOFTS CONDOMINIUM PCT UND INT  8.00",
       "tax_status": "T",
-      "tax_due_estimate": 6765.82,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2652,8 +2652,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "RIDGE HAVEN LOT 3 KCSP #1280042R REC #8104030754 SD SP DAF LOT 10",
       "tax_status": "T",
-      "tax_due_estimate": 10419.08,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7345200040",
@@ -2920,8 +2920,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "SWANSON COURT",
       "tax_status": "T",
-      "tax_due_estimate": 13751.92,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "8170100150",
