@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-01T18:57:47.472878+00:00",
+  "source_updated_at": "2026-10-02T18:31:06.018098+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1781,7 +1781,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JACQUES PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 71.47,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
