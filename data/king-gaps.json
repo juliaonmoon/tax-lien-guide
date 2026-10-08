@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-07T19:29:14.898659+00:00",
+  "source_updated_at": "2026-10-08T19:22:50.318826+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -319,9 +319,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "E 125 FT OF E 1/2 OF SW 1/4 OF SW 1/4 OF NW 1/4 OF SEC 1-21-5 LESS N 10 FT - SUBJ TO TRANS LN ESMTS",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 97.99,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0124069051",
@@ -359,9 +359,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "ALLENTOWN ACRES REPLAT UNREC LESS NELY 111.31 FT",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 679.89,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0185000055",
@@ -419,9 +419,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "ALVORDS MOUNTAIN VIEW ACRES UNREC E 27.02 FT AS MEASURED ALONG S LINE OF FOLLOWING TRACT BEING A PORTION OF MOSES KIRKLAND DONATION LAND CLAIM DAF: BEGINNING AT NW CORNER OF SAID DONATION LAND CLAIM TH N89-21-15E 2270.70 FT TO ELY LINE OF STATE AID ROAD NO 69 TH S05-08-00W ALONG SAID E MARGIN, 554.40 FT TH N89-07-50E 160 FT TO TPOB TH CONTINUING N89-07-50E 47.02 FT TH N00-52-10W 92.12 FT TH S61-34-00W TO POINT FROM WHICH TPOB IS S05-08-00W TH S05-08-00W TO TPOB; EXC S 30 FT THEREOF FOR ROAD",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 203.08,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0222029066",
@@ -440,7 +440,7 @@
       "legal_description": "S 1/2 OF N 1/2 OF SE 1/4 OF NE 1/4 OF NE 1/4 LESS CO RD & S 1/2 OF NE 1/4 OF SW 1/4 OF NE 1/4 OF NE 1/4 CLASSIFIED AS OPEN SPACE LAND UNDER CHAPTER 84.34 RCW",
       "tax_status": "T",
       "tax_due_estimate": 28438.81,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0239000175",
@@ -612,9 +612,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "E 1/2 OF S 1/2 OF PORTION OF SW 1/4 OF NE 1/4 AS FOLLOWS, BEGIN NW CORNER OF NE 1/4 TH S 00-16-21.5 E 1325.04 FT TO SW CORNER OF NW 1/4 OF NE 1/4 TH N 88-03-45 E 654.89 FT TH S 00-12-21 E 124 FT TO POB OF TRACT HEREIN DESCRIBED TH S 00-12-21 E 124 FT TH N 88-03-45 E 320.14 FT, TH N 00-12-21 W 124 FT TAP N 88-03-45 E OF POB TH S 88-03-45 W TO POB",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 429.26,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "0925049401",
@@ -748,9 +748,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "POR SW 1/4 BEG AT NXN OF E LN OF W 1000 FT OF SW 1/4 & NLY MGN OF ANDREW REYNOLDS REV RD #1816 TH ALG SD NLY MGN N 78-08-35 E 355.96 FT TH ON A CURVE TO LFT RAD OF 686.20 FT AN ARC DIST 94.39 FT TH N 70-15-43 E 81.37 FT TH ON A CURVE TO RGT RAD OF 666.62 FT AN ARC DIST 309.69 FT TH CONTG ALG SD CURVE, TO RGT AN ARC DIST 120.37 FT TAP HEREINAFTER DESIGN AS PT Z TH LEAVING NLY MGN SD RD N 47-34-10 E 48.14 FT TH N 87-11-22 E 190 FT TH N 39-31-05 W 60.75 FT TH N 34-59-25 E 100.87 FT TH N 25-30-00 W 246 FT TH N 63-40-44 W 310.40 FT TO TPOB TH CONTG N 63-40-44 W 187 FT TH N 62-13-47 E 225 FT, TH S 63-40-44 E 187 FT TH S 62-13-47 W 225 FT TO TPOB LESS C/M RGTS",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 1770.46,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "1593001210",
@@ -1411,9 +1411,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "POR OF GL 1 LY WLY OF LANDSBERG RD LESS N 1060 FT",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 208.75,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3023000490",
@@ -1450,9 +1450,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "POR OF SW 1/4 OF NE 1/4-BAAP ON W SUBD LN 616 FT NLY OF SW COR THOF TH S 88-20-45 E 96 FT TO TPOB TH S 88-20-45 E 54 FT TH N 05-14-12 W 40 FT TH S 89-37-17 E 100 FT TH N 4-14-29 W 60 FT TH N 88-20-54 W 153.77 FT TH S 30-52-00 W 43.96 FT TH S 25-36-11 E 68.73 FT TO POB",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 1677.57,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3226200085",
@@ -1682,9 +1682,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "INGLEWOOD ADD & ALL OF VAC 208TH AVE NE ADJ",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 140.68,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3589002570",
@@ -1721,9 +1721,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "TRACT 1 LESS POR CONVEYED TO STATE OF WA BY DEED REC NO 9411180817 OF KING CO SHORT PLAT NO 1276010 REC NO 7708180969 SD SP DAF: NE QTR OF SE QTR STR 36-23-06 LESS RDS",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 2075.8,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3626039398",
@@ -1800,9 +1800,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA ADD",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 140.73,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3751600889",
@@ -1820,9 +1820,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA HEIGHTS ADD",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 140.73,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3751606689",
@@ -2055,9 +2055,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "LARSON PARKE RECREATION",
-      "tax_status": "X",
+      "tax_status": "T",
       "tax_due_estimate": 223.64,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "4204400201",
@@ -2614,7 +2614,7 @@
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "tax_status": "T",
       "tax_due_estimate": 2993.33,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7243500007",
