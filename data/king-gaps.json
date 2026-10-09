@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-08T19:22:50.318826+00:00",
+  "source_updated_at": "2026-10-09T18:56:10.932819+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2114,7 +2114,7 @@
       "legal_description": "MABLEY ADD N 1/2",
       "tax_status": "T",
       "tax_due_estimate": 23687.41,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "5001700007",
