@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-13T19:56:17.253146+00:00",
+  "source_updated_at": "2026-10-14T18:10:16.574792+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1822,7 +1822,7 @@
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
       "tax_due_estimate": 140.73,
-      "enrichment_note": "legal description, tax lookup HTTPError"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3751606689",
