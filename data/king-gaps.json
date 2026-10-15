@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-14T18:10:16.574792+00:00",
+  "source_updated_at": "2026-10-15T17:52:19.913173+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1084,7 +1084,7 @@
       "legal_description": "FAEGRES 1ST ADD TO W S",
       "tax_status": "T",
       "tax_due_estimate": 422.35,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "2444600450",
@@ -2247,7 +2247,7 @@
       "value_basis": null,
       "legal_description": "MEADOWGLEN CONDOMINIUM PCT UND INT  1.24",
       "tax_status": "T",
-      "tax_due_estimate": 1803.56,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2496,7 +2496,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "REDONDO BEACH DIV # 1",
       "tax_status": "T",
-      "tax_due_estimate": 2530.36,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
