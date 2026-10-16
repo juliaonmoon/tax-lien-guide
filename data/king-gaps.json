@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-15T17:52:19.913173+00:00",
+  "source_updated_at": "2026-10-16T17:32:26.823837+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -439,8 +439,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "S 1/2 OF N 1/2 OF SE 1/4 OF NE 1/4 OF NE 1/4 LESS CO RD & S 1/2 OF NE 1/4 OF SW 1/4 OF NE 1/4 OF NE 1/4 CLASSIFIED AS OPEN SPACE LAND UNDER CHAPTER 84.34 RCW",
       "tax_status": "T",
-      "tax_due_estimate": 28438.81,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "0239000175",
@@ -1084,7 +1084,7 @@
       "legal_description": "FAEGRES 1ST ADD TO W S",
       "tax_status": "T",
       "tax_due_estimate": 422.35,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2444600450",
@@ -1122,8 +1122,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "FAIRWOOD PARK DIV # 8",
       "tax_status": "T",
-      "tax_due_estimate": 10699.66,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 6451.08,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2521059032",
