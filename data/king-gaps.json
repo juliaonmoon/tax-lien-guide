@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-18T16:37:53.410529+00:00",
+  "source_updated_at": "2026-10-19T19:30:36.391652+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1122,7 +1122,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "FAIRWOOD PARK DIV # 8",
       "tax_status": "T",
-      "tax_due_estimate": 6451.08,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
