@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-20T18:12:14.739030+00:00",
+  "source_updated_at": "2026-10-21T18:15:43.489912+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -690,8 +690,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "BEG ON N LN OF SW 1/4 OF NW 1/4 296 FT W OF NE COR TH S 00-30-07 W 85.08 FT TH N 75-41-40 W ALG S MGN OF DIXON RD 295.74 FT TH ON CURVE TO RGT RAD 690.83 FT DIST 64.15 FT TO N LN SD SUBD TH E TO BEG LESS POR W OF LN RNG S FR PT 545.03 FT W OF NE COR OF SUBD",
       "tax_status": "T",
-      "tax_due_estimate": 50.61,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "1262700030",
