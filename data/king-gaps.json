@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-26T19:35:10.262747+00:00",
+  "source_updated_at": "2026-10-27T18:56:30.331712+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1880,7 +1880,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "KELSEYS BRIGHTON BEACH ACRE TRS W 54 FT S OF ALLEY LESS ST",
       "tax_status": "T",
-      "tax_due_estimate": 28379.7,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
