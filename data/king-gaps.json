@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-28T19:00:34.909792+00:00",
+  "source_updated_at": "2026-10-29T19:02:52.706869+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2036,7 +2036,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LAKOTA ADD LESS SWLY 140 FT THOF",
       "tax_status": "T",
-      "tax_due_estimate": 1212.9,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2978,8 +2978,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "UNIVERSITY PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 26141.43,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "8911000635",
