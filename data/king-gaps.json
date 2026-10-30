@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-10-29T19:02:52.706869+00:00",
+  "source_updated_at": "2026-10-30T18:42:53.391761+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -769,7 +769,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "CIRCLE RIVER RANCH ADD TRACT R OF KING COUNTY BOUNDARY LINE ADJUSTMENT NO 01L0051 RECORDING NO 20020213900001 SAID TRACT R DEFINED - LOT 121 CIRCLE RIVER RANCH ADD SUBJ TO AGREEMENT PER DEV RGTS PER REC #8609051038",
       "tax_status": "T",
-      "tax_due_estimate": 308.06,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1161,8 +1161,8 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "FOREST LANE CONDOMINIUM PCT UND INT  1.08",
       "tax_status": "T",
-      "tax_due_estimate": 1911.18,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2646400160",
@@ -1643,8 +1643,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "PORTION OF SE QTR STR 34-22-05 DAF: BEGINNING AT SE CORNER OF SAID SW QTR TH NORTH ALONG E LINE OF SAID SW QTR 959 FT MORE OR LESS TO S LINE OF PARCEL ADJUDICATED IN GEORGE CHRISTOFFERSEN ET UX IN KING CO SUPERIOR COURT CAUSE NO 708410 ENTITLED DUNN/CHRISTOFFERSEN TH CONTINUING NORTH ALONG SAID E, LINE OF SW QTR 419.51 FT TO TPOB TH N89-21-45W PARALLEL TO S LINE OF N QTR SE QTR SW QTR OF SAID SECTION 34 DISTANCE OF 411.17 FT TH NORTH PARALLEL WITH E LINE OF SW QTR OF SAID SECTION 160 FT MORE OR LESS TO SW CORNER OF PARCEL CONVEYED TO JOHN W WALKER ET EX BY DEED UNDER RECORDING NO 7206280373, TH S89-23-52E 214.99 FT TH S02-24-42E 60.76 FT TH S81-20-29E 193.78 FT TH S89-23-05E 0.65 FT TO E LINE OF SAID SW QTR HEREIN DEFINED AS POINT \"A\" TH SOUTH ALONG SAID E LINE TO TPOB; TGW PORTION OF TRACT \"A\" & LOT 11 FISHER ESTATES LYING WITHIN SE, QTR STR 34-22-05 DAF: COMMENCING AT ABOVE DESCRIBED TPOB TH S89-23-52E 51.40 FT TH N11-16-10W 50.97 FT TO POINT OF CUSP ON CURVE CONCAVE TO SE HAVING RADIUS OF 20.00 FT & CENTRAL ANGLE OF 62-05-43 TH SWLY & SLY ALONG SAID CURVE 21.68 FT TO POINT OF CUSP TH N00-54-44E 39.90 FT, TH N89-23-05W 30.00 FT TO ABOVE DESCRIBED POINT \"A\" TH S00-54-44W 72.17 FT TO TPOB",
       "tax_status": "T",
-      "tax_due_estimate": 2803.49,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "3575300780",
@@ -1761,7 +1761,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JACOBSONS G I ADD LOT \"F\" OF SEATTLE SP# 3028362 REC# 20201223900016 SD SP BEING POR OF BLK 1 OF SD ADD",
       "tax_status": "T",
-      "tax_due_estimate": 3309.89,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
