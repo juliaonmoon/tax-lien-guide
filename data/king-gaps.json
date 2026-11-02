@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-11-01T18:32:42.317386+00:00",
+  "source_updated_at": "2026-11-02T22:28:23.500399+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1123,7 +1123,7 @@
       "legal_description": "FAIRWOOD PARK DIV # 8",
       "tax_status": "T",
       "tax_due_estimate": 0.0,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "2521059032",
@@ -1899,7 +1899,7 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "KIRKLAND PLACE CONDOMINIUM PCT UND INT  1.00",
       "tax_status": "T",
-      "tax_due_estimate": 1805.0,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2305,8 +2305,8 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "NEXUS CONDOMINIUM PCT UND INT 0.244",
       "tax_status": "T",
-      "tax_due_estimate": 2739.71,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "6108450110",
@@ -2613,7 +2613,7 @@
       "value_basis": "King County Real Property Tax Receivables land + improvements",
       "legal_description": "REVO 225 A CONDOMINIUM PCT UND INT  0.89",
       "tax_status": "T",
-      "tax_due_estimate": 2993.33,
+      "tax_due_estimate": 1021.67,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2767,8 +2767,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "SEA VIEW PARK ADD",
       "tax_status": "T",
-      "tax_due_estimate": 5698.57,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7686201640",
