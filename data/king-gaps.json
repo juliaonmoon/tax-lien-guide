@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-11-02T22:28:23.500399+00:00",
+  "source_updated_at": "2026-11-03T20:15:26.929401+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -1123,7 +1123,7 @@
       "legal_description": "FAIRWOOD PARK DIV # 8",
       "tax_status": "T",
       "tax_due_estimate": 0.0,
-      "enrichment_note": "legal description, tax lookup ReadTimeout"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2521059032",
