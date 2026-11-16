@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-11-15T19:34:08.089738+00:00",
+  "source_updated_at": "2026-11-16T23:09:01.261974+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -808,7 +808,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "CLARKS 2ND ADD TO KENT",
       "tax_status": "T",
-      "tax_due_estimate": 631.22,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
