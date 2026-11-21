@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-11-20T21:23:17.653802+00:00",
+  "source_updated_at": "2026-11-21T20:12:59.754596+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -2287,7 +2287,7 @@
       "legal_description": "MIRRORMONT DIV # 2 LESS C & M RGTS",
       "tax_status": "T",
       "tax_due_estimate": 612.89,
-      "enrichment_note": "legal description, tax receivables"
+      "enrichment_note": "legal description, tax lookup ReadTimeout"
     },
     {
       "parcel_id": "6075502410",
