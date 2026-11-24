@@ -1,5 +1,5 @@
 {
-  "source_updated_at": "2026-11-22T20:31:17.143303+00:00",
+  "source_updated_at": "2026-11-24T01:02:07.911672+00:00",
   "king_count": 145,
   "completion": {
     "status": "bounded_complete",
@@ -320,7 +320,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "E 125 FT OF E 1/2 OF SW 1/4 OF SW 1/4 OF NW 1/4 OF SEC 1-21-5 LESS N 10 FT - SUBJ TO TRANS LN ESMTS",
       "tax_status": "T",
-      "tax_due_estimate": 97.99,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -360,7 +360,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALLENTOWN ACRES REPLAT UNREC LESS NELY 111.31 FT",
       "tax_status": "T",
-      "tax_due_estimate": 679.89,
+      "tax_due_estimate": 594.3,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -400,7 +400,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALVORDS MOUNTAIN VIEW ACRES UNREC PORTION OF MOSES KIRKLAND DONATION LAND CLAIM DAF: BEGINNING AT NW CORNER OF SAID DONATION LAND CLAIM TH N89-21-15E 2270.70 FT TO ELY LINE OF STATE AID ROAD NO 69 TH S05-08-00W ALONG SAID E MARGIN 554.40 FT TH N89-07-50E 160 FT TO TPOB, TH CONTINUING N89-07-50E 47.02 FT TH N00-52-10W 92.12 FT TH S61-34-00W TO POINT FROM WHICH TPOB IS S05-08-00W TH S05-08-00W TO TPOB; EXC E 27.02 FT AS MEASURED ALONG S LINE OF SAID TRACT; AND EXC S 30 FT THEREOF FOR ROAD",
       "tax_status": "X",
-      "tax_due_estimate": 203.07,
+      "tax_due_estimate": 19.2,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -420,7 +420,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ALVORDS MOUNTAIN VIEW ACRES UNREC E 27.02 FT AS MEASURED ALONG S LINE OF FOLLOWING TRACT BEING A PORTION OF MOSES KIRKLAND DONATION LAND CLAIM DAF: BEGINNING AT NW CORNER OF SAID DONATION LAND CLAIM TH N89-21-15E 2270.70 FT TO ELY LINE OF STATE AID ROAD NO 69 TH S05-08-00W ALONG SAID E MARGIN, 554.40 FT TH N89-07-50E 160 FT TO TPOB TH CONTINUING N89-07-50E 47.02 FT TH N00-52-10W 92.12 FT TH S61-34-00W TO POINT FROM WHICH TPOB IS S05-08-00W TH S05-08-00W TO TPOB; EXC S 30 FT THEREOF FOR ROAD",
       "tax_status": "T",
-      "tax_due_estimate": 203.08,
+      "tax_due_estimate": 19.2,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -613,7 +613,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "E 1/2 OF S 1/2 OF PORTION OF SW 1/4 OF NE 1/4 AS FOLLOWS, BEGIN NW CORNER OF NE 1/4 TH S 00-16-21.5 E 1325.04 FT TO SW CORNER OF NW 1/4 OF NE 1/4 TH N 88-03-45 E 654.89 FT TH S 00-12-21 E 124 FT TO POB OF TRACT HEREIN DESCRIBED TH S 00-12-21 E 124 FT TH N 88-03-45 E 320.14 FT, TH N 00-12-21 W 124 FT TAP N 88-03-45 E OF POB TH S 88-03-45 W TO POB",
       "tax_status": "T",
-      "tax_due_estimate": 429.26,
+      "tax_due_estimate": 343.71,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -749,7 +749,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR SW 1/4 BEG AT NXN OF E LN OF W 1000 FT OF SW 1/4 & NLY MGN OF ANDREW REYNOLDS REV RD #1816 TH ALG SD NLY MGN N 78-08-35 E 355.96 FT TH ON A CURVE TO LFT RAD OF 686.20 FT AN ARC DIST 94.39 FT TH N 70-15-43 E 81.37 FT TH ON A CURVE TO RGT RAD OF 666.62 FT AN ARC DIST 309.69 FT TH CONTG ALG SD CURVE, TO RGT AN ARC DIST 120.37 FT TAP HEREINAFTER DESIGN AS PT Z TH LEAVING NLY MGN SD RD N 47-34-10 E 48.14 FT TH N 87-11-22 E 190 FT TH N 39-31-05 W 60.75 FT TH N 34-59-25 E 100.87 FT TH N 25-30-00 W 246 FT TH N 63-40-44 W 310.40 FT TO TPOB TH CONTG N 63-40-44 W 187 FT TH N 62-13-47 E 225 FT, TH S 63-40-44 E 187 FT TH S 62-13-47 W 225 FT TO TPOB LESS C/M RGTS",
       "tax_status": "T",
-      "tax_due_estimate": 1770.46,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1062,9 +1062,9 @@
       "improvement_value": 0.0,
       "value_basis": "King County appraised value",
       "legal_description": "PORTION OF NW QTR NE QTR AND OF NE QTR NW QTR STR 22-22-04 DAF: BEGINNING AT SW CORNER OF SAID NE QTR NW QTR TH NORTH ALONG W LINE OF SAID NE QTR NW QTR 261 FT TO TPOB TH EAST PARALLEL WITH S LINE OF SAID NW QTR NE QTR AND OF SAID NE QTR NW QTR 1400.53 FT TH NORTH PARALLEL WITH W LINE OF, SAID NE QTR NW QTR 261 FT TH WEST PARALLEL WITH SAID S LINE TO W LINE OF SAID NE QTR NW QTR TH SOUTH ALONG SAID W LINE TO TPOB EXC PORTION THEREOF LYING WEST OF E LINE OF SKY HILL PLATTED IN VOL 62, PAGE 32",
-      "tax_status": "X",
-      "tax_due_estimate": 128.52,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "tax_status": "T",
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "2444600400",
@@ -1412,7 +1412,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR OF GL 1 LY WLY OF LANDSBERG RD LESS N 1060 FT",
       "tax_status": "T",
-      "tax_due_estimate": 208.75,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1451,7 +1451,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "POR OF SW 1/4 OF NE 1/4-BAAP ON W SUBD LN 616 FT NLY OF SW COR THOF TH S 88-20-45 E 96 FT TO TPOB TH S 88-20-45 E 54 FT TH N 05-14-12 W 40 FT TH S 89-37-17 E 100 FT TH N 4-14-29 W 60 FT TH N 88-20-54 W 153.77 FT TH S 30-52-00 W 43.96 FT TH S 25-36-11 E 68.73 FT TO POB",
       "tax_status": "T",
-      "tax_due_estimate": 1677.57,
+      "tax_due_estimate": 61.42,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1683,7 +1683,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "INGLEWOOD ADD & ALL OF VAC 208TH AVE NE ADJ",
       "tax_status": "T",
-      "tax_due_estimate": 140.68,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1722,7 +1722,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "TRACT 1 LESS POR CONVEYED TO STATE OF WA BY DEED REC NO 9411180817 OF KING CO SHORT PLAT NO 1276010 REC NO 7708180969 SD SP DAF: NE QTR OF SE QTR STR 36-23-06 LESS RDS",
       "tax_status": "T",
-      "tax_due_estimate": 2075.8,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1801,7 +1801,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA ADD",
       "tax_status": "T",
-      "tax_due_estimate": 140.73,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1821,7 +1821,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "T",
-      "tax_due_estimate": 140.73,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -1861,7 +1861,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "JOVITA HEIGHTS ADD",
       "tax_status": "X",
-      "tax_due_estimate": 359.77,
+      "tax_due_estimate": 272.11,
       "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
@@ -2056,7 +2056,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "LARSON PARKE RECREATION",
       "tax_status": "T",
-      "tax_due_estimate": 223.64,
+      "tax_due_estimate": 39.35,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2557,7 +2557,7 @@
       "legal_description": "REDONDO BEACH 1ST PLAT UNREC POR OF GL 2 IN SEC 32-22-04 DAF - BEG AT SW COR OF NE OF SD SEC TH N 89-29-50 E 580.28 FT ALG S LN OF SD SEC TO NXN OF SD LN WITH NXN OF C/L OF 10TH AVE S TH N 00-20-45 E 672.36 FT ALG C/L OF SD RD TH N 89-39-15 W 30 FT TO WLY MGN OF SD RD & POB TH S 89-29-50 W 150.03 FT, TH N 00-20-45 E 98.02 FT TH N 89-29-50 E 54.36 FT TH S 00-15-45 W 78.01 FT TH S 89-29-50 W 95.55 FT TO WLY MGN OF SD RD TH S 00-20-45 W 20 FT TO POB AKA PAR A OF DES MOINES LLA 2000-051 REC #20010105900004",
       "tax_status": "T",
       "tax_due_estimate": 9135.89,
-      "enrichment_note": "legal description, tax-roll value, tax receivables"
+      "enrichment_note": "legal description, tax receivables"
     },
     {
       "parcel_id": "7227801582",
@@ -2633,8 +2633,8 @@
       "value_basis": "King County appraised value",
       "legal_description": "REXFORDS 1ST ADD PARCEL 'B' SEATTLE SHORT SUBDIVISION NO. 9606509 REC NO. 9705169001 SD SHORT SUBDIVISION DAF - LOTS 5 & 6 IN BLOCK 1 OF REXFORDS 1ST ADDITION PLAT",
       "tax_status": "T",
-      "tax_due_estimate": 1734.54,
-      "enrichment_note": "legal description, tax receivables"
+      "tax_due_estimate": 0.0,
+      "enrichment_note": "legal description, tax-roll value, tax receivables"
     },
     {
       "parcel_id": "7302000102",
@@ -2710,7 +2710,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "ROBBINS SPRING BROOK ADDITION TO RIVERTON LOTS 4 & 5 BLK 7; EXC PORTION CONVEYED TO STATE OF WA FOR STATE ROAD NO 1 BY DEED UNDER RECORDING NO 2014239; AND EXC PORTION CONVEYED TO CITY OF TUKWILA BY DEED UNDER RECORDING NO 20080303002064",
       "tax_status": "T",
-      "tax_due_estimate": 625.84,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2787,7 +2787,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "SEELEYS TO DES MOINES VAC S 25 FT OF N 225 FT",
       "tax_status": "T",
-      "tax_due_estimate": 649.05,
+      "tax_due_estimate": 26.12,
       "enrichment_note": "legal description, tax receivables"
     },
     {
@@ -2959,7 +2959,7 @@
       "value_basis": "King County appraised value",
       "legal_description": "UNION HILL HEIGHTS NO 4",
       "tax_status": "T",
-      "tax_due_estimate": 1769.32,
+      "tax_due_estimate": 0.0,
       "enrichment_note": "legal description, tax receivables"
     },
     {
